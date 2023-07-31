@@ -494,8 +494,21 @@ core_bridge_cmd icb (
 
 ////////////////////////////////////////////////////////////////////////////////////////
 
+// Blink module Output
+// synchronous to clk_core_6
+wire [7:0] uxn_c_out;
 
+////////////////////////////////////////////////////////////////////////////////////////
+//
+// sychronizers for getting stuff from clk_core_6 into the video pixel
+// clock domain (clk_core_12288/video_rgb_clock)
+//
+// this is very necessary and should not be neglected!
+//
+wire [7:0]	uxn_c_out_s;
+synch_2 #(.WIDTH(8)) blink_s(uxn_c_out, uxn_c_out_s, video_rgb_clock);
 
+////////////////////////////////////////////////////////////////////////////////////////
 // video generation
 // ~12,288,000 hz pixel clock
 //
@@ -523,6 +536,12 @@ assign video_hs = vidout_hs;
     localparam  VID_H_ACTIVE = 'd320;
     localparam  VID_H_TOTAL = 'd400;
 
+    reg led_r;
+    reg led_g;
+    reg led_b;
+    reg led_error;
+    reg led_blink;
+
     reg [15:0]  frame_count;
     
     reg [9:0]   x_count;
@@ -536,9 +555,6 @@ assign video_hs = vidout_hs;
     reg         vidout_skip;
     reg         vidout_vs;
     reg         vidout_hs, vidout_hs_1;
-    
-    reg [9:0]   square_x = 'd135;
-    reg [9:0]   square_y = 'd95;
 
 always @(posedge clk_core_12288 or negedge reset_n) begin
 
@@ -548,6 +564,13 @@ always @(posedge clk_core_12288 or negedge reset_n) begin
         y_count <= 0;
         
     end else begin
+    
+        led_error <= uxn_c_out_s[4];
+        led_blink <= uxn_c_out_s[3];
+        led_r <= uxn_c_out_s[2];
+        led_g <= uxn_c_out_s[1];
+        led_b <= uxn_c_out_s[0];
+    
         vidout_de <= 0;
         vidout_skip <= 0;
         vidout_vs <= 0;
@@ -591,17 +614,36 @@ always @(posedge clk_core_12288 or negedge reset_n) begin
                 // data enable. this is the active region of the line
                 vidout_de <= 1;
                 
-                vidout_rgb[23:16] <= 8'd60;
-                vidout_rgb[15:8]  <= 8'd60;
-                vidout_rgb[7:0]   <= 8'd60;
+                if (x_count <= VID_H_BPORCH + 20 && y_count <= VID_V_BPORCH + 20) begin
+                    vidout_rgb[23:16] <= led_r ? 8'hFF : 8'h00;
+                    vidout_rgb[15:8]  <= led_r ? 8'h00 : 8'h00;
+                    vidout_rgb[7:0]   <= led_r ? 8'h00 : 8'h00;
+                end else if (x_count <= VID_H_BPORCH + 40 && y_count <= VID_V_BPORCH + 20) begin
+                    vidout_rgb[23:16] <= led_g ? 8'h00 : 8'h00;
+                    vidout_rgb[15:8]  <= led_g ? 8'hFF : 8'h00;
+                    vidout_rgb[7:0]   <= led_g ? 8'h00 : 8'h00;
+                end else if (x_count <= VID_H_BPORCH + 60 && y_count <= VID_V_BPORCH + 20) begin
+                    vidout_rgb[23:16] <= led_b ? 8'h00 : 8'h00;
+                    vidout_rgb[15:8]  <= led_b ? 8'h00 : 8'h00;
+                    vidout_rgb[7:0]   <= led_b ? 8'hFF : 8'h00;
+                end else if (x_count <= VID_H_BPORCH + 80 && y_count <= VID_V_BPORCH + 20) begin
+                    vidout_rgb[23:16] <= led_blink ? 8'hFF : 8'h00;
+                    vidout_rgb[15:8]  <= led_blink ? 8'hFF : 8'h00;
+                    vidout_rgb[7:0]   <= led_blink ? 8'hFF : 8'h00;
+                end else if (x_count <= VID_H_BPORCH + 100 && y_count <= VID_V_BPORCH + 20) begin
+                    vidout_rgb[23:16] <= led_error ? 8'h7F : 8'h00;
+                    vidout_rgb[15:8]  <= led_error ? 8'h7F : 8'h00;
+                    vidout_rgb[7:0]   <= led_error ? 8'h00 : 8'h00;
+                end else begin 
+                    vidout_rgb[23:16] <= 8'h00;
+                    vidout_rgb[15:8]  <= 8'h00;
+                    vidout_rgb[7:0]   <= 8'h00;
+                end
                 
             end 
         end
     end
 end
-
-
-
 
 //
 // audio i2s silence generator
@@ -652,7 +694,7 @@ end
 
 ///////////////////////////////////////////////
 
-
+    wire    clk_core_6;
     wire    clk_core_12288;
     wire    clk_core_12288_90deg;
     
@@ -666,10 +708,16 @@ mf_pllbase mp1 (
     
     .outclk_0       ( clk_core_12288 ),
     .outclk_1       ( clk_core_12288_90deg ),
+    .outclk_2       ( clk_core_6 ),
     
     .locked         ( pll_core_locked )
 );
 
+top top
+(
+.clk_6p0(clk_core_6),
 
+.uxn_eval_return_output(uxn_c_out),
+);
     
 endmodule
