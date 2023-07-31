@@ -506,7 +506,7 @@ wire [7:0] uxn_c_out;
 // this is very necessary and should not be neglected!
 //
 wire [7:0]	uxn_c_out_s;
-synch_2 #(.WIDTH(8)) blink_s(uxn_c_out, uxn_c_out_s, video_rgb_clock);
+synch_2 #(.WIDTH(4)) blink_s(uxn_c_out, uxn_c_out_s, video_rgb_clock);
 
 ////////////////////////////////////////////////////////////////////////////////////////
 // video generation
