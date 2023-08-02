@@ -29,40 +29,40 @@ signal current_prog_ctr : unsigned(15 downto 0) := to_unsigned(0, 16);
 signal REG_COMB_current_prog_ctr : unsigned(15 downto 0);
 
 -- Each function instance gets signals
--- prog_ctr_ram_read[uxn_pc_h_l64_c21_4460]
-signal prog_ctr_ram_read_uxn_pc_h_l64_c21_4460_CLOCK_ENABLE : unsigned(0 downto 0);
-signal prog_ctr_ram_read_uxn_pc_h_l64_c21_4460_return_output : unsigned(15 downto 0);
+-- prog_ctr_ram_read[uxn_pc_h_l64_c21_9b27]
+signal prog_ctr_ram_read_uxn_pc_h_l64_c21_9b27_CLOCK_ENABLE : unsigned(0 downto 0);
+signal prog_ctr_ram_read_uxn_pc_h_l64_c21_9b27_return_output : unsigned(15 downto 0);
 
--- BIN_OP_PLUS[uxn_pc_h_l65_c21_034d]
-signal BIN_OP_PLUS_uxn_pc_h_l65_c21_034d_left : unsigned(15 downto 0);
-signal BIN_OP_PLUS_uxn_pc_h_l65_c21_034d_right : unsigned(15 downto 0);
-signal BIN_OP_PLUS_uxn_pc_h_l65_c21_034d_return_output : unsigned(16 downto 0);
+-- BIN_OP_PLUS[uxn_pc_h_l65_c21_42f8]
+signal BIN_OP_PLUS_uxn_pc_h_l65_c21_42f8_left : unsigned(15 downto 0);
+signal BIN_OP_PLUS_uxn_pc_h_l65_c21_42f8_right : unsigned(15 downto 0);
+signal BIN_OP_PLUS_uxn_pc_h_l65_c21_42f8_return_output : unsigned(16 downto 0);
 
--- prog_ctr_ram_write[uxn_pc_h_l65_c2_6eaa]
-signal prog_ctr_ram_write_uxn_pc_h_l65_c2_6eaa_CLOCK_ENABLE : unsigned(0 downto 0);
-signal prog_ctr_ram_write_uxn_pc_h_l65_c2_6eaa_value : unsigned(15 downto 0);
+-- prog_ctr_ram_write[uxn_pc_h_l65_c2_c4d3]
+signal prog_ctr_ram_write_uxn_pc_h_l65_c2_c4d3_CLOCK_ENABLE : unsigned(0 downto 0);
+signal prog_ctr_ram_write_uxn_pc_h_l65_c2_c4d3_value : unsigned(15 downto 0);
 
 
 begin
 
 -- SUBMODULE INSTANCES 
--- prog_ctr_ram_read_uxn_pc_h_l64_c21_4460
-prog_ctr_ram_read_uxn_pc_h_l64_c21_4460 : entity work.prog_ctr_ram_read_0CLK_b4ec7bd0 port map (
+-- prog_ctr_ram_read_uxn_pc_h_l64_c21_9b27
+prog_ctr_ram_read_uxn_pc_h_l64_c21_9b27 : entity work.prog_ctr_ram_read_0CLK_b4ec7bd0 port map (
 clk,
-prog_ctr_ram_read_uxn_pc_h_l64_c21_4460_CLOCK_ENABLE,
-prog_ctr_ram_read_uxn_pc_h_l64_c21_4460_return_output);
+prog_ctr_ram_read_uxn_pc_h_l64_c21_9b27_CLOCK_ENABLE,
+prog_ctr_ram_read_uxn_pc_h_l64_c21_9b27_return_output);
 
--- BIN_OP_PLUS_uxn_pc_h_l65_c21_034d
-BIN_OP_PLUS_uxn_pc_h_l65_c21_034d : entity work.BIN_OP_PLUS_uint16_t_uint16_t_0CLK_de264c78 port map (
-BIN_OP_PLUS_uxn_pc_h_l65_c21_034d_left,
-BIN_OP_PLUS_uxn_pc_h_l65_c21_034d_right,
-BIN_OP_PLUS_uxn_pc_h_l65_c21_034d_return_output);
+-- BIN_OP_PLUS_uxn_pc_h_l65_c21_42f8
+BIN_OP_PLUS_uxn_pc_h_l65_c21_42f8 : entity work.BIN_OP_PLUS_uint16_t_uint16_t_0CLK_de264c78 port map (
+BIN_OP_PLUS_uxn_pc_h_l65_c21_42f8_left,
+BIN_OP_PLUS_uxn_pc_h_l65_c21_42f8_right,
+BIN_OP_PLUS_uxn_pc_h_l65_c21_42f8_return_output);
 
--- prog_ctr_ram_write_uxn_pc_h_l65_c2_6eaa
-prog_ctr_ram_write_uxn_pc_h_l65_c2_6eaa : entity work.prog_ctr_ram_write_0CLK_de264c78 port map (
+-- prog_ctr_ram_write_uxn_pc_h_l65_c2_c4d3
+prog_ctr_ram_write_uxn_pc_h_l65_c2_c4d3 : entity work.prog_ctr_ram_write_0CLK_de264c78 port map (
 clk,
-prog_ctr_ram_write_uxn_pc_h_l65_c2_6eaa_CLOCK_ENABLE,
-prog_ctr_ram_write_uxn_pc_h_l65_c2_6eaa_value);
+prog_ctr_ram_write_uxn_pc_h_l65_c2_c4d3_CLOCK_ENABLE,
+prog_ctr_ram_write_uxn_pc_h_l65_c2_c4d3_value);
 
 
 
@@ -74,19 +74,19 @@ process (
  -- Registers
  current_prog_ctr,
  -- All submodule outputs
- prog_ctr_ram_read_uxn_pc_h_l64_c21_4460_return_output,
- BIN_OP_PLUS_uxn_pc_h_l65_c21_034d_return_output)
+ prog_ctr_ram_read_uxn_pc_h_l64_c21_9b27_return_output,
+ BIN_OP_PLUS_uxn_pc_h_l65_c21_42f8_return_output)
 is 
  -- All of the wires in function
  variable VAR_CLOCK_ENABLE : unsigned(0 downto 0);
  variable VAR_adjustment : unsigned(15 downto 0);
- variable VAR_prog_ctr_ram_read_uxn_pc_h_l64_c21_4460_CLOCK_ENABLE : unsigned(0 downto 0);
- variable VAR_prog_ctr_ram_read_uxn_pc_h_l64_c21_4460_return_output : unsigned(15 downto 0);
- variable VAR_prog_ctr_ram_write_uxn_pc_h_l65_c2_6eaa_value : unsigned(15 downto 0);
- variable VAR_BIN_OP_PLUS_uxn_pc_h_l65_c21_034d_left : unsigned(15 downto 0);
- variable VAR_BIN_OP_PLUS_uxn_pc_h_l65_c21_034d_right : unsigned(15 downto 0);
- variable VAR_BIN_OP_PLUS_uxn_pc_h_l65_c21_034d_return_output : unsigned(16 downto 0);
- variable VAR_prog_ctr_ram_write_uxn_pc_h_l65_c2_6eaa_CLOCK_ENABLE : unsigned(0 downto 0);
+ variable VAR_prog_ctr_ram_read_uxn_pc_h_l64_c21_9b27_CLOCK_ENABLE : unsigned(0 downto 0);
+ variable VAR_prog_ctr_ram_read_uxn_pc_h_l64_c21_9b27_return_output : unsigned(15 downto 0);
+ variable VAR_prog_ctr_ram_write_uxn_pc_h_l65_c2_c4d3_value : unsigned(15 downto 0);
+ variable VAR_BIN_OP_PLUS_uxn_pc_h_l65_c21_42f8_left : unsigned(15 downto 0);
+ variable VAR_BIN_OP_PLUS_uxn_pc_h_l65_c21_42f8_right : unsigned(15 downto 0);
+ variable VAR_BIN_OP_PLUS_uxn_pc_h_l65_c21_42f8_return_output : unsigned(16 downto 0);
+ variable VAR_prog_ctr_ram_write_uxn_pc_h_l65_c2_c4d3_CLOCK_ENABLE : unsigned(0 downto 0);
  -- State registers comb logic variables
 variable REG_VAR_current_prog_ctr : unsigned(15 downto 0);
 begin
@@ -105,33 +105,33 @@ begin
      VAR_adjustment := adjustment;
 
      -- Submodule level 0
-     VAR_prog_ctr_ram_read_uxn_pc_h_l64_c21_4460_CLOCK_ENABLE := VAR_CLOCK_ENABLE;
-     VAR_prog_ctr_ram_write_uxn_pc_h_l65_c2_6eaa_CLOCK_ENABLE := VAR_CLOCK_ENABLE;
-     VAR_BIN_OP_PLUS_uxn_pc_h_l65_c21_034d_right := VAR_adjustment;
-     -- prog_ctr_ram_read[uxn_pc_h_l64_c21_4460] LATENCY=0
+     VAR_prog_ctr_ram_read_uxn_pc_h_l64_c21_9b27_CLOCK_ENABLE := VAR_CLOCK_ENABLE;
+     VAR_prog_ctr_ram_write_uxn_pc_h_l65_c2_c4d3_CLOCK_ENABLE := VAR_CLOCK_ENABLE;
+     VAR_BIN_OP_PLUS_uxn_pc_h_l65_c21_42f8_right := VAR_adjustment;
+     -- prog_ctr_ram_read[uxn_pc_h_l64_c21_9b27] LATENCY=0
      -- Clock enable
-     prog_ctr_ram_read_uxn_pc_h_l64_c21_4460_CLOCK_ENABLE <= VAR_prog_ctr_ram_read_uxn_pc_h_l64_c21_4460_CLOCK_ENABLE;
+     prog_ctr_ram_read_uxn_pc_h_l64_c21_9b27_CLOCK_ENABLE <= VAR_prog_ctr_ram_read_uxn_pc_h_l64_c21_9b27_CLOCK_ENABLE;
      -- Inputs
      -- Outputs
-     VAR_prog_ctr_ram_read_uxn_pc_h_l64_c21_4460_return_output := prog_ctr_ram_read_uxn_pc_h_l64_c21_4460_return_output;
+     VAR_prog_ctr_ram_read_uxn_pc_h_l64_c21_9b27_return_output := prog_ctr_ram_read_uxn_pc_h_l64_c21_9b27_return_output;
 
      -- Submodule level 1
-     VAR_BIN_OP_PLUS_uxn_pc_h_l65_c21_034d_left := VAR_prog_ctr_ram_read_uxn_pc_h_l64_c21_4460_return_output;
-     REG_VAR_current_prog_ctr := VAR_prog_ctr_ram_read_uxn_pc_h_l64_c21_4460_return_output;
-     -- BIN_OP_PLUS[uxn_pc_h_l65_c21_034d] LATENCY=0
+     VAR_BIN_OP_PLUS_uxn_pc_h_l65_c21_42f8_left := VAR_prog_ctr_ram_read_uxn_pc_h_l64_c21_9b27_return_output;
+     REG_VAR_current_prog_ctr := VAR_prog_ctr_ram_read_uxn_pc_h_l64_c21_9b27_return_output;
+     -- BIN_OP_PLUS[uxn_pc_h_l65_c21_42f8] LATENCY=0
      -- Inputs
-     BIN_OP_PLUS_uxn_pc_h_l65_c21_034d_left <= VAR_BIN_OP_PLUS_uxn_pc_h_l65_c21_034d_left;
-     BIN_OP_PLUS_uxn_pc_h_l65_c21_034d_right <= VAR_BIN_OP_PLUS_uxn_pc_h_l65_c21_034d_right;
+     BIN_OP_PLUS_uxn_pc_h_l65_c21_42f8_left <= VAR_BIN_OP_PLUS_uxn_pc_h_l65_c21_42f8_left;
+     BIN_OP_PLUS_uxn_pc_h_l65_c21_42f8_right <= VAR_BIN_OP_PLUS_uxn_pc_h_l65_c21_42f8_right;
      -- Outputs
-     VAR_BIN_OP_PLUS_uxn_pc_h_l65_c21_034d_return_output := BIN_OP_PLUS_uxn_pc_h_l65_c21_034d_return_output;
+     VAR_BIN_OP_PLUS_uxn_pc_h_l65_c21_42f8_return_output := BIN_OP_PLUS_uxn_pc_h_l65_c21_42f8_return_output;
 
      -- Submodule level 2
-     VAR_prog_ctr_ram_write_uxn_pc_h_l65_c2_6eaa_value := resize(VAR_BIN_OP_PLUS_uxn_pc_h_l65_c21_034d_return_output, 16);
-     -- prog_ctr_ram_write[uxn_pc_h_l65_c2_6eaa] LATENCY=0
+     VAR_prog_ctr_ram_write_uxn_pc_h_l65_c2_c4d3_value := resize(VAR_BIN_OP_PLUS_uxn_pc_h_l65_c21_42f8_return_output, 16);
+     -- prog_ctr_ram_write[uxn_pc_h_l65_c2_c4d3] LATENCY=0
      -- Clock enable
-     prog_ctr_ram_write_uxn_pc_h_l65_c2_6eaa_CLOCK_ENABLE <= VAR_prog_ctr_ram_write_uxn_pc_h_l65_c2_6eaa_CLOCK_ENABLE;
+     prog_ctr_ram_write_uxn_pc_h_l65_c2_c4d3_CLOCK_ENABLE <= VAR_prog_ctr_ram_write_uxn_pc_h_l65_c2_c4d3_CLOCK_ENABLE;
      -- Inputs
-     prog_ctr_ram_write_uxn_pc_h_l65_c2_6eaa_value <= VAR_prog_ctr_ram_write_uxn_pc_h_l65_c2_6eaa_value;
+     prog_ctr_ram_write_uxn_pc_h_l65_c2_c4d3_value <= VAR_prog_ctr_ram_write_uxn_pc_h_l65_c2_c4d3_value;
      -- Outputs
 
    end if;

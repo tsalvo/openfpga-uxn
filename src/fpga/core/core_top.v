@@ -494,19 +494,9 @@ core_bridge_cmd icb (
 
 ////////////////////////////////////////////////////////////////////////////////////////
 
-// Blink module Output
-// synchronous to clk_core_6
+// UXN PipelineC Module Output
+// synchronous to clk_core_12288
 wire [7:0] uxn_c_out;
-
-////////////////////////////////////////////////////////////////////////////////////////
-//
-// sychronizers for getting stuff from clk_core_6 into the video pixel
-// clock domain (clk_core_12288/video_rgb_clock)
-//
-// this is very necessary and should not be neglected!
-//
-wire [7:0]	uxn_c_out_s;
-synch_2 #(.WIDTH(4)) blink_s(uxn_c_out, uxn_c_out_s, video_rgb_clock);
 
 ////////////////////////////////////////////////////////////////////////////////////////
 // video generation
@@ -565,11 +555,11 @@ always @(posedge clk_core_12288 or negedge reset_n) begin
         
     end else begin
     
-        led_error <= uxn_c_out_s[4];
-        led_blink <= uxn_c_out_s[3];
-        led_r <= uxn_c_out_s[2];
-        led_g <= uxn_c_out_s[1];
-        led_b <= uxn_c_out_s[0];
+        led_error <= uxn_c_out[4];
+        led_blink <= uxn_c_out[3];
+        led_r <= uxn_c_out[2];
+        led_g <= uxn_c_out[1];
+        led_b <= uxn_c_out[0];
     
         vidout_de <= 0;
         vidout_skip <= 0;
@@ -715,7 +705,7 @@ mf_pllbase mp1 (
 
 top top
 (
-.clk_6p0(clk_core_6),
+.clk_12p287999(clk_core_12288),
 
 .uxn_eval_return_output(uxn_c_out),
 );

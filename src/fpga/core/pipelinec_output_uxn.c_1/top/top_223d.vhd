@@ -5,7 +5,7 @@ use work.c_structs_pkg.all;
 
   entity top_223d is
 port(
-clk_6p0 : in std_logic;
+clk_12p287999 : in std_logic;
 
 -- IO for each main func
 uxn_eval_return_output : out unsigned(7 downto 0)
@@ -28,9 +28,9 @@ attribute dont_touch of uxn_eval_0CLK_6e86a93e_return_output_output_reg : signal
 begin
 
  -- IO regs
- process(clk_6p0) is
+ process(clk_12p287999) is
  begin
-  if rising_edge(clk_6p0) then
+  if rising_edge(clk_12p287999) then
    uxn_eval_0CLK_6e86a93e_return_output_output_reg <= uxn_eval_return_output_output;
   end if;
  end process;
@@ -39,7 +39,7 @@ begin
 -- Instantiate each main
 -- main functions are always clock enabled, always running
 uxn_eval_0CLK_6e86a93e : entity work.uxn_eval_0CLK_6e86a93e port map (
-clk_6p0,
+clk_12p287999,
 to_unsigned(1,1),
 uxn_eval_return_output_output);
 

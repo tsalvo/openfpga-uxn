@@ -18,8 +18,10 @@ port(
  wr_data0 : in unsigned(7 downto 0);
  wr_en0 : in unsigned(0 downto 0);
  valid0 : in unsigned(0 downto 0);
+ rd_en0 : in unsigned(0 downto 0);
  addr1 : in unsigned(31 downto 0);
  valid1 : in unsigned(0 downto 0);
+ rd_en1 : in unsigned(0 downto 0);
  return_output : out device_ram_outputs_t);
 end device_ram_0CLK_b45f1687;
 architecture arch of device_ram_0CLK_b45f1687 is
@@ -49,19 +51,23 @@ begin
   begin 
     if rising_edge(clk) then 
       if CLOCK_ENABLE(0)='1' then 
-        if wr_en0(0)='1' and valid0(0)='1' then 
+        if wr_en0(0) = '1' and valid0(0)='1' then 
           the_ram(addr0_s) <= wr_data0; 
+        end if; 
+        if rd_en0(0) = '1' then 
+          return_output.addr0 <= addr0; 
+          return_output.wr_data0 <= wr_data0; 
+          return_output.wr_en0 <= wr_en0; 
+          return_output.rd_data0 <= the_ram(addr0_s); 
+          return_output.valid0 <= valid0; 
+        end if; 
+        if rd_en1(0) = '1' then 
+          return_output.addr1 <= addr1; 
+          return_output.rd_data1 <= the_ram(addr1_s); 
+          return_output.valid1 <= valid1; 
         end if; 
       end if; 
     end if; 
   end process; 
-  return_output.addr0 <= addr0; 
-  return_output.rd_data0 <= the_ram(addr0_s); 
-  return_output.wr_data0 <= wr_data0; 
-  return_output.wr_en0 <= wr_en0; 
-  return_output.valid0 <= valid0; 
-  return_output.addr1 <= addr1; 
-  return_output.rd_data1 <= the_ram(addr1_s); 
-  return_output.valid1 <= valid1; 
 
 end arch;

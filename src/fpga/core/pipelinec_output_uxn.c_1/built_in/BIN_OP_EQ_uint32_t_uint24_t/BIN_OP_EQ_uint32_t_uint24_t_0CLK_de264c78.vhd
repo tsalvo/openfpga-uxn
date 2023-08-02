@@ -11,13 +11,13 @@ use ieee.numeric_std.all;
 -- use ieee.float_pkg.all;
 use work.c_structs_pkg.all;
 -- Submodules: 0
-entity BIN_OP_EQ_uint32_t_uint21_t_0CLK_de264c78 is
+entity BIN_OP_EQ_uint32_t_uint24_t_0CLK_de264c78 is
 port(
  left : in unsigned(31 downto 0);
- right : in unsigned(20 downto 0);
+ right : in unsigned(23 downto 0);
  return_output : out unsigned(0 downto 0));
-end BIN_OP_EQ_uint32_t_uint21_t_0CLK_de264c78;
-architecture arch of BIN_OP_EQ_uint32_t_uint21_t_0CLK_de264c78 is
+end BIN_OP_EQ_uint32_t_uint24_t_0CLK_de264c78;
+architecture arch of BIN_OP_EQ_uint32_t_uint24_t_0CLK_de264c78 is
 -- Types and such
 -- Declarations
 attribute mark_debug : string;
@@ -31,7 +31,7 @@ type raw_hdl_variables_t is record
   right_resized : std_logic_vector(31 downto 0);
   return_output_bool : boolean;
   return_output : unsigned(0 downto 0);
-  right : unsigned(20 downto 0);
+  right : unsigned(23 downto 0);
   left :  unsigned(31 downto 0);
 end record;
 

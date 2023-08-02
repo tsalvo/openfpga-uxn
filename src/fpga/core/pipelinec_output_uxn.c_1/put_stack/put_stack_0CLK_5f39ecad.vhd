@@ -31,57 +31,57 @@ signal put_tmp : unsigned(7 downto 0) := to_unsigned(0, 8);
 signal REG_COMB_put_tmp : unsigned(7 downto 0);
 
 -- Each function instance gets signals
--- stack_pointer_get[uxn_stack_h_l325_c12_c7ff]
-signal stack_pointer_get_uxn_stack_h_l325_c12_c7ff_CLOCK_ENABLE : unsigned(0 downto 0);
-signal stack_pointer_get_uxn_stack_h_l325_c12_c7ff_stack_index : unsigned(0 downto 0);
-signal stack_pointer_get_uxn_stack_h_l325_c12_c7ff_return_output : unsigned(7 downto 0);
+-- stack_pointer_get[uxn_stack_h_l312_c12_8d3b]
+signal stack_pointer_get_uxn_stack_h_l312_c12_8d3b_CLOCK_ENABLE : unsigned(0 downto 0);
+signal stack_pointer_get_uxn_stack_h_l312_c12_8d3b_stack_index : unsigned(0 downto 0);
+signal stack_pointer_get_uxn_stack_h_l312_c12_8d3b_return_output : unsigned(7 downto 0);
 
--- BIN_OP_MINUS[uxn_stack_h_l325_c12_fb03]
-signal BIN_OP_MINUS_uxn_stack_h_l325_c12_fb03_left : unsigned(7 downto 0);
-signal BIN_OP_MINUS_uxn_stack_h_l325_c12_fb03_right : unsigned(0 downto 0);
-signal BIN_OP_MINUS_uxn_stack_h_l325_c12_fb03_return_output : unsigned(7 downto 0);
+-- BIN_OP_MINUS[uxn_stack_h_l312_c12_94b4]
+signal BIN_OP_MINUS_uxn_stack_h_l312_c12_94b4_left : unsigned(7 downto 0);
+signal BIN_OP_MINUS_uxn_stack_h_l312_c12_94b4_right : unsigned(0 downto 0);
+signal BIN_OP_MINUS_uxn_stack_h_l312_c12_94b4_return_output : unsigned(7 downto 0);
 
--- BIN_OP_MINUS[uxn_stack_h_l325_c12_4b54]
-signal BIN_OP_MINUS_uxn_stack_h_l325_c12_4b54_left : unsigned(7 downto 0);
-signal BIN_OP_MINUS_uxn_stack_h_l325_c12_4b54_right : unsigned(7 downto 0);
-signal BIN_OP_MINUS_uxn_stack_h_l325_c12_4b54_return_output : unsigned(7 downto 0);
+-- BIN_OP_MINUS[uxn_stack_h_l312_c12_fbb5]
+signal BIN_OP_MINUS_uxn_stack_h_l312_c12_fbb5_left : unsigned(7 downto 0);
+signal BIN_OP_MINUS_uxn_stack_h_l312_c12_fbb5_right : unsigned(7 downto 0);
+signal BIN_OP_MINUS_uxn_stack_h_l312_c12_fbb5_return_output : unsigned(7 downto 0);
 
--- stack_data_set[uxn_stack_h_l326_c2_3cd4]
-signal stack_data_set_uxn_stack_h_l326_c2_3cd4_CLOCK_ENABLE : unsigned(0 downto 0);
-signal stack_data_set_uxn_stack_h_l326_c2_3cd4_stack_index : unsigned(0 downto 0);
-signal stack_data_set_uxn_stack_h_l326_c2_3cd4_index : unsigned(7 downto 0);
-signal stack_data_set_uxn_stack_h_l326_c2_3cd4_value : unsigned(7 downto 0);
+-- stack_data_set[uxn_stack_h_l313_c2_d7bc]
+signal stack_data_set_uxn_stack_h_l313_c2_d7bc_CLOCK_ENABLE : unsigned(0 downto 0);
+signal stack_data_set_uxn_stack_h_l313_c2_d7bc_stack_index : unsigned(0 downto 0);
+signal stack_data_set_uxn_stack_h_l313_c2_d7bc_index : unsigned(7 downto 0);
+signal stack_data_set_uxn_stack_h_l313_c2_d7bc_value : unsigned(7 downto 0);
 
 
 begin
 
 -- SUBMODULE INSTANCES 
--- stack_pointer_get_uxn_stack_h_l325_c12_c7ff
-stack_pointer_get_uxn_stack_h_l325_c12_c7ff : entity work.stack_pointer_get_0CLK_c35c94f1 port map (
+-- stack_pointer_get_uxn_stack_h_l312_c12_8d3b
+stack_pointer_get_uxn_stack_h_l312_c12_8d3b : entity work.stack_pointer_get_0CLK_c35c94f1 port map (
 clk,
-stack_pointer_get_uxn_stack_h_l325_c12_c7ff_CLOCK_ENABLE,
-stack_pointer_get_uxn_stack_h_l325_c12_c7ff_stack_index,
-stack_pointer_get_uxn_stack_h_l325_c12_c7ff_return_output);
+stack_pointer_get_uxn_stack_h_l312_c12_8d3b_CLOCK_ENABLE,
+stack_pointer_get_uxn_stack_h_l312_c12_8d3b_stack_index,
+stack_pointer_get_uxn_stack_h_l312_c12_8d3b_return_output);
 
--- BIN_OP_MINUS_uxn_stack_h_l325_c12_fb03
-BIN_OP_MINUS_uxn_stack_h_l325_c12_fb03 : entity work.BIN_OP_MINUS_uint8_t_uint1_t_0CLK_de264c78 port map (
-BIN_OP_MINUS_uxn_stack_h_l325_c12_fb03_left,
-BIN_OP_MINUS_uxn_stack_h_l325_c12_fb03_right,
-BIN_OP_MINUS_uxn_stack_h_l325_c12_fb03_return_output);
+-- BIN_OP_MINUS_uxn_stack_h_l312_c12_94b4
+BIN_OP_MINUS_uxn_stack_h_l312_c12_94b4 : entity work.BIN_OP_MINUS_uint8_t_uint1_t_0CLK_de264c78 port map (
+BIN_OP_MINUS_uxn_stack_h_l312_c12_94b4_left,
+BIN_OP_MINUS_uxn_stack_h_l312_c12_94b4_right,
+BIN_OP_MINUS_uxn_stack_h_l312_c12_94b4_return_output);
 
--- BIN_OP_MINUS_uxn_stack_h_l325_c12_4b54
-BIN_OP_MINUS_uxn_stack_h_l325_c12_4b54 : entity work.BIN_OP_MINUS_uint8_t_uint8_t_0CLK_de264c78 port map (
-BIN_OP_MINUS_uxn_stack_h_l325_c12_4b54_left,
-BIN_OP_MINUS_uxn_stack_h_l325_c12_4b54_right,
-BIN_OP_MINUS_uxn_stack_h_l325_c12_4b54_return_output);
+-- BIN_OP_MINUS_uxn_stack_h_l312_c12_fbb5
+BIN_OP_MINUS_uxn_stack_h_l312_c12_fbb5 : entity work.BIN_OP_MINUS_uint8_t_uint8_t_0CLK_de264c78 port map (
+BIN_OP_MINUS_uxn_stack_h_l312_c12_fbb5_left,
+BIN_OP_MINUS_uxn_stack_h_l312_c12_fbb5_right,
+BIN_OP_MINUS_uxn_stack_h_l312_c12_fbb5_return_output);
 
--- stack_data_set_uxn_stack_h_l326_c2_3cd4
-stack_data_set_uxn_stack_h_l326_c2_3cd4 : entity work.stack_data_set_0CLK_fa018dfc port map (
+-- stack_data_set_uxn_stack_h_l313_c2_d7bc
+stack_data_set_uxn_stack_h_l313_c2_d7bc : entity work.stack_data_set_0CLK_fa018dfc port map (
 clk,
-stack_data_set_uxn_stack_h_l326_c2_3cd4_CLOCK_ENABLE,
-stack_data_set_uxn_stack_h_l326_c2_3cd4_stack_index,
-stack_data_set_uxn_stack_h_l326_c2_3cd4_index,
-stack_data_set_uxn_stack_h_l326_c2_3cd4_value);
+stack_data_set_uxn_stack_h_l313_c2_d7bc_CLOCK_ENABLE,
+stack_data_set_uxn_stack_h_l313_c2_d7bc_stack_index,
+stack_data_set_uxn_stack_h_l313_c2_d7bc_index,
+stack_data_set_uxn_stack_h_l313_c2_d7bc_value);
 
 
 
@@ -95,28 +95,28 @@ process (
  -- Registers
  put_tmp,
  -- All submodule outputs
- stack_pointer_get_uxn_stack_h_l325_c12_c7ff_return_output,
- BIN_OP_MINUS_uxn_stack_h_l325_c12_fb03_return_output,
- BIN_OP_MINUS_uxn_stack_h_l325_c12_4b54_return_output)
+ stack_pointer_get_uxn_stack_h_l312_c12_8d3b_return_output,
+ BIN_OP_MINUS_uxn_stack_h_l312_c12_94b4_return_output,
+ BIN_OP_MINUS_uxn_stack_h_l312_c12_fbb5_return_output)
 is 
  -- All of the wires in function
  variable VAR_CLOCK_ENABLE : unsigned(0 downto 0);
  variable VAR_stack_index : unsigned(0 downto 0);
  variable VAR_offset : unsigned(7 downto 0);
  variable VAR_value : unsigned(7 downto 0);
- variable VAR_stack_pointer_get_uxn_stack_h_l325_c12_c7ff_stack_index : unsigned(0 downto 0);
- variable VAR_BIN_OP_MINUS_uxn_stack_h_l325_c12_fb03_left : unsigned(7 downto 0);
- variable VAR_stack_pointer_get_uxn_stack_h_l325_c12_c7ff_CLOCK_ENABLE : unsigned(0 downto 0);
- variable VAR_stack_pointer_get_uxn_stack_h_l325_c12_c7ff_return_output : unsigned(7 downto 0);
- variable VAR_BIN_OP_MINUS_uxn_stack_h_l325_c12_fb03_right : unsigned(0 downto 0);
- variable VAR_BIN_OP_MINUS_uxn_stack_h_l325_c12_fb03_return_output : unsigned(7 downto 0);
- variable VAR_BIN_OP_MINUS_uxn_stack_h_l325_c12_4b54_left : unsigned(7 downto 0);
- variable VAR_BIN_OP_MINUS_uxn_stack_h_l325_c12_4b54_right : unsigned(7 downto 0);
- variable VAR_BIN_OP_MINUS_uxn_stack_h_l325_c12_4b54_return_output : unsigned(7 downto 0);
- variable VAR_stack_data_set_uxn_stack_h_l326_c2_3cd4_stack_index : unsigned(0 downto 0);
- variable VAR_stack_data_set_uxn_stack_h_l326_c2_3cd4_index : unsigned(7 downto 0);
- variable VAR_stack_data_set_uxn_stack_h_l326_c2_3cd4_value : unsigned(7 downto 0);
- variable VAR_stack_data_set_uxn_stack_h_l326_c2_3cd4_CLOCK_ENABLE : unsigned(0 downto 0);
+ variable VAR_stack_pointer_get_uxn_stack_h_l312_c12_8d3b_stack_index : unsigned(0 downto 0);
+ variable VAR_BIN_OP_MINUS_uxn_stack_h_l312_c12_94b4_left : unsigned(7 downto 0);
+ variable VAR_stack_pointer_get_uxn_stack_h_l312_c12_8d3b_CLOCK_ENABLE : unsigned(0 downto 0);
+ variable VAR_stack_pointer_get_uxn_stack_h_l312_c12_8d3b_return_output : unsigned(7 downto 0);
+ variable VAR_BIN_OP_MINUS_uxn_stack_h_l312_c12_94b4_right : unsigned(0 downto 0);
+ variable VAR_BIN_OP_MINUS_uxn_stack_h_l312_c12_94b4_return_output : unsigned(7 downto 0);
+ variable VAR_BIN_OP_MINUS_uxn_stack_h_l312_c12_fbb5_left : unsigned(7 downto 0);
+ variable VAR_BIN_OP_MINUS_uxn_stack_h_l312_c12_fbb5_right : unsigned(7 downto 0);
+ variable VAR_BIN_OP_MINUS_uxn_stack_h_l312_c12_fbb5_return_output : unsigned(7 downto 0);
+ variable VAR_stack_data_set_uxn_stack_h_l313_c2_d7bc_stack_index : unsigned(0 downto 0);
+ variable VAR_stack_data_set_uxn_stack_h_l313_c2_d7bc_index : unsigned(7 downto 0);
+ variable VAR_stack_data_set_uxn_stack_h_l313_c2_d7bc_value : unsigned(7 downto 0);
+ variable VAR_stack_data_set_uxn_stack_h_l313_c2_d7bc_CLOCK_ENABLE : unsigned(0 downto 0);
  -- State registers comb logic variables
 variable REG_VAR_put_tmp : unsigned(7 downto 0);
 begin
@@ -126,7 +126,7 @@ begin
   REG_VAR_put_tmp := put_tmp;
  -- Constants and things derived from constants alone
      -- Submodule level 0
-     VAR_BIN_OP_MINUS_uxn_stack_h_l325_c12_fb03_right := to_unsigned(1, 1);
+     VAR_BIN_OP_MINUS_uxn_stack_h_l312_c12_94b4_right := to_unsigned(1, 1);
 
  -- Loop to construct simultaneous register transfers for each of the pipeline stages
  -- LATENCY=0 is combinational Logic
@@ -140,48 +140,48 @@ begin
      VAR_value := value;
 
      -- Submodule level 0
-     VAR_stack_data_set_uxn_stack_h_l326_c2_3cd4_CLOCK_ENABLE := VAR_CLOCK_ENABLE;
-     VAR_stack_pointer_get_uxn_stack_h_l325_c12_c7ff_CLOCK_ENABLE := VAR_CLOCK_ENABLE;
-     VAR_BIN_OP_MINUS_uxn_stack_h_l325_c12_4b54_right := VAR_offset;
-     VAR_stack_data_set_uxn_stack_h_l326_c2_3cd4_stack_index := VAR_stack_index;
-     VAR_stack_pointer_get_uxn_stack_h_l325_c12_c7ff_stack_index := VAR_stack_index;
-     VAR_stack_data_set_uxn_stack_h_l326_c2_3cd4_value := VAR_value;
-     -- stack_pointer_get[uxn_stack_h_l325_c12_c7ff] LATENCY=0
+     VAR_stack_data_set_uxn_stack_h_l313_c2_d7bc_CLOCK_ENABLE := VAR_CLOCK_ENABLE;
+     VAR_stack_pointer_get_uxn_stack_h_l312_c12_8d3b_CLOCK_ENABLE := VAR_CLOCK_ENABLE;
+     VAR_BIN_OP_MINUS_uxn_stack_h_l312_c12_fbb5_right := VAR_offset;
+     VAR_stack_data_set_uxn_stack_h_l313_c2_d7bc_stack_index := VAR_stack_index;
+     VAR_stack_pointer_get_uxn_stack_h_l312_c12_8d3b_stack_index := VAR_stack_index;
+     VAR_stack_data_set_uxn_stack_h_l313_c2_d7bc_value := VAR_value;
+     -- stack_pointer_get[uxn_stack_h_l312_c12_8d3b] LATENCY=0
      -- Clock enable
-     stack_pointer_get_uxn_stack_h_l325_c12_c7ff_CLOCK_ENABLE <= VAR_stack_pointer_get_uxn_stack_h_l325_c12_c7ff_CLOCK_ENABLE;
+     stack_pointer_get_uxn_stack_h_l312_c12_8d3b_CLOCK_ENABLE <= VAR_stack_pointer_get_uxn_stack_h_l312_c12_8d3b_CLOCK_ENABLE;
      -- Inputs
-     stack_pointer_get_uxn_stack_h_l325_c12_c7ff_stack_index <= VAR_stack_pointer_get_uxn_stack_h_l325_c12_c7ff_stack_index;
+     stack_pointer_get_uxn_stack_h_l312_c12_8d3b_stack_index <= VAR_stack_pointer_get_uxn_stack_h_l312_c12_8d3b_stack_index;
      -- Outputs
-     VAR_stack_pointer_get_uxn_stack_h_l325_c12_c7ff_return_output := stack_pointer_get_uxn_stack_h_l325_c12_c7ff_return_output;
+     VAR_stack_pointer_get_uxn_stack_h_l312_c12_8d3b_return_output := stack_pointer_get_uxn_stack_h_l312_c12_8d3b_return_output;
 
      -- Submodule level 1
-     VAR_BIN_OP_MINUS_uxn_stack_h_l325_c12_fb03_left := VAR_stack_pointer_get_uxn_stack_h_l325_c12_c7ff_return_output;
-     -- BIN_OP_MINUS[uxn_stack_h_l325_c12_fb03] LATENCY=0
+     VAR_BIN_OP_MINUS_uxn_stack_h_l312_c12_94b4_left := VAR_stack_pointer_get_uxn_stack_h_l312_c12_8d3b_return_output;
+     -- BIN_OP_MINUS[uxn_stack_h_l312_c12_94b4] LATENCY=0
      -- Inputs
-     BIN_OP_MINUS_uxn_stack_h_l325_c12_fb03_left <= VAR_BIN_OP_MINUS_uxn_stack_h_l325_c12_fb03_left;
-     BIN_OP_MINUS_uxn_stack_h_l325_c12_fb03_right <= VAR_BIN_OP_MINUS_uxn_stack_h_l325_c12_fb03_right;
+     BIN_OP_MINUS_uxn_stack_h_l312_c12_94b4_left <= VAR_BIN_OP_MINUS_uxn_stack_h_l312_c12_94b4_left;
+     BIN_OP_MINUS_uxn_stack_h_l312_c12_94b4_right <= VAR_BIN_OP_MINUS_uxn_stack_h_l312_c12_94b4_right;
      -- Outputs
-     VAR_BIN_OP_MINUS_uxn_stack_h_l325_c12_fb03_return_output := BIN_OP_MINUS_uxn_stack_h_l325_c12_fb03_return_output;
+     VAR_BIN_OP_MINUS_uxn_stack_h_l312_c12_94b4_return_output := BIN_OP_MINUS_uxn_stack_h_l312_c12_94b4_return_output;
 
      -- Submodule level 2
-     VAR_BIN_OP_MINUS_uxn_stack_h_l325_c12_4b54_left := VAR_BIN_OP_MINUS_uxn_stack_h_l325_c12_fb03_return_output;
-     -- BIN_OP_MINUS[uxn_stack_h_l325_c12_4b54] LATENCY=0
+     VAR_BIN_OP_MINUS_uxn_stack_h_l312_c12_fbb5_left := VAR_BIN_OP_MINUS_uxn_stack_h_l312_c12_94b4_return_output;
+     -- BIN_OP_MINUS[uxn_stack_h_l312_c12_fbb5] LATENCY=0
      -- Inputs
-     BIN_OP_MINUS_uxn_stack_h_l325_c12_4b54_left <= VAR_BIN_OP_MINUS_uxn_stack_h_l325_c12_4b54_left;
-     BIN_OP_MINUS_uxn_stack_h_l325_c12_4b54_right <= VAR_BIN_OP_MINUS_uxn_stack_h_l325_c12_4b54_right;
+     BIN_OP_MINUS_uxn_stack_h_l312_c12_fbb5_left <= VAR_BIN_OP_MINUS_uxn_stack_h_l312_c12_fbb5_left;
+     BIN_OP_MINUS_uxn_stack_h_l312_c12_fbb5_right <= VAR_BIN_OP_MINUS_uxn_stack_h_l312_c12_fbb5_right;
      -- Outputs
-     VAR_BIN_OP_MINUS_uxn_stack_h_l325_c12_4b54_return_output := BIN_OP_MINUS_uxn_stack_h_l325_c12_4b54_return_output;
+     VAR_BIN_OP_MINUS_uxn_stack_h_l312_c12_fbb5_return_output := BIN_OP_MINUS_uxn_stack_h_l312_c12_fbb5_return_output;
 
      -- Submodule level 3
-     REG_VAR_put_tmp := VAR_BIN_OP_MINUS_uxn_stack_h_l325_c12_4b54_return_output;
-     VAR_stack_data_set_uxn_stack_h_l326_c2_3cd4_index := VAR_BIN_OP_MINUS_uxn_stack_h_l325_c12_4b54_return_output;
-     -- stack_data_set[uxn_stack_h_l326_c2_3cd4] LATENCY=0
+     REG_VAR_put_tmp := VAR_BIN_OP_MINUS_uxn_stack_h_l312_c12_fbb5_return_output;
+     VAR_stack_data_set_uxn_stack_h_l313_c2_d7bc_index := VAR_BIN_OP_MINUS_uxn_stack_h_l312_c12_fbb5_return_output;
+     -- stack_data_set[uxn_stack_h_l313_c2_d7bc] LATENCY=0
      -- Clock enable
-     stack_data_set_uxn_stack_h_l326_c2_3cd4_CLOCK_ENABLE <= VAR_stack_data_set_uxn_stack_h_l326_c2_3cd4_CLOCK_ENABLE;
+     stack_data_set_uxn_stack_h_l313_c2_d7bc_CLOCK_ENABLE <= VAR_stack_data_set_uxn_stack_h_l313_c2_d7bc_CLOCK_ENABLE;
      -- Inputs
-     stack_data_set_uxn_stack_h_l326_c2_3cd4_stack_index <= VAR_stack_data_set_uxn_stack_h_l326_c2_3cd4_stack_index;
-     stack_data_set_uxn_stack_h_l326_c2_3cd4_index <= VAR_stack_data_set_uxn_stack_h_l326_c2_3cd4_index;
-     stack_data_set_uxn_stack_h_l326_c2_3cd4_value <= VAR_stack_data_set_uxn_stack_h_l326_c2_3cd4_value;
+     stack_data_set_uxn_stack_h_l313_c2_d7bc_stack_index <= VAR_stack_data_set_uxn_stack_h_l313_c2_d7bc_stack_index;
+     stack_data_set_uxn_stack_h_l313_c2_d7bc_index <= VAR_stack_data_set_uxn_stack_h_l313_c2_d7bc_index;
+     stack_data_set_uxn_stack_h_l313_c2_d7bc_value <= VAR_stack_data_set_uxn_stack_h_l313_c2_d7bc_value;
      -- Outputs
 
    end if;
