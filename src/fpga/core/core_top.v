@@ -494,9 +494,10 @@ core_bridge_cmd icb (
 
 ////////////////////////////////////////////////////////////////////////////////////////
 
-// UXN PipelineC Module Output
+// UXN PipelineC Module Input / Output
 // synchronous to clk_core_12288
-wire [7:0] uxn_c_out;
+wire [15:0] uxn_c_out;
+wire [15:0] uxn_c_in;
 
 ////////////////////////////////////////////////////////////////////////////////////////
 // video generation
@@ -706,7 +707,7 @@ mf_pllbase mp1 (
 top top
 (
 .clk_12p287999(clk_core_12288),
-
+.uxn_eval_input(uxn_c_in),
 .uxn_eval_return_output(uxn_c_out),
 );
     

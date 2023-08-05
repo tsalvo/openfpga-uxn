@@ -25,24 +25,24 @@ attribute mark_debug : string;
 constant PIPELINE_LATENCY : integer := 0;
 -- All of the wires/regs in function
 -- Each function instance gets signals
--- CONST_SR_8[uxn_ram_main_h_l67_c36_6581]
-signal CONST_SR_8_uxn_ram_main_h_l67_c36_6581_x : unsigned(15 downto 0);
-signal CONST_SR_8_uxn_ram_main_h_l67_c36_6581_return_output : unsigned(15 downto 0);
+-- CONST_SR_8[uxn_ram_main_h_l67_c36_c59c]
+signal CONST_SR_8_uxn_ram_main_h_l67_c36_c59c_x : unsigned(15 downto 0);
+signal CONST_SR_8_uxn_ram_main_h_l67_c36_c59c_return_output : unsigned(15 downto 0);
 
--- main_ram_write[uxn_ram_main_h_l67_c2_d1bc]
-signal main_ram_write_uxn_ram_main_h_l67_c2_d1bc_CLOCK_ENABLE : unsigned(0 downto 0);
-signal main_ram_write_uxn_ram_main_h_l67_c2_d1bc_address : unsigned(15 downto 0);
-signal main_ram_write_uxn_ram_main_h_l67_c2_d1bc_value : unsigned(7 downto 0);
+-- main_ram_write[uxn_ram_main_h_l67_c2_cb6a]
+signal main_ram_write_uxn_ram_main_h_l67_c2_cb6a_CLOCK_ENABLE : unsigned(0 downto 0);
+signal main_ram_write_uxn_ram_main_h_l67_c2_cb6a_address : unsigned(15 downto 0);
+signal main_ram_write_uxn_ram_main_h_l67_c2_cb6a_value : unsigned(7 downto 0);
 
--- BIN_OP_PLUS[uxn_ram_main_h_l68_c17_6040]
-signal BIN_OP_PLUS_uxn_ram_main_h_l68_c17_6040_left : unsigned(15 downto 0);
-signal BIN_OP_PLUS_uxn_ram_main_h_l68_c17_6040_right : unsigned(0 downto 0);
-signal BIN_OP_PLUS_uxn_ram_main_h_l68_c17_6040_return_output : unsigned(16 downto 0);
+-- BIN_OP_PLUS[uxn_ram_main_h_l68_c17_b53c]
+signal BIN_OP_PLUS_uxn_ram_main_h_l68_c17_b53c_left : unsigned(15 downto 0);
+signal BIN_OP_PLUS_uxn_ram_main_h_l68_c17_b53c_right : unsigned(0 downto 0);
+signal BIN_OP_PLUS_uxn_ram_main_h_l68_c17_b53c_return_output : unsigned(16 downto 0);
 
--- main_ram_write[uxn_ram_main_h_l68_c2_4e63]
-signal main_ram_write_uxn_ram_main_h_l68_c2_4e63_CLOCK_ENABLE : unsigned(0 downto 0);
-signal main_ram_write_uxn_ram_main_h_l68_c2_4e63_address : unsigned(15 downto 0);
-signal main_ram_write_uxn_ram_main_h_l68_c2_4e63_value : unsigned(7 downto 0);
+-- main_ram_write[uxn_ram_main_h_l68_c2_949b]
+signal main_ram_write_uxn_ram_main_h_l68_c2_949b_CLOCK_ENABLE : unsigned(0 downto 0);
+signal main_ram_write_uxn_ram_main_h_l68_c2_949b_address : unsigned(15 downto 0);
+signal main_ram_write_uxn_ram_main_h_l68_c2_949b_value : unsigned(7 downto 0);
 
 function CAST_TO_uint8_t_uint16_t( rhs : unsigned) return unsigned is
 
@@ -59,30 +59,30 @@ end function;
 begin
 
 -- SUBMODULE INSTANCES 
--- CONST_SR_8_uxn_ram_main_h_l67_c36_6581
-CONST_SR_8_uxn_ram_main_h_l67_c36_6581 : entity work.CONST_SR_8_uint16_t_0CLK_de264c78 port map (
-CONST_SR_8_uxn_ram_main_h_l67_c36_6581_x,
-CONST_SR_8_uxn_ram_main_h_l67_c36_6581_return_output);
+-- CONST_SR_8_uxn_ram_main_h_l67_c36_c59c
+CONST_SR_8_uxn_ram_main_h_l67_c36_c59c : entity work.CONST_SR_8_uint16_t_0CLK_de264c78 port map (
+CONST_SR_8_uxn_ram_main_h_l67_c36_c59c_x,
+CONST_SR_8_uxn_ram_main_h_l67_c36_c59c_return_output);
 
--- main_ram_write_uxn_ram_main_h_l67_c2_d1bc
-main_ram_write_uxn_ram_main_h_l67_c2_d1bc : entity work.main_ram_write_0CLK_b45f1687 port map (
+-- main_ram_write_uxn_ram_main_h_l67_c2_cb6a
+main_ram_write_uxn_ram_main_h_l67_c2_cb6a : entity work.main_ram_write_0CLK_b45f1687 port map (
 clk,
-main_ram_write_uxn_ram_main_h_l67_c2_d1bc_CLOCK_ENABLE,
-main_ram_write_uxn_ram_main_h_l67_c2_d1bc_address,
-main_ram_write_uxn_ram_main_h_l67_c2_d1bc_value);
+main_ram_write_uxn_ram_main_h_l67_c2_cb6a_CLOCK_ENABLE,
+main_ram_write_uxn_ram_main_h_l67_c2_cb6a_address,
+main_ram_write_uxn_ram_main_h_l67_c2_cb6a_value);
 
--- BIN_OP_PLUS_uxn_ram_main_h_l68_c17_6040
-BIN_OP_PLUS_uxn_ram_main_h_l68_c17_6040 : entity work.BIN_OP_PLUS_uint16_t_uint1_t_0CLK_de264c78 port map (
-BIN_OP_PLUS_uxn_ram_main_h_l68_c17_6040_left,
-BIN_OP_PLUS_uxn_ram_main_h_l68_c17_6040_right,
-BIN_OP_PLUS_uxn_ram_main_h_l68_c17_6040_return_output);
+-- BIN_OP_PLUS_uxn_ram_main_h_l68_c17_b53c
+BIN_OP_PLUS_uxn_ram_main_h_l68_c17_b53c : entity work.BIN_OP_PLUS_uint16_t_uint1_t_0CLK_de264c78 port map (
+BIN_OP_PLUS_uxn_ram_main_h_l68_c17_b53c_left,
+BIN_OP_PLUS_uxn_ram_main_h_l68_c17_b53c_right,
+BIN_OP_PLUS_uxn_ram_main_h_l68_c17_b53c_return_output);
 
--- main_ram_write_uxn_ram_main_h_l68_c2_4e63
-main_ram_write_uxn_ram_main_h_l68_c2_4e63 : entity work.main_ram_write_0CLK_b45f1687 port map (
+-- main_ram_write_uxn_ram_main_h_l68_c2_949b
+main_ram_write_uxn_ram_main_h_l68_c2_949b : entity work.main_ram_write_0CLK_b45f1687 port map (
 clk,
-main_ram_write_uxn_ram_main_h_l68_c2_4e63_CLOCK_ENABLE,
-main_ram_write_uxn_ram_main_h_l68_c2_4e63_address,
-main_ram_write_uxn_ram_main_h_l68_c2_4e63_value);
+main_ram_write_uxn_ram_main_h_l68_c2_949b_CLOCK_ENABLE,
+main_ram_write_uxn_ram_main_h_l68_c2_949b_address,
+main_ram_write_uxn_ram_main_h_l68_c2_949b_value);
 
 
 
@@ -93,30 +93,30 @@ process (
  address,
  value,
  -- All submodule outputs
- CONST_SR_8_uxn_ram_main_h_l67_c36_6581_return_output,
- BIN_OP_PLUS_uxn_ram_main_h_l68_c17_6040_return_output)
+ CONST_SR_8_uxn_ram_main_h_l67_c36_c59c_return_output,
+ BIN_OP_PLUS_uxn_ram_main_h_l68_c17_b53c_return_output)
 is 
  -- All of the wires in function
  variable VAR_CLOCK_ENABLE : unsigned(0 downto 0);
  variable VAR_address : unsigned(15 downto 0);
  variable VAR_value : unsigned(15 downto 0);
- variable VAR_main_ram_write_uxn_ram_main_h_l67_c2_d1bc_address : unsigned(15 downto 0);
- variable VAR_main_ram_write_uxn_ram_main_h_l67_c2_d1bc_value : unsigned(7 downto 0);
- variable VAR_CONST_SR_8_uxn_ram_main_h_l67_c36_6581_return_output : unsigned(15 downto 0);
- variable VAR_CONST_SR_8_uxn_ram_main_h_l67_c36_6581_x : unsigned(15 downto 0);
- variable VAR_CAST_TO_uint8_t_uxn_ram_main_h_l67_c26_dd6f_return_output : unsigned(7 downto 0);
- variable VAR_main_ram_write_uxn_ram_main_h_l67_c2_d1bc_CLOCK_ENABLE : unsigned(0 downto 0);
- variable VAR_main_ram_write_uxn_ram_main_h_l68_c2_4e63_address : unsigned(15 downto 0);
- variable VAR_main_ram_write_uxn_ram_main_h_l68_c2_4e63_value : unsigned(7 downto 0);
- variable VAR_BIN_OP_PLUS_uxn_ram_main_h_l68_c17_6040_left : unsigned(15 downto 0);
- variable VAR_BIN_OP_PLUS_uxn_ram_main_h_l68_c17_6040_right : unsigned(0 downto 0);
- variable VAR_BIN_OP_PLUS_uxn_ram_main_h_l68_c17_6040_return_output : unsigned(16 downto 0);
- variable VAR_CAST_TO_uint8_t_uxn_ram_main_h_l68_c30_7203_return_output : unsigned(7 downto 0);
- variable VAR_main_ram_write_uxn_ram_main_h_l68_c2_4e63_CLOCK_ENABLE : unsigned(0 downto 0);
+ variable VAR_main_ram_write_uxn_ram_main_h_l67_c2_cb6a_address : unsigned(15 downto 0);
+ variable VAR_main_ram_write_uxn_ram_main_h_l67_c2_cb6a_value : unsigned(7 downto 0);
+ variable VAR_CONST_SR_8_uxn_ram_main_h_l67_c36_c59c_return_output : unsigned(15 downto 0);
+ variable VAR_CONST_SR_8_uxn_ram_main_h_l67_c36_c59c_x : unsigned(15 downto 0);
+ variable VAR_CAST_TO_uint8_t_uxn_ram_main_h_l67_c26_8579_return_output : unsigned(7 downto 0);
+ variable VAR_main_ram_write_uxn_ram_main_h_l67_c2_cb6a_CLOCK_ENABLE : unsigned(0 downto 0);
+ variable VAR_main_ram_write_uxn_ram_main_h_l68_c2_949b_address : unsigned(15 downto 0);
+ variable VAR_main_ram_write_uxn_ram_main_h_l68_c2_949b_value : unsigned(7 downto 0);
+ variable VAR_BIN_OP_PLUS_uxn_ram_main_h_l68_c17_b53c_left : unsigned(15 downto 0);
+ variable VAR_BIN_OP_PLUS_uxn_ram_main_h_l68_c17_b53c_right : unsigned(0 downto 0);
+ variable VAR_BIN_OP_PLUS_uxn_ram_main_h_l68_c17_b53c_return_output : unsigned(16 downto 0);
+ variable VAR_CAST_TO_uint8_t_uxn_ram_main_h_l68_c30_0c74_return_output : unsigned(7 downto 0);
+ variable VAR_main_ram_write_uxn_ram_main_h_l68_c2_949b_CLOCK_ENABLE : unsigned(0 downto 0);
 begin
  -- Constants and things derived from constants alone
      -- Submodule level 0
-     VAR_BIN_OP_PLUS_uxn_ram_main_h_l68_c17_6040_right := to_unsigned(1, 1);
+     VAR_BIN_OP_PLUS_uxn_ram_main_h_l68_c17_b53c_right := to_unsigned(1, 1);
 
  -- Loop to construct simultaneous register transfers for each of the pipeline stages
  -- LATENCY=0 is combinational Logic
@@ -129,51 +129,51 @@ begin
      VAR_value := value;
 
      -- Submodule level 0
-     VAR_main_ram_write_uxn_ram_main_h_l67_c2_d1bc_CLOCK_ENABLE := VAR_CLOCK_ENABLE;
-     VAR_main_ram_write_uxn_ram_main_h_l68_c2_4e63_CLOCK_ENABLE := VAR_CLOCK_ENABLE;
-     VAR_BIN_OP_PLUS_uxn_ram_main_h_l68_c17_6040_left := VAR_address;
-     VAR_main_ram_write_uxn_ram_main_h_l67_c2_d1bc_address := VAR_address;
-     VAR_CONST_SR_8_uxn_ram_main_h_l67_c36_6581_x := VAR_value;
-     -- BIN_OP_PLUS[uxn_ram_main_h_l68_c17_6040] LATENCY=0
+     VAR_main_ram_write_uxn_ram_main_h_l67_c2_cb6a_CLOCK_ENABLE := VAR_CLOCK_ENABLE;
+     VAR_main_ram_write_uxn_ram_main_h_l68_c2_949b_CLOCK_ENABLE := VAR_CLOCK_ENABLE;
+     VAR_BIN_OP_PLUS_uxn_ram_main_h_l68_c17_b53c_left := VAR_address;
+     VAR_main_ram_write_uxn_ram_main_h_l67_c2_cb6a_address := VAR_address;
+     VAR_CONST_SR_8_uxn_ram_main_h_l67_c36_c59c_x := VAR_value;
+     -- BIN_OP_PLUS[uxn_ram_main_h_l68_c17_b53c] LATENCY=0
      -- Inputs
-     BIN_OP_PLUS_uxn_ram_main_h_l68_c17_6040_left <= VAR_BIN_OP_PLUS_uxn_ram_main_h_l68_c17_6040_left;
-     BIN_OP_PLUS_uxn_ram_main_h_l68_c17_6040_right <= VAR_BIN_OP_PLUS_uxn_ram_main_h_l68_c17_6040_right;
+     BIN_OP_PLUS_uxn_ram_main_h_l68_c17_b53c_left <= VAR_BIN_OP_PLUS_uxn_ram_main_h_l68_c17_b53c_left;
+     BIN_OP_PLUS_uxn_ram_main_h_l68_c17_b53c_right <= VAR_BIN_OP_PLUS_uxn_ram_main_h_l68_c17_b53c_right;
      -- Outputs
-     VAR_BIN_OP_PLUS_uxn_ram_main_h_l68_c17_6040_return_output := BIN_OP_PLUS_uxn_ram_main_h_l68_c17_6040_return_output;
+     VAR_BIN_OP_PLUS_uxn_ram_main_h_l68_c17_b53c_return_output := BIN_OP_PLUS_uxn_ram_main_h_l68_c17_b53c_return_output;
 
-     -- CONST_SR_8[uxn_ram_main_h_l67_c36_6581] LATENCY=0
+     -- CONST_SR_8[uxn_ram_main_h_l67_c36_c59c] LATENCY=0
      -- Inputs
-     CONST_SR_8_uxn_ram_main_h_l67_c36_6581_x <= VAR_CONST_SR_8_uxn_ram_main_h_l67_c36_6581_x;
+     CONST_SR_8_uxn_ram_main_h_l67_c36_c59c_x <= VAR_CONST_SR_8_uxn_ram_main_h_l67_c36_c59c_x;
      -- Outputs
-     VAR_CONST_SR_8_uxn_ram_main_h_l67_c36_6581_return_output := CONST_SR_8_uxn_ram_main_h_l67_c36_6581_return_output;
+     VAR_CONST_SR_8_uxn_ram_main_h_l67_c36_c59c_return_output := CONST_SR_8_uxn_ram_main_h_l67_c36_c59c_return_output;
 
-     -- CAST_TO_uint8_t[uxn_ram_main_h_l68_c30_7203] LATENCY=0
-     VAR_CAST_TO_uint8_t_uxn_ram_main_h_l68_c30_7203_return_output := CAST_TO_uint8_t_uint16_t(
+     -- CAST_TO_uint8_t[uxn_ram_main_h_l68_c30_0c74] LATENCY=0
+     VAR_CAST_TO_uint8_t_uxn_ram_main_h_l68_c30_0c74_return_output := CAST_TO_uint8_t_uint16_t(
      VAR_value);
 
      -- Submodule level 1
-     VAR_main_ram_write_uxn_ram_main_h_l68_c2_4e63_address := resize(VAR_BIN_OP_PLUS_uxn_ram_main_h_l68_c17_6040_return_output, 16);
-     VAR_main_ram_write_uxn_ram_main_h_l68_c2_4e63_value := VAR_CAST_TO_uint8_t_uxn_ram_main_h_l68_c30_7203_return_output;
-     -- CAST_TO_uint8_t[uxn_ram_main_h_l67_c26_dd6f] LATENCY=0
-     VAR_CAST_TO_uint8_t_uxn_ram_main_h_l67_c26_dd6f_return_output := CAST_TO_uint8_t_uint16_t(
-     VAR_CONST_SR_8_uxn_ram_main_h_l67_c36_6581_return_output);
-
-     -- main_ram_write[uxn_ram_main_h_l68_c2_4e63] LATENCY=0
+     VAR_main_ram_write_uxn_ram_main_h_l68_c2_949b_address := resize(VAR_BIN_OP_PLUS_uxn_ram_main_h_l68_c17_b53c_return_output, 16);
+     VAR_main_ram_write_uxn_ram_main_h_l68_c2_949b_value := VAR_CAST_TO_uint8_t_uxn_ram_main_h_l68_c30_0c74_return_output;
+     -- main_ram_write[uxn_ram_main_h_l68_c2_949b] LATENCY=0
      -- Clock enable
-     main_ram_write_uxn_ram_main_h_l68_c2_4e63_CLOCK_ENABLE <= VAR_main_ram_write_uxn_ram_main_h_l68_c2_4e63_CLOCK_ENABLE;
+     main_ram_write_uxn_ram_main_h_l68_c2_949b_CLOCK_ENABLE <= VAR_main_ram_write_uxn_ram_main_h_l68_c2_949b_CLOCK_ENABLE;
      -- Inputs
-     main_ram_write_uxn_ram_main_h_l68_c2_4e63_address <= VAR_main_ram_write_uxn_ram_main_h_l68_c2_4e63_address;
-     main_ram_write_uxn_ram_main_h_l68_c2_4e63_value <= VAR_main_ram_write_uxn_ram_main_h_l68_c2_4e63_value;
+     main_ram_write_uxn_ram_main_h_l68_c2_949b_address <= VAR_main_ram_write_uxn_ram_main_h_l68_c2_949b_address;
+     main_ram_write_uxn_ram_main_h_l68_c2_949b_value <= VAR_main_ram_write_uxn_ram_main_h_l68_c2_949b_value;
      -- Outputs
 
+     -- CAST_TO_uint8_t[uxn_ram_main_h_l67_c26_8579] LATENCY=0
+     VAR_CAST_TO_uint8_t_uxn_ram_main_h_l67_c26_8579_return_output := CAST_TO_uint8_t_uint16_t(
+     VAR_CONST_SR_8_uxn_ram_main_h_l67_c36_c59c_return_output);
+
      -- Submodule level 2
-     VAR_main_ram_write_uxn_ram_main_h_l67_c2_d1bc_value := VAR_CAST_TO_uint8_t_uxn_ram_main_h_l67_c26_dd6f_return_output;
-     -- main_ram_write[uxn_ram_main_h_l67_c2_d1bc] LATENCY=0
+     VAR_main_ram_write_uxn_ram_main_h_l67_c2_cb6a_value := VAR_CAST_TO_uint8_t_uxn_ram_main_h_l67_c26_8579_return_output;
+     -- main_ram_write[uxn_ram_main_h_l67_c2_cb6a] LATENCY=0
      -- Clock enable
-     main_ram_write_uxn_ram_main_h_l67_c2_d1bc_CLOCK_ENABLE <= VAR_main_ram_write_uxn_ram_main_h_l67_c2_d1bc_CLOCK_ENABLE;
+     main_ram_write_uxn_ram_main_h_l67_c2_cb6a_CLOCK_ENABLE <= VAR_main_ram_write_uxn_ram_main_h_l67_c2_cb6a_CLOCK_ENABLE;
      -- Inputs
-     main_ram_write_uxn_ram_main_h_l67_c2_d1bc_address <= VAR_main_ram_write_uxn_ram_main_h_l67_c2_d1bc_address;
-     main_ram_write_uxn_ram_main_h_l67_c2_d1bc_value <= VAR_main_ram_write_uxn_ram_main_h_l67_c2_d1bc_value;
+     main_ram_write_uxn_ram_main_h_l67_c2_cb6a_address <= VAR_main_ram_write_uxn_ram_main_h_l67_c2_cb6a_address;
+     main_ram_write_uxn_ram_main_h_l67_c2_cb6a_value <= VAR_main_ram_write_uxn_ram_main_h_l67_c2_cb6a_value;
      -- Outputs
 
    end if;

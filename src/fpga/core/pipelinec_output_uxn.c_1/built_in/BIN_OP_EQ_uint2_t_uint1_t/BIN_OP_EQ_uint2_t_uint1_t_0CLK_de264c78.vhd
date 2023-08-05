@@ -11,13 +11,13 @@ use ieee.numeric_std.all;
 -- use ieee.float_pkg.all;
 use work.c_structs_pkg.all;
 -- Submodules: 0
-entity BIN_OP_EQ_uint32_t_uint23_t_0CLK_de264c78 is
+entity BIN_OP_EQ_uint2_t_uint1_t_0CLK_de264c78 is
 port(
- left : in unsigned(31 downto 0);
- right : in unsigned(22 downto 0);
+ left : in unsigned(1 downto 0);
+ right : in unsigned(0 downto 0);
  return_output : out unsigned(0 downto 0));
-end BIN_OP_EQ_uint32_t_uint23_t_0CLK_de264c78;
-architecture arch of BIN_OP_EQ_uint32_t_uint23_t_0CLK_de264c78 is
+end BIN_OP_EQ_uint2_t_uint1_t_0CLK_de264c78;
+architecture arch of BIN_OP_EQ_uint2_t_uint1_t_0CLK_de264c78 is
 -- Types and such
 -- Declarations
 attribute mark_debug : string;
@@ -27,12 +27,12 @@ constant PIPELINE_LATENCY : integer := 0;
 type raw_hdl_variables_t is record
  -- All of the wires in function
 
-  left_resized : std_logic_vector(31 downto 0);
-  right_resized : std_logic_vector(31 downto 0);
+  left_resized : std_logic_vector(1 downto 0);
+  right_resized : std_logic_vector(1 downto 0);
   return_output_bool : boolean;
   return_output : unsigned(0 downto 0);
-  right : unsigned(22 downto 0);
-  left :  unsigned(31 downto 0);
+  right : unsigned(0 downto 0);
+  left :  unsigned(1 downto 0);
 end record;
 
 -- Type for this modules register pipeline
@@ -80,13 +80,13 @@ is
 
     if STAGE = 0 then     
       write_pipe.return_output_bool := true;
-      write_pipe.left_resized := std_logic_vector(resize(write_pipe.left,32));
-      write_pipe.right_resized := std_logic_vector(resize(write_pipe.right,32));
+      write_pipe.left_resized := std_logic_vector(resize(write_pipe.left,2));
+      write_pipe.right_resized := std_logic_vector(resize(write_pipe.right,2));
      
-      -- bits_per_stage_dict[0] = 32
+      -- bits_per_stage_dict[0] = 2
       
         -- Assign output based on range for this stage
-        write_pipe.return_output_bool := write_pipe.return_output_bool and (write_pipe.left_resized(31 downto 0) = write_pipe.right_resized(31 downto 0) );
+        write_pipe.return_output_bool := write_pipe.return_output_bool and (write_pipe.left_resized(1 downto 0) = write_pipe.right_resized(1 downto 0) );
         
       if  write_pipe.return_output_bool then
         write_pipe.return_output := (others => '1');

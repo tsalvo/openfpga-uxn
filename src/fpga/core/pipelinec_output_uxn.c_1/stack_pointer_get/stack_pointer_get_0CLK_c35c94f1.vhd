@@ -25,21 +25,21 @@ attribute mark_debug : string;
 constant PIPELINE_LATENCY : integer := 0;
 -- All of the wires/regs in function
 -- Each function instance gets signals
--- stack_ptr_ram_read[uxn_stack_h_l185_c9_43a0]
-signal stack_ptr_ram_read_uxn_stack_h_l185_c9_43a0_CLOCK_ENABLE : unsigned(0 downto 0);
-signal stack_ptr_ram_read_uxn_stack_h_l185_c9_43a0_stack_index : unsigned(0 downto 0);
-signal stack_ptr_ram_read_uxn_stack_h_l185_c9_43a0_return_output : unsigned(7 downto 0);
+-- stack_ptr_ram_read[uxn_stack_h_l185_c9_43bd]
+signal stack_ptr_ram_read_uxn_stack_h_l185_c9_43bd_CLOCK_ENABLE : unsigned(0 downto 0);
+signal stack_ptr_ram_read_uxn_stack_h_l185_c9_43bd_stack_index : unsigned(0 downto 0);
+signal stack_ptr_ram_read_uxn_stack_h_l185_c9_43bd_return_output : unsigned(7 downto 0);
 
 
 begin
 
 -- SUBMODULE INSTANCES 
--- stack_ptr_ram_read_uxn_stack_h_l185_c9_43a0
-stack_ptr_ram_read_uxn_stack_h_l185_c9_43a0 : entity work.stack_ptr_ram_read_0CLK_8ab28aec port map (
+-- stack_ptr_ram_read_uxn_stack_h_l185_c9_43bd
+stack_ptr_ram_read_uxn_stack_h_l185_c9_43bd : entity work.stack_ptr_ram_read_0CLK_8ab28aec port map (
 clk,
-stack_ptr_ram_read_uxn_stack_h_l185_c9_43a0_CLOCK_ENABLE,
-stack_ptr_ram_read_uxn_stack_h_l185_c9_43a0_stack_index,
-stack_ptr_ram_read_uxn_stack_h_l185_c9_43a0_return_output);
+stack_ptr_ram_read_uxn_stack_h_l185_c9_43bd_CLOCK_ENABLE,
+stack_ptr_ram_read_uxn_stack_h_l185_c9_43bd_stack_index,
+stack_ptr_ram_read_uxn_stack_h_l185_c9_43bd_return_output);
 
 
 
@@ -49,15 +49,15 @@ process (
  -- Inputs
  stack_index,
  -- All submodule outputs
- stack_ptr_ram_read_uxn_stack_h_l185_c9_43a0_return_output)
+ stack_ptr_ram_read_uxn_stack_h_l185_c9_43bd_return_output)
 is 
  -- All of the wires in function
  variable VAR_CLOCK_ENABLE : unsigned(0 downto 0);
  variable VAR_return_output : unsigned(7 downto 0);
  variable VAR_stack_index : unsigned(0 downto 0);
- variable VAR_stack_ptr_ram_read_uxn_stack_h_l185_c9_43a0_stack_index : unsigned(0 downto 0);
- variable VAR_stack_ptr_ram_read_uxn_stack_h_l185_c9_43a0_CLOCK_ENABLE : unsigned(0 downto 0);
- variable VAR_stack_ptr_ram_read_uxn_stack_h_l185_c9_43a0_return_output : unsigned(7 downto 0);
+ variable VAR_stack_ptr_ram_read_uxn_stack_h_l185_c9_43bd_stack_index : unsigned(0 downto 0);
+ variable VAR_stack_ptr_ram_read_uxn_stack_h_l185_c9_43bd_CLOCK_ENABLE : unsigned(0 downto 0);
+ variable VAR_stack_ptr_ram_read_uxn_stack_h_l185_c9_43bd_return_output : unsigned(7 downto 0);
 begin
 
  -- Loop to construct simultaneous register transfers for each of the pipeline stages
@@ -70,18 +70,18 @@ begin
      VAR_stack_index := stack_index;
 
      -- Submodule level 0
-     VAR_stack_ptr_ram_read_uxn_stack_h_l185_c9_43a0_CLOCK_ENABLE := VAR_CLOCK_ENABLE;
-     VAR_stack_ptr_ram_read_uxn_stack_h_l185_c9_43a0_stack_index := VAR_stack_index;
-     -- stack_ptr_ram_read[uxn_stack_h_l185_c9_43a0] LATENCY=0
+     VAR_stack_ptr_ram_read_uxn_stack_h_l185_c9_43bd_CLOCK_ENABLE := VAR_CLOCK_ENABLE;
+     VAR_stack_ptr_ram_read_uxn_stack_h_l185_c9_43bd_stack_index := VAR_stack_index;
+     -- stack_ptr_ram_read[uxn_stack_h_l185_c9_43bd] LATENCY=0
      -- Clock enable
-     stack_ptr_ram_read_uxn_stack_h_l185_c9_43a0_CLOCK_ENABLE <= VAR_stack_ptr_ram_read_uxn_stack_h_l185_c9_43a0_CLOCK_ENABLE;
+     stack_ptr_ram_read_uxn_stack_h_l185_c9_43bd_CLOCK_ENABLE <= VAR_stack_ptr_ram_read_uxn_stack_h_l185_c9_43bd_CLOCK_ENABLE;
      -- Inputs
-     stack_ptr_ram_read_uxn_stack_h_l185_c9_43a0_stack_index <= VAR_stack_ptr_ram_read_uxn_stack_h_l185_c9_43a0_stack_index;
+     stack_ptr_ram_read_uxn_stack_h_l185_c9_43bd_stack_index <= VAR_stack_ptr_ram_read_uxn_stack_h_l185_c9_43bd_stack_index;
      -- Outputs
-     VAR_stack_ptr_ram_read_uxn_stack_h_l185_c9_43a0_return_output := stack_ptr_ram_read_uxn_stack_h_l185_c9_43a0_return_output;
+     VAR_stack_ptr_ram_read_uxn_stack_h_l185_c9_43bd_return_output := stack_ptr_ram_read_uxn_stack_h_l185_c9_43bd_return_output;
 
      -- Submodule level 1
-     VAR_return_output := VAR_stack_ptr_ram_read_uxn_stack_h_l185_c9_43a0_return_output;
+     VAR_return_output := VAR_stack_ptr_ram_read_uxn_stack_h_l185_c9_43bd_return_output;
      -- Last stage of pipeline return wire to return port/reg
      return_output <= VAR_return_output;
    end if;
