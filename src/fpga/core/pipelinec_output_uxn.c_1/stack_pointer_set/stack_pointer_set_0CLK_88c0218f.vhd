@@ -25,21 +25,21 @@ attribute mark_debug : string;
 constant PIPELINE_LATENCY : integer := 0;
 -- All of the wires/regs in function
 -- Each function instance gets signals
--- stack_ptr_ram_write[uxn_stack_h_l181_c2_8e44]
-signal stack_ptr_ram_write_uxn_stack_h_l181_c2_8e44_CLOCK_ENABLE : unsigned(0 downto 0);
-signal stack_ptr_ram_write_uxn_stack_h_l181_c2_8e44_stack_index : unsigned(0 downto 0);
-signal stack_ptr_ram_write_uxn_stack_h_l181_c2_8e44_value : unsigned(7 downto 0);
+-- stack_ptr_ram_write[uxn_stack_h_l181_c2_5869]
+signal stack_ptr_ram_write_uxn_stack_h_l181_c2_5869_CLOCK_ENABLE : unsigned(0 downto 0);
+signal stack_ptr_ram_write_uxn_stack_h_l181_c2_5869_stack_index : unsigned(0 downto 0);
+signal stack_ptr_ram_write_uxn_stack_h_l181_c2_5869_value : unsigned(7 downto 0);
 
 
 begin
 
 -- SUBMODULE INSTANCES 
--- stack_ptr_ram_write_uxn_stack_h_l181_c2_8e44
-stack_ptr_ram_write_uxn_stack_h_l181_c2_8e44 : entity work.stack_ptr_ram_write_0CLK_b45f1687 port map (
+-- stack_ptr_ram_write_uxn_stack_h_l181_c2_5869
+stack_ptr_ram_write_uxn_stack_h_l181_c2_5869 : entity work.stack_ptr_ram_write_0CLK_b45f1687 port map (
 clk,
-stack_ptr_ram_write_uxn_stack_h_l181_c2_8e44_CLOCK_ENABLE,
-stack_ptr_ram_write_uxn_stack_h_l181_c2_8e44_stack_index,
-stack_ptr_ram_write_uxn_stack_h_l181_c2_8e44_value);
+stack_ptr_ram_write_uxn_stack_h_l181_c2_5869_CLOCK_ENABLE,
+stack_ptr_ram_write_uxn_stack_h_l181_c2_5869_stack_index,
+stack_ptr_ram_write_uxn_stack_h_l181_c2_5869_value);
 
 
 
@@ -54,9 +54,9 @@ is
  variable VAR_CLOCK_ENABLE : unsigned(0 downto 0);
  variable VAR_stack_index : unsigned(0 downto 0);
  variable VAR_value : unsigned(7 downto 0);
- variable VAR_stack_ptr_ram_write_uxn_stack_h_l181_c2_8e44_stack_index : unsigned(0 downto 0);
- variable VAR_stack_ptr_ram_write_uxn_stack_h_l181_c2_8e44_value : unsigned(7 downto 0);
- variable VAR_stack_ptr_ram_write_uxn_stack_h_l181_c2_8e44_CLOCK_ENABLE : unsigned(0 downto 0);
+ variable VAR_stack_ptr_ram_write_uxn_stack_h_l181_c2_5869_stack_index : unsigned(0 downto 0);
+ variable VAR_stack_ptr_ram_write_uxn_stack_h_l181_c2_5869_value : unsigned(7 downto 0);
+ variable VAR_stack_ptr_ram_write_uxn_stack_h_l181_c2_5869_CLOCK_ENABLE : unsigned(0 downto 0);
 begin
 
  -- Loop to construct simultaneous register transfers for each of the pipeline stages
@@ -70,15 +70,15 @@ begin
      VAR_value := value;
 
      -- Submodule level 0
-     VAR_stack_ptr_ram_write_uxn_stack_h_l181_c2_8e44_CLOCK_ENABLE := VAR_CLOCK_ENABLE;
-     VAR_stack_ptr_ram_write_uxn_stack_h_l181_c2_8e44_stack_index := VAR_stack_index;
-     VAR_stack_ptr_ram_write_uxn_stack_h_l181_c2_8e44_value := VAR_value;
-     -- stack_ptr_ram_write[uxn_stack_h_l181_c2_8e44] LATENCY=0
+     VAR_stack_ptr_ram_write_uxn_stack_h_l181_c2_5869_CLOCK_ENABLE := VAR_CLOCK_ENABLE;
+     VAR_stack_ptr_ram_write_uxn_stack_h_l181_c2_5869_stack_index := VAR_stack_index;
+     VAR_stack_ptr_ram_write_uxn_stack_h_l181_c2_5869_value := VAR_value;
+     -- stack_ptr_ram_write[uxn_stack_h_l181_c2_5869] LATENCY=0
      -- Clock enable
-     stack_ptr_ram_write_uxn_stack_h_l181_c2_8e44_CLOCK_ENABLE <= VAR_stack_ptr_ram_write_uxn_stack_h_l181_c2_8e44_CLOCK_ENABLE;
+     stack_ptr_ram_write_uxn_stack_h_l181_c2_5869_CLOCK_ENABLE <= VAR_stack_ptr_ram_write_uxn_stack_h_l181_c2_5869_CLOCK_ENABLE;
      -- Inputs
-     stack_ptr_ram_write_uxn_stack_h_l181_c2_8e44_stack_index <= VAR_stack_ptr_ram_write_uxn_stack_h_l181_c2_8e44_stack_index;
-     stack_ptr_ram_write_uxn_stack_h_l181_c2_8e44_value <= VAR_stack_ptr_ram_write_uxn_stack_h_l181_c2_8e44_value;
+     stack_ptr_ram_write_uxn_stack_h_l181_c2_5869_stack_index <= VAR_stack_ptr_ram_write_uxn_stack_h_l181_c2_5869_stack_index;
+     stack_ptr_ram_write_uxn_stack_h_l181_c2_5869_value <= VAR_stack_ptr_ram_write_uxn_stack_h_l181_c2_5869_value;
      -- Outputs
 
    end if;

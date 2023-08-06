@@ -66,7 +66,7 @@ is
  variable VAR_CLOCK_ENABLE : unsigned(0 downto 0);
  variable VAR_stack_index : unsigned(0 downto 0);
  variable VAR_value : unsigned(7 downto 0);
- variable VAR_CAST_TO_uint32_t_uxn_stack_h_l144_c21_6d6c_return_output : unsigned(31 downto 0);
+ variable VAR_CAST_TO_uint32_t_uxn_stack_h_l144_c21_1b7f_return_output : unsigned(31 downto 0);
  variable VAR_stack_p_w_wr_en : unsigned(0 downto 0);
  variable VAR_stack_p_w_rw_valid : unsigned(0 downto 0);
  variable VAR_stack_p_w_rd_valid : unsigned(0 downto 0);
@@ -96,12 +96,12 @@ begin
      -- Submodule level 0
      REG_VAR_stack_p_w_rdaddr := stack_p_w_rdaddr;
      REG_VAR_stack_p_w_wdata := VAR_value;
-     -- CAST_TO_uint32_t[uxn_stack_h_l144_c21_6d6c] LATENCY=0
-     VAR_CAST_TO_uint32_t_uxn_stack_h_l144_c21_6d6c_return_output := CAST_TO_uint32_t_uint1_t(
+     -- CAST_TO_uint32_t[uxn_stack_h_l144_c21_1b7f] LATENCY=0
+     VAR_CAST_TO_uint32_t_uxn_stack_h_l144_c21_1b7f_return_output := CAST_TO_uint32_t_uint1_t(
      VAR_stack_index);
 
      -- Submodule level 1
-     REG_VAR_stack_p_w_rwaddr := VAR_CAST_TO_uint32_t_uxn_stack_h_l144_c21_6d6c_return_output;
+     REG_VAR_stack_p_w_rwaddr := VAR_CAST_TO_uint32_t_uxn_stack_h_l144_c21_1b7f_return_output;
    end if;
  end loop;
 

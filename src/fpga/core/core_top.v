@@ -527,11 +527,9 @@ assign video_hs = vidout_hs;
     localparam  VID_H_ACTIVE = 'd320;
     localparam  VID_H_TOTAL = 'd400;
 
-    reg led_r;
-    reg led_g;
-    reg led_b;
-    reg led_error;
-    reg led_blink;
+    reg [3:0] uxn_c_current_pixel_r;
+    reg [3:0] uxn_c_current_pixel_g;
+    reg [3:0] uxn_c_current_pixel_b;
 
     reg [15:0]  frame_count;
     
@@ -556,11 +554,9 @@ always @(posedge clk_core_12288 or negedge reset_n) begin
         
     end else begin
     
-        led_error <= uxn_c_out[4];
-        led_blink <= uxn_c_out[3];
-        led_r <= uxn_c_out[2];
-        led_g <= uxn_c_out[1];
-        led_b <= uxn_c_out[0];
+        uxn_c_current_pixel_r <= uxn_c_out[11:8];
+        uxn_c_current_pixel_g <= uxn_c_out[7:4];
+        uxn_c_current_pixel_b <= uxn_c_out[3:0];
     
         vidout_de <= 0;
         vidout_skip <= 0;
@@ -605,31 +601,12 @@ always @(posedge clk_core_12288 or negedge reset_n) begin
                 // data enable. this is the active region of the line
                 vidout_de <= 1;
                 
-                if (x_count <= VID_H_BPORCH + 20 && y_count <= VID_V_BPORCH + 20) begin
-                    vidout_rgb[23:16] <= led_r ? 8'hFF : 8'h00;
-                    vidout_rgb[15:8]  <= led_r ? 8'h00 : 8'h00;
-                    vidout_rgb[7:0]   <= led_r ? 8'h00 : 8'h00;
-                end else if (x_count <= VID_H_BPORCH + 40 && y_count <= VID_V_BPORCH + 20) begin
-                    vidout_rgb[23:16] <= led_g ? 8'h00 : 8'h00;
-                    vidout_rgb[15:8]  <= led_g ? 8'hFF : 8'h00;
-                    vidout_rgb[7:0]   <= led_g ? 8'h00 : 8'h00;
-                end else if (x_count <= VID_H_BPORCH + 60 && y_count <= VID_V_BPORCH + 20) begin
-                    vidout_rgb[23:16] <= led_b ? 8'h00 : 8'h00;
-                    vidout_rgb[15:8]  <= led_b ? 8'h00 : 8'h00;
-                    vidout_rgb[7:0]   <= led_b ? 8'hFF : 8'h00;
-                end else if (x_count <= VID_H_BPORCH + 80 && y_count <= VID_V_BPORCH + 20) begin
-                    vidout_rgb[23:16] <= led_blink ? 8'hFF : 8'h00;
-                    vidout_rgb[15:8]  <= led_blink ? 8'hFF : 8'h00;
-                    vidout_rgb[7:0]   <= led_blink ? 8'hFF : 8'h00;
-                end else if (x_count <= VID_H_BPORCH + 100 && y_count <= VID_V_BPORCH + 20) begin
-                    vidout_rgb[23:16] <= led_error ? 8'h7F : 8'h00;
-                    vidout_rgb[15:8]  <= led_error ? 8'h7F : 8'h00;
-                    vidout_rgb[7:0]   <= led_error ? 8'h00 : 8'h00;
-                end else begin 
-                    vidout_rgb[23:16] <= 8'h00;
-                    vidout_rgb[15:8]  <= 8'h00;
-                    vidout_rgb[7:0]   <= 8'h00;
-                end
+                vidout_rgb[23:20] <= uxn_c_current_pixel_r;
+                vidout_rgb[19:16] <= 4'h00;
+                vidout_rgb[15:12] <= uxn_c_current_pixel_g;
+                vidout_rgb[11:8] <= 4'h00;
+                vidout_rgb[7:4] <= uxn_c_current_pixel_b;
+                vidout_rgb[3:0] <= 4'h00;
                 
             end 
         end
@@ -708,7 +685,7 @@ top top
 (
 .clk_12p287999(clk_core_12288),
 .uxn_eval_input(uxn_c_in),
-.uxn_eval_return_output(uxn_c_out),
+.uxn_eval_return_output(uxn_c_out)
 );
     
 endmodule

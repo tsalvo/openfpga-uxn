@@ -30,17 +30,17 @@ signal main_r_rdaddr : unsigned(31 downto 0) := to_unsigned(0, 32);
 signal REG_COMB_main_r_rdaddr : unsigned(31 downto 0);
 
 -- Each function instance gets signals
--- main_ram[uxn_ram_main_h_l22_c38_a987]
-signal main_ram_uxn_ram_main_h_l22_c38_a987_CLOCK_ENABLE : unsigned(0 downto 0);
-signal main_ram_uxn_ram_main_h_l22_c38_a987_addr0 : unsigned(31 downto 0);
-signal main_ram_uxn_ram_main_h_l22_c38_a987_wr_data0 : unsigned(7 downto 0);
-signal main_ram_uxn_ram_main_h_l22_c38_a987_wr_en0 : unsigned(0 downto 0);
-signal main_ram_uxn_ram_main_h_l22_c38_a987_valid0 : unsigned(0 downto 0);
-signal main_ram_uxn_ram_main_h_l22_c38_a987_rd_en0 : unsigned(0 downto 0);
-signal main_ram_uxn_ram_main_h_l22_c38_a987_addr1 : unsigned(31 downto 0);
-signal main_ram_uxn_ram_main_h_l22_c38_a987_valid1 : unsigned(0 downto 0);
-signal main_ram_uxn_ram_main_h_l22_c38_a987_rd_en1 : unsigned(0 downto 0);
-signal main_ram_uxn_ram_main_h_l22_c38_a987_return_output : main_ram_outputs_t;
+-- main_ram[uxn_ram_main_h_l22_c38_247e]
+signal main_ram_uxn_ram_main_h_l22_c38_247e_CLOCK_ENABLE : unsigned(0 downto 0);
+signal main_ram_uxn_ram_main_h_l22_c38_247e_addr0 : unsigned(31 downto 0);
+signal main_ram_uxn_ram_main_h_l22_c38_247e_wr_data0 : unsigned(7 downto 0);
+signal main_ram_uxn_ram_main_h_l22_c38_247e_wr_en0 : unsigned(0 downto 0);
+signal main_ram_uxn_ram_main_h_l22_c38_247e_valid0 : unsigned(0 downto 0);
+signal main_ram_uxn_ram_main_h_l22_c38_247e_rd_en0 : unsigned(0 downto 0);
+signal main_ram_uxn_ram_main_h_l22_c38_247e_addr1 : unsigned(31 downto 0);
+signal main_ram_uxn_ram_main_h_l22_c38_247e_valid1 : unsigned(0 downto 0);
+signal main_ram_uxn_ram_main_h_l22_c38_247e_rd_en1 : unsigned(0 downto 0);
+signal main_ram_uxn_ram_main_h_l22_c38_247e_return_output : main_ram_outputs_t;
 
 function CAST_TO_uint32_t_uint16_t( rhs : unsigned) return unsigned is
 
@@ -57,19 +57,19 @@ end function;
 begin
 
 -- SUBMODULE INSTANCES 
--- main_ram_uxn_ram_main_h_l22_c38_a987
-main_ram_uxn_ram_main_h_l22_c38_a987 : entity work.main_ram_0CLK_b45f1687 port map (
+-- main_ram_uxn_ram_main_h_l22_c38_247e
+main_ram_uxn_ram_main_h_l22_c38_247e : entity work.main_ram_0CLK_b45f1687 port map (
 clk,
-main_ram_uxn_ram_main_h_l22_c38_a987_CLOCK_ENABLE,
-main_ram_uxn_ram_main_h_l22_c38_a987_addr0,
-main_ram_uxn_ram_main_h_l22_c38_a987_wr_data0,
-main_ram_uxn_ram_main_h_l22_c38_a987_wr_en0,
-main_ram_uxn_ram_main_h_l22_c38_a987_valid0,
-main_ram_uxn_ram_main_h_l22_c38_a987_rd_en0,
-main_ram_uxn_ram_main_h_l22_c38_a987_addr1,
-main_ram_uxn_ram_main_h_l22_c38_a987_valid1,
-main_ram_uxn_ram_main_h_l22_c38_a987_rd_en1,
-main_ram_uxn_ram_main_h_l22_c38_a987_return_output);
+main_ram_uxn_ram_main_h_l22_c38_247e_CLOCK_ENABLE,
+main_ram_uxn_ram_main_h_l22_c38_247e_addr0,
+main_ram_uxn_ram_main_h_l22_c38_247e_wr_data0,
+main_ram_uxn_ram_main_h_l22_c38_247e_wr_en0,
+main_ram_uxn_ram_main_h_l22_c38_247e_valid0,
+main_ram_uxn_ram_main_h_l22_c38_247e_rd_en0,
+main_ram_uxn_ram_main_h_l22_c38_247e_addr1,
+main_ram_uxn_ram_main_h_l22_c38_247e_valid1,
+main_ram_uxn_ram_main_h_l22_c38_247e_rd_en1,
+main_ram_uxn_ram_main_h_l22_c38_247e_return_output);
 
 
 
@@ -81,25 +81,25 @@ process (
  -- Registers
  main_r_rdaddr,
  -- All submodule outputs
- main_ram_uxn_ram_main_h_l22_c38_a987_return_output)
+ main_ram_uxn_ram_main_h_l22_c38_247e_return_output)
 is 
  -- All of the wires in function
  variable VAR_CLOCK_ENABLE : unsigned(0 downto 0);
  variable VAR_return_output : unsigned(7 downto 0);
  variable VAR_address : unsigned(15 downto 0);
- variable VAR_CAST_TO_uint32_t_uxn_ram_main_h_l19_c18_a8e1_return_output : unsigned(31 downto 0);
+ variable VAR_CAST_TO_uint32_t_uxn_ram_main_h_l19_c18_0789_return_output : unsigned(31 downto 0);
  variable VAR_main_r_ram_out : main_ram_outputs_t;
- variable VAR_main_ram_uxn_ram_main_h_l22_c38_a987_addr0 : unsigned(31 downto 0);
- variable VAR_main_ram_uxn_ram_main_h_l22_c38_a987_wr_data0 : unsigned(7 downto 0);
- variable VAR_main_ram_uxn_ram_main_h_l22_c38_a987_wr_en0 : unsigned(0 downto 0);
- variable VAR_main_ram_uxn_ram_main_h_l22_c38_a987_valid0 : unsigned(0 downto 0);
- variable VAR_main_ram_uxn_ram_main_h_l22_c38_a987_rd_en0 : unsigned(0 downto 0);
- variable VAR_main_ram_uxn_ram_main_h_l22_c38_a987_addr1 : unsigned(31 downto 0);
- variable VAR_main_ram_uxn_ram_main_h_l22_c38_a987_valid1 : unsigned(0 downto 0);
- variable VAR_main_ram_uxn_ram_main_h_l22_c38_a987_rd_en1 : unsigned(0 downto 0);
- variable VAR_main_ram_uxn_ram_main_h_l22_c38_a987_CLOCK_ENABLE : unsigned(0 downto 0);
- variable VAR_main_ram_uxn_ram_main_h_l22_c38_a987_return_output : main_ram_outputs_t;
- variable VAR_CONST_REF_RD_uint8_t_main_ram_outputs_t_rd_data1_d41d_uxn_ram_main_h_l33_c9_d5ef_return_output : unsigned(7 downto 0);
+ variable VAR_main_ram_uxn_ram_main_h_l22_c38_247e_addr0 : unsigned(31 downto 0);
+ variable VAR_main_ram_uxn_ram_main_h_l22_c38_247e_wr_data0 : unsigned(7 downto 0);
+ variable VAR_main_ram_uxn_ram_main_h_l22_c38_247e_wr_en0 : unsigned(0 downto 0);
+ variable VAR_main_ram_uxn_ram_main_h_l22_c38_247e_valid0 : unsigned(0 downto 0);
+ variable VAR_main_ram_uxn_ram_main_h_l22_c38_247e_rd_en0 : unsigned(0 downto 0);
+ variable VAR_main_ram_uxn_ram_main_h_l22_c38_247e_addr1 : unsigned(31 downto 0);
+ variable VAR_main_ram_uxn_ram_main_h_l22_c38_247e_valid1 : unsigned(0 downto 0);
+ variable VAR_main_ram_uxn_ram_main_h_l22_c38_247e_rd_en1 : unsigned(0 downto 0);
+ variable VAR_main_ram_uxn_ram_main_h_l22_c38_247e_CLOCK_ENABLE : unsigned(0 downto 0);
+ variable VAR_main_ram_uxn_ram_main_h_l22_c38_247e_return_output : main_ram_outputs_t;
+ variable VAR_CONST_REF_RD_uint8_t_main_ram_outputs_t_rd_data1_d41d_uxn_ram_main_h_l33_c9_1911_return_output : unsigned(7 downto 0);
  -- State registers comb logic variables
 variable REG_VAR_main_r_rdaddr : unsigned(31 downto 0);
 begin
@@ -109,13 +109,13 @@ begin
   REG_VAR_main_r_rdaddr := main_r_rdaddr;
  -- Constants and things derived from constants alone
      -- Submodule level 0
-     VAR_main_ram_uxn_ram_main_h_l22_c38_a987_addr0 := resize(to_unsigned(0, 1), 32);
-     VAR_main_ram_uxn_ram_main_h_l22_c38_a987_rd_en0 := to_unsigned(0, 1);
-     VAR_main_ram_uxn_ram_main_h_l22_c38_a987_rd_en1 := to_unsigned(1, 1);
-     VAR_main_ram_uxn_ram_main_h_l22_c38_a987_valid1 := to_unsigned(1, 1);
-     VAR_main_ram_uxn_ram_main_h_l22_c38_a987_wr_data0 := resize(to_unsigned(0, 1), 8);
-     VAR_main_ram_uxn_ram_main_h_l22_c38_a987_wr_en0 := to_unsigned(0, 1);
-     VAR_main_ram_uxn_ram_main_h_l22_c38_a987_valid0 := to_unsigned(0, 1);
+     VAR_main_ram_uxn_ram_main_h_l22_c38_247e_addr0 := resize(to_unsigned(0, 1), 32);
+     VAR_main_ram_uxn_ram_main_h_l22_c38_247e_valid1 := to_unsigned(1, 1);
+     VAR_main_ram_uxn_ram_main_h_l22_c38_247e_valid0 := to_unsigned(0, 1);
+     VAR_main_ram_uxn_ram_main_h_l22_c38_247e_rd_en1 := to_unsigned(1, 1);
+     VAR_main_ram_uxn_ram_main_h_l22_c38_247e_wr_data0 := resize(to_unsigned(0, 1), 8);
+     VAR_main_ram_uxn_ram_main_h_l22_c38_247e_rd_en0 := to_unsigned(0, 1);
+     VAR_main_ram_uxn_ram_main_h_l22_c38_247e_wr_en0 := to_unsigned(0, 1);
 
  -- Loop to construct simultaneous register transfers for each of the pipeline stages
  -- LATENCY=0 is combinational Logic
@@ -127,35 +127,35 @@ begin
      VAR_address := address;
 
      -- Submodule level 0
-     VAR_main_ram_uxn_ram_main_h_l22_c38_a987_CLOCK_ENABLE := VAR_CLOCK_ENABLE;
-     -- CAST_TO_uint32_t[uxn_ram_main_h_l19_c18_a8e1] LATENCY=0
-     VAR_CAST_TO_uint32_t_uxn_ram_main_h_l19_c18_a8e1_return_output := CAST_TO_uint32_t_uint16_t(
+     VAR_main_ram_uxn_ram_main_h_l22_c38_247e_CLOCK_ENABLE := VAR_CLOCK_ENABLE;
+     -- CAST_TO_uint32_t[uxn_ram_main_h_l19_c18_0789] LATENCY=0
+     VAR_CAST_TO_uint32_t_uxn_ram_main_h_l19_c18_0789_return_output := CAST_TO_uint32_t_uint16_t(
      VAR_address);
 
      -- Submodule level 1
-     REG_VAR_main_r_rdaddr := VAR_CAST_TO_uint32_t_uxn_ram_main_h_l19_c18_a8e1_return_output;
-     VAR_main_ram_uxn_ram_main_h_l22_c38_a987_addr1 := VAR_CAST_TO_uint32_t_uxn_ram_main_h_l19_c18_a8e1_return_output;
-     -- main_ram[uxn_ram_main_h_l22_c38_a987] LATENCY=0
+     REG_VAR_main_r_rdaddr := VAR_CAST_TO_uint32_t_uxn_ram_main_h_l19_c18_0789_return_output;
+     VAR_main_ram_uxn_ram_main_h_l22_c38_247e_addr1 := VAR_CAST_TO_uint32_t_uxn_ram_main_h_l19_c18_0789_return_output;
+     -- main_ram[uxn_ram_main_h_l22_c38_247e] LATENCY=0
      -- Clock enable
-     main_ram_uxn_ram_main_h_l22_c38_a987_CLOCK_ENABLE <= VAR_main_ram_uxn_ram_main_h_l22_c38_a987_CLOCK_ENABLE;
+     main_ram_uxn_ram_main_h_l22_c38_247e_CLOCK_ENABLE <= VAR_main_ram_uxn_ram_main_h_l22_c38_247e_CLOCK_ENABLE;
      -- Inputs
-     main_ram_uxn_ram_main_h_l22_c38_a987_addr0 <= VAR_main_ram_uxn_ram_main_h_l22_c38_a987_addr0;
-     main_ram_uxn_ram_main_h_l22_c38_a987_wr_data0 <= VAR_main_ram_uxn_ram_main_h_l22_c38_a987_wr_data0;
-     main_ram_uxn_ram_main_h_l22_c38_a987_wr_en0 <= VAR_main_ram_uxn_ram_main_h_l22_c38_a987_wr_en0;
-     main_ram_uxn_ram_main_h_l22_c38_a987_valid0 <= VAR_main_ram_uxn_ram_main_h_l22_c38_a987_valid0;
-     main_ram_uxn_ram_main_h_l22_c38_a987_rd_en0 <= VAR_main_ram_uxn_ram_main_h_l22_c38_a987_rd_en0;
-     main_ram_uxn_ram_main_h_l22_c38_a987_addr1 <= VAR_main_ram_uxn_ram_main_h_l22_c38_a987_addr1;
-     main_ram_uxn_ram_main_h_l22_c38_a987_valid1 <= VAR_main_ram_uxn_ram_main_h_l22_c38_a987_valid1;
-     main_ram_uxn_ram_main_h_l22_c38_a987_rd_en1 <= VAR_main_ram_uxn_ram_main_h_l22_c38_a987_rd_en1;
+     main_ram_uxn_ram_main_h_l22_c38_247e_addr0 <= VAR_main_ram_uxn_ram_main_h_l22_c38_247e_addr0;
+     main_ram_uxn_ram_main_h_l22_c38_247e_wr_data0 <= VAR_main_ram_uxn_ram_main_h_l22_c38_247e_wr_data0;
+     main_ram_uxn_ram_main_h_l22_c38_247e_wr_en0 <= VAR_main_ram_uxn_ram_main_h_l22_c38_247e_wr_en0;
+     main_ram_uxn_ram_main_h_l22_c38_247e_valid0 <= VAR_main_ram_uxn_ram_main_h_l22_c38_247e_valid0;
+     main_ram_uxn_ram_main_h_l22_c38_247e_rd_en0 <= VAR_main_ram_uxn_ram_main_h_l22_c38_247e_rd_en0;
+     main_ram_uxn_ram_main_h_l22_c38_247e_addr1 <= VAR_main_ram_uxn_ram_main_h_l22_c38_247e_addr1;
+     main_ram_uxn_ram_main_h_l22_c38_247e_valid1 <= VAR_main_ram_uxn_ram_main_h_l22_c38_247e_valid1;
+     main_ram_uxn_ram_main_h_l22_c38_247e_rd_en1 <= VAR_main_ram_uxn_ram_main_h_l22_c38_247e_rd_en1;
      -- Outputs
-     VAR_main_ram_uxn_ram_main_h_l22_c38_a987_return_output := main_ram_uxn_ram_main_h_l22_c38_a987_return_output;
+     VAR_main_ram_uxn_ram_main_h_l22_c38_247e_return_output := main_ram_uxn_ram_main_h_l22_c38_247e_return_output;
 
      -- Submodule level 2
-     -- CONST_REF_RD_uint8_t_main_ram_outputs_t_rd_data1_d41d[uxn_ram_main_h_l33_c9_d5ef] LATENCY=0
-     VAR_CONST_REF_RD_uint8_t_main_ram_outputs_t_rd_data1_d41d_uxn_ram_main_h_l33_c9_d5ef_return_output := VAR_main_ram_uxn_ram_main_h_l22_c38_a987_return_output.rd_data1;
+     -- CONST_REF_RD_uint8_t_main_ram_outputs_t_rd_data1_d41d[uxn_ram_main_h_l33_c9_1911] LATENCY=0
+     VAR_CONST_REF_RD_uint8_t_main_ram_outputs_t_rd_data1_d41d_uxn_ram_main_h_l33_c9_1911_return_output := VAR_main_ram_uxn_ram_main_h_l22_c38_247e_return_output.rd_data1;
 
      -- Submodule level 3
-     VAR_return_output := VAR_CONST_REF_RD_uint8_t_main_ram_outputs_t_rd_data1_d41d_uxn_ram_main_h_l33_c9_d5ef_return_output;
+     VAR_return_output := VAR_CONST_REF_RD_uint8_t_main_ram_outputs_t_rd_data1_d41d_uxn_ram_main_h_l33_c9_1911_return_output;
      -- Last stage of pipeline return wire to return port/reg
      return_output <= VAR_return_output;
    end if;

@@ -63,7 +63,7 @@ is
  variable VAR_CLOCK_ENABLE : unsigned(0 downto 0);
  variable VAR_address : unsigned(7 downto 0);
  variable VAR_value : unsigned(7 downto 0);
- variable VAR_CAST_TO_uint32_t_uxn_ram_device_h_l38_c20_ac18_return_output : unsigned(31 downto 0);
+ variable VAR_CAST_TO_uint32_t_uxn_ram_device_h_l38_c20_e3bf_return_output : unsigned(31 downto 0);
  variable VAR_device_w_ram_out : device_ram_outputs_t;
  -- State registers comb logic variables
 variable REG_VAR_device_w_rwaddr : unsigned(31 downto 0);
@@ -87,12 +87,12 @@ begin
 
      -- Submodule level 0
      REG_VAR_device_w_wdata := VAR_value;
-     -- CAST_TO_uint32_t[uxn_ram_device_h_l38_c20_ac18] LATENCY=0
-     VAR_CAST_TO_uint32_t_uxn_ram_device_h_l38_c20_ac18_return_output := CAST_TO_uint32_t_uint8_t(
+     -- CAST_TO_uint32_t[uxn_ram_device_h_l38_c20_e3bf] LATENCY=0
+     VAR_CAST_TO_uint32_t_uxn_ram_device_h_l38_c20_e3bf_return_output := CAST_TO_uint32_t_uint8_t(
      VAR_address);
 
      -- Submodule level 1
-     REG_VAR_device_w_rwaddr := VAR_CAST_TO_uint32_t_uxn_ram_device_h_l38_c20_ac18_return_output;
+     REG_VAR_device_w_rwaddr := VAR_CAST_TO_uint32_t_uxn_ram_device_h_l38_c20_e3bf_return_output;
    end if;
  end loop;
 

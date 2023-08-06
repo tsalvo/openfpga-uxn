@@ -25,46 +25,46 @@ attribute mark_debug : string;
 constant PIPELINE_LATENCY : integer := 0;
 -- All of the wires/regs in function
 -- Each function instance gets signals
--- stack_pointer_get[uxn_registers_h_l16_c37_3552]
-signal stack_pointer_get_uxn_registers_h_l16_c37_3552_CLOCK_ENABLE : unsigned(0 downto 0);
-signal stack_pointer_get_uxn_registers_h_l16_c37_3552_stack_index : unsigned(0 downto 0);
-signal stack_pointer_get_uxn_registers_h_l16_c37_3552_return_output : unsigned(7 downto 0);
+-- stack_pointer_get[uxn_registers_h_l16_c37_604d]
+signal stack_pointer_get_uxn_registers_h_l16_c37_604d_CLOCK_ENABLE : unsigned(0 downto 0);
+signal stack_pointer_get_uxn_registers_h_l16_c37_604d_stack_index : unsigned(0 downto 0);
+signal stack_pointer_get_uxn_registers_h_l16_c37_604d_return_output : unsigned(7 downto 0);
 
--- BIN_OP_MINUS[uxn_registers_h_l16_c37_7fb5]
-signal BIN_OP_MINUS_uxn_registers_h_l16_c37_7fb5_left : unsigned(7 downto 0);
-signal BIN_OP_MINUS_uxn_registers_h_l16_c37_7fb5_right : unsigned(1 downto 0);
-signal BIN_OP_MINUS_uxn_registers_h_l16_c37_7fb5_return_output : unsigned(7 downto 0);
+-- BIN_OP_MINUS[uxn_registers_h_l16_c37_1204]
+signal BIN_OP_MINUS_uxn_registers_h_l16_c37_1204_left : unsigned(7 downto 0);
+signal BIN_OP_MINUS_uxn_registers_h_l16_c37_1204_right : unsigned(1 downto 0);
+signal BIN_OP_MINUS_uxn_registers_h_l16_c37_1204_return_output : unsigned(7 downto 0);
 
--- stack_data_get[uxn_registers_h_l16_c9_e001]
-signal stack_data_get_uxn_registers_h_l16_c9_e001_CLOCK_ENABLE : unsigned(0 downto 0);
-signal stack_data_get_uxn_registers_h_l16_c9_e001_stack_index : unsigned(0 downto 0);
-signal stack_data_get_uxn_registers_h_l16_c9_e001_index : unsigned(7 downto 0);
-signal stack_data_get_uxn_registers_h_l16_c9_e001_return_output : unsigned(7 downto 0);
+-- stack_data_get[uxn_registers_h_l16_c9_8d01]
+signal stack_data_get_uxn_registers_h_l16_c9_8d01_CLOCK_ENABLE : unsigned(0 downto 0);
+signal stack_data_get_uxn_registers_h_l16_c9_8d01_stack_index : unsigned(0 downto 0);
+signal stack_data_get_uxn_registers_h_l16_c9_8d01_index : unsigned(7 downto 0);
+signal stack_data_get_uxn_registers_h_l16_c9_8d01_return_output : unsigned(7 downto 0);
 
 
 begin
 
 -- SUBMODULE INSTANCES 
--- stack_pointer_get_uxn_registers_h_l16_c37_3552
-stack_pointer_get_uxn_registers_h_l16_c37_3552 : entity work.stack_pointer_get_0CLK_c35c94f1 port map (
+-- stack_pointer_get_uxn_registers_h_l16_c37_604d
+stack_pointer_get_uxn_registers_h_l16_c37_604d : entity work.stack_pointer_get_0CLK_c35c94f1 port map (
 clk,
-stack_pointer_get_uxn_registers_h_l16_c37_3552_CLOCK_ENABLE,
-stack_pointer_get_uxn_registers_h_l16_c37_3552_stack_index,
-stack_pointer_get_uxn_registers_h_l16_c37_3552_return_output);
+stack_pointer_get_uxn_registers_h_l16_c37_604d_CLOCK_ENABLE,
+stack_pointer_get_uxn_registers_h_l16_c37_604d_stack_index,
+stack_pointer_get_uxn_registers_h_l16_c37_604d_return_output);
 
--- BIN_OP_MINUS_uxn_registers_h_l16_c37_7fb5
-BIN_OP_MINUS_uxn_registers_h_l16_c37_7fb5 : entity work.BIN_OP_MINUS_uint8_t_uint2_t_0CLK_de264c78 port map (
-BIN_OP_MINUS_uxn_registers_h_l16_c37_7fb5_left,
-BIN_OP_MINUS_uxn_registers_h_l16_c37_7fb5_right,
-BIN_OP_MINUS_uxn_registers_h_l16_c37_7fb5_return_output);
+-- BIN_OP_MINUS_uxn_registers_h_l16_c37_1204
+BIN_OP_MINUS_uxn_registers_h_l16_c37_1204 : entity work.BIN_OP_MINUS_uint8_t_uint2_t_0CLK_de264c78 port map (
+BIN_OP_MINUS_uxn_registers_h_l16_c37_1204_left,
+BIN_OP_MINUS_uxn_registers_h_l16_c37_1204_right,
+BIN_OP_MINUS_uxn_registers_h_l16_c37_1204_return_output);
 
--- stack_data_get_uxn_registers_h_l16_c9_e001
-stack_data_get_uxn_registers_h_l16_c9_e001 : entity work.stack_data_get_0CLK_c34ffe29 port map (
+-- stack_data_get_uxn_registers_h_l16_c9_8d01
+stack_data_get_uxn_registers_h_l16_c9_8d01 : entity work.stack_data_get_0CLK_c34ffe29 port map (
 clk,
-stack_data_get_uxn_registers_h_l16_c9_e001_CLOCK_ENABLE,
-stack_data_get_uxn_registers_h_l16_c9_e001_stack_index,
-stack_data_get_uxn_registers_h_l16_c9_e001_index,
-stack_data_get_uxn_registers_h_l16_c9_e001_return_output);
+stack_data_get_uxn_registers_h_l16_c9_8d01_CLOCK_ENABLE,
+stack_data_get_uxn_registers_h_l16_c9_8d01_stack_index,
+stack_data_get_uxn_registers_h_l16_c9_8d01_index,
+stack_data_get_uxn_registers_h_l16_c9_8d01_return_output);
 
 
 
@@ -74,28 +74,28 @@ process (
  -- Inputs
  stack_index,
  -- All submodule outputs
- stack_pointer_get_uxn_registers_h_l16_c37_3552_return_output,
- BIN_OP_MINUS_uxn_registers_h_l16_c37_7fb5_return_output,
- stack_data_get_uxn_registers_h_l16_c9_e001_return_output)
+ stack_pointer_get_uxn_registers_h_l16_c37_604d_return_output,
+ BIN_OP_MINUS_uxn_registers_h_l16_c37_1204_return_output,
+ stack_data_get_uxn_registers_h_l16_c9_8d01_return_output)
 is 
  -- All of the wires in function
  variable VAR_CLOCK_ENABLE : unsigned(0 downto 0);
  variable VAR_return_output : unsigned(7 downto 0);
  variable VAR_stack_index : unsigned(0 downto 0);
- variable VAR_stack_data_get_uxn_registers_h_l16_c9_e001_stack_index : unsigned(0 downto 0);
- variable VAR_stack_data_get_uxn_registers_h_l16_c9_e001_index : unsigned(7 downto 0);
- variable VAR_stack_pointer_get_uxn_registers_h_l16_c37_3552_stack_index : unsigned(0 downto 0);
- variable VAR_BIN_OP_MINUS_uxn_registers_h_l16_c37_7fb5_left : unsigned(7 downto 0);
- variable VAR_stack_pointer_get_uxn_registers_h_l16_c37_3552_CLOCK_ENABLE : unsigned(0 downto 0);
- variable VAR_stack_pointer_get_uxn_registers_h_l16_c37_3552_return_output : unsigned(7 downto 0);
- variable VAR_BIN_OP_MINUS_uxn_registers_h_l16_c37_7fb5_right : unsigned(1 downto 0);
- variable VAR_BIN_OP_MINUS_uxn_registers_h_l16_c37_7fb5_return_output : unsigned(7 downto 0);
- variable VAR_stack_data_get_uxn_registers_h_l16_c9_e001_CLOCK_ENABLE : unsigned(0 downto 0);
- variable VAR_stack_data_get_uxn_registers_h_l16_c9_e001_return_output : unsigned(7 downto 0);
+ variable VAR_stack_data_get_uxn_registers_h_l16_c9_8d01_stack_index : unsigned(0 downto 0);
+ variable VAR_stack_data_get_uxn_registers_h_l16_c9_8d01_index : unsigned(7 downto 0);
+ variable VAR_stack_pointer_get_uxn_registers_h_l16_c37_604d_stack_index : unsigned(0 downto 0);
+ variable VAR_BIN_OP_MINUS_uxn_registers_h_l16_c37_1204_left : unsigned(7 downto 0);
+ variable VAR_stack_pointer_get_uxn_registers_h_l16_c37_604d_CLOCK_ENABLE : unsigned(0 downto 0);
+ variable VAR_stack_pointer_get_uxn_registers_h_l16_c37_604d_return_output : unsigned(7 downto 0);
+ variable VAR_BIN_OP_MINUS_uxn_registers_h_l16_c37_1204_right : unsigned(1 downto 0);
+ variable VAR_BIN_OP_MINUS_uxn_registers_h_l16_c37_1204_return_output : unsigned(7 downto 0);
+ variable VAR_stack_data_get_uxn_registers_h_l16_c9_8d01_CLOCK_ENABLE : unsigned(0 downto 0);
+ variable VAR_stack_data_get_uxn_registers_h_l16_c9_8d01_return_output : unsigned(7 downto 0);
 begin
  -- Constants and things derived from constants alone
      -- Submodule level 0
-     VAR_BIN_OP_MINUS_uxn_registers_h_l16_c37_7fb5_right := to_unsigned(3, 2);
+     VAR_BIN_OP_MINUS_uxn_registers_h_l16_c37_1204_right := to_unsigned(3, 2);
 
  -- Loop to construct simultaneous register transfers for each of the pipeline stages
  -- LATENCY=0 is combinational Logic
@@ -107,40 +107,40 @@ begin
      VAR_stack_index := stack_index;
 
      -- Submodule level 0
-     VAR_stack_data_get_uxn_registers_h_l16_c9_e001_CLOCK_ENABLE := VAR_CLOCK_ENABLE;
-     VAR_stack_pointer_get_uxn_registers_h_l16_c37_3552_CLOCK_ENABLE := VAR_CLOCK_ENABLE;
-     VAR_stack_data_get_uxn_registers_h_l16_c9_e001_stack_index := VAR_stack_index;
-     VAR_stack_pointer_get_uxn_registers_h_l16_c37_3552_stack_index := VAR_stack_index;
-     -- stack_pointer_get[uxn_registers_h_l16_c37_3552] LATENCY=0
+     VAR_stack_data_get_uxn_registers_h_l16_c9_8d01_CLOCK_ENABLE := VAR_CLOCK_ENABLE;
+     VAR_stack_pointer_get_uxn_registers_h_l16_c37_604d_CLOCK_ENABLE := VAR_CLOCK_ENABLE;
+     VAR_stack_data_get_uxn_registers_h_l16_c9_8d01_stack_index := VAR_stack_index;
+     VAR_stack_pointer_get_uxn_registers_h_l16_c37_604d_stack_index := VAR_stack_index;
+     -- stack_pointer_get[uxn_registers_h_l16_c37_604d] LATENCY=0
      -- Clock enable
-     stack_pointer_get_uxn_registers_h_l16_c37_3552_CLOCK_ENABLE <= VAR_stack_pointer_get_uxn_registers_h_l16_c37_3552_CLOCK_ENABLE;
+     stack_pointer_get_uxn_registers_h_l16_c37_604d_CLOCK_ENABLE <= VAR_stack_pointer_get_uxn_registers_h_l16_c37_604d_CLOCK_ENABLE;
      -- Inputs
-     stack_pointer_get_uxn_registers_h_l16_c37_3552_stack_index <= VAR_stack_pointer_get_uxn_registers_h_l16_c37_3552_stack_index;
+     stack_pointer_get_uxn_registers_h_l16_c37_604d_stack_index <= VAR_stack_pointer_get_uxn_registers_h_l16_c37_604d_stack_index;
      -- Outputs
-     VAR_stack_pointer_get_uxn_registers_h_l16_c37_3552_return_output := stack_pointer_get_uxn_registers_h_l16_c37_3552_return_output;
+     VAR_stack_pointer_get_uxn_registers_h_l16_c37_604d_return_output := stack_pointer_get_uxn_registers_h_l16_c37_604d_return_output;
 
      -- Submodule level 1
-     VAR_BIN_OP_MINUS_uxn_registers_h_l16_c37_7fb5_left := VAR_stack_pointer_get_uxn_registers_h_l16_c37_3552_return_output;
-     -- BIN_OP_MINUS[uxn_registers_h_l16_c37_7fb5] LATENCY=0
+     VAR_BIN_OP_MINUS_uxn_registers_h_l16_c37_1204_left := VAR_stack_pointer_get_uxn_registers_h_l16_c37_604d_return_output;
+     -- BIN_OP_MINUS[uxn_registers_h_l16_c37_1204] LATENCY=0
      -- Inputs
-     BIN_OP_MINUS_uxn_registers_h_l16_c37_7fb5_left <= VAR_BIN_OP_MINUS_uxn_registers_h_l16_c37_7fb5_left;
-     BIN_OP_MINUS_uxn_registers_h_l16_c37_7fb5_right <= VAR_BIN_OP_MINUS_uxn_registers_h_l16_c37_7fb5_right;
+     BIN_OP_MINUS_uxn_registers_h_l16_c37_1204_left <= VAR_BIN_OP_MINUS_uxn_registers_h_l16_c37_1204_left;
+     BIN_OP_MINUS_uxn_registers_h_l16_c37_1204_right <= VAR_BIN_OP_MINUS_uxn_registers_h_l16_c37_1204_right;
      -- Outputs
-     VAR_BIN_OP_MINUS_uxn_registers_h_l16_c37_7fb5_return_output := BIN_OP_MINUS_uxn_registers_h_l16_c37_7fb5_return_output;
+     VAR_BIN_OP_MINUS_uxn_registers_h_l16_c37_1204_return_output := BIN_OP_MINUS_uxn_registers_h_l16_c37_1204_return_output;
 
      -- Submodule level 2
-     VAR_stack_data_get_uxn_registers_h_l16_c9_e001_index := VAR_BIN_OP_MINUS_uxn_registers_h_l16_c37_7fb5_return_output;
-     -- stack_data_get[uxn_registers_h_l16_c9_e001] LATENCY=0
+     VAR_stack_data_get_uxn_registers_h_l16_c9_8d01_index := VAR_BIN_OP_MINUS_uxn_registers_h_l16_c37_1204_return_output;
+     -- stack_data_get[uxn_registers_h_l16_c9_8d01] LATENCY=0
      -- Clock enable
-     stack_data_get_uxn_registers_h_l16_c9_e001_CLOCK_ENABLE <= VAR_stack_data_get_uxn_registers_h_l16_c9_e001_CLOCK_ENABLE;
+     stack_data_get_uxn_registers_h_l16_c9_8d01_CLOCK_ENABLE <= VAR_stack_data_get_uxn_registers_h_l16_c9_8d01_CLOCK_ENABLE;
      -- Inputs
-     stack_data_get_uxn_registers_h_l16_c9_e001_stack_index <= VAR_stack_data_get_uxn_registers_h_l16_c9_e001_stack_index;
-     stack_data_get_uxn_registers_h_l16_c9_e001_index <= VAR_stack_data_get_uxn_registers_h_l16_c9_e001_index;
+     stack_data_get_uxn_registers_h_l16_c9_8d01_stack_index <= VAR_stack_data_get_uxn_registers_h_l16_c9_8d01_stack_index;
+     stack_data_get_uxn_registers_h_l16_c9_8d01_index <= VAR_stack_data_get_uxn_registers_h_l16_c9_8d01_index;
      -- Outputs
-     VAR_stack_data_get_uxn_registers_h_l16_c9_e001_return_output := stack_data_get_uxn_registers_h_l16_c9_e001_return_output;
+     VAR_stack_data_get_uxn_registers_h_l16_c9_8d01_return_output := stack_data_get_uxn_registers_h_l16_c9_8d01_return_output;
 
      -- Submodule level 3
-     VAR_return_output := VAR_stack_data_get_uxn_registers_h_l16_c9_e001_return_output;
+     VAR_return_output := VAR_stack_data_get_uxn_registers_h_l16_c9_8d01_return_output;
      -- Last stage of pipeline return wire to return port/reg
      return_output <= VAR_return_output;
    end if;

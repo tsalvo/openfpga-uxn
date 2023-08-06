@@ -30,17 +30,17 @@ signal stack_w_r_rdaddr : unsigned(31 downto 0) := to_unsigned(0, 32);
 signal REG_COMB_stack_w_r_rdaddr : unsigned(31 downto 0);
 
 -- Each function instance gets signals
--- stack_w_ram[uxn_stack_h_l49_c44_fe6b]
-signal stack_w_ram_uxn_stack_h_l49_c44_fe6b_CLOCK_ENABLE : unsigned(0 downto 0);
-signal stack_w_ram_uxn_stack_h_l49_c44_fe6b_addr0 : unsigned(31 downto 0);
-signal stack_w_ram_uxn_stack_h_l49_c44_fe6b_wr_data0 : unsigned(7 downto 0);
-signal stack_w_ram_uxn_stack_h_l49_c44_fe6b_wr_en0 : unsigned(0 downto 0);
-signal stack_w_ram_uxn_stack_h_l49_c44_fe6b_valid0 : unsigned(0 downto 0);
-signal stack_w_ram_uxn_stack_h_l49_c44_fe6b_rd_en0 : unsigned(0 downto 0);
-signal stack_w_ram_uxn_stack_h_l49_c44_fe6b_addr1 : unsigned(31 downto 0);
-signal stack_w_ram_uxn_stack_h_l49_c44_fe6b_valid1 : unsigned(0 downto 0);
-signal stack_w_ram_uxn_stack_h_l49_c44_fe6b_rd_en1 : unsigned(0 downto 0);
-signal stack_w_ram_uxn_stack_h_l49_c44_fe6b_return_output : stack_w_ram_outputs_t;
+-- stack_w_ram[uxn_stack_h_l49_c44_551b]
+signal stack_w_ram_uxn_stack_h_l49_c44_551b_CLOCK_ENABLE : unsigned(0 downto 0);
+signal stack_w_ram_uxn_stack_h_l49_c44_551b_addr0 : unsigned(31 downto 0);
+signal stack_w_ram_uxn_stack_h_l49_c44_551b_wr_data0 : unsigned(7 downto 0);
+signal stack_w_ram_uxn_stack_h_l49_c44_551b_wr_en0 : unsigned(0 downto 0);
+signal stack_w_ram_uxn_stack_h_l49_c44_551b_valid0 : unsigned(0 downto 0);
+signal stack_w_ram_uxn_stack_h_l49_c44_551b_rd_en0 : unsigned(0 downto 0);
+signal stack_w_ram_uxn_stack_h_l49_c44_551b_addr1 : unsigned(31 downto 0);
+signal stack_w_ram_uxn_stack_h_l49_c44_551b_valid1 : unsigned(0 downto 0);
+signal stack_w_ram_uxn_stack_h_l49_c44_551b_rd_en1 : unsigned(0 downto 0);
+signal stack_w_ram_uxn_stack_h_l49_c44_551b_return_output : stack_w_ram_outputs_t;
 
 function CAST_TO_uint32_t_uint8_t( rhs : unsigned) return unsigned is
 
@@ -57,19 +57,19 @@ end function;
 begin
 
 -- SUBMODULE INSTANCES 
--- stack_w_ram_uxn_stack_h_l49_c44_fe6b
-stack_w_ram_uxn_stack_h_l49_c44_fe6b : entity work.stack_w_ram_0CLK_b45f1687 port map (
+-- stack_w_ram_uxn_stack_h_l49_c44_551b
+stack_w_ram_uxn_stack_h_l49_c44_551b : entity work.stack_w_ram_0CLK_b45f1687 port map (
 clk,
-stack_w_ram_uxn_stack_h_l49_c44_fe6b_CLOCK_ENABLE,
-stack_w_ram_uxn_stack_h_l49_c44_fe6b_addr0,
-stack_w_ram_uxn_stack_h_l49_c44_fe6b_wr_data0,
-stack_w_ram_uxn_stack_h_l49_c44_fe6b_wr_en0,
-stack_w_ram_uxn_stack_h_l49_c44_fe6b_valid0,
-stack_w_ram_uxn_stack_h_l49_c44_fe6b_rd_en0,
-stack_w_ram_uxn_stack_h_l49_c44_fe6b_addr1,
-stack_w_ram_uxn_stack_h_l49_c44_fe6b_valid1,
-stack_w_ram_uxn_stack_h_l49_c44_fe6b_rd_en1,
-stack_w_ram_uxn_stack_h_l49_c44_fe6b_return_output);
+stack_w_ram_uxn_stack_h_l49_c44_551b_CLOCK_ENABLE,
+stack_w_ram_uxn_stack_h_l49_c44_551b_addr0,
+stack_w_ram_uxn_stack_h_l49_c44_551b_wr_data0,
+stack_w_ram_uxn_stack_h_l49_c44_551b_wr_en0,
+stack_w_ram_uxn_stack_h_l49_c44_551b_valid0,
+stack_w_ram_uxn_stack_h_l49_c44_551b_rd_en0,
+stack_w_ram_uxn_stack_h_l49_c44_551b_addr1,
+stack_w_ram_uxn_stack_h_l49_c44_551b_valid1,
+stack_w_ram_uxn_stack_h_l49_c44_551b_rd_en1,
+stack_w_ram_uxn_stack_h_l49_c44_551b_return_output);
 
 
 
@@ -81,25 +81,25 @@ process (
  -- Registers
  stack_w_r_rdaddr,
  -- All submodule outputs
- stack_w_ram_uxn_stack_h_l49_c44_fe6b_return_output)
+ stack_w_ram_uxn_stack_h_l49_c44_551b_return_output)
 is 
  -- All of the wires in function
  variable VAR_CLOCK_ENABLE : unsigned(0 downto 0);
  variable VAR_return_output : unsigned(7 downto 0);
  variable VAR_address : unsigned(7 downto 0);
- variable VAR_CAST_TO_uint32_t_uxn_stack_h_l47_c21_5e32_return_output : unsigned(31 downto 0);
+ variable VAR_CAST_TO_uint32_t_uxn_stack_h_l47_c21_1162_return_output : unsigned(31 downto 0);
  variable VAR_stack_w_r_ram_out : stack_w_ram_outputs_t;
- variable VAR_stack_w_ram_uxn_stack_h_l49_c44_fe6b_addr0 : unsigned(31 downto 0);
- variable VAR_stack_w_ram_uxn_stack_h_l49_c44_fe6b_wr_data0 : unsigned(7 downto 0);
- variable VAR_stack_w_ram_uxn_stack_h_l49_c44_fe6b_wr_en0 : unsigned(0 downto 0);
- variable VAR_stack_w_ram_uxn_stack_h_l49_c44_fe6b_valid0 : unsigned(0 downto 0);
- variable VAR_stack_w_ram_uxn_stack_h_l49_c44_fe6b_rd_en0 : unsigned(0 downto 0);
- variable VAR_stack_w_ram_uxn_stack_h_l49_c44_fe6b_addr1 : unsigned(31 downto 0);
- variable VAR_stack_w_ram_uxn_stack_h_l49_c44_fe6b_valid1 : unsigned(0 downto 0);
- variable VAR_stack_w_ram_uxn_stack_h_l49_c44_fe6b_rd_en1 : unsigned(0 downto 0);
- variable VAR_stack_w_ram_uxn_stack_h_l49_c44_fe6b_CLOCK_ENABLE : unsigned(0 downto 0);
- variable VAR_stack_w_ram_uxn_stack_h_l49_c44_fe6b_return_output : stack_w_ram_outputs_t;
- variable VAR_CONST_REF_RD_uint8_t_stack_w_ram_outputs_t_rd_data1_d41d_uxn_stack_h_l60_c9_9f18_return_output : unsigned(7 downto 0);
+ variable VAR_stack_w_ram_uxn_stack_h_l49_c44_551b_addr0 : unsigned(31 downto 0);
+ variable VAR_stack_w_ram_uxn_stack_h_l49_c44_551b_wr_data0 : unsigned(7 downto 0);
+ variable VAR_stack_w_ram_uxn_stack_h_l49_c44_551b_wr_en0 : unsigned(0 downto 0);
+ variable VAR_stack_w_ram_uxn_stack_h_l49_c44_551b_valid0 : unsigned(0 downto 0);
+ variable VAR_stack_w_ram_uxn_stack_h_l49_c44_551b_rd_en0 : unsigned(0 downto 0);
+ variable VAR_stack_w_ram_uxn_stack_h_l49_c44_551b_addr1 : unsigned(31 downto 0);
+ variable VAR_stack_w_ram_uxn_stack_h_l49_c44_551b_valid1 : unsigned(0 downto 0);
+ variable VAR_stack_w_ram_uxn_stack_h_l49_c44_551b_rd_en1 : unsigned(0 downto 0);
+ variable VAR_stack_w_ram_uxn_stack_h_l49_c44_551b_CLOCK_ENABLE : unsigned(0 downto 0);
+ variable VAR_stack_w_ram_uxn_stack_h_l49_c44_551b_return_output : stack_w_ram_outputs_t;
+ variable VAR_CONST_REF_RD_uint8_t_stack_w_ram_outputs_t_rd_data1_d41d_uxn_stack_h_l60_c9_7cc7_return_output : unsigned(7 downto 0);
  -- State registers comb logic variables
 variable REG_VAR_stack_w_r_rdaddr : unsigned(31 downto 0);
 begin
@@ -109,13 +109,13 @@ begin
   REG_VAR_stack_w_r_rdaddr := stack_w_r_rdaddr;
  -- Constants and things derived from constants alone
      -- Submodule level 0
-     VAR_stack_w_ram_uxn_stack_h_l49_c44_fe6b_rd_en1 := to_unsigned(1, 1);
-     VAR_stack_w_ram_uxn_stack_h_l49_c44_fe6b_wr_en0 := to_unsigned(0, 1);
-     VAR_stack_w_ram_uxn_stack_h_l49_c44_fe6b_valid0 := to_unsigned(0, 1);
-     VAR_stack_w_ram_uxn_stack_h_l49_c44_fe6b_rd_en0 := to_unsigned(0, 1);
-     VAR_stack_w_ram_uxn_stack_h_l49_c44_fe6b_valid1 := to_unsigned(1, 1);
-     VAR_stack_w_ram_uxn_stack_h_l49_c44_fe6b_wr_data0 := resize(to_unsigned(0, 1), 8);
-     VAR_stack_w_ram_uxn_stack_h_l49_c44_fe6b_addr0 := resize(to_unsigned(0, 1), 32);
+     VAR_stack_w_ram_uxn_stack_h_l49_c44_551b_rd_en1 := to_unsigned(1, 1);
+     VAR_stack_w_ram_uxn_stack_h_l49_c44_551b_addr0 := resize(to_unsigned(0, 1), 32);
+     VAR_stack_w_ram_uxn_stack_h_l49_c44_551b_rd_en0 := to_unsigned(0, 1);
+     VAR_stack_w_ram_uxn_stack_h_l49_c44_551b_wr_en0 := to_unsigned(0, 1);
+     VAR_stack_w_ram_uxn_stack_h_l49_c44_551b_valid0 := to_unsigned(0, 1);
+     VAR_stack_w_ram_uxn_stack_h_l49_c44_551b_wr_data0 := resize(to_unsigned(0, 1), 8);
+     VAR_stack_w_ram_uxn_stack_h_l49_c44_551b_valid1 := to_unsigned(1, 1);
 
  -- Loop to construct simultaneous register transfers for each of the pipeline stages
  -- LATENCY=0 is combinational Logic
@@ -127,35 +127,35 @@ begin
      VAR_address := address;
 
      -- Submodule level 0
-     VAR_stack_w_ram_uxn_stack_h_l49_c44_fe6b_CLOCK_ENABLE := VAR_CLOCK_ENABLE;
-     -- CAST_TO_uint32_t[uxn_stack_h_l47_c21_5e32] LATENCY=0
-     VAR_CAST_TO_uint32_t_uxn_stack_h_l47_c21_5e32_return_output := CAST_TO_uint32_t_uint8_t(
+     VAR_stack_w_ram_uxn_stack_h_l49_c44_551b_CLOCK_ENABLE := VAR_CLOCK_ENABLE;
+     -- CAST_TO_uint32_t[uxn_stack_h_l47_c21_1162] LATENCY=0
+     VAR_CAST_TO_uint32_t_uxn_stack_h_l47_c21_1162_return_output := CAST_TO_uint32_t_uint8_t(
      VAR_address);
 
      -- Submodule level 1
-     REG_VAR_stack_w_r_rdaddr := VAR_CAST_TO_uint32_t_uxn_stack_h_l47_c21_5e32_return_output;
-     VAR_stack_w_ram_uxn_stack_h_l49_c44_fe6b_addr1 := VAR_CAST_TO_uint32_t_uxn_stack_h_l47_c21_5e32_return_output;
-     -- stack_w_ram[uxn_stack_h_l49_c44_fe6b] LATENCY=0
+     REG_VAR_stack_w_r_rdaddr := VAR_CAST_TO_uint32_t_uxn_stack_h_l47_c21_1162_return_output;
+     VAR_stack_w_ram_uxn_stack_h_l49_c44_551b_addr1 := VAR_CAST_TO_uint32_t_uxn_stack_h_l47_c21_1162_return_output;
+     -- stack_w_ram[uxn_stack_h_l49_c44_551b] LATENCY=0
      -- Clock enable
-     stack_w_ram_uxn_stack_h_l49_c44_fe6b_CLOCK_ENABLE <= VAR_stack_w_ram_uxn_stack_h_l49_c44_fe6b_CLOCK_ENABLE;
+     stack_w_ram_uxn_stack_h_l49_c44_551b_CLOCK_ENABLE <= VAR_stack_w_ram_uxn_stack_h_l49_c44_551b_CLOCK_ENABLE;
      -- Inputs
-     stack_w_ram_uxn_stack_h_l49_c44_fe6b_addr0 <= VAR_stack_w_ram_uxn_stack_h_l49_c44_fe6b_addr0;
-     stack_w_ram_uxn_stack_h_l49_c44_fe6b_wr_data0 <= VAR_stack_w_ram_uxn_stack_h_l49_c44_fe6b_wr_data0;
-     stack_w_ram_uxn_stack_h_l49_c44_fe6b_wr_en0 <= VAR_stack_w_ram_uxn_stack_h_l49_c44_fe6b_wr_en0;
-     stack_w_ram_uxn_stack_h_l49_c44_fe6b_valid0 <= VAR_stack_w_ram_uxn_stack_h_l49_c44_fe6b_valid0;
-     stack_w_ram_uxn_stack_h_l49_c44_fe6b_rd_en0 <= VAR_stack_w_ram_uxn_stack_h_l49_c44_fe6b_rd_en0;
-     stack_w_ram_uxn_stack_h_l49_c44_fe6b_addr1 <= VAR_stack_w_ram_uxn_stack_h_l49_c44_fe6b_addr1;
-     stack_w_ram_uxn_stack_h_l49_c44_fe6b_valid1 <= VAR_stack_w_ram_uxn_stack_h_l49_c44_fe6b_valid1;
-     stack_w_ram_uxn_stack_h_l49_c44_fe6b_rd_en1 <= VAR_stack_w_ram_uxn_stack_h_l49_c44_fe6b_rd_en1;
+     stack_w_ram_uxn_stack_h_l49_c44_551b_addr0 <= VAR_stack_w_ram_uxn_stack_h_l49_c44_551b_addr0;
+     stack_w_ram_uxn_stack_h_l49_c44_551b_wr_data0 <= VAR_stack_w_ram_uxn_stack_h_l49_c44_551b_wr_data0;
+     stack_w_ram_uxn_stack_h_l49_c44_551b_wr_en0 <= VAR_stack_w_ram_uxn_stack_h_l49_c44_551b_wr_en0;
+     stack_w_ram_uxn_stack_h_l49_c44_551b_valid0 <= VAR_stack_w_ram_uxn_stack_h_l49_c44_551b_valid0;
+     stack_w_ram_uxn_stack_h_l49_c44_551b_rd_en0 <= VAR_stack_w_ram_uxn_stack_h_l49_c44_551b_rd_en0;
+     stack_w_ram_uxn_stack_h_l49_c44_551b_addr1 <= VAR_stack_w_ram_uxn_stack_h_l49_c44_551b_addr1;
+     stack_w_ram_uxn_stack_h_l49_c44_551b_valid1 <= VAR_stack_w_ram_uxn_stack_h_l49_c44_551b_valid1;
+     stack_w_ram_uxn_stack_h_l49_c44_551b_rd_en1 <= VAR_stack_w_ram_uxn_stack_h_l49_c44_551b_rd_en1;
      -- Outputs
-     VAR_stack_w_ram_uxn_stack_h_l49_c44_fe6b_return_output := stack_w_ram_uxn_stack_h_l49_c44_fe6b_return_output;
+     VAR_stack_w_ram_uxn_stack_h_l49_c44_551b_return_output := stack_w_ram_uxn_stack_h_l49_c44_551b_return_output;
 
      -- Submodule level 2
-     -- CONST_REF_RD_uint8_t_stack_w_ram_outputs_t_rd_data1_d41d[uxn_stack_h_l60_c9_9f18] LATENCY=0
-     VAR_CONST_REF_RD_uint8_t_stack_w_ram_outputs_t_rd_data1_d41d_uxn_stack_h_l60_c9_9f18_return_output := VAR_stack_w_ram_uxn_stack_h_l49_c44_fe6b_return_output.rd_data1;
+     -- CONST_REF_RD_uint8_t_stack_w_ram_outputs_t_rd_data1_d41d[uxn_stack_h_l60_c9_7cc7] LATENCY=0
+     VAR_CONST_REF_RD_uint8_t_stack_w_ram_outputs_t_rd_data1_d41d_uxn_stack_h_l60_c9_7cc7_return_output := VAR_stack_w_ram_uxn_stack_h_l49_c44_551b_return_output.rd_data1;
 
      -- Submodule level 3
-     VAR_return_output := VAR_CONST_REF_RD_uint8_t_stack_w_ram_outputs_t_rd_data1_d41d_uxn_stack_h_l60_c9_9f18_return_output;
+     VAR_return_output := VAR_CONST_REF_RD_uint8_t_stack_w_ram_outputs_t_rd_data1_d41d_uxn_stack_h_l60_c9_7cc7_return_output;
      -- Last stage of pipeline return wire to return port/reg
      return_output <= VAR_return_output;
    end if;

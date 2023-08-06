@@ -15,7 +15,7 @@ port(
  clk : in std_logic;
  CLOCK_ENABLE : in unsigned(0 downto 0);
  addr0 : in unsigned(31 downto 0);
- wr_data0 : in unsigned(7 downto 0);
+ wr_data0 : in unsigned(1 downto 0);
  wr_en0 : in unsigned(0 downto 0);
  valid0 : in unsigned(0 downto 0);
  rd_en0 : in unsigned(0 downto 0);
@@ -26,8 +26,8 @@ port(
 end screen_ram_0CLK_b45f1687;
 architecture arch of screen_ram_0CLK_b45f1687 is
 
-  constant SIZE : integer := 65536; 
-  type ram_t is array(0 to SIZE-1) of uint8_t; 
+  constant SIZE : integer := 204800; 
+  type ram_t is array(0 to SIZE-1) of uint2_t; 
   signal the_ram : ram_t := (others => (others => '0')); 
   -- Limit zero latency comb. read addr range to SIZE 
   -- since invalid addresses can occur as logic propogates 
