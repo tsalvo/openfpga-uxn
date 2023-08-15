@@ -36,35 +36,35 @@ signal REG_COMB_rwaddr : unsigned(31 downto 0);
 signal REG_COMB_wdata : unsigned(1 downto 0);
 
 -- Each function instance gets signals
--- screen_ram[uxn_ram_screen_h_l36_c33_6653]
-signal screen_ram_uxn_ram_screen_h_l36_c33_6653_CLOCK_ENABLE : unsigned(0 downto 0);
-signal screen_ram_uxn_ram_screen_h_l36_c33_6653_addr0 : unsigned(31 downto 0);
-signal screen_ram_uxn_ram_screen_h_l36_c33_6653_wr_data0 : unsigned(1 downto 0);
-signal screen_ram_uxn_ram_screen_h_l36_c33_6653_wr_en0 : unsigned(0 downto 0);
-signal screen_ram_uxn_ram_screen_h_l36_c33_6653_valid0 : unsigned(0 downto 0);
-signal screen_ram_uxn_ram_screen_h_l36_c33_6653_rd_en0 : unsigned(0 downto 0);
-signal screen_ram_uxn_ram_screen_h_l36_c33_6653_addr1 : unsigned(31 downto 0);
-signal screen_ram_uxn_ram_screen_h_l36_c33_6653_valid1 : unsigned(0 downto 0);
-signal screen_ram_uxn_ram_screen_h_l36_c33_6653_rd_en1 : unsigned(0 downto 0);
-signal screen_ram_uxn_ram_screen_h_l36_c33_6653_return_output : screen_ram_outputs_t;
+-- screen_ram[uxn_ram_screen_h_l36_c33_abdb]
+signal screen_ram_uxn_ram_screen_h_l36_c33_abdb_CLOCK_ENABLE : unsigned(0 downto 0);
+signal screen_ram_uxn_ram_screen_h_l36_c33_abdb_addr0 : unsigned(31 downto 0);
+signal screen_ram_uxn_ram_screen_h_l36_c33_abdb_wr_data0 : unsigned(1 downto 0);
+signal screen_ram_uxn_ram_screen_h_l36_c33_abdb_wr_en0 : unsigned(0 downto 0);
+signal screen_ram_uxn_ram_screen_h_l36_c33_abdb_valid0 : unsigned(0 downto 0);
+signal screen_ram_uxn_ram_screen_h_l36_c33_abdb_rd_en0 : unsigned(0 downto 0);
+signal screen_ram_uxn_ram_screen_h_l36_c33_abdb_addr1 : unsigned(31 downto 0);
+signal screen_ram_uxn_ram_screen_h_l36_c33_abdb_valid1 : unsigned(0 downto 0);
+signal screen_ram_uxn_ram_screen_h_l36_c33_abdb_rd_en1 : unsigned(0 downto 0);
+signal screen_ram_uxn_ram_screen_h_l36_c33_abdb_return_output : screen_ram_outputs_t;
 
 
 begin
 
 -- SUBMODULE INSTANCES 
--- screen_ram_uxn_ram_screen_h_l36_c33_6653
-screen_ram_uxn_ram_screen_h_l36_c33_6653 : entity work.screen_ram_0CLK_b45f1687 port map (
+-- screen_ram_uxn_ram_screen_h_l36_c33_abdb
+screen_ram_uxn_ram_screen_h_l36_c33_abdb : entity work.screen_ram_0CLK_b45f1687 port map (
 clk,
-screen_ram_uxn_ram_screen_h_l36_c33_6653_CLOCK_ENABLE,
-screen_ram_uxn_ram_screen_h_l36_c33_6653_addr0,
-screen_ram_uxn_ram_screen_h_l36_c33_6653_wr_data0,
-screen_ram_uxn_ram_screen_h_l36_c33_6653_wr_en0,
-screen_ram_uxn_ram_screen_h_l36_c33_6653_valid0,
-screen_ram_uxn_ram_screen_h_l36_c33_6653_rd_en0,
-screen_ram_uxn_ram_screen_h_l36_c33_6653_addr1,
-screen_ram_uxn_ram_screen_h_l36_c33_6653_valid1,
-screen_ram_uxn_ram_screen_h_l36_c33_6653_rd_en1,
-screen_ram_uxn_ram_screen_h_l36_c33_6653_return_output);
+screen_ram_uxn_ram_screen_h_l36_c33_abdb_CLOCK_ENABLE,
+screen_ram_uxn_ram_screen_h_l36_c33_abdb_addr0,
+screen_ram_uxn_ram_screen_h_l36_c33_abdb_wr_data0,
+screen_ram_uxn_ram_screen_h_l36_c33_abdb_wr_en0,
+screen_ram_uxn_ram_screen_h_l36_c33_abdb_valid0,
+screen_ram_uxn_ram_screen_h_l36_c33_abdb_rd_en0,
+screen_ram_uxn_ram_screen_h_l36_c33_abdb_addr1,
+screen_ram_uxn_ram_screen_h_l36_c33_abdb_valid1,
+screen_ram_uxn_ram_screen_h_l36_c33_abdb_rd_en1,
+screen_ram_uxn_ram_screen_h_l36_c33_abdb_return_output);
 
 
 
@@ -80,7 +80,7 @@ process (
  rwaddr,
  wdata,
  -- All submodule outputs
- screen_ram_uxn_ram_screen_h_l36_c33_6653_return_output)
+ screen_ram_uxn_ram_screen_h_l36_c33_abdb_return_output)
 is 
  -- All of the wires in function
  variable VAR_CLOCK_ENABLE : unsigned(0 downto 0);
@@ -94,17 +94,17 @@ is
  variable VAR_rd_valid : unsigned(0 downto 0);
  variable VAR_rd_out_en : unsigned(0 downto 0);
  variable VAR_ram_out : screen_ram_outputs_t;
- variable VAR_screen_ram_uxn_ram_screen_h_l36_c33_6653_addr0 : unsigned(31 downto 0);
- variable VAR_screen_ram_uxn_ram_screen_h_l36_c33_6653_wr_data0 : unsigned(1 downto 0);
- variable VAR_screen_ram_uxn_ram_screen_h_l36_c33_6653_wr_en0 : unsigned(0 downto 0);
- variable VAR_screen_ram_uxn_ram_screen_h_l36_c33_6653_valid0 : unsigned(0 downto 0);
- variable VAR_screen_ram_uxn_ram_screen_h_l36_c33_6653_rd_en0 : unsigned(0 downto 0);
- variable VAR_screen_ram_uxn_ram_screen_h_l36_c33_6653_addr1 : unsigned(31 downto 0);
- variable VAR_screen_ram_uxn_ram_screen_h_l36_c33_6653_valid1 : unsigned(0 downto 0);
- variable VAR_screen_ram_uxn_ram_screen_h_l36_c33_6653_rd_en1 : unsigned(0 downto 0);
- variable VAR_screen_ram_uxn_ram_screen_h_l36_c33_6653_CLOCK_ENABLE : unsigned(0 downto 0);
- variable VAR_screen_ram_uxn_ram_screen_h_l36_c33_6653_return_output : screen_ram_outputs_t;
- variable VAR_CONST_REF_RD_uint2_t_screen_ram_outputs_t_rd_data1_d41d_uxn_ram_screen_h_l49_c9_87ed_return_output : unsigned(1 downto 0);
+ variable VAR_screen_ram_uxn_ram_screen_h_l36_c33_abdb_addr0 : unsigned(31 downto 0);
+ variable VAR_screen_ram_uxn_ram_screen_h_l36_c33_abdb_wr_data0 : unsigned(1 downto 0);
+ variable VAR_screen_ram_uxn_ram_screen_h_l36_c33_abdb_wr_en0 : unsigned(0 downto 0);
+ variable VAR_screen_ram_uxn_ram_screen_h_l36_c33_abdb_valid0 : unsigned(0 downto 0);
+ variable VAR_screen_ram_uxn_ram_screen_h_l36_c33_abdb_rd_en0 : unsigned(0 downto 0);
+ variable VAR_screen_ram_uxn_ram_screen_h_l36_c33_abdb_addr1 : unsigned(31 downto 0);
+ variable VAR_screen_ram_uxn_ram_screen_h_l36_c33_abdb_valid1 : unsigned(0 downto 0);
+ variable VAR_screen_ram_uxn_ram_screen_h_l36_c33_abdb_rd_en1 : unsigned(0 downto 0);
+ variable VAR_screen_ram_uxn_ram_screen_h_l36_c33_abdb_CLOCK_ENABLE : unsigned(0 downto 0);
+ variable VAR_screen_ram_uxn_ram_screen_h_l36_c33_abdb_return_output : screen_ram_outputs_t;
+ variable VAR_CONST_REF_RD_uint2_t_screen_ram_outputs_t_rd_data1_d41d_uxn_ram_screen_h_l49_c9_9b94_return_output : unsigned(1 downto 0);
  -- State registers comb logic variables
 variable REG_VAR_rdaddr : unsigned(31 downto 0);
 variable REG_VAR_rwaddr : unsigned(31 downto 0);
@@ -118,11 +118,11 @@ begin
   REG_VAR_wdata := wdata;
  -- Constants and things derived from constants alone
      -- Submodule level 0
-     VAR_screen_ram_uxn_ram_screen_h_l36_c33_6653_valid0 := to_unsigned(1, 1);
-     VAR_screen_ram_uxn_ram_screen_h_l36_c33_6653_wr_en0 := to_unsigned(1, 1);
-     VAR_screen_ram_uxn_ram_screen_h_l36_c33_6653_rd_en1 := to_unsigned(1, 1);
-     VAR_screen_ram_uxn_ram_screen_h_l36_c33_6653_rd_en0 := to_unsigned(1, 1);
-     VAR_screen_ram_uxn_ram_screen_h_l36_c33_6653_valid1 := to_unsigned(1, 1);
+     VAR_screen_ram_uxn_ram_screen_h_l36_c33_abdb_rd_en1 := to_unsigned(1, 1);
+     VAR_screen_ram_uxn_ram_screen_h_l36_c33_abdb_valid1 := to_unsigned(1, 1);
+     VAR_screen_ram_uxn_ram_screen_h_l36_c33_abdb_valid0 := to_unsigned(1, 1);
+     VAR_screen_ram_uxn_ram_screen_h_l36_c33_abdb_rd_en0 := to_unsigned(1, 1);
+     VAR_screen_ram_uxn_ram_screen_h_l36_c33_abdb_wr_en0 := to_unsigned(1, 1);
 
  -- Loop to construct simultaneous register transfers for each of the pipeline stages
  -- LATENCY=0 is combinational Logic
@@ -136,34 +136,34 @@ begin
      VAR_read_address := read_address;
 
      -- Submodule level 0
-     VAR_screen_ram_uxn_ram_screen_h_l36_c33_6653_CLOCK_ENABLE := VAR_CLOCK_ENABLE;
+     VAR_screen_ram_uxn_ram_screen_h_l36_c33_abdb_CLOCK_ENABLE := VAR_CLOCK_ENABLE;
      REG_VAR_rdaddr := VAR_read_address;
-     VAR_screen_ram_uxn_ram_screen_h_l36_c33_6653_addr1 := VAR_read_address;
+     VAR_screen_ram_uxn_ram_screen_h_l36_c33_abdb_addr1 := VAR_read_address;
      REG_VAR_rwaddr := VAR_write_address;
-     VAR_screen_ram_uxn_ram_screen_h_l36_c33_6653_addr0 := VAR_write_address;
-     VAR_screen_ram_uxn_ram_screen_h_l36_c33_6653_wr_data0 := VAR_write_value;
+     VAR_screen_ram_uxn_ram_screen_h_l36_c33_abdb_addr0 := VAR_write_address;
+     VAR_screen_ram_uxn_ram_screen_h_l36_c33_abdb_wr_data0 := VAR_write_value;
      REG_VAR_wdata := VAR_write_value;
-     -- screen_ram[uxn_ram_screen_h_l36_c33_6653] LATENCY=0
+     -- screen_ram[uxn_ram_screen_h_l36_c33_abdb] LATENCY=0
      -- Clock enable
-     screen_ram_uxn_ram_screen_h_l36_c33_6653_CLOCK_ENABLE <= VAR_screen_ram_uxn_ram_screen_h_l36_c33_6653_CLOCK_ENABLE;
+     screen_ram_uxn_ram_screen_h_l36_c33_abdb_CLOCK_ENABLE <= VAR_screen_ram_uxn_ram_screen_h_l36_c33_abdb_CLOCK_ENABLE;
      -- Inputs
-     screen_ram_uxn_ram_screen_h_l36_c33_6653_addr0 <= VAR_screen_ram_uxn_ram_screen_h_l36_c33_6653_addr0;
-     screen_ram_uxn_ram_screen_h_l36_c33_6653_wr_data0 <= VAR_screen_ram_uxn_ram_screen_h_l36_c33_6653_wr_data0;
-     screen_ram_uxn_ram_screen_h_l36_c33_6653_wr_en0 <= VAR_screen_ram_uxn_ram_screen_h_l36_c33_6653_wr_en0;
-     screen_ram_uxn_ram_screen_h_l36_c33_6653_valid0 <= VAR_screen_ram_uxn_ram_screen_h_l36_c33_6653_valid0;
-     screen_ram_uxn_ram_screen_h_l36_c33_6653_rd_en0 <= VAR_screen_ram_uxn_ram_screen_h_l36_c33_6653_rd_en0;
-     screen_ram_uxn_ram_screen_h_l36_c33_6653_addr1 <= VAR_screen_ram_uxn_ram_screen_h_l36_c33_6653_addr1;
-     screen_ram_uxn_ram_screen_h_l36_c33_6653_valid1 <= VAR_screen_ram_uxn_ram_screen_h_l36_c33_6653_valid1;
-     screen_ram_uxn_ram_screen_h_l36_c33_6653_rd_en1 <= VAR_screen_ram_uxn_ram_screen_h_l36_c33_6653_rd_en1;
+     screen_ram_uxn_ram_screen_h_l36_c33_abdb_addr0 <= VAR_screen_ram_uxn_ram_screen_h_l36_c33_abdb_addr0;
+     screen_ram_uxn_ram_screen_h_l36_c33_abdb_wr_data0 <= VAR_screen_ram_uxn_ram_screen_h_l36_c33_abdb_wr_data0;
+     screen_ram_uxn_ram_screen_h_l36_c33_abdb_wr_en0 <= VAR_screen_ram_uxn_ram_screen_h_l36_c33_abdb_wr_en0;
+     screen_ram_uxn_ram_screen_h_l36_c33_abdb_valid0 <= VAR_screen_ram_uxn_ram_screen_h_l36_c33_abdb_valid0;
+     screen_ram_uxn_ram_screen_h_l36_c33_abdb_rd_en0 <= VAR_screen_ram_uxn_ram_screen_h_l36_c33_abdb_rd_en0;
+     screen_ram_uxn_ram_screen_h_l36_c33_abdb_addr1 <= VAR_screen_ram_uxn_ram_screen_h_l36_c33_abdb_addr1;
+     screen_ram_uxn_ram_screen_h_l36_c33_abdb_valid1 <= VAR_screen_ram_uxn_ram_screen_h_l36_c33_abdb_valid1;
+     screen_ram_uxn_ram_screen_h_l36_c33_abdb_rd_en1 <= VAR_screen_ram_uxn_ram_screen_h_l36_c33_abdb_rd_en1;
      -- Outputs
-     VAR_screen_ram_uxn_ram_screen_h_l36_c33_6653_return_output := screen_ram_uxn_ram_screen_h_l36_c33_6653_return_output;
+     VAR_screen_ram_uxn_ram_screen_h_l36_c33_abdb_return_output := screen_ram_uxn_ram_screen_h_l36_c33_abdb_return_output;
 
      -- Submodule level 1
-     -- CONST_REF_RD_uint2_t_screen_ram_outputs_t_rd_data1_d41d[uxn_ram_screen_h_l49_c9_87ed] LATENCY=0
-     VAR_CONST_REF_RD_uint2_t_screen_ram_outputs_t_rd_data1_d41d_uxn_ram_screen_h_l49_c9_87ed_return_output := VAR_screen_ram_uxn_ram_screen_h_l36_c33_6653_return_output.rd_data1;
+     -- CONST_REF_RD_uint2_t_screen_ram_outputs_t_rd_data1_d41d[uxn_ram_screen_h_l49_c9_9b94] LATENCY=0
+     VAR_CONST_REF_RD_uint2_t_screen_ram_outputs_t_rd_data1_d41d_uxn_ram_screen_h_l49_c9_9b94_return_output := VAR_screen_ram_uxn_ram_screen_h_l36_c33_abdb_return_output.rd_data1;
 
      -- Submodule level 2
-     VAR_return_output := VAR_CONST_REF_RD_uint2_t_screen_ram_outputs_t_rd_data1_d41d_uxn_ram_screen_h_l49_c9_87ed_return_output;
+     VAR_return_output := VAR_CONST_REF_RD_uint2_t_screen_ram_outputs_t_rd_data1_d41d_uxn_ram_screen_h_l49_c9_9b94_return_output;
      -- Last stage of pipeline return wire to return port/reg
      return_output <= VAR_return_output;
    end if;
