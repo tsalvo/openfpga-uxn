@@ -26,70 +26,70 @@ attribute mark_debug : string;
 constant PIPELINE_LATENCY : integer := 0;
 -- All of the wires/regs in function
 -- Each function instance gets signals
--- BIN_OP_EQ[uxn_stack_h_l162_c6_76f1]
-signal BIN_OP_EQ_uxn_stack_h_l162_c6_76f1_left : unsigned(0 downto 0);
-signal BIN_OP_EQ_uxn_stack_h_l162_c6_76f1_right : unsigned(0 downto 0);
-signal BIN_OP_EQ_uxn_stack_h_l162_c6_76f1_return_output : unsigned(0 downto 0);
+-- BIN_OP_EQ[uxn_stack_h_l162_c6_35d1]
+signal BIN_OP_EQ_uxn_stack_h_l162_c6_35d1_left : unsigned(0 downto 0);
+signal BIN_OP_EQ_uxn_stack_h_l162_c6_35d1_right : unsigned(0 downto 0);
+signal BIN_OP_EQ_uxn_stack_h_l162_c6_35d1_return_output : unsigned(0 downto 0);
 
--- TRUE_CLOCK_ENABLE_MUX[uxn_stack_h_l162_c1_98ad]
-signal TRUE_CLOCK_ENABLE_MUX_uxn_stack_h_l162_c1_98ad_cond : unsigned(0 downto 0);
-signal TRUE_CLOCK_ENABLE_MUX_uxn_stack_h_l162_c1_98ad_iftrue : unsigned(0 downto 0);
-signal TRUE_CLOCK_ENABLE_MUX_uxn_stack_h_l162_c1_98ad_iffalse : unsigned(0 downto 0);
-signal TRUE_CLOCK_ENABLE_MUX_uxn_stack_h_l162_c1_98ad_return_output : unsigned(0 downto 0);
+-- TRUE_CLOCK_ENABLE_MUX[uxn_stack_h_l162_c1_07ed]
+signal TRUE_CLOCK_ENABLE_MUX_uxn_stack_h_l162_c1_07ed_cond : unsigned(0 downto 0);
+signal TRUE_CLOCK_ENABLE_MUX_uxn_stack_h_l162_c1_07ed_iftrue : unsigned(0 downto 0);
+signal TRUE_CLOCK_ENABLE_MUX_uxn_stack_h_l162_c1_07ed_iffalse : unsigned(0 downto 0);
+signal TRUE_CLOCK_ENABLE_MUX_uxn_stack_h_l162_c1_07ed_return_output : unsigned(0 downto 0);
 
--- FALSE_CLOCK_ENABLE_MUX[uxn_stack_h_l164_c1_1ce4]
-signal FALSE_CLOCK_ENABLE_MUX_uxn_stack_h_l164_c1_1ce4_cond : unsigned(0 downto 0);
-signal FALSE_CLOCK_ENABLE_MUX_uxn_stack_h_l164_c1_1ce4_iftrue : unsigned(0 downto 0);
-signal FALSE_CLOCK_ENABLE_MUX_uxn_stack_h_l164_c1_1ce4_iffalse : unsigned(0 downto 0);
-signal FALSE_CLOCK_ENABLE_MUX_uxn_stack_h_l164_c1_1ce4_return_output : unsigned(0 downto 0);
+-- FALSE_CLOCK_ENABLE_MUX[uxn_stack_h_l164_c1_494b]
+signal FALSE_CLOCK_ENABLE_MUX_uxn_stack_h_l164_c1_494b_cond : unsigned(0 downto 0);
+signal FALSE_CLOCK_ENABLE_MUX_uxn_stack_h_l164_c1_494b_iftrue : unsigned(0 downto 0);
+signal FALSE_CLOCK_ENABLE_MUX_uxn_stack_h_l164_c1_494b_iffalse : unsigned(0 downto 0);
+signal FALSE_CLOCK_ENABLE_MUX_uxn_stack_h_l164_c1_494b_return_output : unsigned(0 downto 0);
 
--- stack_w_ram_write[uxn_stack_h_l163_c3_f666]
-signal stack_w_ram_write_uxn_stack_h_l163_c3_f666_CLOCK_ENABLE : unsigned(0 downto 0);
-signal stack_w_ram_write_uxn_stack_h_l163_c3_f666_address : unsigned(7 downto 0);
-signal stack_w_ram_write_uxn_stack_h_l163_c3_f666_value : unsigned(7 downto 0);
+-- stack_w_ram_write[uxn_stack_h_l163_c3_1124]
+signal stack_w_ram_write_uxn_stack_h_l163_c3_1124_CLOCK_ENABLE : unsigned(0 downto 0);
+signal stack_w_ram_write_uxn_stack_h_l163_c3_1124_address : unsigned(7 downto 0);
+signal stack_w_ram_write_uxn_stack_h_l163_c3_1124_value : unsigned(7 downto 0);
 
--- stack_r_ram_write[uxn_stack_h_l165_c3_2da3]
-signal stack_r_ram_write_uxn_stack_h_l165_c3_2da3_CLOCK_ENABLE : unsigned(0 downto 0);
-signal stack_r_ram_write_uxn_stack_h_l165_c3_2da3_address : unsigned(7 downto 0);
-signal stack_r_ram_write_uxn_stack_h_l165_c3_2da3_value : unsigned(7 downto 0);
+-- stack_r_ram_write[uxn_stack_h_l165_c3_ca90]
+signal stack_r_ram_write_uxn_stack_h_l165_c3_ca90_CLOCK_ENABLE : unsigned(0 downto 0);
+signal stack_r_ram_write_uxn_stack_h_l165_c3_ca90_address : unsigned(7 downto 0);
+signal stack_r_ram_write_uxn_stack_h_l165_c3_ca90_value : unsigned(7 downto 0);
 
 
 begin
 
 -- SUBMODULE INSTANCES 
--- BIN_OP_EQ_uxn_stack_h_l162_c6_76f1
-BIN_OP_EQ_uxn_stack_h_l162_c6_76f1 : entity work.BIN_OP_EQ_uint1_t_uint1_t_0CLK_de264c78 port map (
-BIN_OP_EQ_uxn_stack_h_l162_c6_76f1_left,
-BIN_OP_EQ_uxn_stack_h_l162_c6_76f1_right,
-BIN_OP_EQ_uxn_stack_h_l162_c6_76f1_return_output);
+-- BIN_OP_EQ_uxn_stack_h_l162_c6_35d1
+BIN_OP_EQ_uxn_stack_h_l162_c6_35d1 : entity work.BIN_OP_EQ_uint1_t_uint1_t_0CLK_de264c78 port map (
+BIN_OP_EQ_uxn_stack_h_l162_c6_35d1_left,
+BIN_OP_EQ_uxn_stack_h_l162_c6_35d1_right,
+BIN_OP_EQ_uxn_stack_h_l162_c6_35d1_return_output);
 
--- TRUE_CLOCK_ENABLE_MUX_uxn_stack_h_l162_c1_98ad
-TRUE_CLOCK_ENABLE_MUX_uxn_stack_h_l162_c1_98ad : entity work.MUX_uint1_t_uint1_t_uint1_t_0CLK_de264c78 port map (
-TRUE_CLOCK_ENABLE_MUX_uxn_stack_h_l162_c1_98ad_cond,
-TRUE_CLOCK_ENABLE_MUX_uxn_stack_h_l162_c1_98ad_iftrue,
-TRUE_CLOCK_ENABLE_MUX_uxn_stack_h_l162_c1_98ad_iffalse,
-TRUE_CLOCK_ENABLE_MUX_uxn_stack_h_l162_c1_98ad_return_output);
+-- TRUE_CLOCK_ENABLE_MUX_uxn_stack_h_l162_c1_07ed
+TRUE_CLOCK_ENABLE_MUX_uxn_stack_h_l162_c1_07ed : entity work.MUX_uint1_t_uint1_t_uint1_t_0CLK_de264c78 port map (
+TRUE_CLOCK_ENABLE_MUX_uxn_stack_h_l162_c1_07ed_cond,
+TRUE_CLOCK_ENABLE_MUX_uxn_stack_h_l162_c1_07ed_iftrue,
+TRUE_CLOCK_ENABLE_MUX_uxn_stack_h_l162_c1_07ed_iffalse,
+TRUE_CLOCK_ENABLE_MUX_uxn_stack_h_l162_c1_07ed_return_output);
 
--- FALSE_CLOCK_ENABLE_MUX_uxn_stack_h_l164_c1_1ce4
-FALSE_CLOCK_ENABLE_MUX_uxn_stack_h_l164_c1_1ce4 : entity work.MUX_uint1_t_uint1_t_uint1_t_0CLK_de264c78 port map (
-FALSE_CLOCK_ENABLE_MUX_uxn_stack_h_l164_c1_1ce4_cond,
-FALSE_CLOCK_ENABLE_MUX_uxn_stack_h_l164_c1_1ce4_iftrue,
-FALSE_CLOCK_ENABLE_MUX_uxn_stack_h_l164_c1_1ce4_iffalse,
-FALSE_CLOCK_ENABLE_MUX_uxn_stack_h_l164_c1_1ce4_return_output);
+-- FALSE_CLOCK_ENABLE_MUX_uxn_stack_h_l164_c1_494b
+FALSE_CLOCK_ENABLE_MUX_uxn_stack_h_l164_c1_494b : entity work.MUX_uint1_t_uint1_t_uint1_t_0CLK_de264c78 port map (
+FALSE_CLOCK_ENABLE_MUX_uxn_stack_h_l164_c1_494b_cond,
+FALSE_CLOCK_ENABLE_MUX_uxn_stack_h_l164_c1_494b_iftrue,
+FALSE_CLOCK_ENABLE_MUX_uxn_stack_h_l164_c1_494b_iffalse,
+FALSE_CLOCK_ENABLE_MUX_uxn_stack_h_l164_c1_494b_return_output);
 
--- stack_w_ram_write_uxn_stack_h_l163_c3_f666
-stack_w_ram_write_uxn_stack_h_l163_c3_f666 : entity work.stack_w_ram_write_0CLK_b45f1687 port map (
+-- stack_w_ram_write_uxn_stack_h_l163_c3_1124
+stack_w_ram_write_uxn_stack_h_l163_c3_1124 : entity work.stack_w_ram_write_0CLK_b45f1687 port map (
 clk,
-stack_w_ram_write_uxn_stack_h_l163_c3_f666_CLOCK_ENABLE,
-stack_w_ram_write_uxn_stack_h_l163_c3_f666_address,
-stack_w_ram_write_uxn_stack_h_l163_c3_f666_value);
+stack_w_ram_write_uxn_stack_h_l163_c3_1124_CLOCK_ENABLE,
+stack_w_ram_write_uxn_stack_h_l163_c3_1124_address,
+stack_w_ram_write_uxn_stack_h_l163_c3_1124_value);
 
--- stack_r_ram_write_uxn_stack_h_l165_c3_2da3
-stack_r_ram_write_uxn_stack_h_l165_c3_2da3 : entity work.stack_r_ram_write_0CLK_b45f1687 port map (
+-- stack_r_ram_write_uxn_stack_h_l165_c3_ca90
+stack_r_ram_write_uxn_stack_h_l165_c3_ca90 : entity work.stack_r_ram_write_0CLK_b45f1687 port map (
 clk,
-stack_r_ram_write_uxn_stack_h_l165_c3_2da3_CLOCK_ENABLE,
-stack_r_ram_write_uxn_stack_h_l165_c3_2da3_address,
-stack_r_ram_write_uxn_stack_h_l165_c3_2da3_value);
+stack_r_ram_write_uxn_stack_h_l165_c3_ca90_CLOCK_ENABLE,
+stack_r_ram_write_uxn_stack_h_l165_c3_ca90_address,
+stack_r_ram_write_uxn_stack_h_l165_c3_ca90_value);
 
 
 
@@ -101,38 +101,38 @@ process (
  index,
  value,
  -- All submodule outputs
- BIN_OP_EQ_uxn_stack_h_l162_c6_76f1_return_output,
- TRUE_CLOCK_ENABLE_MUX_uxn_stack_h_l162_c1_98ad_return_output,
- FALSE_CLOCK_ENABLE_MUX_uxn_stack_h_l164_c1_1ce4_return_output)
+ BIN_OP_EQ_uxn_stack_h_l162_c6_35d1_return_output,
+ TRUE_CLOCK_ENABLE_MUX_uxn_stack_h_l162_c1_07ed_return_output,
+ FALSE_CLOCK_ENABLE_MUX_uxn_stack_h_l164_c1_494b_return_output)
 is 
  -- All of the wires in function
  variable VAR_CLOCK_ENABLE : unsigned(0 downto 0);
  variable VAR_stack_index : unsigned(0 downto 0);
  variable VAR_index : unsigned(7 downto 0);
  variable VAR_value : unsigned(7 downto 0);
- variable VAR_BIN_OP_EQ_uxn_stack_h_l162_c6_76f1_left : unsigned(0 downto 0);
- variable VAR_BIN_OP_EQ_uxn_stack_h_l162_c6_76f1_right : unsigned(0 downto 0);
- variable VAR_BIN_OP_EQ_uxn_stack_h_l162_c6_76f1_return_output : unsigned(0 downto 0);
- variable VAR_TRUE_CLOCK_ENABLE_MUX_uxn_stack_h_l162_c1_98ad_return_output : unsigned(0 downto 0);
- variable VAR_TRUE_CLOCK_ENABLE_MUX_uxn_stack_h_l162_c1_98ad_cond : unsigned(0 downto 0);
- variable VAR_TRUE_CLOCK_ENABLE_MUX_uxn_stack_h_l162_c1_98ad_iftrue : unsigned(0 downto 0);
- variable VAR_TRUE_CLOCK_ENABLE_MUX_uxn_stack_h_l162_c1_98ad_iffalse : unsigned(0 downto 0);
- variable VAR_FALSE_CLOCK_ENABLE_MUX_uxn_stack_h_l164_c1_1ce4_return_output : unsigned(0 downto 0);
- variable VAR_FALSE_CLOCK_ENABLE_MUX_uxn_stack_h_l164_c1_1ce4_cond : unsigned(0 downto 0);
- variable VAR_FALSE_CLOCK_ENABLE_MUX_uxn_stack_h_l164_c1_1ce4_iftrue : unsigned(0 downto 0);
- variable VAR_FALSE_CLOCK_ENABLE_MUX_uxn_stack_h_l164_c1_1ce4_iffalse : unsigned(0 downto 0);
- variable VAR_stack_w_ram_write_uxn_stack_h_l163_c3_f666_address : unsigned(7 downto 0);
- variable VAR_stack_w_ram_write_uxn_stack_h_l163_c3_f666_value : unsigned(7 downto 0);
- variable VAR_stack_w_ram_write_uxn_stack_h_l163_c3_f666_CLOCK_ENABLE : unsigned(0 downto 0);
- variable VAR_stack_r_ram_write_uxn_stack_h_l165_c3_2da3_address : unsigned(7 downto 0);
- variable VAR_stack_r_ram_write_uxn_stack_h_l165_c3_2da3_value : unsigned(7 downto 0);
- variable VAR_stack_r_ram_write_uxn_stack_h_l165_c3_2da3_CLOCK_ENABLE : unsigned(0 downto 0);
+ variable VAR_BIN_OP_EQ_uxn_stack_h_l162_c6_35d1_left : unsigned(0 downto 0);
+ variable VAR_BIN_OP_EQ_uxn_stack_h_l162_c6_35d1_right : unsigned(0 downto 0);
+ variable VAR_BIN_OP_EQ_uxn_stack_h_l162_c6_35d1_return_output : unsigned(0 downto 0);
+ variable VAR_TRUE_CLOCK_ENABLE_MUX_uxn_stack_h_l162_c1_07ed_return_output : unsigned(0 downto 0);
+ variable VAR_TRUE_CLOCK_ENABLE_MUX_uxn_stack_h_l162_c1_07ed_cond : unsigned(0 downto 0);
+ variable VAR_TRUE_CLOCK_ENABLE_MUX_uxn_stack_h_l162_c1_07ed_iftrue : unsigned(0 downto 0);
+ variable VAR_TRUE_CLOCK_ENABLE_MUX_uxn_stack_h_l162_c1_07ed_iffalse : unsigned(0 downto 0);
+ variable VAR_FALSE_CLOCK_ENABLE_MUX_uxn_stack_h_l164_c1_494b_return_output : unsigned(0 downto 0);
+ variable VAR_FALSE_CLOCK_ENABLE_MUX_uxn_stack_h_l164_c1_494b_cond : unsigned(0 downto 0);
+ variable VAR_FALSE_CLOCK_ENABLE_MUX_uxn_stack_h_l164_c1_494b_iftrue : unsigned(0 downto 0);
+ variable VAR_FALSE_CLOCK_ENABLE_MUX_uxn_stack_h_l164_c1_494b_iffalse : unsigned(0 downto 0);
+ variable VAR_stack_w_ram_write_uxn_stack_h_l163_c3_1124_address : unsigned(7 downto 0);
+ variable VAR_stack_w_ram_write_uxn_stack_h_l163_c3_1124_value : unsigned(7 downto 0);
+ variable VAR_stack_w_ram_write_uxn_stack_h_l163_c3_1124_CLOCK_ENABLE : unsigned(0 downto 0);
+ variable VAR_stack_r_ram_write_uxn_stack_h_l165_c3_ca90_address : unsigned(7 downto 0);
+ variable VAR_stack_r_ram_write_uxn_stack_h_l165_c3_ca90_value : unsigned(7 downto 0);
+ variable VAR_stack_r_ram_write_uxn_stack_h_l165_c3_ca90_CLOCK_ENABLE : unsigned(0 downto 0);
 begin
  -- Constants and things derived from constants alone
      -- Submodule level 0
-     VAR_FALSE_CLOCK_ENABLE_MUX_uxn_stack_h_l164_c1_1ce4_iftrue := to_unsigned(0, 1);
-     VAR_TRUE_CLOCK_ENABLE_MUX_uxn_stack_h_l162_c1_98ad_iffalse := to_unsigned(0, 1);
-     VAR_BIN_OP_EQ_uxn_stack_h_l162_c6_76f1_right := to_unsigned(0, 1);
+     VAR_BIN_OP_EQ_uxn_stack_h_l162_c6_35d1_right := to_unsigned(0, 1);
+     VAR_FALSE_CLOCK_ENABLE_MUX_uxn_stack_h_l164_c1_494b_iftrue := to_unsigned(0, 1);
+     VAR_TRUE_CLOCK_ENABLE_MUX_uxn_stack_h_l162_c1_07ed_iffalse := to_unsigned(0, 1);
 
  -- Loop to construct simultaneous register transfers for each of the pipeline stages
  -- LATENCY=0 is combinational Logic
@@ -146,56 +146,56 @@ begin
      VAR_value := value;
 
      -- Submodule level 0
-     VAR_FALSE_CLOCK_ENABLE_MUX_uxn_stack_h_l164_c1_1ce4_iffalse := VAR_CLOCK_ENABLE;
-     VAR_TRUE_CLOCK_ENABLE_MUX_uxn_stack_h_l162_c1_98ad_iftrue := VAR_CLOCK_ENABLE;
-     VAR_stack_r_ram_write_uxn_stack_h_l165_c3_2da3_address := VAR_index;
-     VAR_stack_w_ram_write_uxn_stack_h_l163_c3_f666_address := VAR_index;
-     VAR_BIN_OP_EQ_uxn_stack_h_l162_c6_76f1_left := VAR_stack_index;
-     VAR_stack_r_ram_write_uxn_stack_h_l165_c3_2da3_value := VAR_value;
-     VAR_stack_w_ram_write_uxn_stack_h_l163_c3_f666_value := VAR_value;
-     -- BIN_OP_EQ[uxn_stack_h_l162_c6_76f1] LATENCY=0
+     VAR_FALSE_CLOCK_ENABLE_MUX_uxn_stack_h_l164_c1_494b_iffalse := VAR_CLOCK_ENABLE;
+     VAR_TRUE_CLOCK_ENABLE_MUX_uxn_stack_h_l162_c1_07ed_iftrue := VAR_CLOCK_ENABLE;
+     VAR_stack_r_ram_write_uxn_stack_h_l165_c3_ca90_address := VAR_index;
+     VAR_stack_w_ram_write_uxn_stack_h_l163_c3_1124_address := VAR_index;
+     VAR_BIN_OP_EQ_uxn_stack_h_l162_c6_35d1_left := VAR_stack_index;
+     VAR_stack_r_ram_write_uxn_stack_h_l165_c3_ca90_value := VAR_value;
+     VAR_stack_w_ram_write_uxn_stack_h_l163_c3_1124_value := VAR_value;
+     -- BIN_OP_EQ[uxn_stack_h_l162_c6_35d1] LATENCY=0
      -- Inputs
-     BIN_OP_EQ_uxn_stack_h_l162_c6_76f1_left <= VAR_BIN_OP_EQ_uxn_stack_h_l162_c6_76f1_left;
-     BIN_OP_EQ_uxn_stack_h_l162_c6_76f1_right <= VAR_BIN_OP_EQ_uxn_stack_h_l162_c6_76f1_right;
+     BIN_OP_EQ_uxn_stack_h_l162_c6_35d1_left <= VAR_BIN_OP_EQ_uxn_stack_h_l162_c6_35d1_left;
+     BIN_OP_EQ_uxn_stack_h_l162_c6_35d1_right <= VAR_BIN_OP_EQ_uxn_stack_h_l162_c6_35d1_right;
      -- Outputs
-     VAR_BIN_OP_EQ_uxn_stack_h_l162_c6_76f1_return_output := BIN_OP_EQ_uxn_stack_h_l162_c6_76f1_return_output;
+     VAR_BIN_OP_EQ_uxn_stack_h_l162_c6_35d1_return_output := BIN_OP_EQ_uxn_stack_h_l162_c6_35d1_return_output;
 
      -- Submodule level 1
-     VAR_FALSE_CLOCK_ENABLE_MUX_uxn_stack_h_l164_c1_1ce4_cond := VAR_BIN_OP_EQ_uxn_stack_h_l162_c6_76f1_return_output;
-     VAR_TRUE_CLOCK_ENABLE_MUX_uxn_stack_h_l162_c1_98ad_cond := VAR_BIN_OP_EQ_uxn_stack_h_l162_c6_76f1_return_output;
-     -- FALSE_CLOCK_ENABLE_MUX[uxn_stack_h_l164_c1_1ce4] LATENCY=0
+     VAR_FALSE_CLOCK_ENABLE_MUX_uxn_stack_h_l164_c1_494b_cond := VAR_BIN_OP_EQ_uxn_stack_h_l162_c6_35d1_return_output;
+     VAR_TRUE_CLOCK_ENABLE_MUX_uxn_stack_h_l162_c1_07ed_cond := VAR_BIN_OP_EQ_uxn_stack_h_l162_c6_35d1_return_output;
+     -- TRUE_CLOCK_ENABLE_MUX[uxn_stack_h_l162_c1_07ed] LATENCY=0
      -- Inputs
-     FALSE_CLOCK_ENABLE_MUX_uxn_stack_h_l164_c1_1ce4_cond <= VAR_FALSE_CLOCK_ENABLE_MUX_uxn_stack_h_l164_c1_1ce4_cond;
-     FALSE_CLOCK_ENABLE_MUX_uxn_stack_h_l164_c1_1ce4_iftrue <= VAR_FALSE_CLOCK_ENABLE_MUX_uxn_stack_h_l164_c1_1ce4_iftrue;
-     FALSE_CLOCK_ENABLE_MUX_uxn_stack_h_l164_c1_1ce4_iffalse <= VAR_FALSE_CLOCK_ENABLE_MUX_uxn_stack_h_l164_c1_1ce4_iffalse;
+     TRUE_CLOCK_ENABLE_MUX_uxn_stack_h_l162_c1_07ed_cond <= VAR_TRUE_CLOCK_ENABLE_MUX_uxn_stack_h_l162_c1_07ed_cond;
+     TRUE_CLOCK_ENABLE_MUX_uxn_stack_h_l162_c1_07ed_iftrue <= VAR_TRUE_CLOCK_ENABLE_MUX_uxn_stack_h_l162_c1_07ed_iftrue;
+     TRUE_CLOCK_ENABLE_MUX_uxn_stack_h_l162_c1_07ed_iffalse <= VAR_TRUE_CLOCK_ENABLE_MUX_uxn_stack_h_l162_c1_07ed_iffalse;
      -- Outputs
-     VAR_FALSE_CLOCK_ENABLE_MUX_uxn_stack_h_l164_c1_1ce4_return_output := FALSE_CLOCK_ENABLE_MUX_uxn_stack_h_l164_c1_1ce4_return_output;
+     VAR_TRUE_CLOCK_ENABLE_MUX_uxn_stack_h_l162_c1_07ed_return_output := TRUE_CLOCK_ENABLE_MUX_uxn_stack_h_l162_c1_07ed_return_output;
 
-     -- TRUE_CLOCK_ENABLE_MUX[uxn_stack_h_l162_c1_98ad] LATENCY=0
+     -- FALSE_CLOCK_ENABLE_MUX[uxn_stack_h_l164_c1_494b] LATENCY=0
      -- Inputs
-     TRUE_CLOCK_ENABLE_MUX_uxn_stack_h_l162_c1_98ad_cond <= VAR_TRUE_CLOCK_ENABLE_MUX_uxn_stack_h_l162_c1_98ad_cond;
-     TRUE_CLOCK_ENABLE_MUX_uxn_stack_h_l162_c1_98ad_iftrue <= VAR_TRUE_CLOCK_ENABLE_MUX_uxn_stack_h_l162_c1_98ad_iftrue;
-     TRUE_CLOCK_ENABLE_MUX_uxn_stack_h_l162_c1_98ad_iffalse <= VAR_TRUE_CLOCK_ENABLE_MUX_uxn_stack_h_l162_c1_98ad_iffalse;
+     FALSE_CLOCK_ENABLE_MUX_uxn_stack_h_l164_c1_494b_cond <= VAR_FALSE_CLOCK_ENABLE_MUX_uxn_stack_h_l164_c1_494b_cond;
+     FALSE_CLOCK_ENABLE_MUX_uxn_stack_h_l164_c1_494b_iftrue <= VAR_FALSE_CLOCK_ENABLE_MUX_uxn_stack_h_l164_c1_494b_iftrue;
+     FALSE_CLOCK_ENABLE_MUX_uxn_stack_h_l164_c1_494b_iffalse <= VAR_FALSE_CLOCK_ENABLE_MUX_uxn_stack_h_l164_c1_494b_iffalse;
      -- Outputs
-     VAR_TRUE_CLOCK_ENABLE_MUX_uxn_stack_h_l162_c1_98ad_return_output := TRUE_CLOCK_ENABLE_MUX_uxn_stack_h_l162_c1_98ad_return_output;
+     VAR_FALSE_CLOCK_ENABLE_MUX_uxn_stack_h_l164_c1_494b_return_output := FALSE_CLOCK_ENABLE_MUX_uxn_stack_h_l164_c1_494b_return_output;
 
      -- Submodule level 2
-     VAR_stack_r_ram_write_uxn_stack_h_l165_c3_2da3_CLOCK_ENABLE := VAR_FALSE_CLOCK_ENABLE_MUX_uxn_stack_h_l164_c1_1ce4_return_output;
-     VAR_stack_w_ram_write_uxn_stack_h_l163_c3_f666_CLOCK_ENABLE := VAR_TRUE_CLOCK_ENABLE_MUX_uxn_stack_h_l162_c1_98ad_return_output;
-     -- stack_r_ram_write[uxn_stack_h_l165_c3_2da3] LATENCY=0
+     VAR_stack_r_ram_write_uxn_stack_h_l165_c3_ca90_CLOCK_ENABLE := VAR_FALSE_CLOCK_ENABLE_MUX_uxn_stack_h_l164_c1_494b_return_output;
+     VAR_stack_w_ram_write_uxn_stack_h_l163_c3_1124_CLOCK_ENABLE := VAR_TRUE_CLOCK_ENABLE_MUX_uxn_stack_h_l162_c1_07ed_return_output;
+     -- stack_w_ram_write[uxn_stack_h_l163_c3_1124] LATENCY=0
      -- Clock enable
-     stack_r_ram_write_uxn_stack_h_l165_c3_2da3_CLOCK_ENABLE <= VAR_stack_r_ram_write_uxn_stack_h_l165_c3_2da3_CLOCK_ENABLE;
+     stack_w_ram_write_uxn_stack_h_l163_c3_1124_CLOCK_ENABLE <= VAR_stack_w_ram_write_uxn_stack_h_l163_c3_1124_CLOCK_ENABLE;
      -- Inputs
-     stack_r_ram_write_uxn_stack_h_l165_c3_2da3_address <= VAR_stack_r_ram_write_uxn_stack_h_l165_c3_2da3_address;
-     stack_r_ram_write_uxn_stack_h_l165_c3_2da3_value <= VAR_stack_r_ram_write_uxn_stack_h_l165_c3_2da3_value;
+     stack_w_ram_write_uxn_stack_h_l163_c3_1124_address <= VAR_stack_w_ram_write_uxn_stack_h_l163_c3_1124_address;
+     stack_w_ram_write_uxn_stack_h_l163_c3_1124_value <= VAR_stack_w_ram_write_uxn_stack_h_l163_c3_1124_value;
      -- Outputs
 
-     -- stack_w_ram_write[uxn_stack_h_l163_c3_f666] LATENCY=0
+     -- stack_r_ram_write[uxn_stack_h_l165_c3_ca90] LATENCY=0
      -- Clock enable
-     stack_w_ram_write_uxn_stack_h_l163_c3_f666_CLOCK_ENABLE <= VAR_stack_w_ram_write_uxn_stack_h_l163_c3_f666_CLOCK_ENABLE;
+     stack_r_ram_write_uxn_stack_h_l165_c3_ca90_CLOCK_ENABLE <= VAR_stack_r_ram_write_uxn_stack_h_l165_c3_ca90_CLOCK_ENABLE;
      -- Inputs
-     stack_w_ram_write_uxn_stack_h_l163_c3_f666_address <= VAR_stack_w_ram_write_uxn_stack_h_l163_c3_f666_address;
-     stack_w_ram_write_uxn_stack_h_l163_c3_f666_value <= VAR_stack_w_ram_write_uxn_stack_h_l163_c3_f666_value;
+     stack_r_ram_write_uxn_stack_h_l165_c3_ca90_address <= VAR_stack_r_ram_write_uxn_stack_h_l165_c3_ca90_address;
+     stack_r_ram_write_uxn_stack_h_l165_c3_ca90_value <= VAR_stack_r_ram_write_uxn_stack_h_l165_c3_ca90_value;
      -- Outputs
 
    end if;

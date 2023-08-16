@@ -32,9 +32,9 @@ signal REG_COMB_value0 : unsigned(7 downto 0);
 signal REG_COMB_value1 : unsigned(7 downto 0);
 
 -- Each function instance gets signals
--- CONST_SR_8[uxn_ram_main_h_l60_c21_94a8]
-signal CONST_SR_8_uxn_ram_main_h_l60_c21_94a8_x : unsigned(15 downto 0);
-signal CONST_SR_8_uxn_ram_main_h_l60_c21_94a8_return_output : unsigned(15 downto 0);
+-- CONST_SR_8[uxn_ram_main_h_l60_c21_9e63]
+signal CONST_SR_8_uxn_ram_main_h_l60_c21_9e63_x : unsigned(15 downto 0);
+signal CONST_SR_8_uxn_ram_main_h_l60_c21_9e63_return_output : unsigned(15 downto 0);
 
 function CAST_TO_uint8_t_uint16_t( rhs : unsigned) return unsigned is
 
@@ -51,10 +51,10 @@ end function;
 begin
 
 -- SUBMODULE INSTANCES 
--- CONST_SR_8_uxn_ram_main_h_l60_c21_94a8
-CONST_SR_8_uxn_ram_main_h_l60_c21_94a8 : entity work.CONST_SR_8_uint16_t_0CLK_de264c78 port map (
-CONST_SR_8_uxn_ram_main_h_l60_c21_94a8_x,
-CONST_SR_8_uxn_ram_main_h_l60_c21_94a8_return_output);
+-- CONST_SR_8_uxn_ram_main_h_l60_c21_9e63
+CONST_SR_8_uxn_ram_main_h_l60_c21_9e63 : entity work.CONST_SR_8_uint16_t_0CLK_de264c78 port map (
+CONST_SR_8_uxn_ram_main_h_l60_c21_9e63_x,
+CONST_SR_8_uxn_ram_main_h_l60_c21_9e63_return_output);
 
 
 
@@ -68,16 +68,16 @@ process (
  value0,
  value1,
  -- All submodule outputs
- CONST_SR_8_uxn_ram_main_h_l60_c21_94a8_return_output)
+ CONST_SR_8_uxn_ram_main_h_l60_c21_9e63_return_output)
 is 
  -- All of the wires in function
  variable VAR_CLOCK_ENABLE : unsigned(0 downto 0);
  variable VAR_address : unsigned(15 downto 0);
  variable VAR_value : unsigned(15 downto 0);
- variable VAR_CONST_SR_8_uxn_ram_main_h_l60_c21_94a8_return_output : unsigned(15 downto 0);
- variable VAR_CONST_SR_8_uxn_ram_main_h_l60_c21_94a8_x : unsigned(15 downto 0);
- variable VAR_CAST_TO_uint8_t_uxn_ram_main_h_l60_c11_19af_return_output : unsigned(7 downto 0);
- variable VAR_CAST_TO_uint8_t_uxn_ram_main_h_l61_c11_5956_return_output : unsigned(7 downto 0);
+ variable VAR_CONST_SR_8_uxn_ram_main_h_l60_c21_9e63_return_output : unsigned(15 downto 0);
+ variable VAR_CONST_SR_8_uxn_ram_main_h_l60_c21_9e63_x : unsigned(15 downto 0);
+ variable VAR_CAST_TO_uint8_t_uxn_ram_main_h_l60_c11_1d94_return_output : unsigned(7 downto 0);
+ variable VAR_CAST_TO_uint8_t_uxn_ram_main_h_l61_c11_91a6_return_output : unsigned(7 downto 0);
  -- State registers comb logic variables
 variable REG_VAR_value0 : unsigned(7 downto 0);
 variable REG_VAR_value1 : unsigned(7 downto 0);
@@ -99,25 +99,25 @@ begin
      VAR_value := value;
 
      -- Submodule level 0
-     VAR_CONST_SR_8_uxn_ram_main_h_l60_c21_94a8_x := VAR_value;
-     -- CONST_SR_8[uxn_ram_main_h_l60_c21_94a8] LATENCY=0
-     -- Inputs
-     CONST_SR_8_uxn_ram_main_h_l60_c21_94a8_x <= VAR_CONST_SR_8_uxn_ram_main_h_l60_c21_94a8_x;
-     -- Outputs
-     VAR_CONST_SR_8_uxn_ram_main_h_l60_c21_94a8_return_output := CONST_SR_8_uxn_ram_main_h_l60_c21_94a8_return_output;
-
-     -- CAST_TO_uint8_t[uxn_ram_main_h_l61_c11_5956] LATENCY=0
-     VAR_CAST_TO_uint8_t_uxn_ram_main_h_l61_c11_5956_return_output := CAST_TO_uint8_t_uint16_t(
+     VAR_CONST_SR_8_uxn_ram_main_h_l60_c21_9e63_x := VAR_value;
+     -- CAST_TO_uint8_t[uxn_ram_main_h_l61_c11_91a6] LATENCY=0
+     VAR_CAST_TO_uint8_t_uxn_ram_main_h_l61_c11_91a6_return_output := CAST_TO_uint8_t_uint16_t(
      VAR_value);
 
+     -- CONST_SR_8[uxn_ram_main_h_l60_c21_9e63] LATENCY=0
+     -- Inputs
+     CONST_SR_8_uxn_ram_main_h_l60_c21_9e63_x <= VAR_CONST_SR_8_uxn_ram_main_h_l60_c21_9e63_x;
+     -- Outputs
+     VAR_CONST_SR_8_uxn_ram_main_h_l60_c21_9e63_return_output := CONST_SR_8_uxn_ram_main_h_l60_c21_9e63_return_output;
+
      -- Submodule level 1
-     REG_VAR_value1 := VAR_CAST_TO_uint8_t_uxn_ram_main_h_l61_c11_5956_return_output;
-     -- CAST_TO_uint8_t[uxn_ram_main_h_l60_c11_19af] LATENCY=0
-     VAR_CAST_TO_uint8_t_uxn_ram_main_h_l60_c11_19af_return_output := CAST_TO_uint8_t_uint16_t(
-     VAR_CONST_SR_8_uxn_ram_main_h_l60_c21_94a8_return_output);
+     REG_VAR_value1 := VAR_CAST_TO_uint8_t_uxn_ram_main_h_l61_c11_91a6_return_output;
+     -- CAST_TO_uint8_t[uxn_ram_main_h_l60_c11_1d94] LATENCY=0
+     VAR_CAST_TO_uint8_t_uxn_ram_main_h_l60_c11_1d94_return_output := CAST_TO_uint8_t_uint16_t(
+     VAR_CONST_SR_8_uxn_ram_main_h_l60_c21_9e63_return_output);
 
      -- Submodule level 2
-     REG_VAR_value0 := VAR_CAST_TO_uint8_t_uxn_ram_main_h_l60_c11_19af_return_output;
+     REG_VAR_value0 := VAR_CAST_TO_uint8_t_uxn_ram_main_h_l60_c11_1d94_return_output;
    end if;
  end loop;
 

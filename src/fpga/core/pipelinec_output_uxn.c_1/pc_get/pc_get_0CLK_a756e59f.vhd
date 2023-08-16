@@ -24,19 +24,19 @@ attribute mark_debug : string;
 constant PIPELINE_LATENCY : integer := 0;
 -- All of the wires/regs in function
 -- Each function instance gets signals
--- prog_ctr_ram_read[uxn_pc_h_l59_c9_7245]
-signal prog_ctr_ram_read_uxn_pc_h_l59_c9_7245_CLOCK_ENABLE : unsigned(0 downto 0);
-signal prog_ctr_ram_read_uxn_pc_h_l59_c9_7245_return_output : unsigned(15 downto 0);
+-- prog_ctr_ram_read[uxn_pc_h_l59_c9_bdb3]
+signal prog_ctr_ram_read_uxn_pc_h_l59_c9_bdb3_CLOCK_ENABLE : unsigned(0 downto 0);
+signal prog_ctr_ram_read_uxn_pc_h_l59_c9_bdb3_return_output : unsigned(15 downto 0);
 
 
 begin
 
 -- SUBMODULE INSTANCES 
--- prog_ctr_ram_read_uxn_pc_h_l59_c9_7245
-prog_ctr_ram_read_uxn_pc_h_l59_c9_7245 : entity work.prog_ctr_ram_read_0CLK_b4ec7bd0 port map (
+-- prog_ctr_ram_read_uxn_pc_h_l59_c9_bdb3
+prog_ctr_ram_read_uxn_pc_h_l59_c9_bdb3 : entity work.prog_ctr_ram_read_0CLK_b4ec7bd0 port map (
 clk,
-prog_ctr_ram_read_uxn_pc_h_l59_c9_7245_CLOCK_ENABLE,
-prog_ctr_ram_read_uxn_pc_h_l59_c9_7245_return_output);
+prog_ctr_ram_read_uxn_pc_h_l59_c9_bdb3_CLOCK_ENABLE,
+prog_ctr_ram_read_uxn_pc_h_l59_c9_bdb3_return_output);
 
 
 
@@ -44,13 +44,13 @@ prog_ctr_ram_read_uxn_pc_h_l59_c9_7245_return_output);
 process (
  CLOCK_ENABLE,
  -- All submodule outputs
- prog_ctr_ram_read_uxn_pc_h_l59_c9_7245_return_output)
+ prog_ctr_ram_read_uxn_pc_h_l59_c9_bdb3_return_output)
 is 
  -- All of the wires in function
  variable VAR_CLOCK_ENABLE : unsigned(0 downto 0);
  variable VAR_return_output : unsigned(15 downto 0);
- variable VAR_prog_ctr_ram_read_uxn_pc_h_l59_c9_7245_CLOCK_ENABLE : unsigned(0 downto 0);
- variable VAR_prog_ctr_ram_read_uxn_pc_h_l59_c9_7245_return_output : unsigned(15 downto 0);
+ variable VAR_prog_ctr_ram_read_uxn_pc_h_l59_c9_bdb3_CLOCK_ENABLE : unsigned(0 downto 0);
+ variable VAR_prog_ctr_ram_read_uxn_pc_h_l59_c9_bdb3_return_output : unsigned(15 downto 0);
 begin
 
  -- Loop to construct simultaneous register transfers for each of the pipeline stages
@@ -61,16 +61,16 @@ begin
      VAR_CLOCK_ENABLE := CLOCK_ENABLE;
 
      -- Submodule level 0
-     VAR_prog_ctr_ram_read_uxn_pc_h_l59_c9_7245_CLOCK_ENABLE := VAR_CLOCK_ENABLE;
-     -- prog_ctr_ram_read[uxn_pc_h_l59_c9_7245] LATENCY=0
+     VAR_prog_ctr_ram_read_uxn_pc_h_l59_c9_bdb3_CLOCK_ENABLE := VAR_CLOCK_ENABLE;
+     -- prog_ctr_ram_read[uxn_pc_h_l59_c9_bdb3] LATENCY=0
      -- Clock enable
-     prog_ctr_ram_read_uxn_pc_h_l59_c9_7245_CLOCK_ENABLE <= VAR_prog_ctr_ram_read_uxn_pc_h_l59_c9_7245_CLOCK_ENABLE;
+     prog_ctr_ram_read_uxn_pc_h_l59_c9_bdb3_CLOCK_ENABLE <= VAR_prog_ctr_ram_read_uxn_pc_h_l59_c9_bdb3_CLOCK_ENABLE;
      -- Inputs
      -- Outputs
-     VAR_prog_ctr_ram_read_uxn_pc_h_l59_c9_7245_return_output := prog_ctr_ram_read_uxn_pc_h_l59_c9_7245_return_output;
+     VAR_prog_ctr_ram_read_uxn_pc_h_l59_c9_bdb3_return_output := prog_ctr_ram_read_uxn_pc_h_l59_c9_bdb3_return_output;
 
      -- Submodule level 1
-     VAR_return_output := VAR_prog_ctr_ram_read_uxn_pc_h_l59_c9_7245_return_output;
+     VAR_return_output := VAR_prog_ctr_ram_read_uxn_pc_h_l59_c9_bdb3_return_output;
      -- Last stage of pipeline return wire to return port/reg
      return_output <= VAR_return_output;
    end if;
