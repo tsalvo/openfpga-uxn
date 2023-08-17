@@ -23,7 +23,7 @@ begin
 
 -- Instantiate each main
 -- main functions are always clock enabled, always running
-uxn_eval_0CLK_512de2d5 : entity work.uxn_eval_0CLK_512de2d5 port map (
+uxn_eval_0CLK_0a56215e : entity work.uxn_eval_0CLK_0a56215e port map (
 clk_12p287999,
 to_unsigned(1,1),
 uxn_eval_input,

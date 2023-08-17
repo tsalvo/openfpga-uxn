@@ -1,0 +1,203 @@
+-- Timing params:
+--   Fixed?: True
+--   Pipeline Slices: []
+--   Input regs?: False
+--   Output regs?: False
+library std;
+use std.textio.all;
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+-- use ieee.float_pkg.all;
+use work.c_structs_pkg.all;
+-- Submodules: 4
+entity put_stack_0CLK_12466044 is
+port(
+ clk : in std_logic;
+ CLOCK_ENABLE : in unsigned(0 downto 0);
+ stack_index : in unsigned(0 downto 0);
+ offset : in unsigned(7 downto 0);
+ value : in unsigned(7 downto 0));
+end put_stack_0CLK_12466044;
+architecture arch of put_stack_0CLK_12466044 is
+-- Types and such
+-- Declarations
+attribute mark_debug : string;
+constant PIPELINE_LATENCY : integer := 0;
+-- All of the wires/regs in function
+
+-- All user state registers
+signal put_tmp : unsigned(7 downto 0) := to_unsigned(0, 8);
+signal REG_COMB_put_tmp : unsigned(7 downto 0);
+
+-- Each function instance gets signals
+-- stack_pointer_get[uxn_stack_h_l343_c12_f4cb]
+signal stack_pointer_get_uxn_stack_h_l343_c12_f4cb_CLOCK_ENABLE : unsigned(0 downto 0);
+signal stack_pointer_get_uxn_stack_h_l343_c12_f4cb_stack_index : unsigned(0 downto 0);
+signal stack_pointer_get_uxn_stack_h_l343_c12_f4cb_return_output : unsigned(7 downto 0);
+
+-- BIN_OP_MINUS[uxn_stack_h_l343_c12_f13f]
+signal BIN_OP_MINUS_uxn_stack_h_l343_c12_f13f_left : unsigned(7 downto 0);
+signal BIN_OP_MINUS_uxn_stack_h_l343_c12_f13f_right : unsigned(0 downto 0);
+signal BIN_OP_MINUS_uxn_stack_h_l343_c12_f13f_return_output : unsigned(7 downto 0);
+
+-- BIN_OP_MINUS[uxn_stack_h_l343_c12_24ce]
+signal BIN_OP_MINUS_uxn_stack_h_l343_c12_24ce_left : unsigned(7 downto 0);
+signal BIN_OP_MINUS_uxn_stack_h_l343_c12_24ce_right : unsigned(7 downto 0);
+signal BIN_OP_MINUS_uxn_stack_h_l343_c12_24ce_return_output : unsigned(7 downto 0);
+
+-- stack_data_set[uxn_stack_h_l344_c2_952a]
+signal stack_data_set_uxn_stack_h_l344_c2_952a_CLOCK_ENABLE : unsigned(0 downto 0);
+signal stack_data_set_uxn_stack_h_l344_c2_952a_stack_index : unsigned(0 downto 0);
+signal stack_data_set_uxn_stack_h_l344_c2_952a_address : unsigned(7 downto 0);
+signal stack_data_set_uxn_stack_h_l344_c2_952a_value : unsigned(7 downto 0);
+
+
+begin
+
+-- SUBMODULE INSTANCES 
+-- stack_pointer_get_uxn_stack_h_l343_c12_f4cb
+stack_pointer_get_uxn_stack_h_l343_c12_f4cb : entity work.stack_pointer_get_0CLK_c35c94f1 port map (
+clk,
+stack_pointer_get_uxn_stack_h_l343_c12_f4cb_CLOCK_ENABLE,
+stack_pointer_get_uxn_stack_h_l343_c12_f4cb_stack_index,
+stack_pointer_get_uxn_stack_h_l343_c12_f4cb_return_output);
+
+-- BIN_OP_MINUS_uxn_stack_h_l343_c12_f13f
+BIN_OP_MINUS_uxn_stack_h_l343_c12_f13f : entity work.BIN_OP_MINUS_uint8_t_uint1_t_0CLK_de264c78 port map (
+BIN_OP_MINUS_uxn_stack_h_l343_c12_f13f_left,
+BIN_OP_MINUS_uxn_stack_h_l343_c12_f13f_right,
+BIN_OP_MINUS_uxn_stack_h_l343_c12_f13f_return_output);
+
+-- BIN_OP_MINUS_uxn_stack_h_l343_c12_24ce
+BIN_OP_MINUS_uxn_stack_h_l343_c12_24ce : entity work.BIN_OP_MINUS_uint8_t_uint8_t_0CLK_de264c78 port map (
+BIN_OP_MINUS_uxn_stack_h_l343_c12_24ce_left,
+BIN_OP_MINUS_uxn_stack_h_l343_c12_24ce_right,
+BIN_OP_MINUS_uxn_stack_h_l343_c12_24ce_return_output);
+
+-- stack_data_set_uxn_stack_h_l344_c2_952a
+stack_data_set_uxn_stack_h_l344_c2_952a : entity work.stack_data_set_0CLK_a5a1cd4e port map (
+stack_data_set_uxn_stack_h_l344_c2_952a_CLOCK_ENABLE,
+stack_data_set_uxn_stack_h_l344_c2_952a_stack_index,
+stack_data_set_uxn_stack_h_l344_c2_952a_address,
+stack_data_set_uxn_stack_h_l344_c2_952a_value);
+
+
+
+-- Combinatorial process for pipeline stages
+process (
+ CLOCK_ENABLE,
+ -- Inputs
+ stack_index,
+ offset,
+ value,
+ -- Registers
+ put_tmp,
+ -- All submodule outputs
+ stack_pointer_get_uxn_stack_h_l343_c12_f4cb_return_output,
+ BIN_OP_MINUS_uxn_stack_h_l343_c12_f13f_return_output,
+ BIN_OP_MINUS_uxn_stack_h_l343_c12_24ce_return_output)
+is 
+ -- All of the wires in function
+ variable VAR_CLOCK_ENABLE : unsigned(0 downto 0);
+ variable VAR_stack_index : unsigned(0 downto 0);
+ variable VAR_offset : unsigned(7 downto 0);
+ variable VAR_value : unsigned(7 downto 0);
+ variable VAR_stack_pointer_get_uxn_stack_h_l343_c12_f4cb_stack_index : unsigned(0 downto 0);
+ variable VAR_BIN_OP_MINUS_uxn_stack_h_l343_c12_f13f_left : unsigned(7 downto 0);
+ variable VAR_stack_pointer_get_uxn_stack_h_l343_c12_f4cb_CLOCK_ENABLE : unsigned(0 downto 0);
+ variable VAR_stack_pointer_get_uxn_stack_h_l343_c12_f4cb_return_output : unsigned(7 downto 0);
+ variable VAR_BIN_OP_MINUS_uxn_stack_h_l343_c12_f13f_right : unsigned(0 downto 0);
+ variable VAR_BIN_OP_MINUS_uxn_stack_h_l343_c12_f13f_return_output : unsigned(7 downto 0);
+ variable VAR_BIN_OP_MINUS_uxn_stack_h_l343_c12_24ce_left : unsigned(7 downto 0);
+ variable VAR_BIN_OP_MINUS_uxn_stack_h_l343_c12_24ce_right : unsigned(7 downto 0);
+ variable VAR_BIN_OP_MINUS_uxn_stack_h_l343_c12_24ce_return_output : unsigned(7 downto 0);
+ variable VAR_stack_data_set_uxn_stack_h_l344_c2_952a_stack_index : unsigned(0 downto 0);
+ variable VAR_stack_data_set_uxn_stack_h_l344_c2_952a_address : unsigned(7 downto 0);
+ variable VAR_stack_data_set_uxn_stack_h_l344_c2_952a_value : unsigned(7 downto 0);
+ variable VAR_stack_data_set_uxn_stack_h_l344_c2_952a_CLOCK_ENABLE : unsigned(0 downto 0);
+ -- State registers comb logic variables
+variable REG_VAR_put_tmp : unsigned(7 downto 0);
+begin
+
+  -- STATE REGS
+  -- Default read regs into vars
+  REG_VAR_put_tmp := put_tmp;
+ -- Constants and things derived from constants alone
+     -- Submodule level 0
+     VAR_BIN_OP_MINUS_uxn_stack_h_l343_c12_f13f_right := to_unsigned(1, 1);
+
+ -- Loop to construct simultaneous register transfers for each of the pipeline stages
+ -- LATENCY=0 is combinational Logic
+ for STAGE in 0 to PIPELINE_LATENCY loop
+   if STAGE = 0 then
+     -- Mux in clock enable
+     VAR_CLOCK_ENABLE := CLOCK_ENABLE;
+     -- Mux in inputs
+     VAR_stack_index := stack_index;
+     VAR_offset := offset;
+     VAR_value := value;
+
+     -- Submodule level 0
+     VAR_stack_data_set_uxn_stack_h_l344_c2_952a_CLOCK_ENABLE := VAR_CLOCK_ENABLE;
+     VAR_stack_pointer_get_uxn_stack_h_l343_c12_f4cb_CLOCK_ENABLE := VAR_CLOCK_ENABLE;
+     VAR_BIN_OP_MINUS_uxn_stack_h_l343_c12_24ce_right := VAR_offset;
+     VAR_stack_data_set_uxn_stack_h_l344_c2_952a_stack_index := VAR_stack_index;
+     VAR_stack_pointer_get_uxn_stack_h_l343_c12_f4cb_stack_index := VAR_stack_index;
+     VAR_stack_data_set_uxn_stack_h_l344_c2_952a_value := VAR_value;
+     -- stack_pointer_get[uxn_stack_h_l343_c12_f4cb] LATENCY=0
+     -- Clock enable
+     stack_pointer_get_uxn_stack_h_l343_c12_f4cb_CLOCK_ENABLE <= VAR_stack_pointer_get_uxn_stack_h_l343_c12_f4cb_CLOCK_ENABLE;
+     -- Inputs
+     stack_pointer_get_uxn_stack_h_l343_c12_f4cb_stack_index <= VAR_stack_pointer_get_uxn_stack_h_l343_c12_f4cb_stack_index;
+     -- Outputs
+     VAR_stack_pointer_get_uxn_stack_h_l343_c12_f4cb_return_output := stack_pointer_get_uxn_stack_h_l343_c12_f4cb_return_output;
+
+     -- Submodule level 1
+     VAR_BIN_OP_MINUS_uxn_stack_h_l343_c12_f13f_left := VAR_stack_pointer_get_uxn_stack_h_l343_c12_f4cb_return_output;
+     -- BIN_OP_MINUS[uxn_stack_h_l343_c12_f13f] LATENCY=0
+     -- Inputs
+     BIN_OP_MINUS_uxn_stack_h_l343_c12_f13f_left <= VAR_BIN_OP_MINUS_uxn_stack_h_l343_c12_f13f_left;
+     BIN_OP_MINUS_uxn_stack_h_l343_c12_f13f_right <= VAR_BIN_OP_MINUS_uxn_stack_h_l343_c12_f13f_right;
+     -- Outputs
+     VAR_BIN_OP_MINUS_uxn_stack_h_l343_c12_f13f_return_output := BIN_OP_MINUS_uxn_stack_h_l343_c12_f13f_return_output;
+
+     -- Submodule level 2
+     VAR_BIN_OP_MINUS_uxn_stack_h_l343_c12_24ce_left := VAR_BIN_OP_MINUS_uxn_stack_h_l343_c12_f13f_return_output;
+     -- BIN_OP_MINUS[uxn_stack_h_l343_c12_24ce] LATENCY=0
+     -- Inputs
+     BIN_OP_MINUS_uxn_stack_h_l343_c12_24ce_left <= VAR_BIN_OP_MINUS_uxn_stack_h_l343_c12_24ce_left;
+     BIN_OP_MINUS_uxn_stack_h_l343_c12_24ce_right <= VAR_BIN_OP_MINUS_uxn_stack_h_l343_c12_24ce_right;
+     -- Outputs
+     VAR_BIN_OP_MINUS_uxn_stack_h_l343_c12_24ce_return_output := BIN_OP_MINUS_uxn_stack_h_l343_c12_24ce_return_output;
+
+     -- Submodule level 3
+     REG_VAR_put_tmp := VAR_BIN_OP_MINUS_uxn_stack_h_l343_c12_24ce_return_output;
+     VAR_stack_data_set_uxn_stack_h_l344_c2_952a_address := VAR_BIN_OP_MINUS_uxn_stack_h_l343_c12_24ce_return_output;
+     -- stack_data_set[uxn_stack_h_l344_c2_952a] LATENCY=0
+     -- Clock enable
+     stack_data_set_uxn_stack_h_l344_c2_952a_CLOCK_ENABLE <= VAR_stack_data_set_uxn_stack_h_l344_c2_952a_CLOCK_ENABLE;
+     -- Inputs
+     stack_data_set_uxn_stack_h_l344_c2_952a_stack_index <= VAR_stack_data_set_uxn_stack_h_l344_c2_952a_stack_index;
+     stack_data_set_uxn_stack_h_l344_c2_952a_address <= VAR_stack_data_set_uxn_stack_h_l344_c2_952a_address;
+     stack_data_set_uxn_stack_h_l344_c2_952a_value <= VAR_stack_data_set_uxn_stack_h_l344_c2_952a_value;
+     -- Outputs
+
+   end if;
+ end loop;
+
+-- Write regs vars to comb logic
+REG_COMB_put_tmp <= REG_VAR_put_tmp;
+end process;
+
+-- Register comb signals
+process(clk) is
+begin
+ if rising_edge(clk) then
+ if CLOCK_ENABLE(0)='1' then
+     put_tmp <= REG_COMB_put_tmp;
+ end if;
+ end if;
+end process;
+
+end arch;

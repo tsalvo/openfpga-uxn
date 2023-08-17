@@ -24,19 +24,19 @@ attribute mark_debug : string;
 constant PIPELINE_LATENCY : integer := 0;
 -- All of the wires/regs in function
 -- Each function instance gets signals
--- prog_ctr_ram_write[uxn_pc_h_l77_c2_7b57]
-signal prog_ctr_ram_write_uxn_pc_h_l77_c2_7b57_CLOCK_ENABLE : unsigned(0 downto 0);
-signal prog_ctr_ram_write_uxn_pc_h_l77_c2_7b57_value : unsigned(15 downto 0);
+-- prog_ctr_ram_write[uxn_pc_h_l77_c2_bd33]
+signal prog_ctr_ram_write_uxn_pc_h_l77_c2_bd33_CLOCK_ENABLE : unsigned(0 downto 0);
+signal prog_ctr_ram_write_uxn_pc_h_l77_c2_bd33_value : unsigned(15 downto 0);
 
 
 begin
 
 -- SUBMODULE INSTANCES 
--- prog_ctr_ram_write_uxn_pc_h_l77_c2_7b57
-prog_ctr_ram_write_uxn_pc_h_l77_c2_7b57 : entity work.prog_ctr_ram_write_0CLK_de264c78 port map (
+-- prog_ctr_ram_write_uxn_pc_h_l77_c2_bd33
+prog_ctr_ram_write_uxn_pc_h_l77_c2_bd33 : entity work.prog_ctr_ram_write_0CLK_de264c78 port map (
 clk,
-prog_ctr_ram_write_uxn_pc_h_l77_c2_7b57_CLOCK_ENABLE,
-prog_ctr_ram_write_uxn_pc_h_l77_c2_7b57_value);
+prog_ctr_ram_write_uxn_pc_h_l77_c2_bd33_CLOCK_ENABLE,
+prog_ctr_ram_write_uxn_pc_h_l77_c2_bd33_value);
 
 
 
@@ -49,8 +49,8 @@ is
  -- All of the wires in function
  variable VAR_CLOCK_ENABLE : unsigned(0 downto 0);
  variable VAR_value : unsigned(15 downto 0);
- variable VAR_prog_ctr_ram_write_uxn_pc_h_l77_c2_7b57_value : unsigned(15 downto 0);
- variable VAR_prog_ctr_ram_write_uxn_pc_h_l77_c2_7b57_CLOCK_ENABLE : unsigned(0 downto 0);
+ variable VAR_prog_ctr_ram_write_uxn_pc_h_l77_c2_bd33_value : unsigned(15 downto 0);
+ variable VAR_prog_ctr_ram_write_uxn_pc_h_l77_c2_bd33_CLOCK_ENABLE : unsigned(0 downto 0);
 begin
 
  -- Loop to construct simultaneous register transfers for each of the pipeline stages
@@ -63,13 +63,13 @@ begin
      VAR_value := value;
 
      -- Submodule level 0
-     VAR_prog_ctr_ram_write_uxn_pc_h_l77_c2_7b57_CLOCK_ENABLE := VAR_CLOCK_ENABLE;
-     VAR_prog_ctr_ram_write_uxn_pc_h_l77_c2_7b57_value := VAR_value;
-     -- prog_ctr_ram_write[uxn_pc_h_l77_c2_7b57] LATENCY=0
+     VAR_prog_ctr_ram_write_uxn_pc_h_l77_c2_bd33_CLOCK_ENABLE := VAR_CLOCK_ENABLE;
+     VAR_prog_ctr_ram_write_uxn_pc_h_l77_c2_bd33_value := VAR_value;
+     -- prog_ctr_ram_write[uxn_pc_h_l77_c2_bd33] LATENCY=0
      -- Clock enable
-     prog_ctr_ram_write_uxn_pc_h_l77_c2_7b57_CLOCK_ENABLE <= VAR_prog_ctr_ram_write_uxn_pc_h_l77_c2_7b57_CLOCK_ENABLE;
+     prog_ctr_ram_write_uxn_pc_h_l77_c2_bd33_CLOCK_ENABLE <= VAR_prog_ctr_ram_write_uxn_pc_h_l77_c2_bd33_CLOCK_ENABLE;
      -- Inputs
-     prog_ctr_ram_write_uxn_pc_h_l77_c2_7b57_value <= VAR_prog_ctr_ram_write_uxn_pc_h_l77_c2_7b57_value;
+     prog_ctr_ram_write_uxn_pc_h_l77_c2_bd33_value <= VAR_prog_ctr_ram_write_uxn_pc_h_l77_c2_bd33_value;
      -- Outputs
 
    end if;
