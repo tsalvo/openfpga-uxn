@@ -30,15 +30,15 @@ signal ram_read : unsigned(15 downto 0) := to_unsigned(0, 16);
 signal REG_COMB_ram_read : unsigned(15 downto 0);
 
 -- Each function instance gets signals
--- stack_r_ram_update[uxn_stack_h_l169_c13_51ea]
-signal stack_r_ram_update_uxn_stack_h_l169_c13_51ea_CLOCK_ENABLE : unsigned(0 downto 0);
-signal stack_r_ram_update_uxn_stack_h_l169_c13_51ea_address0 : unsigned(7 downto 0);
-signal stack_r_ram_update_uxn_stack_h_l169_c13_51ea_write0_value : unsigned(7 downto 0);
-signal stack_r_ram_update_uxn_stack_h_l169_c13_51ea_write0_enable : unsigned(0 downto 0);
-signal stack_r_ram_update_uxn_stack_h_l169_c13_51ea_read0_enable : unsigned(0 downto 0);
-signal stack_r_ram_update_uxn_stack_h_l169_c13_51ea_address1 : unsigned(7 downto 0);
-signal stack_r_ram_update_uxn_stack_h_l169_c13_51ea_read1_enable : unsigned(0 downto 0);
-signal stack_r_ram_update_uxn_stack_h_l169_c13_51ea_return_output : unsigned(15 downto 0);
+-- stack_r_ram_update[uxn_stack_h_l161_c13_7547]
+signal stack_r_ram_update_uxn_stack_h_l161_c13_7547_CLOCK_ENABLE : unsigned(0 downto 0);
+signal stack_r_ram_update_uxn_stack_h_l161_c13_7547_address0 : unsigned(7 downto 0);
+signal stack_r_ram_update_uxn_stack_h_l161_c13_7547_write0_value : unsigned(7 downto 0);
+signal stack_r_ram_update_uxn_stack_h_l161_c13_7547_write0_enable : unsigned(0 downto 0);
+signal stack_r_ram_update_uxn_stack_h_l161_c13_7547_read0_enable : unsigned(0 downto 0);
+signal stack_r_ram_update_uxn_stack_h_l161_c13_7547_address1 : unsigned(7 downto 0);
+signal stack_r_ram_update_uxn_stack_h_l161_c13_7547_read1_enable : unsigned(0 downto 0);
+signal stack_r_ram_update_uxn_stack_h_l161_c13_7547_return_output : unsigned(15 downto 0);
 
 function CAST_TO_uint8_t_uint16_t( rhs : unsigned) return unsigned is
 
@@ -55,17 +55,17 @@ end function;
 begin
 
 -- SUBMODULE INSTANCES 
--- stack_r_ram_update_uxn_stack_h_l169_c13_51ea
-stack_r_ram_update_uxn_stack_h_l169_c13_51ea : entity work.stack_r_ram_update_0CLK_c464aa95 port map (
+-- stack_r_ram_update_uxn_stack_h_l161_c13_7547
+stack_r_ram_update_uxn_stack_h_l161_c13_7547 : entity work.stack_r_ram_update_0CLK_c464aa95 port map (
 clk,
-stack_r_ram_update_uxn_stack_h_l169_c13_51ea_CLOCK_ENABLE,
-stack_r_ram_update_uxn_stack_h_l169_c13_51ea_address0,
-stack_r_ram_update_uxn_stack_h_l169_c13_51ea_write0_value,
-stack_r_ram_update_uxn_stack_h_l169_c13_51ea_write0_enable,
-stack_r_ram_update_uxn_stack_h_l169_c13_51ea_read0_enable,
-stack_r_ram_update_uxn_stack_h_l169_c13_51ea_address1,
-stack_r_ram_update_uxn_stack_h_l169_c13_51ea_read1_enable,
-stack_r_ram_update_uxn_stack_h_l169_c13_51ea_return_output);
+stack_r_ram_update_uxn_stack_h_l161_c13_7547_CLOCK_ENABLE,
+stack_r_ram_update_uxn_stack_h_l161_c13_7547_address0,
+stack_r_ram_update_uxn_stack_h_l161_c13_7547_write0_value,
+stack_r_ram_update_uxn_stack_h_l161_c13_7547_write0_enable,
+stack_r_ram_update_uxn_stack_h_l161_c13_7547_read0_enable,
+stack_r_ram_update_uxn_stack_h_l161_c13_7547_address1,
+stack_r_ram_update_uxn_stack_h_l161_c13_7547_read1_enable,
+stack_r_ram_update_uxn_stack_h_l161_c13_7547_return_output);
 
 
 
@@ -77,21 +77,21 @@ process (
  -- Registers
  ram_read,
  -- All submodule outputs
- stack_r_ram_update_uxn_stack_h_l169_c13_51ea_return_output)
+ stack_r_ram_update_uxn_stack_h_l161_c13_7547_return_output)
 is 
  -- All of the wires in function
  variable VAR_CLOCK_ENABLE : unsigned(0 downto 0);
  variable VAR_return_output : unsigned(7 downto 0);
  variable VAR_address : unsigned(7 downto 0);
- variable VAR_stack_r_ram_update_uxn_stack_h_l169_c13_51ea_address0 : unsigned(7 downto 0);
- variable VAR_stack_r_ram_update_uxn_stack_h_l169_c13_51ea_write0_value : unsigned(7 downto 0);
- variable VAR_stack_r_ram_update_uxn_stack_h_l169_c13_51ea_write0_enable : unsigned(0 downto 0);
- variable VAR_stack_r_ram_update_uxn_stack_h_l169_c13_51ea_read0_enable : unsigned(0 downto 0);
- variable VAR_stack_r_ram_update_uxn_stack_h_l169_c13_51ea_address1 : unsigned(7 downto 0);
- variable VAR_stack_r_ram_update_uxn_stack_h_l169_c13_51ea_read1_enable : unsigned(0 downto 0);
- variable VAR_stack_r_ram_update_uxn_stack_h_l169_c13_51ea_CLOCK_ENABLE : unsigned(0 downto 0);
- variable VAR_stack_r_ram_update_uxn_stack_h_l169_c13_51ea_return_output : unsigned(15 downto 0);
- variable VAR_CAST_TO_uint8_t_uxn_stack_h_l170_c9_a0aa_return_output : unsigned(7 downto 0);
+ variable VAR_stack_r_ram_update_uxn_stack_h_l161_c13_7547_address0 : unsigned(7 downto 0);
+ variable VAR_stack_r_ram_update_uxn_stack_h_l161_c13_7547_write0_value : unsigned(7 downto 0);
+ variable VAR_stack_r_ram_update_uxn_stack_h_l161_c13_7547_write0_enable : unsigned(0 downto 0);
+ variable VAR_stack_r_ram_update_uxn_stack_h_l161_c13_7547_read0_enable : unsigned(0 downto 0);
+ variable VAR_stack_r_ram_update_uxn_stack_h_l161_c13_7547_address1 : unsigned(7 downto 0);
+ variable VAR_stack_r_ram_update_uxn_stack_h_l161_c13_7547_read1_enable : unsigned(0 downto 0);
+ variable VAR_stack_r_ram_update_uxn_stack_h_l161_c13_7547_CLOCK_ENABLE : unsigned(0 downto 0);
+ variable VAR_stack_r_ram_update_uxn_stack_h_l161_c13_7547_return_output : unsigned(15 downto 0);
+ variable VAR_CAST_TO_uint8_t_uxn_stack_h_l162_c9_4ad1_return_output : unsigned(7 downto 0);
  -- State registers comb logic variables
 variable REG_VAR_ram_read : unsigned(15 downto 0);
 begin
@@ -101,11 +101,11 @@ begin
   REG_VAR_ram_read := ram_read;
  -- Constants and things derived from constants alone
      -- Submodule level 0
-     VAR_stack_r_ram_update_uxn_stack_h_l169_c13_51ea_read0_enable := to_unsigned(0, 1);
-     VAR_stack_r_ram_update_uxn_stack_h_l169_c13_51ea_read1_enable := to_unsigned(1, 1);
-     VAR_stack_r_ram_update_uxn_stack_h_l169_c13_51ea_write0_enable := to_unsigned(0, 1);
-     VAR_stack_r_ram_update_uxn_stack_h_l169_c13_51ea_address0 := resize(to_unsigned(0, 1), 8);
-     VAR_stack_r_ram_update_uxn_stack_h_l169_c13_51ea_write0_value := resize(to_unsigned(0, 1), 8);
+     VAR_stack_r_ram_update_uxn_stack_h_l161_c13_7547_read1_enable := to_unsigned(1, 1);
+     VAR_stack_r_ram_update_uxn_stack_h_l161_c13_7547_write0_value := resize(to_unsigned(0, 1), 8);
+     VAR_stack_r_ram_update_uxn_stack_h_l161_c13_7547_write0_enable := to_unsigned(0, 1);
+     VAR_stack_r_ram_update_uxn_stack_h_l161_c13_7547_read0_enable := to_unsigned(0, 1);
+     VAR_stack_r_ram_update_uxn_stack_h_l161_c13_7547_address0 := resize(to_unsigned(0, 1), 8);
 
  -- Loop to construct simultaneous register transfers for each of the pipeline stages
  -- LATENCY=0 is combinational Logic
@@ -117,29 +117,29 @@ begin
      VAR_address := address;
 
      -- Submodule level 0
-     VAR_stack_r_ram_update_uxn_stack_h_l169_c13_51ea_CLOCK_ENABLE := VAR_CLOCK_ENABLE;
-     VAR_stack_r_ram_update_uxn_stack_h_l169_c13_51ea_address1 := VAR_address;
-     -- stack_r_ram_update[uxn_stack_h_l169_c13_51ea] LATENCY=0
+     VAR_stack_r_ram_update_uxn_stack_h_l161_c13_7547_CLOCK_ENABLE := VAR_CLOCK_ENABLE;
+     VAR_stack_r_ram_update_uxn_stack_h_l161_c13_7547_address1 := VAR_address;
+     -- stack_r_ram_update[uxn_stack_h_l161_c13_7547] LATENCY=0
      -- Clock enable
-     stack_r_ram_update_uxn_stack_h_l169_c13_51ea_CLOCK_ENABLE <= VAR_stack_r_ram_update_uxn_stack_h_l169_c13_51ea_CLOCK_ENABLE;
+     stack_r_ram_update_uxn_stack_h_l161_c13_7547_CLOCK_ENABLE <= VAR_stack_r_ram_update_uxn_stack_h_l161_c13_7547_CLOCK_ENABLE;
      -- Inputs
-     stack_r_ram_update_uxn_stack_h_l169_c13_51ea_address0 <= VAR_stack_r_ram_update_uxn_stack_h_l169_c13_51ea_address0;
-     stack_r_ram_update_uxn_stack_h_l169_c13_51ea_write0_value <= VAR_stack_r_ram_update_uxn_stack_h_l169_c13_51ea_write0_value;
-     stack_r_ram_update_uxn_stack_h_l169_c13_51ea_write0_enable <= VAR_stack_r_ram_update_uxn_stack_h_l169_c13_51ea_write0_enable;
-     stack_r_ram_update_uxn_stack_h_l169_c13_51ea_read0_enable <= VAR_stack_r_ram_update_uxn_stack_h_l169_c13_51ea_read0_enable;
-     stack_r_ram_update_uxn_stack_h_l169_c13_51ea_address1 <= VAR_stack_r_ram_update_uxn_stack_h_l169_c13_51ea_address1;
-     stack_r_ram_update_uxn_stack_h_l169_c13_51ea_read1_enable <= VAR_stack_r_ram_update_uxn_stack_h_l169_c13_51ea_read1_enable;
+     stack_r_ram_update_uxn_stack_h_l161_c13_7547_address0 <= VAR_stack_r_ram_update_uxn_stack_h_l161_c13_7547_address0;
+     stack_r_ram_update_uxn_stack_h_l161_c13_7547_write0_value <= VAR_stack_r_ram_update_uxn_stack_h_l161_c13_7547_write0_value;
+     stack_r_ram_update_uxn_stack_h_l161_c13_7547_write0_enable <= VAR_stack_r_ram_update_uxn_stack_h_l161_c13_7547_write0_enable;
+     stack_r_ram_update_uxn_stack_h_l161_c13_7547_read0_enable <= VAR_stack_r_ram_update_uxn_stack_h_l161_c13_7547_read0_enable;
+     stack_r_ram_update_uxn_stack_h_l161_c13_7547_address1 <= VAR_stack_r_ram_update_uxn_stack_h_l161_c13_7547_address1;
+     stack_r_ram_update_uxn_stack_h_l161_c13_7547_read1_enable <= VAR_stack_r_ram_update_uxn_stack_h_l161_c13_7547_read1_enable;
      -- Outputs
-     VAR_stack_r_ram_update_uxn_stack_h_l169_c13_51ea_return_output := stack_r_ram_update_uxn_stack_h_l169_c13_51ea_return_output;
+     VAR_stack_r_ram_update_uxn_stack_h_l161_c13_7547_return_output := stack_r_ram_update_uxn_stack_h_l161_c13_7547_return_output;
 
      -- Submodule level 1
-     REG_VAR_ram_read := VAR_stack_r_ram_update_uxn_stack_h_l169_c13_51ea_return_output;
-     -- CAST_TO_uint8_t[uxn_stack_h_l170_c9_a0aa] LATENCY=0
-     VAR_CAST_TO_uint8_t_uxn_stack_h_l170_c9_a0aa_return_output := CAST_TO_uint8_t_uint16_t(
-     VAR_stack_r_ram_update_uxn_stack_h_l169_c13_51ea_return_output);
+     REG_VAR_ram_read := VAR_stack_r_ram_update_uxn_stack_h_l161_c13_7547_return_output;
+     -- CAST_TO_uint8_t[uxn_stack_h_l162_c9_4ad1] LATENCY=0
+     VAR_CAST_TO_uint8_t_uxn_stack_h_l162_c9_4ad1_return_output := CAST_TO_uint8_t_uint16_t(
+     VAR_stack_r_ram_update_uxn_stack_h_l161_c13_7547_return_output);
 
      -- Submodule level 2
-     VAR_return_output := VAR_CAST_TO_uint8_t_uxn_stack_h_l170_c9_a0aa_return_output;
+     VAR_return_output := VAR_CAST_TO_uint8_t_uxn_stack_h_l162_c9_4ad1_return_output;
      -- Last stage of pipeline return wire to return port/reg
      return_output <= VAR_return_output;
    end if;
