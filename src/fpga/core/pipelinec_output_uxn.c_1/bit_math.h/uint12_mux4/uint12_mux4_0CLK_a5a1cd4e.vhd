@@ -27,23 +27,23 @@ attribute mark_debug : string;
 constant PIPELINE_LATENCY : integer := 0;
 -- All of the wires/regs in function
 -- Each function instance gets signals
--- layer0_node0_MUX[bit_math_h_l18_c3_247c]
-signal layer0_node0_MUX_bit_math_h_l18_c3_247c_cond : unsigned(0 downto 0);
-signal layer0_node0_MUX_bit_math_h_l18_c3_247c_iftrue : unsigned(11 downto 0);
-signal layer0_node0_MUX_bit_math_h_l18_c3_247c_iffalse : unsigned(11 downto 0);
-signal layer0_node0_MUX_bit_math_h_l18_c3_247c_return_output : unsigned(11 downto 0);
+-- layer0_node0_MUX[bit_math_h_l18_c3_a21a]
+signal layer0_node0_MUX_bit_math_h_l18_c3_a21a_cond : unsigned(0 downto 0);
+signal layer0_node0_MUX_bit_math_h_l18_c3_a21a_iftrue : unsigned(11 downto 0);
+signal layer0_node0_MUX_bit_math_h_l18_c3_a21a_iffalse : unsigned(11 downto 0);
+signal layer0_node0_MUX_bit_math_h_l18_c3_a21a_return_output : unsigned(11 downto 0);
 
--- layer0_node1_MUX[bit_math_h_l29_c3_752b]
-signal layer0_node1_MUX_bit_math_h_l29_c3_752b_cond : unsigned(0 downto 0);
-signal layer0_node1_MUX_bit_math_h_l29_c3_752b_iftrue : unsigned(11 downto 0);
-signal layer0_node1_MUX_bit_math_h_l29_c3_752b_iffalse : unsigned(11 downto 0);
-signal layer0_node1_MUX_bit_math_h_l29_c3_752b_return_output : unsigned(11 downto 0);
+-- layer0_node1_MUX[bit_math_h_l29_c3_3227]
+signal layer0_node1_MUX_bit_math_h_l29_c3_3227_cond : unsigned(0 downto 0);
+signal layer0_node1_MUX_bit_math_h_l29_c3_3227_iftrue : unsigned(11 downto 0);
+signal layer0_node1_MUX_bit_math_h_l29_c3_3227_iffalse : unsigned(11 downto 0);
+signal layer0_node1_MUX_bit_math_h_l29_c3_3227_return_output : unsigned(11 downto 0);
 
--- layer1_node0_MUX[bit_math_h_l46_c3_d934]
-signal layer1_node0_MUX_bit_math_h_l46_c3_d934_cond : unsigned(0 downto 0);
-signal layer1_node0_MUX_bit_math_h_l46_c3_d934_iftrue : unsigned(11 downto 0);
-signal layer1_node0_MUX_bit_math_h_l46_c3_d934_iffalse : unsigned(11 downto 0);
-signal layer1_node0_MUX_bit_math_h_l46_c3_d934_return_output : unsigned(11 downto 0);
+-- layer1_node0_MUX[bit_math_h_l46_c3_b8ef]
+signal layer1_node0_MUX_bit_math_h_l46_c3_b8ef_cond : unsigned(0 downto 0);
+signal layer1_node0_MUX_bit_math_h_l46_c3_b8ef_iftrue : unsigned(11 downto 0);
+signal layer1_node0_MUX_bit_math_h_l46_c3_b8ef_iffalse : unsigned(11 downto 0);
+signal layer1_node0_MUX_bit_math_h_l46_c3_b8ef_return_output : unsigned(11 downto 0);
 
 function uint2_0_0( x : unsigned) return unsigned is
 --variable x : unsigned(1 downto 0);
@@ -69,26 +69,26 @@ end function;
 begin
 
 -- SUBMODULE INSTANCES 
--- layer0_node0_MUX_bit_math_h_l18_c3_247c
-layer0_node0_MUX_bit_math_h_l18_c3_247c : entity work.MUX_uint1_t_uint12_t_uint12_t_0CLK_de264c78 port map (
-layer0_node0_MUX_bit_math_h_l18_c3_247c_cond,
-layer0_node0_MUX_bit_math_h_l18_c3_247c_iftrue,
-layer0_node0_MUX_bit_math_h_l18_c3_247c_iffalse,
-layer0_node0_MUX_bit_math_h_l18_c3_247c_return_output);
+-- layer0_node0_MUX_bit_math_h_l18_c3_a21a
+layer0_node0_MUX_bit_math_h_l18_c3_a21a : entity work.MUX_uint1_t_uint12_t_uint12_t_0CLK_de264c78 port map (
+layer0_node0_MUX_bit_math_h_l18_c3_a21a_cond,
+layer0_node0_MUX_bit_math_h_l18_c3_a21a_iftrue,
+layer0_node0_MUX_bit_math_h_l18_c3_a21a_iffalse,
+layer0_node0_MUX_bit_math_h_l18_c3_a21a_return_output);
 
--- layer0_node1_MUX_bit_math_h_l29_c3_752b
-layer0_node1_MUX_bit_math_h_l29_c3_752b : entity work.MUX_uint1_t_uint12_t_uint12_t_0CLK_de264c78 port map (
-layer0_node1_MUX_bit_math_h_l29_c3_752b_cond,
-layer0_node1_MUX_bit_math_h_l29_c3_752b_iftrue,
-layer0_node1_MUX_bit_math_h_l29_c3_752b_iffalse,
-layer0_node1_MUX_bit_math_h_l29_c3_752b_return_output);
+-- layer0_node1_MUX_bit_math_h_l29_c3_3227
+layer0_node1_MUX_bit_math_h_l29_c3_3227 : entity work.MUX_uint1_t_uint12_t_uint12_t_0CLK_de264c78 port map (
+layer0_node1_MUX_bit_math_h_l29_c3_3227_cond,
+layer0_node1_MUX_bit_math_h_l29_c3_3227_iftrue,
+layer0_node1_MUX_bit_math_h_l29_c3_3227_iffalse,
+layer0_node1_MUX_bit_math_h_l29_c3_3227_return_output);
 
--- layer1_node0_MUX_bit_math_h_l46_c3_d934
-layer1_node0_MUX_bit_math_h_l46_c3_d934 : entity work.MUX_uint1_t_uint12_t_uint12_t_0CLK_de264c78 port map (
-layer1_node0_MUX_bit_math_h_l46_c3_d934_cond,
-layer1_node0_MUX_bit_math_h_l46_c3_d934_iftrue,
-layer1_node0_MUX_bit_math_h_l46_c3_d934_iffalse,
-layer1_node0_MUX_bit_math_h_l46_c3_d934_return_output);
+-- layer1_node0_MUX_bit_math_h_l46_c3_b8ef
+layer1_node0_MUX_bit_math_h_l46_c3_b8ef : entity work.MUX_uint1_t_uint12_t_uint12_t_0CLK_de264c78 port map (
+layer1_node0_MUX_bit_math_h_l46_c3_b8ef_cond,
+layer1_node0_MUX_bit_math_h_l46_c3_b8ef_iftrue,
+layer1_node0_MUX_bit_math_h_l46_c3_b8ef_iffalse,
+layer1_node0_MUX_bit_math_h_l46_c3_b8ef_return_output);
 
 
 
@@ -101,9 +101,9 @@ process (
  in2,
  in3,
  -- All submodule outputs
- layer0_node0_MUX_bit_math_h_l18_c3_247c_return_output,
- layer0_node1_MUX_bit_math_h_l29_c3_752b_return_output,
- layer1_node0_MUX_bit_math_h_l46_c3_d934_return_output)
+ layer0_node0_MUX_bit_math_h_l18_c3_a21a_return_output,
+ layer0_node1_MUX_bit_math_h_l29_c3_3227_return_output,
+ layer1_node0_MUX_bit_math_h_l46_c3_b8ef_return_output)
 is 
  -- All of the wires in function
  variable VAR_CLOCK_ENABLE : unsigned(0 downto 0);
@@ -114,24 +114,24 @@ is
  variable VAR_in2 : unsigned(11 downto 0);
  variable VAR_in3 : unsigned(11 downto 0);
  variable VAR_sel0 : unsigned(0 downto 0);
- variable VAR_uint2_0_0_bit_math_h_l14_c10_1054_return_output : unsigned(0 downto 0);
+ variable VAR_uint2_0_0_bit_math_h_l14_c10_ea01_return_output : unsigned(0 downto 0);
  variable VAR_layer0_node0 : unsigned(11 downto 0);
- variable VAR_layer0_node0_MUX_bit_math_h_l18_c3_247c_iftrue : unsigned(11 downto 0);
- variable VAR_layer0_node0_MUX_bit_math_h_l18_c3_247c_iffalse : unsigned(11 downto 0);
- variable VAR_layer0_node0_MUX_bit_math_h_l18_c3_247c_return_output : unsigned(11 downto 0);
- variable VAR_layer0_node0_MUX_bit_math_h_l18_c3_247c_cond : unsigned(0 downto 0);
+ variable VAR_layer0_node0_MUX_bit_math_h_l18_c3_a21a_iftrue : unsigned(11 downto 0);
+ variable VAR_layer0_node0_MUX_bit_math_h_l18_c3_a21a_iffalse : unsigned(11 downto 0);
+ variable VAR_layer0_node0_MUX_bit_math_h_l18_c3_a21a_return_output : unsigned(11 downto 0);
+ variable VAR_layer0_node0_MUX_bit_math_h_l18_c3_a21a_cond : unsigned(0 downto 0);
  variable VAR_layer0_node1 : unsigned(11 downto 0);
- variable VAR_layer0_node1_MUX_bit_math_h_l29_c3_752b_iftrue : unsigned(11 downto 0);
- variable VAR_layer0_node1_MUX_bit_math_h_l29_c3_752b_iffalse : unsigned(11 downto 0);
- variable VAR_layer0_node1_MUX_bit_math_h_l29_c3_752b_return_output : unsigned(11 downto 0);
- variable VAR_layer0_node1_MUX_bit_math_h_l29_c3_752b_cond : unsigned(0 downto 0);
+ variable VAR_layer0_node1_MUX_bit_math_h_l29_c3_3227_iftrue : unsigned(11 downto 0);
+ variable VAR_layer0_node1_MUX_bit_math_h_l29_c3_3227_iffalse : unsigned(11 downto 0);
+ variable VAR_layer0_node1_MUX_bit_math_h_l29_c3_3227_return_output : unsigned(11 downto 0);
+ variable VAR_layer0_node1_MUX_bit_math_h_l29_c3_3227_cond : unsigned(0 downto 0);
  variable VAR_sel1 : unsigned(0 downto 0);
- variable VAR_uint2_1_1_bit_math_h_l42_c10_a52b_return_output : unsigned(0 downto 0);
+ variable VAR_uint2_1_1_bit_math_h_l42_c10_eac1_return_output : unsigned(0 downto 0);
  variable VAR_layer1_node0 : unsigned(11 downto 0);
- variable VAR_layer1_node0_MUX_bit_math_h_l46_c3_d934_iftrue : unsigned(11 downto 0);
- variable VAR_layer1_node0_MUX_bit_math_h_l46_c3_d934_iffalse : unsigned(11 downto 0);
- variable VAR_layer1_node0_MUX_bit_math_h_l46_c3_d934_return_output : unsigned(11 downto 0);
- variable VAR_layer1_node0_MUX_bit_math_h_l46_c3_d934_cond : unsigned(0 downto 0);
+ variable VAR_layer1_node0_MUX_bit_math_h_l46_c3_b8ef_iftrue : unsigned(11 downto 0);
+ variable VAR_layer1_node0_MUX_bit_math_h_l46_c3_b8ef_iffalse : unsigned(11 downto 0);
+ variable VAR_layer1_node0_MUX_bit_math_h_l46_c3_b8ef_return_output : unsigned(11 downto 0);
+ variable VAR_layer1_node0_MUX_bit_math_h_l46_c3_b8ef_cond : unsigned(0 downto 0);
 begin
 
  -- Loop to construct simultaneous register transfers for each of the pipeline stages
@@ -146,51 +146,51 @@ begin
      VAR_in3 := in3;
 
      -- Submodule level 0
-     VAR_layer0_node0_MUX_bit_math_h_l18_c3_247c_iffalse := VAR_in0;
-     VAR_layer0_node0_MUX_bit_math_h_l18_c3_247c_iftrue := VAR_in1;
-     VAR_layer0_node1_MUX_bit_math_h_l29_c3_752b_iffalse := VAR_in2;
-     VAR_layer0_node1_MUX_bit_math_h_l29_c3_752b_iftrue := VAR_in3;
-     -- uint2_0_0[bit_math_h_l14_c10_1054] LATENCY=0
-     VAR_uint2_0_0_bit_math_h_l14_c10_1054_return_output := uint2_0_0(
+     VAR_layer0_node0_MUX_bit_math_h_l18_c3_a21a_iffalse := VAR_in0;
+     VAR_layer0_node0_MUX_bit_math_h_l18_c3_a21a_iftrue := VAR_in1;
+     VAR_layer0_node1_MUX_bit_math_h_l29_c3_3227_iffalse := VAR_in2;
+     VAR_layer0_node1_MUX_bit_math_h_l29_c3_3227_iftrue := VAR_in3;
+     -- uint2_1_1[bit_math_h_l42_c10_eac1] LATENCY=0
+     VAR_uint2_1_1_bit_math_h_l42_c10_eac1_return_output := uint2_1_1(
      VAR_sel);
 
-     -- uint2_1_1[bit_math_h_l42_c10_a52b] LATENCY=0
-     VAR_uint2_1_1_bit_math_h_l42_c10_a52b_return_output := uint2_1_1(
+     -- uint2_0_0[bit_math_h_l14_c10_ea01] LATENCY=0
+     VAR_uint2_0_0_bit_math_h_l14_c10_ea01_return_output := uint2_0_0(
      VAR_sel);
 
      -- Submodule level 1
-     VAR_layer0_node0_MUX_bit_math_h_l18_c3_247c_cond := VAR_uint2_0_0_bit_math_h_l14_c10_1054_return_output;
-     VAR_layer0_node1_MUX_bit_math_h_l29_c3_752b_cond := VAR_uint2_0_0_bit_math_h_l14_c10_1054_return_output;
-     VAR_layer1_node0_MUX_bit_math_h_l46_c3_d934_cond := VAR_uint2_1_1_bit_math_h_l42_c10_a52b_return_output;
-     -- layer0_node1_MUX[bit_math_h_l29_c3_752b] LATENCY=0
+     VAR_layer0_node0_MUX_bit_math_h_l18_c3_a21a_cond := VAR_uint2_0_0_bit_math_h_l14_c10_ea01_return_output;
+     VAR_layer0_node1_MUX_bit_math_h_l29_c3_3227_cond := VAR_uint2_0_0_bit_math_h_l14_c10_ea01_return_output;
+     VAR_layer1_node0_MUX_bit_math_h_l46_c3_b8ef_cond := VAR_uint2_1_1_bit_math_h_l42_c10_eac1_return_output;
+     -- layer0_node0_MUX[bit_math_h_l18_c3_a21a] LATENCY=0
      -- Inputs
-     layer0_node1_MUX_bit_math_h_l29_c3_752b_cond <= VAR_layer0_node1_MUX_bit_math_h_l29_c3_752b_cond;
-     layer0_node1_MUX_bit_math_h_l29_c3_752b_iftrue <= VAR_layer0_node1_MUX_bit_math_h_l29_c3_752b_iftrue;
-     layer0_node1_MUX_bit_math_h_l29_c3_752b_iffalse <= VAR_layer0_node1_MUX_bit_math_h_l29_c3_752b_iffalse;
+     layer0_node0_MUX_bit_math_h_l18_c3_a21a_cond <= VAR_layer0_node0_MUX_bit_math_h_l18_c3_a21a_cond;
+     layer0_node0_MUX_bit_math_h_l18_c3_a21a_iftrue <= VAR_layer0_node0_MUX_bit_math_h_l18_c3_a21a_iftrue;
+     layer0_node0_MUX_bit_math_h_l18_c3_a21a_iffalse <= VAR_layer0_node0_MUX_bit_math_h_l18_c3_a21a_iffalse;
      -- Outputs
-     VAR_layer0_node1_MUX_bit_math_h_l29_c3_752b_return_output := layer0_node1_MUX_bit_math_h_l29_c3_752b_return_output;
+     VAR_layer0_node0_MUX_bit_math_h_l18_c3_a21a_return_output := layer0_node0_MUX_bit_math_h_l18_c3_a21a_return_output;
 
-     -- layer0_node0_MUX[bit_math_h_l18_c3_247c] LATENCY=0
+     -- layer0_node1_MUX[bit_math_h_l29_c3_3227] LATENCY=0
      -- Inputs
-     layer0_node0_MUX_bit_math_h_l18_c3_247c_cond <= VAR_layer0_node0_MUX_bit_math_h_l18_c3_247c_cond;
-     layer0_node0_MUX_bit_math_h_l18_c3_247c_iftrue <= VAR_layer0_node0_MUX_bit_math_h_l18_c3_247c_iftrue;
-     layer0_node0_MUX_bit_math_h_l18_c3_247c_iffalse <= VAR_layer0_node0_MUX_bit_math_h_l18_c3_247c_iffalse;
+     layer0_node1_MUX_bit_math_h_l29_c3_3227_cond <= VAR_layer0_node1_MUX_bit_math_h_l29_c3_3227_cond;
+     layer0_node1_MUX_bit_math_h_l29_c3_3227_iftrue <= VAR_layer0_node1_MUX_bit_math_h_l29_c3_3227_iftrue;
+     layer0_node1_MUX_bit_math_h_l29_c3_3227_iffalse <= VAR_layer0_node1_MUX_bit_math_h_l29_c3_3227_iffalse;
      -- Outputs
-     VAR_layer0_node0_MUX_bit_math_h_l18_c3_247c_return_output := layer0_node0_MUX_bit_math_h_l18_c3_247c_return_output;
+     VAR_layer0_node1_MUX_bit_math_h_l29_c3_3227_return_output := layer0_node1_MUX_bit_math_h_l29_c3_3227_return_output;
 
      -- Submodule level 2
-     VAR_layer1_node0_MUX_bit_math_h_l46_c3_d934_iffalse := VAR_layer0_node0_MUX_bit_math_h_l18_c3_247c_return_output;
-     VAR_layer1_node0_MUX_bit_math_h_l46_c3_d934_iftrue := VAR_layer0_node1_MUX_bit_math_h_l29_c3_752b_return_output;
-     -- layer1_node0_MUX[bit_math_h_l46_c3_d934] LATENCY=0
+     VAR_layer1_node0_MUX_bit_math_h_l46_c3_b8ef_iffalse := VAR_layer0_node0_MUX_bit_math_h_l18_c3_a21a_return_output;
+     VAR_layer1_node0_MUX_bit_math_h_l46_c3_b8ef_iftrue := VAR_layer0_node1_MUX_bit_math_h_l29_c3_3227_return_output;
+     -- layer1_node0_MUX[bit_math_h_l46_c3_b8ef] LATENCY=0
      -- Inputs
-     layer1_node0_MUX_bit_math_h_l46_c3_d934_cond <= VAR_layer1_node0_MUX_bit_math_h_l46_c3_d934_cond;
-     layer1_node0_MUX_bit_math_h_l46_c3_d934_iftrue <= VAR_layer1_node0_MUX_bit_math_h_l46_c3_d934_iftrue;
-     layer1_node0_MUX_bit_math_h_l46_c3_d934_iffalse <= VAR_layer1_node0_MUX_bit_math_h_l46_c3_d934_iffalse;
+     layer1_node0_MUX_bit_math_h_l46_c3_b8ef_cond <= VAR_layer1_node0_MUX_bit_math_h_l46_c3_b8ef_cond;
+     layer1_node0_MUX_bit_math_h_l46_c3_b8ef_iftrue <= VAR_layer1_node0_MUX_bit_math_h_l46_c3_b8ef_iftrue;
+     layer1_node0_MUX_bit_math_h_l46_c3_b8ef_iffalse <= VAR_layer1_node0_MUX_bit_math_h_l46_c3_b8ef_iffalse;
      -- Outputs
-     VAR_layer1_node0_MUX_bit_math_h_l46_c3_d934_return_output := layer1_node0_MUX_bit_math_h_l46_c3_d934_return_output;
+     VAR_layer1_node0_MUX_bit_math_h_l46_c3_b8ef_return_output := layer1_node0_MUX_bit_math_h_l46_c3_b8ef_return_output;
 
      -- Submodule level 3
-     VAR_return_output := VAR_layer1_node0_MUX_bit_math_h_l46_c3_d934_return_output;
+     VAR_return_output := VAR_layer1_node0_MUX_bit_math_h_l46_c3_b8ef_return_output;
      -- Last stage of pipeline return wire to return port/reg
      return_output <= VAR_return_output;
    end if;

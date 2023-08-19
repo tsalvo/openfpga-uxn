@@ -25,42 +25,42 @@ attribute mark_debug : string;
 constant PIPELINE_LATENCY : integer := 0;
 -- All of the wires/regs in function
 -- Each function instance gets signals
--- BIN_OP_PLUS[uxn_ram_device_h_l65_c45_b17a]
-signal BIN_OP_PLUS_uxn_ram_device_h_l65_c45_b17a_left : unsigned(7 downto 0);
-signal BIN_OP_PLUS_uxn_ram_device_h_l65_c45_b17a_right : unsigned(0 downto 0);
-signal BIN_OP_PLUS_uxn_ram_device_h_l65_c45_b17a_return_output : unsigned(8 downto 0);
+-- BIN_OP_PLUS[uxn_ram_device_h_l65_c45_9067]
+signal BIN_OP_PLUS_uxn_ram_device_h_l65_c45_9067_left : unsigned(7 downto 0);
+signal BIN_OP_PLUS_uxn_ram_device_h_l65_c45_9067_right : unsigned(0 downto 0);
+signal BIN_OP_PLUS_uxn_ram_device_h_l65_c45_9067_return_output : unsigned(8 downto 0);
 
--- device_ram_update[uxn_ram_device_h_l65_c9_bb43]
-signal device_ram_update_uxn_ram_device_h_l65_c9_bb43_CLOCK_ENABLE : unsigned(0 downto 0);
-signal device_ram_update_uxn_ram_device_h_l65_c9_bb43_address0 : unsigned(7 downto 0);
-signal device_ram_update_uxn_ram_device_h_l65_c9_bb43_write0_value : unsigned(7 downto 0);
-signal device_ram_update_uxn_ram_device_h_l65_c9_bb43_write0_enable : unsigned(0 downto 0);
-signal device_ram_update_uxn_ram_device_h_l65_c9_bb43_read0_enable : unsigned(0 downto 0);
-signal device_ram_update_uxn_ram_device_h_l65_c9_bb43_address1 : unsigned(7 downto 0);
-signal device_ram_update_uxn_ram_device_h_l65_c9_bb43_read1_enable : unsigned(0 downto 0);
-signal device_ram_update_uxn_ram_device_h_l65_c9_bb43_return_output : unsigned(15 downto 0);
+-- device_ram_update[uxn_ram_device_h_l65_c9_596c]
+signal device_ram_update_uxn_ram_device_h_l65_c9_596c_CLOCK_ENABLE : unsigned(0 downto 0);
+signal device_ram_update_uxn_ram_device_h_l65_c9_596c_address0 : unsigned(7 downto 0);
+signal device_ram_update_uxn_ram_device_h_l65_c9_596c_write0_value : unsigned(7 downto 0);
+signal device_ram_update_uxn_ram_device_h_l65_c9_596c_write0_enable : unsigned(0 downto 0);
+signal device_ram_update_uxn_ram_device_h_l65_c9_596c_read0_enable : unsigned(0 downto 0);
+signal device_ram_update_uxn_ram_device_h_l65_c9_596c_address1 : unsigned(7 downto 0);
+signal device_ram_update_uxn_ram_device_h_l65_c9_596c_read1_enable : unsigned(0 downto 0);
+signal device_ram_update_uxn_ram_device_h_l65_c9_596c_return_output : unsigned(15 downto 0);
 
 
 begin
 
 -- SUBMODULE INSTANCES 
--- BIN_OP_PLUS_uxn_ram_device_h_l65_c45_b17a
-BIN_OP_PLUS_uxn_ram_device_h_l65_c45_b17a : entity work.BIN_OP_PLUS_uint8_t_uint1_t_0CLK_de264c78 port map (
-BIN_OP_PLUS_uxn_ram_device_h_l65_c45_b17a_left,
-BIN_OP_PLUS_uxn_ram_device_h_l65_c45_b17a_right,
-BIN_OP_PLUS_uxn_ram_device_h_l65_c45_b17a_return_output);
+-- BIN_OP_PLUS_uxn_ram_device_h_l65_c45_9067
+BIN_OP_PLUS_uxn_ram_device_h_l65_c45_9067 : entity work.BIN_OP_PLUS_uint8_t_uint1_t_0CLK_de264c78 port map (
+BIN_OP_PLUS_uxn_ram_device_h_l65_c45_9067_left,
+BIN_OP_PLUS_uxn_ram_device_h_l65_c45_9067_right,
+BIN_OP_PLUS_uxn_ram_device_h_l65_c45_9067_return_output);
 
--- device_ram_update_uxn_ram_device_h_l65_c9_bb43
-device_ram_update_uxn_ram_device_h_l65_c9_bb43 : entity work.device_ram_update_0CLK_c464aa95 port map (
+-- device_ram_update_uxn_ram_device_h_l65_c9_596c
+device_ram_update_uxn_ram_device_h_l65_c9_596c : entity work.device_ram_update_0CLK_c464aa95 port map (
 clk,
-device_ram_update_uxn_ram_device_h_l65_c9_bb43_CLOCK_ENABLE,
-device_ram_update_uxn_ram_device_h_l65_c9_bb43_address0,
-device_ram_update_uxn_ram_device_h_l65_c9_bb43_write0_value,
-device_ram_update_uxn_ram_device_h_l65_c9_bb43_write0_enable,
-device_ram_update_uxn_ram_device_h_l65_c9_bb43_read0_enable,
-device_ram_update_uxn_ram_device_h_l65_c9_bb43_address1,
-device_ram_update_uxn_ram_device_h_l65_c9_bb43_read1_enable,
-device_ram_update_uxn_ram_device_h_l65_c9_bb43_return_output);
+device_ram_update_uxn_ram_device_h_l65_c9_596c_CLOCK_ENABLE,
+device_ram_update_uxn_ram_device_h_l65_c9_596c_address0,
+device_ram_update_uxn_ram_device_h_l65_c9_596c_write0_value,
+device_ram_update_uxn_ram_device_h_l65_c9_596c_write0_enable,
+device_ram_update_uxn_ram_device_h_l65_c9_596c_read0_enable,
+device_ram_update_uxn_ram_device_h_l65_c9_596c_address1,
+device_ram_update_uxn_ram_device_h_l65_c9_596c_read1_enable,
+device_ram_update_uxn_ram_device_h_l65_c9_596c_return_output);
 
 
 
@@ -70,32 +70,32 @@ process (
  -- Inputs
  address,
  -- All submodule outputs
- BIN_OP_PLUS_uxn_ram_device_h_l65_c45_b17a_return_output,
- device_ram_update_uxn_ram_device_h_l65_c9_bb43_return_output)
+ BIN_OP_PLUS_uxn_ram_device_h_l65_c45_9067_return_output,
+ device_ram_update_uxn_ram_device_h_l65_c9_596c_return_output)
 is 
  -- All of the wires in function
  variable VAR_CLOCK_ENABLE : unsigned(0 downto 0);
  variable VAR_return_output : unsigned(15 downto 0);
  variable VAR_address : unsigned(7 downto 0);
- variable VAR_device_ram_update_uxn_ram_device_h_l65_c9_bb43_address0 : unsigned(7 downto 0);
- variable VAR_device_ram_update_uxn_ram_device_h_l65_c9_bb43_write0_value : unsigned(7 downto 0);
- variable VAR_device_ram_update_uxn_ram_device_h_l65_c9_bb43_write0_enable : unsigned(0 downto 0);
- variable VAR_device_ram_update_uxn_ram_device_h_l65_c9_bb43_read0_enable : unsigned(0 downto 0);
- variable VAR_device_ram_update_uxn_ram_device_h_l65_c9_bb43_address1 : unsigned(7 downto 0);
- variable VAR_device_ram_update_uxn_ram_device_h_l65_c9_bb43_read1_enable : unsigned(0 downto 0);
- variable VAR_BIN_OP_PLUS_uxn_ram_device_h_l65_c45_b17a_left : unsigned(7 downto 0);
- variable VAR_BIN_OP_PLUS_uxn_ram_device_h_l65_c45_b17a_right : unsigned(0 downto 0);
- variable VAR_BIN_OP_PLUS_uxn_ram_device_h_l65_c45_b17a_return_output : unsigned(8 downto 0);
- variable VAR_device_ram_update_uxn_ram_device_h_l65_c9_bb43_CLOCK_ENABLE : unsigned(0 downto 0);
- variable VAR_device_ram_update_uxn_ram_device_h_l65_c9_bb43_return_output : unsigned(15 downto 0);
+ variable VAR_device_ram_update_uxn_ram_device_h_l65_c9_596c_address0 : unsigned(7 downto 0);
+ variable VAR_device_ram_update_uxn_ram_device_h_l65_c9_596c_write0_value : unsigned(7 downto 0);
+ variable VAR_device_ram_update_uxn_ram_device_h_l65_c9_596c_write0_enable : unsigned(0 downto 0);
+ variable VAR_device_ram_update_uxn_ram_device_h_l65_c9_596c_read0_enable : unsigned(0 downto 0);
+ variable VAR_device_ram_update_uxn_ram_device_h_l65_c9_596c_address1 : unsigned(7 downto 0);
+ variable VAR_device_ram_update_uxn_ram_device_h_l65_c9_596c_read1_enable : unsigned(0 downto 0);
+ variable VAR_BIN_OP_PLUS_uxn_ram_device_h_l65_c45_9067_left : unsigned(7 downto 0);
+ variable VAR_BIN_OP_PLUS_uxn_ram_device_h_l65_c45_9067_right : unsigned(0 downto 0);
+ variable VAR_BIN_OP_PLUS_uxn_ram_device_h_l65_c45_9067_return_output : unsigned(8 downto 0);
+ variable VAR_device_ram_update_uxn_ram_device_h_l65_c9_596c_CLOCK_ENABLE : unsigned(0 downto 0);
+ variable VAR_device_ram_update_uxn_ram_device_h_l65_c9_596c_return_output : unsigned(15 downto 0);
 begin
  -- Constants and things derived from constants alone
      -- Submodule level 0
-     VAR_device_ram_update_uxn_ram_device_h_l65_c9_bb43_read0_enable := to_unsigned(1, 1);
-     VAR_device_ram_update_uxn_ram_device_h_l65_c9_bb43_read1_enable := to_unsigned(1, 1);
-     VAR_BIN_OP_PLUS_uxn_ram_device_h_l65_c45_b17a_right := to_unsigned(1, 1);
-     VAR_device_ram_update_uxn_ram_device_h_l65_c9_bb43_write0_value := resize(to_unsigned(0, 1), 8);
-     VAR_device_ram_update_uxn_ram_device_h_l65_c9_bb43_write0_enable := to_unsigned(0, 1);
+     VAR_device_ram_update_uxn_ram_device_h_l65_c9_596c_read1_enable := to_unsigned(1, 1);
+     VAR_device_ram_update_uxn_ram_device_h_l65_c9_596c_write0_value := resize(to_unsigned(0, 1), 8);
+     VAR_device_ram_update_uxn_ram_device_h_l65_c9_596c_read0_enable := to_unsigned(1, 1);
+     VAR_device_ram_update_uxn_ram_device_h_l65_c9_596c_write0_enable := to_unsigned(0, 1);
+     VAR_BIN_OP_PLUS_uxn_ram_device_h_l65_c45_9067_right := to_unsigned(1, 1);
 
  -- Loop to construct simultaneous register transfers for each of the pipeline stages
  -- LATENCY=0 is combinational Logic
@@ -107,33 +107,33 @@ begin
      VAR_address := address;
 
      -- Submodule level 0
-     VAR_device_ram_update_uxn_ram_device_h_l65_c9_bb43_CLOCK_ENABLE := VAR_CLOCK_ENABLE;
-     VAR_BIN_OP_PLUS_uxn_ram_device_h_l65_c45_b17a_left := VAR_address;
-     VAR_device_ram_update_uxn_ram_device_h_l65_c9_bb43_address0 := VAR_address;
-     -- BIN_OP_PLUS[uxn_ram_device_h_l65_c45_b17a] LATENCY=0
+     VAR_device_ram_update_uxn_ram_device_h_l65_c9_596c_CLOCK_ENABLE := VAR_CLOCK_ENABLE;
+     VAR_BIN_OP_PLUS_uxn_ram_device_h_l65_c45_9067_left := VAR_address;
+     VAR_device_ram_update_uxn_ram_device_h_l65_c9_596c_address0 := VAR_address;
+     -- BIN_OP_PLUS[uxn_ram_device_h_l65_c45_9067] LATENCY=0
      -- Inputs
-     BIN_OP_PLUS_uxn_ram_device_h_l65_c45_b17a_left <= VAR_BIN_OP_PLUS_uxn_ram_device_h_l65_c45_b17a_left;
-     BIN_OP_PLUS_uxn_ram_device_h_l65_c45_b17a_right <= VAR_BIN_OP_PLUS_uxn_ram_device_h_l65_c45_b17a_right;
+     BIN_OP_PLUS_uxn_ram_device_h_l65_c45_9067_left <= VAR_BIN_OP_PLUS_uxn_ram_device_h_l65_c45_9067_left;
+     BIN_OP_PLUS_uxn_ram_device_h_l65_c45_9067_right <= VAR_BIN_OP_PLUS_uxn_ram_device_h_l65_c45_9067_right;
      -- Outputs
-     VAR_BIN_OP_PLUS_uxn_ram_device_h_l65_c45_b17a_return_output := BIN_OP_PLUS_uxn_ram_device_h_l65_c45_b17a_return_output;
+     VAR_BIN_OP_PLUS_uxn_ram_device_h_l65_c45_9067_return_output := BIN_OP_PLUS_uxn_ram_device_h_l65_c45_9067_return_output;
 
      -- Submodule level 1
-     VAR_device_ram_update_uxn_ram_device_h_l65_c9_bb43_address1 := resize(VAR_BIN_OP_PLUS_uxn_ram_device_h_l65_c45_b17a_return_output, 8);
-     -- device_ram_update[uxn_ram_device_h_l65_c9_bb43] LATENCY=0
+     VAR_device_ram_update_uxn_ram_device_h_l65_c9_596c_address1 := resize(VAR_BIN_OP_PLUS_uxn_ram_device_h_l65_c45_9067_return_output, 8);
+     -- device_ram_update[uxn_ram_device_h_l65_c9_596c] LATENCY=0
      -- Clock enable
-     device_ram_update_uxn_ram_device_h_l65_c9_bb43_CLOCK_ENABLE <= VAR_device_ram_update_uxn_ram_device_h_l65_c9_bb43_CLOCK_ENABLE;
+     device_ram_update_uxn_ram_device_h_l65_c9_596c_CLOCK_ENABLE <= VAR_device_ram_update_uxn_ram_device_h_l65_c9_596c_CLOCK_ENABLE;
      -- Inputs
-     device_ram_update_uxn_ram_device_h_l65_c9_bb43_address0 <= VAR_device_ram_update_uxn_ram_device_h_l65_c9_bb43_address0;
-     device_ram_update_uxn_ram_device_h_l65_c9_bb43_write0_value <= VAR_device_ram_update_uxn_ram_device_h_l65_c9_bb43_write0_value;
-     device_ram_update_uxn_ram_device_h_l65_c9_bb43_write0_enable <= VAR_device_ram_update_uxn_ram_device_h_l65_c9_bb43_write0_enable;
-     device_ram_update_uxn_ram_device_h_l65_c9_bb43_read0_enable <= VAR_device_ram_update_uxn_ram_device_h_l65_c9_bb43_read0_enable;
-     device_ram_update_uxn_ram_device_h_l65_c9_bb43_address1 <= VAR_device_ram_update_uxn_ram_device_h_l65_c9_bb43_address1;
-     device_ram_update_uxn_ram_device_h_l65_c9_bb43_read1_enable <= VAR_device_ram_update_uxn_ram_device_h_l65_c9_bb43_read1_enable;
+     device_ram_update_uxn_ram_device_h_l65_c9_596c_address0 <= VAR_device_ram_update_uxn_ram_device_h_l65_c9_596c_address0;
+     device_ram_update_uxn_ram_device_h_l65_c9_596c_write0_value <= VAR_device_ram_update_uxn_ram_device_h_l65_c9_596c_write0_value;
+     device_ram_update_uxn_ram_device_h_l65_c9_596c_write0_enable <= VAR_device_ram_update_uxn_ram_device_h_l65_c9_596c_write0_enable;
+     device_ram_update_uxn_ram_device_h_l65_c9_596c_read0_enable <= VAR_device_ram_update_uxn_ram_device_h_l65_c9_596c_read0_enable;
+     device_ram_update_uxn_ram_device_h_l65_c9_596c_address1 <= VAR_device_ram_update_uxn_ram_device_h_l65_c9_596c_address1;
+     device_ram_update_uxn_ram_device_h_l65_c9_596c_read1_enable <= VAR_device_ram_update_uxn_ram_device_h_l65_c9_596c_read1_enable;
      -- Outputs
-     VAR_device_ram_update_uxn_ram_device_h_l65_c9_bb43_return_output := device_ram_update_uxn_ram_device_h_l65_c9_bb43_return_output;
+     VAR_device_ram_update_uxn_ram_device_h_l65_c9_596c_return_output := device_ram_update_uxn_ram_device_h_l65_c9_596c_return_output;
 
      -- Submodule level 2
-     VAR_return_output := VAR_device_ram_update_uxn_ram_device_h_l65_c9_bb43_return_output;
+     VAR_return_output := VAR_device_ram_update_uxn_ram_device_h_l65_c9_596c_return_output;
      -- Last stage of pipeline return wire to return port/reg
      return_output <= VAR_return_output;
    end if;
