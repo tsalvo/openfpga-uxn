@@ -26,23 +26,23 @@ attribute mark_debug : string;
 constant PIPELINE_LATENCY : integer := 0;
 -- All of the wires/regs in function
 -- Each function instance gets signals
--- stack_data_get2[uxn_stack_h_l235_c9_2039]
-signal stack_data_get2_uxn_stack_h_l235_c9_2039_CLOCK_ENABLE : unsigned(0 downto 0);
-signal stack_data_get2_uxn_stack_h_l235_c9_2039_stack_index : unsigned(0 downto 0);
-signal stack_data_get2_uxn_stack_h_l235_c9_2039_address : unsigned(7 downto 0);
-signal stack_data_get2_uxn_stack_h_l235_c9_2039_return_output : unsigned(15 downto 0);
+-- stack_data_get2[uxn_stack_h_l236_c9_b621]
+signal stack_data_get2_uxn_stack_h_l236_c9_b621_CLOCK_ENABLE : unsigned(0 downto 0);
+signal stack_data_get2_uxn_stack_h_l236_c9_b621_stack_index : unsigned(0 downto 0);
+signal stack_data_get2_uxn_stack_h_l236_c9_b621_address : unsigned(7 downto 0);
+signal stack_data_get2_uxn_stack_h_l236_c9_b621_return_output : unsigned(15 downto 0);
 
 
 begin
 
 -- SUBMODULE INSTANCES 
--- stack_data_get2_uxn_stack_h_l235_c9_2039
-stack_data_get2_uxn_stack_h_l235_c9_2039 : entity work.stack_data_get2_0CLK_9b5e2ef9 port map (
+-- stack_data_get2_uxn_stack_h_l236_c9_b621
+stack_data_get2_uxn_stack_h_l236_c9_b621 : entity work.stack_data_get2_0CLK_9b5e2ef9 port map (
 clk,
-stack_data_get2_uxn_stack_h_l235_c9_2039_CLOCK_ENABLE,
-stack_data_get2_uxn_stack_h_l235_c9_2039_stack_index,
-stack_data_get2_uxn_stack_h_l235_c9_2039_address,
-stack_data_get2_uxn_stack_h_l235_c9_2039_return_output);
+stack_data_get2_uxn_stack_h_l236_c9_b621_CLOCK_ENABLE,
+stack_data_get2_uxn_stack_h_l236_c9_b621_stack_index,
+stack_data_get2_uxn_stack_h_l236_c9_b621_address,
+stack_data_get2_uxn_stack_h_l236_c9_b621_return_output);
 
 
 
@@ -53,17 +53,17 @@ process (
  stack_index,
  address,
  -- All submodule outputs
- stack_data_get2_uxn_stack_h_l235_c9_2039_return_output)
+ stack_data_get2_uxn_stack_h_l236_c9_b621_return_output)
 is 
  -- All of the wires in function
  variable VAR_CLOCK_ENABLE : unsigned(0 downto 0);
  variable VAR_return_output : unsigned(15 downto 0);
  variable VAR_stack_index : unsigned(0 downto 0);
  variable VAR_address : unsigned(7 downto 0);
- variable VAR_stack_data_get2_uxn_stack_h_l235_c9_2039_stack_index : unsigned(0 downto 0);
- variable VAR_stack_data_get2_uxn_stack_h_l235_c9_2039_address : unsigned(7 downto 0);
- variable VAR_stack_data_get2_uxn_stack_h_l235_c9_2039_CLOCK_ENABLE : unsigned(0 downto 0);
- variable VAR_stack_data_get2_uxn_stack_h_l235_c9_2039_return_output : unsigned(15 downto 0);
+ variable VAR_stack_data_get2_uxn_stack_h_l236_c9_b621_stack_index : unsigned(0 downto 0);
+ variable VAR_stack_data_get2_uxn_stack_h_l236_c9_b621_address : unsigned(7 downto 0);
+ variable VAR_stack_data_get2_uxn_stack_h_l236_c9_b621_CLOCK_ENABLE : unsigned(0 downto 0);
+ variable VAR_stack_data_get2_uxn_stack_h_l236_c9_b621_return_output : unsigned(15 downto 0);
 begin
 
  -- Loop to construct simultaneous register transfers for each of the pipeline stages
@@ -77,20 +77,20 @@ begin
      VAR_address := address;
 
      -- Submodule level 0
-     VAR_stack_data_get2_uxn_stack_h_l235_c9_2039_CLOCK_ENABLE := VAR_CLOCK_ENABLE;
-     VAR_stack_data_get2_uxn_stack_h_l235_c9_2039_address := VAR_address;
-     VAR_stack_data_get2_uxn_stack_h_l235_c9_2039_stack_index := VAR_stack_index;
-     -- stack_data_get2[uxn_stack_h_l235_c9_2039] LATENCY=0
+     VAR_stack_data_get2_uxn_stack_h_l236_c9_b621_CLOCK_ENABLE := VAR_CLOCK_ENABLE;
+     VAR_stack_data_get2_uxn_stack_h_l236_c9_b621_address := VAR_address;
+     VAR_stack_data_get2_uxn_stack_h_l236_c9_b621_stack_index := VAR_stack_index;
+     -- stack_data_get2[uxn_stack_h_l236_c9_b621] LATENCY=0
      -- Clock enable
-     stack_data_get2_uxn_stack_h_l235_c9_2039_CLOCK_ENABLE <= VAR_stack_data_get2_uxn_stack_h_l235_c9_2039_CLOCK_ENABLE;
+     stack_data_get2_uxn_stack_h_l236_c9_b621_CLOCK_ENABLE <= VAR_stack_data_get2_uxn_stack_h_l236_c9_b621_CLOCK_ENABLE;
      -- Inputs
-     stack_data_get2_uxn_stack_h_l235_c9_2039_stack_index <= VAR_stack_data_get2_uxn_stack_h_l235_c9_2039_stack_index;
-     stack_data_get2_uxn_stack_h_l235_c9_2039_address <= VAR_stack_data_get2_uxn_stack_h_l235_c9_2039_address;
+     stack_data_get2_uxn_stack_h_l236_c9_b621_stack_index <= VAR_stack_data_get2_uxn_stack_h_l236_c9_b621_stack_index;
+     stack_data_get2_uxn_stack_h_l236_c9_b621_address <= VAR_stack_data_get2_uxn_stack_h_l236_c9_b621_address;
      -- Outputs
-     VAR_stack_data_get2_uxn_stack_h_l235_c9_2039_return_output := stack_data_get2_uxn_stack_h_l235_c9_2039_return_output;
+     VAR_stack_data_get2_uxn_stack_h_l236_c9_b621_return_output := stack_data_get2_uxn_stack_h_l236_c9_b621_return_output;
 
      -- Submodule level 1
-     VAR_return_output := VAR_stack_data_get2_uxn_stack_h_l235_c9_2039_return_output;
+     VAR_return_output := VAR_stack_data_get2_uxn_stack_h_l236_c9_b621_return_output;
      -- Last stage of pipeline return wire to return port/reg
      return_output <= VAR_return_output;
    end if;

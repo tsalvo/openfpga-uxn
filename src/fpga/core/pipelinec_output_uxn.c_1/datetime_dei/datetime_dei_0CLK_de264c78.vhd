@@ -46,6 +46,7 @@ is
  variable VAR_CLOCK_ENABLE : unsigned(0 downto 0);
  variable VAR_return_output : unsigned(7 downto 0);
  variable VAR_addr : unsigned(7 downto 0);
+ variable VAR_result_uxn_device_h_l37_c2_5990 : unsigned(7 downto 0);
  -- State registers comb logic variables
 variable REG_VAR_result : unsigned(7 downto 0);
 begin
@@ -53,6 +54,11 @@ begin
   -- STATE REGS
   -- Default read regs into vars
   REG_VAR_result := result;
+ -- Constants and things derived from constants alone
+     -- Submodule level 0
+     VAR_result_uxn_device_h_l37_c2_5990 := resize(to_unsigned(0, 1), 8);
+     REG_VAR_result := VAR_result_uxn_device_h_l37_c2_5990;
+     VAR_return_output := VAR_result_uxn_device_h_l37_c2_5990;
 
  -- Loop to construct simultaneous register transfers for each of the pipeline stages
  -- LATENCY=0 is combinational Logic
@@ -63,9 +69,6 @@ begin
      -- Mux in inputs
      VAR_addr := addr;
 
-     -- Submodule level 0
-     REG_VAR_result := result;
-     VAR_return_output := result;
      -- Last stage of pipeline return wire to return port/reg
      return_output <= VAR_return_output;
    end if;

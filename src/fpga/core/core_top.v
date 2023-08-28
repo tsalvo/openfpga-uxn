@@ -497,7 +497,7 @@ core_bridge_cmd icb (
 // UXN PipelineC Module Input / Output
 // synchronous to clk_core_12288
 wire [15:0] uxn_c_out;
-wire [15:0] uxn_c_in;
+// wire [15:0] uxn_c_in;
 
 ////////////////////////////////////////////////////////////////////////////////////////
 // video generation
@@ -544,6 +544,7 @@ assign video_hs = vidout_hs;
     reg         vidout_skip;
     reg         vidout_vs;
     reg         vidout_hs, vidout_hs_1;
+    reg [15:0]  vidout_uxn;
 
 always @(posedge clk_core_12288 or negedge reset_n) begin
 
@@ -557,6 +558,9 @@ always @(posedge clk_core_12288 or negedge reset_n) begin
         uxn_c_current_pixel_r <= uxn_c_out[11:8];
         uxn_c_current_pixel_g <= uxn_c_out[7:4];
         uxn_c_current_pixel_b <= uxn_c_out[3:0];
+        
+        vidout_uxn[15:12] <= 4'b0010;
+        vidout_uxn[2:2] <= 1'b0;
     
         vidout_de <= 0;
         vidout_skip <= 0;
@@ -600,7 +604,7 @@ always @(posedge clk_core_12288 or negedge reset_n) begin
             if(y_count >= VID_V_BPORCH && y_count < VID_V_ACTIVE+VID_V_BPORCH) begin
                 // data enable. this is the active region of the line
                 vidout_de <= 1;
-                
+                vidout_uxn[2:2] <= 1'b1;
                 vidout_rgb[23:20] <= uxn_c_current_pixel_r;
                 vidout_rgb[19:16] <= 4'h00;
                 vidout_rgb[15:12] <= uxn_c_current_pixel_g;
@@ -683,9 +687,10 @@ mf_pllbase mp1 (
 
 top top
 (
-.clk_12p287999(clk_core_12288),
-.uxn_eval_input(uxn_c_in),
-.uxn_eval_return_output(uxn_c_out)
+    .clk_12p287999(clk_core_12288),
+    .uxn_eval_input(vidout_uxn),
+    //.uxn_eval_input(uxn_c_in),
+    .uxn_eval_return_output(uxn_c_out)
 );
     
 endmodule

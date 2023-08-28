@@ -4110,7 +4110,13 @@ subtype int2048_t is signed(2047 downto 0);
     in_mantissa_width : integer;
     out_exponent_width : integer;
     out_mantissa_width : integer) return std_logic_vector; 
-   type uint16_t_16 is array(0 to 15) of unsigned(15 downto 0);
+   subtype uint8_t_128 is byte_array_t(0 to 127);
+constant uint8_t_128_SLV_LEN : integer := 8 * 128;
+
+      function uint8_t_128_to_slv(data : uint8_t_128) return std_logic_vector;
+
+      function slv_to_uint8_t_128(data : std_logic_vector) return uint8_t_128;
+type uint16_t_16 is array(0 to 15) of unsigned(15 downto 0);
 constant uint16_t_16_SLV_LEN : integer := 16 * 16;
 
       function uint16_t_16_to_slv(data : uint16_t_16) return std_logic_vector;
@@ -4186,6 +4192,38 @@ constant uint12_t_4_SLV_LEN : integer := 12 * 4;
   function prog_ctr_ram_outputs_t_to_slv(data : prog_ctr_ram_outputs_t) return std_logic_vector;
 
   function slv_to_prog_ctr_ram_outputs_t(data : std_logic_vector) return prog_ctr_ram_outputs_t;
+
+  type screen_xy_ram_outputs_t is record
+  
+    addr0 : unsigned(31 downto 0);
+    wr_data0 : unsigned(15 downto 0);
+    wr_en0 : unsigned(0 downto 0);
+    rd_data0 : unsigned(15 downto 0);
+    valid0 : unsigned(0 downto 0);
+    addr1 : unsigned(31 downto 0);
+    rd_data1 : unsigned(15 downto 0);
+    valid1 : unsigned(0 downto 0);
+  end record;
+  
+  constant screen_xy_ram_outputs_t_NULL : screen_xy_ram_outputs_t := (
+  
+    addr0 => to_unsigned(0, 32),
+    wr_data0 => to_unsigned(0, 16),
+    wr_en0 => to_unsigned(0, 1),
+    rd_data0 => to_unsigned(0, 16),
+    valid0 => to_unsigned(0, 1),
+    addr1 => to_unsigned(0, 32),
+    rd_data1 => to_unsigned(0, 16),
+    valid1 => to_unsigned(0, 1)
+  );
+  
+  constant screen_xy_ram_outputs_t_SLV_LEN : integer := (
+  32+16+1+16+1+32+16+1
+  );
+  
+  function screen_xy_ram_outputs_t_to_slv(data : screen_xy_ram_outputs_t) return std_logic_vector;
+
+  function slv_to_screen_xy_ram_outputs_t(data : std_logic_vector) return screen_xy_ram_outputs_t;
 
   type device_ram_outputs_t is record
   
@@ -4315,7 +4353,7 @@ constant uint12_t_4_SLV_LEN : integer := 12 * 4;
 
   function slv_to_stack_p_ram_outputs_t(data : std_logic_vector) return stack_p_ram_outputs_t;
 
-  type screen_ram_outputs_t is record
+  type background_vram_outputs_t is record
   
     addr0 : unsigned(31 downto 0);
     wr_data0 : unsigned(1 downto 0);
@@ -4327,7 +4365,7 @@ constant uint12_t_4_SLV_LEN : integer := 12 * 4;
     valid1 : unsigned(0 downto 0);
   end record;
   
-  constant screen_ram_outputs_t_NULL : screen_ram_outputs_t := (
+  constant background_vram_outputs_t_NULL : background_vram_outputs_t := (
   
     addr0 => to_unsigned(0, 32),
     wr_data0 => to_unsigned(0, 2),
@@ -4339,13 +4377,13 @@ constant uint12_t_4_SLV_LEN : integer := 12 * 4;
     valid1 => to_unsigned(0, 1)
   );
   
-  constant screen_ram_outputs_t_SLV_LEN : integer := (
+  constant background_vram_outputs_t_SLV_LEN : integer := (
   32+2+1+2+1+32+2+1
   );
   
-  function screen_ram_outputs_t_to_slv(data : screen_ram_outputs_t) return std_logic_vector;
+  function background_vram_outputs_t_to_slv(data : background_vram_outputs_t) return std_logic_vector;
 
-  function slv_to_screen_ram_outputs_t(data : std_logic_vector) return screen_ram_outputs_t;
+  function slv_to_background_vram_outputs_t(data : std_logic_vector) return background_vram_outputs_t;
 
 end c_structs_pkg;
 package body c_structs_pkg is
@@ -4404,6 +4442,919 @@ package body c_structs_pkg is
     rv := rv_s & std_logic_vector(rv_e) & std_logic_vector(rv_m);
     return rv;
   end function;
+      function uint8_t_128_to_slv(data : uint8_t_128) return std_logic_vector is
+        variable rv : std_logic_vector(uint8_t_128_SLV_LEN-1 downto 0);
+        variable pos : integer := 0;
+      begin
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(0));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(1));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(2));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(3));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(4));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(5));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(6));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(7));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(8));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(9));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(10));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(11));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(12));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(13));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(14));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(15));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(16));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(17));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(18));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(19));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(20));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(21));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(22));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(23));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(24));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(25));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(26));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(27));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(28));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(29));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(30));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(31));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(32));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(33));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(34));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(35));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(36));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(37));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(38));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(39));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(40));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(41));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(42));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(43));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(44));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(45));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(46));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(47));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(48));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(49));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(50));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(51));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(52));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(53));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(54));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(55));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(56));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(57));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(58));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(59));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(60));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(61));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(62));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(63));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(64));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(65));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(66));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(67));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(68));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(69));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(70));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(71));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(72));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(73));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(74));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(75));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(76));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(77));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(78));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(79));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(80));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(81));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(82));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(83));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(84));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(85));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(86));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(87));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(88));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(89));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(90));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(91));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(92));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(93));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(94));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(95));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(96));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(97));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(98));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(99));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(100));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(101));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(102));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(103));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(104));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(105));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(106));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(107));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(108));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(109));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(110));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(111));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(112));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(113));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(114));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(115));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(116));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(117));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(118));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(119));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(120));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(121));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(122));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(123));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(124));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(125));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(126));
+            pos := pos + 8;
+    
+            rv((pos+8)-1 downto pos) := std_logic_vector(data(127));
+            pos := pos + 8;
+    
+          return rv;
+      end function;
+    
+      function slv_to_uint8_t_128(data : std_logic_vector) return uint8_t_128 is
+        variable rv : uint8_t_128;
+        variable elem_slv : std_logic_vector(8-1 downto 0);
+        variable pos : integer := 0;
+      begin
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(0) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(1) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(2) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(3) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(4) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(5) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(6) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(7) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(8) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(9) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(10) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(11) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(12) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(13) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(14) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(15) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(16) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(17) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(18) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(19) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(20) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(21) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(22) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(23) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(24) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(25) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(26) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(27) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(28) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(29) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(30) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(31) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(32) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(33) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(34) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(35) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(36) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(37) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(38) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(39) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(40) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(41) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(42) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(43) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(44) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(45) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(46) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(47) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(48) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(49) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(50) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(51) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(52) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(53) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(54) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(55) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(56) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(57) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(58) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(59) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(60) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(61) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(62) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(63) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(64) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(65) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(66) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(67) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(68) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(69) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(70) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(71) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(72) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(73) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(74) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(75) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(76) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(77) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(78) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(79) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(80) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(81) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(82) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(83) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(84) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(85) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(86) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(87) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(88) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(89) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(90) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(91) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(92) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(93) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(94) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(95) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(96) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(97) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(98) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(99) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(100) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(101) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(102) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(103) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(104) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(105) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(106) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(107) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(108) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(109) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(110) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(111) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(112) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(113) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(114) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(115) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(116) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(117) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(118) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(119) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(120) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(121) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(122) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(123) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(124) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(125) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(126) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+            elem_slv := data((pos+8)-1 downto pos);
+            rv(127) := unsigned(elem_slv);
+            pos := pos + 8;
+    
+          return rv;
+      end function;
+    
       function uint16_t_16_to_slv(data : uint16_t_16) return std_logic_vector is
         variable rv : std_logic_vector(uint16_t_16_SLV_LEN-1 downto 0);
         variable pos : integer := 0;
@@ -4692,6 +5643,86 @@ package body c_structs_pkg is
 
   function slv_to_prog_ctr_ram_outputs_t(data : std_logic_vector) return prog_ctr_ram_outputs_t is
     variable rv : prog_ctr_ram_outputs_t;
+    variable pos : integer := 0;
+    variable addr0_slv : std_logic_vector(32-1 downto 0);
+    variable wr_data0_slv : std_logic_vector(16-1 downto 0);
+    variable wr_en0_slv : std_logic_vector(1-1 downto 0);
+    variable rd_data0_slv : std_logic_vector(16-1 downto 0);
+    variable valid0_slv : std_logic_vector(1-1 downto 0);
+    variable addr1_slv : std_logic_vector(32-1 downto 0);
+    variable rd_data1_slv : std_logic_vector(16-1 downto 0);
+    variable valid1_slv : std_logic_vector(1-1 downto 0);
+  begin
+
+        addr0_slv := data((pos+32)-1 downto pos);
+        rv.addr0 := unsigned(addr0_slv);
+        pos := pos + 32;
+
+        wr_data0_slv := data((pos+16)-1 downto pos);
+        rv.wr_data0 := unsigned(wr_data0_slv);
+        pos := pos + 16;
+
+        wr_en0_slv := data((pos+1)-1 downto pos);
+        rv.wr_en0 := unsigned(wr_en0_slv);
+        pos := pos + 1;
+
+        rd_data0_slv := data((pos+16)-1 downto pos);
+        rv.rd_data0 := unsigned(rd_data0_slv);
+        pos := pos + 16;
+
+        valid0_slv := data((pos+1)-1 downto pos);
+        rv.valid0 := unsigned(valid0_slv);
+        pos := pos + 1;
+
+        addr1_slv := data((pos+32)-1 downto pos);
+        rv.addr1 := unsigned(addr1_slv);
+        pos := pos + 32;
+
+        rd_data1_slv := data((pos+16)-1 downto pos);
+        rv.rd_data1 := unsigned(rd_data1_slv);
+        pos := pos + 16;
+
+        valid1_slv := data((pos+1)-1 downto pos);
+        rv.valid1 := unsigned(valid1_slv);
+        pos := pos + 1;
+
+      return rv;
+  end function;
+
+  function screen_xy_ram_outputs_t_to_slv(data : screen_xy_ram_outputs_t) return std_logic_vector is
+    variable rv : std_logic_vector(screen_xy_ram_outputs_t_SLV_LEN-1 downto 0);
+    variable pos : integer := 0;
+  begin
+
+        rv((pos+32)-1 downto pos) := std_logic_vector(data.addr0);
+        pos := pos + 32;
+
+        rv((pos+16)-1 downto pos) := std_logic_vector(data.wr_data0);
+        pos := pos + 16;
+
+        rv((pos+1)-1 downto pos) := std_logic_vector(data.wr_en0);
+        pos := pos + 1;
+
+        rv((pos+16)-1 downto pos) := std_logic_vector(data.rd_data0);
+        pos := pos + 16;
+
+        rv((pos+1)-1 downto pos) := std_logic_vector(data.valid0);
+        pos := pos + 1;
+
+        rv((pos+32)-1 downto pos) := std_logic_vector(data.addr1);
+        pos := pos + 32;
+
+        rv((pos+16)-1 downto pos) := std_logic_vector(data.rd_data1);
+        pos := pos + 16;
+
+        rv((pos+1)-1 downto pos) := std_logic_vector(data.valid1);
+        pos := pos + 1;
+
+      return rv;
+  end function;
+
+  function slv_to_screen_xy_ram_outputs_t(data : std_logic_vector) return screen_xy_ram_outputs_t is
+    variable rv : screen_xy_ram_outputs_t;
     variable pos : integer := 0;
     variable addr0_slv : std_logic_vector(32-1 downto 0);
     variable wr_data0_slv : std_logic_vector(16-1 downto 0);
@@ -5058,8 +6089,8 @@ package body c_structs_pkg is
       return rv;
   end function;
 
-  function screen_ram_outputs_t_to_slv(data : screen_ram_outputs_t) return std_logic_vector is
-    variable rv : std_logic_vector(screen_ram_outputs_t_SLV_LEN-1 downto 0);
+  function background_vram_outputs_t_to_slv(data : background_vram_outputs_t) return std_logic_vector is
+    variable rv : std_logic_vector(background_vram_outputs_t_SLV_LEN-1 downto 0);
     variable pos : integer := 0;
   begin
 
@@ -5090,8 +6121,8 @@ package body c_structs_pkg is
       return rv;
   end function;
 
-  function slv_to_screen_ram_outputs_t(data : std_logic_vector) return screen_ram_outputs_t is
-    variable rv : screen_ram_outputs_t;
+  function slv_to_background_vram_outputs_t(data : std_logic_vector) return background_vram_outputs_t is
+    variable rv : background_vram_outputs_t;
     variable pos : integer := 0;
     variable addr0_slv : std_logic_vector(32-1 downto 0);
     variable wr_data0_slv : std_logic_vector(2-1 downto 0);

@@ -1,0 +1,1272 @@
+-- Timing params:
+--   Fixed?: True
+--   Pipeline Slices: []
+--   Input regs?: False
+--   Output regs?: False
+library std;
+use std.textio.all;
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+-- use ieee.float_pkg.all;
+use work.c_structs_pkg.all;
+-- Submodules: 39
+entity opc_ora_phased_0CLK_c3dfc98c is
+port(
+ clk : in std_logic;
+ CLOCK_ENABLE : in unsigned(0 downto 0);
+ phase : in unsigned(3 downto 0);
+ pc : in unsigned(15 downto 0);
+ sp : in unsigned(7 downto 0);
+ stack_index : in unsigned(0 downto 0);
+ ins : in unsigned(7 downto 0);
+ k : in unsigned(7 downto 0);
+ return_output : out unsigned(0 downto 0));
+end opc_ora_phased_0CLK_c3dfc98c;
+architecture arch of opc_ora_phased_0CLK_c3dfc98c is
+-- Types and such
+-- Declarations
+attribute mark_debug : string;
+constant PIPELINE_LATENCY : integer := 0;
+-- All of the wires/regs in function
+
+-- All user state registers
+signal n8 : unsigned(7 downto 0) := to_unsigned(0, 8);
+signal t8 : unsigned(7 downto 0) := to_unsigned(0, 8);
+signal result : unsigned(0 downto 0) := to_unsigned(0, 1);
+signal REG_COMB_n8 : unsigned(7 downto 0);
+signal REG_COMB_t8 : unsigned(7 downto 0);
+signal REG_COMB_result : unsigned(0 downto 0);
+
+-- Each function instance gets signals
+-- BIN_OP_EQ[uxn_opcodes_phased_h_l1164_c6_624e]
+signal BIN_OP_EQ_uxn_opcodes_phased_h_l1164_c6_624e_left : unsigned(3 downto 0);
+signal BIN_OP_EQ_uxn_opcodes_phased_h_l1164_c6_624e_right : unsigned(0 downto 0);
+signal BIN_OP_EQ_uxn_opcodes_phased_h_l1164_c6_624e_return_output : unsigned(0 downto 0);
+
+-- TRUE_CLOCK_ENABLE_MUX[uxn_opcodes_phased_h_l1164_c1_d2c3]
+signal TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1164_c1_d2c3_cond : unsigned(0 downto 0);
+signal TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1164_c1_d2c3_iftrue : unsigned(0 downto 0);
+signal TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1164_c1_d2c3_iffalse : unsigned(0 downto 0);
+signal TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1164_c1_d2c3_return_output : unsigned(0 downto 0);
+
+-- FALSE_CLOCK_ENABLE_MUX[uxn_opcodes_phased_h_l1167_c7_13c4]
+signal FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_cond : unsigned(0 downto 0);
+signal FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_iftrue : unsigned(0 downto 0);
+signal FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_iffalse : unsigned(0 downto 0);
+signal FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_return_output : unsigned(0 downto 0);
+
+-- t8_MUX[uxn_opcodes_phased_h_l1164_c2_2d1c]
+signal t8_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_cond : unsigned(0 downto 0);
+signal t8_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_iftrue : unsigned(7 downto 0);
+signal t8_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_iffalse : unsigned(7 downto 0);
+signal t8_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_return_output : unsigned(7 downto 0);
+
+-- n8_MUX[uxn_opcodes_phased_h_l1164_c2_2d1c]
+signal n8_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_cond : unsigned(0 downto 0);
+signal n8_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_iftrue : unsigned(7 downto 0);
+signal n8_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_iffalse : unsigned(7 downto 0);
+signal n8_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_return_output : unsigned(7 downto 0);
+
+-- result_MUX[uxn_opcodes_phased_h_l1164_c2_2d1c]
+signal result_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_cond : unsigned(0 downto 0);
+signal result_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_iftrue : unsigned(0 downto 0);
+signal result_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_iffalse : unsigned(0 downto 0);
+signal result_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_return_output : unsigned(0 downto 0);
+
+-- set_will_fail[uxn_opcodes_phased_h_l1165_c12_070a]
+signal set_will_fail_uxn_opcodes_phased_h_l1165_c12_070a_CLOCK_ENABLE : unsigned(0 downto 0);
+signal set_will_fail_uxn_opcodes_phased_h_l1165_c12_070a_sp : unsigned(7 downto 0);
+signal set_will_fail_uxn_opcodes_phased_h_l1165_c12_070a_k : unsigned(7 downto 0);
+signal set_will_fail_uxn_opcodes_phased_h_l1165_c12_070a_mul : unsigned(7 downto 0);
+signal set_will_fail_uxn_opcodes_phased_h_l1165_c12_070a_add : signed(7 downto 0);
+signal set_will_fail_uxn_opcodes_phased_h_l1165_c12_070a_return_output : unsigned(0 downto 0);
+
+-- BIN_OP_EQ[uxn_opcodes_phased_h_l1167_c11_1fb1]
+signal BIN_OP_EQ_uxn_opcodes_phased_h_l1167_c11_1fb1_left : unsigned(3 downto 0);
+signal BIN_OP_EQ_uxn_opcodes_phased_h_l1167_c11_1fb1_right : unsigned(0 downto 0);
+signal BIN_OP_EQ_uxn_opcodes_phased_h_l1167_c11_1fb1_return_output : unsigned(0 downto 0);
+
+-- TRUE_CLOCK_ENABLE_MUX[uxn_opcodes_phased_h_l1167_c1_2467]
+signal TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1167_c1_2467_cond : unsigned(0 downto 0);
+signal TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1167_c1_2467_iftrue : unsigned(0 downto 0);
+signal TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1167_c1_2467_iffalse : unsigned(0 downto 0);
+signal TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1167_c1_2467_return_output : unsigned(0 downto 0);
+
+-- FALSE_CLOCK_ENABLE_MUX[uxn_opcodes_phased_h_l1170_c7_9b76]
+signal FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_cond : unsigned(0 downto 0);
+signal FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_iftrue : unsigned(0 downto 0);
+signal FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_iffalse : unsigned(0 downto 0);
+signal FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_return_output : unsigned(0 downto 0);
+
+-- t8_MUX[uxn_opcodes_phased_h_l1167_c7_13c4]
+signal t8_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_cond : unsigned(0 downto 0);
+signal t8_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_iftrue : unsigned(7 downto 0);
+signal t8_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_iffalse : unsigned(7 downto 0);
+signal t8_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_return_output : unsigned(7 downto 0);
+
+-- n8_MUX[uxn_opcodes_phased_h_l1167_c7_13c4]
+signal n8_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_cond : unsigned(0 downto 0);
+signal n8_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_iftrue : unsigned(7 downto 0);
+signal n8_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_iffalse : unsigned(7 downto 0);
+signal n8_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_return_output : unsigned(7 downto 0);
+
+-- result_MUX[uxn_opcodes_phased_h_l1167_c7_13c4]
+signal result_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_cond : unsigned(0 downto 0);
+signal result_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_iftrue : unsigned(0 downto 0);
+signal result_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_iffalse : unsigned(0 downto 0);
+signal result_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_return_output : unsigned(0 downto 0);
+
+-- t_register[uxn_opcodes_phased_h_l1168_c8_76ab]
+signal t_register_uxn_opcodes_phased_h_l1168_c8_76ab_CLOCK_ENABLE : unsigned(0 downto 0);
+signal t_register_uxn_opcodes_phased_h_l1168_c8_76ab_stack_index : unsigned(0 downto 0);
+signal t_register_uxn_opcodes_phased_h_l1168_c8_76ab_stack_ptr : unsigned(7 downto 0);
+signal t_register_uxn_opcodes_phased_h_l1168_c8_76ab_return_output : unsigned(7 downto 0);
+
+-- BIN_OP_EQ[uxn_opcodes_phased_h_l1170_c11_48f7]
+signal BIN_OP_EQ_uxn_opcodes_phased_h_l1170_c11_48f7_left : unsigned(3 downto 0);
+signal BIN_OP_EQ_uxn_opcodes_phased_h_l1170_c11_48f7_right : unsigned(1 downto 0);
+signal BIN_OP_EQ_uxn_opcodes_phased_h_l1170_c11_48f7_return_output : unsigned(0 downto 0);
+
+-- TRUE_CLOCK_ENABLE_MUX[uxn_opcodes_phased_h_l1170_c1_46a2]
+signal TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1170_c1_46a2_cond : unsigned(0 downto 0);
+signal TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1170_c1_46a2_iftrue : unsigned(0 downto 0);
+signal TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1170_c1_46a2_iffalse : unsigned(0 downto 0);
+signal TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1170_c1_46a2_return_output : unsigned(0 downto 0);
+
+-- FALSE_CLOCK_ENABLE_MUX[uxn_opcodes_phased_h_l1173_c7_49d5]
+signal FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_cond : unsigned(0 downto 0);
+signal FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_iftrue : unsigned(0 downto 0);
+signal FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_iffalse : unsigned(0 downto 0);
+signal FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_return_output : unsigned(0 downto 0);
+
+-- t8_MUX[uxn_opcodes_phased_h_l1170_c7_9b76]
+signal t8_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_cond : unsigned(0 downto 0);
+signal t8_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_iftrue : unsigned(7 downto 0);
+signal t8_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_iffalse : unsigned(7 downto 0);
+signal t8_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_return_output : unsigned(7 downto 0);
+
+-- n8_MUX[uxn_opcodes_phased_h_l1170_c7_9b76]
+signal n8_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_cond : unsigned(0 downto 0);
+signal n8_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_iftrue : unsigned(7 downto 0);
+signal n8_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_iffalse : unsigned(7 downto 0);
+signal n8_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_return_output : unsigned(7 downto 0);
+
+-- result_MUX[uxn_opcodes_phased_h_l1170_c7_9b76]
+signal result_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_cond : unsigned(0 downto 0);
+signal result_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_iftrue : unsigned(0 downto 0);
+signal result_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_iffalse : unsigned(0 downto 0);
+signal result_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_return_output : unsigned(0 downto 0);
+
+-- n_register[uxn_opcodes_phased_h_l1171_c8_8cab]
+signal n_register_uxn_opcodes_phased_h_l1171_c8_8cab_CLOCK_ENABLE : unsigned(0 downto 0);
+signal n_register_uxn_opcodes_phased_h_l1171_c8_8cab_stack_index : unsigned(0 downto 0);
+signal n_register_uxn_opcodes_phased_h_l1171_c8_8cab_stack_ptr : unsigned(7 downto 0);
+signal n_register_uxn_opcodes_phased_h_l1171_c8_8cab_return_output : unsigned(7 downto 0);
+
+-- BIN_OP_EQ[uxn_opcodes_phased_h_l1173_c11_3437]
+signal BIN_OP_EQ_uxn_opcodes_phased_h_l1173_c11_3437_left : unsigned(3 downto 0);
+signal BIN_OP_EQ_uxn_opcodes_phased_h_l1173_c11_3437_right : unsigned(1 downto 0);
+signal BIN_OP_EQ_uxn_opcodes_phased_h_l1173_c11_3437_return_output : unsigned(0 downto 0);
+
+-- TRUE_CLOCK_ENABLE_MUX[uxn_opcodes_phased_h_l1173_c1_026e]
+signal TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1173_c1_026e_cond : unsigned(0 downto 0);
+signal TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1173_c1_026e_iftrue : unsigned(0 downto 0);
+signal TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1173_c1_026e_iffalse : unsigned(0 downto 0);
+signal TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1173_c1_026e_return_output : unsigned(0 downto 0);
+
+-- FALSE_CLOCK_ENABLE_MUX[uxn_opcodes_phased_h_l1176_c7_b67e]
+signal FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1176_c7_b67e_cond : unsigned(0 downto 0);
+signal FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1176_c7_b67e_iftrue : unsigned(0 downto 0);
+signal FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1176_c7_b67e_iffalse : unsigned(0 downto 0);
+signal FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1176_c7_b67e_return_output : unsigned(0 downto 0);
+
+-- n8_MUX[uxn_opcodes_phased_h_l1173_c7_49d5]
+signal n8_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_cond : unsigned(0 downto 0);
+signal n8_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_iftrue : unsigned(7 downto 0);
+signal n8_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_iffalse : unsigned(7 downto 0);
+signal n8_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_return_output : unsigned(7 downto 0);
+
+-- result_MUX[uxn_opcodes_phased_h_l1173_c7_49d5]
+signal result_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_cond : unsigned(0 downto 0);
+signal result_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_iftrue : unsigned(0 downto 0);
+signal result_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_iffalse : unsigned(0 downto 0);
+signal result_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_return_output : unsigned(0 downto 0);
+
+-- n_register[uxn_opcodes_phased_h_l1174_c8_8373]
+signal n_register_uxn_opcodes_phased_h_l1174_c8_8373_CLOCK_ENABLE : unsigned(0 downto 0);
+signal n_register_uxn_opcodes_phased_h_l1174_c8_8373_stack_index : unsigned(0 downto 0);
+signal n_register_uxn_opcodes_phased_h_l1174_c8_8373_stack_ptr : unsigned(7 downto 0);
+signal n_register_uxn_opcodes_phased_h_l1174_c8_8373_return_output : unsigned(7 downto 0);
+
+-- BIN_OP_EQ[uxn_opcodes_phased_h_l1176_c11_eb5b]
+signal BIN_OP_EQ_uxn_opcodes_phased_h_l1176_c11_eb5b_left : unsigned(3 downto 0);
+signal BIN_OP_EQ_uxn_opcodes_phased_h_l1176_c11_eb5b_right : unsigned(2 downto 0);
+signal BIN_OP_EQ_uxn_opcodes_phased_h_l1176_c11_eb5b_return_output : unsigned(0 downto 0);
+
+-- TRUE_CLOCK_ENABLE_MUX[uxn_opcodes_phased_h_l1176_c1_0ebc]
+signal TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1176_c1_0ebc_cond : unsigned(0 downto 0);
+signal TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1176_c1_0ebc_iftrue : unsigned(0 downto 0);
+signal TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1176_c1_0ebc_iffalse : unsigned(0 downto 0);
+signal TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1176_c1_0ebc_return_output : unsigned(0 downto 0);
+
+-- FALSE_CLOCK_ENABLE_MUX[uxn_opcodes_phased_h_l1179_c7_63a7]
+signal FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1179_c7_63a7_cond : unsigned(0 downto 0);
+signal FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1179_c7_63a7_iftrue : unsigned(0 downto 0);
+signal FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1179_c7_63a7_iffalse : unsigned(0 downto 0);
+signal FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1179_c7_63a7_return_output : unsigned(0 downto 0);
+
+-- result_MUX[uxn_opcodes_phased_h_l1176_c7_b67e]
+signal result_MUX_uxn_opcodes_phased_h_l1176_c7_b67e_cond : unsigned(0 downto 0);
+signal result_MUX_uxn_opcodes_phased_h_l1176_c7_b67e_iftrue : unsigned(0 downto 0);
+signal result_MUX_uxn_opcodes_phased_h_l1176_c7_b67e_iffalse : unsigned(0 downto 0);
+signal result_MUX_uxn_opcodes_phased_h_l1176_c7_b67e_return_output : unsigned(0 downto 0);
+
+-- set[uxn_opcodes_phased_h_l1177_c3_97e7]
+signal set_uxn_opcodes_phased_h_l1177_c3_97e7_CLOCK_ENABLE : unsigned(0 downto 0);
+signal set_uxn_opcodes_phased_h_l1177_c3_97e7_sp : unsigned(7 downto 0);
+signal set_uxn_opcodes_phased_h_l1177_c3_97e7_stack_index : unsigned(0 downto 0);
+signal set_uxn_opcodes_phased_h_l1177_c3_97e7_ins : unsigned(7 downto 0);
+signal set_uxn_opcodes_phased_h_l1177_c3_97e7_k : unsigned(7 downto 0);
+signal set_uxn_opcodes_phased_h_l1177_c3_97e7_mul : unsigned(7 downto 0);
+signal set_uxn_opcodes_phased_h_l1177_c3_97e7_add : signed(7 downto 0);
+
+-- BIN_OP_EQ[uxn_opcodes_phased_h_l1179_c11_e642]
+signal BIN_OP_EQ_uxn_opcodes_phased_h_l1179_c11_e642_left : unsigned(3 downto 0);
+signal BIN_OP_EQ_uxn_opcodes_phased_h_l1179_c11_e642_right : unsigned(2 downto 0);
+signal BIN_OP_EQ_uxn_opcodes_phased_h_l1179_c11_e642_return_output : unsigned(0 downto 0);
+
+-- TRUE_CLOCK_ENABLE_MUX[uxn_opcodes_phased_h_l1179_c1_5bb6]
+signal TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1179_c1_5bb6_cond : unsigned(0 downto 0);
+signal TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1179_c1_5bb6_iftrue : unsigned(0 downto 0);
+signal TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1179_c1_5bb6_iffalse : unsigned(0 downto 0);
+signal TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1179_c1_5bb6_return_output : unsigned(0 downto 0);
+
+-- result_MUX[uxn_opcodes_phased_h_l1179_c7_63a7]
+signal result_MUX_uxn_opcodes_phased_h_l1179_c7_63a7_cond : unsigned(0 downto 0);
+signal result_MUX_uxn_opcodes_phased_h_l1179_c7_63a7_iftrue : unsigned(0 downto 0);
+signal result_MUX_uxn_opcodes_phased_h_l1179_c7_63a7_iffalse : unsigned(0 downto 0);
+signal result_MUX_uxn_opcodes_phased_h_l1179_c7_63a7_return_output : unsigned(0 downto 0);
+
+-- BIN_OP_OR[uxn_opcodes_phased_h_l1180_c33_350c]
+signal BIN_OP_OR_uxn_opcodes_phased_h_l1180_c33_350c_left : unsigned(7 downto 0);
+signal BIN_OP_OR_uxn_opcodes_phased_h_l1180_c33_350c_right : unsigned(7 downto 0);
+signal BIN_OP_OR_uxn_opcodes_phased_h_l1180_c33_350c_return_output : unsigned(7 downto 0);
+
+-- put_stack[uxn_opcodes_phased_h_l1180_c3_b980]
+signal put_stack_uxn_opcodes_phased_h_l1180_c3_b980_CLOCK_ENABLE : unsigned(0 downto 0);
+signal put_stack_uxn_opcodes_phased_h_l1180_c3_b980_sp : unsigned(7 downto 0);
+signal put_stack_uxn_opcodes_phased_h_l1180_c3_b980_stack_index : unsigned(0 downto 0);
+signal put_stack_uxn_opcodes_phased_h_l1180_c3_b980_offset : unsigned(7 downto 0);
+signal put_stack_uxn_opcodes_phased_h_l1180_c3_b980_value : unsigned(7 downto 0);
+
+-- BIN_OP_EQ[uxn_opcodes_phased_h_l1182_c11_6087]
+signal BIN_OP_EQ_uxn_opcodes_phased_h_l1182_c11_6087_left : unsigned(3 downto 0);
+signal BIN_OP_EQ_uxn_opcodes_phased_h_l1182_c11_6087_right : unsigned(2 downto 0);
+signal BIN_OP_EQ_uxn_opcodes_phased_h_l1182_c11_6087_return_output : unsigned(0 downto 0);
+
+-- result_MUX[uxn_opcodes_phased_h_l1182_c7_c090]
+signal result_MUX_uxn_opcodes_phased_h_l1182_c7_c090_cond : unsigned(0 downto 0);
+signal result_MUX_uxn_opcodes_phased_h_l1182_c7_c090_iftrue : unsigned(0 downto 0);
+signal result_MUX_uxn_opcodes_phased_h_l1182_c7_c090_iffalse : unsigned(0 downto 0);
+signal result_MUX_uxn_opcodes_phased_h_l1182_c7_c090_return_output : unsigned(0 downto 0);
+
+
+begin
+
+-- SUBMODULE INSTANCES 
+-- BIN_OP_EQ_uxn_opcodes_phased_h_l1164_c6_624e
+BIN_OP_EQ_uxn_opcodes_phased_h_l1164_c6_624e : entity work.BIN_OP_EQ_uint4_t_uint1_t_0CLK_de264c78 port map (
+BIN_OP_EQ_uxn_opcodes_phased_h_l1164_c6_624e_left,
+BIN_OP_EQ_uxn_opcodes_phased_h_l1164_c6_624e_right,
+BIN_OP_EQ_uxn_opcodes_phased_h_l1164_c6_624e_return_output);
+
+-- TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1164_c1_d2c3
+TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1164_c1_d2c3 : entity work.MUX_uint1_t_uint1_t_uint1_t_0CLK_de264c78 port map (
+TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1164_c1_d2c3_cond,
+TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1164_c1_d2c3_iftrue,
+TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1164_c1_d2c3_iffalse,
+TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1164_c1_d2c3_return_output);
+
+-- FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1167_c7_13c4
+FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1167_c7_13c4 : entity work.MUX_uint1_t_uint1_t_uint1_t_0CLK_de264c78 port map (
+FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_cond,
+FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_iftrue,
+FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_iffalse,
+FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_return_output);
+
+-- t8_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c
+t8_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c : entity work.MUX_uint1_t_uint8_t_uint8_t_0CLK_de264c78 port map (
+t8_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_cond,
+t8_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_iftrue,
+t8_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_iffalse,
+t8_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_return_output);
+
+-- n8_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c
+n8_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c : entity work.MUX_uint1_t_uint8_t_uint8_t_0CLK_de264c78 port map (
+n8_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_cond,
+n8_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_iftrue,
+n8_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_iffalse,
+n8_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_return_output);
+
+-- result_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c
+result_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c : entity work.MUX_uint1_t_uint1_t_uint1_t_0CLK_de264c78 port map (
+result_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_cond,
+result_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_iftrue,
+result_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_iffalse,
+result_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_return_output);
+
+-- set_will_fail_uxn_opcodes_phased_h_l1165_c12_070a
+set_will_fail_uxn_opcodes_phased_h_l1165_c12_070a : entity work.set_will_fail_0CLK_23eb2db7 port map (
+clk,
+set_will_fail_uxn_opcodes_phased_h_l1165_c12_070a_CLOCK_ENABLE,
+set_will_fail_uxn_opcodes_phased_h_l1165_c12_070a_sp,
+set_will_fail_uxn_opcodes_phased_h_l1165_c12_070a_k,
+set_will_fail_uxn_opcodes_phased_h_l1165_c12_070a_mul,
+set_will_fail_uxn_opcodes_phased_h_l1165_c12_070a_add,
+set_will_fail_uxn_opcodes_phased_h_l1165_c12_070a_return_output);
+
+-- BIN_OP_EQ_uxn_opcodes_phased_h_l1167_c11_1fb1
+BIN_OP_EQ_uxn_opcodes_phased_h_l1167_c11_1fb1 : entity work.BIN_OP_EQ_uint4_t_uint1_t_0CLK_de264c78 port map (
+BIN_OP_EQ_uxn_opcodes_phased_h_l1167_c11_1fb1_left,
+BIN_OP_EQ_uxn_opcodes_phased_h_l1167_c11_1fb1_right,
+BIN_OP_EQ_uxn_opcodes_phased_h_l1167_c11_1fb1_return_output);
+
+-- TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1167_c1_2467
+TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1167_c1_2467 : entity work.MUX_uint1_t_uint1_t_uint1_t_0CLK_de264c78 port map (
+TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1167_c1_2467_cond,
+TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1167_c1_2467_iftrue,
+TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1167_c1_2467_iffalse,
+TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1167_c1_2467_return_output);
+
+-- FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1170_c7_9b76
+FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1170_c7_9b76 : entity work.MUX_uint1_t_uint1_t_uint1_t_0CLK_de264c78 port map (
+FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_cond,
+FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_iftrue,
+FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_iffalse,
+FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_return_output);
+
+-- t8_MUX_uxn_opcodes_phased_h_l1167_c7_13c4
+t8_MUX_uxn_opcodes_phased_h_l1167_c7_13c4 : entity work.MUX_uint1_t_uint8_t_uint8_t_0CLK_de264c78 port map (
+t8_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_cond,
+t8_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_iftrue,
+t8_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_iffalse,
+t8_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_return_output);
+
+-- n8_MUX_uxn_opcodes_phased_h_l1167_c7_13c4
+n8_MUX_uxn_opcodes_phased_h_l1167_c7_13c4 : entity work.MUX_uint1_t_uint8_t_uint8_t_0CLK_de264c78 port map (
+n8_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_cond,
+n8_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_iftrue,
+n8_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_iffalse,
+n8_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_return_output);
+
+-- result_MUX_uxn_opcodes_phased_h_l1167_c7_13c4
+result_MUX_uxn_opcodes_phased_h_l1167_c7_13c4 : entity work.MUX_uint1_t_uint1_t_uint1_t_0CLK_de264c78 port map (
+result_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_cond,
+result_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_iftrue,
+result_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_iffalse,
+result_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_return_output);
+
+-- t_register_uxn_opcodes_phased_h_l1168_c8_76ab
+t_register_uxn_opcodes_phased_h_l1168_c8_76ab : entity work.t_register_0CLK_621d5f60 port map (
+clk,
+t_register_uxn_opcodes_phased_h_l1168_c8_76ab_CLOCK_ENABLE,
+t_register_uxn_opcodes_phased_h_l1168_c8_76ab_stack_index,
+t_register_uxn_opcodes_phased_h_l1168_c8_76ab_stack_ptr,
+t_register_uxn_opcodes_phased_h_l1168_c8_76ab_return_output);
+
+-- BIN_OP_EQ_uxn_opcodes_phased_h_l1170_c11_48f7
+BIN_OP_EQ_uxn_opcodes_phased_h_l1170_c11_48f7 : entity work.BIN_OP_EQ_uint4_t_uint2_t_0CLK_de264c78 port map (
+BIN_OP_EQ_uxn_opcodes_phased_h_l1170_c11_48f7_left,
+BIN_OP_EQ_uxn_opcodes_phased_h_l1170_c11_48f7_right,
+BIN_OP_EQ_uxn_opcodes_phased_h_l1170_c11_48f7_return_output);
+
+-- TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1170_c1_46a2
+TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1170_c1_46a2 : entity work.MUX_uint1_t_uint1_t_uint1_t_0CLK_de264c78 port map (
+TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1170_c1_46a2_cond,
+TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1170_c1_46a2_iftrue,
+TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1170_c1_46a2_iffalse,
+TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1170_c1_46a2_return_output);
+
+-- FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1173_c7_49d5
+FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1173_c7_49d5 : entity work.MUX_uint1_t_uint1_t_uint1_t_0CLK_de264c78 port map (
+FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_cond,
+FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_iftrue,
+FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_iffalse,
+FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_return_output);
+
+-- t8_MUX_uxn_opcodes_phased_h_l1170_c7_9b76
+t8_MUX_uxn_opcodes_phased_h_l1170_c7_9b76 : entity work.MUX_uint1_t_uint8_t_uint8_t_0CLK_de264c78 port map (
+t8_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_cond,
+t8_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_iftrue,
+t8_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_iffalse,
+t8_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_return_output);
+
+-- n8_MUX_uxn_opcodes_phased_h_l1170_c7_9b76
+n8_MUX_uxn_opcodes_phased_h_l1170_c7_9b76 : entity work.MUX_uint1_t_uint8_t_uint8_t_0CLK_de264c78 port map (
+n8_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_cond,
+n8_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_iftrue,
+n8_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_iffalse,
+n8_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_return_output);
+
+-- result_MUX_uxn_opcodes_phased_h_l1170_c7_9b76
+result_MUX_uxn_opcodes_phased_h_l1170_c7_9b76 : entity work.MUX_uint1_t_uint1_t_uint1_t_0CLK_de264c78 port map (
+result_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_cond,
+result_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_iftrue,
+result_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_iffalse,
+result_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_return_output);
+
+-- n_register_uxn_opcodes_phased_h_l1171_c8_8cab
+n_register_uxn_opcodes_phased_h_l1171_c8_8cab : entity work.n_register_0CLK_621d5f60 port map (
+clk,
+n_register_uxn_opcodes_phased_h_l1171_c8_8cab_CLOCK_ENABLE,
+n_register_uxn_opcodes_phased_h_l1171_c8_8cab_stack_index,
+n_register_uxn_opcodes_phased_h_l1171_c8_8cab_stack_ptr,
+n_register_uxn_opcodes_phased_h_l1171_c8_8cab_return_output);
+
+-- BIN_OP_EQ_uxn_opcodes_phased_h_l1173_c11_3437
+BIN_OP_EQ_uxn_opcodes_phased_h_l1173_c11_3437 : entity work.BIN_OP_EQ_uint4_t_uint2_t_0CLK_de264c78 port map (
+BIN_OP_EQ_uxn_opcodes_phased_h_l1173_c11_3437_left,
+BIN_OP_EQ_uxn_opcodes_phased_h_l1173_c11_3437_right,
+BIN_OP_EQ_uxn_opcodes_phased_h_l1173_c11_3437_return_output);
+
+-- TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1173_c1_026e
+TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1173_c1_026e : entity work.MUX_uint1_t_uint1_t_uint1_t_0CLK_de264c78 port map (
+TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1173_c1_026e_cond,
+TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1173_c1_026e_iftrue,
+TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1173_c1_026e_iffalse,
+TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1173_c1_026e_return_output);
+
+-- FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1176_c7_b67e
+FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1176_c7_b67e : entity work.MUX_uint1_t_uint1_t_uint1_t_0CLK_de264c78 port map (
+FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1176_c7_b67e_cond,
+FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1176_c7_b67e_iftrue,
+FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1176_c7_b67e_iffalse,
+FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1176_c7_b67e_return_output);
+
+-- n8_MUX_uxn_opcodes_phased_h_l1173_c7_49d5
+n8_MUX_uxn_opcodes_phased_h_l1173_c7_49d5 : entity work.MUX_uint1_t_uint8_t_uint8_t_0CLK_de264c78 port map (
+n8_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_cond,
+n8_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_iftrue,
+n8_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_iffalse,
+n8_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_return_output);
+
+-- result_MUX_uxn_opcodes_phased_h_l1173_c7_49d5
+result_MUX_uxn_opcodes_phased_h_l1173_c7_49d5 : entity work.MUX_uint1_t_uint1_t_uint1_t_0CLK_de264c78 port map (
+result_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_cond,
+result_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_iftrue,
+result_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_iffalse,
+result_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_return_output);
+
+-- n_register_uxn_opcodes_phased_h_l1174_c8_8373
+n_register_uxn_opcodes_phased_h_l1174_c8_8373 : entity work.n_register_0CLK_621d5f60 port map (
+clk,
+n_register_uxn_opcodes_phased_h_l1174_c8_8373_CLOCK_ENABLE,
+n_register_uxn_opcodes_phased_h_l1174_c8_8373_stack_index,
+n_register_uxn_opcodes_phased_h_l1174_c8_8373_stack_ptr,
+n_register_uxn_opcodes_phased_h_l1174_c8_8373_return_output);
+
+-- BIN_OP_EQ_uxn_opcodes_phased_h_l1176_c11_eb5b
+BIN_OP_EQ_uxn_opcodes_phased_h_l1176_c11_eb5b : entity work.BIN_OP_EQ_uint4_t_uint3_t_0CLK_de264c78 port map (
+BIN_OP_EQ_uxn_opcodes_phased_h_l1176_c11_eb5b_left,
+BIN_OP_EQ_uxn_opcodes_phased_h_l1176_c11_eb5b_right,
+BIN_OP_EQ_uxn_opcodes_phased_h_l1176_c11_eb5b_return_output);
+
+-- TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1176_c1_0ebc
+TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1176_c1_0ebc : entity work.MUX_uint1_t_uint1_t_uint1_t_0CLK_de264c78 port map (
+TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1176_c1_0ebc_cond,
+TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1176_c1_0ebc_iftrue,
+TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1176_c1_0ebc_iffalse,
+TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1176_c1_0ebc_return_output);
+
+-- FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1179_c7_63a7
+FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1179_c7_63a7 : entity work.MUX_uint1_t_uint1_t_uint1_t_0CLK_de264c78 port map (
+FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1179_c7_63a7_cond,
+FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1179_c7_63a7_iftrue,
+FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1179_c7_63a7_iffalse,
+FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1179_c7_63a7_return_output);
+
+-- result_MUX_uxn_opcodes_phased_h_l1176_c7_b67e
+result_MUX_uxn_opcodes_phased_h_l1176_c7_b67e : entity work.MUX_uint1_t_uint1_t_uint1_t_0CLK_de264c78 port map (
+result_MUX_uxn_opcodes_phased_h_l1176_c7_b67e_cond,
+result_MUX_uxn_opcodes_phased_h_l1176_c7_b67e_iftrue,
+result_MUX_uxn_opcodes_phased_h_l1176_c7_b67e_iffalse,
+result_MUX_uxn_opcodes_phased_h_l1176_c7_b67e_return_output);
+
+-- set_uxn_opcodes_phased_h_l1177_c3_97e7
+set_uxn_opcodes_phased_h_l1177_c3_97e7 : entity work.set_0CLK_6f2c5aad port map (
+clk,
+set_uxn_opcodes_phased_h_l1177_c3_97e7_CLOCK_ENABLE,
+set_uxn_opcodes_phased_h_l1177_c3_97e7_sp,
+set_uxn_opcodes_phased_h_l1177_c3_97e7_stack_index,
+set_uxn_opcodes_phased_h_l1177_c3_97e7_ins,
+set_uxn_opcodes_phased_h_l1177_c3_97e7_k,
+set_uxn_opcodes_phased_h_l1177_c3_97e7_mul,
+set_uxn_opcodes_phased_h_l1177_c3_97e7_add);
+
+-- BIN_OP_EQ_uxn_opcodes_phased_h_l1179_c11_e642
+BIN_OP_EQ_uxn_opcodes_phased_h_l1179_c11_e642 : entity work.BIN_OP_EQ_uint4_t_uint3_t_0CLK_de264c78 port map (
+BIN_OP_EQ_uxn_opcodes_phased_h_l1179_c11_e642_left,
+BIN_OP_EQ_uxn_opcodes_phased_h_l1179_c11_e642_right,
+BIN_OP_EQ_uxn_opcodes_phased_h_l1179_c11_e642_return_output);
+
+-- TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1179_c1_5bb6
+TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1179_c1_5bb6 : entity work.MUX_uint1_t_uint1_t_uint1_t_0CLK_de264c78 port map (
+TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1179_c1_5bb6_cond,
+TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1179_c1_5bb6_iftrue,
+TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1179_c1_5bb6_iffalse,
+TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1179_c1_5bb6_return_output);
+
+-- result_MUX_uxn_opcodes_phased_h_l1179_c7_63a7
+result_MUX_uxn_opcodes_phased_h_l1179_c7_63a7 : entity work.MUX_uint1_t_uint1_t_uint1_t_0CLK_de264c78 port map (
+result_MUX_uxn_opcodes_phased_h_l1179_c7_63a7_cond,
+result_MUX_uxn_opcodes_phased_h_l1179_c7_63a7_iftrue,
+result_MUX_uxn_opcodes_phased_h_l1179_c7_63a7_iffalse,
+result_MUX_uxn_opcodes_phased_h_l1179_c7_63a7_return_output);
+
+-- BIN_OP_OR_uxn_opcodes_phased_h_l1180_c33_350c
+BIN_OP_OR_uxn_opcodes_phased_h_l1180_c33_350c : entity work.BIN_OP_OR_uint8_t_uint8_t_0CLK_de264c78 port map (
+BIN_OP_OR_uxn_opcodes_phased_h_l1180_c33_350c_left,
+BIN_OP_OR_uxn_opcodes_phased_h_l1180_c33_350c_right,
+BIN_OP_OR_uxn_opcodes_phased_h_l1180_c33_350c_return_output);
+
+-- put_stack_uxn_opcodes_phased_h_l1180_c3_b980
+put_stack_uxn_opcodes_phased_h_l1180_c3_b980 : entity work.put_stack_0CLK_b888155f port map (
+clk,
+put_stack_uxn_opcodes_phased_h_l1180_c3_b980_CLOCK_ENABLE,
+put_stack_uxn_opcodes_phased_h_l1180_c3_b980_sp,
+put_stack_uxn_opcodes_phased_h_l1180_c3_b980_stack_index,
+put_stack_uxn_opcodes_phased_h_l1180_c3_b980_offset,
+put_stack_uxn_opcodes_phased_h_l1180_c3_b980_value);
+
+-- BIN_OP_EQ_uxn_opcodes_phased_h_l1182_c11_6087
+BIN_OP_EQ_uxn_opcodes_phased_h_l1182_c11_6087 : entity work.BIN_OP_EQ_uint4_t_uint3_t_0CLK_de264c78 port map (
+BIN_OP_EQ_uxn_opcodes_phased_h_l1182_c11_6087_left,
+BIN_OP_EQ_uxn_opcodes_phased_h_l1182_c11_6087_right,
+BIN_OP_EQ_uxn_opcodes_phased_h_l1182_c11_6087_return_output);
+
+-- result_MUX_uxn_opcodes_phased_h_l1182_c7_c090
+result_MUX_uxn_opcodes_phased_h_l1182_c7_c090 : entity work.MUX_uint1_t_uint1_t_uint1_t_0CLK_de264c78 port map (
+result_MUX_uxn_opcodes_phased_h_l1182_c7_c090_cond,
+result_MUX_uxn_opcodes_phased_h_l1182_c7_c090_iftrue,
+result_MUX_uxn_opcodes_phased_h_l1182_c7_c090_iffalse,
+result_MUX_uxn_opcodes_phased_h_l1182_c7_c090_return_output);
+
+
+
+-- Combinatorial process for pipeline stages
+process (
+ CLOCK_ENABLE,
+ -- Inputs
+ phase,
+ pc,
+ sp,
+ stack_index,
+ ins,
+ k,
+ -- Registers
+ n8,
+ t8,
+ result,
+ -- All submodule outputs
+ BIN_OP_EQ_uxn_opcodes_phased_h_l1164_c6_624e_return_output,
+ TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1164_c1_d2c3_return_output,
+ FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_return_output,
+ t8_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_return_output,
+ n8_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_return_output,
+ result_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_return_output,
+ set_will_fail_uxn_opcodes_phased_h_l1165_c12_070a_return_output,
+ BIN_OP_EQ_uxn_opcodes_phased_h_l1167_c11_1fb1_return_output,
+ TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1167_c1_2467_return_output,
+ FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_return_output,
+ t8_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_return_output,
+ n8_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_return_output,
+ result_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_return_output,
+ t_register_uxn_opcodes_phased_h_l1168_c8_76ab_return_output,
+ BIN_OP_EQ_uxn_opcodes_phased_h_l1170_c11_48f7_return_output,
+ TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1170_c1_46a2_return_output,
+ FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_return_output,
+ t8_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_return_output,
+ n8_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_return_output,
+ result_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_return_output,
+ n_register_uxn_opcodes_phased_h_l1171_c8_8cab_return_output,
+ BIN_OP_EQ_uxn_opcodes_phased_h_l1173_c11_3437_return_output,
+ TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1173_c1_026e_return_output,
+ FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1176_c7_b67e_return_output,
+ n8_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_return_output,
+ result_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_return_output,
+ n_register_uxn_opcodes_phased_h_l1174_c8_8373_return_output,
+ BIN_OP_EQ_uxn_opcodes_phased_h_l1176_c11_eb5b_return_output,
+ TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1176_c1_0ebc_return_output,
+ FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1179_c7_63a7_return_output,
+ result_MUX_uxn_opcodes_phased_h_l1176_c7_b67e_return_output,
+ BIN_OP_EQ_uxn_opcodes_phased_h_l1179_c11_e642_return_output,
+ TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1179_c1_5bb6_return_output,
+ result_MUX_uxn_opcodes_phased_h_l1179_c7_63a7_return_output,
+ BIN_OP_OR_uxn_opcodes_phased_h_l1180_c33_350c_return_output,
+ BIN_OP_EQ_uxn_opcodes_phased_h_l1182_c11_6087_return_output,
+ result_MUX_uxn_opcodes_phased_h_l1182_c7_c090_return_output)
+is 
+ -- All of the wires in function
+ variable VAR_CLOCK_ENABLE : unsigned(0 downto 0);
+ variable VAR_return_output : unsigned(0 downto 0);
+ variable VAR_phase : unsigned(3 downto 0);
+ variable VAR_pc : unsigned(15 downto 0);
+ variable VAR_sp : unsigned(7 downto 0);
+ variable VAR_stack_index : unsigned(0 downto 0);
+ variable VAR_ins : unsigned(7 downto 0);
+ variable VAR_k : unsigned(7 downto 0);
+ variable VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1164_c6_624e_left : unsigned(3 downto 0);
+ variable VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1164_c6_624e_right : unsigned(0 downto 0);
+ variable VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1164_c6_624e_return_output : unsigned(0 downto 0);
+ variable VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1164_c1_d2c3_return_output : unsigned(0 downto 0);
+ variable VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1164_c1_d2c3_cond : unsigned(0 downto 0);
+ variable VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1164_c1_d2c3_iftrue : unsigned(0 downto 0);
+ variable VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1164_c1_d2c3_iffalse : unsigned(0 downto 0);
+ variable VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_return_output : unsigned(0 downto 0);
+ variable VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_cond : unsigned(0 downto 0);
+ variable VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_iftrue : unsigned(0 downto 0);
+ variable VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_iffalse : unsigned(0 downto 0);
+ variable VAR_t8_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_iftrue : unsigned(7 downto 0);
+ variable VAR_t8_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_iffalse : unsigned(7 downto 0);
+ variable VAR_t8_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_return_output : unsigned(7 downto 0);
+ variable VAR_t8_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_return_output : unsigned(7 downto 0);
+ variable VAR_t8_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_cond : unsigned(0 downto 0);
+ variable VAR_n8_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_iftrue : unsigned(7 downto 0);
+ variable VAR_n8_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_iffalse : unsigned(7 downto 0);
+ variable VAR_n8_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_return_output : unsigned(7 downto 0);
+ variable VAR_n8_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_return_output : unsigned(7 downto 0);
+ variable VAR_n8_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_cond : unsigned(0 downto 0);
+ variable VAR_result_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_iftrue : unsigned(0 downto 0);
+ variable VAR_result_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_iffalse : unsigned(0 downto 0);
+ variable VAR_result_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_return_output : unsigned(0 downto 0);
+ variable VAR_result_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_return_output : unsigned(0 downto 0);
+ variable VAR_result_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_cond : unsigned(0 downto 0);
+ variable VAR_set_will_fail_uxn_opcodes_phased_h_l1165_c12_070a_sp : unsigned(7 downto 0);
+ variable VAR_set_will_fail_uxn_opcodes_phased_h_l1165_c12_070a_k : unsigned(7 downto 0);
+ variable VAR_set_will_fail_uxn_opcodes_phased_h_l1165_c12_070a_mul : unsigned(7 downto 0);
+ variable VAR_set_will_fail_uxn_opcodes_phased_h_l1165_c12_070a_add : signed(7 downto 0);
+ variable VAR_set_will_fail_uxn_opcodes_phased_h_l1165_c12_070a_CLOCK_ENABLE : unsigned(0 downto 0);
+ variable VAR_set_will_fail_uxn_opcodes_phased_h_l1165_c12_070a_return_output : unsigned(0 downto 0);
+ variable VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1167_c11_1fb1_left : unsigned(3 downto 0);
+ variable VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1167_c11_1fb1_right : unsigned(0 downto 0);
+ variable VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1167_c11_1fb1_return_output : unsigned(0 downto 0);
+ variable VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1167_c1_2467_return_output : unsigned(0 downto 0);
+ variable VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1167_c1_2467_cond : unsigned(0 downto 0);
+ variable VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1167_c1_2467_iftrue : unsigned(0 downto 0);
+ variable VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1167_c1_2467_iffalse : unsigned(0 downto 0);
+ variable VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_return_output : unsigned(0 downto 0);
+ variable VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_cond : unsigned(0 downto 0);
+ variable VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_iftrue : unsigned(0 downto 0);
+ variable VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_iffalse : unsigned(0 downto 0);
+ variable VAR_t8_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_iftrue : unsigned(7 downto 0);
+ variable VAR_t8_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_iffalse : unsigned(7 downto 0);
+ variable VAR_t8_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_return_output : unsigned(7 downto 0);
+ variable VAR_t8_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_cond : unsigned(0 downto 0);
+ variable VAR_n8_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_iftrue : unsigned(7 downto 0);
+ variable VAR_n8_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_iffalse : unsigned(7 downto 0);
+ variable VAR_n8_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_return_output : unsigned(7 downto 0);
+ variable VAR_n8_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_cond : unsigned(0 downto 0);
+ variable VAR_result_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_iftrue : unsigned(0 downto 0);
+ variable VAR_result_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_iffalse : unsigned(0 downto 0);
+ variable VAR_result_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_return_output : unsigned(0 downto 0);
+ variable VAR_result_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_cond : unsigned(0 downto 0);
+ variable VAR_t_register_uxn_opcodes_phased_h_l1168_c8_76ab_stack_index : unsigned(0 downto 0);
+ variable VAR_t_register_uxn_opcodes_phased_h_l1168_c8_76ab_stack_ptr : unsigned(7 downto 0);
+ variable VAR_t_register_uxn_opcodes_phased_h_l1168_c8_76ab_CLOCK_ENABLE : unsigned(0 downto 0);
+ variable VAR_t_register_uxn_opcodes_phased_h_l1168_c8_76ab_return_output : unsigned(7 downto 0);
+ variable VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1170_c11_48f7_left : unsigned(3 downto 0);
+ variable VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1170_c11_48f7_right : unsigned(1 downto 0);
+ variable VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1170_c11_48f7_return_output : unsigned(0 downto 0);
+ variable VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1170_c1_46a2_return_output : unsigned(0 downto 0);
+ variable VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1170_c1_46a2_cond : unsigned(0 downto 0);
+ variable VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1170_c1_46a2_iftrue : unsigned(0 downto 0);
+ variable VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1170_c1_46a2_iffalse : unsigned(0 downto 0);
+ variable VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_return_output : unsigned(0 downto 0);
+ variable VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_cond : unsigned(0 downto 0);
+ variable VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_iftrue : unsigned(0 downto 0);
+ variable VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_iffalse : unsigned(0 downto 0);
+ variable VAR_t8_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_iftrue : unsigned(7 downto 0);
+ variable VAR_t8_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_iffalse : unsigned(7 downto 0);
+ variable VAR_t8_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_cond : unsigned(0 downto 0);
+ variable VAR_n8_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_iftrue : unsigned(7 downto 0);
+ variable VAR_n8_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_iffalse : unsigned(7 downto 0);
+ variable VAR_n8_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_return_output : unsigned(7 downto 0);
+ variable VAR_n8_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_cond : unsigned(0 downto 0);
+ variable VAR_result_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_iftrue : unsigned(0 downto 0);
+ variable VAR_result_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_iffalse : unsigned(0 downto 0);
+ variable VAR_result_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_return_output : unsigned(0 downto 0);
+ variable VAR_result_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_cond : unsigned(0 downto 0);
+ variable VAR_n_register_uxn_opcodes_phased_h_l1171_c8_8cab_stack_index : unsigned(0 downto 0);
+ variable VAR_n_register_uxn_opcodes_phased_h_l1171_c8_8cab_stack_ptr : unsigned(7 downto 0);
+ variable VAR_n_register_uxn_opcodes_phased_h_l1171_c8_8cab_CLOCK_ENABLE : unsigned(0 downto 0);
+ variable VAR_n_register_uxn_opcodes_phased_h_l1171_c8_8cab_return_output : unsigned(7 downto 0);
+ variable VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1173_c11_3437_left : unsigned(3 downto 0);
+ variable VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1173_c11_3437_right : unsigned(1 downto 0);
+ variable VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1173_c11_3437_return_output : unsigned(0 downto 0);
+ variable VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1173_c1_026e_return_output : unsigned(0 downto 0);
+ variable VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1173_c1_026e_cond : unsigned(0 downto 0);
+ variable VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1173_c1_026e_iftrue : unsigned(0 downto 0);
+ variable VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1173_c1_026e_iffalse : unsigned(0 downto 0);
+ variable VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1176_c7_b67e_return_output : unsigned(0 downto 0);
+ variable VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1176_c7_b67e_cond : unsigned(0 downto 0);
+ variable VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1176_c7_b67e_iftrue : unsigned(0 downto 0);
+ variable VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1176_c7_b67e_iffalse : unsigned(0 downto 0);
+ variable VAR_n8_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_iftrue : unsigned(7 downto 0);
+ variable VAR_n8_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_iffalse : unsigned(7 downto 0);
+ variable VAR_n8_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_cond : unsigned(0 downto 0);
+ variable VAR_result_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_iftrue : unsigned(0 downto 0);
+ variable VAR_result_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_iffalse : unsigned(0 downto 0);
+ variable VAR_result_MUX_uxn_opcodes_phased_h_l1176_c7_b67e_return_output : unsigned(0 downto 0);
+ variable VAR_result_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_cond : unsigned(0 downto 0);
+ variable VAR_n_register_uxn_opcodes_phased_h_l1174_c8_8373_stack_index : unsigned(0 downto 0);
+ variable VAR_n_register_uxn_opcodes_phased_h_l1174_c8_8373_stack_ptr : unsigned(7 downto 0);
+ variable VAR_n_register_uxn_opcodes_phased_h_l1174_c8_8373_CLOCK_ENABLE : unsigned(0 downto 0);
+ variable VAR_n_register_uxn_opcodes_phased_h_l1174_c8_8373_return_output : unsigned(7 downto 0);
+ variable VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1176_c11_eb5b_left : unsigned(3 downto 0);
+ variable VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1176_c11_eb5b_right : unsigned(2 downto 0);
+ variable VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1176_c11_eb5b_return_output : unsigned(0 downto 0);
+ variable VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1176_c1_0ebc_return_output : unsigned(0 downto 0);
+ variable VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1176_c1_0ebc_cond : unsigned(0 downto 0);
+ variable VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1176_c1_0ebc_iftrue : unsigned(0 downto 0);
+ variable VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1176_c1_0ebc_iffalse : unsigned(0 downto 0);
+ variable VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1179_c7_63a7_return_output : unsigned(0 downto 0);
+ variable VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1179_c7_63a7_cond : unsigned(0 downto 0);
+ variable VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1179_c7_63a7_iftrue : unsigned(0 downto 0);
+ variable VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1179_c7_63a7_iffalse : unsigned(0 downto 0);
+ variable VAR_result_MUX_uxn_opcodes_phased_h_l1176_c7_b67e_iftrue : unsigned(0 downto 0);
+ variable VAR_result_MUX_uxn_opcodes_phased_h_l1176_c7_b67e_iffalse : unsigned(0 downto 0);
+ variable VAR_result_MUX_uxn_opcodes_phased_h_l1179_c7_63a7_return_output : unsigned(0 downto 0);
+ variable VAR_result_MUX_uxn_opcodes_phased_h_l1176_c7_b67e_cond : unsigned(0 downto 0);
+ variable VAR_set_uxn_opcodes_phased_h_l1177_c3_97e7_sp : unsigned(7 downto 0);
+ variable VAR_set_uxn_opcodes_phased_h_l1177_c3_97e7_stack_index : unsigned(0 downto 0);
+ variable VAR_set_uxn_opcodes_phased_h_l1177_c3_97e7_ins : unsigned(7 downto 0);
+ variable VAR_set_uxn_opcodes_phased_h_l1177_c3_97e7_k : unsigned(7 downto 0);
+ variable VAR_set_uxn_opcodes_phased_h_l1177_c3_97e7_mul : unsigned(7 downto 0);
+ variable VAR_set_uxn_opcodes_phased_h_l1177_c3_97e7_add : signed(7 downto 0);
+ variable VAR_set_uxn_opcodes_phased_h_l1177_c3_97e7_CLOCK_ENABLE : unsigned(0 downto 0);
+ variable VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1179_c11_e642_left : unsigned(3 downto 0);
+ variable VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1179_c11_e642_right : unsigned(2 downto 0);
+ variable VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1179_c11_e642_return_output : unsigned(0 downto 0);
+ variable VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1179_c1_5bb6_return_output : unsigned(0 downto 0);
+ variable VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1179_c1_5bb6_cond : unsigned(0 downto 0);
+ variable VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1179_c1_5bb6_iftrue : unsigned(0 downto 0);
+ variable VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1179_c1_5bb6_iffalse : unsigned(0 downto 0);
+ variable VAR_result_MUX_uxn_opcodes_phased_h_l1179_c7_63a7_iftrue : unsigned(0 downto 0);
+ variable VAR_result_MUX_uxn_opcodes_phased_h_l1179_c7_63a7_iffalse : unsigned(0 downto 0);
+ variable VAR_result_MUX_uxn_opcodes_phased_h_l1182_c7_c090_return_output : unsigned(0 downto 0);
+ variable VAR_result_MUX_uxn_opcodes_phased_h_l1179_c7_63a7_cond : unsigned(0 downto 0);
+ variable VAR_put_stack_uxn_opcodes_phased_h_l1180_c3_b980_sp : unsigned(7 downto 0);
+ variable VAR_put_stack_uxn_opcodes_phased_h_l1180_c3_b980_stack_index : unsigned(0 downto 0);
+ variable VAR_put_stack_uxn_opcodes_phased_h_l1180_c3_b980_offset : unsigned(7 downto 0);
+ variable VAR_put_stack_uxn_opcodes_phased_h_l1180_c3_b980_value : unsigned(7 downto 0);
+ variable VAR_BIN_OP_OR_uxn_opcodes_phased_h_l1180_c33_350c_left : unsigned(7 downto 0);
+ variable VAR_BIN_OP_OR_uxn_opcodes_phased_h_l1180_c33_350c_right : unsigned(7 downto 0);
+ variable VAR_BIN_OP_OR_uxn_opcodes_phased_h_l1180_c33_350c_return_output : unsigned(7 downto 0);
+ variable VAR_put_stack_uxn_opcodes_phased_h_l1180_c3_b980_CLOCK_ENABLE : unsigned(0 downto 0);
+ variable VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1182_c11_6087_left : unsigned(3 downto 0);
+ variable VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1182_c11_6087_right : unsigned(2 downto 0);
+ variable VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1182_c11_6087_return_output : unsigned(0 downto 0);
+ variable VAR_result_MUX_uxn_opcodes_phased_h_l1182_c7_c090_iftrue : unsigned(0 downto 0);
+ variable VAR_result_MUX_uxn_opcodes_phased_h_l1182_c7_c090_iffalse : unsigned(0 downto 0);
+ variable VAR_result_MUX_uxn_opcodes_phased_h_l1182_c7_c090_cond : unsigned(0 downto 0);
+ -- State registers comb logic variables
+variable REG_VAR_n8 : unsigned(7 downto 0);
+variable REG_VAR_t8 : unsigned(7 downto 0);
+variable REG_VAR_result : unsigned(0 downto 0);
+begin
+
+  -- STATE REGS
+  -- Default read regs into vars
+  REG_VAR_n8 := n8;
+  REG_VAR_t8 := t8;
+  REG_VAR_result := result;
+ -- Constants and things derived from constants alone
+     -- Submodule level 0
+     VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1173_c1_026e_iffalse := to_unsigned(0, 1);
+     VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1176_c7_b67e_iftrue := to_unsigned(0, 1);
+     VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1179_c1_5bb6_iffalse := to_unsigned(0, 1);
+     VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_iftrue := to_unsigned(0, 1);
+     VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1167_c1_2467_iffalse := to_unsigned(0, 1);
+     VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1179_c11_e642_right := to_unsigned(5, 3);
+     VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1170_c11_48f7_right := to_unsigned(2, 2);
+     VAR_set_will_fail_uxn_opcodes_phased_h_l1165_c12_070a_add := resize(to_signed(-1, 2), 8);
+     VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1167_c11_1fb1_right := to_unsigned(1, 1);
+     VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1176_c11_eb5b_right := to_unsigned(4, 3);
+     VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_iftrue := to_unsigned(0, 1);
+     VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1170_c1_46a2_iffalse := to_unsigned(0, 1);
+     VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_iftrue := to_unsigned(0, 1);
+     VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1164_c1_d2c3_iffalse := to_unsigned(0, 1);
+     VAR_result_MUX_uxn_opcodes_phased_h_l1182_c7_c090_iftrue := to_unsigned(1, 1);
+     VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1182_c11_6087_right := to_unsigned(6, 3);
+     VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1164_c6_624e_right := to_unsigned(0, 1);
+     VAR_set_will_fail_uxn_opcodes_phased_h_l1165_c12_070a_mul := resize(to_unsigned(2, 2), 8);
+     VAR_set_uxn_opcodes_phased_h_l1177_c3_97e7_add := resize(to_signed(-1, 2), 8);
+     VAR_put_stack_uxn_opcodes_phased_h_l1180_c3_b980_offset := resize(to_unsigned(0, 1), 8);
+     VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1173_c11_3437_right := to_unsigned(3, 2);
+     VAR_set_uxn_opcodes_phased_h_l1177_c3_97e7_mul := resize(to_unsigned(2, 2), 8);
+     VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1179_c7_63a7_iftrue := to_unsigned(0, 1);
+     VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1176_c1_0ebc_iffalse := to_unsigned(0, 1);
+
+ -- Loop to construct simultaneous register transfers for each of the pipeline stages
+ -- LATENCY=0 is combinational Logic
+ for STAGE in 0 to PIPELINE_LATENCY loop
+   if STAGE = 0 then
+     -- Mux in clock enable
+     VAR_CLOCK_ENABLE := CLOCK_ENABLE;
+     -- Mux in inputs
+     VAR_phase := phase;
+     VAR_pc := pc;
+     VAR_sp := sp;
+     VAR_stack_index := stack_index;
+     VAR_ins := ins;
+     VAR_k := k;
+
+     -- Submodule level 0
+     VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_iffalse := VAR_CLOCK_ENABLE;
+     VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1164_c1_d2c3_iftrue := VAR_CLOCK_ENABLE;
+     VAR_set_uxn_opcodes_phased_h_l1177_c3_97e7_ins := VAR_ins;
+     VAR_set_uxn_opcodes_phased_h_l1177_c3_97e7_k := VAR_k;
+     VAR_set_will_fail_uxn_opcodes_phased_h_l1165_c12_070a_k := VAR_k;
+     VAR_BIN_OP_OR_uxn_opcodes_phased_h_l1180_c33_350c_left := n8;
+     VAR_n8_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_iftrue := n8;
+     VAR_n8_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_iftrue := n8;
+     VAR_n8_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_iftrue := n8;
+     VAR_n8_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_iffalse := n8;
+     VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1164_c6_624e_left := VAR_phase;
+     VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1167_c11_1fb1_left := VAR_phase;
+     VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1170_c11_48f7_left := VAR_phase;
+     VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1173_c11_3437_left := VAR_phase;
+     VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1176_c11_eb5b_left := VAR_phase;
+     VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1179_c11_e642_left := VAR_phase;
+     VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1182_c11_6087_left := VAR_phase;
+     VAR_result_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_iftrue := result;
+     VAR_result_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_iftrue := result;
+     VAR_result_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_iftrue := result;
+     VAR_result_MUX_uxn_opcodes_phased_h_l1176_c7_b67e_iftrue := result;
+     VAR_result_MUX_uxn_opcodes_phased_h_l1179_c7_63a7_iftrue := result;
+     VAR_result_MUX_uxn_opcodes_phased_h_l1182_c7_c090_iffalse := result;
+     VAR_n_register_uxn_opcodes_phased_h_l1171_c8_8cab_stack_ptr := VAR_sp;
+     VAR_n_register_uxn_opcodes_phased_h_l1174_c8_8373_stack_ptr := VAR_sp;
+     VAR_put_stack_uxn_opcodes_phased_h_l1180_c3_b980_sp := VAR_sp;
+     VAR_set_uxn_opcodes_phased_h_l1177_c3_97e7_sp := VAR_sp;
+     VAR_set_will_fail_uxn_opcodes_phased_h_l1165_c12_070a_sp := VAR_sp;
+     VAR_t_register_uxn_opcodes_phased_h_l1168_c8_76ab_stack_ptr := VAR_sp;
+     VAR_n_register_uxn_opcodes_phased_h_l1171_c8_8cab_stack_index := VAR_stack_index;
+     VAR_n_register_uxn_opcodes_phased_h_l1174_c8_8373_stack_index := VAR_stack_index;
+     VAR_put_stack_uxn_opcodes_phased_h_l1180_c3_b980_stack_index := VAR_stack_index;
+     VAR_set_uxn_opcodes_phased_h_l1177_c3_97e7_stack_index := VAR_stack_index;
+     VAR_t_register_uxn_opcodes_phased_h_l1168_c8_76ab_stack_index := VAR_stack_index;
+     VAR_BIN_OP_OR_uxn_opcodes_phased_h_l1180_c33_350c_right := t8;
+     VAR_t8_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_iftrue := t8;
+     VAR_t8_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_iffalse := t8;
+     -- BIN_OP_EQ[uxn_opcodes_phased_h_l1176_c11_eb5b] LATENCY=0
+     -- Inputs
+     BIN_OP_EQ_uxn_opcodes_phased_h_l1176_c11_eb5b_left <= VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1176_c11_eb5b_left;
+     BIN_OP_EQ_uxn_opcodes_phased_h_l1176_c11_eb5b_right <= VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1176_c11_eb5b_right;
+     -- Outputs
+     VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1176_c11_eb5b_return_output := BIN_OP_EQ_uxn_opcodes_phased_h_l1176_c11_eb5b_return_output;
+
+     -- BIN_OP_EQ[uxn_opcodes_phased_h_l1182_c11_6087] LATENCY=0
+     -- Inputs
+     BIN_OP_EQ_uxn_opcodes_phased_h_l1182_c11_6087_left <= VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1182_c11_6087_left;
+     BIN_OP_EQ_uxn_opcodes_phased_h_l1182_c11_6087_right <= VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1182_c11_6087_right;
+     -- Outputs
+     VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1182_c11_6087_return_output := BIN_OP_EQ_uxn_opcodes_phased_h_l1182_c11_6087_return_output;
+
+     -- BIN_OP_EQ[uxn_opcodes_phased_h_l1179_c11_e642] LATENCY=0
+     -- Inputs
+     BIN_OP_EQ_uxn_opcodes_phased_h_l1179_c11_e642_left <= VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1179_c11_e642_left;
+     BIN_OP_EQ_uxn_opcodes_phased_h_l1179_c11_e642_right <= VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1179_c11_e642_right;
+     -- Outputs
+     VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1179_c11_e642_return_output := BIN_OP_EQ_uxn_opcodes_phased_h_l1179_c11_e642_return_output;
+
+     -- BIN_OP_EQ[uxn_opcodes_phased_h_l1167_c11_1fb1] LATENCY=0
+     -- Inputs
+     BIN_OP_EQ_uxn_opcodes_phased_h_l1167_c11_1fb1_left <= VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1167_c11_1fb1_left;
+     BIN_OP_EQ_uxn_opcodes_phased_h_l1167_c11_1fb1_right <= VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1167_c11_1fb1_right;
+     -- Outputs
+     VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1167_c11_1fb1_return_output := BIN_OP_EQ_uxn_opcodes_phased_h_l1167_c11_1fb1_return_output;
+
+     -- BIN_OP_OR[uxn_opcodes_phased_h_l1180_c33_350c] LATENCY=0
+     -- Inputs
+     BIN_OP_OR_uxn_opcodes_phased_h_l1180_c33_350c_left <= VAR_BIN_OP_OR_uxn_opcodes_phased_h_l1180_c33_350c_left;
+     BIN_OP_OR_uxn_opcodes_phased_h_l1180_c33_350c_right <= VAR_BIN_OP_OR_uxn_opcodes_phased_h_l1180_c33_350c_right;
+     -- Outputs
+     VAR_BIN_OP_OR_uxn_opcodes_phased_h_l1180_c33_350c_return_output := BIN_OP_OR_uxn_opcodes_phased_h_l1180_c33_350c_return_output;
+
+     -- BIN_OP_EQ[uxn_opcodes_phased_h_l1170_c11_48f7] LATENCY=0
+     -- Inputs
+     BIN_OP_EQ_uxn_opcodes_phased_h_l1170_c11_48f7_left <= VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1170_c11_48f7_left;
+     BIN_OP_EQ_uxn_opcodes_phased_h_l1170_c11_48f7_right <= VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1170_c11_48f7_right;
+     -- Outputs
+     VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1170_c11_48f7_return_output := BIN_OP_EQ_uxn_opcodes_phased_h_l1170_c11_48f7_return_output;
+
+     -- BIN_OP_EQ[uxn_opcodes_phased_h_l1164_c6_624e] LATENCY=0
+     -- Inputs
+     BIN_OP_EQ_uxn_opcodes_phased_h_l1164_c6_624e_left <= VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1164_c6_624e_left;
+     BIN_OP_EQ_uxn_opcodes_phased_h_l1164_c6_624e_right <= VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1164_c6_624e_right;
+     -- Outputs
+     VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1164_c6_624e_return_output := BIN_OP_EQ_uxn_opcodes_phased_h_l1164_c6_624e_return_output;
+
+     -- BIN_OP_EQ[uxn_opcodes_phased_h_l1173_c11_3437] LATENCY=0
+     -- Inputs
+     BIN_OP_EQ_uxn_opcodes_phased_h_l1173_c11_3437_left <= VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1173_c11_3437_left;
+     BIN_OP_EQ_uxn_opcodes_phased_h_l1173_c11_3437_right <= VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1173_c11_3437_right;
+     -- Outputs
+     VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1173_c11_3437_return_output := BIN_OP_EQ_uxn_opcodes_phased_h_l1173_c11_3437_return_output;
+
+     -- Submodule level 1
+     VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_cond := VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1164_c6_624e_return_output;
+     VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1164_c1_d2c3_cond := VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1164_c6_624e_return_output;
+     VAR_n8_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_cond := VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1164_c6_624e_return_output;
+     VAR_result_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_cond := VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1164_c6_624e_return_output;
+     VAR_t8_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_cond := VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1164_c6_624e_return_output;
+     VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_cond := VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1167_c11_1fb1_return_output;
+     VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1167_c1_2467_cond := VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1167_c11_1fb1_return_output;
+     VAR_n8_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_cond := VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1167_c11_1fb1_return_output;
+     VAR_result_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_cond := VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1167_c11_1fb1_return_output;
+     VAR_t8_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_cond := VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1167_c11_1fb1_return_output;
+     VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_cond := VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1170_c11_48f7_return_output;
+     VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1170_c1_46a2_cond := VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1170_c11_48f7_return_output;
+     VAR_n8_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_cond := VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1170_c11_48f7_return_output;
+     VAR_result_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_cond := VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1170_c11_48f7_return_output;
+     VAR_t8_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_cond := VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1170_c11_48f7_return_output;
+     VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1176_c7_b67e_cond := VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1173_c11_3437_return_output;
+     VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1173_c1_026e_cond := VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1173_c11_3437_return_output;
+     VAR_n8_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_cond := VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1173_c11_3437_return_output;
+     VAR_result_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_cond := VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1173_c11_3437_return_output;
+     VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1179_c7_63a7_cond := VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1176_c11_eb5b_return_output;
+     VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1176_c1_0ebc_cond := VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1176_c11_eb5b_return_output;
+     VAR_result_MUX_uxn_opcodes_phased_h_l1176_c7_b67e_cond := VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1176_c11_eb5b_return_output;
+     VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1179_c1_5bb6_cond := VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1179_c11_e642_return_output;
+     VAR_result_MUX_uxn_opcodes_phased_h_l1179_c7_63a7_cond := VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1179_c11_e642_return_output;
+     VAR_result_MUX_uxn_opcodes_phased_h_l1182_c7_c090_cond := VAR_BIN_OP_EQ_uxn_opcodes_phased_h_l1182_c11_6087_return_output;
+     VAR_put_stack_uxn_opcodes_phased_h_l1180_c3_b980_value := VAR_BIN_OP_OR_uxn_opcodes_phased_h_l1180_c33_350c_return_output;
+     -- TRUE_CLOCK_ENABLE_MUX[uxn_opcodes_phased_h_l1164_c1_d2c3] LATENCY=0
+     -- Inputs
+     TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1164_c1_d2c3_cond <= VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1164_c1_d2c3_cond;
+     TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1164_c1_d2c3_iftrue <= VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1164_c1_d2c3_iftrue;
+     TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1164_c1_d2c3_iffalse <= VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1164_c1_d2c3_iffalse;
+     -- Outputs
+     VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1164_c1_d2c3_return_output := TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1164_c1_d2c3_return_output;
+
+     -- result_MUX[uxn_opcodes_phased_h_l1182_c7_c090] LATENCY=0
+     -- Inputs
+     result_MUX_uxn_opcodes_phased_h_l1182_c7_c090_cond <= VAR_result_MUX_uxn_opcodes_phased_h_l1182_c7_c090_cond;
+     result_MUX_uxn_opcodes_phased_h_l1182_c7_c090_iftrue <= VAR_result_MUX_uxn_opcodes_phased_h_l1182_c7_c090_iftrue;
+     result_MUX_uxn_opcodes_phased_h_l1182_c7_c090_iffalse <= VAR_result_MUX_uxn_opcodes_phased_h_l1182_c7_c090_iffalse;
+     -- Outputs
+     VAR_result_MUX_uxn_opcodes_phased_h_l1182_c7_c090_return_output := result_MUX_uxn_opcodes_phased_h_l1182_c7_c090_return_output;
+
+     -- FALSE_CLOCK_ENABLE_MUX[uxn_opcodes_phased_h_l1167_c7_13c4] LATENCY=0
+     -- Inputs
+     FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_cond <= VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_cond;
+     FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_iftrue <= VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_iftrue;
+     FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_iffalse <= VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_iffalse;
+     -- Outputs
+     VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_return_output := FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_return_output;
+
+     -- Submodule level 2
+     VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_iffalse := VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_return_output;
+     VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1167_c1_2467_iftrue := VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_return_output;
+     VAR_set_will_fail_uxn_opcodes_phased_h_l1165_c12_070a_CLOCK_ENABLE := VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1164_c1_d2c3_return_output;
+     VAR_result_MUX_uxn_opcodes_phased_h_l1179_c7_63a7_iffalse := VAR_result_MUX_uxn_opcodes_phased_h_l1182_c7_c090_return_output;
+     -- FALSE_CLOCK_ENABLE_MUX[uxn_opcodes_phased_h_l1170_c7_9b76] LATENCY=0
+     -- Inputs
+     FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_cond <= VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_cond;
+     FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_iftrue <= VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_iftrue;
+     FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_iffalse <= VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_iffalse;
+     -- Outputs
+     VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_return_output := FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_return_output;
+
+     -- set_will_fail[uxn_opcodes_phased_h_l1165_c12_070a] LATENCY=0
+     -- Clock enable
+     set_will_fail_uxn_opcodes_phased_h_l1165_c12_070a_CLOCK_ENABLE <= VAR_set_will_fail_uxn_opcodes_phased_h_l1165_c12_070a_CLOCK_ENABLE;
+     -- Inputs
+     set_will_fail_uxn_opcodes_phased_h_l1165_c12_070a_sp <= VAR_set_will_fail_uxn_opcodes_phased_h_l1165_c12_070a_sp;
+     set_will_fail_uxn_opcodes_phased_h_l1165_c12_070a_k <= VAR_set_will_fail_uxn_opcodes_phased_h_l1165_c12_070a_k;
+     set_will_fail_uxn_opcodes_phased_h_l1165_c12_070a_mul <= VAR_set_will_fail_uxn_opcodes_phased_h_l1165_c12_070a_mul;
+     set_will_fail_uxn_opcodes_phased_h_l1165_c12_070a_add <= VAR_set_will_fail_uxn_opcodes_phased_h_l1165_c12_070a_add;
+     -- Outputs
+     VAR_set_will_fail_uxn_opcodes_phased_h_l1165_c12_070a_return_output := set_will_fail_uxn_opcodes_phased_h_l1165_c12_070a_return_output;
+
+     -- TRUE_CLOCK_ENABLE_MUX[uxn_opcodes_phased_h_l1167_c1_2467] LATENCY=0
+     -- Inputs
+     TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1167_c1_2467_cond <= VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1167_c1_2467_cond;
+     TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1167_c1_2467_iftrue <= VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1167_c1_2467_iftrue;
+     TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1167_c1_2467_iffalse <= VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1167_c1_2467_iffalse;
+     -- Outputs
+     VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1167_c1_2467_return_output := TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1167_c1_2467_return_output;
+
+     -- result_MUX[uxn_opcodes_phased_h_l1179_c7_63a7] LATENCY=0
+     -- Inputs
+     result_MUX_uxn_opcodes_phased_h_l1179_c7_63a7_cond <= VAR_result_MUX_uxn_opcodes_phased_h_l1179_c7_63a7_cond;
+     result_MUX_uxn_opcodes_phased_h_l1179_c7_63a7_iftrue <= VAR_result_MUX_uxn_opcodes_phased_h_l1179_c7_63a7_iftrue;
+     result_MUX_uxn_opcodes_phased_h_l1179_c7_63a7_iffalse <= VAR_result_MUX_uxn_opcodes_phased_h_l1179_c7_63a7_iffalse;
+     -- Outputs
+     VAR_result_MUX_uxn_opcodes_phased_h_l1179_c7_63a7_return_output := result_MUX_uxn_opcodes_phased_h_l1179_c7_63a7_return_output;
+
+     -- Submodule level 3
+     VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_iffalse := VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_return_output;
+     VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1170_c1_46a2_iftrue := VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_return_output;
+     VAR_t_register_uxn_opcodes_phased_h_l1168_c8_76ab_CLOCK_ENABLE := VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1167_c1_2467_return_output;
+     VAR_result_MUX_uxn_opcodes_phased_h_l1176_c7_b67e_iffalse := VAR_result_MUX_uxn_opcodes_phased_h_l1179_c7_63a7_return_output;
+     VAR_result_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_iftrue := VAR_set_will_fail_uxn_opcodes_phased_h_l1165_c12_070a_return_output;
+     -- FALSE_CLOCK_ENABLE_MUX[uxn_opcodes_phased_h_l1173_c7_49d5] LATENCY=0
+     -- Inputs
+     FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_cond <= VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_cond;
+     FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_iftrue <= VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_iftrue;
+     FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_iffalse <= VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_iffalse;
+     -- Outputs
+     VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_return_output := FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_return_output;
+
+     -- result_MUX[uxn_opcodes_phased_h_l1176_c7_b67e] LATENCY=0
+     -- Inputs
+     result_MUX_uxn_opcodes_phased_h_l1176_c7_b67e_cond <= VAR_result_MUX_uxn_opcodes_phased_h_l1176_c7_b67e_cond;
+     result_MUX_uxn_opcodes_phased_h_l1176_c7_b67e_iftrue <= VAR_result_MUX_uxn_opcodes_phased_h_l1176_c7_b67e_iftrue;
+     result_MUX_uxn_opcodes_phased_h_l1176_c7_b67e_iffalse <= VAR_result_MUX_uxn_opcodes_phased_h_l1176_c7_b67e_iffalse;
+     -- Outputs
+     VAR_result_MUX_uxn_opcodes_phased_h_l1176_c7_b67e_return_output := result_MUX_uxn_opcodes_phased_h_l1176_c7_b67e_return_output;
+
+     -- t_register[uxn_opcodes_phased_h_l1168_c8_76ab] LATENCY=0
+     -- Clock enable
+     t_register_uxn_opcodes_phased_h_l1168_c8_76ab_CLOCK_ENABLE <= VAR_t_register_uxn_opcodes_phased_h_l1168_c8_76ab_CLOCK_ENABLE;
+     -- Inputs
+     t_register_uxn_opcodes_phased_h_l1168_c8_76ab_stack_index <= VAR_t_register_uxn_opcodes_phased_h_l1168_c8_76ab_stack_index;
+     t_register_uxn_opcodes_phased_h_l1168_c8_76ab_stack_ptr <= VAR_t_register_uxn_opcodes_phased_h_l1168_c8_76ab_stack_ptr;
+     -- Outputs
+     VAR_t_register_uxn_opcodes_phased_h_l1168_c8_76ab_return_output := t_register_uxn_opcodes_phased_h_l1168_c8_76ab_return_output;
+
+     -- TRUE_CLOCK_ENABLE_MUX[uxn_opcodes_phased_h_l1170_c1_46a2] LATENCY=0
+     -- Inputs
+     TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1170_c1_46a2_cond <= VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1170_c1_46a2_cond;
+     TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1170_c1_46a2_iftrue <= VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1170_c1_46a2_iftrue;
+     TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1170_c1_46a2_iffalse <= VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1170_c1_46a2_iffalse;
+     -- Outputs
+     VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1170_c1_46a2_return_output := TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1170_c1_46a2_return_output;
+
+     -- Submodule level 4
+     VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1176_c7_b67e_iffalse := VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_return_output;
+     VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1173_c1_026e_iftrue := VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_return_output;
+     VAR_n_register_uxn_opcodes_phased_h_l1171_c8_8cab_CLOCK_ENABLE := VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1170_c1_46a2_return_output;
+     VAR_result_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_iffalse := VAR_result_MUX_uxn_opcodes_phased_h_l1176_c7_b67e_return_output;
+     VAR_t8_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_iftrue := VAR_t_register_uxn_opcodes_phased_h_l1168_c8_76ab_return_output;
+     -- result_MUX[uxn_opcodes_phased_h_l1173_c7_49d5] LATENCY=0
+     -- Inputs
+     result_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_cond <= VAR_result_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_cond;
+     result_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_iftrue <= VAR_result_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_iftrue;
+     result_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_iffalse <= VAR_result_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_iffalse;
+     -- Outputs
+     VAR_result_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_return_output := result_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_return_output;
+
+     -- FALSE_CLOCK_ENABLE_MUX[uxn_opcodes_phased_h_l1176_c7_b67e] LATENCY=0
+     -- Inputs
+     FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1176_c7_b67e_cond <= VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1176_c7_b67e_cond;
+     FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1176_c7_b67e_iftrue <= VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1176_c7_b67e_iftrue;
+     FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1176_c7_b67e_iffalse <= VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1176_c7_b67e_iffalse;
+     -- Outputs
+     VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1176_c7_b67e_return_output := FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1176_c7_b67e_return_output;
+
+     -- TRUE_CLOCK_ENABLE_MUX[uxn_opcodes_phased_h_l1173_c1_026e] LATENCY=0
+     -- Inputs
+     TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1173_c1_026e_cond <= VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1173_c1_026e_cond;
+     TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1173_c1_026e_iftrue <= VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1173_c1_026e_iftrue;
+     TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1173_c1_026e_iffalse <= VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1173_c1_026e_iffalse;
+     -- Outputs
+     VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1173_c1_026e_return_output := TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1173_c1_026e_return_output;
+
+     -- n_register[uxn_opcodes_phased_h_l1171_c8_8cab] LATENCY=0
+     -- Clock enable
+     n_register_uxn_opcodes_phased_h_l1171_c8_8cab_CLOCK_ENABLE <= VAR_n_register_uxn_opcodes_phased_h_l1171_c8_8cab_CLOCK_ENABLE;
+     -- Inputs
+     n_register_uxn_opcodes_phased_h_l1171_c8_8cab_stack_index <= VAR_n_register_uxn_opcodes_phased_h_l1171_c8_8cab_stack_index;
+     n_register_uxn_opcodes_phased_h_l1171_c8_8cab_stack_ptr <= VAR_n_register_uxn_opcodes_phased_h_l1171_c8_8cab_stack_ptr;
+     -- Outputs
+     VAR_n_register_uxn_opcodes_phased_h_l1171_c8_8cab_return_output := n_register_uxn_opcodes_phased_h_l1171_c8_8cab_return_output;
+
+     -- Submodule level 5
+     VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1179_c7_63a7_iffalse := VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1176_c7_b67e_return_output;
+     VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1176_c1_0ebc_iftrue := VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1176_c7_b67e_return_output;
+     VAR_n_register_uxn_opcodes_phased_h_l1174_c8_8373_CLOCK_ENABLE := VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1173_c1_026e_return_output;
+     VAR_t8_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_iftrue := VAR_n_register_uxn_opcodes_phased_h_l1171_c8_8cab_return_output;
+     VAR_result_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_iffalse := VAR_result_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_return_output;
+     -- FALSE_CLOCK_ENABLE_MUX[uxn_opcodes_phased_h_l1179_c7_63a7] LATENCY=0
+     -- Inputs
+     FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1179_c7_63a7_cond <= VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1179_c7_63a7_cond;
+     FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1179_c7_63a7_iftrue <= VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1179_c7_63a7_iftrue;
+     FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1179_c7_63a7_iffalse <= VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1179_c7_63a7_iffalse;
+     -- Outputs
+     VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1179_c7_63a7_return_output := FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1179_c7_63a7_return_output;
+
+     -- n_register[uxn_opcodes_phased_h_l1174_c8_8373] LATENCY=0
+     -- Clock enable
+     n_register_uxn_opcodes_phased_h_l1174_c8_8373_CLOCK_ENABLE <= VAR_n_register_uxn_opcodes_phased_h_l1174_c8_8373_CLOCK_ENABLE;
+     -- Inputs
+     n_register_uxn_opcodes_phased_h_l1174_c8_8373_stack_index <= VAR_n_register_uxn_opcodes_phased_h_l1174_c8_8373_stack_index;
+     n_register_uxn_opcodes_phased_h_l1174_c8_8373_stack_ptr <= VAR_n_register_uxn_opcodes_phased_h_l1174_c8_8373_stack_ptr;
+     -- Outputs
+     VAR_n_register_uxn_opcodes_phased_h_l1174_c8_8373_return_output := n_register_uxn_opcodes_phased_h_l1174_c8_8373_return_output;
+
+     -- TRUE_CLOCK_ENABLE_MUX[uxn_opcodes_phased_h_l1176_c1_0ebc] LATENCY=0
+     -- Inputs
+     TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1176_c1_0ebc_cond <= VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1176_c1_0ebc_cond;
+     TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1176_c1_0ebc_iftrue <= VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1176_c1_0ebc_iftrue;
+     TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1176_c1_0ebc_iffalse <= VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1176_c1_0ebc_iffalse;
+     -- Outputs
+     VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1176_c1_0ebc_return_output := TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1176_c1_0ebc_return_output;
+
+     -- t8_MUX[uxn_opcodes_phased_h_l1170_c7_9b76] LATENCY=0
+     -- Inputs
+     t8_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_cond <= VAR_t8_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_cond;
+     t8_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_iftrue <= VAR_t8_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_iftrue;
+     t8_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_iffalse <= VAR_t8_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_iffalse;
+     -- Outputs
+     VAR_t8_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_return_output := t8_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_return_output;
+
+     -- result_MUX[uxn_opcodes_phased_h_l1170_c7_9b76] LATENCY=0
+     -- Inputs
+     result_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_cond <= VAR_result_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_cond;
+     result_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_iftrue <= VAR_result_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_iftrue;
+     result_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_iffalse <= VAR_result_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_iffalse;
+     -- Outputs
+     VAR_result_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_return_output := result_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_return_output;
+
+     -- Submodule level 6
+     VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1179_c1_5bb6_iftrue := VAR_FALSE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1179_c7_63a7_return_output;
+     VAR_set_uxn_opcodes_phased_h_l1177_c3_97e7_CLOCK_ENABLE := VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1176_c1_0ebc_return_output;
+     VAR_n8_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_iftrue := VAR_n_register_uxn_opcodes_phased_h_l1174_c8_8373_return_output;
+     VAR_result_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_iffalse := VAR_result_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_return_output;
+     VAR_t8_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_iffalse := VAR_t8_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_return_output;
+     -- t8_MUX[uxn_opcodes_phased_h_l1167_c7_13c4] LATENCY=0
+     -- Inputs
+     t8_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_cond <= VAR_t8_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_cond;
+     t8_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_iftrue <= VAR_t8_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_iftrue;
+     t8_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_iffalse <= VAR_t8_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_iffalse;
+     -- Outputs
+     VAR_t8_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_return_output := t8_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_return_output;
+
+     -- result_MUX[uxn_opcodes_phased_h_l1167_c7_13c4] LATENCY=0
+     -- Inputs
+     result_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_cond <= VAR_result_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_cond;
+     result_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_iftrue <= VAR_result_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_iftrue;
+     result_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_iffalse <= VAR_result_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_iffalse;
+     -- Outputs
+     VAR_result_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_return_output := result_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_return_output;
+
+     -- TRUE_CLOCK_ENABLE_MUX[uxn_opcodes_phased_h_l1179_c1_5bb6] LATENCY=0
+     -- Inputs
+     TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1179_c1_5bb6_cond <= VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1179_c1_5bb6_cond;
+     TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1179_c1_5bb6_iftrue <= VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1179_c1_5bb6_iftrue;
+     TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1179_c1_5bb6_iffalse <= VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1179_c1_5bb6_iffalse;
+     -- Outputs
+     VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1179_c1_5bb6_return_output := TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1179_c1_5bb6_return_output;
+
+     -- n8_MUX[uxn_opcodes_phased_h_l1173_c7_49d5] LATENCY=0
+     -- Inputs
+     n8_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_cond <= VAR_n8_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_cond;
+     n8_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_iftrue <= VAR_n8_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_iftrue;
+     n8_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_iffalse <= VAR_n8_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_iffalse;
+     -- Outputs
+     VAR_n8_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_return_output := n8_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_return_output;
+
+     -- set[uxn_opcodes_phased_h_l1177_c3_97e7] LATENCY=0
+     -- Clock enable
+     set_uxn_opcodes_phased_h_l1177_c3_97e7_CLOCK_ENABLE <= VAR_set_uxn_opcodes_phased_h_l1177_c3_97e7_CLOCK_ENABLE;
+     -- Inputs
+     set_uxn_opcodes_phased_h_l1177_c3_97e7_sp <= VAR_set_uxn_opcodes_phased_h_l1177_c3_97e7_sp;
+     set_uxn_opcodes_phased_h_l1177_c3_97e7_stack_index <= VAR_set_uxn_opcodes_phased_h_l1177_c3_97e7_stack_index;
+     set_uxn_opcodes_phased_h_l1177_c3_97e7_ins <= VAR_set_uxn_opcodes_phased_h_l1177_c3_97e7_ins;
+     set_uxn_opcodes_phased_h_l1177_c3_97e7_k <= VAR_set_uxn_opcodes_phased_h_l1177_c3_97e7_k;
+     set_uxn_opcodes_phased_h_l1177_c3_97e7_mul <= VAR_set_uxn_opcodes_phased_h_l1177_c3_97e7_mul;
+     set_uxn_opcodes_phased_h_l1177_c3_97e7_add <= VAR_set_uxn_opcodes_phased_h_l1177_c3_97e7_add;
+     -- Outputs
+
+     -- Submodule level 7
+     VAR_put_stack_uxn_opcodes_phased_h_l1180_c3_b980_CLOCK_ENABLE := VAR_TRUE_CLOCK_ENABLE_MUX_uxn_opcodes_phased_h_l1179_c1_5bb6_return_output;
+     VAR_n8_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_iffalse := VAR_n8_MUX_uxn_opcodes_phased_h_l1173_c7_49d5_return_output;
+     VAR_result_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_iffalse := VAR_result_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_return_output;
+     VAR_t8_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_iffalse := VAR_t8_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_return_output;
+     -- n8_MUX[uxn_opcodes_phased_h_l1170_c7_9b76] LATENCY=0
+     -- Inputs
+     n8_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_cond <= VAR_n8_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_cond;
+     n8_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_iftrue <= VAR_n8_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_iftrue;
+     n8_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_iffalse <= VAR_n8_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_iffalse;
+     -- Outputs
+     VAR_n8_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_return_output := n8_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_return_output;
+
+     -- t8_MUX[uxn_opcodes_phased_h_l1164_c2_2d1c] LATENCY=0
+     -- Inputs
+     t8_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_cond <= VAR_t8_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_cond;
+     t8_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_iftrue <= VAR_t8_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_iftrue;
+     t8_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_iffalse <= VAR_t8_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_iffalse;
+     -- Outputs
+     VAR_t8_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_return_output := t8_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_return_output;
+
+     -- result_MUX[uxn_opcodes_phased_h_l1164_c2_2d1c] LATENCY=0
+     -- Inputs
+     result_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_cond <= VAR_result_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_cond;
+     result_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_iftrue <= VAR_result_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_iftrue;
+     result_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_iffalse <= VAR_result_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_iffalse;
+     -- Outputs
+     VAR_result_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_return_output := result_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_return_output;
+
+     -- put_stack[uxn_opcodes_phased_h_l1180_c3_b980] LATENCY=0
+     -- Clock enable
+     put_stack_uxn_opcodes_phased_h_l1180_c3_b980_CLOCK_ENABLE <= VAR_put_stack_uxn_opcodes_phased_h_l1180_c3_b980_CLOCK_ENABLE;
+     -- Inputs
+     put_stack_uxn_opcodes_phased_h_l1180_c3_b980_sp <= VAR_put_stack_uxn_opcodes_phased_h_l1180_c3_b980_sp;
+     put_stack_uxn_opcodes_phased_h_l1180_c3_b980_stack_index <= VAR_put_stack_uxn_opcodes_phased_h_l1180_c3_b980_stack_index;
+     put_stack_uxn_opcodes_phased_h_l1180_c3_b980_offset <= VAR_put_stack_uxn_opcodes_phased_h_l1180_c3_b980_offset;
+     put_stack_uxn_opcodes_phased_h_l1180_c3_b980_value <= VAR_put_stack_uxn_opcodes_phased_h_l1180_c3_b980_value;
+     -- Outputs
+
+     -- Submodule level 8
+     VAR_n8_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_iffalse := VAR_n8_MUX_uxn_opcodes_phased_h_l1170_c7_9b76_return_output;
+     REG_VAR_result := VAR_result_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_return_output;
+     VAR_return_output := VAR_result_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_return_output;
+     REG_VAR_t8 := VAR_t8_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_return_output;
+     -- n8_MUX[uxn_opcodes_phased_h_l1167_c7_13c4] LATENCY=0
+     -- Inputs
+     n8_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_cond <= VAR_n8_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_cond;
+     n8_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_iftrue <= VAR_n8_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_iftrue;
+     n8_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_iffalse <= VAR_n8_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_iffalse;
+     -- Outputs
+     VAR_n8_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_return_output := n8_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_return_output;
+
+     -- Submodule level 9
+     VAR_n8_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_iffalse := VAR_n8_MUX_uxn_opcodes_phased_h_l1167_c7_13c4_return_output;
+     -- n8_MUX[uxn_opcodes_phased_h_l1164_c2_2d1c] LATENCY=0
+     -- Inputs
+     n8_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_cond <= VAR_n8_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_cond;
+     n8_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_iftrue <= VAR_n8_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_iftrue;
+     n8_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_iffalse <= VAR_n8_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_iffalse;
+     -- Outputs
+     VAR_n8_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_return_output := n8_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_return_output;
+
+     -- Submodule level 10
+     REG_VAR_n8 := VAR_n8_MUX_uxn_opcodes_phased_h_l1164_c2_2d1c_return_output;
+     -- Last stage of pipeline return wire to return port/reg
+     return_output <= VAR_return_output;
+   end if;
+ end loop;
+
+-- Write regs vars to comb logic
+REG_COMB_n8 <= REG_VAR_n8;
+REG_COMB_t8 <= REG_VAR_t8;
+REG_COMB_result <= REG_VAR_result;
+end process;
+
+-- Register comb signals
+process(clk) is
+begin
+ if rising_edge(clk) then
+ if CLOCK_ENABLE(0)='1' then
+     n8 <= REG_COMB_n8;
+     t8 <= REG_COMB_t8;
+     result <= REG_COMB_result;
+ end if;
+ end if;
+end process;
+
+end arch;

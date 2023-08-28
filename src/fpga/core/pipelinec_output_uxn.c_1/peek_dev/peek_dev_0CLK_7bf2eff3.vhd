@@ -30,15 +30,15 @@ signal ram_read : unsigned(15 downto 0) := to_unsigned(0, 16);
 signal REG_COMB_ram_read : unsigned(15 downto 0);
 
 -- Each function instance gets signals
--- device_ram_update[uxn_ram_device_h_l56_c13_d4a8]
-signal device_ram_update_uxn_ram_device_h_l56_c13_d4a8_CLOCK_ENABLE : unsigned(0 downto 0);
-signal device_ram_update_uxn_ram_device_h_l56_c13_d4a8_address0 : unsigned(7 downto 0);
-signal device_ram_update_uxn_ram_device_h_l56_c13_d4a8_write0_value : unsigned(7 downto 0);
-signal device_ram_update_uxn_ram_device_h_l56_c13_d4a8_write0_enable : unsigned(0 downto 0);
-signal device_ram_update_uxn_ram_device_h_l56_c13_d4a8_read0_enable : unsigned(0 downto 0);
-signal device_ram_update_uxn_ram_device_h_l56_c13_d4a8_address1 : unsigned(7 downto 0);
-signal device_ram_update_uxn_ram_device_h_l56_c13_d4a8_read1_enable : unsigned(0 downto 0);
-signal device_ram_update_uxn_ram_device_h_l56_c13_d4a8_return_output : unsigned(15 downto 0);
+-- device_ram_update[uxn_ram_device_h_l112_c13_6d9e]
+signal device_ram_update_uxn_ram_device_h_l112_c13_6d9e_CLOCK_ENABLE : unsigned(0 downto 0);
+signal device_ram_update_uxn_ram_device_h_l112_c13_6d9e_address0 : unsigned(7 downto 0);
+signal device_ram_update_uxn_ram_device_h_l112_c13_6d9e_write0_value : unsigned(7 downto 0);
+signal device_ram_update_uxn_ram_device_h_l112_c13_6d9e_write0_enable : unsigned(0 downto 0);
+signal device_ram_update_uxn_ram_device_h_l112_c13_6d9e_read0_enable : unsigned(0 downto 0);
+signal device_ram_update_uxn_ram_device_h_l112_c13_6d9e_address1 : unsigned(7 downto 0);
+signal device_ram_update_uxn_ram_device_h_l112_c13_6d9e_read1_enable : unsigned(0 downto 0);
+signal device_ram_update_uxn_ram_device_h_l112_c13_6d9e_return_output : unsigned(15 downto 0);
 
 function CAST_TO_uint8_t_uint16_t( rhs : unsigned) return unsigned is
 
@@ -55,17 +55,17 @@ end function;
 begin
 
 -- SUBMODULE INSTANCES 
--- device_ram_update_uxn_ram_device_h_l56_c13_d4a8
-device_ram_update_uxn_ram_device_h_l56_c13_d4a8 : entity work.device_ram_update_0CLK_c464aa95 port map (
+-- device_ram_update_uxn_ram_device_h_l112_c13_6d9e
+device_ram_update_uxn_ram_device_h_l112_c13_6d9e : entity work.device_ram_update_0CLK_c464aa95 port map (
 clk,
-device_ram_update_uxn_ram_device_h_l56_c13_d4a8_CLOCK_ENABLE,
-device_ram_update_uxn_ram_device_h_l56_c13_d4a8_address0,
-device_ram_update_uxn_ram_device_h_l56_c13_d4a8_write0_value,
-device_ram_update_uxn_ram_device_h_l56_c13_d4a8_write0_enable,
-device_ram_update_uxn_ram_device_h_l56_c13_d4a8_read0_enable,
-device_ram_update_uxn_ram_device_h_l56_c13_d4a8_address1,
-device_ram_update_uxn_ram_device_h_l56_c13_d4a8_read1_enable,
-device_ram_update_uxn_ram_device_h_l56_c13_d4a8_return_output);
+device_ram_update_uxn_ram_device_h_l112_c13_6d9e_CLOCK_ENABLE,
+device_ram_update_uxn_ram_device_h_l112_c13_6d9e_address0,
+device_ram_update_uxn_ram_device_h_l112_c13_6d9e_write0_value,
+device_ram_update_uxn_ram_device_h_l112_c13_6d9e_write0_enable,
+device_ram_update_uxn_ram_device_h_l112_c13_6d9e_read0_enable,
+device_ram_update_uxn_ram_device_h_l112_c13_6d9e_address1,
+device_ram_update_uxn_ram_device_h_l112_c13_6d9e_read1_enable,
+device_ram_update_uxn_ram_device_h_l112_c13_6d9e_return_output);
 
 
 
@@ -77,21 +77,21 @@ process (
  -- Registers
  ram_read,
  -- All submodule outputs
- device_ram_update_uxn_ram_device_h_l56_c13_d4a8_return_output)
+ device_ram_update_uxn_ram_device_h_l112_c13_6d9e_return_output)
 is 
  -- All of the wires in function
  variable VAR_CLOCK_ENABLE : unsigned(0 downto 0);
  variable VAR_return_output : unsigned(7 downto 0);
  variable VAR_address : unsigned(7 downto 0);
- variable VAR_device_ram_update_uxn_ram_device_h_l56_c13_d4a8_address0 : unsigned(7 downto 0);
- variable VAR_device_ram_update_uxn_ram_device_h_l56_c13_d4a8_write0_value : unsigned(7 downto 0);
- variable VAR_device_ram_update_uxn_ram_device_h_l56_c13_d4a8_write0_enable : unsigned(0 downto 0);
- variable VAR_device_ram_update_uxn_ram_device_h_l56_c13_d4a8_read0_enable : unsigned(0 downto 0);
- variable VAR_device_ram_update_uxn_ram_device_h_l56_c13_d4a8_address1 : unsigned(7 downto 0);
- variable VAR_device_ram_update_uxn_ram_device_h_l56_c13_d4a8_read1_enable : unsigned(0 downto 0);
- variable VAR_device_ram_update_uxn_ram_device_h_l56_c13_d4a8_CLOCK_ENABLE : unsigned(0 downto 0);
- variable VAR_device_ram_update_uxn_ram_device_h_l56_c13_d4a8_return_output : unsigned(15 downto 0);
- variable VAR_CAST_TO_uint8_t_uxn_ram_device_h_l57_c9_5b9c_return_output : unsigned(7 downto 0);
+ variable VAR_device_ram_update_uxn_ram_device_h_l112_c13_6d9e_address0 : unsigned(7 downto 0);
+ variable VAR_device_ram_update_uxn_ram_device_h_l112_c13_6d9e_write0_value : unsigned(7 downto 0);
+ variable VAR_device_ram_update_uxn_ram_device_h_l112_c13_6d9e_write0_enable : unsigned(0 downto 0);
+ variable VAR_device_ram_update_uxn_ram_device_h_l112_c13_6d9e_read0_enable : unsigned(0 downto 0);
+ variable VAR_device_ram_update_uxn_ram_device_h_l112_c13_6d9e_address1 : unsigned(7 downto 0);
+ variable VAR_device_ram_update_uxn_ram_device_h_l112_c13_6d9e_read1_enable : unsigned(0 downto 0);
+ variable VAR_device_ram_update_uxn_ram_device_h_l112_c13_6d9e_CLOCK_ENABLE : unsigned(0 downto 0);
+ variable VAR_device_ram_update_uxn_ram_device_h_l112_c13_6d9e_return_output : unsigned(15 downto 0);
+ variable VAR_CAST_TO_uint8_t_uxn_ram_device_h_l113_c9_0a8f_return_output : unsigned(7 downto 0);
  -- State registers comb logic variables
 variable REG_VAR_ram_read : unsigned(15 downto 0);
 begin
@@ -101,11 +101,11 @@ begin
   REG_VAR_ram_read := ram_read;
  -- Constants and things derived from constants alone
      -- Submodule level 0
-     VAR_device_ram_update_uxn_ram_device_h_l56_c13_d4a8_address0 := resize(to_unsigned(0, 1), 8);
-     VAR_device_ram_update_uxn_ram_device_h_l56_c13_d4a8_write0_value := resize(to_unsigned(0, 1), 8);
-     VAR_device_ram_update_uxn_ram_device_h_l56_c13_d4a8_write0_enable := to_unsigned(0, 1);
-     VAR_device_ram_update_uxn_ram_device_h_l56_c13_d4a8_read1_enable := to_unsigned(1, 1);
-     VAR_device_ram_update_uxn_ram_device_h_l56_c13_d4a8_read0_enable := to_unsigned(0, 1);
+     VAR_device_ram_update_uxn_ram_device_h_l112_c13_6d9e_read1_enable := to_unsigned(1, 1);
+     VAR_device_ram_update_uxn_ram_device_h_l112_c13_6d9e_write0_enable := to_unsigned(0, 1);
+     VAR_device_ram_update_uxn_ram_device_h_l112_c13_6d9e_address0 := resize(to_unsigned(0, 1), 8);
+     VAR_device_ram_update_uxn_ram_device_h_l112_c13_6d9e_write0_value := resize(to_unsigned(0, 1), 8);
+     VAR_device_ram_update_uxn_ram_device_h_l112_c13_6d9e_read0_enable := to_unsigned(0, 1);
 
  -- Loop to construct simultaneous register transfers for each of the pipeline stages
  -- LATENCY=0 is combinational Logic
@@ -117,29 +117,29 @@ begin
      VAR_address := address;
 
      -- Submodule level 0
-     VAR_device_ram_update_uxn_ram_device_h_l56_c13_d4a8_CLOCK_ENABLE := VAR_CLOCK_ENABLE;
-     VAR_device_ram_update_uxn_ram_device_h_l56_c13_d4a8_address1 := VAR_address;
-     -- device_ram_update[uxn_ram_device_h_l56_c13_d4a8] LATENCY=0
+     VAR_device_ram_update_uxn_ram_device_h_l112_c13_6d9e_CLOCK_ENABLE := VAR_CLOCK_ENABLE;
+     VAR_device_ram_update_uxn_ram_device_h_l112_c13_6d9e_address1 := VAR_address;
+     -- device_ram_update[uxn_ram_device_h_l112_c13_6d9e] LATENCY=0
      -- Clock enable
-     device_ram_update_uxn_ram_device_h_l56_c13_d4a8_CLOCK_ENABLE <= VAR_device_ram_update_uxn_ram_device_h_l56_c13_d4a8_CLOCK_ENABLE;
+     device_ram_update_uxn_ram_device_h_l112_c13_6d9e_CLOCK_ENABLE <= VAR_device_ram_update_uxn_ram_device_h_l112_c13_6d9e_CLOCK_ENABLE;
      -- Inputs
-     device_ram_update_uxn_ram_device_h_l56_c13_d4a8_address0 <= VAR_device_ram_update_uxn_ram_device_h_l56_c13_d4a8_address0;
-     device_ram_update_uxn_ram_device_h_l56_c13_d4a8_write0_value <= VAR_device_ram_update_uxn_ram_device_h_l56_c13_d4a8_write0_value;
-     device_ram_update_uxn_ram_device_h_l56_c13_d4a8_write0_enable <= VAR_device_ram_update_uxn_ram_device_h_l56_c13_d4a8_write0_enable;
-     device_ram_update_uxn_ram_device_h_l56_c13_d4a8_read0_enable <= VAR_device_ram_update_uxn_ram_device_h_l56_c13_d4a8_read0_enable;
-     device_ram_update_uxn_ram_device_h_l56_c13_d4a8_address1 <= VAR_device_ram_update_uxn_ram_device_h_l56_c13_d4a8_address1;
-     device_ram_update_uxn_ram_device_h_l56_c13_d4a8_read1_enable <= VAR_device_ram_update_uxn_ram_device_h_l56_c13_d4a8_read1_enable;
+     device_ram_update_uxn_ram_device_h_l112_c13_6d9e_address0 <= VAR_device_ram_update_uxn_ram_device_h_l112_c13_6d9e_address0;
+     device_ram_update_uxn_ram_device_h_l112_c13_6d9e_write0_value <= VAR_device_ram_update_uxn_ram_device_h_l112_c13_6d9e_write0_value;
+     device_ram_update_uxn_ram_device_h_l112_c13_6d9e_write0_enable <= VAR_device_ram_update_uxn_ram_device_h_l112_c13_6d9e_write0_enable;
+     device_ram_update_uxn_ram_device_h_l112_c13_6d9e_read0_enable <= VAR_device_ram_update_uxn_ram_device_h_l112_c13_6d9e_read0_enable;
+     device_ram_update_uxn_ram_device_h_l112_c13_6d9e_address1 <= VAR_device_ram_update_uxn_ram_device_h_l112_c13_6d9e_address1;
+     device_ram_update_uxn_ram_device_h_l112_c13_6d9e_read1_enable <= VAR_device_ram_update_uxn_ram_device_h_l112_c13_6d9e_read1_enable;
      -- Outputs
-     VAR_device_ram_update_uxn_ram_device_h_l56_c13_d4a8_return_output := device_ram_update_uxn_ram_device_h_l56_c13_d4a8_return_output;
+     VAR_device_ram_update_uxn_ram_device_h_l112_c13_6d9e_return_output := device_ram_update_uxn_ram_device_h_l112_c13_6d9e_return_output;
 
      -- Submodule level 1
-     REG_VAR_ram_read := VAR_device_ram_update_uxn_ram_device_h_l56_c13_d4a8_return_output;
-     -- CAST_TO_uint8_t[uxn_ram_device_h_l57_c9_5b9c] LATENCY=0
-     VAR_CAST_TO_uint8_t_uxn_ram_device_h_l57_c9_5b9c_return_output := CAST_TO_uint8_t_uint16_t(
-     VAR_device_ram_update_uxn_ram_device_h_l56_c13_d4a8_return_output);
+     REG_VAR_ram_read := VAR_device_ram_update_uxn_ram_device_h_l112_c13_6d9e_return_output;
+     -- CAST_TO_uint8_t[uxn_ram_device_h_l113_c9_0a8f] LATENCY=0
+     VAR_CAST_TO_uint8_t_uxn_ram_device_h_l113_c9_0a8f_return_output := CAST_TO_uint8_t_uint16_t(
+     VAR_device_ram_update_uxn_ram_device_h_l112_c13_6d9e_return_output);
 
      -- Submodule level 2
-     VAR_return_output := VAR_CAST_TO_uint8_t_uxn_ram_device_h_l57_c9_5b9c_return_output;
+     VAR_return_output := VAR_CAST_TO_uint8_t_uxn_ram_device_h_l113_c9_0a8f_return_output;
      -- Last stage of pipeline return wire to return port/reg
      return_output <= VAR_return_output;
    end if;
