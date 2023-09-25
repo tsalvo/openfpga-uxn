@@ -530,6 +530,7 @@ assign video_hs = vidout_hs;
     reg [3:0] uxn_c_current_pixel_r;
     reg [3:0] uxn_c_current_pixel_g;
     reg [3:0] uxn_c_current_pixel_b;
+    // reg [3:0] uxn_c_cpu_state;
 
     reg [15:0]  frame_count;
     
@@ -558,6 +559,7 @@ always @(posedge clk_core_12288 or negedge reset_n) begin
         uxn_c_current_pixel_r <= uxn_c_out[11:8];
         uxn_c_current_pixel_g <= uxn_c_out[7:4];
         uxn_c_current_pixel_b <= uxn_c_out[3:0];
+        // uxn_c_cpu_state <= uxn_c_out[15:12];
         
         vidout_uxn[15:12] <= 4'b0010;
         vidout_uxn[2:2] <= 1'b0;
@@ -605,13 +607,22 @@ always @(posedge clk_core_12288 or negedge reset_n) begin
                 // data enable. this is the active region of the line
                 vidout_de <= 1;
                 vidout_uxn[2:2] <= 1'b1;
-                vidout_rgb[23:20] <= uxn_c_current_pixel_r;
-                vidout_rgb[19:16] <= 4'h00;
-                vidout_rgb[15:12] <= uxn_c_current_pixel_g;
-                vidout_rgb[11:8] <= 4'h00;
-                vidout_rgb[7:4] <= uxn_c_current_pixel_b;
-                vidout_rgb[3:0] <= 4'h00;
                 
+                // if (y_count <= VID_V_BPORCH + 30 && x_count >= VID_H_BPORCH + 30 && x_count < VID_H_BPORCH + 60) begin
+                //     vidout_rgb[23:20] <= uxn_c_cpu_state;
+                //     vidout_rgb[19:16] <= 4'h00;
+                //     vidout_rgb[15:12] <= uxn_c_cpu_state;
+                //     vidout_rgb[11:8] <= 4'h00;
+                //     vidout_rgb[7:4] <= uxn_c_cpu_state;
+                //     vidout_rgb[3:0] <= 4'h00;
+                // end else begin
+                    vidout_rgb[23:20] <= uxn_c_current_pixel_r;
+                    vidout_rgb[19:16] <= 4'h00;
+                    vidout_rgb[15:12] <= uxn_c_current_pixel_g;
+                    vidout_rgb[11:8] <= 4'h00;
+                    vidout_rgb[7:4] <= uxn_c_current_pixel_b;
+                    vidout_rgb[3:0] <= 4'h00;
+                // end
             end 
         end
     end
