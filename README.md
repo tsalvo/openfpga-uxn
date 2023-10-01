@@ -1,8 +1,8 @@
 # openfpga-uxn
 
-A core for Analogue Pocket that integrates the PipelineC version of uxn-fpga (still a work-in-progress implementation of Uxn / Varvara).
+A core for Analogue Pocket that integrates the CHDL output of [uxn-fpga](https://github.com/tsalvo/uxn-fpga) (which is still an early work-in-progress implementation of [Varvara / UXN](https://100r.co/site/uxn.html) by hundredrabbits).
 
-Integration steps after compiling uxn-fpga repo (https://github.com/tsalvo/uxn-fpga) with PipelineC:
+Integration steps after compiling [uxn-fpga](https://github.com/tsalvo/uxn-fpga) repo:
 - Drag `pipelinec_output_uxn.c_1` folder from uxn-fpga project into the `scr/fpga/core/` folder
 - In `vhdl_files.txt`, replace space ` ` character with newline `\n`
 - In `vhdl_files.txt`, replace paths in docker container `/workdir/` with path in project: `/core`
