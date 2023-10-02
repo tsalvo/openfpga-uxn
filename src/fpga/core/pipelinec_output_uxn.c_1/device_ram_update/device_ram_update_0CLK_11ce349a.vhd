@@ -45,48 +45,48 @@ signal REG_COMB_rdvalue1 : unsigned(7 downto 0);
 signal REG_COMB_result : unsigned(15 downto 0);
 
 -- Each function instance gets signals
--- device_ram[uxn_ram_device_h_l38_c40_5774]
-signal device_ram_uxn_ram_device_h_l38_c40_5774_CLOCK_ENABLE : unsigned(0 downto 0);
-signal device_ram_uxn_ram_device_h_l38_c40_5774_addr0 : unsigned(31 downto 0);
-signal device_ram_uxn_ram_device_h_l38_c40_5774_wr_data0 : unsigned(7 downto 0);
-signal device_ram_uxn_ram_device_h_l38_c40_5774_wr_en0 : unsigned(0 downto 0);
-signal device_ram_uxn_ram_device_h_l38_c40_5774_valid0 : unsigned(0 downto 0);
-signal device_ram_uxn_ram_device_h_l38_c40_5774_rd_en0 : unsigned(0 downto 0);
-signal device_ram_uxn_ram_device_h_l38_c40_5774_addr1 : unsigned(31 downto 0);
-signal device_ram_uxn_ram_device_h_l38_c40_5774_valid1 : unsigned(0 downto 0);
-signal device_ram_uxn_ram_device_h_l38_c40_5774_rd_en1 : unsigned(0 downto 0);
-signal device_ram_uxn_ram_device_h_l38_c40_5774_return_output : device_ram_outputs_t;
+-- device_ram[uxn_ram_device_h_l38_c40_fda8]
+signal device_ram_uxn_ram_device_h_l38_c40_fda8_CLOCK_ENABLE : unsigned(0 downto 0);
+signal device_ram_uxn_ram_device_h_l38_c40_fda8_addr0 : unsigned(31 downto 0);
+signal device_ram_uxn_ram_device_h_l38_c40_fda8_wr_data0 : unsigned(7 downto 0);
+signal device_ram_uxn_ram_device_h_l38_c40_fda8_wr_en0 : unsigned(0 downto 0);
+signal device_ram_uxn_ram_device_h_l38_c40_fda8_valid0 : unsigned(0 downto 0);
+signal device_ram_uxn_ram_device_h_l38_c40_fda8_rd_en0 : unsigned(0 downto 0);
+signal device_ram_uxn_ram_device_h_l38_c40_fda8_addr1 : unsigned(31 downto 0);
+signal device_ram_uxn_ram_device_h_l38_c40_fda8_valid1 : unsigned(0 downto 0);
+signal device_ram_uxn_ram_device_h_l38_c40_fda8_rd_en1 : unsigned(0 downto 0);
+signal device_ram_uxn_ram_device_h_l38_c40_fda8_return_output : device_ram_outputs_t;
 
--- BIN_OP_AND[uxn_ram_device_h_l49_c13_6576]
-signal BIN_OP_AND_uxn_ram_device_h_l49_c13_6576_left : unsigned(0 downto 0);
-signal BIN_OP_AND_uxn_ram_device_h_l49_c13_6576_right : unsigned(0 downto 0);
-signal BIN_OP_AND_uxn_ram_device_h_l49_c13_6576_return_output : unsigned(0 downto 0);
+-- BIN_OP_AND[uxn_ram_device_h_l49_c13_3d41]
+signal BIN_OP_AND_uxn_ram_device_h_l49_c13_3d41_left : unsigned(0 downto 0);
+signal BIN_OP_AND_uxn_ram_device_h_l49_c13_3d41_right : unsigned(0 downto 0);
+signal BIN_OP_AND_uxn_ram_device_h_l49_c13_3d41_return_output : unsigned(0 downto 0);
 
--- MUX[uxn_ram_device_h_l49_c13_c633]
-signal MUX_uxn_ram_device_h_l49_c13_c633_cond : unsigned(0 downto 0);
-signal MUX_uxn_ram_device_h_l49_c13_c633_iftrue : unsigned(7 downto 0);
-signal MUX_uxn_ram_device_h_l49_c13_c633_iffalse : unsigned(7 downto 0);
-signal MUX_uxn_ram_device_h_l49_c13_c633_return_output : unsigned(7 downto 0);
+-- MUX[uxn_ram_device_h_l49_c13_6331]
+signal MUX_uxn_ram_device_h_l49_c13_6331_cond : unsigned(0 downto 0);
+signal MUX_uxn_ram_device_h_l49_c13_6331_iftrue : unsigned(7 downto 0);
+signal MUX_uxn_ram_device_h_l49_c13_6331_iffalse : unsigned(7 downto 0);
+signal MUX_uxn_ram_device_h_l49_c13_6331_return_output : unsigned(7 downto 0);
 
--- BIN_OP_AND[uxn_ram_device_h_l50_c13_e11a]
-signal BIN_OP_AND_uxn_ram_device_h_l50_c13_e11a_left : unsigned(0 downto 0);
-signal BIN_OP_AND_uxn_ram_device_h_l50_c13_e11a_right : unsigned(0 downto 0);
-signal BIN_OP_AND_uxn_ram_device_h_l50_c13_e11a_return_output : unsigned(0 downto 0);
+-- BIN_OP_AND[uxn_ram_device_h_l50_c13_210b]
+signal BIN_OP_AND_uxn_ram_device_h_l50_c13_210b_left : unsigned(0 downto 0);
+signal BIN_OP_AND_uxn_ram_device_h_l50_c13_210b_right : unsigned(0 downto 0);
+signal BIN_OP_AND_uxn_ram_device_h_l50_c13_210b_return_output : unsigned(0 downto 0);
 
--- MUX[uxn_ram_device_h_l50_c13_8130]
-signal MUX_uxn_ram_device_h_l50_c13_8130_cond : unsigned(0 downto 0);
-signal MUX_uxn_ram_device_h_l50_c13_8130_iftrue : unsigned(7 downto 0);
-signal MUX_uxn_ram_device_h_l50_c13_8130_iffalse : unsigned(7 downto 0);
-signal MUX_uxn_ram_device_h_l50_c13_8130_return_output : unsigned(7 downto 0);
+-- MUX[uxn_ram_device_h_l50_c13_200b]
+signal MUX_uxn_ram_device_h_l50_c13_200b_cond : unsigned(0 downto 0);
+signal MUX_uxn_ram_device_h_l50_c13_200b_iftrue : unsigned(7 downto 0);
+signal MUX_uxn_ram_device_h_l50_c13_200b_iffalse : unsigned(7 downto 0);
+signal MUX_uxn_ram_device_h_l50_c13_200b_return_output : unsigned(7 downto 0);
 
--- CONST_SL_8[uxn_ram_device_h_l53_c2_099f]
-signal CONST_SL_8_uxn_ram_device_h_l53_c2_099f_x : unsigned(15 downto 0);
-signal CONST_SL_8_uxn_ram_device_h_l53_c2_099f_return_output : unsigned(15 downto 0);
+-- CONST_SL_8[uxn_ram_device_h_l53_c2_31a3]
+signal CONST_SL_8_uxn_ram_device_h_l53_c2_31a3_x : unsigned(15 downto 0);
+signal CONST_SL_8_uxn_ram_device_h_l53_c2_31a3_return_output : unsigned(15 downto 0);
 
--- BIN_OP_OR[uxn_ram_device_h_l54_c2_35c5]
-signal BIN_OP_OR_uxn_ram_device_h_l54_c2_35c5_left : unsigned(15 downto 0);
-signal BIN_OP_OR_uxn_ram_device_h_l54_c2_35c5_right : unsigned(15 downto 0);
-signal BIN_OP_OR_uxn_ram_device_h_l54_c2_35c5_return_output : unsigned(15 downto 0);
+-- BIN_OP_OR[uxn_ram_device_h_l54_c2_c02a]
+signal BIN_OP_OR_uxn_ram_device_h_l54_c2_c02a_left : unsigned(15 downto 0);
+signal BIN_OP_OR_uxn_ram_device_h_l54_c2_c02a_right : unsigned(15 downto 0);
+signal BIN_OP_OR_uxn_ram_device_h_l54_c2_c02a_return_output : unsigned(15 downto 0);
 
 function CAST_TO_uint32_t_uint8_t( rhs : unsigned) return unsigned is
 
@@ -114,56 +114,56 @@ end function;
 begin
 
 -- SUBMODULE INSTANCES 
--- device_ram_uxn_ram_device_h_l38_c40_5774
-device_ram_uxn_ram_device_h_l38_c40_5774 : entity work.device_ram_0CLK_b45f1687 port map (
+-- device_ram_uxn_ram_device_h_l38_c40_fda8
+device_ram_uxn_ram_device_h_l38_c40_fda8 : entity work.device_ram_0CLK_b45f1687 port map (
 clk,
-device_ram_uxn_ram_device_h_l38_c40_5774_CLOCK_ENABLE,
-device_ram_uxn_ram_device_h_l38_c40_5774_addr0,
-device_ram_uxn_ram_device_h_l38_c40_5774_wr_data0,
-device_ram_uxn_ram_device_h_l38_c40_5774_wr_en0,
-device_ram_uxn_ram_device_h_l38_c40_5774_valid0,
-device_ram_uxn_ram_device_h_l38_c40_5774_rd_en0,
-device_ram_uxn_ram_device_h_l38_c40_5774_addr1,
-device_ram_uxn_ram_device_h_l38_c40_5774_valid1,
-device_ram_uxn_ram_device_h_l38_c40_5774_rd_en1,
-device_ram_uxn_ram_device_h_l38_c40_5774_return_output);
+device_ram_uxn_ram_device_h_l38_c40_fda8_CLOCK_ENABLE,
+device_ram_uxn_ram_device_h_l38_c40_fda8_addr0,
+device_ram_uxn_ram_device_h_l38_c40_fda8_wr_data0,
+device_ram_uxn_ram_device_h_l38_c40_fda8_wr_en0,
+device_ram_uxn_ram_device_h_l38_c40_fda8_valid0,
+device_ram_uxn_ram_device_h_l38_c40_fda8_rd_en0,
+device_ram_uxn_ram_device_h_l38_c40_fda8_addr1,
+device_ram_uxn_ram_device_h_l38_c40_fda8_valid1,
+device_ram_uxn_ram_device_h_l38_c40_fda8_rd_en1,
+device_ram_uxn_ram_device_h_l38_c40_fda8_return_output);
 
--- BIN_OP_AND_uxn_ram_device_h_l49_c13_6576
-BIN_OP_AND_uxn_ram_device_h_l49_c13_6576 : entity work.BIN_OP_AND_uint1_t_uint1_t_0CLK_de264c78 port map (
-BIN_OP_AND_uxn_ram_device_h_l49_c13_6576_left,
-BIN_OP_AND_uxn_ram_device_h_l49_c13_6576_right,
-BIN_OP_AND_uxn_ram_device_h_l49_c13_6576_return_output);
+-- BIN_OP_AND_uxn_ram_device_h_l49_c13_3d41
+BIN_OP_AND_uxn_ram_device_h_l49_c13_3d41 : entity work.BIN_OP_AND_uint1_t_uint1_t_0CLK_de264c78 port map (
+BIN_OP_AND_uxn_ram_device_h_l49_c13_3d41_left,
+BIN_OP_AND_uxn_ram_device_h_l49_c13_3d41_right,
+BIN_OP_AND_uxn_ram_device_h_l49_c13_3d41_return_output);
 
--- MUX_uxn_ram_device_h_l49_c13_c633
-MUX_uxn_ram_device_h_l49_c13_c633 : entity work.MUX_uint1_t_uint8_t_uint8_t_0CLK_de264c78 port map (
-MUX_uxn_ram_device_h_l49_c13_c633_cond,
-MUX_uxn_ram_device_h_l49_c13_c633_iftrue,
-MUX_uxn_ram_device_h_l49_c13_c633_iffalse,
-MUX_uxn_ram_device_h_l49_c13_c633_return_output);
+-- MUX_uxn_ram_device_h_l49_c13_6331
+MUX_uxn_ram_device_h_l49_c13_6331 : entity work.MUX_uint1_t_uint8_t_uint8_t_0CLK_de264c78 port map (
+MUX_uxn_ram_device_h_l49_c13_6331_cond,
+MUX_uxn_ram_device_h_l49_c13_6331_iftrue,
+MUX_uxn_ram_device_h_l49_c13_6331_iffalse,
+MUX_uxn_ram_device_h_l49_c13_6331_return_output);
 
--- BIN_OP_AND_uxn_ram_device_h_l50_c13_e11a
-BIN_OP_AND_uxn_ram_device_h_l50_c13_e11a : entity work.BIN_OP_AND_uint1_t_uint1_t_0CLK_de264c78 port map (
-BIN_OP_AND_uxn_ram_device_h_l50_c13_e11a_left,
-BIN_OP_AND_uxn_ram_device_h_l50_c13_e11a_right,
-BIN_OP_AND_uxn_ram_device_h_l50_c13_e11a_return_output);
+-- BIN_OP_AND_uxn_ram_device_h_l50_c13_210b
+BIN_OP_AND_uxn_ram_device_h_l50_c13_210b : entity work.BIN_OP_AND_uint1_t_uint1_t_0CLK_de264c78 port map (
+BIN_OP_AND_uxn_ram_device_h_l50_c13_210b_left,
+BIN_OP_AND_uxn_ram_device_h_l50_c13_210b_right,
+BIN_OP_AND_uxn_ram_device_h_l50_c13_210b_return_output);
 
--- MUX_uxn_ram_device_h_l50_c13_8130
-MUX_uxn_ram_device_h_l50_c13_8130 : entity work.MUX_uint1_t_uint8_t_uint8_t_0CLK_de264c78 port map (
-MUX_uxn_ram_device_h_l50_c13_8130_cond,
-MUX_uxn_ram_device_h_l50_c13_8130_iftrue,
-MUX_uxn_ram_device_h_l50_c13_8130_iffalse,
-MUX_uxn_ram_device_h_l50_c13_8130_return_output);
+-- MUX_uxn_ram_device_h_l50_c13_200b
+MUX_uxn_ram_device_h_l50_c13_200b : entity work.MUX_uint1_t_uint8_t_uint8_t_0CLK_de264c78 port map (
+MUX_uxn_ram_device_h_l50_c13_200b_cond,
+MUX_uxn_ram_device_h_l50_c13_200b_iftrue,
+MUX_uxn_ram_device_h_l50_c13_200b_iffalse,
+MUX_uxn_ram_device_h_l50_c13_200b_return_output);
 
--- CONST_SL_8_uxn_ram_device_h_l53_c2_099f
-CONST_SL_8_uxn_ram_device_h_l53_c2_099f : entity work.CONST_SL_8_uint16_t_0CLK_de264c78 port map (
-CONST_SL_8_uxn_ram_device_h_l53_c2_099f_x,
-CONST_SL_8_uxn_ram_device_h_l53_c2_099f_return_output);
+-- CONST_SL_8_uxn_ram_device_h_l53_c2_31a3
+CONST_SL_8_uxn_ram_device_h_l53_c2_31a3 : entity work.CONST_SL_8_uint16_t_0CLK_de264c78 port map (
+CONST_SL_8_uxn_ram_device_h_l53_c2_31a3_x,
+CONST_SL_8_uxn_ram_device_h_l53_c2_31a3_return_output);
 
--- BIN_OP_OR_uxn_ram_device_h_l54_c2_35c5
-BIN_OP_OR_uxn_ram_device_h_l54_c2_35c5 : entity work.BIN_OP_OR_uint16_t_uint16_t_0CLK_de264c78 port map (
-BIN_OP_OR_uxn_ram_device_h_l54_c2_35c5_left,
-BIN_OP_OR_uxn_ram_device_h_l54_c2_35c5_right,
-BIN_OP_OR_uxn_ram_device_h_l54_c2_35c5_return_output);
+-- BIN_OP_OR_uxn_ram_device_h_l54_c2_c02a
+BIN_OP_OR_uxn_ram_device_h_l54_c2_c02a : entity work.BIN_OP_OR_uint16_t_uint16_t_0CLK_de264c78 port map (
+BIN_OP_OR_uxn_ram_device_h_l54_c2_c02a_left,
+BIN_OP_OR_uxn_ram_device_h_l54_c2_c02a_right,
+BIN_OP_OR_uxn_ram_device_h_l54_c2_c02a_return_output);
 
 
 
@@ -185,13 +185,13 @@ process (
  rdvalue1,
  result,
  -- All submodule outputs
- device_ram_uxn_ram_device_h_l38_c40_5774_return_output,
- BIN_OP_AND_uxn_ram_device_h_l49_c13_6576_return_output,
- MUX_uxn_ram_device_h_l49_c13_c633_return_output,
- BIN_OP_AND_uxn_ram_device_h_l50_c13_e11a_return_output,
- MUX_uxn_ram_device_h_l50_c13_8130_return_output,
- CONST_SL_8_uxn_ram_device_h_l53_c2_099f_return_output,
- BIN_OP_OR_uxn_ram_device_h_l54_c2_35c5_return_output)
+ device_ram_uxn_ram_device_h_l38_c40_fda8_return_output,
+ BIN_OP_AND_uxn_ram_device_h_l49_c13_3d41_return_output,
+ MUX_uxn_ram_device_h_l49_c13_6331_return_output,
+ BIN_OP_AND_uxn_ram_device_h_l50_c13_210b_return_output,
+ MUX_uxn_ram_device_h_l50_c13_200b_return_output,
+ CONST_SL_8_uxn_ram_device_h_l53_c2_31a3_return_output,
+ BIN_OP_OR_uxn_ram_device_h_l54_c2_c02a_return_output)
 is 
  -- All of the wires in function
  variable VAR_CLOCK_ENABLE : unsigned(0 downto 0);
@@ -202,46 +202,46 @@ is
  variable VAR_read0_enable : unsigned(0 downto 0);
  variable VAR_address1 : unsigned(7 downto 0);
  variable VAR_read1_enable : unsigned(0 downto 0);
- variable VAR_CAST_TO_uint32_t_uxn_ram_device_h_l31_c11_6f1a_return_output : unsigned(31 downto 0);
- variable VAR_CAST_TO_uint32_t_uxn_ram_device_h_l32_c11_b7b8_return_output : unsigned(31 downto 0);
+ variable VAR_CAST_TO_uint32_t_uxn_ram_device_h_l31_c11_8ed6_return_output : unsigned(31 downto 0);
+ variable VAR_CAST_TO_uint32_t_uxn_ram_device_h_l32_c11_4b96_return_output : unsigned(31 downto 0);
  variable VAR_rw_valid : unsigned(0 downto 0);
  variable VAR_rd_valid : unsigned(0 downto 0);
  variable VAR_device_ram_out : device_ram_outputs_t;
- variable VAR_device_ram_uxn_ram_device_h_l38_c40_5774_addr0 : unsigned(31 downto 0);
- variable VAR_device_ram_uxn_ram_device_h_l38_c40_5774_wr_data0 : unsigned(7 downto 0);
- variable VAR_device_ram_uxn_ram_device_h_l38_c40_5774_wr_en0 : unsigned(0 downto 0);
- variable VAR_device_ram_uxn_ram_device_h_l38_c40_5774_valid0 : unsigned(0 downto 0);
- variable VAR_device_ram_uxn_ram_device_h_l38_c40_5774_rd_en0 : unsigned(0 downto 0);
- variable VAR_device_ram_uxn_ram_device_h_l38_c40_5774_addr1 : unsigned(31 downto 0);
- variable VAR_device_ram_uxn_ram_device_h_l38_c40_5774_valid1 : unsigned(0 downto 0);
- variable VAR_device_ram_uxn_ram_device_h_l38_c40_5774_rd_en1 : unsigned(0 downto 0);
- variable VAR_device_ram_uxn_ram_device_h_l38_c40_5774_CLOCK_ENABLE : unsigned(0 downto 0);
- variable VAR_device_ram_uxn_ram_device_h_l38_c40_5774_return_output : device_ram_outputs_t;
- variable VAR_MUX_uxn_ram_device_h_l49_c13_c633_cond : unsigned(0 downto 0);
- variable VAR_MUX_uxn_ram_device_h_l49_c13_c633_iftrue : unsigned(7 downto 0);
- variable VAR_MUX_uxn_ram_device_h_l49_c13_c633_iffalse : unsigned(7 downto 0);
- variable VAR_CONST_REF_RD_uint1_t_device_ram_outputs_t_valid0_d41d_uxn_ram_device_h_l49_c13_b2b6_return_output : unsigned(0 downto 0);
- variable VAR_BIN_OP_AND_uxn_ram_device_h_l49_c13_6576_left : unsigned(0 downto 0);
- variable VAR_BIN_OP_AND_uxn_ram_device_h_l49_c13_6576_right : unsigned(0 downto 0);
- variable VAR_BIN_OP_AND_uxn_ram_device_h_l49_c13_6576_return_output : unsigned(0 downto 0);
- variable VAR_CONST_REF_RD_uint8_t_device_ram_outputs_t_rd_data0_d41d_uxn_ram_device_h_l49_c52_92af_return_output : unsigned(7 downto 0);
- variable VAR_MUX_uxn_ram_device_h_l49_c13_c633_return_output : unsigned(7 downto 0);
- variable VAR_MUX_uxn_ram_device_h_l50_c13_8130_cond : unsigned(0 downto 0);
- variable VAR_MUX_uxn_ram_device_h_l50_c13_8130_iftrue : unsigned(7 downto 0);
- variable VAR_MUX_uxn_ram_device_h_l50_c13_8130_iffalse : unsigned(7 downto 0);
- variable VAR_CONST_REF_RD_uint1_t_device_ram_outputs_t_valid1_d41d_uxn_ram_device_h_l50_c13_e5d2_return_output : unsigned(0 downto 0);
- variable VAR_BIN_OP_AND_uxn_ram_device_h_l50_c13_e11a_left : unsigned(0 downto 0);
- variable VAR_BIN_OP_AND_uxn_ram_device_h_l50_c13_e11a_right : unsigned(0 downto 0);
- variable VAR_BIN_OP_AND_uxn_ram_device_h_l50_c13_e11a_return_output : unsigned(0 downto 0);
- variable VAR_CONST_REF_RD_uint8_t_device_ram_outputs_t_rd_data1_d41d_uxn_ram_device_h_l50_c52_ca34_return_output : unsigned(7 downto 0);
- variable VAR_MUX_uxn_ram_device_h_l50_c13_8130_return_output : unsigned(7 downto 0);
- variable VAR_CAST_TO_uint16_t_uxn_ram_device_h_l52_c11_3110_return_output : unsigned(15 downto 0);
- variable VAR_CONST_SL_8_uxn_ram_device_h_l53_c2_099f_return_output : unsigned(15 downto 0);
- variable VAR_CONST_SL_8_uxn_ram_device_h_l53_c2_099f_x : unsigned(15 downto 0);
- variable VAR_BIN_OP_OR_uxn_ram_device_h_l54_c2_35c5_left : unsigned(15 downto 0);
- variable VAR_CAST_TO_uint16_t_uxn_ram_device_h_l54_c13_5427_return_output : unsigned(15 downto 0);
- variable VAR_BIN_OP_OR_uxn_ram_device_h_l54_c2_35c5_right : unsigned(15 downto 0);
- variable VAR_BIN_OP_OR_uxn_ram_device_h_l54_c2_35c5_return_output : unsigned(15 downto 0);
+ variable VAR_device_ram_uxn_ram_device_h_l38_c40_fda8_addr0 : unsigned(31 downto 0);
+ variable VAR_device_ram_uxn_ram_device_h_l38_c40_fda8_wr_data0 : unsigned(7 downto 0);
+ variable VAR_device_ram_uxn_ram_device_h_l38_c40_fda8_wr_en0 : unsigned(0 downto 0);
+ variable VAR_device_ram_uxn_ram_device_h_l38_c40_fda8_valid0 : unsigned(0 downto 0);
+ variable VAR_device_ram_uxn_ram_device_h_l38_c40_fda8_rd_en0 : unsigned(0 downto 0);
+ variable VAR_device_ram_uxn_ram_device_h_l38_c40_fda8_addr1 : unsigned(31 downto 0);
+ variable VAR_device_ram_uxn_ram_device_h_l38_c40_fda8_valid1 : unsigned(0 downto 0);
+ variable VAR_device_ram_uxn_ram_device_h_l38_c40_fda8_rd_en1 : unsigned(0 downto 0);
+ variable VAR_device_ram_uxn_ram_device_h_l38_c40_fda8_CLOCK_ENABLE : unsigned(0 downto 0);
+ variable VAR_device_ram_uxn_ram_device_h_l38_c40_fda8_return_output : device_ram_outputs_t;
+ variable VAR_MUX_uxn_ram_device_h_l49_c13_6331_cond : unsigned(0 downto 0);
+ variable VAR_MUX_uxn_ram_device_h_l49_c13_6331_iftrue : unsigned(7 downto 0);
+ variable VAR_MUX_uxn_ram_device_h_l49_c13_6331_iffalse : unsigned(7 downto 0);
+ variable VAR_CONST_REF_RD_uint1_t_device_ram_outputs_t_valid0_d41d_uxn_ram_device_h_l49_c13_8404_return_output : unsigned(0 downto 0);
+ variable VAR_BIN_OP_AND_uxn_ram_device_h_l49_c13_3d41_left : unsigned(0 downto 0);
+ variable VAR_BIN_OP_AND_uxn_ram_device_h_l49_c13_3d41_right : unsigned(0 downto 0);
+ variable VAR_BIN_OP_AND_uxn_ram_device_h_l49_c13_3d41_return_output : unsigned(0 downto 0);
+ variable VAR_CONST_REF_RD_uint8_t_device_ram_outputs_t_rd_data0_d41d_uxn_ram_device_h_l49_c52_975b_return_output : unsigned(7 downto 0);
+ variable VAR_MUX_uxn_ram_device_h_l49_c13_6331_return_output : unsigned(7 downto 0);
+ variable VAR_MUX_uxn_ram_device_h_l50_c13_200b_cond : unsigned(0 downto 0);
+ variable VAR_MUX_uxn_ram_device_h_l50_c13_200b_iftrue : unsigned(7 downto 0);
+ variable VAR_MUX_uxn_ram_device_h_l50_c13_200b_iffalse : unsigned(7 downto 0);
+ variable VAR_CONST_REF_RD_uint1_t_device_ram_outputs_t_valid1_d41d_uxn_ram_device_h_l50_c13_1ee1_return_output : unsigned(0 downto 0);
+ variable VAR_BIN_OP_AND_uxn_ram_device_h_l50_c13_210b_left : unsigned(0 downto 0);
+ variable VAR_BIN_OP_AND_uxn_ram_device_h_l50_c13_210b_right : unsigned(0 downto 0);
+ variable VAR_BIN_OP_AND_uxn_ram_device_h_l50_c13_210b_return_output : unsigned(0 downto 0);
+ variable VAR_CONST_REF_RD_uint8_t_device_ram_outputs_t_rd_data1_d41d_uxn_ram_device_h_l50_c52_62fd_return_output : unsigned(7 downto 0);
+ variable VAR_MUX_uxn_ram_device_h_l50_c13_200b_return_output : unsigned(7 downto 0);
+ variable VAR_CAST_TO_uint16_t_uxn_ram_device_h_l52_c11_bb1c_return_output : unsigned(15 downto 0);
+ variable VAR_CONST_SL_8_uxn_ram_device_h_l53_c2_31a3_return_output : unsigned(15 downto 0);
+ variable VAR_CONST_SL_8_uxn_ram_device_h_l53_c2_31a3_x : unsigned(15 downto 0);
+ variable VAR_BIN_OP_OR_uxn_ram_device_h_l54_c2_c02a_left : unsigned(15 downto 0);
+ variable VAR_CAST_TO_uint16_t_uxn_ram_device_h_l54_c13_3c7c_return_output : unsigned(15 downto 0);
+ variable VAR_BIN_OP_OR_uxn_ram_device_h_l54_c2_c02a_right : unsigned(15 downto 0);
+ variable VAR_BIN_OP_OR_uxn_ram_device_h_l54_c2_c02a_return_output : unsigned(15 downto 0);
  -- State registers comb logic variables
 variable REG_VAR_rdaddr : unsigned(31 downto 0);
 variable REG_VAR_rwaddr : unsigned(31 downto 0);
@@ -261,10 +261,10 @@ begin
   REG_VAR_result := result;
  -- Constants and things derived from constants alone
      -- Submodule level 0
-     VAR_MUX_uxn_ram_device_h_l50_c13_8130_iffalse := resize(to_unsigned(0, 1), 8);
-     VAR_MUX_uxn_ram_device_h_l49_c13_c633_iffalse := resize(to_unsigned(0, 1), 8);
-     VAR_device_ram_uxn_ram_device_h_l38_c40_5774_valid1 := to_unsigned(1, 1);
-     VAR_device_ram_uxn_ram_device_h_l38_c40_5774_valid0 := to_unsigned(1, 1);
+     VAR_MUX_uxn_ram_device_h_l49_c13_6331_iffalse := resize(to_unsigned(0, 1), 8);
+     VAR_device_ram_uxn_ram_device_h_l38_c40_fda8_valid1 := to_unsigned(1, 1);
+     VAR_device_ram_uxn_ram_device_h_l38_c40_fda8_valid0 := to_unsigned(1, 1);
+     VAR_MUX_uxn_ram_device_h_l50_c13_200b_iffalse := resize(to_unsigned(0, 1), 8);
 
  -- Loop to construct simultaneous register transfers for each of the pipeline stages
  -- LATENCY=0 is combinational Logic
@@ -281,125 +281,125 @@ begin
      VAR_read1_enable := read1_enable;
 
      -- Submodule level 0
-     VAR_device_ram_uxn_ram_device_h_l38_c40_5774_CLOCK_ENABLE := VAR_CLOCK_ENABLE;
-     VAR_BIN_OP_AND_uxn_ram_device_h_l49_c13_6576_right := VAR_read0_enable;
-     VAR_device_ram_uxn_ram_device_h_l38_c40_5774_rd_en0 := VAR_read0_enable;
-     VAR_BIN_OP_AND_uxn_ram_device_h_l50_c13_e11a_right := VAR_read1_enable;
-     VAR_device_ram_uxn_ram_device_h_l38_c40_5774_rd_en1 := VAR_read1_enable;
-     VAR_device_ram_uxn_ram_device_h_l38_c40_5774_wr_en0 := VAR_write0_enable;
-     VAR_device_ram_uxn_ram_device_h_l38_c40_5774_wr_data0 := VAR_write0_value;
+     VAR_device_ram_uxn_ram_device_h_l38_c40_fda8_CLOCK_ENABLE := VAR_CLOCK_ENABLE;
+     VAR_BIN_OP_AND_uxn_ram_device_h_l49_c13_3d41_right := VAR_read0_enable;
+     VAR_device_ram_uxn_ram_device_h_l38_c40_fda8_rd_en0 := VAR_read0_enable;
+     VAR_BIN_OP_AND_uxn_ram_device_h_l50_c13_210b_right := VAR_read1_enable;
+     VAR_device_ram_uxn_ram_device_h_l38_c40_fda8_rd_en1 := VAR_read1_enable;
+     VAR_device_ram_uxn_ram_device_h_l38_c40_fda8_wr_en0 := VAR_write0_enable;
+     VAR_device_ram_uxn_ram_device_h_l38_c40_fda8_wr_data0 := VAR_write0_value;
      REG_VAR_wdata := VAR_write0_value;
-     -- CAST_TO_uint32_t[uxn_ram_device_h_l31_c11_6f1a] LATENCY=0
-     VAR_CAST_TO_uint32_t_uxn_ram_device_h_l31_c11_6f1a_return_output := CAST_TO_uint32_t_uint8_t(
-     VAR_address0);
-
-     -- CAST_TO_uint32_t[uxn_ram_device_h_l32_c11_b7b8] LATENCY=0
-     VAR_CAST_TO_uint32_t_uxn_ram_device_h_l32_c11_b7b8_return_output := CAST_TO_uint32_t_uint8_t(
+     -- CAST_TO_uint32_t[uxn_ram_device_h_l32_c11_4b96] LATENCY=0
+     VAR_CAST_TO_uint32_t_uxn_ram_device_h_l32_c11_4b96_return_output := CAST_TO_uint32_t_uint8_t(
      VAR_address1);
 
+     -- CAST_TO_uint32_t[uxn_ram_device_h_l31_c11_8ed6] LATENCY=0
+     VAR_CAST_TO_uint32_t_uxn_ram_device_h_l31_c11_8ed6_return_output := CAST_TO_uint32_t_uint8_t(
+     VAR_address0);
+
      -- Submodule level 1
-     VAR_device_ram_uxn_ram_device_h_l38_c40_5774_addr0 := VAR_CAST_TO_uint32_t_uxn_ram_device_h_l31_c11_6f1a_return_output;
-     REG_VAR_rwaddr := VAR_CAST_TO_uint32_t_uxn_ram_device_h_l31_c11_6f1a_return_output;
-     VAR_device_ram_uxn_ram_device_h_l38_c40_5774_addr1 := VAR_CAST_TO_uint32_t_uxn_ram_device_h_l32_c11_b7b8_return_output;
-     REG_VAR_rdaddr := VAR_CAST_TO_uint32_t_uxn_ram_device_h_l32_c11_b7b8_return_output;
-     -- device_ram[uxn_ram_device_h_l38_c40_5774] LATENCY=0
+     VAR_device_ram_uxn_ram_device_h_l38_c40_fda8_addr0 := VAR_CAST_TO_uint32_t_uxn_ram_device_h_l31_c11_8ed6_return_output;
+     REG_VAR_rwaddr := VAR_CAST_TO_uint32_t_uxn_ram_device_h_l31_c11_8ed6_return_output;
+     VAR_device_ram_uxn_ram_device_h_l38_c40_fda8_addr1 := VAR_CAST_TO_uint32_t_uxn_ram_device_h_l32_c11_4b96_return_output;
+     REG_VAR_rdaddr := VAR_CAST_TO_uint32_t_uxn_ram_device_h_l32_c11_4b96_return_output;
+     -- device_ram[uxn_ram_device_h_l38_c40_fda8] LATENCY=0
      -- Clock enable
-     device_ram_uxn_ram_device_h_l38_c40_5774_CLOCK_ENABLE <= VAR_device_ram_uxn_ram_device_h_l38_c40_5774_CLOCK_ENABLE;
+     device_ram_uxn_ram_device_h_l38_c40_fda8_CLOCK_ENABLE <= VAR_device_ram_uxn_ram_device_h_l38_c40_fda8_CLOCK_ENABLE;
      -- Inputs
-     device_ram_uxn_ram_device_h_l38_c40_5774_addr0 <= VAR_device_ram_uxn_ram_device_h_l38_c40_5774_addr0;
-     device_ram_uxn_ram_device_h_l38_c40_5774_wr_data0 <= VAR_device_ram_uxn_ram_device_h_l38_c40_5774_wr_data0;
-     device_ram_uxn_ram_device_h_l38_c40_5774_wr_en0 <= VAR_device_ram_uxn_ram_device_h_l38_c40_5774_wr_en0;
-     device_ram_uxn_ram_device_h_l38_c40_5774_valid0 <= VAR_device_ram_uxn_ram_device_h_l38_c40_5774_valid0;
-     device_ram_uxn_ram_device_h_l38_c40_5774_rd_en0 <= VAR_device_ram_uxn_ram_device_h_l38_c40_5774_rd_en0;
-     device_ram_uxn_ram_device_h_l38_c40_5774_addr1 <= VAR_device_ram_uxn_ram_device_h_l38_c40_5774_addr1;
-     device_ram_uxn_ram_device_h_l38_c40_5774_valid1 <= VAR_device_ram_uxn_ram_device_h_l38_c40_5774_valid1;
-     device_ram_uxn_ram_device_h_l38_c40_5774_rd_en1 <= VAR_device_ram_uxn_ram_device_h_l38_c40_5774_rd_en1;
+     device_ram_uxn_ram_device_h_l38_c40_fda8_addr0 <= VAR_device_ram_uxn_ram_device_h_l38_c40_fda8_addr0;
+     device_ram_uxn_ram_device_h_l38_c40_fda8_wr_data0 <= VAR_device_ram_uxn_ram_device_h_l38_c40_fda8_wr_data0;
+     device_ram_uxn_ram_device_h_l38_c40_fda8_wr_en0 <= VAR_device_ram_uxn_ram_device_h_l38_c40_fda8_wr_en0;
+     device_ram_uxn_ram_device_h_l38_c40_fda8_valid0 <= VAR_device_ram_uxn_ram_device_h_l38_c40_fda8_valid0;
+     device_ram_uxn_ram_device_h_l38_c40_fda8_rd_en0 <= VAR_device_ram_uxn_ram_device_h_l38_c40_fda8_rd_en0;
+     device_ram_uxn_ram_device_h_l38_c40_fda8_addr1 <= VAR_device_ram_uxn_ram_device_h_l38_c40_fda8_addr1;
+     device_ram_uxn_ram_device_h_l38_c40_fda8_valid1 <= VAR_device_ram_uxn_ram_device_h_l38_c40_fda8_valid1;
+     device_ram_uxn_ram_device_h_l38_c40_fda8_rd_en1 <= VAR_device_ram_uxn_ram_device_h_l38_c40_fda8_rd_en1;
      -- Outputs
-     VAR_device_ram_uxn_ram_device_h_l38_c40_5774_return_output := device_ram_uxn_ram_device_h_l38_c40_5774_return_output;
+     VAR_device_ram_uxn_ram_device_h_l38_c40_fda8_return_output := device_ram_uxn_ram_device_h_l38_c40_fda8_return_output;
 
      -- Submodule level 2
-     -- CONST_REF_RD_uint1_t_device_ram_outputs_t_valid0_d41d[uxn_ram_device_h_l49_c13_b2b6] LATENCY=0
-     VAR_CONST_REF_RD_uint1_t_device_ram_outputs_t_valid0_d41d_uxn_ram_device_h_l49_c13_b2b6_return_output := VAR_device_ram_uxn_ram_device_h_l38_c40_5774_return_output.valid0;
+     -- CONST_REF_RD_uint8_t_device_ram_outputs_t_rd_data0_d41d[uxn_ram_device_h_l49_c52_975b] LATENCY=0
+     VAR_CONST_REF_RD_uint8_t_device_ram_outputs_t_rd_data0_d41d_uxn_ram_device_h_l49_c52_975b_return_output := VAR_device_ram_uxn_ram_device_h_l38_c40_fda8_return_output.rd_data0;
 
-     -- CONST_REF_RD_uint8_t_device_ram_outputs_t_rd_data1_d41d[uxn_ram_device_h_l50_c52_ca34] LATENCY=0
-     VAR_CONST_REF_RD_uint8_t_device_ram_outputs_t_rd_data1_d41d_uxn_ram_device_h_l50_c52_ca34_return_output := VAR_device_ram_uxn_ram_device_h_l38_c40_5774_return_output.rd_data1;
+     -- CONST_REF_RD_uint1_t_device_ram_outputs_t_valid0_d41d[uxn_ram_device_h_l49_c13_8404] LATENCY=0
+     VAR_CONST_REF_RD_uint1_t_device_ram_outputs_t_valid0_d41d_uxn_ram_device_h_l49_c13_8404_return_output := VAR_device_ram_uxn_ram_device_h_l38_c40_fda8_return_output.valid0;
 
-     -- CONST_REF_RD_uint8_t_device_ram_outputs_t_rd_data0_d41d[uxn_ram_device_h_l49_c52_92af] LATENCY=0
-     VAR_CONST_REF_RD_uint8_t_device_ram_outputs_t_rd_data0_d41d_uxn_ram_device_h_l49_c52_92af_return_output := VAR_device_ram_uxn_ram_device_h_l38_c40_5774_return_output.rd_data0;
+     -- CONST_REF_RD_uint1_t_device_ram_outputs_t_valid1_d41d[uxn_ram_device_h_l50_c13_1ee1] LATENCY=0
+     VAR_CONST_REF_RD_uint1_t_device_ram_outputs_t_valid1_d41d_uxn_ram_device_h_l50_c13_1ee1_return_output := VAR_device_ram_uxn_ram_device_h_l38_c40_fda8_return_output.valid1;
 
-     -- CONST_REF_RD_uint1_t_device_ram_outputs_t_valid1_d41d[uxn_ram_device_h_l50_c13_e5d2] LATENCY=0
-     VAR_CONST_REF_RD_uint1_t_device_ram_outputs_t_valid1_d41d_uxn_ram_device_h_l50_c13_e5d2_return_output := VAR_device_ram_uxn_ram_device_h_l38_c40_5774_return_output.valid1;
+     -- CONST_REF_RD_uint8_t_device_ram_outputs_t_rd_data1_d41d[uxn_ram_device_h_l50_c52_62fd] LATENCY=0
+     VAR_CONST_REF_RD_uint8_t_device_ram_outputs_t_rd_data1_d41d_uxn_ram_device_h_l50_c52_62fd_return_output := VAR_device_ram_uxn_ram_device_h_l38_c40_fda8_return_output.rd_data1;
 
      -- Submodule level 3
-     VAR_BIN_OP_AND_uxn_ram_device_h_l49_c13_6576_left := VAR_CONST_REF_RD_uint1_t_device_ram_outputs_t_valid0_d41d_uxn_ram_device_h_l49_c13_b2b6_return_output;
-     VAR_BIN_OP_AND_uxn_ram_device_h_l50_c13_e11a_left := VAR_CONST_REF_RD_uint1_t_device_ram_outputs_t_valid1_d41d_uxn_ram_device_h_l50_c13_e5d2_return_output;
-     VAR_MUX_uxn_ram_device_h_l49_c13_c633_iftrue := VAR_CONST_REF_RD_uint8_t_device_ram_outputs_t_rd_data0_d41d_uxn_ram_device_h_l49_c52_92af_return_output;
-     VAR_MUX_uxn_ram_device_h_l50_c13_8130_iftrue := VAR_CONST_REF_RD_uint8_t_device_ram_outputs_t_rd_data1_d41d_uxn_ram_device_h_l50_c52_ca34_return_output;
-     -- BIN_OP_AND[uxn_ram_device_h_l49_c13_6576] LATENCY=0
+     VAR_BIN_OP_AND_uxn_ram_device_h_l49_c13_3d41_left := VAR_CONST_REF_RD_uint1_t_device_ram_outputs_t_valid0_d41d_uxn_ram_device_h_l49_c13_8404_return_output;
+     VAR_BIN_OP_AND_uxn_ram_device_h_l50_c13_210b_left := VAR_CONST_REF_RD_uint1_t_device_ram_outputs_t_valid1_d41d_uxn_ram_device_h_l50_c13_1ee1_return_output;
+     VAR_MUX_uxn_ram_device_h_l49_c13_6331_iftrue := VAR_CONST_REF_RD_uint8_t_device_ram_outputs_t_rd_data0_d41d_uxn_ram_device_h_l49_c52_975b_return_output;
+     VAR_MUX_uxn_ram_device_h_l50_c13_200b_iftrue := VAR_CONST_REF_RD_uint8_t_device_ram_outputs_t_rd_data1_d41d_uxn_ram_device_h_l50_c52_62fd_return_output;
+     -- BIN_OP_AND[uxn_ram_device_h_l50_c13_210b] LATENCY=0
      -- Inputs
-     BIN_OP_AND_uxn_ram_device_h_l49_c13_6576_left <= VAR_BIN_OP_AND_uxn_ram_device_h_l49_c13_6576_left;
-     BIN_OP_AND_uxn_ram_device_h_l49_c13_6576_right <= VAR_BIN_OP_AND_uxn_ram_device_h_l49_c13_6576_right;
+     BIN_OP_AND_uxn_ram_device_h_l50_c13_210b_left <= VAR_BIN_OP_AND_uxn_ram_device_h_l50_c13_210b_left;
+     BIN_OP_AND_uxn_ram_device_h_l50_c13_210b_right <= VAR_BIN_OP_AND_uxn_ram_device_h_l50_c13_210b_right;
      -- Outputs
-     VAR_BIN_OP_AND_uxn_ram_device_h_l49_c13_6576_return_output := BIN_OP_AND_uxn_ram_device_h_l49_c13_6576_return_output;
+     VAR_BIN_OP_AND_uxn_ram_device_h_l50_c13_210b_return_output := BIN_OP_AND_uxn_ram_device_h_l50_c13_210b_return_output;
 
-     -- BIN_OP_AND[uxn_ram_device_h_l50_c13_e11a] LATENCY=0
+     -- BIN_OP_AND[uxn_ram_device_h_l49_c13_3d41] LATENCY=0
      -- Inputs
-     BIN_OP_AND_uxn_ram_device_h_l50_c13_e11a_left <= VAR_BIN_OP_AND_uxn_ram_device_h_l50_c13_e11a_left;
-     BIN_OP_AND_uxn_ram_device_h_l50_c13_e11a_right <= VAR_BIN_OP_AND_uxn_ram_device_h_l50_c13_e11a_right;
+     BIN_OP_AND_uxn_ram_device_h_l49_c13_3d41_left <= VAR_BIN_OP_AND_uxn_ram_device_h_l49_c13_3d41_left;
+     BIN_OP_AND_uxn_ram_device_h_l49_c13_3d41_right <= VAR_BIN_OP_AND_uxn_ram_device_h_l49_c13_3d41_right;
      -- Outputs
-     VAR_BIN_OP_AND_uxn_ram_device_h_l50_c13_e11a_return_output := BIN_OP_AND_uxn_ram_device_h_l50_c13_e11a_return_output;
+     VAR_BIN_OP_AND_uxn_ram_device_h_l49_c13_3d41_return_output := BIN_OP_AND_uxn_ram_device_h_l49_c13_3d41_return_output;
 
      -- Submodule level 4
-     VAR_MUX_uxn_ram_device_h_l49_c13_c633_cond := VAR_BIN_OP_AND_uxn_ram_device_h_l49_c13_6576_return_output;
-     VAR_MUX_uxn_ram_device_h_l50_c13_8130_cond := VAR_BIN_OP_AND_uxn_ram_device_h_l50_c13_e11a_return_output;
-     -- MUX[uxn_ram_device_h_l50_c13_8130] LATENCY=0
+     VAR_MUX_uxn_ram_device_h_l49_c13_6331_cond := VAR_BIN_OP_AND_uxn_ram_device_h_l49_c13_3d41_return_output;
+     VAR_MUX_uxn_ram_device_h_l50_c13_200b_cond := VAR_BIN_OP_AND_uxn_ram_device_h_l50_c13_210b_return_output;
+     -- MUX[uxn_ram_device_h_l49_c13_6331] LATENCY=0
      -- Inputs
-     MUX_uxn_ram_device_h_l50_c13_8130_cond <= VAR_MUX_uxn_ram_device_h_l50_c13_8130_cond;
-     MUX_uxn_ram_device_h_l50_c13_8130_iftrue <= VAR_MUX_uxn_ram_device_h_l50_c13_8130_iftrue;
-     MUX_uxn_ram_device_h_l50_c13_8130_iffalse <= VAR_MUX_uxn_ram_device_h_l50_c13_8130_iffalse;
+     MUX_uxn_ram_device_h_l49_c13_6331_cond <= VAR_MUX_uxn_ram_device_h_l49_c13_6331_cond;
+     MUX_uxn_ram_device_h_l49_c13_6331_iftrue <= VAR_MUX_uxn_ram_device_h_l49_c13_6331_iftrue;
+     MUX_uxn_ram_device_h_l49_c13_6331_iffalse <= VAR_MUX_uxn_ram_device_h_l49_c13_6331_iffalse;
      -- Outputs
-     VAR_MUX_uxn_ram_device_h_l50_c13_8130_return_output := MUX_uxn_ram_device_h_l50_c13_8130_return_output;
+     VAR_MUX_uxn_ram_device_h_l49_c13_6331_return_output := MUX_uxn_ram_device_h_l49_c13_6331_return_output;
 
-     -- MUX[uxn_ram_device_h_l49_c13_c633] LATENCY=0
+     -- MUX[uxn_ram_device_h_l50_c13_200b] LATENCY=0
      -- Inputs
-     MUX_uxn_ram_device_h_l49_c13_c633_cond <= VAR_MUX_uxn_ram_device_h_l49_c13_c633_cond;
-     MUX_uxn_ram_device_h_l49_c13_c633_iftrue <= VAR_MUX_uxn_ram_device_h_l49_c13_c633_iftrue;
-     MUX_uxn_ram_device_h_l49_c13_c633_iffalse <= VAR_MUX_uxn_ram_device_h_l49_c13_c633_iffalse;
+     MUX_uxn_ram_device_h_l50_c13_200b_cond <= VAR_MUX_uxn_ram_device_h_l50_c13_200b_cond;
+     MUX_uxn_ram_device_h_l50_c13_200b_iftrue <= VAR_MUX_uxn_ram_device_h_l50_c13_200b_iftrue;
+     MUX_uxn_ram_device_h_l50_c13_200b_iffalse <= VAR_MUX_uxn_ram_device_h_l50_c13_200b_iffalse;
      -- Outputs
-     VAR_MUX_uxn_ram_device_h_l49_c13_c633_return_output := MUX_uxn_ram_device_h_l49_c13_c633_return_output;
+     VAR_MUX_uxn_ram_device_h_l50_c13_200b_return_output := MUX_uxn_ram_device_h_l50_c13_200b_return_output;
 
      -- Submodule level 5
-     REG_VAR_rdvalue0 := VAR_MUX_uxn_ram_device_h_l49_c13_c633_return_output;
-     REG_VAR_rdvalue1 := VAR_MUX_uxn_ram_device_h_l50_c13_8130_return_output;
-     -- CAST_TO_uint16_t[uxn_ram_device_h_l52_c11_3110] LATENCY=0
-     VAR_CAST_TO_uint16_t_uxn_ram_device_h_l52_c11_3110_return_output := CAST_TO_uint16_t_uint8_t(
-     VAR_MUX_uxn_ram_device_h_l49_c13_c633_return_output);
+     REG_VAR_rdvalue0 := VAR_MUX_uxn_ram_device_h_l49_c13_6331_return_output;
+     REG_VAR_rdvalue1 := VAR_MUX_uxn_ram_device_h_l50_c13_200b_return_output;
+     -- CAST_TO_uint16_t[uxn_ram_device_h_l54_c13_3c7c] LATENCY=0
+     VAR_CAST_TO_uint16_t_uxn_ram_device_h_l54_c13_3c7c_return_output := CAST_TO_uint16_t_uint8_t(
+     VAR_MUX_uxn_ram_device_h_l50_c13_200b_return_output);
 
-     -- CAST_TO_uint16_t[uxn_ram_device_h_l54_c13_5427] LATENCY=0
-     VAR_CAST_TO_uint16_t_uxn_ram_device_h_l54_c13_5427_return_output := CAST_TO_uint16_t_uint8_t(
-     VAR_MUX_uxn_ram_device_h_l50_c13_8130_return_output);
+     -- CAST_TO_uint16_t[uxn_ram_device_h_l52_c11_bb1c] LATENCY=0
+     VAR_CAST_TO_uint16_t_uxn_ram_device_h_l52_c11_bb1c_return_output := CAST_TO_uint16_t_uint8_t(
+     VAR_MUX_uxn_ram_device_h_l49_c13_6331_return_output);
 
      -- Submodule level 6
-     VAR_CONST_SL_8_uxn_ram_device_h_l53_c2_099f_x := VAR_CAST_TO_uint16_t_uxn_ram_device_h_l52_c11_3110_return_output;
-     VAR_BIN_OP_OR_uxn_ram_device_h_l54_c2_35c5_right := VAR_CAST_TO_uint16_t_uxn_ram_device_h_l54_c13_5427_return_output;
-     -- CONST_SL_8[uxn_ram_device_h_l53_c2_099f] LATENCY=0
+     VAR_CONST_SL_8_uxn_ram_device_h_l53_c2_31a3_x := VAR_CAST_TO_uint16_t_uxn_ram_device_h_l52_c11_bb1c_return_output;
+     VAR_BIN_OP_OR_uxn_ram_device_h_l54_c2_c02a_right := VAR_CAST_TO_uint16_t_uxn_ram_device_h_l54_c13_3c7c_return_output;
+     -- CONST_SL_8[uxn_ram_device_h_l53_c2_31a3] LATENCY=0
      -- Inputs
-     CONST_SL_8_uxn_ram_device_h_l53_c2_099f_x <= VAR_CONST_SL_8_uxn_ram_device_h_l53_c2_099f_x;
+     CONST_SL_8_uxn_ram_device_h_l53_c2_31a3_x <= VAR_CONST_SL_8_uxn_ram_device_h_l53_c2_31a3_x;
      -- Outputs
-     VAR_CONST_SL_8_uxn_ram_device_h_l53_c2_099f_return_output := CONST_SL_8_uxn_ram_device_h_l53_c2_099f_return_output;
+     VAR_CONST_SL_8_uxn_ram_device_h_l53_c2_31a3_return_output := CONST_SL_8_uxn_ram_device_h_l53_c2_31a3_return_output;
 
      -- Submodule level 7
-     VAR_BIN_OP_OR_uxn_ram_device_h_l54_c2_35c5_left := VAR_CONST_SL_8_uxn_ram_device_h_l53_c2_099f_return_output;
-     -- BIN_OP_OR[uxn_ram_device_h_l54_c2_35c5] LATENCY=0
+     VAR_BIN_OP_OR_uxn_ram_device_h_l54_c2_c02a_left := VAR_CONST_SL_8_uxn_ram_device_h_l53_c2_31a3_return_output;
+     -- BIN_OP_OR[uxn_ram_device_h_l54_c2_c02a] LATENCY=0
      -- Inputs
-     BIN_OP_OR_uxn_ram_device_h_l54_c2_35c5_left <= VAR_BIN_OP_OR_uxn_ram_device_h_l54_c2_35c5_left;
-     BIN_OP_OR_uxn_ram_device_h_l54_c2_35c5_right <= VAR_BIN_OP_OR_uxn_ram_device_h_l54_c2_35c5_right;
+     BIN_OP_OR_uxn_ram_device_h_l54_c2_c02a_left <= VAR_BIN_OP_OR_uxn_ram_device_h_l54_c2_c02a_left;
+     BIN_OP_OR_uxn_ram_device_h_l54_c2_c02a_right <= VAR_BIN_OP_OR_uxn_ram_device_h_l54_c2_c02a_right;
      -- Outputs
-     VAR_BIN_OP_OR_uxn_ram_device_h_l54_c2_35c5_return_output := BIN_OP_OR_uxn_ram_device_h_l54_c2_35c5_return_output;
+     VAR_BIN_OP_OR_uxn_ram_device_h_l54_c2_c02a_return_output := BIN_OP_OR_uxn_ram_device_h_l54_c2_c02a_return_output;
 
      -- Submodule level 8
-     REG_VAR_result := VAR_BIN_OP_OR_uxn_ram_device_h_l54_c2_35c5_return_output;
-     VAR_return_output := VAR_BIN_OP_OR_uxn_ram_device_h_l54_c2_35c5_return_output;
+     REG_VAR_result := VAR_BIN_OP_OR_uxn_ram_device_h_l54_c2_c02a_return_output;
+     VAR_return_output := VAR_BIN_OP_OR_uxn_ram_device_h_l54_c2_c02a_return_output;
      -- Last stage of pipeline return wire to return port/reg
      return_output <= VAR_return_output;
    end if;
