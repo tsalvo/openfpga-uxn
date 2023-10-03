@@ -26,7 +26,7 @@ port(
 end background_vram_0CLK_b45f1687;
 architecture arch of background_vram_0CLK_b45f1687 is
 
-  constant SIZE : integer := 76800; 
+  constant SIZE : integer := 576000; 
   type ram_t is array(0 to SIZE-1) of uint2_t; 
   signal the_ram : ram_t := (others => (others => '0')); 
   -- Limit zero latency comb. read addr range to SIZE 

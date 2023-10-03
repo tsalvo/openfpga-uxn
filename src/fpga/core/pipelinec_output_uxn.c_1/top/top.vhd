@@ -5,7 +5,7 @@ use work.c_structs_pkg.all;
 
   entity top is
 port(
-clk_12p287999 : in std_logic;
+clk_44p28 : in std_logic;
 
 -- IO for each main func
 uxn_eval_input : in unsigned(15 downto 0);
@@ -24,7 +24,7 @@ begin
 -- Instantiate each main
 -- main functions are always clock enabled, always running
 uxn_eval_0CLK_ec7e8c24 : entity work.uxn_eval_0CLK_ec7e8c24 port map (
-clk_12p287999,
+clk_44p28,
 to_unsigned(1,1),
 uxn_eval_input,
 uxn_eval_return_output);
