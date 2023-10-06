@@ -40,26 +40,26 @@ signal REG_COMB_wdata : unsigned(1 downto 0);
 signal REG_COMB_bg_vram_result : unsigned(1 downto 0);
 
 -- Each function instance gets signals
--- background_vram[uxn_ram_screen_h_l37_c42_e64e]
-signal background_vram_uxn_ram_screen_h_l37_c42_e64e_CLOCK_ENABLE : unsigned(0 downto 0);
-signal background_vram_uxn_ram_screen_h_l37_c42_e64e_addr0 : unsigned(31 downto 0);
-signal background_vram_uxn_ram_screen_h_l37_c42_e64e_wr_data0 : unsigned(1 downto 0);
-signal background_vram_uxn_ram_screen_h_l37_c42_e64e_wr_en0 : unsigned(0 downto 0);
-signal background_vram_uxn_ram_screen_h_l37_c42_e64e_valid0 : unsigned(0 downto 0);
-signal background_vram_uxn_ram_screen_h_l37_c42_e64e_rd_en0 : unsigned(0 downto 0);
-signal background_vram_uxn_ram_screen_h_l37_c42_e64e_addr1 : unsigned(31 downto 0);
-signal background_vram_uxn_ram_screen_h_l37_c42_e64e_valid1 : unsigned(0 downto 0);
-signal background_vram_uxn_ram_screen_h_l37_c42_e64e_rd_en1 : unsigned(0 downto 0);
-signal background_vram_uxn_ram_screen_h_l37_c42_e64e_return_output : background_vram_outputs_t;
+-- background_vram[uxn_ram_screen_h_l37_c42_06d4]
+signal background_vram_uxn_ram_screen_h_l37_c42_06d4_CLOCK_ENABLE : unsigned(0 downto 0);
+signal background_vram_uxn_ram_screen_h_l37_c42_06d4_addr0 : unsigned(31 downto 0);
+signal background_vram_uxn_ram_screen_h_l37_c42_06d4_wr_data0 : unsigned(1 downto 0);
+signal background_vram_uxn_ram_screen_h_l37_c42_06d4_wr_en0 : unsigned(0 downto 0);
+signal background_vram_uxn_ram_screen_h_l37_c42_06d4_valid0 : unsigned(0 downto 0);
+signal background_vram_uxn_ram_screen_h_l37_c42_06d4_rd_en0 : unsigned(0 downto 0);
+signal background_vram_uxn_ram_screen_h_l37_c42_06d4_addr1 : unsigned(31 downto 0);
+signal background_vram_uxn_ram_screen_h_l37_c42_06d4_valid1 : unsigned(0 downto 0);
+signal background_vram_uxn_ram_screen_h_l37_c42_06d4_rd_en1 : unsigned(0 downto 0);
+signal background_vram_uxn_ram_screen_h_l37_c42_06d4_return_output : background_vram_outputs_t;
 
--- printf_uxn_ram_screen_h_l50_c2_4fdc[uxn_ram_screen_h_l50_c2_4fdc]
-signal printf_uxn_ram_screen_h_l50_c2_4fdc_uxn_ram_screen_h_l50_c2_4fdc_CLOCK_ENABLE : unsigned(0 downto 0);
-signal printf_uxn_ram_screen_h_l50_c2_4fdc_uxn_ram_screen_h_l50_c2_4fdc_arg0 : unsigned(31 downto 0);
-signal printf_uxn_ram_screen_h_l50_c2_4fdc_uxn_ram_screen_h_l50_c2_4fdc_arg1 : unsigned(31 downto 0);
-signal printf_uxn_ram_screen_h_l50_c2_4fdc_uxn_ram_screen_h_l50_c2_4fdc_arg2 : unsigned(31 downto 0);
-signal printf_uxn_ram_screen_h_l50_c2_4fdc_uxn_ram_screen_h_l50_c2_4fdc_arg3 : unsigned(31 downto 0);
-signal printf_uxn_ram_screen_h_l50_c2_4fdc_uxn_ram_screen_h_l50_c2_4fdc_arg4 : unsigned(31 downto 0);
-signal printf_uxn_ram_screen_h_l50_c2_4fdc_uxn_ram_screen_h_l50_c2_4fdc_arg5 : unsigned(31 downto 0);
+-- printf_uxn_ram_screen_h_l50_c2_459c[uxn_ram_screen_h_l50_c2_459c]
+signal printf_uxn_ram_screen_h_l50_c2_459c_uxn_ram_screen_h_l50_c2_459c_CLOCK_ENABLE : unsigned(0 downto 0);
+signal printf_uxn_ram_screen_h_l50_c2_459c_uxn_ram_screen_h_l50_c2_459c_arg0 : unsigned(31 downto 0);
+signal printf_uxn_ram_screen_h_l50_c2_459c_uxn_ram_screen_h_l50_c2_459c_arg1 : unsigned(31 downto 0);
+signal printf_uxn_ram_screen_h_l50_c2_459c_uxn_ram_screen_h_l50_c2_459c_arg2 : unsigned(31 downto 0);
+signal printf_uxn_ram_screen_h_l50_c2_459c_uxn_ram_screen_h_l50_c2_459c_arg3 : unsigned(31 downto 0);
+signal printf_uxn_ram_screen_h_l50_c2_459c_uxn_ram_screen_h_l50_c2_459c_arg4 : unsigned(31 downto 0);
+signal printf_uxn_ram_screen_h_l50_c2_459c_uxn_ram_screen_h_l50_c2_459c_arg5 : unsigned(31 downto 0);
 
 function CAST_TO_uint4_t_uint2_t( rhs : unsigned) return unsigned is
 
@@ -76,29 +76,29 @@ end function;
 begin
 
 -- SUBMODULE INSTANCES 
--- background_vram_uxn_ram_screen_h_l37_c42_e64e
-background_vram_uxn_ram_screen_h_l37_c42_e64e : entity work.background_vram_0CLK_b45f1687 port map (
+-- background_vram_uxn_ram_screen_h_l37_c42_06d4
+background_vram_uxn_ram_screen_h_l37_c42_06d4 : entity work.background_vram_0CLK_b45f1687 port map (
 clk,
-background_vram_uxn_ram_screen_h_l37_c42_e64e_CLOCK_ENABLE,
-background_vram_uxn_ram_screen_h_l37_c42_e64e_addr0,
-background_vram_uxn_ram_screen_h_l37_c42_e64e_wr_data0,
-background_vram_uxn_ram_screen_h_l37_c42_e64e_wr_en0,
-background_vram_uxn_ram_screen_h_l37_c42_e64e_valid0,
-background_vram_uxn_ram_screen_h_l37_c42_e64e_rd_en0,
-background_vram_uxn_ram_screen_h_l37_c42_e64e_addr1,
-background_vram_uxn_ram_screen_h_l37_c42_e64e_valid1,
-background_vram_uxn_ram_screen_h_l37_c42_e64e_rd_en1,
-background_vram_uxn_ram_screen_h_l37_c42_e64e_return_output);
+background_vram_uxn_ram_screen_h_l37_c42_06d4_CLOCK_ENABLE,
+background_vram_uxn_ram_screen_h_l37_c42_06d4_addr0,
+background_vram_uxn_ram_screen_h_l37_c42_06d4_wr_data0,
+background_vram_uxn_ram_screen_h_l37_c42_06d4_wr_en0,
+background_vram_uxn_ram_screen_h_l37_c42_06d4_valid0,
+background_vram_uxn_ram_screen_h_l37_c42_06d4_rd_en0,
+background_vram_uxn_ram_screen_h_l37_c42_06d4_addr1,
+background_vram_uxn_ram_screen_h_l37_c42_06d4_valid1,
+background_vram_uxn_ram_screen_h_l37_c42_06d4_rd_en1,
+background_vram_uxn_ram_screen_h_l37_c42_06d4_return_output);
 
--- printf_uxn_ram_screen_h_l50_c2_4fdc_uxn_ram_screen_h_l50_c2_4fdc
-printf_uxn_ram_screen_h_l50_c2_4fdc_uxn_ram_screen_h_l50_c2_4fdc : entity work.printf_uxn_ram_screen_h_l50_c2_4fdc_0CLK_de264c78 port map (
-printf_uxn_ram_screen_h_l50_c2_4fdc_uxn_ram_screen_h_l50_c2_4fdc_CLOCK_ENABLE,
-printf_uxn_ram_screen_h_l50_c2_4fdc_uxn_ram_screen_h_l50_c2_4fdc_arg0,
-printf_uxn_ram_screen_h_l50_c2_4fdc_uxn_ram_screen_h_l50_c2_4fdc_arg1,
-printf_uxn_ram_screen_h_l50_c2_4fdc_uxn_ram_screen_h_l50_c2_4fdc_arg2,
-printf_uxn_ram_screen_h_l50_c2_4fdc_uxn_ram_screen_h_l50_c2_4fdc_arg3,
-printf_uxn_ram_screen_h_l50_c2_4fdc_uxn_ram_screen_h_l50_c2_4fdc_arg4,
-printf_uxn_ram_screen_h_l50_c2_4fdc_uxn_ram_screen_h_l50_c2_4fdc_arg5);
+-- printf_uxn_ram_screen_h_l50_c2_459c_uxn_ram_screen_h_l50_c2_459c
+printf_uxn_ram_screen_h_l50_c2_459c_uxn_ram_screen_h_l50_c2_459c : entity work.printf_uxn_ram_screen_h_l50_c2_459c_0CLK_de264c78 port map (
+printf_uxn_ram_screen_h_l50_c2_459c_uxn_ram_screen_h_l50_c2_459c_CLOCK_ENABLE,
+printf_uxn_ram_screen_h_l50_c2_459c_uxn_ram_screen_h_l50_c2_459c_arg0,
+printf_uxn_ram_screen_h_l50_c2_459c_uxn_ram_screen_h_l50_c2_459c_arg1,
+printf_uxn_ram_screen_h_l50_c2_459c_uxn_ram_screen_h_l50_c2_459c_arg2,
+printf_uxn_ram_screen_h_l50_c2_459c_uxn_ram_screen_h_l50_c2_459c_arg3,
+printf_uxn_ram_screen_h_l50_c2_459c_uxn_ram_screen_h_l50_c2_459c_arg4,
+printf_uxn_ram_screen_h_l50_c2_459c_uxn_ram_screen_h_l50_c2_459c_arg5);
 
 
 
@@ -117,7 +117,7 @@ process (
  wdata,
  bg_vram_result,
  -- All submodule outputs
- background_vram_uxn_ram_screen_h_l37_c42_e64e_return_output)
+ background_vram_uxn_ram_screen_h_l37_c42_06d4_return_output)
 is 
  -- All of the wires in function
  variable VAR_CLOCK_ENABLE : unsigned(0 downto 0);
@@ -130,26 +130,26 @@ is
  variable VAR_rw_valid : unsigned(0 downto 0);
  variable VAR_rd_valid : unsigned(0 downto 0);
  variable VAR_bg_vram_out : background_vram_outputs_t;
- variable VAR_background_vram_uxn_ram_screen_h_l37_c42_e64e_addr0 : unsigned(31 downto 0);
- variable VAR_background_vram_uxn_ram_screen_h_l37_c42_e64e_wr_data0 : unsigned(1 downto 0);
- variable VAR_background_vram_uxn_ram_screen_h_l37_c42_e64e_wr_en0 : unsigned(0 downto 0);
- variable VAR_background_vram_uxn_ram_screen_h_l37_c42_e64e_valid0 : unsigned(0 downto 0);
- variable VAR_background_vram_uxn_ram_screen_h_l37_c42_e64e_rd_en0 : unsigned(0 downto 0);
- variable VAR_background_vram_uxn_ram_screen_h_l37_c42_e64e_addr1 : unsigned(31 downto 0);
- variable VAR_background_vram_uxn_ram_screen_h_l37_c42_e64e_valid1 : unsigned(0 downto 0);
- variable VAR_background_vram_uxn_ram_screen_h_l37_c42_e64e_rd_en1 : unsigned(0 downto 0);
- variable VAR_background_vram_uxn_ram_screen_h_l37_c42_e64e_CLOCK_ENABLE : unsigned(0 downto 0);
- variable VAR_background_vram_uxn_ram_screen_h_l37_c42_e64e_return_output : background_vram_outputs_t;
- variable VAR_CONST_REF_RD_uint2_t_background_vram_outputs_t_rd_data1_d41d_uxn_ram_screen_h_l48_c19_c9e3_return_output : unsigned(1 downto 0);
- variable VAR_printf_uxn_ram_screen_h_l50_c2_4fdc_uxn_ram_screen_h_l50_c2_4fdc_CLOCK_ENABLE : unsigned(0 downto 0);
- variable VAR_printf_uxn_ram_screen_h_l50_c2_4fdc_uxn_ram_screen_h_l50_c2_4fdc_arg0 : unsigned(31 downto 0);
- variable VAR_printf_uxn_ram_screen_h_l50_c2_4fdc_uxn_ram_screen_h_l50_c2_4fdc_arg1 : unsigned(31 downto 0);
- variable VAR_CAST_TO_uint4_t_uxn_ram_screen_h_l50_c148_2899_return_output : unsigned(3 downto 0);
- variable VAR_printf_uxn_ram_screen_h_l50_c2_4fdc_uxn_ram_screen_h_l50_c2_4fdc_arg2 : unsigned(31 downto 0);
- variable VAR_printf_uxn_ram_screen_h_l50_c2_4fdc_uxn_ram_screen_h_l50_c2_4fdc_arg3 : unsigned(31 downto 0);
- variable VAR_printf_uxn_ram_screen_h_l50_c2_4fdc_uxn_ram_screen_h_l50_c2_4fdc_arg4 : unsigned(31 downto 0);
- variable VAR_CAST_TO_uint4_t_uxn_ram_screen_h_l50_c188_91ca_return_output : unsigned(3 downto 0);
- variable VAR_printf_uxn_ram_screen_h_l50_c2_4fdc_uxn_ram_screen_h_l50_c2_4fdc_arg5 : unsigned(31 downto 0);
+ variable VAR_background_vram_uxn_ram_screen_h_l37_c42_06d4_addr0 : unsigned(31 downto 0);
+ variable VAR_background_vram_uxn_ram_screen_h_l37_c42_06d4_wr_data0 : unsigned(1 downto 0);
+ variable VAR_background_vram_uxn_ram_screen_h_l37_c42_06d4_wr_en0 : unsigned(0 downto 0);
+ variable VAR_background_vram_uxn_ram_screen_h_l37_c42_06d4_valid0 : unsigned(0 downto 0);
+ variable VAR_background_vram_uxn_ram_screen_h_l37_c42_06d4_rd_en0 : unsigned(0 downto 0);
+ variable VAR_background_vram_uxn_ram_screen_h_l37_c42_06d4_addr1 : unsigned(31 downto 0);
+ variable VAR_background_vram_uxn_ram_screen_h_l37_c42_06d4_valid1 : unsigned(0 downto 0);
+ variable VAR_background_vram_uxn_ram_screen_h_l37_c42_06d4_rd_en1 : unsigned(0 downto 0);
+ variable VAR_background_vram_uxn_ram_screen_h_l37_c42_06d4_CLOCK_ENABLE : unsigned(0 downto 0);
+ variable VAR_background_vram_uxn_ram_screen_h_l37_c42_06d4_return_output : background_vram_outputs_t;
+ variable VAR_CONST_REF_RD_uint2_t_background_vram_outputs_t_rd_data1_d41d_uxn_ram_screen_h_l48_c19_64c6_return_output : unsigned(1 downto 0);
+ variable VAR_printf_uxn_ram_screen_h_l50_c2_459c_uxn_ram_screen_h_l50_c2_459c_CLOCK_ENABLE : unsigned(0 downto 0);
+ variable VAR_printf_uxn_ram_screen_h_l50_c2_459c_uxn_ram_screen_h_l50_c2_459c_arg0 : unsigned(31 downto 0);
+ variable VAR_printf_uxn_ram_screen_h_l50_c2_459c_uxn_ram_screen_h_l50_c2_459c_arg1 : unsigned(31 downto 0);
+ variable VAR_CAST_TO_uint4_t_uxn_ram_screen_h_l50_c148_8be9_return_output : unsigned(3 downto 0);
+ variable VAR_printf_uxn_ram_screen_h_l50_c2_459c_uxn_ram_screen_h_l50_c2_459c_arg2 : unsigned(31 downto 0);
+ variable VAR_printf_uxn_ram_screen_h_l50_c2_459c_uxn_ram_screen_h_l50_c2_459c_arg3 : unsigned(31 downto 0);
+ variable VAR_printf_uxn_ram_screen_h_l50_c2_459c_uxn_ram_screen_h_l50_c2_459c_arg4 : unsigned(31 downto 0);
+ variable VAR_CAST_TO_uint4_t_uxn_ram_screen_h_l50_c188_18e1_return_output : unsigned(3 downto 0);
+ variable VAR_printf_uxn_ram_screen_h_l50_c2_459c_uxn_ram_screen_h_l50_c2_459c_arg5 : unsigned(31 downto 0);
  -- State registers comb logic variables
 variable REG_VAR_rdaddr : unsigned(31 downto 0);
 variable REG_VAR_rwaddr : unsigned(31 downto 0);
@@ -165,7 +165,7 @@ begin
   REG_VAR_bg_vram_result := bg_vram_result;
  -- Constants and things derived from constants alone
      -- Submodule level 0
-     VAR_background_vram_uxn_ram_screen_h_l37_c42_e64e_rd_en0 := to_unsigned(0, 1);
+     VAR_background_vram_uxn_ram_screen_h_l37_c42_06d4_rd_en0 := to_unsigned(0, 1);
 
  -- Loop to construct simultaneous register transfers for each of the pipeline stages
  -- LATENCY=0 is combinational Logic
@@ -181,65 +181,65 @@ begin
      VAR_read1_enable := read1_enable;
 
      -- Submodule level 0
-     VAR_background_vram_uxn_ram_screen_h_l37_c42_e64e_CLOCK_ENABLE := VAR_CLOCK_ENABLE;
-     VAR_printf_uxn_ram_screen_h_l50_c2_4fdc_uxn_ram_screen_h_l50_c2_4fdc_CLOCK_ENABLE := VAR_CLOCK_ENABLE;
-     VAR_background_vram_uxn_ram_screen_h_l37_c42_e64e_addr1 := VAR_read1_address;
-     VAR_printf_uxn_ram_screen_h_l50_c2_4fdc_uxn_ram_screen_h_l50_c2_4fdc_arg3 := VAR_read1_address;
+     VAR_background_vram_uxn_ram_screen_h_l37_c42_06d4_CLOCK_ENABLE := VAR_CLOCK_ENABLE;
+     VAR_printf_uxn_ram_screen_h_l50_c2_459c_uxn_ram_screen_h_l50_c2_459c_CLOCK_ENABLE := VAR_CLOCK_ENABLE;
+     VAR_background_vram_uxn_ram_screen_h_l37_c42_06d4_addr1 := VAR_read1_address;
+     VAR_printf_uxn_ram_screen_h_l50_c2_459c_uxn_ram_screen_h_l50_c2_459c_arg3 := VAR_read1_address;
      REG_VAR_rdaddr := VAR_read1_address;
-     VAR_background_vram_uxn_ram_screen_h_l37_c42_e64e_rd_en1 := VAR_read1_enable;
-     VAR_background_vram_uxn_ram_screen_h_l37_c42_e64e_valid1 := VAR_read1_enable;
-     VAR_printf_uxn_ram_screen_h_l50_c2_4fdc_uxn_ram_screen_h_l50_c2_4fdc_arg4 := resize(VAR_read1_enable, 32);
-     VAR_background_vram_uxn_ram_screen_h_l37_c42_e64e_addr0 := VAR_write0_address;
-     VAR_printf_uxn_ram_screen_h_l50_c2_4fdc_uxn_ram_screen_h_l50_c2_4fdc_arg0 := VAR_write0_address;
+     VAR_background_vram_uxn_ram_screen_h_l37_c42_06d4_rd_en1 := VAR_read1_enable;
+     VAR_background_vram_uxn_ram_screen_h_l37_c42_06d4_valid1 := VAR_read1_enable;
+     VAR_printf_uxn_ram_screen_h_l50_c2_459c_uxn_ram_screen_h_l50_c2_459c_arg4 := resize(VAR_read1_enable, 32);
+     VAR_background_vram_uxn_ram_screen_h_l37_c42_06d4_addr0 := VAR_write0_address;
+     VAR_printf_uxn_ram_screen_h_l50_c2_459c_uxn_ram_screen_h_l50_c2_459c_arg0 := VAR_write0_address;
      REG_VAR_rwaddr := VAR_write0_address;
-     VAR_background_vram_uxn_ram_screen_h_l37_c42_e64e_valid0 := VAR_write0_enable;
-     VAR_background_vram_uxn_ram_screen_h_l37_c42_e64e_wr_en0 := VAR_write0_enable;
-     VAR_printf_uxn_ram_screen_h_l50_c2_4fdc_uxn_ram_screen_h_l50_c2_4fdc_arg1 := resize(VAR_write0_enable, 32);
-     VAR_background_vram_uxn_ram_screen_h_l37_c42_e64e_wr_data0 := VAR_write0_value;
+     VAR_background_vram_uxn_ram_screen_h_l37_c42_06d4_valid0 := VAR_write0_enable;
+     VAR_background_vram_uxn_ram_screen_h_l37_c42_06d4_wr_en0 := VAR_write0_enable;
+     VAR_printf_uxn_ram_screen_h_l50_c2_459c_uxn_ram_screen_h_l50_c2_459c_arg1 := resize(VAR_write0_enable, 32);
+     VAR_background_vram_uxn_ram_screen_h_l37_c42_06d4_wr_data0 := VAR_write0_value;
      REG_VAR_wdata := VAR_write0_value;
-     -- background_vram[uxn_ram_screen_h_l37_c42_e64e] LATENCY=0
-     -- Clock enable
-     background_vram_uxn_ram_screen_h_l37_c42_e64e_CLOCK_ENABLE <= VAR_background_vram_uxn_ram_screen_h_l37_c42_e64e_CLOCK_ENABLE;
-     -- Inputs
-     background_vram_uxn_ram_screen_h_l37_c42_e64e_addr0 <= VAR_background_vram_uxn_ram_screen_h_l37_c42_e64e_addr0;
-     background_vram_uxn_ram_screen_h_l37_c42_e64e_wr_data0 <= VAR_background_vram_uxn_ram_screen_h_l37_c42_e64e_wr_data0;
-     background_vram_uxn_ram_screen_h_l37_c42_e64e_wr_en0 <= VAR_background_vram_uxn_ram_screen_h_l37_c42_e64e_wr_en0;
-     background_vram_uxn_ram_screen_h_l37_c42_e64e_valid0 <= VAR_background_vram_uxn_ram_screen_h_l37_c42_e64e_valid0;
-     background_vram_uxn_ram_screen_h_l37_c42_e64e_rd_en0 <= VAR_background_vram_uxn_ram_screen_h_l37_c42_e64e_rd_en0;
-     background_vram_uxn_ram_screen_h_l37_c42_e64e_addr1 <= VAR_background_vram_uxn_ram_screen_h_l37_c42_e64e_addr1;
-     background_vram_uxn_ram_screen_h_l37_c42_e64e_valid1 <= VAR_background_vram_uxn_ram_screen_h_l37_c42_e64e_valid1;
-     background_vram_uxn_ram_screen_h_l37_c42_e64e_rd_en1 <= VAR_background_vram_uxn_ram_screen_h_l37_c42_e64e_rd_en1;
-     -- Outputs
-     VAR_background_vram_uxn_ram_screen_h_l37_c42_e64e_return_output := background_vram_uxn_ram_screen_h_l37_c42_e64e_return_output;
-
-     -- CAST_TO_uint4_t[uxn_ram_screen_h_l50_c148_2899] LATENCY=0
-     VAR_CAST_TO_uint4_t_uxn_ram_screen_h_l50_c148_2899_return_output := CAST_TO_uint4_t_uint2_t(
+     -- CAST_TO_uint4_t[uxn_ram_screen_h_l50_c148_8be9] LATENCY=0
+     VAR_CAST_TO_uint4_t_uxn_ram_screen_h_l50_c148_8be9_return_output := CAST_TO_uint4_t_uint2_t(
      VAR_write0_value);
 
+     -- background_vram[uxn_ram_screen_h_l37_c42_06d4] LATENCY=0
+     -- Clock enable
+     background_vram_uxn_ram_screen_h_l37_c42_06d4_CLOCK_ENABLE <= VAR_background_vram_uxn_ram_screen_h_l37_c42_06d4_CLOCK_ENABLE;
+     -- Inputs
+     background_vram_uxn_ram_screen_h_l37_c42_06d4_addr0 <= VAR_background_vram_uxn_ram_screen_h_l37_c42_06d4_addr0;
+     background_vram_uxn_ram_screen_h_l37_c42_06d4_wr_data0 <= VAR_background_vram_uxn_ram_screen_h_l37_c42_06d4_wr_data0;
+     background_vram_uxn_ram_screen_h_l37_c42_06d4_wr_en0 <= VAR_background_vram_uxn_ram_screen_h_l37_c42_06d4_wr_en0;
+     background_vram_uxn_ram_screen_h_l37_c42_06d4_valid0 <= VAR_background_vram_uxn_ram_screen_h_l37_c42_06d4_valid0;
+     background_vram_uxn_ram_screen_h_l37_c42_06d4_rd_en0 <= VAR_background_vram_uxn_ram_screen_h_l37_c42_06d4_rd_en0;
+     background_vram_uxn_ram_screen_h_l37_c42_06d4_addr1 <= VAR_background_vram_uxn_ram_screen_h_l37_c42_06d4_addr1;
+     background_vram_uxn_ram_screen_h_l37_c42_06d4_valid1 <= VAR_background_vram_uxn_ram_screen_h_l37_c42_06d4_valid1;
+     background_vram_uxn_ram_screen_h_l37_c42_06d4_rd_en1 <= VAR_background_vram_uxn_ram_screen_h_l37_c42_06d4_rd_en1;
+     -- Outputs
+     VAR_background_vram_uxn_ram_screen_h_l37_c42_06d4_return_output := background_vram_uxn_ram_screen_h_l37_c42_06d4_return_output;
+
      -- Submodule level 1
-     VAR_printf_uxn_ram_screen_h_l50_c2_4fdc_uxn_ram_screen_h_l50_c2_4fdc_arg2 := resize(VAR_CAST_TO_uint4_t_uxn_ram_screen_h_l50_c148_2899_return_output, 32);
-     -- CONST_REF_RD_uint2_t_background_vram_outputs_t_rd_data1_d41d[uxn_ram_screen_h_l48_c19_c9e3] LATENCY=0
-     VAR_CONST_REF_RD_uint2_t_background_vram_outputs_t_rd_data1_d41d_uxn_ram_screen_h_l48_c19_c9e3_return_output := VAR_background_vram_uxn_ram_screen_h_l37_c42_e64e_return_output.rd_data1;
+     VAR_printf_uxn_ram_screen_h_l50_c2_459c_uxn_ram_screen_h_l50_c2_459c_arg2 := resize(VAR_CAST_TO_uint4_t_uxn_ram_screen_h_l50_c148_8be9_return_output, 32);
+     -- CONST_REF_RD_uint2_t_background_vram_outputs_t_rd_data1_d41d[uxn_ram_screen_h_l48_c19_64c6] LATENCY=0
+     VAR_CONST_REF_RD_uint2_t_background_vram_outputs_t_rd_data1_d41d_uxn_ram_screen_h_l48_c19_64c6_return_output := VAR_background_vram_uxn_ram_screen_h_l37_c42_06d4_return_output.rd_data1;
 
      -- Submodule level 2
-     REG_VAR_bg_vram_result := VAR_CONST_REF_RD_uint2_t_background_vram_outputs_t_rd_data1_d41d_uxn_ram_screen_h_l48_c19_c9e3_return_output;
-     VAR_return_output := VAR_CONST_REF_RD_uint2_t_background_vram_outputs_t_rd_data1_d41d_uxn_ram_screen_h_l48_c19_c9e3_return_output;
-     -- CAST_TO_uint4_t[uxn_ram_screen_h_l50_c188_91ca] LATENCY=0
-     VAR_CAST_TO_uint4_t_uxn_ram_screen_h_l50_c188_91ca_return_output := CAST_TO_uint4_t_uint2_t(
-     VAR_CONST_REF_RD_uint2_t_background_vram_outputs_t_rd_data1_d41d_uxn_ram_screen_h_l48_c19_c9e3_return_output);
+     REG_VAR_bg_vram_result := VAR_CONST_REF_RD_uint2_t_background_vram_outputs_t_rd_data1_d41d_uxn_ram_screen_h_l48_c19_64c6_return_output;
+     VAR_return_output := VAR_CONST_REF_RD_uint2_t_background_vram_outputs_t_rd_data1_d41d_uxn_ram_screen_h_l48_c19_64c6_return_output;
+     -- CAST_TO_uint4_t[uxn_ram_screen_h_l50_c188_18e1] LATENCY=0
+     VAR_CAST_TO_uint4_t_uxn_ram_screen_h_l50_c188_18e1_return_output := CAST_TO_uint4_t_uint2_t(
+     VAR_CONST_REF_RD_uint2_t_background_vram_outputs_t_rd_data1_d41d_uxn_ram_screen_h_l48_c19_64c6_return_output);
 
      -- Submodule level 3
-     VAR_printf_uxn_ram_screen_h_l50_c2_4fdc_uxn_ram_screen_h_l50_c2_4fdc_arg5 := resize(VAR_CAST_TO_uint4_t_uxn_ram_screen_h_l50_c188_91ca_return_output, 32);
-     -- printf_uxn_ram_screen_h_l50_c2_4fdc[uxn_ram_screen_h_l50_c2_4fdc] LATENCY=0
+     VAR_printf_uxn_ram_screen_h_l50_c2_459c_uxn_ram_screen_h_l50_c2_459c_arg5 := resize(VAR_CAST_TO_uint4_t_uxn_ram_screen_h_l50_c188_18e1_return_output, 32);
+     -- printf_uxn_ram_screen_h_l50_c2_459c[uxn_ram_screen_h_l50_c2_459c] LATENCY=0
      -- Clock enable
-     printf_uxn_ram_screen_h_l50_c2_4fdc_uxn_ram_screen_h_l50_c2_4fdc_CLOCK_ENABLE <= VAR_printf_uxn_ram_screen_h_l50_c2_4fdc_uxn_ram_screen_h_l50_c2_4fdc_CLOCK_ENABLE;
+     printf_uxn_ram_screen_h_l50_c2_459c_uxn_ram_screen_h_l50_c2_459c_CLOCK_ENABLE <= VAR_printf_uxn_ram_screen_h_l50_c2_459c_uxn_ram_screen_h_l50_c2_459c_CLOCK_ENABLE;
      -- Inputs
-     printf_uxn_ram_screen_h_l50_c2_4fdc_uxn_ram_screen_h_l50_c2_4fdc_arg0 <= VAR_printf_uxn_ram_screen_h_l50_c2_4fdc_uxn_ram_screen_h_l50_c2_4fdc_arg0;
-     printf_uxn_ram_screen_h_l50_c2_4fdc_uxn_ram_screen_h_l50_c2_4fdc_arg1 <= VAR_printf_uxn_ram_screen_h_l50_c2_4fdc_uxn_ram_screen_h_l50_c2_4fdc_arg1;
-     printf_uxn_ram_screen_h_l50_c2_4fdc_uxn_ram_screen_h_l50_c2_4fdc_arg2 <= VAR_printf_uxn_ram_screen_h_l50_c2_4fdc_uxn_ram_screen_h_l50_c2_4fdc_arg2;
-     printf_uxn_ram_screen_h_l50_c2_4fdc_uxn_ram_screen_h_l50_c2_4fdc_arg3 <= VAR_printf_uxn_ram_screen_h_l50_c2_4fdc_uxn_ram_screen_h_l50_c2_4fdc_arg3;
-     printf_uxn_ram_screen_h_l50_c2_4fdc_uxn_ram_screen_h_l50_c2_4fdc_arg4 <= VAR_printf_uxn_ram_screen_h_l50_c2_4fdc_uxn_ram_screen_h_l50_c2_4fdc_arg4;
-     printf_uxn_ram_screen_h_l50_c2_4fdc_uxn_ram_screen_h_l50_c2_4fdc_arg5 <= VAR_printf_uxn_ram_screen_h_l50_c2_4fdc_uxn_ram_screen_h_l50_c2_4fdc_arg5;
+     printf_uxn_ram_screen_h_l50_c2_459c_uxn_ram_screen_h_l50_c2_459c_arg0 <= VAR_printf_uxn_ram_screen_h_l50_c2_459c_uxn_ram_screen_h_l50_c2_459c_arg0;
+     printf_uxn_ram_screen_h_l50_c2_459c_uxn_ram_screen_h_l50_c2_459c_arg1 <= VAR_printf_uxn_ram_screen_h_l50_c2_459c_uxn_ram_screen_h_l50_c2_459c_arg1;
+     printf_uxn_ram_screen_h_l50_c2_459c_uxn_ram_screen_h_l50_c2_459c_arg2 <= VAR_printf_uxn_ram_screen_h_l50_c2_459c_uxn_ram_screen_h_l50_c2_459c_arg2;
+     printf_uxn_ram_screen_h_l50_c2_459c_uxn_ram_screen_h_l50_c2_459c_arg3 <= VAR_printf_uxn_ram_screen_h_l50_c2_459c_uxn_ram_screen_h_l50_c2_459c_arg3;
+     printf_uxn_ram_screen_h_l50_c2_459c_uxn_ram_screen_h_l50_c2_459c_arg4 <= VAR_printf_uxn_ram_screen_h_l50_c2_459c_uxn_ram_screen_h_l50_c2_459c_arg4;
+     printf_uxn_ram_screen_h_l50_c2_459c_uxn_ram_screen_h_l50_c2_459c_arg5 <= VAR_printf_uxn_ram_screen_h_l50_c2_459c_uxn_ram_screen_h_l50_c2_459c_arg5;
      -- Outputs
 
      -- Last stage of pipeline return wire to return port/reg

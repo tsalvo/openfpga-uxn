@@ -4257,6 +4257,30 @@ constant uint12_t_4_SLV_LEN : integer := 12 * 4;
 
   function slv_to_background_vram_outputs_t(data : std_logic_vector) return background_vram_outputs_t;
 
+  type device_in_result_t is record
+  
+    is_device_ram_read : unsigned(0 downto 0);
+    device_ram_address : unsigned(7 downto 0);
+    dei_value : unsigned(7 downto 0);
+    is_dei_done : unsigned(0 downto 0);
+  end record;
+  
+  constant device_in_result_t_NULL : device_in_result_t := (
+  
+    is_device_ram_read => to_unsigned(0, 1),
+    device_ram_address => to_unsigned(0, 8),
+    dei_value => to_unsigned(0, 8),
+    is_dei_done => to_unsigned(0, 1)
+  );
+  
+  constant device_in_result_t_SLV_LEN : integer := (
+  1+8+8+1
+  );
+  
+  function device_in_result_t_to_slv(data : device_in_result_t) return std_logic_vector;
+
+  function slv_to_device_in_result_t(data : std_logic_vector) return device_in_result_t;
+
   type device_out_result_t is record
   
     is_device_ram_write : unsigned(0 downto 0);
@@ -8616,6 +8640,54 @@ package body c_structs_pkg is
 
         valid1_slv := data((pos+1)-1 downto pos);
         rv.valid1 := unsigned(valid1_slv);
+        pos := pos + 1;
+
+      return rv;
+  end function;
+
+  function device_in_result_t_to_slv(data : device_in_result_t) return std_logic_vector is
+    variable rv : std_logic_vector(device_in_result_t_SLV_LEN-1 downto 0);
+    variable pos : integer := 0;
+  begin
+
+        rv((pos+1)-1 downto pos) := std_logic_vector(data.is_device_ram_read);
+        pos := pos + 1;
+
+        rv((pos+8)-1 downto pos) := std_logic_vector(data.device_ram_address);
+        pos := pos + 8;
+
+        rv((pos+8)-1 downto pos) := std_logic_vector(data.dei_value);
+        pos := pos + 8;
+
+        rv((pos+1)-1 downto pos) := std_logic_vector(data.is_dei_done);
+        pos := pos + 1;
+
+      return rv;
+  end function;
+
+  function slv_to_device_in_result_t(data : std_logic_vector) return device_in_result_t is
+    variable rv : device_in_result_t;
+    variable pos : integer := 0;
+    variable is_device_ram_read_slv : std_logic_vector(1-1 downto 0);
+    variable device_ram_address_slv : std_logic_vector(8-1 downto 0);
+    variable dei_value_slv : std_logic_vector(8-1 downto 0);
+    variable is_dei_done_slv : std_logic_vector(1-1 downto 0);
+  begin
+
+        is_device_ram_read_slv := data((pos+1)-1 downto pos);
+        rv.is_device_ram_read := unsigned(is_device_ram_read_slv);
+        pos := pos + 1;
+
+        device_ram_address_slv := data((pos+8)-1 downto pos);
+        rv.device_ram_address := unsigned(device_ram_address_slv);
+        pos := pos + 8;
+
+        dei_value_slv := data((pos+8)-1 downto pos);
+        rv.dei_value := unsigned(dei_value_slv);
+        pos := pos + 8;
+
+        is_dei_done_slv := data((pos+1)-1 downto pos);
+        rv.is_dei_done := unsigned(is_dei_done_slv);
         pos := pos + 1;
 
       return rv;
