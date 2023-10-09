@@ -4129,7 +4129,7 @@ constant uint12_t_4_SLV_LEN : integer := 12 * 4;
 
       function slv_to_uint12_t_4(data : std_logic_vector) return uint12_t_4;
 
-  type stack_w_ram_outputs_t is record
+  type stack_ram_outputs_t is record
   
     addr0 : unsigned(31 downto 0);
     wr_data0 : unsigned(7 downto 0);
@@ -4141,7 +4141,7 @@ constant uint12_t_4_SLV_LEN : integer := 12 * 4;
     valid1 : unsigned(0 downto 0);
   end record;
   
-  constant stack_w_ram_outputs_t_NULL : stack_w_ram_outputs_t := (
+  constant stack_ram_outputs_t_NULL : stack_ram_outputs_t := (
   
     addr0 => to_unsigned(0, 32),
     wr_data0 => to_unsigned(0, 8),
@@ -4153,45 +4153,13 @@ constant uint12_t_4_SLV_LEN : integer := 12 * 4;
     valid1 => to_unsigned(0, 1)
   );
   
-  constant stack_w_ram_outputs_t_SLV_LEN : integer := (
+  constant stack_ram_outputs_t_SLV_LEN : integer := (
   32+8+1+8+1+32+8+1
   );
   
-  function stack_w_ram_outputs_t_to_slv(data : stack_w_ram_outputs_t) return std_logic_vector;
+  function stack_ram_outputs_t_to_slv(data : stack_ram_outputs_t) return std_logic_vector;
 
-  function slv_to_stack_w_ram_outputs_t(data : std_logic_vector) return stack_w_ram_outputs_t;
-
-  type stack_r_ram_outputs_t is record
-  
-    addr0 : unsigned(31 downto 0);
-    wr_data0 : unsigned(7 downto 0);
-    wr_en0 : unsigned(0 downto 0);
-    rd_data0 : unsigned(7 downto 0);
-    valid0 : unsigned(0 downto 0);
-    addr1 : unsigned(31 downto 0);
-    rd_data1 : unsigned(7 downto 0);
-    valid1 : unsigned(0 downto 0);
-  end record;
-  
-  constant stack_r_ram_outputs_t_NULL : stack_r_ram_outputs_t := (
-  
-    addr0 => to_unsigned(0, 32),
-    wr_data0 => to_unsigned(0, 8),
-    wr_en0 => to_unsigned(0, 1),
-    rd_data0 => to_unsigned(0, 8),
-    valid0 => to_unsigned(0, 1),
-    addr1 => to_unsigned(0, 32),
-    rd_data1 => to_unsigned(0, 8),
-    valid1 => to_unsigned(0, 1)
-  );
-  
-  constant stack_r_ram_outputs_t_SLV_LEN : integer := (
-  32+8+1+8+1+32+8+1
-  );
-  
-  function stack_r_ram_outputs_t_to_slv(data : stack_r_ram_outputs_t) return std_logic_vector;
-
-  function slv_to_stack_r_ram_outputs_t(data : std_logic_vector) return stack_r_ram_outputs_t;
+  function slv_to_stack_ram_outputs_t(data : std_logic_vector) return stack_ram_outputs_t;
 
   type device_ram_outputs_t is record
   
@@ -8325,8 +8293,8 @@ package body c_structs_pkg is
           return rv;
       end function;
     
-  function stack_w_ram_outputs_t_to_slv(data : stack_w_ram_outputs_t) return std_logic_vector is
-    variable rv : std_logic_vector(stack_w_ram_outputs_t_SLV_LEN-1 downto 0);
+  function stack_ram_outputs_t_to_slv(data : stack_ram_outputs_t) return std_logic_vector is
+    variable rv : std_logic_vector(stack_ram_outputs_t_SLV_LEN-1 downto 0);
     variable pos : integer := 0;
   begin
 
@@ -8357,88 +8325,8 @@ package body c_structs_pkg is
       return rv;
   end function;
 
-  function slv_to_stack_w_ram_outputs_t(data : std_logic_vector) return stack_w_ram_outputs_t is
-    variable rv : stack_w_ram_outputs_t;
-    variable pos : integer := 0;
-    variable addr0_slv : std_logic_vector(32-1 downto 0);
-    variable wr_data0_slv : std_logic_vector(8-1 downto 0);
-    variable wr_en0_slv : std_logic_vector(1-1 downto 0);
-    variable rd_data0_slv : std_logic_vector(8-1 downto 0);
-    variable valid0_slv : std_logic_vector(1-1 downto 0);
-    variable addr1_slv : std_logic_vector(32-1 downto 0);
-    variable rd_data1_slv : std_logic_vector(8-1 downto 0);
-    variable valid1_slv : std_logic_vector(1-1 downto 0);
-  begin
-
-        addr0_slv := data((pos+32)-1 downto pos);
-        rv.addr0 := unsigned(addr0_slv);
-        pos := pos + 32;
-
-        wr_data0_slv := data((pos+8)-1 downto pos);
-        rv.wr_data0 := unsigned(wr_data0_slv);
-        pos := pos + 8;
-
-        wr_en0_slv := data((pos+1)-1 downto pos);
-        rv.wr_en0 := unsigned(wr_en0_slv);
-        pos := pos + 1;
-
-        rd_data0_slv := data((pos+8)-1 downto pos);
-        rv.rd_data0 := unsigned(rd_data0_slv);
-        pos := pos + 8;
-
-        valid0_slv := data((pos+1)-1 downto pos);
-        rv.valid0 := unsigned(valid0_slv);
-        pos := pos + 1;
-
-        addr1_slv := data((pos+32)-1 downto pos);
-        rv.addr1 := unsigned(addr1_slv);
-        pos := pos + 32;
-
-        rd_data1_slv := data((pos+8)-1 downto pos);
-        rv.rd_data1 := unsigned(rd_data1_slv);
-        pos := pos + 8;
-
-        valid1_slv := data((pos+1)-1 downto pos);
-        rv.valid1 := unsigned(valid1_slv);
-        pos := pos + 1;
-
-      return rv;
-  end function;
-
-  function stack_r_ram_outputs_t_to_slv(data : stack_r_ram_outputs_t) return std_logic_vector is
-    variable rv : std_logic_vector(stack_r_ram_outputs_t_SLV_LEN-1 downto 0);
-    variable pos : integer := 0;
-  begin
-
-        rv((pos+32)-1 downto pos) := std_logic_vector(data.addr0);
-        pos := pos + 32;
-
-        rv((pos+8)-1 downto pos) := std_logic_vector(data.wr_data0);
-        pos := pos + 8;
-
-        rv((pos+1)-1 downto pos) := std_logic_vector(data.wr_en0);
-        pos := pos + 1;
-
-        rv((pos+8)-1 downto pos) := std_logic_vector(data.rd_data0);
-        pos := pos + 8;
-
-        rv((pos+1)-1 downto pos) := std_logic_vector(data.valid0);
-        pos := pos + 1;
-
-        rv((pos+32)-1 downto pos) := std_logic_vector(data.addr1);
-        pos := pos + 32;
-
-        rv((pos+8)-1 downto pos) := std_logic_vector(data.rd_data1);
-        pos := pos + 8;
-
-        rv((pos+1)-1 downto pos) := std_logic_vector(data.valid1);
-        pos := pos + 1;
-
-      return rv;
-  end function;
-
-  function slv_to_stack_r_ram_outputs_t(data : std_logic_vector) return stack_r_ram_outputs_t is
-    variable rv : stack_r_ram_outputs_t;
+  function slv_to_stack_ram_outputs_t(data : std_logic_vector) return stack_ram_outputs_t is
+    variable rv : stack_ram_outputs_t;
     variable pos : integer := 0;
     variable addr0_slv : std_logic_vector(32-1 downto 0);
     variable wr_data0_slv : std_logic_vector(8-1 downto 0);
