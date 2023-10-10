@@ -495,7 +495,7 @@ core_bridge_cmd icb (
 ////////////////////////////////////////////////////////////////////////////////////////
 
 // UXN PipelineC Module Input / Output
-// synchronous to clk_core_44280
+// synchronous to clk_core_18
 wire [15:0] uxn_c_out;
 // wire [15:0] uxn_c_in;
 
@@ -512,8 +512,8 @@ wire [15:0] uxn_c_out;
 // PLL output has a minimum output frequency anyway.
 
 
-assign video_rgb_clock = clk_core_44280;
-assign video_rgb_clock_90 = clk_core_44280_90deg;
+assign video_rgb_clock = clk_core_18;
+assign video_rgb_clock_90 = clk_core_18_90deg;
 assign video_rgb = vidout_rgb;
 assign video_de = vidout_de;
 assign video_skip = vidout_skip;
@@ -521,11 +521,11 @@ assign video_vs = vidout_vs;
 assign video_hs = vidout_hs;
 
     localparam  VID_V_BPORCH = 'd10;
-    localparam  VID_V_ACTIVE = 'd720;
-    localparam  VID_V_TOTAL = 'd820;
+    localparam  VID_V_ACTIVE = 'd360;
+    localparam  VID_V_TOTAL = 'd600;
     localparam  VID_H_BPORCH = 'd10;
-    localparam  VID_H_ACTIVE = 'd800;
-    localparam  VID_H_TOTAL = 'd900;
+    localparam  VID_H_ACTIVE = 'd400;
+    localparam  VID_H_TOTAL = 'd500;
 
     reg [3:0] uxn_c_current_pixel_r;
     reg [3:0] uxn_c_current_pixel_g;
@@ -546,7 +546,7 @@ assign video_hs = vidout_hs;
     reg         vidout_hs, vidout_hs_1;
     reg [15:0]  vidout_uxn;
 
-always @(posedge clk_core_44280 or negedge reset_n) begin
+always @(posedge clk_core_18 or negedge reset_n) begin
 
     if(~reset_n) begin
     
@@ -680,8 +680,8 @@ end
 ///////////////////////////////////////////////
 
     wire    clk_core_6;
-    wire    clk_core_44280;
-    wire    clk_core_44280_90deg;
+    wire    clk_core_18;
+    wire    clk_core_18_90deg;
     
     wire    pll_core_locked;
     wire    pll_core_locked_s;
@@ -691,8 +691,8 @@ mf_pllbase mp1 (
     .refclk         ( clk_74a ),
     .rst            ( 0 ),
     
-    .outclk_0       ( clk_core_44280 ),
-    .outclk_1       ( clk_core_44280_90deg ),
+    .outclk_0       ( clk_core_18 ),
+    .outclk_1       ( clk_core_18_90deg ),
     .outclk_2       ( clk_core_6 ),
     
     .locked         ( pll_core_locked )
@@ -700,7 +700,7 @@ mf_pllbase mp1 (
 
 top top
 (
-    .clk_44p28(clk_core_44280),
+    .clk_18p0(clk_core_18),
     .uxn_eval_input(vidout_uxn),
     .uxn_eval_return_output(uxn_c_out)
 );

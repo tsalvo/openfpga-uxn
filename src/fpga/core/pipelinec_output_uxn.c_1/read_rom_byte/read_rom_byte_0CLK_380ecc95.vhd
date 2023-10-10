@@ -30,17 +30,17 @@ signal rdaddr : unsigned(31 downto 0) := to_unsigned(0, 32);
 signal REG_COMB_rdaddr : unsigned(31 downto 0);
 
 -- Each function instance gets signals
--- read_rom_byte_uxn_rom_RAM_SP_RF_1[uxn_rom_h_l164_c19_4124]
-signal read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l164_c19_4124_CLOCK_ENABLE : unsigned(0 downto 0);
-signal read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l164_c19_4124_addr0 : unsigned(8 downto 0);
-signal read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l164_c19_4124_wd : unsigned(7 downto 0);
-signal read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l164_c19_4124_we : unsigned(0 downto 0);
-signal read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l164_c19_4124_return_output : unsigned(7 downto 0);
+-- read_rom_byte_uxn_rom_RAM_SP_RF_1[uxn_rom_h_l165_c19_107f]
+signal read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l165_c19_107f_CLOCK_ENABLE : unsigned(0 downto 0);
+signal read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l165_c19_107f_addr0 : unsigned(8 downto 0);
+signal read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l165_c19_107f_wd : unsigned(7 downto 0);
+signal read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l165_c19_107f_we : unsigned(0 downto 0);
+signal read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l165_c19_107f_return_output : unsigned(7 downto 0);
 
--- printf_uxn_rom_h_l170_c3_53a1[uxn_rom_h_l170_c3_53a1]
-signal printf_uxn_rom_h_l170_c3_53a1_uxn_rom_h_l170_c3_53a1_CLOCK_ENABLE : unsigned(0 downto 0);
-signal printf_uxn_rom_h_l170_c3_53a1_uxn_rom_h_l170_c3_53a1_arg0 : unsigned(31 downto 0);
-signal printf_uxn_rom_h_l170_c3_53a1_uxn_rom_h_l170_c3_53a1_arg1 : unsigned(31 downto 0);
+-- printf_uxn_rom_h_l171_c3_0ac3[uxn_rom_h_l171_c3_0ac3]
+signal printf_uxn_rom_h_l171_c3_0ac3_uxn_rom_h_l171_c3_0ac3_CLOCK_ENABLE : unsigned(0 downto 0);
+signal printf_uxn_rom_h_l171_c3_0ac3_uxn_rom_h_l171_c3_0ac3_arg0 : unsigned(31 downto 0);
+signal printf_uxn_rom_h_l171_c3_0ac3_uxn_rom_h_l171_c3_0ac3_arg1 : unsigned(31 downto 0);
 
 function CAST_TO_uint32_t_uint16_t( rhs : unsigned) return unsigned is
 
@@ -57,20 +57,20 @@ end function;
 begin
 
 -- SUBMODULE INSTANCES 
--- read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l164_c19_4124
-read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l164_c19_4124 : entity work.read_rom_byte_uxn_rom_RAM_SP_RF_1_0CLK_de264c78 port map (
+-- read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l165_c19_107f
+read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l165_c19_107f : entity work.read_rom_byte_uxn_rom_RAM_SP_RF_1_0CLK_de264c78 port map (
 clk,
-read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l164_c19_4124_CLOCK_ENABLE,
-read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l164_c19_4124_addr0,
-read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l164_c19_4124_wd,
-read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l164_c19_4124_we,
-read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l164_c19_4124_return_output);
+read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l165_c19_107f_CLOCK_ENABLE,
+read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l165_c19_107f_addr0,
+read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l165_c19_107f_wd,
+read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l165_c19_107f_we,
+read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l165_c19_107f_return_output);
 
--- printf_uxn_rom_h_l170_c3_53a1_uxn_rom_h_l170_c3_53a1
-printf_uxn_rom_h_l170_c3_53a1_uxn_rom_h_l170_c3_53a1 : entity work.printf_uxn_rom_h_l170_c3_53a1_0CLK_de264c78 port map (
-printf_uxn_rom_h_l170_c3_53a1_uxn_rom_h_l170_c3_53a1_CLOCK_ENABLE,
-printf_uxn_rom_h_l170_c3_53a1_uxn_rom_h_l170_c3_53a1_arg0,
-printf_uxn_rom_h_l170_c3_53a1_uxn_rom_h_l170_c3_53a1_arg1);
+-- printf_uxn_rom_h_l171_c3_0ac3_uxn_rom_h_l171_c3_0ac3
+printf_uxn_rom_h_l171_c3_0ac3_uxn_rom_h_l171_c3_0ac3 : entity work.printf_uxn_rom_h_l171_c3_0ac3_0CLK_de264c78 port map (
+printf_uxn_rom_h_l171_c3_0ac3_uxn_rom_h_l171_c3_0ac3_CLOCK_ENABLE,
+printf_uxn_rom_h_l171_c3_0ac3_uxn_rom_h_l171_c3_0ac3_arg0,
+printf_uxn_rom_h_l171_c3_0ac3_uxn_rom_h_l171_c3_0ac3_arg1);
 
 
 
@@ -82,25 +82,25 @@ process (
  -- Registers
  rdaddr,
  -- All submodule outputs
- read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l164_c19_4124_return_output)
+ read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l165_c19_107f_return_output)
 is 
  -- All of the wires in function
  variable VAR_CLOCK_ENABLE : unsigned(0 downto 0);
  variable VAR_return_output : unsigned(7 downto 0);
  variable VAR_read_address : unsigned(15 downto 0);
  variable VAR_uxn_rom : uint8_t_512;
- variable VAR_rdaddr_uxn_rom_h_l162_c3_4856 : unsigned(31 downto 0);
- variable VAR_CAST_TO_uint32_t_uxn_rom_h_l162_c12_8b53_return_output : unsigned(31 downto 0);
+ variable VAR_rdaddr_uxn_rom_h_l163_c3_df6d : unsigned(31 downto 0);
+ variable VAR_CAST_TO_uint32_t_uxn_rom_h_l163_c12_19cb_return_output : unsigned(31 downto 0);
  variable VAR_rdata : unsigned(7 downto 0);
- variable VAR_rdata_uxn_rom_h_l164_c11_7541_0 : unsigned(7 downto 0);
- variable VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l164_c19_4124_addr0 : unsigned(8 downto 0);
- variable VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l164_c19_4124_wd : unsigned(7 downto 0);
- variable VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l164_c19_4124_we : unsigned(0 downto 0);
- variable VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l164_c19_4124_CLOCK_ENABLE : unsigned(0 downto 0);
- variable VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l164_c19_4124_return_output : unsigned(7 downto 0);
- variable VAR_printf_uxn_rom_h_l170_c3_53a1_uxn_rom_h_l170_c3_53a1_CLOCK_ENABLE : unsigned(0 downto 0);
- variable VAR_printf_uxn_rom_h_l170_c3_53a1_uxn_rom_h_l170_c3_53a1_arg0 : unsigned(31 downto 0);
- variable VAR_printf_uxn_rom_h_l170_c3_53a1_uxn_rom_h_l170_c3_53a1_arg1 : unsigned(31 downto 0);
+ variable VAR_rdata_uxn_rom_h_l165_c11_7866_0 : unsigned(7 downto 0);
+ variable VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l165_c19_107f_addr0 : unsigned(8 downto 0);
+ variable VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l165_c19_107f_wd : unsigned(7 downto 0);
+ variable VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l165_c19_107f_we : unsigned(0 downto 0);
+ variable VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l165_c19_107f_CLOCK_ENABLE : unsigned(0 downto 0);
+ variable VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l165_c19_107f_return_output : unsigned(7 downto 0);
+ variable VAR_printf_uxn_rom_h_l171_c3_0ac3_uxn_rom_h_l171_c3_0ac3_CLOCK_ENABLE : unsigned(0 downto 0);
+ variable VAR_printf_uxn_rom_h_l171_c3_0ac3_uxn_rom_h_l171_c3_0ac3_arg0 : unsigned(31 downto 0);
+ variable VAR_printf_uxn_rom_h_l171_c3_0ac3_uxn_rom_h_l171_c3_0ac3_arg1 : unsigned(31 downto 0);
  -- State registers comb logic variables
 variable REG_VAR_rdaddr : unsigned(31 downto 0);
 begin
@@ -110,8 +110,8 @@ begin
   REG_VAR_rdaddr := rdaddr;
  -- Constants and things derived from constants alone
      -- Submodule level 0
-     VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l164_c19_4124_wd := resize(to_unsigned(0, 1), 8);
-     VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l164_c19_4124_we := to_unsigned(0, 1);
+     VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l165_c19_107f_wd := resize(to_unsigned(0, 1), 8);
+     VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l165_c19_107f_we := to_unsigned(0, 1);
 
  -- Loop to construct simultaneous register transfers for each of the pipeline stages
  -- LATENCY=0 is combinational Logic
@@ -123,37 +123,37 @@ begin
      VAR_read_address := read_address;
 
      -- Submodule level 0
-     VAR_printf_uxn_rom_h_l170_c3_53a1_uxn_rom_h_l170_c3_53a1_CLOCK_ENABLE := VAR_CLOCK_ENABLE;
-     VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l164_c19_4124_CLOCK_ENABLE := VAR_CLOCK_ENABLE;
-     -- CAST_TO_uint32_t[uxn_rom_h_l162_c12_8b53] LATENCY=0
-     VAR_CAST_TO_uint32_t_uxn_rom_h_l162_c12_8b53_return_output := CAST_TO_uint32_t_uint16_t(
+     VAR_printf_uxn_rom_h_l171_c3_0ac3_uxn_rom_h_l171_c3_0ac3_CLOCK_ENABLE := VAR_CLOCK_ENABLE;
+     VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l165_c19_107f_CLOCK_ENABLE := VAR_CLOCK_ENABLE;
+     -- CAST_TO_uint32_t[uxn_rom_h_l163_c12_19cb] LATENCY=0
+     VAR_CAST_TO_uint32_t_uxn_rom_h_l163_c12_19cb_return_output := CAST_TO_uint32_t_uint16_t(
      VAR_read_address);
 
      -- Submodule level 1
-     VAR_rdaddr_uxn_rom_h_l162_c3_4856 := VAR_CAST_TO_uint32_t_uxn_rom_h_l162_c12_8b53_return_output;
-     VAR_printf_uxn_rom_h_l170_c3_53a1_uxn_rom_h_l170_c3_53a1_arg0 := VAR_rdaddr_uxn_rom_h_l162_c3_4856;
-     REG_VAR_rdaddr := VAR_rdaddr_uxn_rom_h_l162_c3_4856;
-     VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l164_c19_4124_addr0 := resize(VAR_rdaddr_uxn_rom_h_l162_c3_4856, 9);
-     -- read_rom_byte_uxn_rom_RAM_SP_RF_1[uxn_rom_h_l164_c19_4124] LATENCY=0
+     VAR_rdaddr_uxn_rom_h_l163_c3_df6d := VAR_CAST_TO_uint32_t_uxn_rom_h_l163_c12_19cb_return_output;
+     VAR_printf_uxn_rom_h_l171_c3_0ac3_uxn_rom_h_l171_c3_0ac3_arg0 := VAR_rdaddr_uxn_rom_h_l163_c3_df6d;
+     REG_VAR_rdaddr := VAR_rdaddr_uxn_rom_h_l163_c3_df6d;
+     VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l165_c19_107f_addr0 := resize(VAR_rdaddr_uxn_rom_h_l163_c3_df6d, 9);
+     -- read_rom_byte_uxn_rom_RAM_SP_RF_1[uxn_rom_h_l165_c19_107f] LATENCY=0
      -- Clock enable
-     read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l164_c19_4124_CLOCK_ENABLE <= VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l164_c19_4124_CLOCK_ENABLE;
+     read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l165_c19_107f_CLOCK_ENABLE <= VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l165_c19_107f_CLOCK_ENABLE;
      -- Inputs
-     read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l164_c19_4124_addr0 <= VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l164_c19_4124_addr0;
-     read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l164_c19_4124_wd <= VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l164_c19_4124_wd;
-     read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l164_c19_4124_we <= VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l164_c19_4124_we;
+     read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l165_c19_107f_addr0 <= VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l165_c19_107f_addr0;
+     read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l165_c19_107f_wd <= VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l165_c19_107f_wd;
+     read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l165_c19_107f_we <= VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l165_c19_107f_we;
      -- Outputs
-     VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l164_c19_4124_return_output := read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l164_c19_4124_return_output;
+     VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l165_c19_107f_return_output := read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l165_c19_107f_return_output;
 
      -- Submodule level 2
-     VAR_rdata_uxn_rom_h_l164_c11_7541_0 := VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l164_c19_4124_return_output;
-     VAR_printf_uxn_rom_h_l170_c3_53a1_uxn_rom_h_l170_c3_53a1_arg1 := resize(VAR_rdata_uxn_rom_h_l164_c11_7541_0, 32);
-     VAR_return_output := VAR_rdata_uxn_rom_h_l164_c11_7541_0;
-     -- printf_uxn_rom_h_l170_c3_53a1[uxn_rom_h_l170_c3_53a1] LATENCY=0
+     VAR_rdata_uxn_rom_h_l165_c11_7866_0 := VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_uxn_rom_h_l165_c19_107f_return_output;
+     VAR_printf_uxn_rom_h_l171_c3_0ac3_uxn_rom_h_l171_c3_0ac3_arg1 := resize(VAR_rdata_uxn_rom_h_l165_c11_7866_0, 32);
+     VAR_return_output := VAR_rdata_uxn_rom_h_l165_c11_7866_0;
+     -- printf_uxn_rom_h_l171_c3_0ac3[uxn_rom_h_l171_c3_0ac3] LATENCY=0
      -- Clock enable
-     printf_uxn_rom_h_l170_c3_53a1_uxn_rom_h_l170_c3_53a1_CLOCK_ENABLE <= VAR_printf_uxn_rom_h_l170_c3_53a1_uxn_rom_h_l170_c3_53a1_CLOCK_ENABLE;
+     printf_uxn_rom_h_l171_c3_0ac3_uxn_rom_h_l171_c3_0ac3_CLOCK_ENABLE <= VAR_printf_uxn_rom_h_l171_c3_0ac3_uxn_rom_h_l171_c3_0ac3_CLOCK_ENABLE;
      -- Inputs
-     printf_uxn_rom_h_l170_c3_53a1_uxn_rom_h_l170_c3_53a1_arg0 <= VAR_printf_uxn_rom_h_l170_c3_53a1_uxn_rom_h_l170_c3_53a1_arg0;
-     printf_uxn_rom_h_l170_c3_53a1_uxn_rom_h_l170_c3_53a1_arg1 <= VAR_printf_uxn_rom_h_l170_c3_53a1_uxn_rom_h_l170_c3_53a1_arg1;
+     printf_uxn_rom_h_l171_c3_0ac3_uxn_rom_h_l171_c3_0ac3_arg0 <= VAR_printf_uxn_rom_h_l171_c3_0ac3_uxn_rom_h_l171_c3_0ac3_arg0;
+     printf_uxn_rom_h_l171_c3_0ac3_uxn_rom_h_l171_c3_0ac3_arg1 <= VAR_printf_uxn_rom_h_l171_c3_0ac3_uxn_rom_h_l171_c3_0ac3_arg1;
      -- Outputs
 
      -- Last stage of pipeline return wire to return port/reg
