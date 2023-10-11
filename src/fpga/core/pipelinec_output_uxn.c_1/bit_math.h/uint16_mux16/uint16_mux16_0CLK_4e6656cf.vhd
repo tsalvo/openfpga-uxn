@@ -39,95 +39,95 @@ attribute mark_debug : string;
 constant PIPELINE_LATENCY : integer := 0;
 -- All of the wires/regs in function
 -- Each function instance gets signals
--- layer0_node0_MUX[bit_math_h_l18_c3_b3a2]
-signal layer0_node0_MUX_bit_math_h_l18_c3_b3a2_cond : unsigned(0 downto 0);
-signal layer0_node0_MUX_bit_math_h_l18_c3_b3a2_iftrue : unsigned(15 downto 0);
-signal layer0_node0_MUX_bit_math_h_l18_c3_b3a2_iffalse : unsigned(15 downto 0);
-signal layer0_node0_MUX_bit_math_h_l18_c3_b3a2_return_output : unsigned(15 downto 0);
+-- layer0_node0_MUX[bit_math_h_l18_c3_de19]
+signal layer0_node0_MUX_bit_math_h_l18_c3_de19_cond : unsigned(0 downto 0);
+signal layer0_node0_MUX_bit_math_h_l18_c3_de19_iftrue : unsigned(15 downto 0);
+signal layer0_node0_MUX_bit_math_h_l18_c3_de19_iffalse : unsigned(15 downto 0);
+signal layer0_node0_MUX_bit_math_h_l18_c3_de19_return_output : unsigned(15 downto 0);
 
--- layer0_node1_MUX[bit_math_h_l29_c3_6750]
-signal layer0_node1_MUX_bit_math_h_l29_c3_6750_cond : unsigned(0 downto 0);
-signal layer0_node1_MUX_bit_math_h_l29_c3_6750_iftrue : unsigned(15 downto 0);
-signal layer0_node1_MUX_bit_math_h_l29_c3_6750_iffalse : unsigned(15 downto 0);
-signal layer0_node1_MUX_bit_math_h_l29_c3_6750_return_output : unsigned(15 downto 0);
+-- layer0_node1_MUX[bit_math_h_l29_c3_6607]
+signal layer0_node1_MUX_bit_math_h_l29_c3_6607_cond : unsigned(0 downto 0);
+signal layer0_node1_MUX_bit_math_h_l29_c3_6607_iftrue : unsigned(15 downto 0);
+signal layer0_node1_MUX_bit_math_h_l29_c3_6607_iffalse : unsigned(15 downto 0);
+signal layer0_node1_MUX_bit_math_h_l29_c3_6607_return_output : unsigned(15 downto 0);
 
--- layer0_node2_MUX[bit_math_h_l40_c3_d7f6]
-signal layer0_node2_MUX_bit_math_h_l40_c3_d7f6_cond : unsigned(0 downto 0);
-signal layer0_node2_MUX_bit_math_h_l40_c3_d7f6_iftrue : unsigned(15 downto 0);
-signal layer0_node2_MUX_bit_math_h_l40_c3_d7f6_iffalse : unsigned(15 downto 0);
-signal layer0_node2_MUX_bit_math_h_l40_c3_d7f6_return_output : unsigned(15 downto 0);
+-- layer0_node2_MUX[bit_math_h_l40_c3_e5f9]
+signal layer0_node2_MUX_bit_math_h_l40_c3_e5f9_cond : unsigned(0 downto 0);
+signal layer0_node2_MUX_bit_math_h_l40_c3_e5f9_iftrue : unsigned(15 downto 0);
+signal layer0_node2_MUX_bit_math_h_l40_c3_e5f9_iffalse : unsigned(15 downto 0);
+signal layer0_node2_MUX_bit_math_h_l40_c3_e5f9_return_output : unsigned(15 downto 0);
 
--- layer0_node3_MUX[bit_math_h_l51_c3_975c]
-signal layer0_node3_MUX_bit_math_h_l51_c3_975c_cond : unsigned(0 downto 0);
-signal layer0_node3_MUX_bit_math_h_l51_c3_975c_iftrue : unsigned(15 downto 0);
-signal layer0_node3_MUX_bit_math_h_l51_c3_975c_iffalse : unsigned(15 downto 0);
-signal layer0_node3_MUX_bit_math_h_l51_c3_975c_return_output : unsigned(15 downto 0);
+-- layer0_node3_MUX[bit_math_h_l51_c3_bee9]
+signal layer0_node3_MUX_bit_math_h_l51_c3_bee9_cond : unsigned(0 downto 0);
+signal layer0_node3_MUX_bit_math_h_l51_c3_bee9_iftrue : unsigned(15 downto 0);
+signal layer0_node3_MUX_bit_math_h_l51_c3_bee9_iffalse : unsigned(15 downto 0);
+signal layer0_node3_MUX_bit_math_h_l51_c3_bee9_return_output : unsigned(15 downto 0);
 
--- layer0_node4_MUX[bit_math_h_l62_c3_de17]
-signal layer0_node4_MUX_bit_math_h_l62_c3_de17_cond : unsigned(0 downto 0);
-signal layer0_node4_MUX_bit_math_h_l62_c3_de17_iftrue : unsigned(15 downto 0);
-signal layer0_node4_MUX_bit_math_h_l62_c3_de17_iffalse : unsigned(15 downto 0);
-signal layer0_node4_MUX_bit_math_h_l62_c3_de17_return_output : unsigned(15 downto 0);
+-- layer0_node4_MUX[bit_math_h_l62_c3_1187]
+signal layer0_node4_MUX_bit_math_h_l62_c3_1187_cond : unsigned(0 downto 0);
+signal layer0_node4_MUX_bit_math_h_l62_c3_1187_iftrue : unsigned(15 downto 0);
+signal layer0_node4_MUX_bit_math_h_l62_c3_1187_iffalse : unsigned(15 downto 0);
+signal layer0_node4_MUX_bit_math_h_l62_c3_1187_return_output : unsigned(15 downto 0);
 
--- layer0_node5_MUX[bit_math_h_l73_c3_98dd]
-signal layer0_node5_MUX_bit_math_h_l73_c3_98dd_cond : unsigned(0 downto 0);
-signal layer0_node5_MUX_bit_math_h_l73_c3_98dd_iftrue : unsigned(15 downto 0);
-signal layer0_node5_MUX_bit_math_h_l73_c3_98dd_iffalse : unsigned(15 downto 0);
-signal layer0_node5_MUX_bit_math_h_l73_c3_98dd_return_output : unsigned(15 downto 0);
+-- layer0_node5_MUX[bit_math_h_l73_c3_ee92]
+signal layer0_node5_MUX_bit_math_h_l73_c3_ee92_cond : unsigned(0 downto 0);
+signal layer0_node5_MUX_bit_math_h_l73_c3_ee92_iftrue : unsigned(15 downto 0);
+signal layer0_node5_MUX_bit_math_h_l73_c3_ee92_iffalse : unsigned(15 downto 0);
+signal layer0_node5_MUX_bit_math_h_l73_c3_ee92_return_output : unsigned(15 downto 0);
 
--- layer0_node6_MUX[bit_math_h_l84_c3_0657]
-signal layer0_node6_MUX_bit_math_h_l84_c3_0657_cond : unsigned(0 downto 0);
-signal layer0_node6_MUX_bit_math_h_l84_c3_0657_iftrue : unsigned(15 downto 0);
-signal layer0_node6_MUX_bit_math_h_l84_c3_0657_iffalse : unsigned(15 downto 0);
-signal layer0_node6_MUX_bit_math_h_l84_c3_0657_return_output : unsigned(15 downto 0);
+-- layer0_node6_MUX[bit_math_h_l84_c3_c411]
+signal layer0_node6_MUX_bit_math_h_l84_c3_c411_cond : unsigned(0 downto 0);
+signal layer0_node6_MUX_bit_math_h_l84_c3_c411_iftrue : unsigned(15 downto 0);
+signal layer0_node6_MUX_bit_math_h_l84_c3_c411_iffalse : unsigned(15 downto 0);
+signal layer0_node6_MUX_bit_math_h_l84_c3_c411_return_output : unsigned(15 downto 0);
 
--- layer0_node7_MUX[bit_math_h_l95_c3_ee0c]
-signal layer0_node7_MUX_bit_math_h_l95_c3_ee0c_cond : unsigned(0 downto 0);
-signal layer0_node7_MUX_bit_math_h_l95_c3_ee0c_iftrue : unsigned(15 downto 0);
-signal layer0_node7_MUX_bit_math_h_l95_c3_ee0c_iffalse : unsigned(15 downto 0);
-signal layer0_node7_MUX_bit_math_h_l95_c3_ee0c_return_output : unsigned(15 downto 0);
+-- layer0_node7_MUX[bit_math_h_l95_c3_d716]
+signal layer0_node7_MUX_bit_math_h_l95_c3_d716_cond : unsigned(0 downto 0);
+signal layer0_node7_MUX_bit_math_h_l95_c3_d716_iftrue : unsigned(15 downto 0);
+signal layer0_node7_MUX_bit_math_h_l95_c3_d716_iffalse : unsigned(15 downto 0);
+signal layer0_node7_MUX_bit_math_h_l95_c3_d716_return_output : unsigned(15 downto 0);
 
--- layer1_node0_MUX[bit_math_h_l112_c3_e1f1]
-signal layer1_node0_MUX_bit_math_h_l112_c3_e1f1_cond : unsigned(0 downto 0);
-signal layer1_node0_MUX_bit_math_h_l112_c3_e1f1_iftrue : unsigned(15 downto 0);
-signal layer1_node0_MUX_bit_math_h_l112_c3_e1f1_iffalse : unsigned(15 downto 0);
-signal layer1_node0_MUX_bit_math_h_l112_c3_e1f1_return_output : unsigned(15 downto 0);
+-- layer1_node0_MUX[bit_math_h_l112_c3_31cd]
+signal layer1_node0_MUX_bit_math_h_l112_c3_31cd_cond : unsigned(0 downto 0);
+signal layer1_node0_MUX_bit_math_h_l112_c3_31cd_iftrue : unsigned(15 downto 0);
+signal layer1_node0_MUX_bit_math_h_l112_c3_31cd_iffalse : unsigned(15 downto 0);
+signal layer1_node0_MUX_bit_math_h_l112_c3_31cd_return_output : unsigned(15 downto 0);
 
--- layer1_node1_MUX[bit_math_h_l123_c3_6f3b]
-signal layer1_node1_MUX_bit_math_h_l123_c3_6f3b_cond : unsigned(0 downto 0);
-signal layer1_node1_MUX_bit_math_h_l123_c3_6f3b_iftrue : unsigned(15 downto 0);
-signal layer1_node1_MUX_bit_math_h_l123_c3_6f3b_iffalse : unsigned(15 downto 0);
-signal layer1_node1_MUX_bit_math_h_l123_c3_6f3b_return_output : unsigned(15 downto 0);
+-- layer1_node1_MUX[bit_math_h_l123_c3_ebee]
+signal layer1_node1_MUX_bit_math_h_l123_c3_ebee_cond : unsigned(0 downto 0);
+signal layer1_node1_MUX_bit_math_h_l123_c3_ebee_iftrue : unsigned(15 downto 0);
+signal layer1_node1_MUX_bit_math_h_l123_c3_ebee_iffalse : unsigned(15 downto 0);
+signal layer1_node1_MUX_bit_math_h_l123_c3_ebee_return_output : unsigned(15 downto 0);
 
--- layer1_node2_MUX[bit_math_h_l134_c3_dec3]
-signal layer1_node2_MUX_bit_math_h_l134_c3_dec3_cond : unsigned(0 downto 0);
-signal layer1_node2_MUX_bit_math_h_l134_c3_dec3_iftrue : unsigned(15 downto 0);
-signal layer1_node2_MUX_bit_math_h_l134_c3_dec3_iffalse : unsigned(15 downto 0);
-signal layer1_node2_MUX_bit_math_h_l134_c3_dec3_return_output : unsigned(15 downto 0);
+-- layer1_node2_MUX[bit_math_h_l134_c3_a4d1]
+signal layer1_node2_MUX_bit_math_h_l134_c3_a4d1_cond : unsigned(0 downto 0);
+signal layer1_node2_MUX_bit_math_h_l134_c3_a4d1_iftrue : unsigned(15 downto 0);
+signal layer1_node2_MUX_bit_math_h_l134_c3_a4d1_iffalse : unsigned(15 downto 0);
+signal layer1_node2_MUX_bit_math_h_l134_c3_a4d1_return_output : unsigned(15 downto 0);
 
--- layer1_node3_MUX[bit_math_h_l145_c3_ffc7]
-signal layer1_node3_MUX_bit_math_h_l145_c3_ffc7_cond : unsigned(0 downto 0);
-signal layer1_node3_MUX_bit_math_h_l145_c3_ffc7_iftrue : unsigned(15 downto 0);
-signal layer1_node3_MUX_bit_math_h_l145_c3_ffc7_iffalse : unsigned(15 downto 0);
-signal layer1_node3_MUX_bit_math_h_l145_c3_ffc7_return_output : unsigned(15 downto 0);
+-- layer1_node3_MUX[bit_math_h_l145_c3_b86e]
+signal layer1_node3_MUX_bit_math_h_l145_c3_b86e_cond : unsigned(0 downto 0);
+signal layer1_node3_MUX_bit_math_h_l145_c3_b86e_iftrue : unsigned(15 downto 0);
+signal layer1_node3_MUX_bit_math_h_l145_c3_b86e_iffalse : unsigned(15 downto 0);
+signal layer1_node3_MUX_bit_math_h_l145_c3_b86e_return_output : unsigned(15 downto 0);
 
--- layer2_node0_MUX[bit_math_h_l162_c3_1e6b]
-signal layer2_node0_MUX_bit_math_h_l162_c3_1e6b_cond : unsigned(0 downto 0);
-signal layer2_node0_MUX_bit_math_h_l162_c3_1e6b_iftrue : unsigned(15 downto 0);
-signal layer2_node0_MUX_bit_math_h_l162_c3_1e6b_iffalse : unsigned(15 downto 0);
-signal layer2_node0_MUX_bit_math_h_l162_c3_1e6b_return_output : unsigned(15 downto 0);
+-- layer2_node0_MUX[bit_math_h_l162_c3_e8e2]
+signal layer2_node0_MUX_bit_math_h_l162_c3_e8e2_cond : unsigned(0 downto 0);
+signal layer2_node0_MUX_bit_math_h_l162_c3_e8e2_iftrue : unsigned(15 downto 0);
+signal layer2_node0_MUX_bit_math_h_l162_c3_e8e2_iffalse : unsigned(15 downto 0);
+signal layer2_node0_MUX_bit_math_h_l162_c3_e8e2_return_output : unsigned(15 downto 0);
 
--- layer2_node1_MUX[bit_math_h_l173_c3_89cf]
-signal layer2_node1_MUX_bit_math_h_l173_c3_89cf_cond : unsigned(0 downto 0);
-signal layer2_node1_MUX_bit_math_h_l173_c3_89cf_iftrue : unsigned(15 downto 0);
-signal layer2_node1_MUX_bit_math_h_l173_c3_89cf_iffalse : unsigned(15 downto 0);
-signal layer2_node1_MUX_bit_math_h_l173_c3_89cf_return_output : unsigned(15 downto 0);
+-- layer2_node1_MUX[bit_math_h_l173_c3_f4fb]
+signal layer2_node1_MUX_bit_math_h_l173_c3_f4fb_cond : unsigned(0 downto 0);
+signal layer2_node1_MUX_bit_math_h_l173_c3_f4fb_iftrue : unsigned(15 downto 0);
+signal layer2_node1_MUX_bit_math_h_l173_c3_f4fb_iffalse : unsigned(15 downto 0);
+signal layer2_node1_MUX_bit_math_h_l173_c3_f4fb_return_output : unsigned(15 downto 0);
 
--- layer3_node0_MUX[bit_math_h_l190_c3_e282]
-signal layer3_node0_MUX_bit_math_h_l190_c3_e282_cond : unsigned(0 downto 0);
-signal layer3_node0_MUX_bit_math_h_l190_c3_e282_iftrue : unsigned(15 downto 0);
-signal layer3_node0_MUX_bit_math_h_l190_c3_e282_iffalse : unsigned(15 downto 0);
-signal layer3_node0_MUX_bit_math_h_l190_c3_e282_return_output : unsigned(15 downto 0);
+-- layer3_node0_MUX[bit_math_h_l190_c3_27bc]
+signal layer3_node0_MUX_bit_math_h_l190_c3_27bc_cond : unsigned(0 downto 0);
+signal layer3_node0_MUX_bit_math_h_l190_c3_27bc_iftrue : unsigned(15 downto 0);
+signal layer3_node0_MUX_bit_math_h_l190_c3_27bc_iffalse : unsigned(15 downto 0);
+signal layer3_node0_MUX_bit_math_h_l190_c3_27bc_return_output : unsigned(15 downto 0);
 
 function uint4_0_0( x : unsigned) return unsigned is
 --variable x : unsigned(3 downto 0);
@@ -173,110 +173,110 @@ end function;
 begin
 
 -- SUBMODULE INSTANCES 
--- layer0_node0_MUX_bit_math_h_l18_c3_b3a2
-layer0_node0_MUX_bit_math_h_l18_c3_b3a2 : entity work.MUX_uint1_t_uint16_t_uint16_t_0CLK_de264c78 port map (
-layer0_node0_MUX_bit_math_h_l18_c3_b3a2_cond,
-layer0_node0_MUX_bit_math_h_l18_c3_b3a2_iftrue,
-layer0_node0_MUX_bit_math_h_l18_c3_b3a2_iffalse,
-layer0_node0_MUX_bit_math_h_l18_c3_b3a2_return_output);
+-- layer0_node0_MUX_bit_math_h_l18_c3_de19
+layer0_node0_MUX_bit_math_h_l18_c3_de19 : entity work.MUX_uint1_t_uint16_t_uint16_t_0CLK_de264c78 port map (
+layer0_node0_MUX_bit_math_h_l18_c3_de19_cond,
+layer0_node0_MUX_bit_math_h_l18_c3_de19_iftrue,
+layer0_node0_MUX_bit_math_h_l18_c3_de19_iffalse,
+layer0_node0_MUX_bit_math_h_l18_c3_de19_return_output);
 
--- layer0_node1_MUX_bit_math_h_l29_c3_6750
-layer0_node1_MUX_bit_math_h_l29_c3_6750 : entity work.MUX_uint1_t_uint16_t_uint16_t_0CLK_de264c78 port map (
-layer0_node1_MUX_bit_math_h_l29_c3_6750_cond,
-layer0_node1_MUX_bit_math_h_l29_c3_6750_iftrue,
-layer0_node1_MUX_bit_math_h_l29_c3_6750_iffalse,
-layer0_node1_MUX_bit_math_h_l29_c3_6750_return_output);
+-- layer0_node1_MUX_bit_math_h_l29_c3_6607
+layer0_node1_MUX_bit_math_h_l29_c3_6607 : entity work.MUX_uint1_t_uint16_t_uint16_t_0CLK_de264c78 port map (
+layer0_node1_MUX_bit_math_h_l29_c3_6607_cond,
+layer0_node1_MUX_bit_math_h_l29_c3_6607_iftrue,
+layer0_node1_MUX_bit_math_h_l29_c3_6607_iffalse,
+layer0_node1_MUX_bit_math_h_l29_c3_6607_return_output);
 
--- layer0_node2_MUX_bit_math_h_l40_c3_d7f6
-layer0_node2_MUX_bit_math_h_l40_c3_d7f6 : entity work.MUX_uint1_t_uint16_t_uint16_t_0CLK_de264c78 port map (
-layer0_node2_MUX_bit_math_h_l40_c3_d7f6_cond,
-layer0_node2_MUX_bit_math_h_l40_c3_d7f6_iftrue,
-layer0_node2_MUX_bit_math_h_l40_c3_d7f6_iffalse,
-layer0_node2_MUX_bit_math_h_l40_c3_d7f6_return_output);
+-- layer0_node2_MUX_bit_math_h_l40_c3_e5f9
+layer0_node2_MUX_bit_math_h_l40_c3_e5f9 : entity work.MUX_uint1_t_uint16_t_uint16_t_0CLK_de264c78 port map (
+layer0_node2_MUX_bit_math_h_l40_c3_e5f9_cond,
+layer0_node2_MUX_bit_math_h_l40_c3_e5f9_iftrue,
+layer0_node2_MUX_bit_math_h_l40_c3_e5f9_iffalse,
+layer0_node2_MUX_bit_math_h_l40_c3_e5f9_return_output);
 
--- layer0_node3_MUX_bit_math_h_l51_c3_975c
-layer0_node3_MUX_bit_math_h_l51_c3_975c : entity work.MUX_uint1_t_uint16_t_uint16_t_0CLK_de264c78 port map (
-layer0_node3_MUX_bit_math_h_l51_c3_975c_cond,
-layer0_node3_MUX_bit_math_h_l51_c3_975c_iftrue,
-layer0_node3_MUX_bit_math_h_l51_c3_975c_iffalse,
-layer0_node3_MUX_bit_math_h_l51_c3_975c_return_output);
+-- layer0_node3_MUX_bit_math_h_l51_c3_bee9
+layer0_node3_MUX_bit_math_h_l51_c3_bee9 : entity work.MUX_uint1_t_uint16_t_uint16_t_0CLK_de264c78 port map (
+layer0_node3_MUX_bit_math_h_l51_c3_bee9_cond,
+layer0_node3_MUX_bit_math_h_l51_c3_bee9_iftrue,
+layer0_node3_MUX_bit_math_h_l51_c3_bee9_iffalse,
+layer0_node3_MUX_bit_math_h_l51_c3_bee9_return_output);
 
--- layer0_node4_MUX_bit_math_h_l62_c3_de17
-layer0_node4_MUX_bit_math_h_l62_c3_de17 : entity work.MUX_uint1_t_uint16_t_uint16_t_0CLK_de264c78 port map (
-layer0_node4_MUX_bit_math_h_l62_c3_de17_cond,
-layer0_node4_MUX_bit_math_h_l62_c3_de17_iftrue,
-layer0_node4_MUX_bit_math_h_l62_c3_de17_iffalse,
-layer0_node4_MUX_bit_math_h_l62_c3_de17_return_output);
+-- layer0_node4_MUX_bit_math_h_l62_c3_1187
+layer0_node4_MUX_bit_math_h_l62_c3_1187 : entity work.MUX_uint1_t_uint16_t_uint16_t_0CLK_de264c78 port map (
+layer0_node4_MUX_bit_math_h_l62_c3_1187_cond,
+layer0_node4_MUX_bit_math_h_l62_c3_1187_iftrue,
+layer0_node4_MUX_bit_math_h_l62_c3_1187_iffalse,
+layer0_node4_MUX_bit_math_h_l62_c3_1187_return_output);
 
--- layer0_node5_MUX_bit_math_h_l73_c3_98dd
-layer0_node5_MUX_bit_math_h_l73_c3_98dd : entity work.MUX_uint1_t_uint16_t_uint16_t_0CLK_de264c78 port map (
-layer0_node5_MUX_bit_math_h_l73_c3_98dd_cond,
-layer0_node5_MUX_bit_math_h_l73_c3_98dd_iftrue,
-layer0_node5_MUX_bit_math_h_l73_c3_98dd_iffalse,
-layer0_node5_MUX_bit_math_h_l73_c3_98dd_return_output);
+-- layer0_node5_MUX_bit_math_h_l73_c3_ee92
+layer0_node5_MUX_bit_math_h_l73_c3_ee92 : entity work.MUX_uint1_t_uint16_t_uint16_t_0CLK_de264c78 port map (
+layer0_node5_MUX_bit_math_h_l73_c3_ee92_cond,
+layer0_node5_MUX_bit_math_h_l73_c3_ee92_iftrue,
+layer0_node5_MUX_bit_math_h_l73_c3_ee92_iffalse,
+layer0_node5_MUX_bit_math_h_l73_c3_ee92_return_output);
 
--- layer0_node6_MUX_bit_math_h_l84_c3_0657
-layer0_node6_MUX_bit_math_h_l84_c3_0657 : entity work.MUX_uint1_t_uint16_t_uint16_t_0CLK_de264c78 port map (
-layer0_node6_MUX_bit_math_h_l84_c3_0657_cond,
-layer0_node6_MUX_bit_math_h_l84_c3_0657_iftrue,
-layer0_node6_MUX_bit_math_h_l84_c3_0657_iffalse,
-layer0_node6_MUX_bit_math_h_l84_c3_0657_return_output);
+-- layer0_node6_MUX_bit_math_h_l84_c3_c411
+layer0_node6_MUX_bit_math_h_l84_c3_c411 : entity work.MUX_uint1_t_uint16_t_uint16_t_0CLK_de264c78 port map (
+layer0_node6_MUX_bit_math_h_l84_c3_c411_cond,
+layer0_node6_MUX_bit_math_h_l84_c3_c411_iftrue,
+layer0_node6_MUX_bit_math_h_l84_c3_c411_iffalse,
+layer0_node6_MUX_bit_math_h_l84_c3_c411_return_output);
 
--- layer0_node7_MUX_bit_math_h_l95_c3_ee0c
-layer0_node7_MUX_bit_math_h_l95_c3_ee0c : entity work.MUX_uint1_t_uint16_t_uint16_t_0CLK_de264c78 port map (
-layer0_node7_MUX_bit_math_h_l95_c3_ee0c_cond,
-layer0_node7_MUX_bit_math_h_l95_c3_ee0c_iftrue,
-layer0_node7_MUX_bit_math_h_l95_c3_ee0c_iffalse,
-layer0_node7_MUX_bit_math_h_l95_c3_ee0c_return_output);
+-- layer0_node7_MUX_bit_math_h_l95_c3_d716
+layer0_node7_MUX_bit_math_h_l95_c3_d716 : entity work.MUX_uint1_t_uint16_t_uint16_t_0CLK_de264c78 port map (
+layer0_node7_MUX_bit_math_h_l95_c3_d716_cond,
+layer0_node7_MUX_bit_math_h_l95_c3_d716_iftrue,
+layer0_node7_MUX_bit_math_h_l95_c3_d716_iffalse,
+layer0_node7_MUX_bit_math_h_l95_c3_d716_return_output);
 
--- layer1_node0_MUX_bit_math_h_l112_c3_e1f1
-layer1_node0_MUX_bit_math_h_l112_c3_e1f1 : entity work.MUX_uint1_t_uint16_t_uint16_t_0CLK_de264c78 port map (
-layer1_node0_MUX_bit_math_h_l112_c3_e1f1_cond,
-layer1_node0_MUX_bit_math_h_l112_c3_e1f1_iftrue,
-layer1_node0_MUX_bit_math_h_l112_c3_e1f1_iffalse,
-layer1_node0_MUX_bit_math_h_l112_c3_e1f1_return_output);
+-- layer1_node0_MUX_bit_math_h_l112_c3_31cd
+layer1_node0_MUX_bit_math_h_l112_c3_31cd : entity work.MUX_uint1_t_uint16_t_uint16_t_0CLK_de264c78 port map (
+layer1_node0_MUX_bit_math_h_l112_c3_31cd_cond,
+layer1_node0_MUX_bit_math_h_l112_c3_31cd_iftrue,
+layer1_node0_MUX_bit_math_h_l112_c3_31cd_iffalse,
+layer1_node0_MUX_bit_math_h_l112_c3_31cd_return_output);
 
--- layer1_node1_MUX_bit_math_h_l123_c3_6f3b
-layer1_node1_MUX_bit_math_h_l123_c3_6f3b : entity work.MUX_uint1_t_uint16_t_uint16_t_0CLK_de264c78 port map (
-layer1_node1_MUX_bit_math_h_l123_c3_6f3b_cond,
-layer1_node1_MUX_bit_math_h_l123_c3_6f3b_iftrue,
-layer1_node1_MUX_bit_math_h_l123_c3_6f3b_iffalse,
-layer1_node1_MUX_bit_math_h_l123_c3_6f3b_return_output);
+-- layer1_node1_MUX_bit_math_h_l123_c3_ebee
+layer1_node1_MUX_bit_math_h_l123_c3_ebee : entity work.MUX_uint1_t_uint16_t_uint16_t_0CLK_de264c78 port map (
+layer1_node1_MUX_bit_math_h_l123_c3_ebee_cond,
+layer1_node1_MUX_bit_math_h_l123_c3_ebee_iftrue,
+layer1_node1_MUX_bit_math_h_l123_c3_ebee_iffalse,
+layer1_node1_MUX_bit_math_h_l123_c3_ebee_return_output);
 
--- layer1_node2_MUX_bit_math_h_l134_c3_dec3
-layer1_node2_MUX_bit_math_h_l134_c3_dec3 : entity work.MUX_uint1_t_uint16_t_uint16_t_0CLK_de264c78 port map (
-layer1_node2_MUX_bit_math_h_l134_c3_dec3_cond,
-layer1_node2_MUX_bit_math_h_l134_c3_dec3_iftrue,
-layer1_node2_MUX_bit_math_h_l134_c3_dec3_iffalse,
-layer1_node2_MUX_bit_math_h_l134_c3_dec3_return_output);
+-- layer1_node2_MUX_bit_math_h_l134_c3_a4d1
+layer1_node2_MUX_bit_math_h_l134_c3_a4d1 : entity work.MUX_uint1_t_uint16_t_uint16_t_0CLK_de264c78 port map (
+layer1_node2_MUX_bit_math_h_l134_c3_a4d1_cond,
+layer1_node2_MUX_bit_math_h_l134_c3_a4d1_iftrue,
+layer1_node2_MUX_bit_math_h_l134_c3_a4d1_iffalse,
+layer1_node2_MUX_bit_math_h_l134_c3_a4d1_return_output);
 
--- layer1_node3_MUX_bit_math_h_l145_c3_ffc7
-layer1_node3_MUX_bit_math_h_l145_c3_ffc7 : entity work.MUX_uint1_t_uint16_t_uint16_t_0CLK_de264c78 port map (
-layer1_node3_MUX_bit_math_h_l145_c3_ffc7_cond,
-layer1_node3_MUX_bit_math_h_l145_c3_ffc7_iftrue,
-layer1_node3_MUX_bit_math_h_l145_c3_ffc7_iffalse,
-layer1_node3_MUX_bit_math_h_l145_c3_ffc7_return_output);
+-- layer1_node3_MUX_bit_math_h_l145_c3_b86e
+layer1_node3_MUX_bit_math_h_l145_c3_b86e : entity work.MUX_uint1_t_uint16_t_uint16_t_0CLK_de264c78 port map (
+layer1_node3_MUX_bit_math_h_l145_c3_b86e_cond,
+layer1_node3_MUX_bit_math_h_l145_c3_b86e_iftrue,
+layer1_node3_MUX_bit_math_h_l145_c3_b86e_iffalse,
+layer1_node3_MUX_bit_math_h_l145_c3_b86e_return_output);
 
--- layer2_node0_MUX_bit_math_h_l162_c3_1e6b
-layer2_node0_MUX_bit_math_h_l162_c3_1e6b : entity work.MUX_uint1_t_uint16_t_uint16_t_0CLK_de264c78 port map (
-layer2_node0_MUX_bit_math_h_l162_c3_1e6b_cond,
-layer2_node0_MUX_bit_math_h_l162_c3_1e6b_iftrue,
-layer2_node0_MUX_bit_math_h_l162_c3_1e6b_iffalse,
-layer2_node0_MUX_bit_math_h_l162_c3_1e6b_return_output);
+-- layer2_node0_MUX_bit_math_h_l162_c3_e8e2
+layer2_node0_MUX_bit_math_h_l162_c3_e8e2 : entity work.MUX_uint1_t_uint16_t_uint16_t_0CLK_de264c78 port map (
+layer2_node0_MUX_bit_math_h_l162_c3_e8e2_cond,
+layer2_node0_MUX_bit_math_h_l162_c3_e8e2_iftrue,
+layer2_node0_MUX_bit_math_h_l162_c3_e8e2_iffalse,
+layer2_node0_MUX_bit_math_h_l162_c3_e8e2_return_output);
 
--- layer2_node1_MUX_bit_math_h_l173_c3_89cf
-layer2_node1_MUX_bit_math_h_l173_c3_89cf : entity work.MUX_uint1_t_uint16_t_uint16_t_0CLK_de264c78 port map (
-layer2_node1_MUX_bit_math_h_l173_c3_89cf_cond,
-layer2_node1_MUX_bit_math_h_l173_c3_89cf_iftrue,
-layer2_node1_MUX_bit_math_h_l173_c3_89cf_iffalse,
-layer2_node1_MUX_bit_math_h_l173_c3_89cf_return_output);
+-- layer2_node1_MUX_bit_math_h_l173_c3_f4fb
+layer2_node1_MUX_bit_math_h_l173_c3_f4fb : entity work.MUX_uint1_t_uint16_t_uint16_t_0CLK_de264c78 port map (
+layer2_node1_MUX_bit_math_h_l173_c3_f4fb_cond,
+layer2_node1_MUX_bit_math_h_l173_c3_f4fb_iftrue,
+layer2_node1_MUX_bit_math_h_l173_c3_f4fb_iffalse,
+layer2_node1_MUX_bit_math_h_l173_c3_f4fb_return_output);
 
--- layer3_node0_MUX_bit_math_h_l190_c3_e282
-layer3_node0_MUX_bit_math_h_l190_c3_e282 : entity work.MUX_uint1_t_uint16_t_uint16_t_0CLK_de264c78 port map (
-layer3_node0_MUX_bit_math_h_l190_c3_e282_cond,
-layer3_node0_MUX_bit_math_h_l190_c3_e282_iftrue,
-layer3_node0_MUX_bit_math_h_l190_c3_e282_iffalse,
-layer3_node0_MUX_bit_math_h_l190_c3_e282_return_output);
+-- layer3_node0_MUX_bit_math_h_l190_c3_27bc
+layer3_node0_MUX_bit_math_h_l190_c3_27bc : entity work.MUX_uint1_t_uint16_t_uint16_t_0CLK_de264c78 port map (
+layer3_node0_MUX_bit_math_h_l190_c3_27bc_cond,
+layer3_node0_MUX_bit_math_h_l190_c3_27bc_iftrue,
+layer3_node0_MUX_bit_math_h_l190_c3_27bc_iffalse,
+layer3_node0_MUX_bit_math_h_l190_c3_27bc_return_output);
 
 
 
@@ -301,21 +301,21 @@ process (
  in14,
  in15,
  -- All submodule outputs
- layer0_node0_MUX_bit_math_h_l18_c3_b3a2_return_output,
- layer0_node1_MUX_bit_math_h_l29_c3_6750_return_output,
- layer0_node2_MUX_bit_math_h_l40_c3_d7f6_return_output,
- layer0_node3_MUX_bit_math_h_l51_c3_975c_return_output,
- layer0_node4_MUX_bit_math_h_l62_c3_de17_return_output,
- layer0_node5_MUX_bit_math_h_l73_c3_98dd_return_output,
- layer0_node6_MUX_bit_math_h_l84_c3_0657_return_output,
- layer0_node7_MUX_bit_math_h_l95_c3_ee0c_return_output,
- layer1_node0_MUX_bit_math_h_l112_c3_e1f1_return_output,
- layer1_node1_MUX_bit_math_h_l123_c3_6f3b_return_output,
- layer1_node2_MUX_bit_math_h_l134_c3_dec3_return_output,
- layer1_node3_MUX_bit_math_h_l145_c3_ffc7_return_output,
- layer2_node0_MUX_bit_math_h_l162_c3_1e6b_return_output,
- layer2_node1_MUX_bit_math_h_l173_c3_89cf_return_output,
- layer3_node0_MUX_bit_math_h_l190_c3_e282_return_output)
+ layer0_node0_MUX_bit_math_h_l18_c3_de19_return_output,
+ layer0_node1_MUX_bit_math_h_l29_c3_6607_return_output,
+ layer0_node2_MUX_bit_math_h_l40_c3_e5f9_return_output,
+ layer0_node3_MUX_bit_math_h_l51_c3_bee9_return_output,
+ layer0_node4_MUX_bit_math_h_l62_c3_1187_return_output,
+ layer0_node5_MUX_bit_math_h_l73_c3_ee92_return_output,
+ layer0_node6_MUX_bit_math_h_l84_c3_c411_return_output,
+ layer0_node7_MUX_bit_math_h_l95_c3_d716_return_output,
+ layer1_node0_MUX_bit_math_h_l112_c3_31cd_return_output,
+ layer1_node1_MUX_bit_math_h_l123_c3_ebee_return_output,
+ layer1_node2_MUX_bit_math_h_l134_c3_a4d1_return_output,
+ layer1_node3_MUX_bit_math_h_l145_c3_b86e_return_output,
+ layer2_node0_MUX_bit_math_h_l162_c3_e8e2_return_output,
+ layer2_node1_MUX_bit_math_h_l173_c3_f4fb_return_output,
+ layer3_node0_MUX_bit_math_h_l190_c3_27bc_return_output)
 is 
  -- All of the wires in function
  variable VAR_CLOCK_ENABLE : unsigned(0 downto 0);
@@ -338,88 +338,88 @@ is
  variable VAR_in14 : unsigned(15 downto 0);
  variable VAR_in15 : unsigned(15 downto 0);
  variable VAR_sel0 : unsigned(0 downto 0);
- variable VAR_uint4_0_0_bit_math_h_l14_c10_544a_return_output : unsigned(0 downto 0);
+ variable VAR_uint4_0_0_bit_math_h_l14_c10_f5e0_return_output : unsigned(0 downto 0);
  variable VAR_layer0_node0 : unsigned(15 downto 0);
- variable VAR_layer0_node0_MUX_bit_math_h_l18_c3_b3a2_iftrue : unsigned(15 downto 0);
- variable VAR_layer0_node0_MUX_bit_math_h_l18_c3_b3a2_iffalse : unsigned(15 downto 0);
- variable VAR_layer0_node0_MUX_bit_math_h_l18_c3_b3a2_return_output : unsigned(15 downto 0);
- variable VAR_layer0_node0_MUX_bit_math_h_l18_c3_b3a2_cond : unsigned(0 downto 0);
+ variable VAR_layer0_node0_MUX_bit_math_h_l18_c3_de19_iftrue : unsigned(15 downto 0);
+ variable VAR_layer0_node0_MUX_bit_math_h_l18_c3_de19_iffalse : unsigned(15 downto 0);
+ variable VAR_layer0_node0_MUX_bit_math_h_l18_c3_de19_return_output : unsigned(15 downto 0);
+ variable VAR_layer0_node0_MUX_bit_math_h_l18_c3_de19_cond : unsigned(0 downto 0);
  variable VAR_layer0_node1 : unsigned(15 downto 0);
- variable VAR_layer0_node1_MUX_bit_math_h_l29_c3_6750_iftrue : unsigned(15 downto 0);
- variable VAR_layer0_node1_MUX_bit_math_h_l29_c3_6750_iffalse : unsigned(15 downto 0);
- variable VAR_layer0_node1_MUX_bit_math_h_l29_c3_6750_return_output : unsigned(15 downto 0);
- variable VAR_layer0_node1_MUX_bit_math_h_l29_c3_6750_cond : unsigned(0 downto 0);
+ variable VAR_layer0_node1_MUX_bit_math_h_l29_c3_6607_iftrue : unsigned(15 downto 0);
+ variable VAR_layer0_node1_MUX_bit_math_h_l29_c3_6607_iffalse : unsigned(15 downto 0);
+ variable VAR_layer0_node1_MUX_bit_math_h_l29_c3_6607_return_output : unsigned(15 downto 0);
+ variable VAR_layer0_node1_MUX_bit_math_h_l29_c3_6607_cond : unsigned(0 downto 0);
  variable VAR_layer0_node2 : unsigned(15 downto 0);
- variable VAR_layer0_node2_MUX_bit_math_h_l40_c3_d7f6_iftrue : unsigned(15 downto 0);
- variable VAR_layer0_node2_MUX_bit_math_h_l40_c3_d7f6_iffalse : unsigned(15 downto 0);
- variable VAR_layer0_node2_MUX_bit_math_h_l40_c3_d7f6_return_output : unsigned(15 downto 0);
- variable VAR_layer0_node2_MUX_bit_math_h_l40_c3_d7f6_cond : unsigned(0 downto 0);
+ variable VAR_layer0_node2_MUX_bit_math_h_l40_c3_e5f9_iftrue : unsigned(15 downto 0);
+ variable VAR_layer0_node2_MUX_bit_math_h_l40_c3_e5f9_iffalse : unsigned(15 downto 0);
+ variable VAR_layer0_node2_MUX_bit_math_h_l40_c3_e5f9_return_output : unsigned(15 downto 0);
+ variable VAR_layer0_node2_MUX_bit_math_h_l40_c3_e5f9_cond : unsigned(0 downto 0);
  variable VAR_layer0_node3 : unsigned(15 downto 0);
- variable VAR_layer0_node3_MUX_bit_math_h_l51_c3_975c_iftrue : unsigned(15 downto 0);
- variable VAR_layer0_node3_MUX_bit_math_h_l51_c3_975c_iffalse : unsigned(15 downto 0);
- variable VAR_layer0_node3_MUX_bit_math_h_l51_c3_975c_return_output : unsigned(15 downto 0);
- variable VAR_layer0_node3_MUX_bit_math_h_l51_c3_975c_cond : unsigned(0 downto 0);
+ variable VAR_layer0_node3_MUX_bit_math_h_l51_c3_bee9_iftrue : unsigned(15 downto 0);
+ variable VAR_layer0_node3_MUX_bit_math_h_l51_c3_bee9_iffalse : unsigned(15 downto 0);
+ variable VAR_layer0_node3_MUX_bit_math_h_l51_c3_bee9_return_output : unsigned(15 downto 0);
+ variable VAR_layer0_node3_MUX_bit_math_h_l51_c3_bee9_cond : unsigned(0 downto 0);
  variable VAR_layer0_node4 : unsigned(15 downto 0);
- variable VAR_layer0_node4_MUX_bit_math_h_l62_c3_de17_iftrue : unsigned(15 downto 0);
- variable VAR_layer0_node4_MUX_bit_math_h_l62_c3_de17_iffalse : unsigned(15 downto 0);
- variable VAR_layer0_node4_MUX_bit_math_h_l62_c3_de17_return_output : unsigned(15 downto 0);
- variable VAR_layer0_node4_MUX_bit_math_h_l62_c3_de17_cond : unsigned(0 downto 0);
+ variable VAR_layer0_node4_MUX_bit_math_h_l62_c3_1187_iftrue : unsigned(15 downto 0);
+ variable VAR_layer0_node4_MUX_bit_math_h_l62_c3_1187_iffalse : unsigned(15 downto 0);
+ variable VAR_layer0_node4_MUX_bit_math_h_l62_c3_1187_return_output : unsigned(15 downto 0);
+ variable VAR_layer0_node4_MUX_bit_math_h_l62_c3_1187_cond : unsigned(0 downto 0);
  variable VAR_layer0_node5 : unsigned(15 downto 0);
- variable VAR_layer0_node5_MUX_bit_math_h_l73_c3_98dd_iftrue : unsigned(15 downto 0);
- variable VAR_layer0_node5_MUX_bit_math_h_l73_c3_98dd_iffalse : unsigned(15 downto 0);
- variable VAR_layer0_node5_MUX_bit_math_h_l73_c3_98dd_return_output : unsigned(15 downto 0);
- variable VAR_layer0_node5_MUX_bit_math_h_l73_c3_98dd_cond : unsigned(0 downto 0);
+ variable VAR_layer0_node5_MUX_bit_math_h_l73_c3_ee92_iftrue : unsigned(15 downto 0);
+ variable VAR_layer0_node5_MUX_bit_math_h_l73_c3_ee92_iffalse : unsigned(15 downto 0);
+ variable VAR_layer0_node5_MUX_bit_math_h_l73_c3_ee92_return_output : unsigned(15 downto 0);
+ variable VAR_layer0_node5_MUX_bit_math_h_l73_c3_ee92_cond : unsigned(0 downto 0);
  variable VAR_layer0_node6 : unsigned(15 downto 0);
- variable VAR_layer0_node6_MUX_bit_math_h_l84_c3_0657_iftrue : unsigned(15 downto 0);
- variable VAR_layer0_node6_MUX_bit_math_h_l84_c3_0657_iffalse : unsigned(15 downto 0);
- variable VAR_layer0_node6_MUX_bit_math_h_l84_c3_0657_return_output : unsigned(15 downto 0);
- variable VAR_layer0_node6_MUX_bit_math_h_l84_c3_0657_cond : unsigned(0 downto 0);
+ variable VAR_layer0_node6_MUX_bit_math_h_l84_c3_c411_iftrue : unsigned(15 downto 0);
+ variable VAR_layer0_node6_MUX_bit_math_h_l84_c3_c411_iffalse : unsigned(15 downto 0);
+ variable VAR_layer0_node6_MUX_bit_math_h_l84_c3_c411_return_output : unsigned(15 downto 0);
+ variable VAR_layer0_node6_MUX_bit_math_h_l84_c3_c411_cond : unsigned(0 downto 0);
  variable VAR_layer0_node7 : unsigned(15 downto 0);
- variable VAR_layer0_node7_MUX_bit_math_h_l95_c3_ee0c_iftrue : unsigned(15 downto 0);
- variable VAR_layer0_node7_MUX_bit_math_h_l95_c3_ee0c_iffalse : unsigned(15 downto 0);
- variable VAR_layer0_node7_MUX_bit_math_h_l95_c3_ee0c_return_output : unsigned(15 downto 0);
- variable VAR_layer0_node7_MUX_bit_math_h_l95_c3_ee0c_cond : unsigned(0 downto 0);
+ variable VAR_layer0_node7_MUX_bit_math_h_l95_c3_d716_iftrue : unsigned(15 downto 0);
+ variable VAR_layer0_node7_MUX_bit_math_h_l95_c3_d716_iffalse : unsigned(15 downto 0);
+ variable VAR_layer0_node7_MUX_bit_math_h_l95_c3_d716_return_output : unsigned(15 downto 0);
+ variable VAR_layer0_node7_MUX_bit_math_h_l95_c3_d716_cond : unsigned(0 downto 0);
  variable VAR_sel1 : unsigned(0 downto 0);
- variable VAR_uint4_1_1_bit_math_h_l108_c10_4b64_return_output : unsigned(0 downto 0);
+ variable VAR_uint4_1_1_bit_math_h_l108_c10_5cb0_return_output : unsigned(0 downto 0);
  variable VAR_layer1_node0 : unsigned(15 downto 0);
- variable VAR_layer1_node0_MUX_bit_math_h_l112_c3_e1f1_iftrue : unsigned(15 downto 0);
- variable VAR_layer1_node0_MUX_bit_math_h_l112_c3_e1f1_iffalse : unsigned(15 downto 0);
- variable VAR_layer1_node0_MUX_bit_math_h_l112_c3_e1f1_return_output : unsigned(15 downto 0);
- variable VAR_layer1_node0_MUX_bit_math_h_l112_c3_e1f1_cond : unsigned(0 downto 0);
+ variable VAR_layer1_node0_MUX_bit_math_h_l112_c3_31cd_iftrue : unsigned(15 downto 0);
+ variable VAR_layer1_node0_MUX_bit_math_h_l112_c3_31cd_iffalse : unsigned(15 downto 0);
+ variable VAR_layer1_node0_MUX_bit_math_h_l112_c3_31cd_return_output : unsigned(15 downto 0);
+ variable VAR_layer1_node0_MUX_bit_math_h_l112_c3_31cd_cond : unsigned(0 downto 0);
  variable VAR_layer1_node1 : unsigned(15 downto 0);
- variable VAR_layer1_node1_MUX_bit_math_h_l123_c3_6f3b_iftrue : unsigned(15 downto 0);
- variable VAR_layer1_node1_MUX_bit_math_h_l123_c3_6f3b_iffalse : unsigned(15 downto 0);
- variable VAR_layer1_node1_MUX_bit_math_h_l123_c3_6f3b_return_output : unsigned(15 downto 0);
- variable VAR_layer1_node1_MUX_bit_math_h_l123_c3_6f3b_cond : unsigned(0 downto 0);
+ variable VAR_layer1_node1_MUX_bit_math_h_l123_c3_ebee_iftrue : unsigned(15 downto 0);
+ variable VAR_layer1_node1_MUX_bit_math_h_l123_c3_ebee_iffalse : unsigned(15 downto 0);
+ variable VAR_layer1_node1_MUX_bit_math_h_l123_c3_ebee_return_output : unsigned(15 downto 0);
+ variable VAR_layer1_node1_MUX_bit_math_h_l123_c3_ebee_cond : unsigned(0 downto 0);
  variable VAR_layer1_node2 : unsigned(15 downto 0);
- variable VAR_layer1_node2_MUX_bit_math_h_l134_c3_dec3_iftrue : unsigned(15 downto 0);
- variable VAR_layer1_node2_MUX_bit_math_h_l134_c3_dec3_iffalse : unsigned(15 downto 0);
- variable VAR_layer1_node2_MUX_bit_math_h_l134_c3_dec3_return_output : unsigned(15 downto 0);
- variable VAR_layer1_node2_MUX_bit_math_h_l134_c3_dec3_cond : unsigned(0 downto 0);
+ variable VAR_layer1_node2_MUX_bit_math_h_l134_c3_a4d1_iftrue : unsigned(15 downto 0);
+ variable VAR_layer1_node2_MUX_bit_math_h_l134_c3_a4d1_iffalse : unsigned(15 downto 0);
+ variable VAR_layer1_node2_MUX_bit_math_h_l134_c3_a4d1_return_output : unsigned(15 downto 0);
+ variable VAR_layer1_node2_MUX_bit_math_h_l134_c3_a4d1_cond : unsigned(0 downto 0);
  variable VAR_layer1_node3 : unsigned(15 downto 0);
- variable VAR_layer1_node3_MUX_bit_math_h_l145_c3_ffc7_iftrue : unsigned(15 downto 0);
- variable VAR_layer1_node3_MUX_bit_math_h_l145_c3_ffc7_iffalse : unsigned(15 downto 0);
- variable VAR_layer1_node3_MUX_bit_math_h_l145_c3_ffc7_return_output : unsigned(15 downto 0);
- variable VAR_layer1_node3_MUX_bit_math_h_l145_c3_ffc7_cond : unsigned(0 downto 0);
+ variable VAR_layer1_node3_MUX_bit_math_h_l145_c3_b86e_iftrue : unsigned(15 downto 0);
+ variable VAR_layer1_node3_MUX_bit_math_h_l145_c3_b86e_iffalse : unsigned(15 downto 0);
+ variable VAR_layer1_node3_MUX_bit_math_h_l145_c3_b86e_return_output : unsigned(15 downto 0);
+ variable VAR_layer1_node3_MUX_bit_math_h_l145_c3_b86e_cond : unsigned(0 downto 0);
  variable VAR_sel2 : unsigned(0 downto 0);
- variable VAR_uint4_2_2_bit_math_h_l158_c10_0ac3_return_output : unsigned(0 downto 0);
+ variable VAR_uint4_2_2_bit_math_h_l158_c10_f6d8_return_output : unsigned(0 downto 0);
  variable VAR_layer2_node0 : unsigned(15 downto 0);
- variable VAR_layer2_node0_MUX_bit_math_h_l162_c3_1e6b_iftrue : unsigned(15 downto 0);
- variable VAR_layer2_node0_MUX_bit_math_h_l162_c3_1e6b_iffalse : unsigned(15 downto 0);
- variable VAR_layer2_node0_MUX_bit_math_h_l162_c3_1e6b_return_output : unsigned(15 downto 0);
- variable VAR_layer2_node0_MUX_bit_math_h_l162_c3_1e6b_cond : unsigned(0 downto 0);
+ variable VAR_layer2_node0_MUX_bit_math_h_l162_c3_e8e2_iftrue : unsigned(15 downto 0);
+ variable VAR_layer2_node0_MUX_bit_math_h_l162_c3_e8e2_iffalse : unsigned(15 downto 0);
+ variable VAR_layer2_node0_MUX_bit_math_h_l162_c3_e8e2_return_output : unsigned(15 downto 0);
+ variable VAR_layer2_node0_MUX_bit_math_h_l162_c3_e8e2_cond : unsigned(0 downto 0);
  variable VAR_layer2_node1 : unsigned(15 downto 0);
- variable VAR_layer2_node1_MUX_bit_math_h_l173_c3_89cf_iftrue : unsigned(15 downto 0);
- variable VAR_layer2_node1_MUX_bit_math_h_l173_c3_89cf_iffalse : unsigned(15 downto 0);
- variable VAR_layer2_node1_MUX_bit_math_h_l173_c3_89cf_return_output : unsigned(15 downto 0);
- variable VAR_layer2_node1_MUX_bit_math_h_l173_c3_89cf_cond : unsigned(0 downto 0);
+ variable VAR_layer2_node1_MUX_bit_math_h_l173_c3_f4fb_iftrue : unsigned(15 downto 0);
+ variable VAR_layer2_node1_MUX_bit_math_h_l173_c3_f4fb_iffalse : unsigned(15 downto 0);
+ variable VAR_layer2_node1_MUX_bit_math_h_l173_c3_f4fb_return_output : unsigned(15 downto 0);
+ variable VAR_layer2_node1_MUX_bit_math_h_l173_c3_f4fb_cond : unsigned(0 downto 0);
  variable VAR_sel3 : unsigned(0 downto 0);
- variable VAR_uint4_3_3_bit_math_h_l186_c10_9245_return_output : unsigned(0 downto 0);
+ variable VAR_uint4_3_3_bit_math_h_l186_c10_f63a_return_output : unsigned(0 downto 0);
  variable VAR_layer3_node0 : unsigned(15 downto 0);
- variable VAR_layer3_node0_MUX_bit_math_h_l190_c3_e282_iftrue : unsigned(15 downto 0);
- variable VAR_layer3_node0_MUX_bit_math_h_l190_c3_e282_iffalse : unsigned(15 downto 0);
- variable VAR_layer3_node0_MUX_bit_math_h_l190_c3_e282_return_output : unsigned(15 downto 0);
- variable VAR_layer3_node0_MUX_bit_math_h_l190_c3_e282_cond : unsigned(0 downto 0);
+ variable VAR_layer3_node0_MUX_bit_math_h_l190_c3_27bc_iftrue : unsigned(15 downto 0);
+ variable VAR_layer3_node0_MUX_bit_math_h_l190_c3_27bc_iffalse : unsigned(15 downto 0);
+ variable VAR_layer3_node0_MUX_bit_math_h_l190_c3_27bc_return_output : unsigned(15 downto 0);
+ variable VAR_layer3_node0_MUX_bit_math_h_l190_c3_27bc_cond : unsigned(0 downto 0);
 begin
 
  -- Loop to construct simultaneous register transfers for each of the pipeline stages
@@ -446,193 +446,193 @@ begin
      VAR_in15 := in15;
 
      -- Submodule level 0
-     VAR_layer0_node0_MUX_bit_math_h_l18_c3_b3a2_iffalse := VAR_in0;
-     VAR_layer0_node0_MUX_bit_math_h_l18_c3_b3a2_iftrue := VAR_in1;
-     VAR_layer0_node5_MUX_bit_math_h_l73_c3_98dd_iffalse := VAR_in10;
-     VAR_layer0_node5_MUX_bit_math_h_l73_c3_98dd_iftrue := VAR_in11;
-     VAR_layer0_node6_MUX_bit_math_h_l84_c3_0657_iffalse := VAR_in12;
-     VAR_layer0_node6_MUX_bit_math_h_l84_c3_0657_iftrue := VAR_in13;
-     VAR_layer0_node7_MUX_bit_math_h_l95_c3_ee0c_iffalse := VAR_in14;
-     VAR_layer0_node7_MUX_bit_math_h_l95_c3_ee0c_iftrue := VAR_in15;
-     VAR_layer0_node1_MUX_bit_math_h_l29_c3_6750_iffalse := VAR_in2;
-     VAR_layer0_node1_MUX_bit_math_h_l29_c3_6750_iftrue := VAR_in3;
-     VAR_layer0_node2_MUX_bit_math_h_l40_c3_d7f6_iffalse := VAR_in4;
-     VAR_layer0_node2_MUX_bit_math_h_l40_c3_d7f6_iftrue := VAR_in5;
-     VAR_layer0_node3_MUX_bit_math_h_l51_c3_975c_iffalse := VAR_in6;
-     VAR_layer0_node3_MUX_bit_math_h_l51_c3_975c_iftrue := VAR_in7;
-     VAR_layer0_node4_MUX_bit_math_h_l62_c3_de17_iffalse := VAR_in8;
-     VAR_layer0_node4_MUX_bit_math_h_l62_c3_de17_iftrue := VAR_in9;
-     -- uint4_2_2[bit_math_h_l158_c10_0ac3] LATENCY=0
-     VAR_uint4_2_2_bit_math_h_l158_c10_0ac3_return_output := uint4_2_2(
+     VAR_layer0_node0_MUX_bit_math_h_l18_c3_de19_iffalse := VAR_in0;
+     VAR_layer0_node0_MUX_bit_math_h_l18_c3_de19_iftrue := VAR_in1;
+     VAR_layer0_node5_MUX_bit_math_h_l73_c3_ee92_iffalse := VAR_in10;
+     VAR_layer0_node5_MUX_bit_math_h_l73_c3_ee92_iftrue := VAR_in11;
+     VAR_layer0_node6_MUX_bit_math_h_l84_c3_c411_iffalse := VAR_in12;
+     VAR_layer0_node6_MUX_bit_math_h_l84_c3_c411_iftrue := VAR_in13;
+     VAR_layer0_node7_MUX_bit_math_h_l95_c3_d716_iffalse := VAR_in14;
+     VAR_layer0_node7_MUX_bit_math_h_l95_c3_d716_iftrue := VAR_in15;
+     VAR_layer0_node1_MUX_bit_math_h_l29_c3_6607_iffalse := VAR_in2;
+     VAR_layer0_node1_MUX_bit_math_h_l29_c3_6607_iftrue := VAR_in3;
+     VAR_layer0_node2_MUX_bit_math_h_l40_c3_e5f9_iffalse := VAR_in4;
+     VAR_layer0_node2_MUX_bit_math_h_l40_c3_e5f9_iftrue := VAR_in5;
+     VAR_layer0_node3_MUX_bit_math_h_l51_c3_bee9_iffalse := VAR_in6;
+     VAR_layer0_node3_MUX_bit_math_h_l51_c3_bee9_iftrue := VAR_in7;
+     VAR_layer0_node4_MUX_bit_math_h_l62_c3_1187_iffalse := VAR_in8;
+     VAR_layer0_node4_MUX_bit_math_h_l62_c3_1187_iftrue := VAR_in9;
+     -- uint4_3_3[bit_math_h_l186_c10_f63a] LATENCY=0
+     VAR_uint4_3_3_bit_math_h_l186_c10_f63a_return_output := uint4_3_3(
      VAR_sel);
 
-     -- uint4_3_3[bit_math_h_l186_c10_9245] LATENCY=0
-     VAR_uint4_3_3_bit_math_h_l186_c10_9245_return_output := uint4_3_3(
+     -- uint4_1_1[bit_math_h_l108_c10_5cb0] LATENCY=0
+     VAR_uint4_1_1_bit_math_h_l108_c10_5cb0_return_output := uint4_1_1(
      VAR_sel);
 
-     -- uint4_0_0[bit_math_h_l14_c10_544a] LATENCY=0
-     VAR_uint4_0_0_bit_math_h_l14_c10_544a_return_output := uint4_0_0(
+     -- uint4_0_0[bit_math_h_l14_c10_f5e0] LATENCY=0
+     VAR_uint4_0_0_bit_math_h_l14_c10_f5e0_return_output := uint4_0_0(
      VAR_sel);
 
-     -- uint4_1_1[bit_math_h_l108_c10_4b64] LATENCY=0
-     VAR_uint4_1_1_bit_math_h_l108_c10_4b64_return_output := uint4_1_1(
+     -- uint4_2_2[bit_math_h_l158_c10_f6d8] LATENCY=0
+     VAR_uint4_2_2_bit_math_h_l158_c10_f6d8_return_output := uint4_2_2(
      VAR_sel);
 
      -- Submodule level 1
-     VAR_layer0_node0_MUX_bit_math_h_l18_c3_b3a2_cond := VAR_uint4_0_0_bit_math_h_l14_c10_544a_return_output;
-     VAR_layer0_node1_MUX_bit_math_h_l29_c3_6750_cond := VAR_uint4_0_0_bit_math_h_l14_c10_544a_return_output;
-     VAR_layer0_node2_MUX_bit_math_h_l40_c3_d7f6_cond := VAR_uint4_0_0_bit_math_h_l14_c10_544a_return_output;
-     VAR_layer0_node3_MUX_bit_math_h_l51_c3_975c_cond := VAR_uint4_0_0_bit_math_h_l14_c10_544a_return_output;
-     VAR_layer0_node4_MUX_bit_math_h_l62_c3_de17_cond := VAR_uint4_0_0_bit_math_h_l14_c10_544a_return_output;
-     VAR_layer0_node5_MUX_bit_math_h_l73_c3_98dd_cond := VAR_uint4_0_0_bit_math_h_l14_c10_544a_return_output;
-     VAR_layer0_node6_MUX_bit_math_h_l84_c3_0657_cond := VAR_uint4_0_0_bit_math_h_l14_c10_544a_return_output;
-     VAR_layer0_node7_MUX_bit_math_h_l95_c3_ee0c_cond := VAR_uint4_0_0_bit_math_h_l14_c10_544a_return_output;
-     VAR_layer1_node0_MUX_bit_math_h_l112_c3_e1f1_cond := VAR_uint4_1_1_bit_math_h_l108_c10_4b64_return_output;
-     VAR_layer1_node1_MUX_bit_math_h_l123_c3_6f3b_cond := VAR_uint4_1_1_bit_math_h_l108_c10_4b64_return_output;
-     VAR_layer1_node2_MUX_bit_math_h_l134_c3_dec3_cond := VAR_uint4_1_1_bit_math_h_l108_c10_4b64_return_output;
-     VAR_layer1_node3_MUX_bit_math_h_l145_c3_ffc7_cond := VAR_uint4_1_1_bit_math_h_l108_c10_4b64_return_output;
-     VAR_layer2_node0_MUX_bit_math_h_l162_c3_1e6b_cond := VAR_uint4_2_2_bit_math_h_l158_c10_0ac3_return_output;
-     VAR_layer2_node1_MUX_bit_math_h_l173_c3_89cf_cond := VAR_uint4_2_2_bit_math_h_l158_c10_0ac3_return_output;
-     VAR_layer3_node0_MUX_bit_math_h_l190_c3_e282_cond := VAR_uint4_3_3_bit_math_h_l186_c10_9245_return_output;
-     -- layer0_node2_MUX[bit_math_h_l40_c3_d7f6] LATENCY=0
+     VAR_layer0_node0_MUX_bit_math_h_l18_c3_de19_cond := VAR_uint4_0_0_bit_math_h_l14_c10_f5e0_return_output;
+     VAR_layer0_node1_MUX_bit_math_h_l29_c3_6607_cond := VAR_uint4_0_0_bit_math_h_l14_c10_f5e0_return_output;
+     VAR_layer0_node2_MUX_bit_math_h_l40_c3_e5f9_cond := VAR_uint4_0_0_bit_math_h_l14_c10_f5e0_return_output;
+     VAR_layer0_node3_MUX_bit_math_h_l51_c3_bee9_cond := VAR_uint4_0_0_bit_math_h_l14_c10_f5e0_return_output;
+     VAR_layer0_node4_MUX_bit_math_h_l62_c3_1187_cond := VAR_uint4_0_0_bit_math_h_l14_c10_f5e0_return_output;
+     VAR_layer0_node5_MUX_bit_math_h_l73_c3_ee92_cond := VAR_uint4_0_0_bit_math_h_l14_c10_f5e0_return_output;
+     VAR_layer0_node6_MUX_bit_math_h_l84_c3_c411_cond := VAR_uint4_0_0_bit_math_h_l14_c10_f5e0_return_output;
+     VAR_layer0_node7_MUX_bit_math_h_l95_c3_d716_cond := VAR_uint4_0_0_bit_math_h_l14_c10_f5e0_return_output;
+     VAR_layer1_node0_MUX_bit_math_h_l112_c3_31cd_cond := VAR_uint4_1_1_bit_math_h_l108_c10_5cb0_return_output;
+     VAR_layer1_node1_MUX_bit_math_h_l123_c3_ebee_cond := VAR_uint4_1_1_bit_math_h_l108_c10_5cb0_return_output;
+     VAR_layer1_node2_MUX_bit_math_h_l134_c3_a4d1_cond := VAR_uint4_1_1_bit_math_h_l108_c10_5cb0_return_output;
+     VAR_layer1_node3_MUX_bit_math_h_l145_c3_b86e_cond := VAR_uint4_1_1_bit_math_h_l108_c10_5cb0_return_output;
+     VAR_layer2_node0_MUX_bit_math_h_l162_c3_e8e2_cond := VAR_uint4_2_2_bit_math_h_l158_c10_f6d8_return_output;
+     VAR_layer2_node1_MUX_bit_math_h_l173_c3_f4fb_cond := VAR_uint4_2_2_bit_math_h_l158_c10_f6d8_return_output;
+     VAR_layer3_node0_MUX_bit_math_h_l190_c3_27bc_cond := VAR_uint4_3_3_bit_math_h_l186_c10_f63a_return_output;
+     -- layer0_node2_MUX[bit_math_h_l40_c3_e5f9] LATENCY=0
      -- Inputs
-     layer0_node2_MUX_bit_math_h_l40_c3_d7f6_cond <= VAR_layer0_node2_MUX_bit_math_h_l40_c3_d7f6_cond;
-     layer0_node2_MUX_bit_math_h_l40_c3_d7f6_iftrue <= VAR_layer0_node2_MUX_bit_math_h_l40_c3_d7f6_iftrue;
-     layer0_node2_MUX_bit_math_h_l40_c3_d7f6_iffalse <= VAR_layer0_node2_MUX_bit_math_h_l40_c3_d7f6_iffalse;
+     layer0_node2_MUX_bit_math_h_l40_c3_e5f9_cond <= VAR_layer0_node2_MUX_bit_math_h_l40_c3_e5f9_cond;
+     layer0_node2_MUX_bit_math_h_l40_c3_e5f9_iftrue <= VAR_layer0_node2_MUX_bit_math_h_l40_c3_e5f9_iftrue;
+     layer0_node2_MUX_bit_math_h_l40_c3_e5f9_iffalse <= VAR_layer0_node2_MUX_bit_math_h_l40_c3_e5f9_iffalse;
      -- Outputs
-     VAR_layer0_node2_MUX_bit_math_h_l40_c3_d7f6_return_output := layer0_node2_MUX_bit_math_h_l40_c3_d7f6_return_output;
+     VAR_layer0_node2_MUX_bit_math_h_l40_c3_e5f9_return_output := layer0_node2_MUX_bit_math_h_l40_c3_e5f9_return_output;
 
-     -- layer0_node4_MUX[bit_math_h_l62_c3_de17] LATENCY=0
+     -- layer0_node7_MUX[bit_math_h_l95_c3_d716] LATENCY=0
      -- Inputs
-     layer0_node4_MUX_bit_math_h_l62_c3_de17_cond <= VAR_layer0_node4_MUX_bit_math_h_l62_c3_de17_cond;
-     layer0_node4_MUX_bit_math_h_l62_c3_de17_iftrue <= VAR_layer0_node4_MUX_bit_math_h_l62_c3_de17_iftrue;
-     layer0_node4_MUX_bit_math_h_l62_c3_de17_iffalse <= VAR_layer0_node4_MUX_bit_math_h_l62_c3_de17_iffalse;
+     layer0_node7_MUX_bit_math_h_l95_c3_d716_cond <= VAR_layer0_node7_MUX_bit_math_h_l95_c3_d716_cond;
+     layer0_node7_MUX_bit_math_h_l95_c3_d716_iftrue <= VAR_layer0_node7_MUX_bit_math_h_l95_c3_d716_iftrue;
+     layer0_node7_MUX_bit_math_h_l95_c3_d716_iffalse <= VAR_layer0_node7_MUX_bit_math_h_l95_c3_d716_iffalse;
      -- Outputs
-     VAR_layer0_node4_MUX_bit_math_h_l62_c3_de17_return_output := layer0_node4_MUX_bit_math_h_l62_c3_de17_return_output;
+     VAR_layer0_node7_MUX_bit_math_h_l95_c3_d716_return_output := layer0_node7_MUX_bit_math_h_l95_c3_d716_return_output;
 
-     -- layer0_node3_MUX[bit_math_h_l51_c3_975c] LATENCY=0
+     -- layer0_node3_MUX[bit_math_h_l51_c3_bee9] LATENCY=0
      -- Inputs
-     layer0_node3_MUX_bit_math_h_l51_c3_975c_cond <= VAR_layer0_node3_MUX_bit_math_h_l51_c3_975c_cond;
-     layer0_node3_MUX_bit_math_h_l51_c3_975c_iftrue <= VAR_layer0_node3_MUX_bit_math_h_l51_c3_975c_iftrue;
-     layer0_node3_MUX_bit_math_h_l51_c3_975c_iffalse <= VAR_layer0_node3_MUX_bit_math_h_l51_c3_975c_iffalse;
+     layer0_node3_MUX_bit_math_h_l51_c3_bee9_cond <= VAR_layer0_node3_MUX_bit_math_h_l51_c3_bee9_cond;
+     layer0_node3_MUX_bit_math_h_l51_c3_bee9_iftrue <= VAR_layer0_node3_MUX_bit_math_h_l51_c3_bee9_iftrue;
+     layer0_node3_MUX_bit_math_h_l51_c3_bee9_iffalse <= VAR_layer0_node3_MUX_bit_math_h_l51_c3_bee9_iffalse;
      -- Outputs
-     VAR_layer0_node3_MUX_bit_math_h_l51_c3_975c_return_output := layer0_node3_MUX_bit_math_h_l51_c3_975c_return_output;
+     VAR_layer0_node3_MUX_bit_math_h_l51_c3_bee9_return_output := layer0_node3_MUX_bit_math_h_l51_c3_bee9_return_output;
 
-     -- layer0_node5_MUX[bit_math_h_l73_c3_98dd] LATENCY=0
+     -- layer0_node1_MUX[bit_math_h_l29_c3_6607] LATENCY=0
      -- Inputs
-     layer0_node5_MUX_bit_math_h_l73_c3_98dd_cond <= VAR_layer0_node5_MUX_bit_math_h_l73_c3_98dd_cond;
-     layer0_node5_MUX_bit_math_h_l73_c3_98dd_iftrue <= VAR_layer0_node5_MUX_bit_math_h_l73_c3_98dd_iftrue;
-     layer0_node5_MUX_bit_math_h_l73_c3_98dd_iffalse <= VAR_layer0_node5_MUX_bit_math_h_l73_c3_98dd_iffalse;
+     layer0_node1_MUX_bit_math_h_l29_c3_6607_cond <= VAR_layer0_node1_MUX_bit_math_h_l29_c3_6607_cond;
+     layer0_node1_MUX_bit_math_h_l29_c3_6607_iftrue <= VAR_layer0_node1_MUX_bit_math_h_l29_c3_6607_iftrue;
+     layer0_node1_MUX_bit_math_h_l29_c3_6607_iffalse <= VAR_layer0_node1_MUX_bit_math_h_l29_c3_6607_iffalse;
      -- Outputs
-     VAR_layer0_node5_MUX_bit_math_h_l73_c3_98dd_return_output := layer0_node5_MUX_bit_math_h_l73_c3_98dd_return_output;
+     VAR_layer0_node1_MUX_bit_math_h_l29_c3_6607_return_output := layer0_node1_MUX_bit_math_h_l29_c3_6607_return_output;
 
-     -- layer0_node0_MUX[bit_math_h_l18_c3_b3a2] LATENCY=0
+     -- layer0_node4_MUX[bit_math_h_l62_c3_1187] LATENCY=0
      -- Inputs
-     layer0_node0_MUX_bit_math_h_l18_c3_b3a2_cond <= VAR_layer0_node0_MUX_bit_math_h_l18_c3_b3a2_cond;
-     layer0_node0_MUX_bit_math_h_l18_c3_b3a2_iftrue <= VAR_layer0_node0_MUX_bit_math_h_l18_c3_b3a2_iftrue;
-     layer0_node0_MUX_bit_math_h_l18_c3_b3a2_iffalse <= VAR_layer0_node0_MUX_bit_math_h_l18_c3_b3a2_iffalse;
+     layer0_node4_MUX_bit_math_h_l62_c3_1187_cond <= VAR_layer0_node4_MUX_bit_math_h_l62_c3_1187_cond;
+     layer0_node4_MUX_bit_math_h_l62_c3_1187_iftrue <= VAR_layer0_node4_MUX_bit_math_h_l62_c3_1187_iftrue;
+     layer0_node4_MUX_bit_math_h_l62_c3_1187_iffalse <= VAR_layer0_node4_MUX_bit_math_h_l62_c3_1187_iffalse;
      -- Outputs
-     VAR_layer0_node0_MUX_bit_math_h_l18_c3_b3a2_return_output := layer0_node0_MUX_bit_math_h_l18_c3_b3a2_return_output;
+     VAR_layer0_node4_MUX_bit_math_h_l62_c3_1187_return_output := layer0_node4_MUX_bit_math_h_l62_c3_1187_return_output;
 
-     -- layer0_node6_MUX[bit_math_h_l84_c3_0657] LATENCY=0
+     -- layer0_node0_MUX[bit_math_h_l18_c3_de19] LATENCY=0
      -- Inputs
-     layer0_node6_MUX_bit_math_h_l84_c3_0657_cond <= VAR_layer0_node6_MUX_bit_math_h_l84_c3_0657_cond;
-     layer0_node6_MUX_bit_math_h_l84_c3_0657_iftrue <= VAR_layer0_node6_MUX_bit_math_h_l84_c3_0657_iftrue;
-     layer0_node6_MUX_bit_math_h_l84_c3_0657_iffalse <= VAR_layer0_node6_MUX_bit_math_h_l84_c3_0657_iffalse;
+     layer0_node0_MUX_bit_math_h_l18_c3_de19_cond <= VAR_layer0_node0_MUX_bit_math_h_l18_c3_de19_cond;
+     layer0_node0_MUX_bit_math_h_l18_c3_de19_iftrue <= VAR_layer0_node0_MUX_bit_math_h_l18_c3_de19_iftrue;
+     layer0_node0_MUX_bit_math_h_l18_c3_de19_iffalse <= VAR_layer0_node0_MUX_bit_math_h_l18_c3_de19_iffalse;
      -- Outputs
-     VAR_layer0_node6_MUX_bit_math_h_l84_c3_0657_return_output := layer0_node6_MUX_bit_math_h_l84_c3_0657_return_output;
+     VAR_layer0_node0_MUX_bit_math_h_l18_c3_de19_return_output := layer0_node0_MUX_bit_math_h_l18_c3_de19_return_output;
 
-     -- layer0_node7_MUX[bit_math_h_l95_c3_ee0c] LATENCY=0
+     -- layer0_node5_MUX[bit_math_h_l73_c3_ee92] LATENCY=0
      -- Inputs
-     layer0_node7_MUX_bit_math_h_l95_c3_ee0c_cond <= VAR_layer0_node7_MUX_bit_math_h_l95_c3_ee0c_cond;
-     layer0_node7_MUX_bit_math_h_l95_c3_ee0c_iftrue <= VAR_layer0_node7_MUX_bit_math_h_l95_c3_ee0c_iftrue;
-     layer0_node7_MUX_bit_math_h_l95_c3_ee0c_iffalse <= VAR_layer0_node7_MUX_bit_math_h_l95_c3_ee0c_iffalse;
+     layer0_node5_MUX_bit_math_h_l73_c3_ee92_cond <= VAR_layer0_node5_MUX_bit_math_h_l73_c3_ee92_cond;
+     layer0_node5_MUX_bit_math_h_l73_c3_ee92_iftrue <= VAR_layer0_node5_MUX_bit_math_h_l73_c3_ee92_iftrue;
+     layer0_node5_MUX_bit_math_h_l73_c3_ee92_iffalse <= VAR_layer0_node5_MUX_bit_math_h_l73_c3_ee92_iffalse;
      -- Outputs
-     VAR_layer0_node7_MUX_bit_math_h_l95_c3_ee0c_return_output := layer0_node7_MUX_bit_math_h_l95_c3_ee0c_return_output;
+     VAR_layer0_node5_MUX_bit_math_h_l73_c3_ee92_return_output := layer0_node5_MUX_bit_math_h_l73_c3_ee92_return_output;
 
-     -- layer0_node1_MUX[bit_math_h_l29_c3_6750] LATENCY=0
+     -- layer0_node6_MUX[bit_math_h_l84_c3_c411] LATENCY=0
      -- Inputs
-     layer0_node1_MUX_bit_math_h_l29_c3_6750_cond <= VAR_layer0_node1_MUX_bit_math_h_l29_c3_6750_cond;
-     layer0_node1_MUX_bit_math_h_l29_c3_6750_iftrue <= VAR_layer0_node1_MUX_bit_math_h_l29_c3_6750_iftrue;
-     layer0_node1_MUX_bit_math_h_l29_c3_6750_iffalse <= VAR_layer0_node1_MUX_bit_math_h_l29_c3_6750_iffalse;
+     layer0_node6_MUX_bit_math_h_l84_c3_c411_cond <= VAR_layer0_node6_MUX_bit_math_h_l84_c3_c411_cond;
+     layer0_node6_MUX_bit_math_h_l84_c3_c411_iftrue <= VAR_layer0_node6_MUX_bit_math_h_l84_c3_c411_iftrue;
+     layer0_node6_MUX_bit_math_h_l84_c3_c411_iffalse <= VAR_layer0_node6_MUX_bit_math_h_l84_c3_c411_iffalse;
      -- Outputs
-     VAR_layer0_node1_MUX_bit_math_h_l29_c3_6750_return_output := layer0_node1_MUX_bit_math_h_l29_c3_6750_return_output;
+     VAR_layer0_node6_MUX_bit_math_h_l84_c3_c411_return_output := layer0_node6_MUX_bit_math_h_l84_c3_c411_return_output;
 
      -- Submodule level 2
-     VAR_layer1_node0_MUX_bit_math_h_l112_c3_e1f1_iffalse := VAR_layer0_node0_MUX_bit_math_h_l18_c3_b3a2_return_output;
-     VAR_layer1_node0_MUX_bit_math_h_l112_c3_e1f1_iftrue := VAR_layer0_node1_MUX_bit_math_h_l29_c3_6750_return_output;
-     VAR_layer1_node1_MUX_bit_math_h_l123_c3_6f3b_iffalse := VAR_layer0_node2_MUX_bit_math_h_l40_c3_d7f6_return_output;
-     VAR_layer1_node1_MUX_bit_math_h_l123_c3_6f3b_iftrue := VAR_layer0_node3_MUX_bit_math_h_l51_c3_975c_return_output;
-     VAR_layer1_node2_MUX_bit_math_h_l134_c3_dec3_iffalse := VAR_layer0_node4_MUX_bit_math_h_l62_c3_de17_return_output;
-     VAR_layer1_node2_MUX_bit_math_h_l134_c3_dec3_iftrue := VAR_layer0_node5_MUX_bit_math_h_l73_c3_98dd_return_output;
-     VAR_layer1_node3_MUX_bit_math_h_l145_c3_ffc7_iffalse := VAR_layer0_node6_MUX_bit_math_h_l84_c3_0657_return_output;
-     VAR_layer1_node3_MUX_bit_math_h_l145_c3_ffc7_iftrue := VAR_layer0_node7_MUX_bit_math_h_l95_c3_ee0c_return_output;
-     -- layer1_node2_MUX[bit_math_h_l134_c3_dec3] LATENCY=0
+     VAR_layer1_node0_MUX_bit_math_h_l112_c3_31cd_iffalse := VAR_layer0_node0_MUX_bit_math_h_l18_c3_de19_return_output;
+     VAR_layer1_node0_MUX_bit_math_h_l112_c3_31cd_iftrue := VAR_layer0_node1_MUX_bit_math_h_l29_c3_6607_return_output;
+     VAR_layer1_node1_MUX_bit_math_h_l123_c3_ebee_iffalse := VAR_layer0_node2_MUX_bit_math_h_l40_c3_e5f9_return_output;
+     VAR_layer1_node1_MUX_bit_math_h_l123_c3_ebee_iftrue := VAR_layer0_node3_MUX_bit_math_h_l51_c3_bee9_return_output;
+     VAR_layer1_node2_MUX_bit_math_h_l134_c3_a4d1_iffalse := VAR_layer0_node4_MUX_bit_math_h_l62_c3_1187_return_output;
+     VAR_layer1_node2_MUX_bit_math_h_l134_c3_a4d1_iftrue := VAR_layer0_node5_MUX_bit_math_h_l73_c3_ee92_return_output;
+     VAR_layer1_node3_MUX_bit_math_h_l145_c3_b86e_iffalse := VAR_layer0_node6_MUX_bit_math_h_l84_c3_c411_return_output;
+     VAR_layer1_node3_MUX_bit_math_h_l145_c3_b86e_iftrue := VAR_layer0_node7_MUX_bit_math_h_l95_c3_d716_return_output;
+     -- layer1_node3_MUX[bit_math_h_l145_c3_b86e] LATENCY=0
      -- Inputs
-     layer1_node2_MUX_bit_math_h_l134_c3_dec3_cond <= VAR_layer1_node2_MUX_bit_math_h_l134_c3_dec3_cond;
-     layer1_node2_MUX_bit_math_h_l134_c3_dec3_iftrue <= VAR_layer1_node2_MUX_bit_math_h_l134_c3_dec3_iftrue;
-     layer1_node2_MUX_bit_math_h_l134_c3_dec3_iffalse <= VAR_layer1_node2_MUX_bit_math_h_l134_c3_dec3_iffalse;
+     layer1_node3_MUX_bit_math_h_l145_c3_b86e_cond <= VAR_layer1_node3_MUX_bit_math_h_l145_c3_b86e_cond;
+     layer1_node3_MUX_bit_math_h_l145_c3_b86e_iftrue <= VAR_layer1_node3_MUX_bit_math_h_l145_c3_b86e_iftrue;
+     layer1_node3_MUX_bit_math_h_l145_c3_b86e_iffalse <= VAR_layer1_node3_MUX_bit_math_h_l145_c3_b86e_iffalse;
      -- Outputs
-     VAR_layer1_node2_MUX_bit_math_h_l134_c3_dec3_return_output := layer1_node2_MUX_bit_math_h_l134_c3_dec3_return_output;
+     VAR_layer1_node3_MUX_bit_math_h_l145_c3_b86e_return_output := layer1_node3_MUX_bit_math_h_l145_c3_b86e_return_output;
 
-     -- layer1_node3_MUX[bit_math_h_l145_c3_ffc7] LATENCY=0
+     -- layer1_node2_MUX[bit_math_h_l134_c3_a4d1] LATENCY=0
      -- Inputs
-     layer1_node3_MUX_bit_math_h_l145_c3_ffc7_cond <= VAR_layer1_node3_MUX_bit_math_h_l145_c3_ffc7_cond;
-     layer1_node3_MUX_bit_math_h_l145_c3_ffc7_iftrue <= VAR_layer1_node3_MUX_bit_math_h_l145_c3_ffc7_iftrue;
-     layer1_node3_MUX_bit_math_h_l145_c3_ffc7_iffalse <= VAR_layer1_node3_MUX_bit_math_h_l145_c3_ffc7_iffalse;
+     layer1_node2_MUX_bit_math_h_l134_c3_a4d1_cond <= VAR_layer1_node2_MUX_bit_math_h_l134_c3_a4d1_cond;
+     layer1_node2_MUX_bit_math_h_l134_c3_a4d1_iftrue <= VAR_layer1_node2_MUX_bit_math_h_l134_c3_a4d1_iftrue;
+     layer1_node2_MUX_bit_math_h_l134_c3_a4d1_iffalse <= VAR_layer1_node2_MUX_bit_math_h_l134_c3_a4d1_iffalse;
      -- Outputs
-     VAR_layer1_node3_MUX_bit_math_h_l145_c3_ffc7_return_output := layer1_node3_MUX_bit_math_h_l145_c3_ffc7_return_output;
+     VAR_layer1_node2_MUX_bit_math_h_l134_c3_a4d1_return_output := layer1_node2_MUX_bit_math_h_l134_c3_a4d1_return_output;
 
-     -- layer1_node1_MUX[bit_math_h_l123_c3_6f3b] LATENCY=0
+     -- layer1_node1_MUX[bit_math_h_l123_c3_ebee] LATENCY=0
      -- Inputs
-     layer1_node1_MUX_bit_math_h_l123_c3_6f3b_cond <= VAR_layer1_node1_MUX_bit_math_h_l123_c3_6f3b_cond;
-     layer1_node1_MUX_bit_math_h_l123_c3_6f3b_iftrue <= VAR_layer1_node1_MUX_bit_math_h_l123_c3_6f3b_iftrue;
-     layer1_node1_MUX_bit_math_h_l123_c3_6f3b_iffalse <= VAR_layer1_node1_MUX_bit_math_h_l123_c3_6f3b_iffalse;
+     layer1_node1_MUX_bit_math_h_l123_c3_ebee_cond <= VAR_layer1_node1_MUX_bit_math_h_l123_c3_ebee_cond;
+     layer1_node1_MUX_bit_math_h_l123_c3_ebee_iftrue <= VAR_layer1_node1_MUX_bit_math_h_l123_c3_ebee_iftrue;
+     layer1_node1_MUX_bit_math_h_l123_c3_ebee_iffalse <= VAR_layer1_node1_MUX_bit_math_h_l123_c3_ebee_iffalse;
      -- Outputs
-     VAR_layer1_node1_MUX_bit_math_h_l123_c3_6f3b_return_output := layer1_node1_MUX_bit_math_h_l123_c3_6f3b_return_output;
+     VAR_layer1_node1_MUX_bit_math_h_l123_c3_ebee_return_output := layer1_node1_MUX_bit_math_h_l123_c3_ebee_return_output;
 
-     -- layer1_node0_MUX[bit_math_h_l112_c3_e1f1] LATENCY=0
+     -- layer1_node0_MUX[bit_math_h_l112_c3_31cd] LATENCY=0
      -- Inputs
-     layer1_node0_MUX_bit_math_h_l112_c3_e1f1_cond <= VAR_layer1_node0_MUX_bit_math_h_l112_c3_e1f1_cond;
-     layer1_node0_MUX_bit_math_h_l112_c3_e1f1_iftrue <= VAR_layer1_node0_MUX_bit_math_h_l112_c3_e1f1_iftrue;
-     layer1_node0_MUX_bit_math_h_l112_c3_e1f1_iffalse <= VAR_layer1_node0_MUX_bit_math_h_l112_c3_e1f1_iffalse;
+     layer1_node0_MUX_bit_math_h_l112_c3_31cd_cond <= VAR_layer1_node0_MUX_bit_math_h_l112_c3_31cd_cond;
+     layer1_node0_MUX_bit_math_h_l112_c3_31cd_iftrue <= VAR_layer1_node0_MUX_bit_math_h_l112_c3_31cd_iftrue;
+     layer1_node0_MUX_bit_math_h_l112_c3_31cd_iffalse <= VAR_layer1_node0_MUX_bit_math_h_l112_c3_31cd_iffalse;
      -- Outputs
-     VAR_layer1_node0_MUX_bit_math_h_l112_c3_e1f1_return_output := layer1_node0_MUX_bit_math_h_l112_c3_e1f1_return_output;
+     VAR_layer1_node0_MUX_bit_math_h_l112_c3_31cd_return_output := layer1_node0_MUX_bit_math_h_l112_c3_31cd_return_output;
 
      -- Submodule level 3
-     VAR_layer2_node0_MUX_bit_math_h_l162_c3_1e6b_iffalse := VAR_layer1_node0_MUX_bit_math_h_l112_c3_e1f1_return_output;
-     VAR_layer2_node0_MUX_bit_math_h_l162_c3_1e6b_iftrue := VAR_layer1_node1_MUX_bit_math_h_l123_c3_6f3b_return_output;
-     VAR_layer2_node1_MUX_bit_math_h_l173_c3_89cf_iffalse := VAR_layer1_node2_MUX_bit_math_h_l134_c3_dec3_return_output;
-     VAR_layer2_node1_MUX_bit_math_h_l173_c3_89cf_iftrue := VAR_layer1_node3_MUX_bit_math_h_l145_c3_ffc7_return_output;
-     -- layer2_node0_MUX[bit_math_h_l162_c3_1e6b] LATENCY=0
+     VAR_layer2_node0_MUX_bit_math_h_l162_c3_e8e2_iffalse := VAR_layer1_node0_MUX_bit_math_h_l112_c3_31cd_return_output;
+     VAR_layer2_node0_MUX_bit_math_h_l162_c3_e8e2_iftrue := VAR_layer1_node1_MUX_bit_math_h_l123_c3_ebee_return_output;
+     VAR_layer2_node1_MUX_bit_math_h_l173_c3_f4fb_iffalse := VAR_layer1_node2_MUX_bit_math_h_l134_c3_a4d1_return_output;
+     VAR_layer2_node1_MUX_bit_math_h_l173_c3_f4fb_iftrue := VAR_layer1_node3_MUX_bit_math_h_l145_c3_b86e_return_output;
+     -- layer2_node0_MUX[bit_math_h_l162_c3_e8e2] LATENCY=0
      -- Inputs
-     layer2_node0_MUX_bit_math_h_l162_c3_1e6b_cond <= VAR_layer2_node0_MUX_bit_math_h_l162_c3_1e6b_cond;
-     layer2_node0_MUX_bit_math_h_l162_c3_1e6b_iftrue <= VAR_layer2_node0_MUX_bit_math_h_l162_c3_1e6b_iftrue;
-     layer2_node0_MUX_bit_math_h_l162_c3_1e6b_iffalse <= VAR_layer2_node0_MUX_bit_math_h_l162_c3_1e6b_iffalse;
+     layer2_node0_MUX_bit_math_h_l162_c3_e8e2_cond <= VAR_layer2_node0_MUX_bit_math_h_l162_c3_e8e2_cond;
+     layer2_node0_MUX_bit_math_h_l162_c3_e8e2_iftrue <= VAR_layer2_node0_MUX_bit_math_h_l162_c3_e8e2_iftrue;
+     layer2_node0_MUX_bit_math_h_l162_c3_e8e2_iffalse <= VAR_layer2_node0_MUX_bit_math_h_l162_c3_e8e2_iffalse;
      -- Outputs
-     VAR_layer2_node0_MUX_bit_math_h_l162_c3_1e6b_return_output := layer2_node0_MUX_bit_math_h_l162_c3_1e6b_return_output;
+     VAR_layer2_node0_MUX_bit_math_h_l162_c3_e8e2_return_output := layer2_node0_MUX_bit_math_h_l162_c3_e8e2_return_output;
 
-     -- layer2_node1_MUX[bit_math_h_l173_c3_89cf] LATENCY=0
+     -- layer2_node1_MUX[bit_math_h_l173_c3_f4fb] LATENCY=0
      -- Inputs
-     layer2_node1_MUX_bit_math_h_l173_c3_89cf_cond <= VAR_layer2_node1_MUX_bit_math_h_l173_c3_89cf_cond;
-     layer2_node1_MUX_bit_math_h_l173_c3_89cf_iftrue <= VAR_layer2_node1_MUX_bit_math_h_l173_c3_89cf_iftrue;
-     layer2_node1_MUX_bit_math_h_l173_c3_89cf_iffalse <= VAR_layer2_node1_MUX_bit_math_h_l173_c3_89cf_iffalse;
+     layer2_node1_MUX_bit_math_h_l173_c3_f4fb_cond <= VAR_layer2_node1_MUX_bit_math_h_l173_c3_f4fb_cond;
+     layer2_node1_MUX_bit_math_h_l173_c3_f4fb_iftrue <= VAR_layer2_node1_MUX_bit_math_h_l173_c3_f4fb_iftrue;
+     layer2_node1_MUX_bit_math_h_l173_c3_f4fb_iffalse <= VAR_layer2_node1_MUX_bit_math_h_l173_c3_f4fb_iffalse;
      -- Outputs
-     VAR_layer2_node1_MUX_bit_math_h_l173_c3_89cf_return_output := layer2_node1_MUX_bit_math_h_l173_c3_89cf_return_output;
+     VAR_layer2_node1_MUX_bit_math_h_l173_c3_f4fb_return_output := layer2_node1_MUX_bit_math_h_l173_c3_f4fb_return_output;
 
      -- Submodule level 4
-     VAR_layer3_node0_MUX_bit_math_h_l190_c3_e282_iffalse := VAR_layer2_node0_MUX_bit_math_h_l162_c3_1e6b_return_output;
-     VAR_layer3_node0_MUX_bit_math_h_l190_c3_e282_iftrue := VAR_layer2_node1_MUX_bit_math_h_l173_c3_89cf_return_output;
-     -- layer3_node0_MUX[bit_math_h_l190_c3_e282] LATENCY=0
+     VAR_layer3_node0_MUX_bit_math_h_l190_c3_27bc_iffalse := VAR_layer2_node0_MUX_bit_math_h_l162_c3_e8e2_return_output;
+     VAR_layer3_node0_MUX_bit_math_h_l190_c3_27bc_iftrue := VAR_layer2_node1_MUX_bit_math_h_l173_c3_f4fb_return_output;
+     -- layer3_node0_MUX[bit_math_h_l190_c3_27bc] LATENCY=0
      -- Inputs
-     layer3_node0_MUX_bit_math_h_l190_c3_e282_cond <= VAR_layer3_node0_MUX_bit_math_h_l190_c3_e282_cond;
-     layer3_node0_MUX_bit_math_h_l190_c3_e282_iftrue <= VAR_layer3_node0_MUX_bit_math_h_l190_c3_e282_iftrue;
-     layer3_node0_MUX_bit_math_h_l190_c3_e282_iffalse <= VAR_layer3_node0_MUX_bit_math_h_l190_c3_e282_iffalse;
+     layer3_node0_MUX_bit_math_h_l190_c3_27bc_cond <= VAR_layer3_node0_MUX_bit_math_h_l190_c3_27bc_cond;
+     layer3_node0_MUX_bit_math_h_l190_c3_27bc_iftrue <= VAR_layer3_node0_MUX_bit_math_h_l190_c3_27bc_iftrue;
+     layer3_node0_MUX_bit_math_h_l190_c3_27bc_iffalse <= VAR_layer3_node0_MUX_bit_math_h_l190_c3_27bc_iffalse;
      -- Outputs
-     VAR_layer3_node0_MUX_bit_math_h_l190_c3_e282_return_output := layer3_node0_MUX_bit_math_h_l190_c3_e282_return_output;
+     VAR_layer3_node0_MUX_bit_math_h_l190_c3_27bc_return_output := layer3_node0_MUX_bit_math_h_l190_c3_27bc_return_output;
 
      -- Submodule level 5
-     VAR_return_output := VAR_layer3_node0_MUX_bit_math_h_l190_c3_e282_return_output;
+     VAR_return_output := VAR_layer3_node0_MUX_bit_math_h_l190_c3_27bc_return_output;
      -- Last stage of pipeline return wire to return port/reg
      return_output <= VAR_return_output;
    end if;
