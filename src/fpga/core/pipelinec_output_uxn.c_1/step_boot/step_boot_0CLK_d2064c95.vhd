@@ -37,120 +37,120 @@ signal REG_COMB_boot_phase : unsigned(0 downto 0);
 signal REG_COMB_is_finished : unsigned(0 downto 0);
 
 -- Each function instance gets signals
--- BIN_OP_EQ[uxn_c_l31_c6_55d1]
-signal BIN_OP_EQ_uxn_c_l31_c6_55d1_left : unsigned(0 downto 0);
-signal BIN_OP_EQ_uxn_c_l31_c6_55d1_right : unsigned(0 downto 0);
-signal BIN_OP_EQ_uxn_c_l31_c6_55d1_return_output : unsigned(0 downto 0);
+-- BIN_OP_EQ[uxn_c_l31_c6_a9f5]
+signal BIN_OP_EQ_uxn_c_l31_c6_a9f5_left : unsigned(0 downto 0);
+signal BIN_OP_EQ_uxn_c_l31_c6_a9f5_right : unsigned(0 downto 0);
+signal BIN_OP_EQ_uxn_c_l31_c6_a9f5_return_output : unsigned(0 downto 0);
 
--- TRUE_CLOCK_ENABLE_MUX[uxn_c_l31_c1_feb3]
-signal TRUE_CLOCK_ENABLE_MUX_uxn_c_l31_c1_feb3_cond : unsigned(0 downto 0);
-signal TRUE_CLOCK_ENABLE_MUX_uxn_c_l31_c1_feb3_iftrue : unsigned(0 downto 0);
-signal TRUE_CLOCK_ENABLE_MUX_uxn_c_l31_c1_feb3_iffalse : unsigned(0 downto 0);
-signal TRUE_CLOCK_ENABLE_MUX_uxn_c_l31_c1_feb3_return_output : unsigned(0 downto 0);
+-- TRUE_CLOCK_ENABLE_MUX[uxn_c_l31_c1_1062]
+signal TRUE_CLOCK_ENABLE_MUX_uxn_c_l31_c1_1062_cond : unsigned(0 downto 0);
+signal TRUE_CLOCK_ENABLE_MUX_uxn_c_l31_c1_1062_iftrue : unsigned(0 downto 0);
+signal TRUE_CLOCK_ENABLE_MUX_uxn_c_l31_c1_1062_iffalse : unsigned(0 downto 0);
+signal TRUE_CLOCK_ENABLE_MUX_uxn_c_l31_c1_1062_return_output : unsigned(0 downto 0);
 
--- FALSE_CLOCK_ENABLE_MUX[uxn_c_l36_c7_388a]
-signal FALSE_CLOCK_ENABLE_MUX_uxn_c_l36_c7_388a_cond : unsigned(0 downto 0);
-signal FALSE_CLOCK_ENABLE_MUX_uxn_c_l36_c7_388a_iftrue : unsigned(0 downto 0);
-signal FALSE_CLOCK_ENABLE_MUX_uxn_c_l36_c7_388a_iffalse : unsigned(0 downto 0);
-signal FALSE_CLOCK_ENABLE_MUX_uxn_c_l36_c7_388a_return_output : unsigned(0 downto 0);
+-- FALSE_CLOCK_ENABLE_MUX[uxn_c_l36_c7_ba78]
+signal FALSE_CLOCK_ENABLE_MUX_uxn_c_l36_c7_ba78_cond : unsigned(0 downto 0);
+signal FALSE_CLOCK_ENABLE_MUX_uxn_c_l36_c7_ba78_iftrue : unsigned(0 downto 0);
+signal FALSE_CLOCK_ENABLE_MUX_uxn_c_l36_c7_ba78_iffalse : unsigned(0 downto 0);
+signal FALSE_CLOCK_ENABLE_MUX_uxn_c_l36_c7_ba78_return_output : unsigned(0 downto 0);
 
--- rom_address_MUX[uxn_c_l31_c2_45d1]
-signal rom_address_MUX_uxn_c_l31_c2_45d1_cond : unsigned(0 downto 0);
-signal rom_address_MUX_uxn_c_l31_c2_45d1_iftrue : unsigned(15 downto 0);
-signal rom_address_MUX_uxn_c_l31_c2_45d1_iffalse : unsigned(15 downto 0);
-signal rom_address_MUX_uxn_c_l31_c2_45d1_return_output : unsigned(15 downto 0);
+-- rom_byte_MUX[uxn_c_l31_c2_f46b]
+signal rom_byte_MUX_uxn_c_l31_c2_f46b_cond : unsigned(0 downto 0);
+signal rom_byte_MUX_uxn_c_l31_c2_f46b_iftrue : unsigned(7 downto 0);
+signal rom_byte_MUX_uxn_c_l31_c2_f46b_iffalse : unsigned(7 downto 0);
+signal rom_byte_MUX_uxn_c_l31_c2_f46b_return_output : unsigned(7 downto 0);
 
--- is_finished_MUX[uxn_c_l31_c2_45d1]
-signal is_finished_MUX_uxn_c_l31_c2_45d1_cond : unsigned(0 downto 0);
-signal is_finished_MUX_uxn_c_l31_c2_45d1_iftrue : unsigned(0 downto 0);
-signal is_finished_MUX_uxn_c_l31_c2_45d1_iffalse : unsigned(0 downto 0);
-signal is_finished_MUX_uxn_c_l31_c2_45d1_return_output : unsigned(0 downto 0);
+-- rom_address_MUX[uxn_c_l31_c2_f46b]
+signal rom_address_MUX_uxn_c_l31_c2_f46b_cond : unsigned(0 downto 0);
+signal rom_address_MUX_uxn_c_l31_c2_f46b_iftrue : unsigned(15 downto 0);
+signal rom_address_MUX_uxn_c_l31_c2_f46b_iffalse : unsigned(15 downto 0);
+signal rom_address_MUX_uxn_c_l31_c2_f46b_return_output : unsigned(15 downto 0);
 
--- rom_byte_MUX[uxn_c_l31_c2_45d1]
-signal rom_byte_MUX_uxn_c_l31_c2_45d1_cond : unsigned(0 downto 0);
-signal rom_byte_MUX_uxn_c_l31_c2_45d1_iftrue : unsigned(7 downto 0);
-signal rom_byte_MUX_uxn_c_l31_c2_45d1_iffalse : unsigned(7 downto 0);
-signal rom_byte_MUX_uxn_c_l31_c2_45d1_return_output : unsigned(7 downto 0);
+-- ram_address_MUX[uxn_c_l31_c2_f46b]
+signal ram_address_MUX_uxn_c_l31_c2_f46b_cond : unsigned(0 downto 0);
+signal ram_address_MUX_uxn_c_l31_c2_f46b_iftrue : unsigned(15 downto 0);
+signal ram_address_MUX_uxn_c_l31_c2_f46b_iffalse : unsigned(15 downto 0);
+signal ram_address_MUX_uxn_c_l31_c2_f46b_return_output : unsigned(15 downto 0);
 
--- ram_address_MUX[uxn_c_l31_c2_45d1]
-signal ram_address_MUX_uxn_c_l31_c2_45d1_cond : unsigned(0 downto 0);
-signal ram_address_MUX_uxn_c_l31_c2_45d1_iftrue : unsigned(15 downto 0);
-signal ram_address_MUX_uxn_c_l31_c2_45d1_iffalse : unsigned(15 downto 0);
-signal ram_address_MUX_uxn_c_l31_c2_45d1_return_output : unsigned(15 downto 0);
+-- is_finished_MUX[uxn_c_l31_c2_f46b]
+signal is_finished_MUX_uxn_c_l31_c2_f46b_cond : unsigned(0 downto 0);
+signal is_finished_MUX_uxn_c_l31_c2_f46b_iftrue : unsigned(0 downto 0);
+signal is_finished_MUX_uxn_c_l31_c2_f46b_iffalse : unsigned(0 downto 0);
+signal is_finished_MUX_uxn_c_l31_c2_f46b_return_output : unsigned(0 downto 0);
 
--- read_rom_byte[uxn_c_l32_c14_7105]
-signal read_rom_byte_uxn_c_l32_c14_7105_CLOCK_ENABLE : unsigned(0 downto 0);
-signal read_rom_byte_uxn_c_l32_c14_7105_read_address : unsigned(15 downto 0);
-signal read_rom_byte_uxn_c_l32_c14_7105_return_output : unsigned(7 downto 0);
+-- read_rom_byte[uxn_c_l32_c14_344e]
+signal read_rom_byte_uxn_c_l32_c14_344e_CLOCK_ENABLE : unsigned(0 downto 0);
+signal read_rom_byte_uxn_c_l32_c14_344e_read_address : unsigned(15 downto 0);
+signal read_rom_byte_uxn_c_l32_c14_344e_return_output : unsigned(7 downto 0);
 
--- printf_uxn_c_l33_c3_d58b[uxn_c_l33_c3_d58b]
-signal printf_uxn_c_l33_c3_d58b_uxn_c_l33_c3_d58b_CLOCK_ENABLE : unsigned(0 downto 0);
-signal printf_uxn_c_l33_c3_d58b_uxn_c_l33_c3_d58b_arg0 : unsigned(31 downto 0);
+-- printf_uxn_c_l33_c3_4383[uxn_c_l33_c3_4383]
+signal printf_uxn_c_l33_c3_4383_uxn_c_l33_c3_4383_CLOCK_ENABLE : unsigned(0 downto 0);
+signal printf_uxn_c_l33_c3_4383_uxn_c_l33_c3_4383_arg0 : unsigned(31 downto 0);
 
--- BIN_OP_EQ[uxn_c_l36_c11_204d]
-signal BIN_OP_EQ_uxn_c_l36_c11_204d_left : unsigned(0 downto 0);
-signal BIN_OP_EQ_uxn_c_l36_c11_204d_right : unsigned(0 downto 0);
-signal BIN_OP_EQ_uxn_c_l36_c11_204d_return_output : unsigned(0 downto 0);
+-- BIN_OP_EQ[uxn_c_l36_c11_50c1]
+signal BIN_OP_EQ_uxn_c_l36_c11_50c1_left : unsigned(0 downto 0);
+signal BIN_OP_EQ_uxn_c_l36_c11_50c1_right : unsigned(0 downto 0);
+signal BIN_OP_EQ_uxn_c_l36_c11_50c1_return_output : unsigned(0 downto 0);
 
--- TRUE_CLOCK_ENABLE_MUX[uxn_c_l36_c1_8541]
-signal TRUE_CLOCK_ENABLE_MUX_uxn_c_l36_c1_8541_cond : unsigned(0 downto 0);
-signal TRUE_CLOCK_ENABLE_MUX_uxn_c_l36_c1_8541_iftrue : unsigned(0 downto 0);
-signal TRUE_CLOCK_ENABLE_MUX_uxn_c_l36_c1_8541_iffalse : unsigned(0 downto 0);
-signal TRUE_CLOCK_ENABLE_MUX_uxn_c_l36_c1_8541_return_output : unsigned(0 downto 0);
+-- TRUE_CLOCK_ENABLE_MUX[uxn_c_l36_c1_eca1]
+signal TRUE_CLOCK_ENABLE_MUX_uxn_c_l36_c1_eca1_cond : unsigned(0 downto 0);
+signal TRUE_CLOCK_ENABLE_MUX_uxn_c_l36_c1_eca1_iftrue : unsigned(0 downto 0);
+signal TRUE_CLOCK_ENABLE_MUX_uxn_c_l36_c1_eca1_iffalse : unsigned(0 downto 0);
+signal TRUE_CLOCK_ENABLE_MUX_uxn_c_l36_c1_eca1_return_output : unsigned(0 downto 0);
 
--- rom_address_MUX[uxn_c_l36_c7_388a]
-signal rom_address_MUX_uxn_c_l36_c7_388a_cond : unsigned(0 downto 0);
-signal rom_address_MUX_uxn_c_l36_c7_388a_iftrue : unsigned(15 downto 0);
-signal rom_address_MUX_uxn_c_l36_c7_388a_iffalse : unsigned(15 downto 0);
-signal rom_address_MUX_uxn_c_l36_c7_388a_return_output : unsigned(15 downto 0);
+-- rom_byte_MUX[uxn_c_l36_c7_ba78]
+signal rom_byte_MUX_uxn_c_l36_c7_ba78_cond : unsigned(0 downto 0);
+signal rom_byte_MUX_uxn_c_l36_c7_ba78_iftrue : unsigned(7 downto 0);
+signal rom_byte_MUX_uxn_c_l36_c7_ba78_iffalse : unsigned(7 downto 0);
+signal rom_byte_MUX_uxn_c_l36_c7_ba78_return_output : unsigned(7 downto 0);
 
--- is_finished_MUX[uxn_c_l36_c7_388a]
-signal is_finished_MUX_uxn_c_l36_c7_388a_cond : unsigned(0 downto 0);
-signal is_finished_MUX_uxn_c_l36_c7_388a_iftrue : unsigned(0 downto 0);
-signal is_finished_MUX_uxn_c_l36_c7_388a_iffalse : unsigned(0 downto 0);
-signal is_finished_MUX_uxn_c_l36_c7_388a_return_output : unsigned(0 downto 0);
+-- rom_address_MUX[uxn_c_l36_c7_ba78]
+signal rom_address_MUX_uxn_c_l36_c7_ba78_cond : unsigned(0 downto 0);
+signal rom_address_MUX_uxn_c_l36_c7_ba78_iftrue : unsigned(15 downto 0);
+signal rom_address_MUX_uxn_c_l36_c7_ba78_iffalse : unsigned(15 downto 0);
+signal rom_address_MUX_uxn_c_l36_c7_ba78_return_output : unsigned(15 downto 0);
 
--- rom_byte_MUX[uxn_c_l36_c7_388a]
-signal rom_byte_MUX_uxn_c_l36_c7_388a_cond : unsigned(0 downto 0);
-signal rom_byte_MUX_uxn_c_l36_c7_388a_iftrue : unsigned(7 downto 0);
-signal rom_byte_MUX_uxn_c_l36_c7_388a_iffalse : unsigned(7 downto 0);
-signal rom_byte_MUX_uxn_c_l36_c7_388a_return_output : unsigned(7 downto 0);
+-- ram_address_MUX[uxn_c_l36_c7_ba78]
+signal ram_address_MUX_uxn_c_l36_c7_ba78_cond : unsigned(0 downto 0);
+signal ram_address_MUX_uxn_c_l36_c7_ba78_iftrue : unsigned(15 downto 0);
+signal ram_address_MUX_uxn_c_l36_c7_ba78_iffalse : unsigned(15 downto 0);
+signal ram_address_MUX_uxn_c_l36_c7_ba78_return_output : unsigned(15 downto 0);
 
--- ram_address_MUX[uxn_c_l36_c7_388a]
-signal ram_address_MUX_uxn_c_l36_c7_388a_cond : unsigned(0 downto 0);
-signal ram_address_MUX_uxn_c_l36_c7_388a_iftrue : unsigned(15 downto 0);
-signal ram_address_MUX_uxn_c_l36_c7_388a_iffalse : unsigned(15 downto 0);
-signal ram_address_MUX_uxn_c_l36_c7_388a_return_output : unsigned(15 downto 0);
+-- is_finished_MUX[uxn_c_l36_c7_ba78]
+signal is_finished_MUX_uxn_c_l36_c7_ba78_cond : unsigned(0 downto 0);
+signal is_finished_MUX_uxn_c_l36_c7_ba78_iftrue : unsigned(0 downto 0);
+signal is_finished_MUX_uxn_c_l36_c7_ba78_iffalse : unsigned(0 downto 0);
+signal is_finished_MUX_uxn_c_l36_c7_ba78_return_output : unsigned(0 downto 0);
 
--- read_rom_byte[uxn_c_l37_c14_dcd2]
-signal read_rom_byte_uxn_c_l37_c14_dcd2_CLOCK_ENABLE : unsigned(0 downto 0);
-signal read_rom_byte_uxn_c_l37_c14_dcd2_read_address : unsigned(15 downto 0);
-signal read_rom_byte_uxn_c_l37_c14_dcd2_return_output : unsigned(7 downto 0);
+-- read_rom_byte[uxn_c_l37_c14_2d37]
+signal read_rom_byte_uxn_c_l37_c14_2d37_CLOCK_ENABLE : unsigned(0 downto 0);
+signal read_rom_byte_uxn_c_l37_c14_2d37_read_address : unsigned(15 downto 0);
+signal read_rom_byte_uxn_c_l37_c14_2d37_return_output : unsigned(7 downto 0);
 
--- printf_uxn_c_l38_c3_8c28[uxn_c_l38_c3_8c28]
-signal printf_uxn_c_l38_c3_8c28_uxn_c_l38_c3_8c28_CLOCK_ENABLE : unsigned(0 downto 0);
-signal printf_uxn_c_l38_c3_8c28_uxn_c_l38_c3_8c28_arg0 : unsigned(31 downto 0);
-signal printf_uxn_c_l38_c3_8c28_uxn_c_l38_c3_8c28_arg1 : unsigned(31 downto 0);
+-- printf_uxn_c_l38_c3_a323[uxn_c_l38_c3_a323]
+signal printf_uxn_c_l38_c3_a323_uxn_c_l38_c3_a323_CLOCK_ENABLE : unsigned(0 downto 0);
+signal printf_uxn_c_l38_c3_a323_uxn_c_l38_c3_a323_arg0 : unsigned(31 downto 0);
+signal printf_uxn_c_l38_c3_a323_uxn_c_l38_c3_a323_arg1 : unsigned(31 downto 0);
 
--- BIN_OP_PLUS[uxn_c_l39_c3_ee27]
-signal BIN_OP_PLUS_uxn_c_l39_c3_ee27_left : unsigned(15 downto 0);
-signal BIN_OP_PLUS_uxn_c_l39_c3_ee27_right : unsigned(0 downto 0);
-signal BIN_OP_PLUS_uxn_c_l39_c3_ee27_return_output : unsigned(16 downto 0);
+-- BIN_OP_PLUS[uxn_c_l39_c3_0a6c]
+signal BIN_OP_PLUS_uxn_c_l39_c3_0a6c_left : unsigned(15 downto 0);
+signal BIN_OP_PLUS_uxn_c_l39_c3_0a6c_right : unsigned(0 downto 0);
+signal BIN_OP_PLUS_uxn_c_l39_c3_0a6c_return_output : unsigned(16 downto 0);
 
--- BIN_OP_PLUS[uxn_c_l40_c3_b63c]
-signal BIN_OP_PLUS_uxn_c_l40_c3_b63c_left : unsigned(15 downto 0);
-signal BIN_OP_PLUS_uxn_c_l40_c3_b63c_right : unsigned(0 downto 0);
-signal BIN_OP_PLUS_uxn_c_l40_c3_b63c_return_output : unsigned(16 downto 0);
+-- BIN_OP_PLUS[uxn_c_l40_c3_b251]
+signal BIN_OP_PLUS_uxn_c_l40_c3_b251_left : unsigned(15 downto 0);
+signal BIN_OP_PLUS_uxn_c_l40_c3_b251_right : unsigned(0 downto 0);
+signal BIN_OP_PLUS_uxn_c_l40_c3_b251_return_output : unsigned(16 downto 0);
 
--- BIN_OP_GT[uxn_c_l41_c17_95c6]
-signal BIN_OP_GT_uxn_c_l41_c17_95c6_left : unsigned(15 downto 0);
-signal BIN_OP_GT_uxn_c_l41_c17_95c6_right : unsigned(8 downto 0);
-signal BIN_OP_GT_uxn_c_l41_c17_95c6_return_output : unsigned(0 downto 0);
+-- BIN_OP_GT[uxn_c_l41_c17_ab57]
+signal BIN_OP_GT_uxn_c_l41_c17_ab57_left : unsigned(15 downto 0);
+signal BIN_OP_GT_uxn_c_l41_c17_ab57_right : unsigned(8 downto 0);
+signal BIN_OP_GT_uxn_c_l41_c17_ab57_return_output : unsigned(0 downto 0);
 
--- BIN_OP_PLUS[uxn_c_l45_c2_4371]
-signal BIN_OP_PLUS_uxn_c_l45_c2_4371_left : unsigned(0 downto 0);
-signal BIN_OP_PLUS_uxn_c_l45_c2_4371_right : unsigned(0 downto 0);
-signal BIN_OP_PLUS_uxn_c_l45_c2_4371_return_output : unsigned(1 downto 0);
+-- BIN_OP_PLUS[uxn_c_l45_c2_5154]
+signal BIN_OP_PLUS_uxn_c_l45_c2_5154_left : unsigned(0 downto 0);
+signal BIN_OP_PLUS_uxn_c_l45_c2_5154_right : unsigned(0 downto 0);
+signal BIN_OP_PLUS_uxn_c_l45_c2_5154_return_output : unsigned(1 downto 0);
 
 function CONST_REF_RD_boot_step_result_t_boot_step_result_t_4ece( ref_toks_0 : unsigned;
  ref_toks_1 : unsigned;
@@ -173,143 +173,143 @@ end function;
 begin
 
 -- SUBMODULE INSTANCES 
--- BIN_OP_EQ_uxn_c_l31_c6_55d1
-BIN_OP_EQ_uxn_c_l31_c6_55d1 : entity work.BIN_OP_EQ_uint1_t_uint1_t_0CLK_de264c78 port map (
-BIN_OP_EQ_uxn_c_l31_c6_55d1_left,
-BIN_OP_EQ_uxn_c_l31_c6_55d1_right,
-BIN_OP_EQ_uxn_c_l31_c6_55d1_return_output);
+-- BIN_OP_EQ_uxn_c_l31_c6_a9f5
+BIN_OP_EQ_uxn_c_l31_c6_a9f5 : entity work.BIN_OP_EQ_uint1_t_uint1_t_0CLK_de264c78 port map (
+BIN_OP_EQ_uxn_c_l31_c6_a9f5_left,
+BIN_OP_EQ_uxn_c_l31_c6_a9f5_right,
+BIN_OP_EQ_uxn_c_l31_c6_a9f5_return_output);
 
--- TRUE_CLOCK_ENABLE_MUX_uxn_c_l31_c1_feb3
-TRUE_CLOCK_ENABLE_MUX_uxn_c_l31_c1_feb3 : entity work.MUX_uint1_t_uint1_t_uint1_t_0CLK_de264c78 port map (
-TRUE_CLOCK_ENABLE_MUX_uxn_c_l31_c1_feb3_cond,
-TRUE_CLOCK_ENABLE_MUX_uxn_c_l31_c1_feb3_iftrue,
-TRUE_CLOCK_ENABLE_MUX_uxn_c_l31_c1_feb3_iffalse,
-TRUE_CLOCK_ENABLE_MUX_uxn_c_l31_c1_feb3_return_output);
+-- TRUE_CLOCK_ENABLE_MUX_uxn_c_l31_c1_1062
+TRUE_CLOCK_ENABLE_MUX_uxn_c_l31_c1_1062 : entity work.MUX_uint1_t_uint1_t_uint1_t_0CLK_de264c78 port map (
+TRUE_CLOCK_ENABLE_MUX_uxn_c_l31_c1_1062_cond,
+TRUE_CLOCK_ENABLE_MUX_uxn_c_l31_c1_1062_iftrue,
+TRUE_CLOCK_ENABLE_MUX_uxn_c_l31_c1_1062_iffalse,
+TRUE_CLOCK_ENABLE_MUX_uxn_c_l31_c1_1062_return_output);
 
--- FALSE_CLOCK_ENABLE_MUX_uxn_c_l36_c7_388a
-FALSE_CLOCK_ENABLE_MUX_uxn_c_l36_c7_388a : entity work.MUX_uint1_t_uint1_t_uint1_t_0CLK_de264c78 port map (
-FALSE_CLOCK_ENABLE_MUX_uxn_c_l36_c7_388a_cond,
-FALSE_CLOCK_ENABLE_MUX_uxn_c_l36_c7_388a_iftrue,
-FALSE_CLOCK_ENABLE_MUX_uxn_c_l36_c7_388a_iffalse,
-FALSE_CLOCK_ENABLE_MUX_uxn_c_l36_c7_388a_return_output);
+-- FALSE_CLOCK_ENABLE_MUX_uxn_c_l36_c7_ba78
+FALSE_CLOCK_ENABLE_MUX_uxn_c_l36_c7_ba78 : entity work.MUX_uint1_t_uint1_t_uint1_t_0CLK_de264c78 port map (
+FALSE_CLOCK_ENABLE_MUX_uxn_c_l36_c7_ba78_cond,
+FALSE_CLOCK_ENABLE_MUX_uxn_c_l36_c7_ba78_iftrue,
+FALSE_CLOCK_ENABLE_MUX_uxn_c_l36_c7_ba78_iffalse,
+FALSE_CLOCK_ENABLE_MUX_uxn_c_l36_c7_ba78_return_output);
 
--- rom_address_MUX_uxn_c_l31_c2_45d1
-rom_address_MUX_uxn_c_l31_c2_45d1 : entity work.MUX_uint1_t_uint16_t_uint16_t_0CLK_de264c78 port map (
-rom_address_MUX_uxn_c_l31_c2_45d1_cond,
-rom_address_MUX_uxn_c_l31_c2_45d1_iftrue,
-rom_address_MUX_uxn_c_l31_c2_45d1_iffalse,
-rom_address_MUX_uxn_c_l31_c2_45d1_return_output);
+-- rom_byte_MUX_uxn_c_l31_c2_f46b
+rom_byte_MUX_uxn_c_l31_c2_f46b : entity work.MUX_uint1_t_uint8_t_uint8_t_0CLK_de264c78 port map (
+rom_byte_MUX_uxn_c_l31_c2_f46b_cond,
+rom_byte_MUX_uxn_c_l31_c2_f46b_iftrue,
+rom_byte_MUX_uxn_c_l31_c2_f46b_iffalse,
+rom_byte_MUX_uxn_c_l31_c2_f46b_return_output);
 
--- is_finished_MUX_uxn_c_l31_c2_45d1
-is_finished_MUX_uxn_c_l31_c2_45d1 : entity work.MUX_uint1_t_uint1_t_uint1_t_0CLK_de264c78 port map (
-is_finished_MUX_uxn_c_l31_c2_45d1_cond,
-is_finished_MUX_uxn_c_l31_c2_45d1_iftrue,
-is_finished_MUX_uxn_c_l31_c2_45d1_iffalse,
-is_finished_MUX_uxn_c_l31_c2_45d1_return_output);
+-- rom_address_MUX_uxn_c_l31_c2_f46b
+rom_address_MUX_uxn_c_l31_c2_f46b : entity work.MUX_uint1_t_uint16_t_uint16_t_0CLK_de264c78 port map (
+rom_address_MUX_uxn_c_l31_c2_f46b_cond,
+rom_address_MUX_uxn_c_l31_c2_f46b_iftrue,
+rom_address_MUX_uxn_c_l31_c2_f46b_iffalse,
+rom_address_MUX_uxn_c_l31_c2_f46b_return_output);
 
--- rom_byte_MUX_uxn_c_l31_c2_45d1
-rom_byte_MUX_uxn_c_l31_c2_45d1 : entity work.MUX_uint1_t_uint8_t_uint8_t_0CLK_de264c78 port map (
-rom_byte_MUX_uxn_c_l31_c2_45d1_cond,
-rom_byte_MUX_uxn_c_l31_c2_45d1_iftrue,
-rom_byte_MUX_uxn_c_l31_c2_45d1_iffalse,
-rom_byte_MUX_uxn_c_l31_c2_45d1_return_output);
+-- ram_address_MUX_uxn_c_l31_c2_f46b
+ram_address_MUX_uxn_c_l31_c2_f46b : entity work.MUX_uint1_t_uint16_t_uint16_t_0CLK_de264c78 port map (
+ram_address_MUX_uxn_c_l31_c2_f46b_cond,
+ram_address_MUX_uxn_c_l31_c2_f46b_iftrue,
+ram_address_MUX_uxn_c_l31_c2_f46b_iffalse,
+ram_address_MUX_uxn_c_l31_c2_f46b_return_output);
 
--- ram_address_MUX_uxn_c_l31_c2_45d1
-ram_address_MUX_uxn_c_l31_c2_45d1 : entity work.MUX_uint1_t_uint16_t_uint16_t_0CLK_de264c78 port map (
-ram_address_MUX_uxn_c_l31_c2_45d1_cond,
-ram_address_MUX_uxn_c_l31_c2_45d1_iftrue,
-ram_address_MUX_uxn_c_l31_c2_45d1_iffalse,
-ram_address_MUX_uxn_c_l31_c2_45d1_return_output);
+-- is_finished_MUX_uxn_c_l31_c2_f46b
+is_finished_MUX_uxn_c_l31_c2_f46b : entity work.MUX_uint1_t_uint1_t_uint1_t_0CLK_de264c78 port map (
+is_finished_MUX_uxn_c_l31_c2_f46b_cond,
+is_finished_MUX_uxn_c_l31_c2_f46b_iftrue,
+is_finished_MUX_uxn_c_l31_c2_f46b_iffalse,
+is_finished_MUX_uxn_c_l31_c2_f46b_return_output);
 
--- read_rom_byte_uxn_c_l32_c14_7105
-read_rom_byte_uxn_c_l32_c14_7105 : entity work.read_rom_byte_0CLK_380ecc95 port map (
+-- read_rom_byte_uxn_c_l32_c14_344e
+read_rom_byte_uxn_c_l32_c14_344e : entity work.read_rom_byte_0CLK_380ecc95 port map (
 clk,
-read_rom_byte_uxn_c_l32_c14_7105_CLOCK_ENABLE,
-read_rom_byte_uxn_c_l32_c14_7105_read_address,
-read_rom_byte_uxn_c_l32_c14_7105_return_output);
+read_rom_byte_uxn_c_l32_c14_344e_CLOCK_ENABLE,
+read_rom_byte_uxn_c_l32_c14_344e_read_address,
+read_rom_byte_uxn_c_l32_c14_344e_return_output);
 
--- printf_uxn_c_l33_c3_d58b_uxn_c_l33_c3_d58b
-printf_uxn_c_l33_c3_d58b_uxn_c_l33_c3_d58b : entity work.printf_uxn_c_l33_c3_d58b_0CLK_de264c78 port map (
-printf_uxn_c_l33_c3_d58b_uxn_c_l33_c3_d58b_CLOCK_ENABLE,
-printf_uxn_c_l33_c3_d58b_uxn_c_l33_c3_d58b_arg0);
+-- printf_uxn_c_l33_c3_4383_uxn_c_l33_c3_4383
+printf_uxn_c_l33_c3_4383_uxn_c_l33_c3_4383 : entity work.printf_uxn_c_l33_c3_4383_0CLK_de264c78 port map (
+printf_uxn_c_l33_c3_4383_uxn_c_l33_c3_4383_CLOCK_ENABLE,
+printf_uxn_c_l33_c3_4383_uxn_c_l33_c3_4383_arg0);
 
--- BIN_OP_EQ_uxn_c_l36_c11_204d
-BIN_OP_EQ_uxn_c_l36_c11_204d : entity work.BIN_OP_EQ_uint1_t_uint1_t_0CLK_de264c78 port map (
-BIN_OP_EQ_uxn_c_l36_c11_204d_left,
-BIN_OP_EQ_uxn_c_l36_c11_204d_right,
-BIN_OP_EQ_uxn_c_l36_c11_204d_return_output);
+-- BIN_OP_EQ_uxn_c_l36_c11_50c1
+BIN_OP_EQ_uxn_c_l36_c11_50c1 : entity work.BIN_OP_EQ_uint1_t_uint1_t_0CLK_de264c78 port map (
+BIN_OP_EQ_uxn_c_l36_c11_50c1_left,
+BIN_OP_EQ_uxn_c_l36_c11_50c1_right,
+BIN_OP_EQ_uxn_c_l36_c11_50c1_return_output);
 
--- TRUE_CLOCK_ENABLE_MUX_uxn_c_l36_c1_8541
-TRUE_CLOCK_ENABLE_MUX_uxn_c_l36_c1_8541 : entity work.MUX_uint1_t_uint1_t_uint1_t_0CLK_de264c78 port map (
-TRUE_CLOCK_ENABLE_MUX_uxn_c_l36_c1_8541_cond,
-TRUE_CLOCK_ENABLE_MUX_uxn_c_l36_c1_8541_iftrue,
-TRUE_CLOCK_ENABLE_MUX_uxn_c_l36_c1_8541_iffalse,
-TRUE_CLOCK_ENABLE_MUX_uxn_c_l36_c1_8541_return_output);
+-- TRUE_CLOCK_ENABLE_MUX_uxn_c_l36_c1_eca1
+TRUE_CLOCK_ENABLE_MUX_uxn_c_l36_c1_eca1 : entity work.MUX_uint1_t_uint1_t_uint1_t_0CLK_de264c78 port map (
+TRUE_CLOCK_ENABLE_MUX_uxn_c_l36_c1_eca1_cond,
+TRUE_CLOCK_ENABLE_MUX_uxn_c_l36_c1_eca1_iftrue,
+TRUE_CLOCK_ENABLE_MUX_uxn_c_l36_c1_eca1_iffalse,
+TRUE_CLOCK_ENABLE_MUX_uxn_c_l36_c1_eca1_return_output);
 
--- rom_address_MUX_uxn_c_l36_c7_388a
-rom_address_MUX_uxn_c_l36_c7_388a : entity work.MUX_uint1_t_uint16_t_uint16_t_0CLK_de264c78 port map (
-rom_address_MUX_uxn_c_l36_c7_388a_cond,
-rom_address_MUX_uxn_c_l36_c7_388a_iftrue,
-rom_address_MUX_uxn_c_l36_c7_388a_iffalse,
-rom_address_MUX_uxn_c_l36_c7_388a_return_output);
+-- rom_byte_MUX_uxn_c_l36_c7_ba78
+rom_byte_MUX_uxn_c_l36_c7_ba78 : entity work.MUX_uint1_t_uint8_t_uint8_t_0CLK_de264c78 port map (
+rom_byte_MUX_uxn_c_l36_c7_ba78_cond,
+rom_byte_MUX_uxn_c_l36_c7_ba78_iftrue,
+rom_byte_MUX_uxn_c_l36_c7_ba78_iffalse,
+rom_byte_MUX_uxn_c_l36_c7_ba78_return_output);
 
--- is_finished_MUX_uxn_c_l36_c7_388a
-is_finished_MUX_uxn_c_l36_c7_388a : entity work.MUX_uint1_t_uint1_t_uint1_t_0CLK_de264c78 port map (
-is_finished_MUX_uxn_c_l36_c7_388a_cond,
-is_finished_MUX_uxn_c_l36_c7_388a_iftrue,
-is_finished_MUX_uxn_c_l36_c7_388a_iffalse,
-is_finished_MUX_uxn_c_l36_c7_388a_return_output);
+-- rom_address_MUX_uxn_c_l36_c7_ba78
+rom_address_MUX_uxn_c_l36_c7_ba78 : entity work.MUX_uint1_t_uint16_t_uint16_t_0CLK_de264c78 port map (
+rom_address_MUX_uxn_c_l36_c7_ba78_cond,
+rom_address_MUX_uxn_c_l36_c7_ba78_iftrue,
+rom_address_MUX_uxn_c_l36_c7_ba78_iffalse,
+rom_address_MUX_uxn_c_l36_c7_ba78_return_output);
 
--- rom_byte_MUX_uxn_c_l36_c7_388a
-rom_byte_MUX_uxn_c_l36_c7_388a : entity work.MUX_uint1_t_uint8_t_uint8_t_0CLK_de264c78 port map (
-rom_byte_MUX_uxn_c_l36_c7_388a_cond,
-rom_byte_MUX_uxn_c_l36_c7_388a_iftrue,
-rom_byte_MUX_uxn_c_l36_c7_388a_iffalse,
-rom_byte_MUX_uxn_c_l36_c7_388a_return_output);
+-- ram_address_MUX_uxn_c_l36_c7_ba78
+ram_address_MUX_uxn_c_l36_c7_ba78 : entity work.MUX_uint1_t_uint16_t_uint16_t_0CLK_de264c78 port map (
+ram_address_MUX_uxn_c_l36_c7_ba78_cond,
+ram_address_MUX_uxn_c_l36_c7_ba78_iftrue,
+ram_address_MUX_uxn_c_l36_c7_ba78_iffalse,
+ram_address_MUX_uxn_c_l36_c7_ba78_return_output);
 
--- ram_address_MUX_uxn_c_l36_c7_388a
-ram_address_MUX_uxn_c_l36_c7_388a : entity work.MUX_uint1_t_uint16_t_uint16_t_0CLK_de264c78 port map (
-ram_address_MUX_uxn_c_l36_c7_388a_cond,
-ram_address_MUX_uxn_c_l36_c7_388a_iftrue,
-ram_address_MUX_uxn_c_l36_c7_388a_iffalse,
-ram_address_MUX_uxn_c_l36_c7_388a_return_output);
+-- is_finished_MUX_uxn_c_l36_c7_ba78
+is_finished_MUX_uxn_c_l36_c7_ba78 : entity work.MUX_uint1_t_uint1_t_uint1_t_0CLK_de264c78 port map (
+is_finished_MUX_uxn_c_l36_c7_ba78_cond,
+is_finished_MUX_uxn_c_l36_c7_ba78_iftrue,
+is_finished_MUX_uxn_c_l36_c7_ba78_iffalse,
+is_finished_MUX_uxn_c_l36_c7_ba78_return_output);
 
--- read_rom_byte_uxn_c_l37_c14_dcd2
-read_rom_byte_uxn_c_l37_c14_dcd2 : entity work.read_rom_byte_0CLK_380ecc95 port map (
+-- read_rom_byte_uxn_c_l37_c14_2d37
+read_rom_byte_uxn_c_l37_c14_2d37 : entity work.read_rom_byte_0CLK_380ecc95 port map (
 clk,
-read_rom_byte_uxn_c_l37_c14_dcd2_CLOCK_ENABLE,
-read_rom_byte_uxn_c_l37_c14_dcd2_read_address,
-read_rom_byte_uxn_c_l37_c14_dcd2_return_output);
+read_rom_byte_uxn_c_l37_c14_2d37_CLOCK_ENABLE,
+read_rom_byte_uxn_c_l37_c14_2d37_read_address,
+read_rom_byte_uxn_c_l37_c14_2d37_return_output);
 
--- printf_uxn_c_l38_c3_8c28_uxn_c_l38_c3_8c28
-printf_uxn_c_l38_c3_8c28_uxn_c_l38_c3_8c28 : entity work.printf_uxn_c_l38_c3_8c28_0CLK_de264c78 port map (
-printf_uxn_c_l38_c3_8c28_uxn_c_l38_c3_8c28_CLOCK_ENABLE,
-printf_uxn_c_l38_c3_8c28_uxn_c_l38_c3_8c28_arg0,
-printf_uxn_c_l38_c3_8c28_uxn_c_l38_c3_8c28_arg1);
+-- printf_uxn_c_l38_c3_a323_uxn_c_l38_c3_a323
+printf_uxn_c_l38_c3_a323_uxn_c_l38_c3_a323 : entity work.printf_uxn_c_l38_c3_a323_0CLK_de264c78 port map (
+printf_uxn_c_l38_c3_a323_uxn_c_l38_c3_a323_CLOCK_ENABLE,
+printf_uxn_c_l38_c3_a323_uxn_c_l38_c3_a323_arg0,
+printf_uxn_c_l38_c3_a323_uxn_c_l38_c3_a323_arg1);
 
--- BIN_OP_PLUS_uxn_c_l39_c3_ee27
-BIN_OP_PLUS_uxn_c_l39_c3_ee27 : entity work.BIN_OP_PLUS_uint16_t_uint1_t_0CLK_de264c78 port map (
-BIN_OP_PLUS_uxn_c_l39_c3_ee27_left,
-BIN_OP_PLUS_uxn_c_l39_c3_ee27_right,
-BIN_OP_PLUS_uxn_c_l39_c3_ee27_return_output);
+-- BIN_OP_PLUS_uxn_c_l39_c3_0a6c
+BIN_OP_PLUS_uxn_c_l39_c3_0a6c : entity work.BIN_OP_PLUS_uint16_t_uint1_t_0CLK_de264c78 port map (
+BIN_OP_PLUS_uxn_c_l39_c3_0a6c_left,
+BIN_OP_PLUS_uxn_c_l39_c3_0a6c_right,
+BIN_OP_PLUS_uxn_c_l39_c3_0a6c_return_output);
 
--- BIN_OP_PLUS_uxn_c_l40_c3_b63c
-BIN_OP_PLUS_uxn_c_l40_c3_b63c : entity work.BIN_OP_PLUS_uint16_t_uint1_t_0CLK_de264c78 port map (
-BIN_OP_PLUS_uxn_c_l40_c3_b63c_left,
-BIN_OP_PLUS_uxn_c_l40_c3_b63c_right,
-BIN_OP_PLUS_uxn_c_l40_c3_b63c_return_output);
+-- BIN_OP_PLUS_uxn_c_l40_c3_b251
+BIN_OP_PLUS_uxn_c_l40_c3_b251 : entity work.BIN_OP_PLUS_uint16_t_uint1_t_0CLK_de264c78 port map (
+BIN_OP_PLUS_uxn_c_l40_c3_b251_left,
+BIN_OP_PLUS_uxn_c_l40_c3_b251_right,
+BIN_OP_PLUS_uxn_c_l40_c3_b251_return_output);
 
--- BIN_OP_GT_uxn_c_l41_c17_95c6
-BIN_OP_GT_uxn_c_l41_c17_95c6 : entity work.BIN_OP_GT_uint16_t_uint9_t_0CLK_de264c78 port map (
-BIN_OP_GT_uxn_c_l41_c17_95c6_left,
-BIN_OP_GT_uxn_c_l41_c17_95c6_right,
-BIN_OP_GT_uxn_c_l41_c17_95c6_return_output);
+-- BIN_OP_GT_uxn_c_l41_c17_ab57
+BIN_OP_GT_uxn_c_l41_c17_ab57 : entity work.BIN_OP_GT_uint16_t_uint9_t_0CLK_de264c78 port map (
+BIN_OP_GT_uxn_c_l41_c17_ab57_left,
+BIN_OP_GT_uxn_c_l41_c17_ab57_right,
+BIN_OP_GT_uxn_c_l41_c17_ab57_return_output);
 
--- BIN_OP_PLUS_uxn_c_l45_c2_4371
-BIN_OP_PLUS_uxn_c_l45_c2_4371 : entity work.BIN_OP_PLUS_uint1_t_uint1_t_0CLK_de264c78 port map (
-BIN_OP_PLUS_uxn_c_l45_c2_4371_left,
-BIN_OP_PLUS_uxn_c_l45_c2_4371_right,
-BIN_OP_PLUS_uxn_c_l45_c2_4371_return_output);
+-- BIN_OP_PLUS_uxn_c_l45_c2_5154
+BIN_OP_PLUS_uxn_c_l45_c2_5154 : entity work.BIN_OP_PLUS_uint1_t_uint1_t_0CLK_de264c78 port map (
+BIN_OP_PLUS_uxn_c_l45_c2_5154_left,
+BIN_OP_PLUS_uxn_c_l45_c2_5154_right,
+BIN_OP_PLUS_uxn_c_l45_c2_5154_return_output);
 
 
 
@@ -323,108 +323,108 @@ process (
  boot_phase,
  is_finished,
  -- All submodule outputs
- BIN_OP_EQ_uxn_c_l31_c6_55d1_return_output,
- TRUE_CLOCK_ENABLE_MUX_uxn_c_l31_c1_feb3_return_output,
- FALSE_CLOCK_ENABLE_MUX_uxn_c_l36_c7_388a_return_output,
- rom_address_MUX_uxn_c_l31_c2_45d1_return_output,
- is_finished_MUX_uxn_c_l31_c2_45d1_return_output,
- rom_byte_MUX_uxn_c_l31_c2_45d1_return_output,
- ram_address_MUX_uxn_c_l31_c2_45d1_return_output,
- read_rom_byte_uxn_c_l32_c14_7105_return_output,
- BIN_OP_EQ_uxn_c_l36_c11_204d_return_output,
- TRUE_CLOCK_ENABLE_MUX_uxn_c_l36_c1_8541_return_output,
- rom_address_MUX_uxn_c_l36_c7_388a_return_output,
- is_finished_MUX_uxn_c_l36_c7_388a_return_output,
- rom_byte_MUX_uxn_c_l36_c7_388a_return_output,
- ram_address_MUX_uxn_c_l36_c7_388a_return_output,
- read_rom_byte_uxn_c_l37_c14_dcd2_return_output,
- BIN_OP_PLUS_uxn_c_l39_c3_ee27_return_output,
- BIN_OP_PLUS_uxn_c_l40_c3_b63c_return_output,
- BIN_OP_GT_uxn_c_l41_c17_95c6_return_output,
- BIN_OP_PLUS_uxn_c_l45_c2_4371_return_output)
+ BIN_OP_EQ_uxn_c_l31_c6_a9f5_return_output,
+ TRUE_CLOCK_ENABLE_MUX_uxn_c_l31_c1_1062_return_output,
+ FALSE_CLOCK_ENABLE_MUX_uxn_c_l36_c7_ba78_return_output,
+ rom_byte_MUX_uxn_c_l31_c2_f46b_return_output,
+ rom_address_MUX_uxn_c_l31_c2_f46b_return_output,
+ ram_address_MUX_uxn_c_l31_c2_f46b_return_output,
+ is_finished_MUX_uxn_c_l31_c2_f46b_return_output,
+ read_rom_byte_uxn_c_l32_c14_344e_return_output,
+ BIN_OP_EQ_uxn_c_l36_c11_50c1_return_output,
+ TRUE_CLOCK_ENABLE_MUX_uxn_c_l36_c1_eca1_return_output,
+ rom_byte_MUX_uxn_c_l36_c7_ba78_return_output,
+ rom_address_MUX_uxn_c_l36_c7_ba78_return_output,
+ ram_address_MUX_uxn_c_l36_c7_ba78_return_output,
+ is_finished_MUX_uxn_c_l36_c7_ba78_return_output,
+ read_rom_byte_uxn_c_l37_c14_2d37_return_output,
+ BIN_OP_PLUS_uxn_c_l39_c3_0a6c_return_output,
+ BIN_OP_PLUS_uxn_c_l40_c3_b251_return_output,
+ BIN_OP_GT_uxn_c_l41_c17_ab57_return_output,
+ BIN_OP_PLUS_uxn_c_l45_c2_5154_return_output)
 is 
  -- All of the wires in function
  variable VAR_CLOCK_ENABLE : unsigned(0 downto 0);
  variable VAR_return_output : boot_step_result_t;
- variable VAR_BIN_OP_EQ_uxn_c_l31_c6_55d1_left : unsigned(0 downto 0);
- variable VAR_BIN_OP_EQ_uxn_c_l31_c6_55d1_right : unsigned(0 downto 0);
- variable VAR_BIN_OP_EQ_uxn_c_l31_c6_55d1_return_output : unsigned(0 downto 0);
- variable VAR_TRUE_CLOCK_ENABLE_MUX_uxn_c_l31_c1_feb3_return_output : unsigned(0 downto 0);
- variable VAR_TRUE_CLOCK_ENABLE_MUX_uxn_c_l31_c1_feb3_cond : unsigned(0 downto 0);
- variable VAR_TRUE_CLOCK_ENABLE_MUX_uxn_c_l31_c1_feb3_iftrue : unsigned(0 downto 0);
- variable VAR_TRUE_CLOCK_ENABLE_MUX_uxn_c_l31_c1_feb3_iffalse : unsigned(0 downto 0);
- variable VAR_FALSE_CLOCK_ENABLE_MUX_uxn_c_l36_c7_388a_return_output : unsigned(0 downto 0);
- variable VAR_FALSE_CLOCK_ENABLE_MUX_uxn_c_l36_c7_388a_cond : unsigned(0 downto 0);
- variable VAR_FALSE_CLOCK_ENABLE_MUX_uxn_c_l36_c7_388a_iftrue : unsigned(0 downto 0);
- variable VAR_FALSE_CLOCK_ENABLE_MUX_uxn_c_l36_c7_388a_iffalse : unsigned(0 downto 0);
- variable VAR_rom_address_MUX_uxn_c_l31_c2_45d1_iftrue : unsigned(15 downto 0);
- variable VAR_rom_address_MUX_uxn_c_l31_c2_45d1_iffalse : unsigned(15 downto 0);
- variable VAR_rom_address_MUX_uxn_c_l36_c7_388a_return_output : unsigned(15 downto 0);
- variable VAR_rom_address_MUX_uxn_c_l31_c2_45d1_return_output : unsigned(15 downto 0);
- variable VAR_rom_address_MUX_uxn_c_l31_c2_45d1_cond : unsigned(0 downto 0);
- variable VAR_is_finished_MUX_uxn_c_l31_c2_45d1_iftrue : unsigned(0 downto 0);
- variable VAR_is_finished_MUX_uxn_c_l31_c2_45d1_iffalse : unsigned(0 downto 0);
- variable VAR_is_finished_MUX_uxn_c_l36_c7_388a_return_output : unsigned(0 downto 0);
- variable VAR_is_finished_MUX_uxn_c_l31_c2_45d1_return_output : unsigned(0 downto 0);
- variable VAR_is_finished_MUX_uxn_c_l31_c2_45d1_cond : unsigned(0 downto 0);
- variable VAR_rom_byte_MUX_uxn_c_l31_c2_45d1_iftrue : unsigned(7 downto 0);
- variable VAR_rom_byte_MUX_uxn_c_l31_c2_45d1_iffalse : unsigned(7 downto 0);
- variable VAR_rom_byte_MUX_uxn_c_l36_c7_388a_return_output : unsigned(7 downto 0);
- variable VAR_rom_byte_MUX_uxn_c_l31_c2_45d1_return_output : unsigned(7 downto 0);
- variable VAR_rom_byte_MUX_uxn_c_l31_c2_45d1_cond : unsigned(0 downto 0);
- variable VAR_ram_address_MUX_uxn_c_l31_c2_45d1_iftrue : unsigned(15 downto 0);
- variable VAR_ram_address_MUX_uxn_c_l31_c2_45d1_iffalse : unsigned(15 downto 0);
- variable VAR_ram_address_MUX_uxn_c_l36_c7_388a_return_output : unsigned(15 downto 0);
- variable VAR_ram_address_MUX_uxn_c_l31_c2_45d1_return_output : unsigned(15 downto 0);
- variable VAR_ram_address_MUX_uxn_c_l31_c2_45d1_cond : unsigned(0 downto 0);
- variable VAR_read_rom_byte_uxn_c_l32_c14_7105_read_address : unsigned(15 downto 0);
- variable VAR_read_rom_byte_uxn_c_l32_c14_7105_CLOCK_ENABLE : unsigned(0 downto 0);
- variable VAR_read_rom_byte_uxn_c_l32_c14_7105_return_output : unsigned(7 downto 0);
- variable VAR_printf_uxn_c_l33_c3_d58b_uxn_c_l33_c3_d58b_CLOCK_ENABLE : unsigned(0 downto 0);
- variable VAR_printf_uxn_c_l33_c3_d58b_uxn_c_l33_c3_d58b_arg0 : unsigned(31 downto 0);
- variable VAR_BIN_OP_EQ_uxn_c_l36_c11_204d_left : unsigned(0 downto 0);
- variable VAR_BIN_OP_EQ_uxn_c_l36_c11_204d_right : unsigned(0 downto 0);
- variable VAR_BIN_OP_EQ_uxn_c_l36_c11_204d_return_output : unsigned(0 downto 0);
- variable VAR_TRUE_CLOCK_ENABLE_MUX_uxn_c_l36_c1_8541_return_output : unsigned(0 downto 0);
- variable VAR_TRUE_CLOCK_ENABLE_MUX_uxn_c_l36_c1_8541_cond : unsigned(0 downto 0);
- variable VAR_TRUE_CLOCK_ENABLE_MUX_uxn_c_l36_c1_8541_iftrue : unsigned(0 downto 0);
- variable VAR_TRUE_CLOCK_ENABLE_MUX_uxn_c_l36_c1_8541_iffalse : unsigned(0 downto 0);
- variable VAR_rom_address_MUX_uxn_c_l36_c7_388a_iftrue : unsigned(15 downto 0);
- variable VAR_rom_address_uxn_c_l39_c3_b8a6 : unsigned(15 downto 0);
- variable VAR_rom_address_MUX_uxn_c_l36_c7_388a_iffalse : unsigned(15 downto 0);
- variable VAR_rom_address_MUX_uxn_c_l36_c7_388a_cond : unsigned(0 downto 0);
- variable VAR_is_finished_MUX_uxn_c_l36_c7_388a_iftrue : unsigned(0 downto 0);
- variable VAR_is_finished_MUX_uxn_c_l36_c7_388a_iffalse : unsigned(0 downto 0);
- variable VAR_is_finished_MUX_uxn_c_l36_c7_388a_cond : unsigned(0 downto 0);
- variable VAR_rom_byte_MUX_uxn_c_l36_c7_388a_iftrue : unsigned(7 downto 0);
- variable VAR_rom_byte_uxn_c_l37_c3_0fba : unsigned(7 downto 0);
- variable VAR_rom_byte_MUX_uxn_c_l36_c7_388a_iffalse : unsigned(7 downto 0);
- variable VAR_rom_byte_MUX_uxn_c_l36_c7_388a_cond : unsigned(0 downto 0);
- variable VAR_ram_address_MUX_uxn_c_l36_c7_388a_iftrue : unsigned(15 downto 0);
- variable VAR_ram_address_uxn_c_l40_c3_09ff : unsigned(15 downto 0);
- variable VAR_ram_address_MUX_uxn_c_l36_c7_388a_iffalse : unsigned(15 downto 0);
- variable VAR_ram_address_MUX_uxn_c_l36_c7_388a_cond : unsigned(0 downto 0);
- variable VAR_read_rom_byte_uxn_c_l37_c14_dcd2_read_address : unsigned(15 downto 0);
- variable VAR_read_rom_byte_uxn_c_l37_c14_dcd2_CLOCK_ENABLE : unsigned(0 downto 0);
- variable VAR_read_rom_byte_uxn_c_l37_c14_dcd2_return_output : unsigned(7 downto 0);
- variable VAR_printf_uxn_c_l38_c3_8c28_uxn_c_l38_c3_8c28_CLOCK_ENABLE : unsigned(0 downto 0);
- variable VAR_printf_uxn_c_l38_c3_8c28_uxn_c_l38_c3_8c28_arg0 : unsigned(31 downto 0);
- variable VAR_printf_uxn_c_l38_c3_8c28_uxn_c_l38_c3_8c28_arg1 : unsigned(31 downto 0);
- variable VAR_BIN_OP_PLUS_uxn_c_l39_c3_ee27_left : unsigned(15 downto 0);
- variable VAR_BIN_OP_PLUS_uxn_c_l39_c3_ee27_right : unsigned(0 downto 0);
- variable VAR_BIN_OP_PLUS_uxn_c_l39_c3_ee27_return_output : unsigned(16 downto 0);
- variable VAR_BIN_OP_PLUS_uxn_c_l40_c3_b63c_left : unsigned(15 downto 0);
- variable VAR_BIN_OP_PLUS_uxn_c_l40_c3_b63c_right : unsigned(0 downto 0);
- variable VAR_BIN_OP_PLUS_uxn_c_l40_c3_b63c_return_output : unsigned(16 downto 0);
- variable VAR_BIN_OP_GT_uxn_c_l41_c17_95c6_left : unsigned(15 downto 0);
- variable VAR_BIN_OP_GT_uxn_c_l41_c17_95c6_right : unsigned(8 downto 0);
- variable VAR_BIN_OP_GT_uxn_c_l41_c17_95c6_return_output : unsigned(0 downto 0);
+ variable VAR_BIN_OP_EQ_uxn_c_l31_c6_a9f5_left : unsigned(0 downto 0);
+ variable VAR_BIN_OP_EQ_uxn_c_l31_c6_a9f5_right : unsigned(0 downto 0);
+ variable VAR_BIN_OP_EQ_uxn_c_l31_c6_a9f5_return_output : unsigned(0 downto 0);
+ variable VAR_TRUE_CLOCK_ENABLE_MUX_uxn_c_l31_c1_1062_return_output : unsigned(0 downto 0);
+ variable VAR_TRUE_CLOCK_ENABLE_MUX_uxn_c_l31_c1_1062_cond : unsigned(0 downto 0);
+ variable VAR_TRUE_CLOCK_ENABLE_MUX_uxn_c_l31_c1_1062_iftrue : unsigned(0 downto 0);
+ variable VAR_TRUE_CLOCK_ENABLE_MUX_uxn_c_l31_c1_1062_iffalse : unsigned(0 downto 0);
+ variable VAR_FALSE_CLOCK_ENABLE_MUX_uxn_c_l36_c7_ba78_return_output : unsigned(0 downto 0);
+ variable VAR_FALSE_CLOCK_ENABLE_MUX_uxn_c_l36_c7_ba78_cond : unsigned(0 downto 0);
+ variable VAR_FALSE_CLOCK_ENABLE_MUX_uxn_c_l36_c7_ba78_iftrue : unsigned(0 downto 0);
+ variable VAR_FALSE_CLOCK_ENABLE_MUX_uxn_c_l36_c7_ba78_iffalse : unsigned(0 downto 0);
+ variable VAR_rom_byte_MUX_uxn_c_l31_c2_f46b_iftrue : unsigned(7 downto 0);
+ variable VAR_rom_byte_MUX_uxn_c_l31_c2_f46b_iffalse : unsigned(7 downto 0);
+ variable VAR_rom_byte_MUX_uxn_c_l36_c7_ba78_return_output : unsigned(7 downto 0);
+ variable VAR_rom_byte_MUX_uxn_c_l31_c2_f46b_return_output : unsigned(7 downto 0);
+ variable VAR_rom_byte_MUX_uxn_c_l31_c2_f46b_cond : unsigned(0 downto 0);
+ variable VAR_rom_address_MUX_uxn_c_l31_c2_f46b_iftrue : unsigned(15 downto 0);
+ variable VAR_rom_address_MUX_uxn_c_l31_c2_f46b_iffalse : unsigned(15 downto 0);
+ variable VAR_rom_address_MUX_uxn_c_l36_c7_ba78_return_output : unsigned(15 downto 0);
+ variable VAR_rom_address_MUX_uxn_c_l31_c2_f46b_return_output : unsigned(15 downto 0);
+ variable VAR_rom_address_MUX_uxn_c_l31_c2_f46b_cond : unsigned(0 downto 0);
+ variable VAR_ram_address_MUX_uxn_c_l31_c2_f46b_iftrue : unsigned(15 downto 0);
+ variable VAR_ram_address_MUX_uxn_c_l31_c2_f46b_iffalse : unsigned(15 downto 0);
+ variable VAR_ram_address_MUX_uxn_c_l36_c7_ba78_return_output : unsigned(15 downto 0);
+ variable VAR_ram_address_MUX_uxn_c_l31_c2_f46b_return_output : unsigned(15 downto 0);
+ variable VAR_ram_address_MUX_uxn_c_l31_c2_f46b_cond : unsigned(0 downto 0);
+ variable VAR_is_finished_MUX_uxn_c_l31_c2_f46b_iftrue : unsigned(0 downto 0);
+ variable VAR_is_finished_MUX_uxn_c_l31_c2_f46b_iffalse : unsigned(0 downto 0);
+ variable VAR_is_finished_MUX_uxn_c_l36_c7_ba78_return_output : unsigned(0 downto 0);
+ variable VAR_is_finished_MUX_uxn_c_l31_c2_f46b_return_output : unsigned(0 downto 0);
+ variable VAR_is_finished_MUX_uxn_c_l31_c2_f46b_cond : unsigned(0 downto 0);
+ variable VAR_read_rom_byte_uxn_c_l32_c14_344e_read_address : unsigned(15 downto 0);
+ variable VAR_read_rom_byte_uxn_c_l32_c14_344e_CLOCK_ENABLE : unsigned(0 downto 0);
+ variable VAR_read_rom_byte_uxn_c_l32_c14_344e_return_output : unsigned(7 downto 0);
+ variable VAR_printf_uxn_c_l33_c3_4383_uxn_c_l33_c3_4383_CLOCK_ENABLE : unsigned(0 downto 0);
+ variable VAR_printf_uxn_c_l33_c3_4383_uxn_c_l33_c3_4383_arg0 : unsigned(31 downto 0);
+ variable VAR_BIN_OP_EQ_uxn_c_l36_c11_50c1_left : unsigned(0 downto 0);
+ variable VAR_BIN_OP_EQ_uxn_c_l36_c11_50c1_right : unsigned(0 downto 0);
+ variable VAR_BIN_OP_EQ_uxn_c_l36_c11_50c1_return_output : unsigned(0 downto 0);
+ variable VAR_TRUE_CLOCK_ENABLE_MUX_uxn_c_l36_c1_eca1_return_output : unsigned(0 downto 0);
+ variable VAR_TRUE_CLOCK_ENABLE_MUX_uxn_c_l36_c1_eca1_cond : unsigned(0 downto 0);
+ variable VAR_TRUE_CLOCK_ENABLE_MUX_uxn_c_l36_c1_eca1_iftrue : unsigned(0 downto 0);
+ variable VAR_TRUE_CLOCK_ENABLE_MUX_uxn_c_l36_c1_eca1_iffalse : unsigned(0 downto 0);
+ variable VAR_rom_byte_MUX_uxn_c_l36_c7_ba78_iftrue : unsigned(7 downto 0);
+ variable VAR_rom_byte_uxn_c_l37_c3_28a8 : unsigned(7 downto 0);
+ variable VAR_rom_byte_MUX_uxn_c_l36_c7_ba78_iffalse : unsigned(7 downto 0);
+ variable VAR_rom_byte_MUX_uxn_c_l36_c7_ba78_cond : unsigned(0 downto 0);
+ variable VAR_rom_address_MUX_uxn_c_l36_c7_ba78_iftrue : unsigned(15 downto 0);
+ variable VAR_rom_address_uxn_c_l39_c3_daa5 : unsigned(15 downto 0);
+ variable VAR_rom_address_MUX_uxn_c_l36_c7_ba78_iffalse : unsigned(15 downto 0);
+ variable VAR_rom_address_MUX_uxn_c_l36_c7_ba78_cond : unsigned(0 downto 0);
+ variable VAR_ram_address_MUX_uxn_c_l36_c7_ba78_iftrue : unsigned(15 downto 0);
+ variable VAR_ram_address_uxn_c_l40_c3_42ae : unsigned(15 downto 0);
+ variable VAR_ram_address_MUX_uxn_c_l36_c7_ba78_iffalse : unsigned(15 downto 0);
+ variable VAR_ram_address_MUX_uxn_c_l36_c7_ba78_cond : unsigned(0 downto 0);
+ variable VAR_is_finished_MUX_uxn_c_l36_c7_ba78_iftrue : unsigned(0 downto 0);
+ variable VAR_is_finished_MUX_uxn_c_l36_c7_ba78_iffalse : unsigned(0 downto 0);
+ variable VAR_is_finished_MUX_uxn_c_l36_c7_ba78_cond : unsigned(0 downto 0);
+ variable VAR_read_rom_byte_uxn_c_l37_c14_2d37_read_address : unsigned(15 downto 0);
+ variable VAR_read_rom_byte_uxn_c_l37_c14_2d37_CLOCK_ENABLE : unsigned(0 downto 0);
+ variable VAR_read_rom_byte_uxn_c_l37_c14_2d37_return_output : unsigned(7 downto 0);
+ variable VAR_printf_uxn_c_l38_c3_a323_uxn_c_l38_c3_a323_CLOCK_ENABLE : unsigned(0 downto 0);
+ variable VAR_printf_uxn_c_l38_c3_a323_uxn_c_l38_c3_a323_arg0 : unsigned(31 downto 0);
+ variable VAR_printf_uxn_c_l38_c3_a323_uxn_c_l38_c3_a323_arg1 : unsigned(31 downto 0);
+ variable VAR_BIN_OP_PLUS_uxn_c_l39_c3_0a6c_left : unsigned(15 downto 0);
+ variable VAR_BIN_OP_PLUS_uxn_c_l39_c3_0a6c_right : unsigned(0 downto 0);
+ variable VAR_BIN_OP_PLUS_uxn_c_l39_c3_0a6c_return_output : unsigned(16 downto 0);
+ variable VAR_BIN_OP_PLUS_uxn_c_l40_c3_b251_left : unsigned(15 downto 0);
+ variable VAR_BIN_OP_PLUS_uxn_c_l40_c3_b251_right : unsigned(0 downto 0);
+ variable VAR_BIN_OP_PLUS_uxn_c_l40_c3_b251_return_output : unsigned(16 downto 0);
+ variable VAR_BIN_OP_GT_uxn_c_l41_c17_ab57_left : unsigned(15 downto 0);
+ variable VAR_BIN_OP_GT_uxn_c_l41_c17_ab57_right : unsigned(8 downto 0);
+ variable VAR_BIN_OP_GT_uxn_c_l41_c17_ab57_return_output : unsigned(0 downto 0);
  variable VAR_boot_result : boot_step_result_t;
- variable VAR_boot_phase_uxn_c_l45_c2_7054 : unsigned(0 downto 0);
- variable VAR_BIN_OP_PLUS_uxn_c_l45_c2_4371_left : unsigned(0 downto 0);
- variable VAR_BIN_OP_PLUS_uxn_c_l45_c2_4371_right : unsigned(0 downto 0);
- variable VAR_BIN_OP_PLUS_uxn_c_l45_c2_4371_return_output : unsigned(1 downto 0);
- variable VAR_CONST_REF_RD_boot_step_result_t_boot_step_result_t_4ece_uxn_c_l47_c9_2a9a_return_output : boot_step_result_t;
+ variable VAR_boot_phase_uxn_c_l45_c2_d4b5 : unsigned(0 downto 0);
+ variable VAR_BIN_OP_PLUS_uxn_c_l45_c2_5154_left : unsigned(0 downto 0);
+ variable VAR_BIN_OP_PLUS_uxn_c_l45_c2_5154_right : unsigned(0 downto 0);
+ variable VAR_BIN_OP_PLUS_uxn_c_l45_c2_5154_return_output : unsigned(1 downto 0);
+ variable VAR_CONST_REF_RD_boot_step_result_t_boot_step_result_t_4ece_uxn_c_l47_c9_27fe_return_output : boot_step_result_t;
  -- State registers comb logic variables
 variable REG_VAR_ram_address : unsigned(15 downto 0);
 variable REG_VAR_rom_address : unsigned(15 downto 0);
@@ -442,16 +442,16 @@ begin
   REG_VAR_is_finished := is_finished;
  -- Constants and things derived from constants alone
      -- Submodule level 0
-     VAR_BIN_OP_PLUS_uxn_c_l39_c3_ee27_right := to_unsigned(1, 1);
-     VAR_is_finished_MUX_uxn_c_l31_c2_45d1_iftrue := to_unsigned(0, 1);
-     VAR_BIN_OP_EQ_uxn_c_l36_c11_204d_right := to_unsigned(1, 1);
-     VAR_BIN_OP_EQ_uxn_c_l31_c6_55d1_right := to_unsigned(0, 1);
-     VAR_BIN_OP_PLUS_uxn_c_l45_c2_4371_right := to_unsigned(1, 1);
-     VAR_BIN_OP_PLUS_uxn_c_l40_c3_b63c_right := to_unsigned(1, 1);
-     VAR_TRUE_CLOCK_ENABLE_MUX_uxn_c_l36_c1_8541_iffalse := to_unsigned(0, 1);
-     VAR_BIN_OP_GT_uxn_c_l41_c17_95c6_right := to_unsigned(511, 9);
-     VAR_FALSE_CLOCK_ENABLE_MUX_uxn_c_l36_c7_388a_iftrue := to_unsigned(0, 1);
-     VAR_TRUE_CLOCK_ENABLE_MUX_uxn_c_l31_c1_feb3_iffalse := to_unsigned(0, 1);
+     VAR_BIN_OP_EQ_uxn_c_l36_c11_50c1_right := to_unsigned(1, 1);
+     VAR_BIN_OP_GT_uxn_c_l41_c17_ab57_right := to_unsigned(511, 9);
+     VAR_BIN_OP_PLUS_uxn_c_l39_c3_0a6c_right := to_unsigned(1, 1);
+     VAR_is_finished_MUX_uxn_c_l31_c2_f46b_iftrue := to_unsigned(0, 1);
+     VAR_TRUE_CLOCK_ENABLE_MUX_uxn_c_l36_c1_eca1_iffalse := to_unsigned(0, 1);
+     VAR_BIN_OP_EQ_uxn_c_l31_c6_a9f5_right := to_unsigned(0, 1);
+     VAR_TRUE_CLOCK_ENABLE_MUX_uxn_c_l31_c1_1062_iffalse := to_unsigned(0, 1);
+     VAR_FALSE_CLOCK_ENABLE_MUX_uxn_c_l36_c7_ba78_iftrue := to_unsigned(0, 1);
+     VAR_BIN_OP_PLUS_uxn_c_l45_c2_5154_right := to_unsigned(1, 1);
+     VAR_BIN_OP_PLUS_uxn_c_l40_c3_b251_right := to_unsigned(1, 1);
 
  -- Loop to construct simultaneous register transfers for each of the pipeline stages
  -- LATENCY=0 is combinational Logic
@@ -461,235 +461,235 @@ begin
      VAR_CLOCK_ENABLE := CLOCK_ENABLE;
 
      -- Submodule level 0
-     VAR_FALSE_CLOCK_ENABLE_MUX_uxn_c_l36_c7_388a_iffalse := VAR_CLOCK_ENABLE;
-     VAR_TRUE_CLOCK_ENABLE_MUX_uxn_c_l31_c1_feb3_iftrue := VAR_CLOCK_ENABLE;
-     VAR_BIN_OP_EQ_uxn_c_l31_c6_55d1_left := boot_phase;
-     VAR_BIN_OP_EQ_uxn_c_l36_c11_204d_left := boot_phase;
-     VAR_BIN_OP_PLUS_uxn_c_l45_c2_4371_left := boot_phase;
-     VAR_is_finished_MUX_uxn_c_l36_c7_388a_iffalse := is_finished;
-     VAR_BIN_OP_PLUS_uxn_c_l40_c3_b63c_left := ram_address;
-     VAR_ram_address_MUX_uxn_c_l31_c2_45d1_iftrue := ram_address;
-     VAR_ram_address_MUX_uxn_c_l36_c7_388a_iffalse := ram_address;
-     VAR_BIN_OP_PLUS_uxn_c_l39_c3_ee27_left := rom_address;
-     VAR_printf_uxn_c_l33_c3_d58b_uxn_c_l33_c3_d58b_arg0 := resize(rom_address, 32);
-     VAR_printf_uxn_c_l38_c3_8c28_uxn_c_l38_c3_8c28_arg0 := resize(rom_address, 32);
-     VAR_read_rom_byte_uxn_c_l32_c14_7105_read_address := rom_address;
-     VAR_read_rom_byte_uxn_c_l37_c14_dcd2_read_address := rom_address;
-     VAR_rom_address_MUX_uxn_c_l31_c2_45d1_iftrue := rom_address;
-     VAR_rom_address_MUX_uxn_c_l36_c7_388a_iffalse := rom_address;
-     VAR_rom_byte_MUX_uxn_c_l36_c7_388a_iffalse := rom_byte;
-     -- BIN_OP_EQ[uxn_c_l36_c11_204d] LATENCY=0
+     VAR_FALSE_CLOCK_ENABLE_MUX_uxn_c_l36_c7_ba78_iffalse := VAR_CLOCK_ENABLE;
+     VAR_TRUE_CLOCK_ENABLE_MUX_uxn_c_l31_c1_1062_iftrue := VAR_CLOCK_ENABLE;
+     VAR_BIN_OP_EQ_uxn_c_l31_c6_a9f5_left := boot_phase;
+     VAR_BIN_OP_EQ_uxn_c_l36_c11_50c1_left := boot_phase;
+     VAR_BIN_OP_PLUS_uxn_c_l45_c2_5154_left := boot_phase;
+     VAR_is_finished_MUX_uxn_c_l36_c7_ba78_iffalse := is_finished;
+     VAR_BIN_OP_PLUS_uxn_c_l40_c3_b251_left := ram_address;
+     VAR_ram_address_MUX_uxn_c_l31_c2_f46b_iftrue := ram_address;
+     VAR_ram_address_MUX_uxn_c_l36_c7_ba78_iffalse := ram_address;
+     VAR_BIN_OP_PLUS_uxn_c_l39_c3_0a6c_left := rom_address;
+     VAR_printf_uxn_c_l33_c3_4383_uxn_c_l33_c3_4383_arg0 := resize(rom_address, 32);
+     VAR_printf_uxn_c_l38_c3_a323_uxn_c_l38_c3_a323_arg0 := resize(rom_address, 32);
+     VAR_read_rom_byte_uxn_c_l32_c14_344e_read_address := rom_address;
+     VAR_read_rom_byte_uxn_c_l37_c14_2d37_read_address := rom_address;
+     VAR_rom_address_MUX_uxn_c_l31_c2_f46b_iftrue := rom_address;
+     VAR_rom_address_MUX_uxn_c_l36_c7_ba78_iffalse := rom_address;
+     VAR_rom_byte_MUX_uxn_c_l36_c7_ba78_iffalse := rom_byte;
+     -- BIN_OP_PLUS[uxn_c_l45_c2_5154] LATENCY=0
      -- Inputs
-     BIN_OP_EQ_uxn_c_l36_c11_204d_left <= VAR_BIN_OP_EQ_uxn_c_l36_c11_204d_left;
-     BIN_OP_EQ_uxn_c_l36_c11_204d_right <= VAR_BIN_OP_EQ_uxn_c_l36_c11_204d_right;
+     BIN_OP_PLUS_uxn_c_l45_c2_5154_left <= VAR_BIN_OP_PLUS_uxn_c_l45_c2_5154_left;
+     BIN_OP_PLUS_uxn_c_l45_c2_5154_right <= VAR_BIN_OP_PLUS_uxn_c_l45_c2_5154_right;
      -- Outputs
-     VAR_BIN_OP_EQ_uxn_c_l36_c11_204d_return_output := BIN_OP_EQ_uxn_c_l36_c11_204d_return_output;
+     VAR_BIN_OP_PLUS_uxn_c_l45_c2_5154_return_output := BIN_OP_PLUS_uxn_c_l45_c2_5154_return_output;
 
-     -- BIN_OP_EQ[uxn_c_l31_c6_55d1] LATENCY=0
+     -- BIN_OP_PLUS[uxn_c_l40_c3_b251] LATENCY=0
      -- Inputs
-     BIN_OP_EQ_uxn_c_l31_c6_55d1_left <= VAR_BIN_OP_EQ_uxn_c_l31_c6_55d1_left;
-     BIN_OP_EQ_uxn_c_l31_c6_55d1_right <= VAR_BIN_OP_EQ_uxn_c_l31_c6_55d1_right;
+     BIN_OP_PLUS_uxn_c_l40_c3_b251_left <= VAR_BIN_OP_PLUS_uxn_c_l40_c3_b251_left;
+     BIN_OP_PLUS_uxn_c_l40_c3_b251_right <= VAR_BIN_OP_PLUS_uxn_c_l40_c3_b251_right;
      -- Outputs
-     VAR_BIN_OP_EQ_uxn_c_l31_c6_55d1_return_output := BIN_OP_EQ_uxn_c_l31_c6_55d1_return_output;
+     VAR_BIN_OP_PLUS_uxn_c_l40_c3_b251_return_output := BIN_OP_PLUS_uxn_c_l40_c3_b251_return_output;
 
-     -- BIN_OP_PLUS[uxn_c_l39_c3_ee27] LATENCY=0
+     -- BIN_OP_PLUS[uxn_c_l39_c3_0a6c] LATENCY=0
      -- Inputs
-     BIN_OP_PLUS_uxn_c_l39_c3_ee27_left <= VAR_BIN_OP_PLUS_uxn_c_l39_c3_ee27_left;
-     BIN_OP_PLUS_uxn_c_l39_c3_ee27_right <= VAR_BIN_OP_PLUS_uxn_c_l39_c3_ee27_right;
+     BIN_OP_PLUS_uxn_c_l39_c3_0a6c_left <= VAR_BIN_OP_PLUS_uxn_c_l39_c3_0a6c_left;
+     BIN_OP_PLUS_uxn_c_l39_c3_0a6c_right <= VAR_BIN_OP_PLUS_uxn_c_l39_c3_0a6c_right;
      -- Outputs
-     VAR_BIN_OP_PLUS_uxn_c_l39_c3_ee27_return_output := BIN_OP_PLUS_uxn_c_l39_c3_ee27_return_output;
+     VAR_BIN_OP_PLUS_uxn_c_l39_c3_0a6c_return_output := BIN_OP_PLUS_uxn_c_l39_c3_0a6c_return_output;
 
-     -- BIN_OP_PLUS[uxn_c_l45_c2_4371] LATENCY=0
+     -- BIN_OP_EQ[uxn_c_l36_c11_50c1] LATENCY=0
      -- Inputs
-     BIN_OP_PLUS_uxn_c_l45_c2_4371_left <= VAR_BIN_OP_PLUS_uxn_c_l45_c2_4371_left;
-     BIN_OP_PLUS_uxn_c_l45_c2_4371_right <= VAR_BIN_OP_PLUS_uxn_c_l45_c2_4371_right;
+     BIN_OP_EQ_uxn_c_l36_c11_50c1_left <= VAR_BIN_OP_EQ_uxn_c_l36_c11_50c1_left;
+     BIN_OP_EQ_uxn_c_l36_c11_50c1_right <= VAR_BIN_OP_EQ_uxn_c_l36_c11_50c1_right;
      -- Outputs
-     VAR_BIN_OP_PLUS_uxn_c_l45_c2_4371_return_output := BIN_OP_PLUS_uxn_c_l45_c2_4371_return_output;
+     VAR_BIN_OP_EQ_uxn_c_l36_c11_50c1_return_output := BIN_OP_EQ_uxn_c_l36_c11_50c1_return_output;
 
-     -- BIN_OP_PLUS[uxn_c_l40_c3_b63c] LATENCY=0
+     -- BIN_OP_EQ[uxn_c_l31_c6_a9f5] LATENCY=0
      -- Inputs
-     BIN_OP_PLUS_uxn_c_l40_c3_b63c_left <= VAR_BIN_OP_PLUS_uxn_c_l40_c3_b63c_left;
-     BIN_OP_PLUS_uxn_c_l40_c3_b63c_right <= VAR_BIN_OP_PLUS_uxn_c_l40_c3_b63c_right;
+     BIN_OP_EQ_uxn_c_l31_c6_a9f5_left <= VAR_BIN_OP_EQ_uxn_c_l31_c6_a9f5_left;
+     BIN_OP_EQ_uxn_c_l31_c6_a9f5_right <= VAR_BIN_OP_EQ_uxn_c_l31_c6_a9f5_right;
      -- Outputs
-     VAR_BIN_OP_PLUS_uxn_c_l40_c3_b63c_return_output := BIN_OP_PLUS_uxn_c_l40_c3_b63c_return_output;
+     VAR_BIN_OP_EQ_uxn_c_l31_c6_a9f5_return_output := BIN_OP_EQ_uxn_c_l31_c6_a9f5_return_output;
 
      -- Submodule level 1
-     VAR_FALSE_CLOCK_ENABLE_MUX_uxn_c_l36_c7_388a_cond := VAR_BIN_OP_EQ_uxn_c_l31_c6_55d1_return_output;
-     VAR_TRUE_CLOCK_ENABLE_MUX_uxn_c_l31_c1_feb3_cond := VAR_BIN_OP_EQ_uxn_c_l31_c6_55d1_return_output;
-     VAR_is_finished_MUX_uxn_c_l31_c2_45d1_cond := VAR_BIN_OP_EQ_uxn_c_l31_c6_55d1_return_output;
-     VAR_ram_address_MUX_uxn_c_l31_c2_45d1_cond := VAR_BIN_OP_EQ_uxn_c_l31_c6_55d1_return_output;
-     VAR_rom_address_MUX_uxn_c_l31_c2_45d1_cond := VAR_BIN_OP_EQ_uxn_c_l31_c6_55d1_return_output;
-     VAR_rom_byte_MUX_uxn_c_l31_c2_45d1_cond := VAR_BIN_OP_EQ_uxn_c_l31_c6_55d1_return_output;
-     VAR_TRUE_CLOCK_ENABLE_MUX_uxn_c_l36_c1_8541_cond := VAR_BIN_OP_EQ_uxn_c_l36_c11_204d_return_output;
-     VAR_is_finished_MUX_uxn_c_l36_c7_388a_cond := VAR_BIN_OP_EQ_uxn_c_l36_c11_204d_return_output;
-     VAR_ram_address_MUX_uxn_c_l36_c7_388a_cond := VAR_BIN_OP_EQ_uxn_c_l36_c11_204d_return_output;
-     VAR_rom_address_MUX_uxn_c_l36_c7_388a_cond := VAR_BIN_OP_EQ_uxn_c_l36_c11_204d_return_output;
-     VAR_rom_byte_MUX_uxn_c_l36_c7_388a_cond := VAR_BIN_OP_EQ_uxn_c_l36_c11_204d_return_output;
-     VAR_rom_address_uxn_c_l39_c3_b8a6 := resize(VAR_BIN_OP_PLUS_uxn_c_l39_c3_ee27_return_output, 16);
-     VAR_ram_address_uxn_c_l40_c3_09ff := resize(VAR_BIN_OP_PLUS_uxn_c_l40_c3_b63c_return_output, 16);
-     VAR_boot_phase_uxn_c_l45_c2_7054 := resize(VAR_BIN_OP_PLUS_uxn_c_l45_c2_4371_return_output, 1);
-     REG_VAR_boot_phase := VAR_boot_phase_uxn_c_l45_c2_7054;
-     VAR_ram_address_MUX_uxn_c_l36_c7_388a_iftrue := VAR_ram_address_uxn_c_l40_c3_09ff;
-     VAR_BIN_OP_GT_uxn_c_l41_c17_95c6_left := VAR_rom_address_uxn_c_l39_c3_b8a6;
-     VAR_rom_address_MUX_uxn_c_l36_c7_388a_iftrue := VAR_rom_address_uxn_c_l39_c3_b8a6;
-     -- BIN_OP_GT[uxn_c_l41_c17_95c6] LATENCY=0
+     VAR_FALSE_CLOCK_ENABLE_MUX_uxn_c_l36_c7_ba78_cond := VAR_BIN_OP_EQ_uxn_c_l31_c6_a9f5_return_output;
+     VAR_TRUE_CLOCK_ENABLE_MUX_uxn_c_l31_c1_1062_cond := VAR_BIN_OP_EQ_uxn_c_l31_c6_a9f5_return_output;
+     VAR_is_finished_MUX_uxn_c_l31_c2_f46b_cond := VAR_BIN_OP_EQ_uxn_c_l31_c6_a9f5_return_output;
+     VAR_ram_address_MUX_uxn_c_l31_c2_f46b_cond := VAR_BIN_OP_EQ_uxn_c_l31_c6_a9f5_return_output;
+     VAR_rom_address_MUX_uxn_c_l31_c2_f46b_cond := VAR_BIN_OP_EQ_uxn_c_l31_c6_a9f5_return_output;
+     VAR_rom_byte_MUX_uxn_c_l31_c2_f46b_cond := VAR_BIN_OP_EQ_uxn_c_l31_c6_a9f5_return_output;
+     VAR_TRUE_CLOCK_ENABLE_MUX_uxn_c_l36_c1_eca1_cond := VAR_BIN_OP_EQ_uxn_c_l36_c11_50c1_return_output;
+     VAR_is_finished_MUX_uxn_c_l36_c7_ba78_cond := VAR_BIN_OP_EQ_uxn_c_l36_c11_50c1_return_output;
+     VAR_ram_address_MUX_uxn_c_l36_c7_ba78_cond := VAR_BIN_OP_EQ_uxn_c_l36_c11_50c1_return_output;
+     VAR_rom_address_MUX_uxn_c_l36_c7_ba78_cond := VAR_BIN_OP_EQ_uxn_c_l36_c11_50c1_return_output;
+     VAR_rom_byte_MUX_uxn_c_l36_c7_ba78_cond := VAR_BIN_OP_EQ_uxn_c_l36_c11_50c1_return_output;
+     VAR_rom_address_uxn_c_l39_c3_daa5 := resize(VAR_BIN_OP_PLUS_uxn_c_l39_c3_0a6c_return_output, 16);
+     VAR_ram_address_uxn_c_l40_c3_42ae := resize(VAR_BIN_OP_PLUS_uxn_c_l40_c3_b251_return_output, 16);
+     VAR_boot_phase_uxn_c_l45_c2_d4b5 := resize(VAR_BIN_OP_PLUS_uxn_c_l45_c2_5154_return_output, 1);
+     REG_VAR_boot_phase := VAR_boot_phase_uxn_c_l45_c2_d4b5;
+     VAR_ram_address_MUX_uxn_c_l36_c7_ba78_iftrue := VAR_ram_address_uxn_c_l40_c3_42ae;
+     VAR_BIN_OP_GT_uxn_c_l41_c17_ab57_left := VAR_rom_address_uxn_c_l39_c3_daa5;
+     VAR_rom_address_MUX_uxn_c_l36_c7_ba78_iftrue := VAR_rom_address_uxn_c_l39_c3_daa5;
+     -- TRUE_CLOCK_ENABLE_MUX[uxn_c_l31_c1_1062] LATENCY=0
      -- Inputs
-     BIN_OP_GT_uxn_c_l41_c17_95c6_left <= VAR_BIN_OP_GT_uxn_c_l41_c17_95c6_left;
-     BIN_OP_GT_uxn_c_l41_c17_95c6_right <= VAR_BIN_OP_GT_uxn_c_l41_c17_95c6_right;
+     TRUE_CLOCK_ENABLE_MUX_uxn_c_l31_c1_1062_cond <= VAR_TRUE_CLOCK_ENABLE_MUX_uxn_c_l31_c1_1062_cond;
+     TRUE_CLOCK_ENABLE_MUX_uxn_c_l31_c1_1062_iftrue <= VAR_TRUE_CLOCK_ENABLE_MUX_uxn_c_l31_c1_1062_iftrue;
+     TRUE_CLOCK_ENABLE_MUX_uxn_c_l31_c1_1062_iffalse <= VAR_TRUE_CLOCK_ENABLE_MUX_uxn_c_l31_c1_1062_iffalse;
      -- Outputs
-     VAR_BIN_OP_GT_uxn_c_l41_c17_95c6_return_output := BIN_OP_GT_uxn_c_l41_c17_95c6_return_output;
+     VAR_TRUE_CLOCK_ENABLE_MUX_uxn_c_l31_c1_1062_return_output := TRUE_CLOCK_ENABLE_MUX_uxn_c_l31_c1_1062_return_output;
 
-     -- TRUE_CLOCK_ENABLE_MUX[uxn_c_l31_c1_feb3] LATENCY=0
+     -- rom_address_MUX[uxn_c_l36_c7_ba78] LATENCY=0
      -- Inputs
-     TRUE_CLOCK_ENABLE_MUX_uxn_c_l31_c1_feb3_cond <= VAR_TRUE_CLOCK_ENABLE_MUX_uxn_c_l31_c1_feb3_cond;
-     TRUE_CLOCK_ENABLE_MUX_uxn_c_l31_c1_feb3_iftrue <= VAR_TRUE_CLOCK_ENABLE_MUX_uxn_c_l31_c1_feb3_iftrue;
-     TRUE_CLOCK_ENABLE_MUX_uxn_c_l31_c1_feb3_iffalse <= VAR_TRUE_CLOCK_ENABLE_MUX_uxn_c_l31_c1_feb3_iffalse;
+     rom_address_MUX_uxn_c_l36_c7_ba78_cond <= VAR_rom_address_MUX_uxn_c_l36_c7_ba78_cond;
+     rom_address_MUX_uxn_c_l36_c7_ba78_iftrue <= VAR_rom_address_MUX_uxn_c_l36_c7_ba78_iftrue;
+     rom_address_MUX_uxn_c_l36_c7_ba78_iffalse <= VAR_rom_address_MUX_uxn_c_l36_c7_ba78_iffalse;
      -- Outputs
-     VAR_TRUE_CLOCK_ENABLE_MUX_uxn_c_l31_c1_feb3_return_output := TRUE_CLOCK_ENABLE_MUX_uxn_c_l31_c1_feb3_return_output;
+     VAR_rom_address_MUX_uxn_c_l36_c7_ba78_return_output := rom_address_MUX_uxn_c_l36_c7_ba78_return_output;
 
-     -- FALSE_CLOCK_ENABLE_MUX[uxn_c_l36_c7_388a] LATENCY=0
+     -- FALSE_CLOCK_ENABLE_MUX[uxn_c_l36_c7_ba78] LATENCY=0
      -- Inputs
-     FALSE_CLOCK_ENABLE_MUX_uxn_c_l36_c7_388a_cond <= VAR_FALSE_CLOCK_ENABLE_MUX_uxn_c_l36_c7_388a_cond;
-     FALSE_CLOCK_ENABLE_MUX_uxn_c_l36_c7_388a_iftrue <= VAR_FALSE_CLOCK_ENABLE_MUX_uxn_c_l36_c7_388a_iftrue;
-     FALSE_CLOCK_ENABLE_MUX_uxn_c_l36_c7_388a_iffalse <= VAR_FALSE_CLOCK_ENABLE_MUX_uxn_c_l36_c7_388a_iffalse;
+     FALSE_CLOCK_ENABLE_MUX_uxn_c_l36_c7_ba78_cond <= VAR_FALSE_CLOCK_ENABLE_MUX_uxn_c_l36_c7_ba78_cond;
+     FALSE_CLOCK_ENABLE_MUX_uxn_c_l36_c7_ba78_iftrue <= VAR_FALSE_CLOCK_ENABLE_MUX_uxn_c_l36_c7_ba78_iftrue;
+     FALSE_CLOCK_ENABLE_MUX_uxn_c_l36_c7_ba78_iffalse <= VAR_FALSE_CLOCK_ENABLE_MUX_uxn_c_l36_c7_ba78_iffalse;
      -- Outputs
-     VAR_FALSE_CLOCK_ENABLE_MUX_uxn_c_l36_c7_388a_return_output := FALSE_CLOCK_ENABLE_MUX_uxn_c_l36_c7_388a_return_output;
+     VAR_FALSE_CLOCK_ENABLE_MUX_uxn_c_l36_c7_ba78_return_output := FALSE_CLOCK_ENABLE_MUX_uxn_c_l36_c7_ba78_return_output;
 
-     -- rom_address_MUX[uxn_c_l36_c7_388a] LATENCY=0
+     -- ram_address_MUX[uxn_c_l36_c7_ba78] LATENCY=0
      -- Inputs
-     rom_address_MUX_uxn_c_l36_c7_388a_cond <= VAR_rom_address_MUX_uxn_c_l36_c7_388a_cond;
-     rom_address_MUX_uxn_c_l36_c7_388a_iftrue <= VAR_rom_address_MUX_uxn_c_l36_c7_388a_iftrue;
-     rom_address_MUX_uxn_c_l36_c7_388a_iffalse <= VAR_rom_address_MUX_uxn_c_l36_c7_388a_iffalse;
+     ram_address_MUX_uxn_c_l36_c7_ba78_cond <= VAR_ram_address_MUX_uxn_c_l36_c7_ba78_cond;
+     ram_address_MUX_uxn_c_l36_c7_ba78_iftrue <= VAR_ram_address_MUX_uxn_c_l36_c7_ba78_iftrue;
+     ram_address_MUX_uxn_c_l36_c7_ba78_iffalse <= VAR_ram_address_MUX_uxn_c_l36_c7_ba78_iffalse;
      -- Outputs
-     VAR_rom_address_MUX_uxn_c_l36_c7_388a_return_output := rom_address_MUX_uxn_c_l36_c7_388a_return_output;
+     VAR_ram_address_MUX_uxn_c_l36_c7_ba78_return_output := ram_address_MUX_uxn_c_l36_c7_ba78_return_output;
 
-     -- ram_address_MUX[uxn_c_l36_c7_388a] LATENCY=0
+     -- BIN_OP_GT[uxn_c_l41_c17_ab57] LATENCY=0
      -- Inputs
-     ram_address_MUX_uxn_c_l36_c7_388a_cond <= VAR_ram_address_MUX_uxn_c_l36_c7_388a_cond;
-     ram_address_MUX_uxn_c_l36_c7_388a_iftrue <= VAR_ram_address_MUX_uxn_c_l36_c7_388a_iftrue;
-     ram_address_MUX_uxn_c_l36_c7_388a_iffalse <= VAR_ram_address_MUX_uxn_c_l36_c7_388a_iffalse;
+     BIN_OP_GT_uxn_c_l41_c17_ab57_left <= VAR_BIN_OP_GT_uxn_c_l41_c17_ab57_left;
+     BIN_OP_GT_uxn_c_l41_c17_ab57_right <= VAR_BIN_OP_GT_uxn_c_l41_c17_ab57_right;
      -- Outputs
-     VAR_ram_address_MUX_uxn_c_l36_c7_388a_return_output := ram_address_MUX_uxn_c_l36_c7_388a_return_output;
+     VAR_BIN_OP_GT_uxn_c_l41_c17_ab57_return_output := BIN_OP_GT_uxn_c_l41_c17_ab57_return_output;
 
      -- Submodule level 2
-     VAR_is_finished_MUX_uxn_c_l36_c7_388a_iftrue := VAR_BIN_OP_GT_uxn_c_l41_c17_95c6_return_output;
-     VAR_TRUE_CLOCK_ENABLE_MUX_uxn_c_l36_c1_8541_iftrue := VAR_FALSE_CLOCK_ENABLE_MUX_uxn_c_l36_c7_388a_return_output;
-     VAR_printf_uxn_c_l33_c3_d58b_uxn_c_l33_c3_d58b_CLOCK_ENABLE := VAR_TRUE_CLOCK_ENABLE_MUX_uxn_c_l31_c1_feb3_return_output;
-     VAR_read_rom_byte_uxn_c_l32_c14_7105_CLOCK_ENABLE := VAR_TRUE_CLOCK_ENABLE_MUX_uxn_c_l31_c1_feb3_return_output;
-     VAR_ram_address_MUX_uxn_c_l31_c2_45d1_iffalse := VAR_ram_address_MUX_uxn_c_l36_c7_388a_return_output;
-     VAR_rom_address_MUX_uxn_c_l31_c2_45d1_iffalse := VAR_rom_address_MUX_uxn_c_l36_c7_388a_return_output;
-     -- TRUE_CLOCK_ENABLE_MUX[uxn_c_l36_c1_8541] LATENCY=0
+     VAR_is_finished_MUX_uxn_c_l36_c7_ba78_iftrue := VAR_BIN_OP_GT_uxn_c_l41_c17_ab57_return_output;
+     VAR_TRUE_CLOCK_ENABLE_MUX_uxn_c_l36_c1_eca1_iftrue := VAR_FALSE_CLOCK_ENABLE_MUX_uxn_c_l36_c7_ba78_return_output;
+     VAR_printf_uxn_c_l33_c3_4383_uxn_c_l33_c3_4383_CLOCK_ENABLE := VAR_TRUE_CLOCK_ENABLE_MUX_uxn_c_l31_c1_1062_return_output;
+     VAR_read_rom_byte_uxn_c_l32_c14_344e_CLOCK_ENABLE := VAR_TRUE_CLOCK_ENABLE_MUX_uxn_c_l31_c1_1062_return_output;
+     VAR_ram_address_MUX_uxn_c_l31_c2_f46b_iffalse := VAR_ram_address_MUX_uxn_c_l36_c7_ba78_return_output;
+     VAR_rom_address_MUX_uxn_c_l31_c2_f46b_iffalse := VAR_rom_address_MUX_uxn_c_l36_c7_ba78_return_output;
+     -- ram_address_MUX[uxn_c_l31_c2_f46b] LATENCY=0
      -- Inputs
-     TRUE_CLOCK_ENABLE_MUX_uxn_c_l36_c1_8541_cond <= VAR_TRUE_CLOCK_ENABLE_MUX_uxn_c_l36_c1_8541_cond;
-     TRUE_CLOCK_ENABLE_MUX_uxn_c_l36_c1_8541_iftrue <= VAR_TRUE_CLOCK_ENABLE_MUX_uxn_c_l36_c1_8541_iftrue;
-     TRUE_CLOCK_ENABLE_MUX_uxn_c_l36_c1_8541_iffalse <= VAR_TRUE_CLOCK_ENABLE_MUX_uxn_c_l36_c1_8541_iffalse;
+     ram_address_MUX_uxn_c_l31_c2_f46b_cond <= VAR_ram_address_MUX_uxn_c_l31_c2_f46b_cond;
+     ram_address_MUX_uxn_c_l31_c2_f46b_iftrue <= VAR_ram_address_MUX_uxn_c_l31_c2_f46b_iftrue;
+     ram_address_MUX_uxn_c_l31_c2_f46b_iffalse <= VAR_ram_address_MUX_uxn_c_l31_c2_f46b_iffalse;
      -- Outputs
-     VAR_TRUE_CLOCK_ENABLE_MUX_uxn_c_l36_c1_8541_return_output := TRUE_CLOCK_ENABLE_MUX_uxn_c_l36_c1_8541_return_output;
+     VAR_ram_address_MUX_uxn_c_l31_c2_f46b_return_output := ram_address_MUX_uxn_c_l31_c2_f46b_return_output;
 
-     -- printf_uxn_c_l33_c3_d58b[uxn_c_l33_c3_d58b] LATENCY=0
+     -- rom_address_MUX[uxn_c_l31_c2_f46b] LATENCY=0
+     -- Inputs
+     rom_address_MUX_uxn_c_l31_c2_f46b_cond <= VAR_rom_address_MUX_uxn_c_l31_c2_f46b_cond;
+     rom_address_MUX_uxn_c_l31_c2_f46b_iftrue <= VAR_rom_address_MUX_uxn_c_l31_c2_f46b_iftrue;
+     rom_address_MUX_uxn_c_l31_c2_f46b_iffalse <= VAR_rom_address_MUX_uxn_c_l31_c2_f46b_iffalse;
+     -- Outputs
+     VAR_rom_address_MUX_uxn_c_l31_c2_f46b_return_output := rom_address_MUX_uxn_c_l31_c2_f46b_return_output;
+
+     -- read_rom_byte[uxn_c_l32_c14_344e] LATENCY=0
      -- Clock enable
-     printf_uxn_c_l33_c3_d58b_uxn_c_l33_c3_d58b_CLOCK_ENABLE <= VAR_printf_uxn_c_l33_c3_d58b_uxn_c_l33_c3_d58b_CLOCK_ENABLE;
+     read_rom_byte_uxn_c_l32_c14_344e_CLOCK_ENABLE <= VAR_read_rom_byte_uxn_c_l32_c14_344e_CLOCK_ENABLE;
      -- Inputs
-     printf_uxn_c_l33_c3_d58b_uxn_c_l33_c3_d58b_arg0 <= VAR_printf_uxn_c_l33_c3_d58b_uxn_c_l33_c3_d58b_arg0;
+     read_rom_byte_uxn_c_l32_c14_344e_read_address <= VAR_read_rom_byte_uxn_c_l32_c14_344e_read_address;
      -- Outputs
+     VAR_read_rom_byte_uxn_c_l32_c14_344e_return_output := read_rom_byte_uxn_c_l32_c14_344e_return_output;
 
-     -- read_rom_byte[uxn_c_l32_c14_7105] LATENCY=0
+     -- TRUE_CLOCK_ENABLE_MUX[uxn_c_l36_c1_eca1] LATENCY=0
+     -- Inputs
+     TRUE_CLOCK_ENABLE_MUX_uxn_c_l36_c1_eca1_cond <= VAR_TRUE_CLOCK_ENABLE_MUX_uxn_c_l36_c1_eca1_cond;
+     TRUE_CLOCK_ENABLE_MUX_uxn_c_l36_c1_eca1_iftrue <= VAR_TRUE_CLOCK_ENABLE_MUX_uxn_c_l36_c1_eca1_iftrue;
+     TRUE_CLOCK_ENABLE_MUX_uxn_c_l36_c1_eca1_iffalse <= VAR_TRUE_CLOCK_ENABLE_MUX_uxn_c_l36_c1_eca1_iffalse;
+     -- Outputs
+     VAR_TRUE_CLOCK_ENABLE_MUX_uxn_c_l36_c1_eca1_return_output := TRUE_CLOCK_ENABLE_MUX_uxn_c_l36_c1_eca1_return_output;
+
+     -- is_finished_MUX[uxn_c_l36_c7_ba78] LATENCY=0
+     -- Inputs
+     is_finished_MUX_uxn_c_l36_c7_ba78_cond <= VAR_is_finished_MUX_uxn_c_l36_c7_ba78_cond;
+     is_finished_MUX_uxn_c_l36_c7_ba78_iftrue <= VAR_is_finished_MUX_uxn_c_l36_c7_ba78_iftrue;
+     is_finished_MUX_uxn_c_l36_c7_ba78_iffalse <= VAR_is_finished_MUX_uxn_c_l36_c7_ba78_iffalse;
+     -- Outputs
+     VAR_is_finished_MUX_uxn_c_l36_c7_ba78_return_output := is_finished_MUX_uxn_c_l36_c7_ba78_return_output;
+
+     -- printf_uxn_c_l33_c3_4383[uxn_c_l33_c3_4383] LATENCY=0
      -- Clock enable
-     read_rom_byte_uxn_c_l32_c14_7105_CLOCK_ENABLE <= VAR_read_rom_byte_uxn_c_l32_c14_7105_CLOCK_ENABLE;
+     printf_uxn_c_l33_c3_4383_uxn_c_l33_c3_4383_CLOCK_ENABLE <= VAR_printf_uxn_c_l33_c3_4383_uxn_c_l33_c3_4383_CLOCK_ENABLE;
      -- Inputs
-     read_rom_byte_uxn_c_l32_c14_7105_read_address <= VAR_read_rom_byte_uxn_c_l32_c14_7105_read_address;
+     printf_uxn_c_l33_c3_4383_uxn_c_l33_c3_4383_arg0 <= VAR_printf_uxn_c_l33_c3_4383_uxn_c_l33_c3_4383_arg0;
      -- Outputs
-     VAR_read_rom_byte_uxn_c_l32_c14_7105_return_output := read_rom_byte_uxn_c_l32_c14_7105_return_output;
-
-     -- is_finished_MUX[uxn_c_l36_c7_388a] LATENCY=0
-     -- Inputs
-     is_finished_MUX_uxn_c_l36_c7_388a_cond <= VAR_is_finished_MUX_uxn_c_l36_c7_388a_cond;
-     is_finished_MUX_uxn_c_l36_c7_388a_iftrue <= VAR_is_finished_MUX_uxn_c_l36_c7_388a_iftrue;
-     is_finished_MUX_uxn_c_l36_c7_388a_iffalse <= VAR_is_finished_MUX_uxn_c_l36_c7_388a_iffalse;
-     -- Outputs
-     VAR_is_finished_MUX_uxn_c_l36_c7_388a_return_output := is_finished_MUX_uxn_c_l36_c7_388a_return_output;
-
-     -- ram_address_MUX[uxn_c_l31_c2_45d1] LATENCY=0
-     -- Inputs
-     ram_address_MUX_uxn_c_l31_c2_45d1_cond <= VAR_ram_address_MUX_uxn_c_l31_c2_45d1_cond;
-     ram_address_MUX_uxn_c_l31_c2_45d1_iftrue <= VAR_ram_address_MUX_uxn_c_l31_c2_45d1_iftrue;
-     ram_address_MUX_uxn_c_l31_c2_45d1_iffalse <= VAR_ram_address_MUX_uxn_c_l31_c2_45d1_iffalse;
-     -- Outputs
-     VAR_ram_address_MUX_uxn_c_l31_c2_45d1_return_output := ram_address_MUX_uxn_c_l31_c2_45d1_return_output;
-
-     -- rom_address_MUX[uxn_c_l31_c2_45d1] LATENCY=0
-     -- Inputs
-     rom_address_MUX_uxn_c_l31_c2_45d1_cond <= VAR_rom_address_MUX_uxn_c_l31_c2_45d1_cond;
-     rom_address_MUX_uxn_c_l31_c2_45d1_iftrue <= VAR_rom_address_MUX_uxn_c_l31_c2_45d1_iftrue;
-     rom_address_MUX_uxn_c_l31_c2_45d1_iffalse <= VAR_rom_address_MUX_uxn_c_l31_c2_45d1_iffalse;
-     -- Outputs
-     VAR_rom_address_MUX_uxn_c_l31_c2_45d1_return_output := rom_address_MUX_uxn_c_l31_c2_45d1_return_output;
 
      -- Submodule level 3
-     VAR_printf_uxn_c_l38_c3_8c28_uxn_c_l38_c3_8c28_CLOCK_ENABLE := VAR_TRUE_CLOCK_ENABLE_MUX_uxn_c_l36_c1_8541_return_output;
-     VAR_read_rom_byte_uxn_c_l37_c14_dcd2_CLOCK_ENABLE := VAR_TRUE_CLOCK_ENABLE_MUX_uxn_c_l36_c1_8541_return_output;
-     VAR_is_finished_MUX_uxn_c_l31_c2_45d1_iffalse := VAR_is_finished_MUX_uxn_c_l36_c7_388a_return_output;
-     REG_VAR_ram_address := VAR_ram_address_MUX_uxn_c_l31_c2_45d1_return_output;
-     VAR_rom_byte_MUX_uxn_c_l31_c2_45d1_iftrue := VAR_read_rom_byte_uxn_c_l32_c14_7105_return_output;
-     REG_VAR_rom_address := VAR_rom_address_MUX_uxn_c_l31_c2_45d1_return_output;
-     -- is_finished_MUX[uxn_c_l31_c2_45d1] LATENCY=0
-     -- Inputs
-     is_finished_MUX_uxn_c_l31_c2_45d1_cond <= VAR_is_finished_MUX_uxn_c_l31_c2_45d1_cond;
-     is_finished_MUX_uxn_c_l31_c2_45d1_iftrue <= VAR_is_finished_MUX_uxn_c_l31_c2_45d1_iftrue;
-     is_finished_MUX_uxn_c_l31_c2_45d1_iffalse <= VAR_is_finished_MUX_uxn_c_l31_c2_45d1_iffalse;
-     -- Outputs
-     VAR_is_finished_MUX_uxn_c_l31_c2_45d1_return_output := is_finished_MUX_uxn_c_l31_c2_45d1_return_output;
-
-     -- read_rom_byte[uxn_c_l37_c14_dcd2] LATENCY=0
+     VAR_printf_uxn_c_l38_c3_a323_uxn_c_l38_c3_a323_CLOCK_ENABLE := VAR_TRUE_CLOCK_ENABLE_MUX_uxn_c_l36_c1_eca1_return_output;
+     VAR_read_rom_byte_uxn_c_l37_c14_2d37_CLOCK_ENABLE := VAR_TRUE_CLOCK_ENABLE_MUX_uxn_c_l36_c1_eca1_return_output;
+     VAR_is_finished_MUX_uxn_c_l31_c2_f46b_iffalse := VAR_is_finished_MUX_uxn_c_l36_c7_ba78_return_output;
+     REG_VAR_ram_address := VAR_ram_address_MUX_uxn_c_l31_c2_f46b_return_output;
+     VAR_rom_byte_MUX_uxn_c_l31_c2_f46b_iftrue := VAR_read_rom_byte_uxn_c_l32_c14_344e_return_output;
+     REG_VAR_rom_address := VAR_rom_address_MUX_uxn_c_l31_c2_f46b_return_output;
+     -- read_rom_byte[uxn_c_l37_c14_2d37] LATENCY=0
      -- Clock enable
-     read_rom_byte_uxn_c_l37_c14_dcd2_CLOCK_ENABLE <= VAR_read_rom_byte_uxn_c_l37_c14_dcd2_CLOCK_ENABLE;
+     read_rom_byte_uxn_c_l37_c14_2d37_CLOCK_ENABLE <= VAR_read_rom_byte_uxn_c_l37_c14_2d37_CLOCK_ENABLE;
      -- Inputs
-     read_rom_byte_uxn_c_l37_c14_dcd2_read_address <= VAR_read_rom_byte_uxn_c_l37_c14_dcd2_read_address;
+     read_rom_byte_uxn_c_l37_c14_2d37_read_address <= VAR_read_rom_byte_uxn_c_l37_c14_2d37_read_address;
      -- Outputs
-     VAR_read_rom_byte_uxn_c_l37_c14_dcd2_return_output := read_rom_byte_uxn_c_l37_c14_dcd2_return_output;
+     VAR_read_rom_byte_uxn_c_l37_c14_2d37_return_output := read_rom_byte_uxn_c_l37_c14_2d37_return_output;
+
+     -- is_finished_MUX[uxn_c_l31_c2_f46b] LATENCY=0
+     -- Inputs
+     is_finished_MUX_uxn_c_l31_c2_f46b_cond <= VAR_is_finished_MUX_uxn_c_l31_c2_f46b_cond;
+     is_finished_MUX_uxn_c_l31_c2_f46b_iftrue <= VAR_is_finished_MUX_uxn_c_l31_c2_f46b_iftrue;
+     is_finished_MUX_uxn_c_l31_c2_f46b_iffalse <= VAR_is_finished_MUX_uxn_c_l31_c2_f46b_iffalse;
+     -- Outputs
+     VAR_is_finished_MUX_uxn_c_l31_c2_f46b_return_output := is_finished_MUX_uxn_c_l31_c2_f46b_return_output;
 
      -- Submodule level 4
-     REG_VAR_is_finished := VAR_is_finished_MUX_uxn_c_l31_c2_45d1_return_output;
-     VAR_rom_byte_uxn_c_l37_c3_0fba := VAR_read_rom_byte_uxn_c_l37_c14_dcd2_return_output;
-     VAR_printf_uxn_c_l38_c3_8c28_uxn_c_l38_c3_8c28_arg1 := resize(VAR_rom_byte_uxn_c_l37_c3_0fba, 32);
-     VAR_rom_byte_MUX_uxn_c_l36_c7_388a_iftrue := VAR_rom_byte_uxn_c_l37_c3_0fba;
-     -- rom_byte_MUX[uxn_c_l36_c7_388a] LATENCY=0
+     REG_VAR_is_finished := VAR_is_finished_MUX_uxn_c_l31_c2_f46b_return_output;
+     VAR_rom_byte_uxn_c_l37_c3_28a8 := VAR_read_rom_byte_uxn_c_l37_c14_2d37_return_output;
+     VAR_printf_uxn_c_l38_c3_a323_uxn_c_l38_c3_a323_arg1 := resize(VAR_rom_byte_uxn_c_l37_c3_28a8, 32);
+     VAR_rom_byte_MUX_uxn_c_l36_c7_ba78_iftrue := VAR_rom_byte_uxn_c_l37_c3_28a8;
+     -- rom_byte_MUX[uxn_c_l36_c7_ba78] LATENCY=0
      -- Inputs
-     rom_byte_MUX_uxn_c_l36_c7_388a_cond <= VAR_rom_byte_MUX_uxn_c_l36_c7_388a_cond;
-     rom_byte_MUX_uxn_c_l36_c7_388a_iftrue <= VAR_rom_byte_MUX_uxn_c_l36_c7_388a_iftrue;
-     rom_byte_MUX_uxn_c_l36_c7_388a_iffalse <= VAR_rom_byte_MUX_uxn_c_l36_c7_388a_iffalse;
+     rom_byte_MUX_uxn_c_l36_c7_ba78_cond <= VAR_rom_byte_MUX_uxn_c_l36_c7_ba78_cond;
+     rom_byte_MUX_uxn_c_l36_c7_ba78_iftrue <= VAR_rom_byte_MUX_uxn_c_l36_c7_ba78_iftrue;
+     rom_byte_MUX_uxn_c_l36_c7_ba78_iffalse <= VAR_rom_byte_MUX_uxn_c_l36_c7_ba78_iffalse;
      -- Outputs
-     VAR_rom_byte_MUX_uxn_c_l36_c7_388a_return_output := rom_byte_MUX_uxn_c_l36_c7_388a_return_output;
+     VAR_rom_byte_MUX_uxn_c_l36_c7_ba78_return_output := rom_byte_MUX_uxn_c_l36_c7_ba78_return_output;
 
-     -- printf_uxn_c_l38_c3_8c28[uxn_c_l38_c3_8c28] LATENCY=0
+     -- printf_uxn_c_l38_c3_a323[uxn_c_l38_c3_a323] LATENCY=0
      -- Clock enable
-     printf_uxn_c_l38_c3_8c28_uxn_c_l38_c3_8c28_CLOCK_ENABLE <= VAR_printf_uxn_c_l38_c3_8c28_uxn_c_l38_c3_8c28_CLOCK_ENABLE;
+     printf_uxn_c_l38_c3_a323_uxn_c_l38_c3_a323_CLOCK_ENABLE <= VAR_printf_uxn_c_l38_c3_a323_uxn_c_l38_c3_a323_CLOCK_ENABLE;
      -- Inputs
-     printf_uxn_c_l38_c3_8c28_uxn_c_l38_c3_8c28_arg0 <= VAR_printf_uxn_c_l38_c3_8c28_uxn_c_l38_c3_8c28_arg0;
-     printf_uxn_c_l38_c3_8c28_uxn_c_l38_c3_8c28_arg1 <= VAR_printf_uxn_c_l38_c3_8c28_uxn_c_l38_c3_8c28_arg1;
+     printf_uxn_c_l38_c3_a323_uxn_c_l38_c3_a323_arg0 <= VAR_printf_uxn_c_l38_c3_a323_uxn_c_l38_c3_a323_arg0;
+     printf_uxn_c_l38_c3_a323_uxn_c_l38_c3_a323_arg1 <= VAR_printf_uxn_c_l38_c3_a323_uxn_c_l38_c3_a323_arg1;
      -- Outputs
 
      -- Submodule level 5
-     VAR_rom_byte_MUX_uxn_c_l31_c2_45d1_iffalse := VAR_rom_byte_MUX_uxn_c_l36_c7_388a_return_output;
-     -- rom_byte_MUX[uxn_c_l31_c2_45d1] LATENCY=0
+     VAR_rom_byte_MUX_uxn_c_l31_c2_f46b_iffalse := VAR_rom_byte_MUX_uxn_c_l36_c7_ba78_return_output;
+     -- rom_byte_MUX[uxn_c_l31_c2_f46b] LATENCY=0
      -- Inputs
-     rom_byte_MUX_uxn_c_l31_c2_45d1_cond <= VAR_rom_byte_MUX_uxn_c_l31_c2_45d1_cond;
-     rom_byte_MUX_uxn_c_l31_c2_45d1_iftrue <= VAR_rom_byte_MUX_uxn_c_l31_c2_45d1_iftrue;
-     rom_byte_MUX_uxn_c_l31_c2_45d1_iffalse <= VAR_rom_byte_MUX_uxn_c_l31_c2_45d1_iffalse;
+     rom_byte_MUX_uxn_c_l31_c2_f46b_cond <= VAR_rom_byte_MUX_uxn_c_l31_c2_f46b_cond;
+     rom_byte_MUX_uxn_c_l31_c2_f46b_iftrue <= VAR_rom_byte_MUX_uxn_c_l31_c2_f46b_iftrue;
+     rom_byte_MUX_uxn_c_l31_c2_f46b_iffalse <= VAR_rom_byte_MUX_uxn_c_l31_c2_f46b_iffalse;
      -- Outputs
-     VAR_rom_byte_MUX_uxn_c_l31_c2_45d1_return_output := rom_byte_MUX_uxn_c_l31_c2_45d1_return_output;
+     VAR_rom_byte_MUX_uxn_c_l31_c2_f46b_return_output := rom_byte_MUX_uxn_c_l31_c2_f46b_return_output;
 
      -- Submodule level 6
-     REG_VAR_rom_byte := VAR_rom_byte_MUX_uxn_c_l31_c2_45d1_return_output;
-     -- CONST_REF_RD_boot_step_result_t_boot_step_result_t_4ece[uxn_c_l47_c9_2a9a] LATENCY=0
-     VAR_CONST_REF_RD_boot_step_result_t_boot_step_result_t_4ece_uxn_c_l47_c9_2a9a_return_output := CONST_REF_RD_boot_step_result_t_boot_step_result_t_4ece(
+     REG_VAR_rom_byte := VAR_rom_byte_MUX_uxn_c_l31_c2_f46b_return_output;
+     -- CONST_REF_RD_boot_step_result_t_boot_step_result_t_4ece[uxn_c_l47_c9_27fe] LATENCY=0
+     VAR_CONST_REF_RD_boot_step_result_t_boot_step_result_t_4ece_uxn_c_l47_c9_27fe_return_output := CONST_REF_RD_boot_step_result_t_boot_step_result_t_4ece(
      boot_phase,
-     VAR_is_finished_MUX_uxn_c_l31_c2_45d1_return_output,
-     VAR_rom_byte_MUX_uxn_c_l31_c2_45d1_return_output,
-     VAR_ram_address_MUX_uxn_c_l31_c2_45d1_return_output);
+     VAR_is_finished_MUX_uxn_c_l31_c2_f46b_return_output,
+     VAR_rom_byte_MUX_uxn_c_l31_c2_f46b_return_output,
+     VAR_ram_address_MUX_uxn_c_l31_c2_f46b_return_output);
 
      -- Submodule level 7
-     VAR_return_output := VAR_CONST_REF_RD_boot_step_result_t_boot_step_result_t_4ece_uxn_c_l47_c9_2a9a_return_output;
+     VAR_return_output := VAR_CONST_REF_RD_boot_step_result_t_boot_step_result_t_4ece_uxn_c_l47_c9_27fe_return_output;
      -- Last stage of pipeline return wire to return port/reg
      return_output <= VAR_return_output;
    end if;
