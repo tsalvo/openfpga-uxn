@@ -8,7 +8,7 @@ use std.textio.all;
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
--- use ieee.float_pkg.all;
+-- -- use ieee.float_pkg.all;
 use work.c_structs_pkg.all;
 -- Submodules: 0
 entity BIN_OP_PLUS_int18_t_int2_t_0CLK_de264c78 is
