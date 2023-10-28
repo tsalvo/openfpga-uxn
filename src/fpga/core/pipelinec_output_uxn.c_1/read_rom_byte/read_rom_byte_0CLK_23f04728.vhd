@@ -8,7 +8,7 @@ use std.textio.all;
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
--- -- use ieee.float_pkg.all;
+-- use ieee.float_pkg.all;
 use work.c_structs_pkg.all;
 -- Submodules: 2
 entity read_rom_byte_0CLK_23f04728 is
@@ -30,12 +30,12 @@ signal rdaddr : unsigned(31 downto 0) := to_unsigned(0, 32);
 signal REG_COMB_rdaddr : unsigned(31 downto 0);
 
 -- Each function instance gets signals
--- read_rom_byte_uxn_rom_RAM_SP_RF_1[fill_test_h_l133_c19_ff58]
-signal read_rom_byte_uxn_rom_RAM_SP_RF_1_fill_test_h_l133_c19_ff58_CLOCK_ENABLE : unsigned(0 downto 0);
-signal read_rom_byte_uxn_rom_RAM_SP_RF_1_fill_test_h_l133_c19_ff58_addr0 : unsigned(8 downto 0);
-signal read_rom_byte_uxn_rom_RAM_SP_RF_1_fill_test_h_l133_c19_ff58_wd : unsigned(7 downto 0);
-signal read_rom_byte_uxn_rom_RAM_SP_RF_1_fill_test_h_l133_c19_ff58_we : unsigned(0 downto 0);
-signal read_rom_byte_uxn_rom_RAM_SP_RF_1_fill_test_h_l133_c19_ff58_return_output : unsigned(7 downto 0);
+-- read_rom_byte_uxn_rom_RAM_SP_RF_1[mandelbrot_fast_h_l195_c19_6674]
+signal read_rom_byte_uxn_rom_RAM_SP_RF_1_mandelbrot_fast_h_l195_c19_6674_CLOCK_ENABLE : unsigned(0 downto 0);
+signal read_rom_byte_uxn_rom_RAM_SP_RF_1_mandelbrot_fast_h_l195_c19_6674_addr0 : unsigned(8 downto 0);
+signal read_rom_byte_uxn_rom_RAM_SP_RF_1_mandelbrot_fast_h_l195_c19_6674_wd : unsigned(7 downto 0);
+signal read_rom_byte_uxn_rom_RAM_SP_RF_1_mandelbrot_fast_h_l195_c19_6674_we : unsigned(0 downto 0);
+signal read_rom_byte_uxn_rom_RAM_SP_RF_1_mandelbrot_fast_h_l195_c19_6674_return_output : unsigned(7 downto 0);
 
 function CAST_TO_uint32_t_uint16_t( rhs : unsigned) return unsigned is
 
@@ -52,14 +52,14 @@ end function;
 begin
 
 -- SUBMODULE INSTANCES 
--- read_rom_byte_uxn_rom_RAM_SP_RF_1_fill_test_h_l133_c19_ff58
-read_rom_byte_uxn_rom_RAM_SP_RF_1_fill_test_h_l133_c19_ff58 : entity work.read_rom_byte_uxn_rom_RAM_SP_RF_1_0CLK_de264c78 port map (
+-- read_rom_byte_uxn_rom_RAM_SP_RF_1_mandelbrot_fast_h_l195_c19_6674
+read_rom_byte_uxn_rom_RAM_SP_RF_1_mandelbrot_fast_h_l195_c19_6674 : entity work.read_rom_byte_uxn_rom_RAM_SP_RF_1_0CLK_de264c78 port map (
 clk,
-read_rom_byte_uxn_rom_RAM_SP_RF_1_fill_test_h_l133_c19_ff58_CLOCK_ENABLE,
-read_rom_byte_uxn_rom_RAM_SP_RF_1_fill_test_h_l133_c19_ff58_addr0,
-read_rom_byte_uxn_rom_RAM_SP_RF_1_fill_test_h_l133_c19_ff58_wd,
-read_rom_byte_uxn_rom_RAM_SP_RF_1_fill_test_h_l133_c19_ff58_we,
-read_rom_byte_uxn_rom_RAM_SP_RF_1_fill_test_h_l133_c19_ff58_return_output);
+read_rom_byte_uxn_rom_RAM_SP_RF_1_mandelbrot_fast_h_l195_c19_6674_CLOCK_ENABLE,
+read_rom_byte_uxn_rom_RAM_SP_RF_1_mandelbrot_fast_h_l195_c19_6674_addr0,
+read_rom_byte_uxn_rom_RAM_SP_RF_1_mandelbrot_fast_h_l195_c19_6674_wd,
+read_rom_byte_uxn_rom_RAM_SP_RF_1_mandelbrot_fast_h_l195_c19_6674_we,
+read_rom_byte_uxn_rom_RAM_SP_RF_1_mandelbrot_fast_h_l195_c19_6674_return_output);
 
 
 
@@ -71,21 +71,21 @@ process (
  -- Registers
  rdaddr,
  -- All submodule outputs
- read_rom_byte_uxn_rom_RAM_SP_RF_1_fill_test_h_l133_c19_ff58_return_output)
+ read_rom_byte_uxn_rom_RAM_SP_RF_1_mandelbrot_fast_h_l195_c19_6674_return_output)
 is 
  -- All of the wires in function
  variable VAR_CLOCK_ENABLE : unsigned(0 downto 0);
  variable VAR_return_output : unsigned(7 downto 0);
  variable VAR_read_address : unsigned(15 downto 0);
  variable VAR_uxn_rom : uint8_t_512;
- variable VAR_rdaddr_fill_test_h_l131_c3_43ee : unsigned(31 downto 0);
- variable VAR_CAST_TO_uint32_t_fill_test_h_l131_c12_6df1_return_output : unsigned(31 downto 0);
+ variable VAR_rdaddr_mandelbrot_fast_h_l193_c3_6a57 : unsigned(31 downto 0);
+ variable VAR_CAST_TO_uint32_t_mandelbrot_fast_h_l193_c12_dd1d_return_output : unsigned(31 downto 0);
  variable VAR_rdata : unsigned(7 downto 0);
- variable VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_fill_test_h_l133_c19_ff58_addr0 : unsigned(8 downto 0);
- variable VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_fill_test_h_l133_c19_ff58_wd : unsigned(7 downto 0);
- variable VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_fill_test_h_l133_c19_ff58_we : unsigned(0 downto 0);
- variable VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_fill_test_h_l133_c19_ff58_CLOCK_ENABLE : unsigned(0 downto 0);
- variable VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_fill_test_h_l133_c19_ff58_return_output : unsigned(7 downto 0);
+ variable VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_mandelbrot_fast_h_l195_c19_6674_addr0 : unsigned(8 downto 0);
+ variable VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_mandelbrot_fast_h_l195_c19_6674_wd : unsigned(7 downto 0);
+ variable VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_mandelbrot_fast_h_l195_c19_6674_we : unsigned(0 downto 0);
+ variable VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_mandelbrot_fast_h_l195_c19_6674_CLOCK_ENABLE : unsigned(0 downto 0);
+ variable VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_mandelbrot_fast_h_l195_c19_6674_return_output : unsigned(7 downto 0);
  -- State registers comb logic variables
 variable REG_VAR_rdaddr : unsigned(31 downto 0);
 begin
@@ -95,8 +95,8 @@ begin
   REG_VAR_rdaddr := rdaddr;
  -- Constants and things derived from constants alone
      -- Submodule level 0
-     VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_fill_test_h_l133_c19_ff58_we := to_unsigned(0, 1);
-     VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_fill_test_h_l133_c19_ff58_wd := resize(to_unsigned(0, 1), 8);
+     VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_mandelbrot_fast_h_l195_c19_6674_we := to_unsigned(0, 1);
+     VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_mandelbrot_fast_h_l195_c19_6674_wd := resize(to_unsigned(0, 1), 8);
 
  -- Loop to construct simultaneous register transfers for each of the pipeline stages
  -- LATENCY=0 is combinational Logic
@@ -108,27 +108,27 @@ begin
      VAR_read_address := read_address;
 
      -- Submodule level 0
-     VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_fill_test_h_l133_c19_ff58_CLOCK_ENABLE := VAR_CLOCK_ENABLE;
-     -- CAST_TO_uint32_t[fill_test_h_l131_c12_6df1] LATENCY=0
-     VAR_CAST_TO_uint32_t_fill_test_h_l131_c12_6df1_return_output := CAST_TO_uint32_t_uint16_t(
+     VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_mandelbrot_fast_h_l195_c19_6674_CLOCK_ENABLE := VAR_CLOCK_ENABLE;
+     -- CAST_TO_uint32_t[mandelbrot_fast_h_l193_c12_dd1d] LATENCY=0
+     VAR_CAST_TO_uint32_t_mandelbrot_fast_h_l193_c12_dd1d_return_output := CAST_TO_uint32_t_uint16_t(
      VAR_read_address);
 
      -- Submodule level 1
-     VAR_rdaddr_fill_test_h_l131_c3_43ee := VAR_CAST_TO_uint32_t_fill_test_h_l131_c12_6df1_return_output;
-     REG_VAR_rdaddr := VAR_rdaddr_fill_test_h_l131_c3_43ee;
-     VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_fill_test_h_l133_c19_ff58_addr0 := resize(VAR_rdaddr_fill_test_h_l131_c3_43ee, 9);
-     -- read_rom_byte_uxn_rom_RAM_SP_RF_1[fill_test_h_l133_c19_ff58] LATENCY=0
+     VAR_rdaddr_mandelbrot_fast_h_l193_c3_6a57 := VAR_CAST_TO_uint32_t_mandelbrot_fast_h_l193_c12_dd1d_return_output;
+     REG_VAR_rdaddr := VAR_rdaddr_mandelbrot_fast_h_l193_c3_6a57;
+     VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_mandelbrot_fast_h_l195_c19_6674_addr0 := resize(VAR_rdaddr_mandelbrot_fast_h_l193_c3_6a57, 9);
+     -- read_rom_byte_uxn_rom_RAM_SP_RF_1[mandelbrot_fast_h_l195_c19_6674] LATENCY=0
      -- Clock enable
-     read_rom_byte_uxn_rom_RAM_SP_RF_1_fill_test_h_l133_c19_ff58_CLOCK_ENABLE <= VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_fill_test_h_l133_c19_ff58_CLOCK_ENABLE;
+     read_rom_byte_uxn_rom_RAM_SP_RF_1_mandelbrot_fast_h_l195_c19_6674_CLOCK_ENABLE <= VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_mandelbrot_fast_h_l195_c19_6674_CLOCK_ENABLE;
      -- Inputs
-     read_rom_byte_uxn_rom_RAM_SP_RF_1_fill_test_h_l133_c19_ff58_addr0 <= VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_fill_test_h_l133_c19_ff58_addr0;
-     read_rom_byte_uxn_rom_RAM_SP_RF_1_fill_test_h_l133_c19_ff58_wd <= VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_fill_test_h_l133_c19_ff58_wd;
-     read_rom_byte_uxn_rom_RAM_SP_RF_1_fill_test_h_l133_c19_ff58_we <= VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_fill_test_h_l133_c19_ff58_we;
+     read_rom_byte_uxn_rom_RAM_SP_RF_1_mandelbrot_fast_h_l195_c19_6674_addr0 <= VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_mandelbrot_fast_h_l195_c19_6674_addr0;
+     read_rom_byte_uxn_rom_RAM_SP_RF_1_mandelbrot_fast_h_l195_c19_6674_wd <= VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_mandelbrot_fast_h_l195_c19_6674_wd;
+     read_rom_byte_uxn_rom_RAM_SP_RF_1_mandelbrot_fast_h_l195_c19_6674_we <= VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_mandelbrot_fast_h_l195_c19_6674_we;
      -- Outputs
-     VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_fill_test_h_l133_c19_ff58_return_output := read_rom_byte_uxn_rom_RAM_SP_RF_1_fill_test_h_l133_c19_ff58_return_output;
+     VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_mandelbrot_fast_h_l195_c19_6674_return_output := read_rom_byte_uxn_rom_RAM_SP_RF_1_mandelbrot_fast_h_l195_c19_6674_return_output;
 
      -- Submodule level 2
-     VAR_return_output := VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_fill_test_h_l133_c19_ff58_return_output;
+     VAR_return_output := VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_mandelbrot_fast_h_l195_c19_6674_return_output;
      -- Last stage of pipeline return wire to return port/reg
      return_output <= VAR_return_output;
    end if;
