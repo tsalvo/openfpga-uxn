@@ -30,12 +30,12 @@ signal rdaddr : unsigned(31 downto 0) := to_unsigned(0, 32);
 signal REG_COMB_rdaddr : unsigned(31 downto 0);
 
 -- Each function instance gets signals
--- read_rom_byte_uxn_rom_RAM_SP_RF_1[bounce_h_l239_c19_e332]
-signal read_rom_byte_uxn_rom_RAM_SP_RF_1_bounce_h_l239_c19_e332_CLOCK_ENABLE : unsigned(0 downto 0);
-signal read_rom_byte_uxn_rom_RAM_SP_RF_1_bounce_h_l239_c19_e332_addr0 : unsigned(8 downto 0);
-signal read_rom_byte_uxn_rom_RAM_SP_RF_1_bounce_h_l239_c19_e332_wd : unsigned(7 downto 0);
-signal read_rom_byte_uxn_rom_RAM_SP_RF_1_bounce_h_l239_c19_e332_we : unsigned(0 downto 0);
-signal read_rom_byte_uxn_rom_RAM_SP_RF_1_bounce_h_l239_c19_e332_return_output : unsigned(7 downto 0);
+-- read_rom_byte_uxn_rom_RAM_SP_RF_1[star_h_l682_c19_04f5]
+signal read_rom_byte_uxn_rom_RAM_SP_RF_1_star_h_l682_c19_04f5_CLOCK_ENABLE : unsigned(0 downto 0);
+signal read_rom_byte_uxn_rom_RAM_SP_RF_1_star_h_l682_c19_04f5_addr0 : unsigned(10 downto 0);
+signal read_rom_byte_uxn_rom_RAM_SP_RF_1_star_h_l682_c19_04f5_wd : unsigned(7 downto 0);
+signal read_rom_byte_uxn_rom_RAM_SP_RF_1_star_h_l682_c19_04f5_we : unsigned(0 downto 0);
+signal read_rom_byte_uxn_rom_RAM_SP_RF_1_star_h_l682_c19_04f5_return_output : unsigned(7 downto 0);
 
 function CAST_TO_uint32_t_uint16_t( rhs : unsigned) return unsigned is
 
@@ -52,14 +52,14 @@ end function;
 begin
 
 -- SUBMODULE INSTANCES 
--- read_rom_byte_uxn_rom_RAM_SP_RF_1_bounce_h_l239_c19_e332
-read_rom_byte_uxn_rom_RAM_SP_RF_1_bounce_h_l239_c19_e332 : entity work.read_rom_byte_uxn_rom_RAM_SP_RF_1_0CLK_de264c78 port map (
+-- read_rom_byte_uxn_rom_RAM_SP_RF_1_star_h_l682_c19_04f5
+read_rom_byte_uxn_rom_RAM_SP_RF_1_star_h_l682_c19_04f5 : entity work.read_rom_byte_uxn_rom_RAM_SP_RF_1_0CLK_de264c78 port map (
 clk,
-read_rom_byte_uxn_rom_RAM_SP_RF_1_bounce_h_l239_c19_e332_CLOCK_ENABLE,
-read_rom_byte_uxn_rom_RAM_SP_RF_1_bounce_h_l239_c19_e332_addr0,
-read_rom_byte_uxn_rom_RAM_SP_RF_1_bounce_h_l239_c19_e332_wd,
-read_rom_byte_uxn_rom_RAM_SP_RF_1_bounce_h_l239_c19_e332_we,
-read_rom_byte_uxn_rom_RAM_SP_RF_1_bounce_h_l239_c19_e332_return_output);
+read_rom_byte_uxn_rom_RAM_SP_RF_1_star_h_l682_c19_04f5_CLOCK_ENABLE,
+read_rom_byte_uxn_rom_RAM_SP_RF_1_star_h_l682_c19_04f5_addr0,
+read_rom_byte_uxn_rom_RAM_SP_RF_1_star_h_l682_c19_04f5_wd,
+read_rom_byte_uxn_rom_RAM_SP_RF_1_star_h_l682_c19_04f5_we,
+read_rom_byte_uxn_rom_RAM_SP_RF_1_star_h_l682_c19_04f5_return_output);
 
 
 
@@ -71,21 +71,21 @@ process (
  -- Registers
  rdaddr,
  -- All submodule outputs
- read_rom_byte_uxn_rom_RAM_SP_RF_1_bounce_h_l239_c19_e332_return_output)
+ read_rom_byte_uxn_rom_RAM_SP_RF_1_star_h_l682_c19_04f5_return_output)
 is 
  -- All of the wires in function
  variable VAR_CLOCK_ENABLE : unsigned(0 downto 0);
  variable VAR_return_output : unsigned(7 downto 0);
  variable VAR_read_address : unsigned(15 downto 0);
- variable VAR_uxn_rom : uint8_t_512;
- variable VAR_rdaddr_bounce_h_l237_c3_a114 : unsigned(31 downto 0);
- variable VAR_CAST_TO_uint32_t_bounce_h_l237_c12_82b5_return_output : unsigned(31 downto 0);
+ variable VAR_uxn_rom : uint8_t_2048;
+ variable VAR_rdaddr_star_h_l680_c3_750a : unsigned(31 downto 0);
+ variable VAR_CAST_TO_uint32_t_star_h_l680_c12_d96a_return_output : unsigned(31 downto 0);
  variable VAR_rdata : unsigned(7 downto 0);
- variable VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_bounce_h_l239_c19_e332_addr0 : unsigned(8 downto 0);
- variable VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_bounce_h_l239_c19_e332_wd : unsigned(7 downto 0);
- variable VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_bounce_h_l239_c19_e332_we : unsigned(0 downto 0);
- variable VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_bounce_h_l239_c19_e332_CLOCK_ENABLE : unsigned(0 downto 0);
- variable VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_bounce_h_l239_c19_e332_return_output : unsigned(7 downto 0);
+ variable VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_star_h_l682_c19_04f5_addr0 : unsigned(10 downto 0);
+ variable VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_star_h_l682_c19_04f5_wd : unsigned(7 downto 0);
+ variable VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_star_h_l682_c19_04f5_we : unsigned(0 downto 0);
+ variable VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_star_h_l682_c19_04f5_CLOCK_ENABLE : unsigned(0 downto 0);
+ variable VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_star_h_l682_c19_04f5_return_output : unsigned(7 downto 0);
  -- State registers comb logic variables
 variable REG_VAR_rdaddr : unsigned(31 downto 0);
 begin
@@ -95,8 +95,8 @@ begin
   REG_VAR_rdaddr := rdaddr;
  -- Constants and things derived from constants alone
      -- Submodule level 0
-     VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_bounce_h_l239_c19_e332_we := to_unsigned(0, 1);
-     VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_bounce_h_l239_c19_e332_wd := resize(to_unsigned(0, 1), 8);
+     VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_star_h_l682_c19_04f5_we := to_unsigned(0, 1);
+     VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_star_h_l682_c19_04f5_wd := resize(to_unsigned(0, 1), 8);
 
  -- Loop to construct simultaneous register transfers for each of the pipeline stages
  -- LATENCY=0 is combinational Logic
@@ -108,27 +108,27 @@ begin
      VAR_read_address := read_address;
 
      -- Submodule level 0
-     VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_bounce_h_l239_c19_e332_CLOCK_ENABLE := VAR_CLOCK_ENABLE;
-     -- CAST_TO_uint32_t[bounce_h_l237_c12_82b5] LATENCY=0
-     VAR_CAST_TO_uint32_t_bounce_h_l237_c12_82b5_return_output := CAST_TO_uint32_t_uint16_t(
+     VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_star_h_l682_c19_04f5_CLOCK_ENABLE := VAR_CLOCK_ENABLE;
+     -- CAST_TO_uint32_t[star_h_l680_c12_d96a] LATENCY=0
+     VAR_CAST_TO_uint32_t_star_h_l680_c12_d96a_return_output := CAST_TO_uint32_t_uint16_t(
      VAR_read_address);
 
      -- Submodule level 1
-     VAR_rdaddr_bounce_h_l237_c3_a114 := VAR_CAST_TO_uint32_t_bounce_h_l237_c12_82b5_return_output;
-     REG_VAR_rdaddr := VAR_rdaddr_bounce_h_l237_c3_a114;
-     VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_bounce_h_l239_c19_e332_addr0 := resize(VAR_rdaddr_bounce_h_l237_c3_a114, 9);
-     -- read_rom_byte_uxn_rom_RAM_SP_RF_1[bounce_h_l239_c19_e332] LATENCY=0
+     VAR_rdaddr_star_h_l680_c3_750a := VAR_CAST_TO_uint32_t_star_h_l680_c12_d96a_return_output;
+     REG_VAR_rdaddr := VAR_rdaddr_star_h_l680_c3_750a;
+     VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_star_h_l682_c19_04f5_addr0 := resize(VAR_rdaddr_star_h_l680_c3_750a, 11);
+     -- read_rom_byte_uxn_rom_RAM_SP_RF_1[star_h_l682_c19_04f5] LATENCY=0
      -- Clock enable
-     read_rom_byte_uxn_rom_RAM_SP_RF_1_bounce_h_l239_c19_e332_CLOCK_ENABLE <= VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_bounce_h_l239_c19_e332_CLOCK_ENABLE;
+     read_rom_byte_uxn_rom_RAM_SP_RF_1_star_h_l682_c19_04f5_CLOCK_ENABLE <= VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_star_h_l682_c19_04f5_CLOCK_ENABLE;
      -- Inputs
-     read_rom_byte_uxn_rom_RAM_SP_RF_1_bounce_h_l239_c19_e332_addr0 <= VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_bounce_h_l239_c19_e332_addr0;
-     read_rom_byte_uxn_rom_RAM_SP_RF_1_bounce_h_l239_c19_e332_wd <= VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_bounce_h_l239_c19_e332_wd;
-     read_rom_byte_uxn_rom_RAM_SP_RF_1_bounce_h_l239_c19_e332_we <= VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_bounce_h_l239_c19_e332_we;
+     read_rom_byte_uxn_rom_RAM_SP_RF_1_star_h_l682_c19_04f5_addr0 <= VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_star_h_l682_c19_04f5_addr0;
+     read_rom_byte_uxn_rom_RAM_SP_RF_1_star_h_l682_c19_04f5_wd <= VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_star_h_l682_c19_04f5_wd;
+     read_rom_byte_uxn_rom_RAM_SP_RF_1_star_h_l682_c19_04f5_we <= VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_star_h_l682_c19_04f5_we;
      -- Outputs
-     VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_bounce_h_l239_c19_e332_return_output := read_rom_byte_uxn_rom_RAM_SP_RF_1_bounce_h_l239_c19_e332_return_output;
+     VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_star_h_l682_c19_04f5_return_output := read_rom_byte_uxn_rom_RAM_SP_RF_1_star_h_l682_c19_04f5_return_output;
 
      -- Submodule level 2
-     VAR_return_output := VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_bounce_h_l239_c19_e332_return_output;
+     VAR_return_output := VAR_read_rom_byte_uxn_rom_RAM_SP_RF_1_star_h_l682_c19_04f5_return_output;
      -- Last stage of pipeline return wire to return port/reg
      return_output <= VAR_return_output;
    end if;
