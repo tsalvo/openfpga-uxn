@@ -677,6 +677,27 @@ always @(negedge audgen_sclk) begin
 end
 
 
+wire        ioctl_wr;
+wire [15:0] ioctl_addr;
+wire  [7:0] ioctl_dout;
+
+data_loader #(
+    .WRITE_MEM_CLOCK_DELAY(4)
+) rom_loader (
+    .clk_74a(clk_74a),
+    .clk_memory(clk_core_49_152),
+
+    .bridge_wr(bridge_wr),
+    .bridge_endian_little(bridge_endian_little),
+    .bridge_addr(bridge_addr),
+    .bridge_wr_data(bridge_wr_data),
+
+    .write_en(ioctl_wr),
+    .write_addr(ioctl_addr),
+    .write_data(ioctl_dout)
+);
+
+
 ///////////////////////////////////////////////
 
     wire    clk_core_6;
@@ -698,11 +719,23 @@ mf_pllbase mp1 (
     .locked         ( pll_core_locked )
 );
 
+
+/*
+uxn_top_code : in unsigned(3 downto 0);
+uxn_top_is_visible_pixel : in unsigned(0 downto 0);
+uxn_top_rom_load_valid_byte : in unsigned(0 downto 0);
+uxn_top_rom_load_address : in unsigned(15 downto 0);
+uxn_top_rom_load_value : in unsigned(7 downto 0);
+*/
 top top
 (
     .clk_49p152(clk_core_49_152),
-    .uxn_eval_input(vidout_uxn),
-    .uxn_eval_return_output(uxn_c_out)
+    .uxn_top_code(vidout_uxn[15:12]),
+    .uxn_top_is_visible_pixel(vidout_uxn[2:2]),
+    .uxn_top_rom_load_valid_byte(ioctl_wr),
+    .uxn_top_rom_load_address(ioctl_addr),
+    .uxn_top_rom_load_value(ioctl_dout),
+    .uxn_top_return_output(uxn_c_out)
 );
     
 endmodule

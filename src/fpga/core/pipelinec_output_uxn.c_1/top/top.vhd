@@ -8,8 +8,12 @@ port(
 clk_49p152 : in std_logic;
 
 -- IO for each main func
-uxn_eval_input : in unsigned(15 downto 0);
-uxn_eval_return_output : out unsigned(15 downto 0)
+uxn_top_code : in unsigned(3 downto 0);
+uxn_top_is_visible_pixel : in unsigned(0 downto 0);
+uxn_top_rom_load_valid_byte : in unsigned(0 downto 0);
+uxn_top_rom_load_address : in unsigned(15 downto 0);
+uxn_top_rom_load_value : in unsigned(7 downto 0);
+uxn_top_return_output : out unsigned(15 downto 0)
   );
 end top;
 architecture arch of top is
@@ -23,11 +27,15 @@ begin
 
 -- Instantiate each main
 -- main functions are always clock enabled, always running
-uxn_eval_0CLK_3537b0dc : entity work.uxn_eval_0CLK_3537b0dc port map (
+uxn_top_0CLK_dd8c04b0 : entity work.uxn_top_0CLK_dd8c04b0 port map (
 clk_49p152,
 to_unsigned(1,1),
-uxn_eval_input,
-uxn_eval_return_output);
+uxn_top_code,
+uxn_top_is_visible_pixel,
+uxn_top_rom_load_valid_byte,
+uxn_top_rom_load_address,
+uxn_top_rom_load_value,
+uxn_top_return_output);
 
 
 end arch;
