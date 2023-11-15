@@ -700,7 +700,6 @@ data_loader #(
 
 ///////////////////////////////////////////////
 
-    wire    clk_core_6;
     wire    clk_core_49_152;
     wire    clk_core_49_152_90deg;
     
@@ -714,7 +713,6 @@ mf_pllbase mp1 (
     
     .outclk_0       ( clk_core_49_152 ),
     .outclk_1       ( clk_core_49_152_90deg ),
-    .outclk_2       ( clk_core_6 ),
     
     .locked         ( pll_core_locked )
 );
