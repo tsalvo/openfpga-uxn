@@ -24,25 +24,25 @@ attribute mark_debug : string;
 constant PIPELINE_LATENCY : integer := 0;
 -- All of the wires/regs in function
 -- Each function instance gets signals
--- CONST_SL_1[BIN_OP_SL_uint16_t_uint2_t_c_l18_c55_ff75]
-signal CONST_SL_1_BIN_OP_SL_uint16_t_uint2_t_c_l18_c55_ff75_x : unsigned(15 downto 0);
-signal CONST_SL_1_BIN_OP_SL_uint16_t_uint2_t_c_l18_c55_ff75_return_output : unsigned(15 downto 0);
+-- CONST_SL_1[BIN_OP_SL_uint16_t_uint2_t_c_l18_c55_4099]
+signal CONST_SL_1_BIN_OP_SL_uint16_t_uint2_t_c_l18_c55_4099_x : unsigned(15 downto 0);
+signal CONST_SL_1_BIN_OP_SL_uint16_t_uint2_t_c_l18_c55_4099_return_output : unsigned(15 downto 0);
 
--- MUX[BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_98ed]
-signal MUX_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_98ed_cond : unsigned(0 downto 0);
-signal MUX_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_98ed_iftrue : unsigned(15 downto 0);
-signal MUX_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_98ed_iffalse : unsigned(15 downto 0);
-signal MUX_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_98ed_return_output : unsigned(15 downto 0);
+-- MUX[BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_7330]
+signal MUX_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_7330_cond : unsigned(0 downto 0);
+signal MUX_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_7330_iftrue : unsigned(15 downto 0);
+signal MUX_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_7330_iffalse : unsigned(15 downto 0);
+signal MUX_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_7330_return_output : unsigned(15 downto 0);
 
--- CONST_SL_2[BIN_OP_SL_uint16_t_uint2_t_c_l19_c55_bd0f]
-signal CONST_SL_2_BIN_OP_SL_uint16_t_uint2_t_c_l19_c55_bd0f_x : unsigned(15 downto 0);
-signal CONST_SL_2_BIN_OP_SL_uint16_t_uint2_t_c_l19_c55_bd0f_return_output : unsigned(15 downto 0);
+-- CONST_SL_2[BIN_OP_SL_uint16_t_uint2_t_c_l19_c55_aa66]
+signal CONST_SL_2_BIN_OP_SL_uint16_t_uint2_t_c_l19_c55_aa66_x : unsigned(15 downto 0);
+signal CONST_SL_2_BIN_OP_SL_uint16_t_uint2_t_c_l19_c55_aa66_return_output : unsigned(15 downto 0);
 
--- MUX[BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_e5b5]
-signal MUX_BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_e5b5_cond : unsigned(0 downto 0);
-signal MUX_BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_e5b5_iftrue : unsigned(15 downto 0);
-signal MUX_BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_e5b5_iffalse : unsigned(15 downto 0);
-signal MUX_BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_e5b5_return_output : unsigned(15 downto 0);
+-- MUX[BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_cd53]
+signal MUX_BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_cd53_cond : unsigned(0 downto 0);
+signal MUX_BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_cd53_iftrue : unsigned(15 downto 0);
+signal MUX_BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_cd53_iffalse : unsigned(15 downto 0);
+signal MUX_BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_cd53_return_output : unsigned(15 downto 0);
 
 function uint16_0_0( x : unsigned) return unsigned is
 --variable x : unsigned(15 downto 0);
@@ -68,29 +68,29 @@ end function;
 begin
 
 -- SUBMODULE INSTANCES 
--- CONST_SL_1_BIN_OP_SL_uint16_t_uint2_t_c_l18_c55_ff75
-CONST_SL_1_BIN_OP_SL_uint16_t_uint2_t_c_l18_c55_ff75 : entity work.CONST_SL_1_uint16_t_0CLK_de264c78 port map (
-CONST_SL_1_BIN_OP_SL_uint16_t_uint2_t_c_l18_c55_ff75_x,
-CONST_SL_1_BIN_OP_SL_uint16_t_uint2_t_c_l18_c55_ff75_return_output);
+-- CONST_SL_1_BIN_OP_SL_uint16_t_uint2_t_c_l18_c55_4099
+CONST_SL_1_BIN_OP_SL_uint16_t_uint2_t_c_l18_c55_4099 : entity work.CONST_SL_1_uint16_t_0CLK_de264c78 port map (
+CONST_SL_1_BIN_OP_SL_uint16_t_uint2_t_c_l18_c55_4099_x,
+CONST_SL_1_BIN_OP_SL_uint16_t_uint2_t_c_l18_c55_4099_return_output);
 
--- MUX_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_98ed
-MUX_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_98ed : entity work.MUX_uint1_t_uint16_t_uint16_t_0CLK_de264c78 port map (
-MUX_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_98ed_cond,
-MUX_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_98ed_iftrue,
-MUX_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_98ed_iffalse,
-MUX_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_98ed_return_output);
+-- MUX_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_7330
+MUX_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_7330 : entity work.MUX_uint1_t_uint16_t_uint16_t_0CLK_de264c78 port map (
+MUX_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_7330_cond,
+MUX_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_7330_iftrue,
+MUX_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_7330_iffalse,
+MUX_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_7330_return_output);
 
--- CONST_SL_2_BIN_OP_SL_uint16_t_uint2_t_c_l19_c55_bd0f
-CONST_SL_2_BIN_OP_SL_uint16_t_uint2_t_c_l19_c55_bd0f : entity work.CONST_SL_2_uint16_t_0CLK_de264c78 port map (
-CONST_SL_2_BIN_OP_SL_uint16_t_uint2_t_c_l19_c55_bd0f_x,
-CONST_SL_2_BIN_OP_SL_uint16_t_uint2_t_c_l19_c55_bd0f_return_output);
+-- CONST_SL_2_BIN_OP_SL_uint16_t_uint2_t_c_l19_c55_aa66
+CONST_SL_2_BIN_OP_SL_uint16_t_uint2_t_c_l19_c55_aa66 : entity work.CONST_SL_2_uint16_t_0CLK_de264c78 port map (
+CONST_SL_2_BIN_OP_SL_uint16_t_uint2_t_c_l19_c55_aa66_x,
+CONST_SL_2_BIN_OP_SL_uint16_t_uint2_t_c_l19_c55_aa66_return_output);
 
--- MUX_BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_e5b5
-MUX_BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_e5b5 : entity work.MUX_uint1_t_uint16_t_uint16_t_0CLK_de264c78 port map (
-MUX_BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_e5b5_cond,
-MUX_BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_e5b5_iftrue,
-MUX_BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_e5b5_iffalse,
-MUX_BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_e5b5_return_output);
+-- MUX_BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_cd53
+MUX_BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_cd53 : entity work.MUX_uint1_t_uint16_t_uint16_t_0CLK_de264c78 port map (
+MUX_BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_cd53_cond,
+MUX_BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_cd53_iftrue,
+MUX_BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_cd53_iffalse,
+MUX_BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_cd53_return_output);
 
 
 
@@ -100,10 +100,10 @@ process (
  left,
  right,
  -- All submodule outputs
- CONST_SL_1_BIN_OP_SL_uint16_t_uint2_t_c_l18_c55_ff75_return_output,
- MUX_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_98ed_return_output,
- CONST_SL_2_BIN_OP_SL_uint16_t_uint2_t_c_l19_c55_bd0f_return_output,
- MUX_BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_e5b5_return_output)
+ CONST_SL_1_BIN_OP_SL_uint16_t_uint2_t_c_l18_c55_4099_return_output,
+ MUX_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_7330_return_output,
+ CONST_SL_2_BIN_OP_SL_uint16_t_uint2_t_c_l19_c55_aa66_return_output,
+ MUX_BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_cd53_return_output)
 is 
  -- All of the wires in function
  variable VAR_CLOCK_ENABLE : unsigned(0 downto 0);
@@ -111,25 +111,25 @@ is
  variable VAR_right : unsigned(1 downto 0);
  variable VAR_return_output : unsigned(15 downto 0);
  variable VAR_resized_shift_amount : unsigned(1 downto 0);
- variable VAR_resized_shift_amount_BIN_OP_SL_uint16_t_uint2_t_c_l11_c3_0e28 : unsigned(1 downto 0);
+ variable VAR_resized_shift_amount_BIN_OP_SL_uint16_t_uint2_t_c_l11_c3_0110 : unsigned(1 downto 0);
  variable VAR_rv : unsigned(15 downto 0);
  variable VAR_v0 : unsigned(15 downto 0);
  variable VAR_v1 : unsigned(15 downto 0);
- variable VAR_MUX_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_98ed_cond : unsigned(0 downto 0);
- variable VAR_MUX_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_98ed_iftrue : unsigned(15 downto 0);
- variable VAR_MUX_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_98ed_iffalse : unsigned(15 downto 0);
- variable VAR_uint16_0_0_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_beb8_return_output : unsigned(0 downto 0);
- variable VAR_CONST_SL_1_BIN_OP_SL_uint16_t_uint2_t_c_l18_c55_ff75_return_output : unsigned(15 downto 0);
- variable VAR_CONST_SL_1_BIN_OP_SL_uint16_t_uint2_t_c_l18_c55_ff75_x : unsigned(15 downto 0);
- variable VAR_MUX_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_98ed_return_output : unsigned(15 downto 0);
+ variable VAR_MUX_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_7330_cond : unsigned(0 downto 0);
+ variable VAR_MUX_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_7330_iftrue : unsigned(15 downto 0);
+ variable VAR_MUX_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_7330_iffalse : unsigned(15 downto 0);
+ variable VAR_uint16_0_0_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_e70a_return_output : unsigned(0 downto 0);
+ variable VAR_CONST_SL_1_BIN_OP_SL_uint16_t_uint2_t_c_l18_c55_4099_return_output : unsigned(15 downto 0);
+ variable VAR_CONST_SL_1_BIN_OP_SL_uint16_t_uint2_t_c_l18_c55_4099_x : unsigned(15 downto 0);
+ variable VAR_MUX_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_7330_return_output : unsigned(15 downto 0);
  variable VAR_v2 : unsigned(15 downto 0);
- variable VAR_MUX_BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_e5b5_cond : unsigned(0 downto 0);
- variable VAR_MUX_BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_e5b5_iftrue : unsigned(15 downto 0);
- variable VAR_MUX_BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_e5b5_iffalse : unsigned(15 downto 0);
- variable VAR_uint16_1_1_BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_c32c_return_output : unsigned(0 downto 0);
- variable VAR_CONST_SL_2_BIN_OP_SL_uint16_t_uint2_t_c_l19_c55_bd0f_return_output : unsigned(15 downto 0);
- variable VAR_CONST_SL_2_BIN_OP_SL_uint16_t_uint2_t_c_l19_c55_bd0f_x : unsigned(15 downto 0);
- variable VAR_MUX_BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_e5b5_return_output : unsigned(15 downto 0);
+ variable VAR_MUX_BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_cd53_cond : unsigned(0 downto 0);
+ variable VAR_MUX_BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_cd53_iftrue : unsigned(15 downto 0);
+ variable VAR_MUX_BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_cd53_iffalse : unsigned(15 downto 0);
+ variable VAR_uint16_1_1_BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_f275_return_output : unsigned(0 downto 0);
+ variable VAR_CONST_SL_2_BIN_OP_SL_uint16_t_uint2_t_c_l19_c55_aa66_return_output : unsigned(15 downto 0);
+ variable VAR_CONST_SL_2_BIN_OP_SL_uint16_t_uint2_t_c_l19_c55_aa66_x : unsigned(15 downto 0);
+ variable VAR_MUX_BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_cd53_return_output : unsigned(15 downto 0);
 begin
 
  -- Loop to construct simultaneous register transfers for each of the pipeline stages
@@ -141,56 +141,56 @@ begin
      VAR_right := right;
 
      -- Submodule level 0
-     VAR_CONST_SL_1_BIN_OP_SL_uint16_t_uint2_t_c_l18_c55_ff75_x := VAR_left;
-     VAR_MUX_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_98ed_iffalse := VAR_left;
-     VAR_resized_shift_amount_BIN_OP_SL_uint16_t_uint2_t_c_l11_c3_0e28 := VAR_right;
-     -- uint16_1_1[BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_c32c] LATENCY=0
-     VAR_uint16_1_1_BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_c32c_return_output := uint16_1_1(
-     resize(VAR_resized_shift_amount_BIN_OP_SL_uint16_t_uint2_t_c_l11_c3_0e28, 16));
+     VAR_CONST_SL_1_BIN_OP_SL_uint16_t_uint2_t_c_l18_c55_4099_x := VAR_left;
+     VAR_MUX_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_7330_iffalse := VAR_left;
+     VAR_resized_shift_amount_BIN_OP_SL_uint16_t_uint2_t_c_l11_c3_0110 := VAR_right;
+     -- uint16_1_1[BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_f275] LATENCY=0
+     VAR_uint16_1_1_BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_f275_return_output := uint16_1_1(
+     resize(VAR_resized_shift_amount_BIN_OP_SL_uint16_t_uint2_t_c_l11_c3_0110, 16));
 
-     -- CONST_SL_1[BIN_OP_SL_uint16_t_uint2_t_c_l18_c55_ff75] LATENCY=0
+     -- CONST_SL_1[BIN_OP_SL_uint16_t_uint2_t_c_l18_c55_4099] LATENCY=0
      -- Inputs
-     CONST_SL_1_BIN_OP_SL_uint16_t_uint2_t_c_l18_c55_ff75_x <= VAR_CONST_SL_1_BIN_OP_SL_uint16_t_uint2_t_c_l18_c55_ff75_x;
+     CONST_SL_1_BIN_OP_SL_uint16_t_uint2_t_c_l18_c55_4099_x <= VAR_CONST_SL_1_BIN_OP_SL_uint16_t_uint2_t_c_l18_c55_4099_x;
      -- Outputs
-     VAR_CONST_SL_1_BIN_OP_SL_uint16_t_uint2_t_c_l18_c55_ff75_return_output := CONST_SL_1_BIN_OP_SL_uint16_t_uint2_t_c_l18_c55_ff75_return_output;
+     VAR_CONST_SL_1_BIN_OP_SL_uint16_t_uint2_t_c_l18_c55_4099_return_output := CONST_SL_1_BIN_OP_SL_uint16_t_uint2_t_c_l18_c55_4099_return_output;
 
-     -- uint16_0_0[BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_beb8] LATENCY=0
-     VAR_uint16_0_0_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_beb8_return_output := uint16_0_0(
-     resize(VAR_resized_shift_amount_BIN_OP_SL_uint16_t_uint2_t_c_l11_c3_0e28, 16));
+     -- uint16_0_0[BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_e70a] LATENCY=0
+     VAR_uint16_0_0_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_e70a_return_output := uint16_0_0(
+     resize(VAR_resized_shift_amount_BIN_OP_SL_uint16_t_uint2_t_c_l11_c3_0110, 16));
 
      -- Submodule level 1
-     VAR_MUX_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_98ed_iftrue := VAR_CONST_SL_1_BIN_OP_SL_uint16_t_uint2_t_c_l18_c55_ff75_return_output;
-     VAR_MUX_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_98ed_cond := VAR_uint16_0_0_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_beb8_return_output;
-     VAR_MUX_BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_e5b5_cond := VAR_uint16_1_1_BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_c32c_return_output;
-     -- MUX[BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_98ed] LATENCY=0
+     VAR_MUX_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_7330_iftrue := VAR_CONST_SL_1_BIN_OP_SL_uint16_t_uint2_t_c_l18_c55_4099_return_output;
+     VAR_MUX_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_7330_cond := VAR_uint16_0_0_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_e70a_return_output;
+     VAR_MUX_BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_cd53_cond := VAR_uint16_1_1_BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_f275_return_output;
+     -- MUX[BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_7330] LATENCY=0
      -- Inputs
-     MUX_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_98ed_cond <= VAR_MUX_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_98ed_cond;
-     MUX_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_98ed_iftrue <= VAR_MUX_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_98ed_iftrue;
-     MUX_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_98ed_iffalse <= VAR_MUX_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_98ed_iffalse;
+     MUX_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_7330_cond <= VAR_MUX_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_7330_cond;
+     MUX_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_7330_iftrue <= VAR_MUX_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_7330_iftrue;
+     MUX_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_7330_iffalse <= VAR_MUX_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_7330_iffalse;
      -- Outputs
-     VAR_MUX_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_98ed_return_output := MUX_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_98ed_return_output;
+     VAR_MUX_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_7330_return_output := MUX_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_7330_return_output;
 
      -- Submodule level 2
-     VAR_CONST_SL_2_BIN_OP_SL_uint16_t_uint2_t_c_l19_c55_bd0f_x := VAR_MUX_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_98ed_return_output;
-     VAR_MUX_BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_e5b5_iffalse := VAR_MUX_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_98ed_return_output;
-     -- CONST_SL_2[BIN_OP_SL_uint16_t_uint2_t_c_l19_c55_bd0f] LATENCY=0
+     VAR_CONST_SL_2_BIN_OP_SL_uint16_t_uint2_t_c_l19_c55_aa66_x := VAR_MUX_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_7330_return_output;
+     VAR_MUX_BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_cd53_iffalse := VAR_MUX_BIN_OP_SL_uint16_t_uint2_t_c_l18_c19_7330_return_output;
+     -- CONST_SL_2[BIN_OP_SL_uint16_t_uint2_t_c_l19_c55_aa66] LATENCY=0
      -- Inputs
-     CONST_SL_2_BIN_OP_SL_uint16_t_uint2_t_c_l19_c55_bd0f_x <= VAR_CONST_SL_2_BIN_OP_SL_uint16_t_uint2_t_c_l19_c55_bd0f_x;
+     CONST_SL_2_BIN_OP_SL_uint16_t_uint2_t_c_l19_c55_aa66_x <= VAR_CONST_SL_2_BIN_OP_SL_uint16_t_uint2_t_c_l19_c55_aa66_x;
      -- Outputs
-     VAR_CONST_SL_2_BIN_OP_SL_uint16_t_uint2_t_c_l19_c55_bd0f_return_output := CONST_SL_2_BIN_OP_SL_uint16_t_uint2_t_c_l19_c55_bd0f_return_output;
+     VAR_CONST_SL_2_BIN_OP_SL_uint16_t_uint2_t_c_l19_c55_aa66_return_output := CONST_SL_2_BIN_OP_SL_uint16_t_uint2_t_c_l19_c55_aa66_return_output;
 
      -- Submodule level 3
-     VAR_MUX_BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_e5b5_iftrue := VAR_CONST_SL_2_BIN_OP_SL_uint16_t_uint2_t_c_l19_c55_bd0f_return_output;
-     -- MUX[BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_e5b5] LATENCY=0
+     VAR_MUX_BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_cd53_iftrue := VAR_CONST_SL_2_BIN_OP_SL_uint16_t_uint2_t_c_l19_c55_aa66_return_output;
+     -- MUX[BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_cd53] LATENCY=0
      -- Inputs
-     MUX_BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_e5b5_cond <= VAR_MUX_BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_e5b5_cond;
-     MUX_BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_e5b5_iftrue <= VAR_MUX_BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_e5b5_iftrue;
-     MUX_BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_e5b5_iffalse <= VAR_MUX_BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_e5b5_iffalse;
+     MUX_BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_cd53_cond <= VAR_MUX_BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_cd53_cond;
+     MUX_BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_cd53_iftrue <= VAR_MUX_BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_cd53_iftrue;
+     MUX_BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_cd53_iffalse <= VAR_MUX_BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_cd53_iffalse;
      -- Outputs
-     VAR_MUX_BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_e5b5_return_output := MUX_BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_e5b5_return_output;
+     VAR_MUX_BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_cd53_return_output := MUX_BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_cd53_return_output;
 
      -- Submodule level 4
-     VAR_return_output := VAR_MUX_BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_e5b5_return_output;
+     VAR_return_output := VAR_MUX_BIN_OP_SL_uint16_t_uint2_t_c_l19_c19_cd53_return_output;
      -- Last stage of pipeline return wire to return port/reg
      return_output <= VAR_return_output;
    end if;
