@@ -495,7 +495,7 @@ core_bridge_cmd icb (
 ////////////////////////////////////////////////////////////////////////////////////////
 
 // UXN PipelineC Module Input / Output
-// synchronous to clk_core_14_746
+// synchronous to clk_core_13_824
 wire [15:0] uxn_c_out;
 // wire [15:0] uxn_c_in;
 
@@ -512,8 +512,8 @@ wire [15:0] uxn_c_out;
 // PLL output has a minimum output frequency anyway.
 
 
-assign video_rgb_clock = clk_core_14_746;
-assign video_rgb_clock_90 = clk_core_14_746_90deg;
+assign video_rgb_clock = clk_core_13_824;
+assign video_rgb_clock_90 = clk_core_13_824_90deg;
 assign video_rgb = vidout_rgb;
 assign video_de = vidout_de;
 assign video_skip = vidout_skip;
@@ -521,10 +521,10 @@ assign video_vs = vidout_vs;
 assign video_hs = vidout_hs;
 
     localparam  VID_V_BPORCH = 'd10;
-    localparam  VID_V_ACTIVE = 'd360;
-    localparam  VID_V_TOTAL = 'd512;
+    localparam  VID_V_ACTIVE = 'd288;
+    localparam  VID_V_TOTAL = 'd480;
     localparam  VID_H_BPORCH = 'd10;
-    localparam  VID_H_ACTIVE = 'd400;
+    localparam  VID_H_ACTIVE = 'd320;
     localparam  VID_H_TOTAL = 'd480;
 
     reg [3:0] uxn_c_current_pixel_r;
@@ -546,7 +546,7 @@ assign video_hs = vidout_hs;
     reg         vidout_hs, vidout_hs_1;
     reg [15:0]  vidout_uxn;
 
-always @(posedge clk_core_14_746 or negedge reset_n) begin
+always @(posedge clk_core_13_824 or negedge reset_n) begin
 
     if(~reset_n) begin
     
@@ -674,7 +674,7 @@ data_loader #(
     .WRITE_MEM_CLOCK_DELAY(4)
 ) rom_loader (
     .clk_74a(clk_74a),
-    .clk_memory(clk_core_14_746),
+    .clk_memory(clk_core_13_824),
 
     .bridge_wr(bridge_wr),
     .bridge_endian_little(bridge_endian_little),
@@ -689,8 +689,8 @@ data_loader #(
 
 ///////////////////////////////////////////////
 
-    wire    clk_core_14_746;
-    wire    clk_core_14_746_90deg;
+    wire    clk_core_13_824;
+    wire    clk_core_13_824_90deg;
     
     wire    pll_core_locked;
     wire    pll_core_locked_s;
@@ -700,8 +700,8 @@ mf_pllbase mp1 (
     .refclk         ( clk_74a ),
     .rst            ( 0 ),
     
-    .outclk_0       ( clk_core_14_746 ),
-    .outclk_1       ( clk_core_14_746_90deg ),
+    .outclk_0       ( clk_core_13_824 ),
+    .outclk_1       ( clk_core_13_824_90deg ),
     
     .locked         ( pll_core_locked )
 );
@@ -709,7 +709,7 @@ mf_pllbase mp1 (
 
 top top
 (
-    .clk_14p746(clk_core_14_746),
+    .clk_13p824(clk_core_13_824),
     .uxn_top_is_visible_pixel(vidout_uxn[2:2]),
     .uxn_top_rom_load_valid_byte(ioctl_wr),
     .uxn_top_rom_load_address(ioctl_addr),

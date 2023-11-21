@@ -25,55 +25,55 @@ attribute mark_debug : string;
 constant PIPELINE_LATENCY : integer := 0;
 -- All of the wires/regs in function
 -- Each function instance gets signals
--- BIN_OP_AND[uxn_opcodes_h_l64_c12_561b]
-signal BIN_OP_AND_uxn_opcodes_h_l64_c12_561b_left : unsigned(7 downto 0);
-signal BIN_OP_AND_uxn_opcodes_h_l64_c12_561b_right : unsigned(7 downto 0);
-signal BIN_OP_AND_uxn_opcodes_h_l64_c12_561b_return_output : unsigned(7 downto 0);
+-- BIN_OP_AND[uxn_opcodes_h_l69_c12_175c]
+signal BIN_OP_AND_uxn_opcodes_h_l69_c12_175c_left : unsigned(7 downto 0);
+signal BIN_OP_AND_uxn_opcodes_h_l69_c12_175c_right : unsigned(7 downto 0);
+signal BIN_OP_AND_uxn_opcodes_h_l69_c12_175c_return_output : unsigned(7 downto 0);
 
--- BIN_OP_GT[uxn_opcodes_h_l64_c12_55df]
-signal BIN_OP_GT_uxn_opcodes_h_l64_c12_55df_left : unsigned(7 downto 0);
-signal BIN_OP_GT_uxn_opcodes_h_l64_c12_55df_right : unsigned(0 downto 0);
-signal BIN_OP_GT_uxn_opcodes_h_l64_c12_55df_return_output : unsigned(0 downto 0);
+-- BIN_OP_GT[uxn_opcodes_h_l69_c12_edf9]
+signal BIN_OP_GT_uxn_opcodes_h_l69_c12_edf9_left : unsigned(7 downto 0);
+signal BIN_OP_GT_uxn_opcodes_h_l69_c12_edf9_right : unsigned(0 downto 0);
+signal BIN_OP_GT_uxn_opcodes_h_l69_c12_edf9_return_output : unsigned(0 downto 0);
 
--- BIN_OP_PLUS[uxn_opcodes_h_l64_c31_6a42]
-signal BIN_OP_PLUS_uxn_opcodes_h_l64_c31_6a42_left : signed(3 downto 0);
-signal BIN_OP_PLUS_uxn_opcodes_h_l64_c31_6a42_right : signed(3 downto 0);
-signal BIN_OP_PLUS_uxn_opcodes_h_l64_c31_6a42_return_output : signed(4 downto 0);
+-- BIN_OP_PLUS[uxn_opcodes_h_l69_c31_c4b7]
+signal BIN_OP_PLUS_uxn_opcodes_h_l69_c31_c4b7_left : signed(3 downto 0);
+signal BIN_OP_PLUS_uxn_opcodes_h_l69_c31_c4b7_right : signed(3 downto 0);
+signal BIN_OP_PLUS_uxn_opcodes_h_l69_c31_c4b7_return_output : signed(4 downto 0);
 
--- MUX[uxn_opcodes_h_l64_c12_ab5b]
-signal MUX_uxn_opcodes_h_l64_c12_ab5b_cond : unsigned(0 downto 0);
-signal MUX_uxn_opcodes_h_l64_c12_ab5b_iftrue : signed(3 downto 0);
-signal MUX_uxn_opcodes_h_l64_c12_ab5b_iffalse : signed(3 downto 0);
-signal MUX_uxn_opcodes_h_l64_c12_ab5b_return_output : signed(3 downto 0);
+-- MUX[uxn_opcodes_h_l69_c12_efa5]
+signal MUX_uxn_opcodes_h_l69_c12_efa5_cond : unsigned(0 downto 0);
+signal MUX_uxn_opcodes_h_l69_c12_efa5_iftrue : signed(3 downto 0);
+signal MUX_uxn_opcodes_h_l69_c12_efa5_iffalse : signed(3 downto 0);
+signal MUX_uxn_opcodes_h_l69_c12_efa5_return_output : signed(3 downto 0);
 
 
 begin
 
 -- SUBMODULE INSTANCES 
--- BIN_OP_AND_uxn_opcodes_h_l64_c12_561b
-BIN_OP_AND_uxn_opcodes_h_l64_c12_561b : entity work.BIN_OP_AND_uint8_t_uint8_t_0CLK_de264c78 port map (
-BIN_OP_AND_uxn_opcodes_h_l64_c12_561b_left,
-BIN_OP_AND_uxn_opcodes_h_l64_c12_561b_right,
-BIN_OP_AND_uxn_opcodes_h_l64_c12_561b_return_output);
+-- BIN_OP_AND_uxn_opcodes_h_l69_c12_175c
+BIN_OP_AND_uxn_opcodes_h_l69_c12_175c : entity work.BIN_OP_AND_uint8_t_uint8_t_0CLK_de264c78 port map (
+BIN_OP_AND_uxn_opcodes_h_l69_c12_175c_left,
+BIN_OP_AND_uxn_opcodes_h_l69_c12_175c_right,
+BIN_OP_AND_uxn_opcodes_h_l69_c12_175c_return_output);
 
--- BIN_OP_GT_uxn_opcodes_h_l64_c12_55df
-BIN_OP_GT_uxn_opcodes_h_l64_c12_55df : entity work.BIN_OP_GT_uint8_t_uint1_t_0CLK_de264c78 port map (
-BIN_OP_GT_uxn_opcodes_h_l64_c12_55df_left,
-BIN_OP_GT_uxn_opcodes_h_l64_c12_55df_right,
-BIN_OP_GT_uxn_opcodes_h_l64_c12_55df_return_output);
+-- BIN_OP_GT_uxn_opcodes_h_l69_c12_edf9
+BIN_OP_GT_uxn_opcodes_h_l69_c12_edf9 : entity work.BIN_OP_GT_uint8_t_uint1_t_0CLK_de264c78 port map (
+BIN_OP_GT_uxn_opcodes_h_l69_c12_edf9_left,
+BIN_OP_GT_uxn_opcodes_h_l69_c12_edf9_right,
+BIN_OP_GT_uxn_opcodes_h_l69_c12_edf9_return_output);
 
--- BIN_OP_PLUS_uxn_opcodes_h_l64_c31_6a42
-BIN_OP_PLUS_uxn_opcodes_h_l64_c31_6a42 : entity work.BIN_OP_PLUS_int4_t_int4_t_0CLK_de264c78 port map (
-BIN_OP_PLUS_uxn_opcodes_h_l64_c31_6a42_left,
-BIN_OP_PLUS_uxn_opcodes_h_l64_c31_6a42_right,
-BIN_OP_PLUS_uxn_opcodes_h_l64_c31_6a42_return_output);
+-- BIN_OP_PLUS_uxn_opcodes_h_l69_c31_c4b7
+BIN_OP_PLUS_uxn_opcodes_h_l69_c31_c4b7 : entity work.BIN_OP_PLUS_int4_t_int4_t_0CLK_de264c78 port map (
+BIN_OP_PLUS_uxn_opcodes_h_l69_c31_c4b7_left,
+BIN_OP_PLUS_uxn_opcodes_h_l69_c31_c4b7_right,
+BIN_OP_PLUS_uxn_opcodes_h_l69_c31_c4b7_return_output);
 
--- MUX_uxn_opcodes_h_l64_c12_ab5b
-MUX_uxn_opcodes_h_l64_c12_ab5b : entity work.MUX_uint1_t_int4_t_int4_t_0CLK_de264c78 port map (
-MUX_uxn_opcodes_h_l64_c12_ab5b_cond,
-MUX_uxn_opcodes_h_l64_c12_ab5b_iftrue,
-MUX_uxn_opcodes_h_l64_c12_ab5b_iffalse,
-MUX_uxn_opcodes_h_l64_c12_ab5b_return_output);
+-- MUX_uxn_opcodes_h_l69_c12_efa5
+MUX_uxn_opcodes_h_l69_c12_efa5 : entity work.MUX_uint1_t_int4_t_int4_t_0CLK_de264c78 port map (
+MUX_uxn_opcodes_h_l69_c12_efa5_cond,
+MUX_uxn_opcodes_h_l69_c12_efa5_iftrue,
+MUX_uxn_opcodes_h_l69_c12_efa5_iffalse,
+MUX_uxn_opcodes_h_l69_c12_efa5_return_output);
 
 
 
@@ -84,10 +84,10 @@ process (
  x,
  y,
  -- All submodule outputs
- BIN_OP_AND_uxn_opcodes_h_l64_c12_561b_return_output,
- BIN_OP_GT_uxn_opcodes_h_l64_c12_55df_return_output,
- BIN_OP_PLUS_uxn_opcodes_h_l64_c31_6a42_return_output,
- MUX_uxn_opcodes_h_l64_c12_ab5b_return_output)
+ BIN_OP_AND_uxn_opcodes_h_l69_c12_175c_return_output,
+ BIN_OP_GT_uxn_opcodes_h_l69_c12_edf9_return_output,
+ BIN_OP_PLUS_uxn_opcodes_h_l69_c31_c4b7_return_output,
+ MUX_uxn_opcodes_h_l69_c12_efa5_return_output)
 is 
  -- All of the wires in function
  variable VAR_CLOCK_ENABLE : unsigned(0 downto 0);
@@ -95,24 +95,24 @@ is
  variable VAR_ins : unsigned(7 downto 0);
  variable VAR_x : signed(3 downto 0);
  variable VAR_y : signed(3 downto 0);
- variable VAR_MUX_uxn_opcodes_h_l64_c12_ab5b_cond : unsigned(0 downto 0);
- variable VAR_MUX_uxn_opcodes_h_l64_c12_ab5b_iftrue : signed(3 downto 0);
- variable VAR_MUX_uxn_opcodes_h_l64_c12_ab5b_iffalse : signed(3 downto 0);
- variable VAR_BIN_OP_AND_uxn_opcodes_h_l64_c12_561b_left : unsigned(7 downto 0);
- variable VAR_BIN_OP_AND_uxn_opcodes_h_l64_c12_561b_right : unsigned(7 downto 0);
- variable VAR_BIN_OP_AND_uxn_opcodes_h_l64_c12_561b_return_output : unsigned(7 downto 0);
- variable VAR_BIN_OP_GT_uxn_opcodes_h_l64_c12_55df_left : unsigned(7 downto 0);
- variable VAR_BIN_OP_GT_uxn_opcodes_h_l64_c12_55df_right : unsigned(0 downto 0);
- variable VAR_BIN_OP_GT_uxn_opcodes_h_l64_c12_55df_return_output : unsigned(0 downto 0);
- variable VAR_BIN_OP_PLUS_uxn_opcodes_h_l64_c31_6a42_left : signed(3 downto 0);
- variable VAR_BIN_OP_PLUS_uxn_opcodes_h_l64_c31_6a42_right : signed(3 downto 0);
- variable VAR_BIN_OP_PLUS_uxn_opcodes_h_l64_c31_6a42_return_output : signed(4 downto 0);
- variable VAR_MUX_uxn_opcodes_h_l64_c12_ab5b_return_output : signed(3 downto 0);
+ variable VAR_MUX_uxn_opcodes_h_l69_c12_efa5_cond : unsigned(0 downto 0);
+ variable VAR_BIN_OP_AND_uxn_opcodes_h_l69_c12_175c_left : unsigned(7 downto 0);
+ variable VAR_BIN_OP_AND_uxn_opcodes_h_l69_c12_175c_right : unsigned(7 downto 0);
+ variable VAR_BIN_OP_AND_uxn_opcodes_h_l69_c12_175c_return_output : unsigned(7 downto 0);
+ variable VAR_BIN_OP_GT_uxn_opcodes_h_l69_c12_edf9_left : unsigned(7 downto 0);
+ variable VAR_BIN_OP_GT_uxn_opcodes_h_l69_c12_edf9_right : unsigned(0 downto 0);
+ variable VAR_BIN_OP_GT_uxn_opcodes_h_l69_c12_edf9_return_output : unsigned(0 downto 0);
+ variable VAR_MUX_uxn_opcodes_h_l69_c12_efa5_iftrue : signed(3 downto 0);
+ variable VAR_MUX_uxn_opcodes_h_l69_c12_efa5_iffalse : signed(3 downto 0);
+ variable VAR_BIN_OP_PLUS_uxn_opcodes_h_l69_c31_c4b7_left : signed(3 downto 0);
+ variable VAR_BIN_OP_PLUS_uxn_opcodes_h_l69_c31_c4b7_right : signed(3 downto 0);
+ variable VAR_BIN_OP_PLUS_uxn_opcodes_h_l69_c31_c4b7_return_output : signed(4 downto 0);
+ variable VAR_MUX_uxn_opcodes_h_l69_c12_efa5_return_output : signed(3 downto 0);
 begin
  -- Constants and things derived from constants alone
      -- Submodule level 0
-     VAR_BIN_OP_GT_uxn_opcodes_h_l64_c12_55df_right := to_unsigned(0, 1);
-     VAR_BIN_OP_AND_uxn_opcodes_h_l64_c12_561b_right := to_unsigned(128, 8);
+     VAR_BIN_OP_AND_uxn_opcodes_h_l69_c12_175c_right := to_unsigned(128, 8);
+     VAR_BIN_OP_GT_uxn_opcodes_h_l69_c12_edf9_right := to_unsigned(0, 1);
 
  -- Loop to construct simultaneous register transfers for each of the pipeline stages
  -- LATENCY=0 is combinational Logic
@@ -124,46 +124,46 @@ begin
      VAR_y := y;
 
      -- Submodule level 0
-     VAR_BIN_OP_AND_uxn_opcodes_h_l64_c12_561b_left := VAR_ins;
-     VAR_BIN_OP_PLUS_uxn_opcodes_h_l64_c31_6a42_left := VAR_x;
-     VAR_BIN_OP_PLUS_uxn_opcodes_h_l64_c31_6a42_right := VAR_y;
-     VAR_MUX_uxn_opcodes_h_l64_c12_ab5b_iffalse := VAR_y;
-     -- BIN_OP_PLUS[uxn_opcodes_h_l64_c31_6a42] LATENCY=0
+     VAR_BIN_OP_AND_uxn_opcodes_h_l69_c12_175c_left := VAR_ins;
+     VAR_BIN_OP_PLUS_uxn_opcodes_h_l69_c31_c4b7_left := VAR_x;
+     VAR_BIN_OP_PLUS_uxn_opcodes_h_l69_c31_c4b7_right := VAR_y;
+     VAR_MUX_uxn_opcodes_h_l69_c12_efa5_iffalse := VAR_y;
+     -- BIN_OP_PLUS[uxn_opcodes_h_l69_c31_c4b7] LATENCY=0
      -- Inputs
-     BIN_OP_PLUS_uxn_opcodes_h_l64_c31_6a42_left <= VAR_BIN_OP_PLUS_uxn_opcodes_h_l64_c31_6a42_left;
-     BIN_OP_PLUS_uxn_opcodes_h_l64_c31_6a42_right <= VAR_BIN_OP_PLUS_uxn_opcodes_h_l64_c31_6a42_right;
+     BIN_OP_PLUS_uxn_opcodes_h_l69_c31_c4b7_left <= VAR_BIN_OP_PLUS_uxn_opcodes_h_l69_c31_c4b7_left;
+     BIN_OP_PLUS_uxn_opcodes_h_l69_c31_c4b7_right <= VAR_BIN_OP_PLUS_uxn_opcodes_h_l69_c31_c4b7_right;
      -- Outputs
-     VAR_BIN_OP_PLUS_uxn_opcodes_h_l64_c31_6a42_return_output := BIN_OP_PLUS_uxn_opcodes_h_l64_c31_6a42_return_output;
+     VAR_BIN_OP_PLUS_uxn_opcodes_h_l69_c31_c4b7_return_output := BIN_OP_PLUS_uxn_opcodes_h_l69_c31_c4b7_return_output;
 
-     -- BIN_OP_AND[uxn_opcodes_h_l64_c12_561b] LATENCY=0
+     -- BIN_OP_AND[uxn_opcodes_h_l69_c12_175c] LATENCY=0
      -- Inputs
-     BIN_OP_AND_uxn_opcodes_h_l64_c12_561b_left <= VAR_BIN_OP_AND_uxn_opcodes_h_l64_c12_561b_left;
-     BIN_OP_AND_uxn_opcodes_h_l64_c12_561b_right <= VAR_BIN_OP_AND_uxn_opcodes_h_l64_c12_561b_right;
+     BIN_OP_AND_uxn_opcodes_h_l69_c12_175c_left <= VAR_BIN_OP_AND_uxn_opcodes_h_l69_c12_175c_left;
+     BIN_OP_AND_uxn_opcodes_h_l69_c12_175c_right <= VAR_BIN_OP_AND_uxn_opcodes_h_l69_c12_175c_right;
      -- Outputs
-     VAR_BIN_OP_AND_uxn_opcodes_h_l64_c12_561b_return_output := BIN_OP_AND_uxn_opcodes_h_l64_c12_561b_return_output;
+     VAR_BIN_OP_AND_uxn_opcodes_h_l69_c12_175c_return_output := BIN_OP_AND_uxn_opcodes_h_l69_c12_175c_return_output;
 
      -- Submodule level 1
-     VAR_BIN_OP_GT_uxn_opcodes_h_l64_c12_55df_left := VAR_BIN_OP_AND_uxn_opcodes_h_l64_c12_561b_return_output;
-     VAR_MUX_uxn_opcodes_h_l64_c12_ab5b_iftrue := resize(VAR_BIN_OP_PLUS_uxn_opcodes_h_l64_c31_6a42_return_output, 4);
-     -- BIN_OP_GT[uxn_opcodes_h_l64_c12_55df] LATENCY=0
+     VAR_BIN_OP_GT_uxn_opcodes_h_l69_c12_edf9_left := VAR_BIN_OP_AND_uxn_opcodes_h_l69_c12_175c_return_output;
+     VAR_MUX_uxn_opcodes_h_l69_c12_efa5_iftrue := resize(VAR_BIN_OP_PLUS_uxn_opcodes_h_l69_c31_c4b7_return_output, 4);
+     -- BIN_OP_GT[uxn_opcodes_h_l69_c12_edf9] LATENCY=0
      -- Inputs
-     BIN_OP_GT_uxn_opcodes_h_l64_c12_55df_left <= VAR_BIN_OP_GT_uxn_opcodes_h_l64_c12_55df_left;
-     BIN_OP_GT_uxn_opcodes_h_l64_c12_55df_right <= VAR_BIN_OP_GT_uxn_opcodes_h_l64_c12_55df_right;
+     BIN_OP_GT_uxn_opcodes_h_l69_c12_edf9_left <= VAR_BIN_OP_GT_uxn_opcodes_h_l69_c12_edf9_left;
+     BIN_OP_GT_uxn_opcodes_h_l69_c12_edf9_right <= VAR_BIN_OP_GT_uxn_opcodes_h_l69_c12_edf9_right;
      -- Outputs
-     VAR_BIN_OP_GT_uxn_opcodes_h_l64_c12_55df_return_output := BIN_OP_GT_uxn_opcodes_h_l64_c12_55df_return_output;
+     VAR_BIN_OP_GT_uxn_opcodes_h_l69_c12_edf9_return_output := BIN_OP_GT_uxn_opcodes_h_l69_c12_edf9_return_output;
 
      -- Submodule level 2
-     VAR_MUX_uxn_opcodes_h_l64_c12_ab5b_cond := VAR_BIN_OP_GT_uxn_opcodes_h_l64_c12_55df_return_output;
-     -- MUX[uxn_opcodes_h_l64_c12_ab5b] LATENCY=0
+     VAR_MUX_uxn_opcodes_h_l69_c12_efa5_cond := VAR_BIN_OP_GT_uxn_opcodes_h_l69_c12_edf9_return_output;
+     -- MUX[uxn_opcodes_h_l69_c12_efa5] LATENCY=0
      -- Inputs
-     MUX_uxn_opcodes_h_l64_c12_ab5b_cond <= VAR_MUX_uxn_opcodes_h_l64_c12_ab5b_cond;
-     MUX_uxn_opcodes_h_l64_c12_ab5b_iftrue <= VAR_MUX_uxn_opcodes_h_l64_c12_ab5b_iftrue;
-     MUX_uxn_opcodes_h_l64_c12_ab5b_iffalse <= VAR_MUX_uxn_opcodes_h_l64_c12_ab5b_iffalse;
+     MUX_uxn_opcodes_h_l69_c12_efa5_cond <= VAR_MUX_uxn_opcodes_h_l69_c12_efa5_cond;
+     MUX_uxn_opcodes_h_l69_c12_efa5_iftrue <= VAR_MUX_uxn_opcodes_h_l69_c12_efa5_iftrue;
+     MUX_uxn_opcodes_h_l69_c12_efa5_iffalse <= VAR_MUX_uxn_opcodes_h_l69_c12_efa5_iffalse;
      -- Outputs
-     VAR_MUX_uxn_opcodes_h_l64_c12_ab5b_return_output := MUX_uxn_opcodes_h_l64_c12_ab5b_return_output;
+     VAR_MUX_uxn_opcodes_h_l69_c12_efa5_return_output := MUX_uxn_opcodes_h_l69_c12_efa5_return_output;
 
      -- Submodule level 3
-     VAR_return_output := VAR_MUX_uxn_opcodes_h_l64_c12_ab5b_return_output;
+     VAR_return_output := VAR_MUX_uxn_opcodes_h_l69_c12_efa5_return_output;
      -- Last stage of pipeline return wire to return port/reg
      return_output <= VAR_return_output;
    end if;

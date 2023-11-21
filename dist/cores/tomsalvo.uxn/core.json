@@ -2,7 +2,7 @@
     "core": {
         "magic": "APF_VER_1",
         "metadata": {
-            "platform_ids": ["ex_platform"],
+            "platform_ids": ["uxn"],
             "shortname": "uxn",
             "description": "UXN Computer",
             "author": "tomsalvo",
