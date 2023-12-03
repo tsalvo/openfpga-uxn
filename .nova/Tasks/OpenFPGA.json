@@ -1,0 +1,13 @@
+{
+  "actions" : {
+    "build" : {
+      "enabled" : true,
+      "script" : "#!\/bin\/sh\ncd .\/src\/fpga\nsed 's\/ \/\\n\/g' .\/core\/pipelinec_output_uxn.c_1\/vhdl_files.txt > .\/core\/pipelinec_output_uxn.c_1\/vhdl_files_adj.txt\nsed -i '' 's\/\\\/workdir\\\/\/set_global_assignment\\ -name\\ VHDL_FILE core\\\/\/g' .\/core\/pipelinec_output_uxn.c_1\/vhdl_files_adj.txt\nsed -i '' '\/VHDL_FILE\\ core\\\/pipelinec_output_uxn\/d' ap_core.qsf\ncat .\/core\/pipelinec_output_uxn.c_1\/vhdl_files_adj.txt >> ap_core.qsf\ndocker run --platform linux\/amd64 -t --rm -v $(pwd):\/build 53500e0665a3 quartus_sh --flow compile ap_core.qpf"
+    },
+    "clean" : {
+      "enabled" : true,
+      "script" : "#!\/bin\/sh\ncd .\/src\/fpga\n\n# sed -i '\/^\"set_global_assignment -name VHDL_FILE core\/pipelinec_output_uxn\"\/d' ap_core.qsf\n# set_global_assignment -name VHDL_FILE core\/pipelinec_output_uxn\ndocker run --platform linux\/amd64 -t --rm -v $(pwd):\/build 53500e0665a3 quartus_sh --clean ap_core.qpf  "
+    }
+  },
+  "openLogOnRun" : "start"
+}
