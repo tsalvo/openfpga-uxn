@@ -2,6 +2,32 @@
 
 A core for Analogue Pocket that integrates the VHDL output of [uxn-fpga](https://github.com/tsalvo/uxn-fpga) (which is still an early work-in-progress [PipelineC](https://github.com/JulianKemmerer/PipelineC) FPGA implementation of [Varvara / UXN](https://100r.co/site/uxn.html) by [hundredrabbits](https://100r.co/site/home.html)).
 
+## Running the core on an Analogue Pocket
+
+Copy the contents of `dist/assets`, `dist/cores`, `dist/platforms` into the equivalent `Assets`, `Cores`, `Platforms` folders on your Analogue Pocket
+
+## Current Specs
+
+- 260x234 resolution
+- 14.1 MHz CPU
+- 64KB Main RAM, 2x 256B Stack RAM, 256B Device RAM (per Uxn spec)
+
+## Limitations
+
+Most Uxn ROMs won't work as-is. ROMs less than 512 bytes might need to be padded with 0x00 bytes to be 512 bytes minimum. Most device features aren't implemented, and only single-pixel drawing and fills are implemented (*no sprites yet*!)
+
+The speed is also very slow. I'm still working on that :-)
+
+I added some test ROMs into the `dist/assets` folder that are working / partially working. Some of these are slightly modified examples from the [Uxn Chibicc fork](https://github.com/lynn/chibicc) example code:
+
+- `bounce_260_234.rom` - bouncing square demo
+- `fill_test_260_234.rom` - draws a pattern of fills from bottom-right and then top-left
+- `mandelbrot_260_234.rom` - draws a Mandelbrot, vertical line-by-line
+- `star_260_234.rom` - draws a rotating star (demo by hikari_no_yume)
+- `cube3d.rom` - draws a 3D cube
+
+## Building the core yourself
+
 Integration steps after compiling [uxn-fpga](https://github.com/tsalvo/uxn-fpga) repo:
 - Drag `pipelinec_output_uxn.c_1` folder from uxn-fpga project into the `scr/fpga/core/` folder
 - In `vhdl_files.txt`, replace space ` ` character with newline `\n`

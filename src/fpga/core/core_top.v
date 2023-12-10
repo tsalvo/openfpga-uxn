@@ -495,7 +495,7 @@ core_bridge_cmd icb (
 ////////////////////////////////////////////////////////////////////////////////////////
 
 // UXN PipelineC Module Input / Output
-// synchronous to clk_core_13_824
+// synchronous to clk_core_14_112
 wire [15:0] uxn_c_out;
 // wire [15:0] uxn_c_in;
 
@@ -512,8 +512,8 @@ wire [15:0] uxn_c_out;
 // PLL output has a minimum output frequency anyway.
 
 
-assign video_rgb_clock = clk_core_13_824;
-assign video_rgb_clock_90 = clk_core_13_824_90deg;
+assign video_rgb_clock = clk_core_14_112;
+assign video_rgb_clock_90 = clk_core_14_112_90deg;
 assign video_rgb = vidout_rgb;
 assign video_de = vidout_de;
 assign video_skip = vidout_skip;
@@ -521,11 +521,11 @@ assign video_vs = vidout_vs;
 assign video_hs = vidout_hs;
 
     localparam  VID_V_BPORCH = 'd10;
-    localparam  VID_V_ACTIVE = 'd288;
-    localparam  VID_V_TOTAL = 'd480;
+    localparam  VID_V_ACTIVE = 'd234;
+    localparam  VID_V_TOTAL = 'd850;
     localparam  VID_H_BPORCH = 'd10;
-    localparam  VID_H_ACTIVE = 'd320;
-    localparam  VID_H_TOTAL = 'd480;
+    localparam  VID_H_ACTIVE = 'd260;
+    localparam  VID_H_TOTAL = 'd280;
 
     reg [3:0] uxn_c_current_pixel_r;
     reg [3:0] uxn_c_current_pixel_g;
@@ -546,7 +546,7 @@ assign video_hs = vidout_hs;
     reg         vidout_hs, vidout_hs_1;
     reg [15:0]  vidout_uxn;
 
-always @(posedge clk_core_13_824 or negedge reset_n) begin
+always @(posedge clk_core_14_112 or negedge reset_n) begin
 
     if(~reset_n) begin
     
@@ -570,7 +570,6 @@ always @(posedge clk_core_13_824 or negedge reset_n) begin
         vidout_hs <= 0;
         
         vidout_hs_1 <= vidout_hs;
-        
         
         // x and y counters
         x_count <= x_count + 1'b1;
@@ -606,14 +605,13 @@ always @(posedge clk_core_13_824 or negedge reset_n) begin
             if(y_count >= VID_V_BPORCH && y_count < VID_V_ACTIVE+VID_V_BPORCH) begin
                 // data enable. this is the active region of the line
                 vidout_de <= 1;
-                vidout_uxn[2:2] <= 1'b1;
-                
-                    vidout_rgb[23:20] <= uxn_c_current_pixel_r;
-                    vidout_rgb[19:16] <= 4'h00;
-                    vidout_rgb[15:12] <= uxn_c_current_pixel_g;
-                    vidout_rgb[11:8] <= 4'h00;
-                    vidout_rgb[7:4] <= uxn_c_current_pixel_b;
-                    vidout_rgb[3:0] <= 4'h00;
+                vidout_uxn[2:2] <= 1'b1;     
+                vidout_rgb[23:20] <= uxn_c_current_pixel_r;
+                vidout_rgb[19:16] <= 4'h00;
+                vidout_rgb[15:12] <= uxn_c_current_pixel_g;
+                vidout_rgb[11:8] <= 4'h00;
+                vidout_rgb[7:4] <= uxn_c_current_pixel_b;
+                vidout_rgb[3:0] <= 4'h00;
             end 
         end
     end
@@ -674,7 +672,7 @@ data_loader #(
     .WRITE_MEM_CLOCK_DELAY(4)
 ) rom_loader (
     .clk_74a(clk_74a),
-    .clk_memory(clk_core_13_824),
+    .clk_memory(clk_core_14_112),
 
     .bridge_wr(bridge_wr),
     .bridge_endian_little(bridge_endian_little),
@@ -686,11 +684,10 @@ data_loader #(
     .write_data(ioctl_dout)
 );
 
-
 ///////////////////////////////////////////////
 
-    wire    clk_core_13_824;
-    wire    clk_core_13_824_90deg;
+    wire    clk_core_14_112;
+    wire    clk_core_14_112_90deg;
     
     wire    pll_core_locked;
     wire    pll_core_locked_s;
@@ -700,8 +697,8 @@ mf_pllbase mp1 (
     .refclk         ( clk_74a ),
     .rst            ( 0 ),
     
-    .outclk_0       ( clk_core_13_824 ),
-    .outclk_1       ( clk_core_13_824_90deg ),
+    .outclk_0       ( clk_core_14_112 ),
+    .outclk_1       ( clk_core_14_112_90deg ),
     
     .locked         ( pll_core_locked )
 );
@@ -709,7 +706,7 @@ mf_pllbase mp1 (
 
 top top
 (
-    .clk_13p824(clk_core_13_824),
+    .clk_14p112(clk_core_14_112),
     .uxn_top_is_visible_pixel(vidout_uxn[2:2]),
     .uxn_top_rom_load_valid_byte(ioctl_wr),
     .uxn_top_rom_load_address(ioctl_addr),
