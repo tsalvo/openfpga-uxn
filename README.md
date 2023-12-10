@@ -14,9 +14,15 @@ Copy the contents of `dist/assets`, `dist/cores`, `dist/platforms` into the equi
 
 ## Limitations
 
-Most Uxn ROMs won't work as-is. ROMs less than 512 bytes might need to be padded with 0x00 bytes to be 512 bytes minimum. Most device features aren't implemented, and only single-pixel drawing and fills are implemented (*no sprites yet*!)
+Most Uxn ROMs won't work as-is, or even at all. ROMs less than 512 bytes might need to be padded with 0x00 bytes to be 512 bytes minimum. Most device features aren't implemented, and only single-pixel drawing and fills are implemented (*no sprites yet*!)
+
+No audio
+
+No input controls
 
 The speed is also very slow. I'm still working on that :-)
+
+# Test ROMs
 
 I added some test ROMs into the `dist/assets` folder that are working / partially working. Some of these are slightly modified examples from the [Uxn Chibicc fork](https://github.com/lynn/chibicc) example code:
 
