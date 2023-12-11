@@ -22,7 +22,7 @@ No input controls
 
 The speed is also very slow. I'm still working on that :-)
 
-# Test ROMs
+## Test ROMs
 
 I added some test ROMs into the `dist/assets` folder that are working / partially working. Some of these are slightly modified examples from the [Uxn Chibicc fork](https://github.com/lynn/chibicc) example code:
 
