@@ -9,7 +9,7 @@ Copy the contents of `dist/assets/`, `dist/cores/`, `dist/platforms/` into the e
 ## Current Specs
 
 - 260x234 resolution
-- 14.1 MHz CPU
+- 13 MHz CPU
 - 64KB Main RAM, 2x 256B Stack RAM, 256B Device RAM (per Uxn spec)
 
 ## Limitations
