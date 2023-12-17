@@ -5,7 +5,7 @@ use work.c_structs_pkg.all;
 
   entity top is
 port(
-clk_13p0 : in std_logic;
+clk_13p745 : in std_logic;
 
 -- IO for each main func
 uxn_top_is_visible_pixel : in unsigned(0 downto 0);
@@ -26,8 +26,8 @@ begin
 
 -- Instantiate each main
 -- main functions are always clock enabled, always running
-uxn_top_0CLK_8d4e68e9 : entity work.uxn_top_0CLK_8d4e68e9 port map (
-clk_13p0,
+uxn_top_0CLK_27eedc4e : entity work.uxn_top_0CLK_27eedc4e port map (
+clk_13p745,
 to_unsigned(1,1),
 uxn_top_is_visible_pixel,
 uxn_top_rom_load_valid_byte,
