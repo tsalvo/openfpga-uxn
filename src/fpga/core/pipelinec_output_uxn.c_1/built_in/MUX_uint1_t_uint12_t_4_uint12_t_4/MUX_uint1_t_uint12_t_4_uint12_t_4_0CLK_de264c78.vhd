@@ -11,13 +11,14 @@ use ieee.numeric_std.all;
 -- use ieee.float_pkg.all;
 use work.c_structs_pkg.all;
 -- Submodules: 0
-entity BIN_OP_LT_uint8_t_uint2_t_0CLK_de264c78 is
+entity MUX_uint1_t_uint12_t_4_uint12_t_4_0CLK_de264c78 is
 port(
- left : in unsigned(7 downto 0);
- right : in unsigned(1 downto 0);
- return_output : out unsigned(0 downto 0));
-end BIN_OP_LT_uint8_t_uint2_t_0CLK_de264c78;
-architecture arch of BIN_OP_LT_uint8_t_uint2_t_0CLK_de264c78 is
+ cond : in unsigned(0 downto 0);
+ iftrue : in uint12_t_4;
+ iffalse : in uint12_t_4;
+ return_output : out uint12_t_4);
+end MUX_uint1_t_uint12_t_4_uint12_t_4_0CLK_de264c78;
+architecture arch of MUX_uint1_t_uint12_t_4_uint12_t_4_0CLK_de264c78 is
 -- Types and such
 -- Declarations
 attribute mark_debug : string;
@@ -26,14 +27,11 @@ constant PIPELINE_LATENCY : integer := 0;
 -- One struct to represent this modules variables
 type raw_hdl_variables_t is record
  -- All of the wires in function
-
-  return_output_bool : boolean;
-  return_output : unsigned(0 downto 0);
-  right : unsigned(1 downto 0);
-  left : unsigned(7 downto 0);
-  right_resized : unsigned(7 downto 0);
-  left_resized : unsigned(7 downto 0);
-  inequality_found : boolean;
+  
+  return_output : uint12_t_4;
+  cond : unsigned(0 downto 0);
+  iftrue : uint12_t_4;
+  iffalse : uint12_t_4;
 end record;
 
 -- Type for this modules register pipeline
@@ -46,8 +44,9 @@ begin
 -- Combinatorial process for pipeline stages
 process (
  -- Inputs
- left,
- right)
+ cond,
+ iftrue,
+ iffalse)
 is 
  -- Read and write variables to do register transfers per clock
  -- from the previous to next stage
@@ -65,8 +64,9 @@ is
   -- Input to first stage are inputs to function
   if STAGE=0 then
    -- Mux in inputs
-   read_pipe.left := left;
-   read_pipe.right := right;
+   read_pipe.cond := cond;
+   read_pipe.iftrue := iftrue;
+   read_pipe.iffalse := iffalse;
   else
    -- Default read from previous stage
    read_pipe := read_raw_hdl_pipeline_regs(STAGE-1);
@@ -75,27 +75,15 @@ is
   write_pipe := read_pipe;
 
 
-  -- num_stages = 1
-  
     if STAGE = 0 then
-      write_pipe.right_resized := resize(write_pipe.right, 8);
-      write_pipe.left_resized := resize(write_pipe.left, 8);
-      write_pipe.inequality_found := false; -- Must be at stage 0
-  
-        --  bits_per_stage_dict[0] = 8 
-        --- Assign output based on compare range for this stage
-        if write_pipe.inequality_found = false then
-          write_pipe.inequality_found := ( write_pipe.left_resized(7 downto 0) /= write_pipe.right_resized(7 downto 0) ) ;
-          -- Compare magnitude
-          write_pipe.return_output_bool := ( write_pipe.left_resized(7 downto 0) < write_pipe.right_resized(7 downto 0) );
-        end if;
-      if write_pipe.return_output_bool then
-        write_pipe.return_output := (others => '1');
+      -- Assign output based on range for this stage
+      if write_pipe.cond=1 then
+        write_pipe.return_output := write_pipe.iftrue;
       else
-        write_pipe.return_output := (others => '0');
+        write_pipe.return_output := write_pipe.iffalse;
       end if;
-      
-    end if;  -- Write to stage reg
+    end if;     
+    -- Write to stage reg
   write_raw_hdl_pipeline_regs(STAGE) := write_pipe;
  end loop;
 
