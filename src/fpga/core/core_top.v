@@ -705,7 +705,7 @@ mf_pllbase mp1 (
 
 top top
 (
-    .clk_14p5728(clk_core_14_5728),
+    .clk_None(clk_core_14_5728),
     .uxn_top_is_visible_pixel(vidout_uxn[2:2]),
     .uxn_top_rom_load_valid_byte(ioctl_wr),
     .uxn_top_rom_load_address(ioctl_addr),

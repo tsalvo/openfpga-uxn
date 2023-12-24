@@ -74,30 +74,30 @@ is
  variable VAR_return_output : opcode_result_t;
  variable VAR_phase : unsigned(7 downto 0);
  variable VAR_result : opcode_result_t;
- variable VAR_result_stack_address_sp_offset_uxn_opcodes_h_l2850_c18_c475_0 : unsigned(3 downto 0);
- variable VAR_result_device_ram_address_uxn_opcodes_h_l2850_c18_c475_0 : unsigned(7 downto 0);
- variable VAR_result_u8_value_uxn_opcodes_h_l2850_c18_c475_0 : unsigned(7 downto 0);
- variable VAR_result_u16_value_uxn_opcodes_h_l2850_c18_c475_0 : unsigned(15 downto 0);
- variable VAR_result_sp_relative_shift_uxn_opcodes_h_l2855_c2_c3c2 : signed(3 downto 0);
- variable VAR_CONST_REF_RD_opcode_result_t_opcode_result_t_7303_uxn_opcodes_h_l2862_c9_4c42_return_output : opcode_result_t;
+ variable VAR_result_stack_address_sp_offset_uxn_opcodes_h_l2833_c18_ac36_0 : unsigned(3 downto 0);
+ variable VAR_result_device_ram_address_uxn_opcodes_h_l2833_c18_ac36_0 : unsigned(7 downto 0);
+ variable VAR_result_u8_value_uxn_opcodes_h_l2833_c18_ac36_0 : unsigned(7 downto 0);
+ variable VAR_result_u16_value_uxn_opcodes_h_l2833_c18_ac36_0 : unsigned(15 downto 0);
+ variable VAR_result_sp_relative_shift_uxn_opcodes_h_l2838_c2_2313 : signed(3 downto 0);
+ variable VAR_CONST_REF_RD_opcode_result_t_opcode_result_t_7303_uxn_opcodes_h_l2845_c9_f55a_return_output : opcode_result_t;
 begin
  -- Constants and things derived from constants alone
      -- Submodule level 0
-     VAR_result_device_ram_address_uxn_opcodes_h_l2850_c18_c475_0 := resize(to_unsigned(0, 1), 8);
-     VAR_result_stack_address_sp_offset_uxn_opcodes_h_l2850_c18_c475_0 := resize(to_unsigned(0, 1), 4);
-     VAR_result_u8_value_uxn_opcodes_h_l2850_c18_c475_0 := resize(to_unsigned(0, 1), 8);
-     VAR_result_u16_value_uxn_opcodes_h_l2850_c18_c475_0 := resize(to_unsigned(0, 1), 16);
-     VAR_result_sp_relative_shift_uxn_opcodes_h_l2855_c2_c3c2 := signed(std_logic_vector(resize(to_unsigned(0, 1), 4)));
-     -- CONST_REF_RD_opcode_result_t_opcode_result_t_7303[uxn_opcodes_h_l2862_c9_4c42] LATENCY=0
-     VAR_CONST_REF_RD_opcode_result_t_opcode_result_t_7303_uxn_opcodes_h_l2862_c9_4c42_return_output := CONST_REF_RD_opcode_result_t_opcode_result_t_7303(
-     VAR_result_stack_address_sp_offset_uxn_opcodes_h_l2850_c18_c475_0,
+     VAR_result_stack_address_sp_offset_uxn_opcodes_h_l2833_c18_ac36_0 := resize(to_unsigned(0, 1), 4);
+     VAR_result_device_ram_address_uxn_opcodes_h_l2833_c18_ac36_0 := resize(to_unsigned(0, 1), 8);
+     VAR_result_u16_value_uxn_opcodes_h_l2833_c18_ac36_0 := resize(to_unsigned(0, 1), 16);
+     VAR_result_sp_relative_shift_uxn_opcodes_h_l2838_c2_2313 := signed(std_logic_vector(resize(to_unsigned(0, 1), 4)));
+     VAR_result_u8_value_uxn_opcodes_h_l2833_c18_ac36_0 := resize(to_unsigned(0, 1), 8);
+     -- CONST_REF_RD_opcode_result_t_opcode_result_t_7303[uxn_opcodes_h_l2845_c9_f55a] LATENCY=0
+     VAR_CONST_REF_RD_opcode_result_t_opcode_result_t_7303_uxn_opcodes_h_l2845_c9_f55a_return_output := CONST_REF_RD_opcode_result_t_opcode_result_t_7303(
+     VAR_result_stack_address_sp_offset_uxn_opcodes_h_l2833_c18_ac36_0,
      to_unsigned(0, 1),
-     VAR_result_device_ram_address_uxn_opcodes_h_l2850_c18_c475_0,
+     VAR_result_device_ram_address_uxn_opcodes_h_l2833_c18_ac36_0,
      to_unsigned(0, 1),
-     VAR_result_u8_value_uxn_opcodes_h_l2850_c18_c475_0,
-     VAR_result_u16_value_uxn_opcodes_h_l2850_c18_c475_0,
+     VAR_result_u8_value_uxn_opcodes_h_l2833_c18_ac36_0,
+     VAR_result_u16_value_uxn_opcodes_h_l2833_c18_ac36_0,
      to_unsigned(0, 1),
-     VAR_result_sp_relative_shift_uxn_opcodes_h_l2855_c2_c3c2,
+     VAR_result_sp_relative_shift_uxn_opcodes_h_l2838_c2_2313,
      to_unsigned(0, 1),
      to_unsigned(0, 1),
      to_unsigned(0, 1),
@@ -105,7 +105,7 @@ begin
      to_unsigned(1, 1));
 
      -- Submodule level 1
-     VAR_return_output := VAR_CONST_REF_RD_opcode_result_t_opcode_result_t_7303_uxn_opcodes_h_l2862_c9_4c42_return_output;
+     VAR_return_output := VAR_CONST_REF_RD_opcode_result_t_opcode_result_t_7303_uxn_opcodes_h_l2845_c9_f55a_return_output;
 
  -- Loop to construct simultaneous register transfers for each of the pipeline stages
  -- LATENCY=0 is combinational Logic
