@@ -26,10 +26,10 @@ The speed is also very slow. I'm still working on that :-)
 
 I added some test ROMs into the `dist/assets` folder that are working / partially working. Some of these are slightly modified examples from the [Uxn Chibicc fork](https://github.com/lynn/chibicc) example code:
 
-- `bounce_260_234.rom` - bouncing square demo
-- `fill_test_260_234.rom` - draws a pattern of fills from bottom-right and then top-left
-- `mandelbrot_260_234.rom` - draws a Mandelbrot, vertical line-by-line
-- `star_260_234.rom` - draws a rotating star (demo by hikari_no_yume)
+- `bounce_256_240.rom` - bouncing square demo
+- `fill_test_256_240.rom` - draws a pattern of fills from bottom-right and then top-left
+- `mandelbrot_256_240.rom` - draws a Mandelbrot, vertical line-by-line
+- `star_256_240.rom` - draws a rotating star (demo by hikari_no_yume)
 - `cube3d.rom` - draws a 3D cube
 
 ## Building the core yourself
