@@ -36,242 +36,242 @@ signal REG_COMB_n8 : unsigned(7 downto 0);
 signal REG_COMB_result : opcode_result_t;
 
 -- Each function instance gets signals
--- BIN_OP_EQ[uxn_opcodes_h_l2073_c6_1d4c]
-signal BIN_OP_EQ_uxn_opcodes_h_l2073_c6_1d4c_left : unsigned(7 downto 0);
-signal BIN_OP_EQ_uxn_opcodes_h_l2073_c6_1d4c_right : unsigned(0 downto 0);
-signal BIN_OP_EQ_uxn_opcodes_h_l2073_c6_1d4c_return_output : unsigned(0 downto 0);
+-- BIN_OP_EQ[uxn_opcodes_h_l2072_c6_16c9]
+signal BIN_OP_EQ_uxn_opcodes_h_l2072_c6_16c9_left : unsigned(7 downto 0);
+signal BIN_OP_EQ_uxn_opcodes_h_l2072_c6_16c9_right : unsigned(0 downto 0);
+signal BIN_OP_EQ_uxn_opcodes_h_l2072_c6_16c9_return_output : unsigned(0 downto 0);
 
--- t8_MUX[uxn_opcodes_h_l2073_c2_e839]
-signal t8_MUX_uxn_opcodes_h_l2073_c2_e839_cond : unsigned(0 downto 0);
-signal t8_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue : unsigned(7 downto 0);
-signal t8_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse : unsigned(7 downto 0);
-signal t8_MUX_uxn_opcodes_h_l2073_c2_e839_return_output : unsigned(7 downto 0);
+-- t8_MUX[uxn_opcodes_h_l2072_c2_19a1]
+signal t8_MUX_uxn_opcodes_h_l2072_c2_19a1_cond : unsigned(0 downto 0);
+signal t8_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue : unsigned(7 downto 0);
+signal t8_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse : unsigned(7 downto 0);
+signal t8_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output : unsigned(7 downto 0);
 
--- result_is_opc_done_MUX[uxn_opcodes_h_l2073_c2_e839]
-signal result_is_opc_done_MUX_uxn_opcodes_h_l2073_c2_e839_cond : unsigned(0 downto 0);
-signal result_is_opc_done_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue : unsigned(0 downto 0);
-signal result_is_opc_done_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse : unsigned(0 downto 0);
-signal result_is_opc_done_MUX_uxn_opcodes_h_l2073_c2_e839_return_output : unsigned(0 downto 0);
+-- n8_MUX[uxn_opcodes_h_l2072_c2_19a1]
+signal n8_MUX_uxn_opcodes_h_l2072_c2_19a1_cond : unsigned(0 downto 0);
+signal n8_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue : unsigned(7 downto 0);
+signal n8_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse : unsigned(7 downto 0);
+signal n8_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output : unsigned(7 downto 0);
 
--- result_is_vram_write_MUX[uxn_opcodes_h_l2073_c2_e839]
-signal result_is_vram_write_MUX_uxn_opcodes_h_l2073_c2_e839_cond : unsigned(0 downto 0);
-signal result_is_vram_write_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue : unsigned(0 downto 0);
-signal result_is_vram_write_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse : unsigned(0 downto 0);
-signal result_is_vram_write_MUX_uxn_opcodes_h_l2073_c2_e839_return_output : unsigned(0 downto 0);
+-- result_is_stack_write_MUX[uxn_opcodes_h_l2072_c2_19a1]
+signal result_is_stack_write_MUX_uxn_opcodes_h_l2072_c2_19a1_cond : unsigned(0 downto 0);
+signal result_is_stack_write_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue : unsigned(0 downto 0);
+signal result_is_stack_write_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse : unsigned(0 downto 0);
+signal result_is_stack_write_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output : unsigned(0 downto 0);
 
--- result_is_ram_write_MUX[uxn_opcodes_h_l2073_c2_e839]
-signal result_is_ram_write_MUX_uxn_opcodes_h_l2073_c2_e839_cond : unsigned(0 downto 0);
-signal result_is_ram_write_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue : unsigned(0 downto 0);
-signal result_is_ram_write_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse : unsigned(0 downto 0);
-signal result_is_ram_write_MUX_uxn_opcodes_h_l2073_c2_e839_return_output : unsigned(0 downto 0);
+-- result_is_vram_write_MUX[uxn_opcodes_h_l2072_c2_19a1]
+signal result_is_vram_write_MUX_uxn_opcodes_h_l2072_c2_19a1_cond : unsigned(0 downto 0);
+signal result_is_vram_write_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue : unsigned(0 downto 0);
+signal result_is_vram_write_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse : unsigned(0 downto 0);
+signal result_is_vram_write_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output : unsigned(0 downto 0);
 
--- result_is_stack_write_MUX[uxn_opcodes_h_l2073_c2_e839]
-signal result_is_stack_write_MUX_uxn_opcodes_h_l2073_c2_e839_cond : unsigned(0 downto 0);
-signal result_is_stack_write_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue : unsigned(0 downto 0);
-signal result_is_stack_write_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse : unsigned(0 downto 0);
-signal result_is_stack_write_MUX_uxn_opcodes_h_l2073_c2_e839_return_output : unsigned(0 downto 0);
+-- result_is_stack_index_flipped_MUX[uxn_opcodes_h_l2072_c2_19a1]
+signal result_is_stack_index_flipped_MUX_uxn_opcodes_h_l2072_c2_19a1_cond : unsigned(0 downto 0);
+signal result_is_stack_index_flipped_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue : unsigned(0 downto 0);
+signal result_is_stack_index_flipped_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse : unsigned(0 downto 0);
+signal result_is_stack_index_flipped_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output : unsigned(0 downto 0);
 
--- result_stack_address_sp_offset_MUX[uxn_opcodes_h_l2073_c2_e839]
-signal result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2073_c2_e839_cond : unsigned(0 downto 0);
-signal result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue : unsigned(3 downto 0);
-signal result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse : unsigned(3 downto 0);
-signal result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2073_c2_e839_return_output : unsigned(3 downto 0);
+-- result_u8_value_MUX[uxn_opcodes_h_l2072_c2_19a1]
+signal result_u8_value_MUX_uxn_opcodes_h_l2072_c2_19a1_cond : unsigned(0 downto 0);
+signal result_u8_value_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue : unsigned(7 downto 0);
+signal result_u8_value_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse : unsigned(7 downto 0);
+signal result_u8_value_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output : unsigned(7 downto 0);
 
--- result_u8_value_MUX[uxn_opcodes_h_l2073_c2_e839]
-signal result_u8_value_MUX_uxn_opcodes_h_l2073_c2_e839_cond : unsigned(0 downto 0);
-signal result_u8_value_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue : unsigned(7 downto 0);
-signal result_u8_value_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse : unsigned(7 downto 0);
-signal result_u8_value_MUX_uxn_opcodes_h_l2073_c2_e839_return_output : unsigned(7 downto 0);
+-- result_is_opc_done_MUX[uxn_opcodes_h_l2072_c2_19a1]
+signal result_is_opc_done_MUX_uxn_opcodes_h_l2072_c2_19a1_cond : unsigned(0 downto 0);
+signal result_is_opc_done_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue : unsigned(0 downto 0);
+signal result_is_opc_done_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse : unsigned(0 downto 0);
+signal result_is_opc_done_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output : unsigned(0 downto 0);
 
--- result_sp_relative_shift_MUX[uxn_opcodes_h_l2073_c2_e839]
-signal result_sp_relative_shift_MUX_uxn_opcodes_h_l2073_c2_e839_cond : unsigned(0 downto 0);
-signal result_sp_relative_shift_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue : signed(3 downto 0);
-signal result_sp_relative_shift_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse : signed(3 downto 0);
-signal result_sp_relative_shift_MUX_uxn_opcodes_h_l2073_c2_e839_return_output : signed(3 downto 0);
+-- result_sp_relative_shift_MUX[uxn_opcodes_h_l2072_c2_19a1]
+signal result_sp_relative_shift_MUX_uxn_opcodes_h_l2072_c2_19a1_cond : unsigned(0 downto 0);
+signal result_sp_relative_shift_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue : signed(3 downto 0);
+signal result_sp_relative_shift_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse : signed(3 downto 0);
+signal result_sp_relative_shift_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output : signed(3 downto 0);
 
--- result_is_stack_index_flipped_MUX[uxn_opcodes_h_l2073_c2_e839]
-signal result_is_stack_index_flipped_MUX_uxn_opcodes_h_l2073_c2_e839_cond : unsigned(0 downto 0);
-signal result_is_stack_index_flipped_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue : unsigned(0 downto 0);
-signal result_is_stack_index_flipped_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse : unsigned(0 downto 0);
-signal result_is_stack_index_flipped_MUX_uxn_opcodes_h_l2073_c2_e839_return_output : unsigned(0 downto 0);
+-- result_is_pc_updated_MUX[uxn_opcodes_h_l2072_c2_19a1]
+signal result_is_pc_updated_MUX_uxn_opcodes_h_l2072_c2_19a1_cond : unsigned(0 downto 0);
+signal result_is_pc_updated_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue : unsigned(0 downto 0);
+signal result_is_pc_updated_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse : unsigned(0 downto 0);
+signal result_is_pc_updated_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output : unsigned(0 downto 0);
 
--- result_is_pc_updated_MUX[uxn_opcodes_h_l2073_c2_e839]
-signal result_is_pc_updated_MUX_uxn_opcodes_h_l2073_c2_e839_cond : unsigned(0 downto 0);
-signal result_is_pc_updated_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue : unsigned(0 downto 0);
-signal result_is_pc_updated_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse : unsigned(0 downto 0);
-signal result_is_pc_updated_MUX_uxn_opcodes_h_l2073_c2_e839_return_output : unsigned(0 downto 0);
+-- result_stack_address_sp_offset_MUX[uxn_opcodes_h_l2072_c2_19a1]
+signal result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2072_c2_19a1_cond : unsigned(0 downto 0);
+signal result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue : unsigned(3 downto 0);
+signal result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse : unsigned(3 downto 0);
+signal result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output : unsigned(3 downto 0);
 
--- n8_MUX[uxn_opcodes_h_l2073_c2_e839]
-signal n8_MUX_uxn_opcodes_h_l2073_c2_e839_cond : unsigned(0 downto 0);
-signal n8_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue : unsigned(7 downto 0);
-signal n8_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse : unsigned(7 downto 0);
-signal n8_MUX_uxn_opcodes_h_l2073_c2_e839_return_output : unsigned(7 downto 0);
+-- result_is_ram_write_MUX[uxn_opcodes_h_l2072_c2_19a1]
+signal result_is_ram_write_MUX_uxn_opcodes_h_l2072_c2_19a1_cond : unsigned(0 downto 0);
+signal result_is_ram_write_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue : unsigned(0 downto 0);
+signal result_is_ram_write_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse : unsigned(0 downto 0);
+signal result_is_ram_write_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output : unsigned(0 downto 0);
 
--- BIN_OP_EQ[uxn_opcodes_h_l2086_c11_ed0c]
-signal BIN_OP_EQ_uxn_opcodes_h_l2086_c11_ed0c_left : unsigned(7 downto 0);
-signal BIN_OP_EQ_uxn_opcodes_h_l2086_c11_ed0c_right : unsigned(0 downto 0);
-signal BIN_OP_EQ_uxn_opcodes_h_l2086_c11_ed0c_return_output : unsigned(0 downto 0);
+-- BIN_OP_EQ[uxn_opcodes_h_l2085_c11_78b1]
+signal BIN_OP_EQ_uxn_opcodes_h_l2085_c11_78b1_left : unsigned(7 downto 0);
+signal BIN_OP_EQ_uxn_opcodes_h_l2085_c11_78b1_right : unsigned(0 downto 0);
+signal BIN_OP_EQ_uxn_opcodes_h_l2085_c11_78b1_return_output : unsigned(0 downto 0);
 
--- t8_MUX[uxn_opcodes_h_l2086_c7_aaf1]
-signal t8_MUX_uxn_opcodes_h_l2086_c7_aaf1_cond : unsigned(0 downto 0);
-signal t8_MUX_uxn_opcodes_h_l2086_c7_aaf1_iftrue : unsigned(7 downto 0);
-signal t8_MUX_uxn_opcodes_h_l2086_c7_aaf1_iffalse : unsigned(7 downto 0);
-signal t8_MUX_uxn_opcodes_h_l2086_c7_aaf1_return_output : unsigned(7 downto 0);
+-- t8_MUX[uxn_opcodes_h_l2085_c7_46f5]
+signal t8_MUX_uxn_opcodes_h_l2085_c7_46f5_cond : unsigned(0 downto 0);
+signal t8_MUX_uxn_opcodes_h_l2085_c7_46f5_iftrue : unsigned(7 downto 0);
+signal t8_MUX_uxn_opcodes_h_l2085_c7_46f5_iffalse : unsigned(7 downto 0);
+signal t8_MUX_uxn_opcodes_h_l2085_c7_46f5_return_output : unsigned(7 downto 0);
 
--- result_is_opc_done_MUX[uxn_opcodes_h_l2086_c7_aaf1]
-signal result_is_opc_done_MUX_uxn_opcodes_h_l2086_c7_aaf1_cond : unsigned(0 downto 0);
-signal result_is_opc_done_MUX_uxn_opcodes_h_l2086_c7_aaf1_iftrue : unsigned(0 downto 0);
-signal result_is_opc_done_MUX_uxn_opcodes_h_l2086_c7_aaf1_iffalse : unsigned(0 downto 0);
-signal result_is_opc_done_MUX_uxn_opcodes_h_l2086_c7_aaf1_return_output : unsigned(0 downto 0);
+-- n8_MUX[uxn_opcodes_h_l2085_c7_46f5]
+signal n8_MUX_uxn_opcodes_h_l2085_c7_46f5_cond : unsigned(0 downto 0);
+signal n8_MUX_uxn_opcodes_h_l2085_c7_46f5_iftrue : unsigned(7 downto 0);
+signal n8_MUX_uxn_opcodes_h_l2085_c7_46f5_iffalse : unsigned(7 downto 0);
+signal n8_MUX_uxn_opcodes_h_l2085_c7_46f5_return_output : unsigned(7 downto 0);
 
--- result_stack_address_sp_offset_MUX[uxn_opcodes_h_l2086_c7_aaf1]
-signal result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2086_c7_aaf1_cond : unsigned(0 downto 0);
-signal result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2086_c7_aaf1_iftrue : unsigned(3 downto 0);
-signal result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2086_c7_aaf1_iffalse : unsigned(3 downto 0);
-signal result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2086_c7_aaf1_return_output : unsigned(3 downto 0);
+-- result_stack_address_sp_offset_MUX[uxn_opcodes_h_l2085_c7_46f5]
+signal result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2085_c7_46f5_cond : unsigned(0 downto 0);
+signal result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2085_c7_46f5_iftrue : unsigned(3 downto 0);
+signal result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2085_c7_46f5_iffalse : unsigned(3 downto 0);
+signal result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2085_c7_46f5_return_output : unsigned(3 downto 0);
 
--- result_u8_value_MUX[uxn_opcodes_h_l2086_c7_aaf1]
-signal result_u8_value_MUX_uxn_opcodes_h_l2086_c7_aaf1_cond : unsigned(0 downto 0);
-signal result_u8_value_MUX_uxn_opcodes_h_l2086_c7_aaf1_iftrue : unsigned(7 downto 0);
-signal result_u8_value_MUX_uxn_opcodes_h_l2086_c7_aaf1_iffalse : unsigned(7 downto 0);
-signal result_u8_value_MUX_uxn_opcodes_h_l2086_c7_aaf1_return_output : unsigned(7 downto 0);
+-- result_sp_relative_shift_MUX[uxn_opcodes_h_l2085_c7_46f5]
+signal result_sp_relative_shift_MUX_uxn_opcodes_h_l2085_c7_46f5_cond : unsigned(0 downto 0);
+signal result_sp_relative_shift_MUX_uxn_opcodes_h_l2085_c7_46f5_iftrue : signed(3 downto 0);
+signal result_sp_relative_shift_MUX_uxn_opcodes_h_l2085_c7_46f5_iffalse : signed(3 downto 0);
+signal result_sp_relative_shift_MUX_uxn_opcodes_h_l2085_c7_46f5_return_output : signed(3 downto 0);
 
--- result_is_stack_write_MUX[uxn_opcodes_h_l2086_c7_aaf1]
-signal result_is_stack_write_MUX_uxn_opcodes_h_l2086_c7_aaf1_cond : unsigned(0 downto 0);
-signal result_is_stack_write_MUX_uxn_opcodes_h_l2086_c7_aaf1_iftrue : unsigned(0 downto 0);
-signal result_is_stack_write_MUX_uxn_opcodes_h_l2086_c7_aaf1_iffalse : unsigned(0 downto 0);
-signal result_is_stack_write_MUX_uxn_opcodes_h_l2086_c7_aaf1_return_output : unsigned(0 downto 0);
+-- result_is_stack_write_MUX[uxn_opcodes_h_l2085_c7_46f5]
+signal result_is_stack_write_MUX_uxn_opcodes_h_l2085_c7_46f5_cond : unsigned(0 downto 0);
+signal result_is_stack_write_MUX_uxn_opcodes_h_l2085_c7_46f5_iftrue : unsigned(0 downto 0);
+signal result_is_stack_write_MUX_uxn_opcodes_h_l2085_c7_46f5_iffalse : unsigned(0 downto 0);
+signal result_is_stack_write_MUX_uxn_opcodes_h_l2085_c7_46f5_return_output : unsigned(0 downto 0);
 
--- result_sp_relative_shift_MUX[uxn_opcodes_h_l2086_c7_aaf1]
-signal result_sp_relative_shift_MUX_uxn_opcodes_h_l2086_c7_aaf1_cond : unsigned(0 downto 0);
-signal result_sp_relative_shift_MUX_uxn_opcodes_h_l2086_c7_aaf1_iftrue : signed(3 downto 0);
-signal result_sp_relative_shift_MUX_uxn_opcodes_h_l2086_c7_aaf1_iffalse : signed(3 downto 0);
-signal result_sp_relative_shift_MUX_uxn_opcodes_h_l2086_c7_aaf1_return_output : signed(3 downto 0);
+-- result_u8_value_MUX[uxn_opcodes_h_l2085_c7_46f5]
+signal result_u8_value_MUX_uxn_opcodes_h_l2085_c7_46f5_cond : unsigned(0 downto 0);
+signal result_u8_value_MUX_uxn_opcodes_h_l2085_c7_46f5_iftrue : unsigned(7 downto 0);
+signal result_u8_value_MUX_uxn_opcodes_h_l2085_c7_46f5_iffalse : unsigned(7 downto 0);
+signal result_u8_value_MUX_uxn_opcodes_h_l2085_c7_46f5_return_output : unsigned(7 downto 0);
 
--- n8_MUX[uxn_opcodes_h_l2086_c7_aaf1]
-signal n8_MUX_uxn_opcodes_h_l2086_c7_aaf1_cond : unsigned(0 downto 0);
-signal n8_MUX_uxn_opcodes_h_l2086_c7_aaf1_iftrue : unsigned(7 downto 0);
-signal n8_MUX_uxn_opcodes_h_l2086_c7_aaf1_iffalse : unsigned(7 downto 0);
-signal n8_MUX_uxn_opcodes_h_l2086_c7_aaf1_return_output : unsigned(7 downto 0);
+-- result_is_opc_done_MUX[uxn_opcodes_h_l2085_c7_46f5]
+signal result_is_opc_done_MUX_uxn_opcodes_h_l2085_c7_46f5_cond : unsigned(0 downto 0);
+signal result_is_opc_done_MUX_uxn_opcodes_h_l2085_c7_46f5_iftrue : unsigned(0 downto 0);
+signal result_is_opc_done_MUX_uxn_opcodes_h_l2085_c7_46f5_iffalse : unsigned(0 downto 0);
+signal result_is_opc_done_MUX_uxn_opcodes_h_l2085_c7_46f5_return_output : unsigned(0 downto 0);
 
--- BIN_OP_EQ[uxn_opcodes_h_l2089_c11_3e7c]
-signal BIN_OP_EQ_uxn_opcodes_h_l2089_c11_3e7c_left : unsigned(7 downto 0);
-signal BIN_OP_EQ_uxn_opcodes_h_l2089_c11_3e7c_right : unsigned(1 downto 0);
-signal BIN_OP_EQ_uxn_opcodes_h_l2089_c11_3e7c_return_output : unsigned(0 downto 0);
+-- BIN_OP_EQ[uxn_opcodes_h_l2088_c11_d215]
+signal BIN_OP_EQ_uxn_opcodes_h_l2088_c11_d215_left : unsigned(7 downto 0);
+signal BIN_OP_EQ_uxn_opcodes_h_l2088_c11_d215_right : unsigned(1 downto 0);
+signal BIN_OP_EQ_uxn_opcodes_h_l2088_c11_d215_return_output : unsigned(0 downto 0);
 
--- t8_MUX[uxn_opcodes_h_l2089_c7_86ab]
-signal t8_MUX_uxn_opcodes_h_l2089_c7_86ab_cond : unsigned(0 downto 0);
-signal t8_MUX_uxn_opcodes_h_l2089_c7_86ab_iftrue : unsigned(7 downto 0);
-signal t8_MUX_uxn_opcodes_h_l2089_c7_86ab_iffalse : unsigned(7 downto 0);
-signal t8_MUX_uxn_opcodes_h_l2089_c7_86ab_return_output : unsigned(7 downto 0);
+-- t8_MUX[uxn_opcodes_h_l2088_c7_987b]
+signal t8_MUX_uxn_opcodes_h_l2088_c7_987b_cond : unsigned(0 downto 0);
+signal t8_MUX_uxn_opcodes_h_l2088_c7_987b_iftrue : unsigned(7 downto 0);
+signal t8_MUX_uxn_opcodes_h_l2088_c7_987b_iffalse : unsigned(7 downto 0);
+signal t8_MUX_uxn_opcodes_h_l2088_c7_987b_return_output : unsigned(7 downto 0);
 
--- result_is_opc_done_MUX[uxn_opcodes_h_l2089_c7_86ab]
-signal result_is_opc_done_MUX_uxn_opcodes_h_l2089_c7_86ab_cond : unsigned(0 downto 0);
-signal result_is_opc_done_MUX_uxn_opcodes_h_l2089_c7_86ab_iftrue : unsigned(0 downto 0);
-signal result_is_opc_done_MUX_uxn_opcodes_h_l2089_c7_86ab_iffalse : unsigned(0 downto 0);
-signal result_is_opc_done_MUX_uxn_opcodes_h_l2089_c7_86ab_return_output : unsigned(0 downto 0);
+-- n8_MUX[uxn_opcodes_h_l2088_c7_987b]
+signal n8_MUX_uxn_opcodes_h_l2088_c7_987b_cond : unsigned(0 downto 0);
+signal n8_MUX_uxn_opcodes_h_l2088_c7_987b_iftrue : unsigned(7 downto 0);
+signal n8_MUX_uxn_opcodes_h_l2088_c7_987b_iffalse : unsigned(7 downto 0);
+signal n8_MUX_uxn_opcodes_h_l2088_c7_987b_return_output : unsigned(7 downto 0);
 
--- result_stack_address_sp_offset_MUX[uxn_opcodes_h_l2089_c7_86ab]
-signal result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2089_c7_86ab_cond : unsigned(0 downto 0);
-signal result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2089_c7_86ab_iftrue : unsigned(3 downto 0);
-signal result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2089_c7_86ab_iffalse : unsigned(3 downto 0);
-signal result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2089_c7_86ab_return_output : unsigned(3 downto 0);
+-- result_stack_address_sp_offset_MUX[uxn_opcodes_h_l2088_c7_987b]
+signal result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2088_c7_987b_cond : unsigned(0 downto 0);
+signal result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2088_c7_987b_iftrue : unsigned(3 downto 0);
+signal result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2088_c7_987b_iffalse : unsigned(3 downto 0);
+signal result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2088_c7_987b_return_output : unsigned(3 downto 0);
 
--- result_u8_value_MUX[uxn_opcodes_h_l2089_c7_86ab]
-signal result_u8_value_MUX_uxn_opcodes_h_l2089_c7_86ab_cond : unsigned(0 downto 0);
-signal result_u8_value_MUX_uxn_opcodes_h_l2089_c7_86ab_iftrue : unsigned(7 downto 0);
-signal result_u8_value_MUX_uxn_opcodes_h_l2089_c7_86ab_iffalse : unsigned(7 downto 0);
-signal result_u8_value_MUX_uxn_opcodes_h_l2089_c7_86ab_return_output : unsigned(7 downto 0);
+-- result_sp_relative_shift_MUX[uxn_opcodes_h_l2088_c7_987b]
+signal result_sp_relative_shift_MUX_uxn_opcodes_h_l2088_c7_987b_cond : unsigned(0 downto 0);
+signal result_sp_relative_shift_MUX_uxn_opcodes_h_l2088_c7_987b_iftrue : signed(3 downto 0);
+signal result_sp_relative_shift_MUX_uxn_opcodes_h_l2088_c7_987b_iffalse : signed(3 downto 0);
+signal result_sp_relative_shift_MUX_uxn_opcodes_h_l2088_c7_987b_return_output : signed(3 downto 0);
 
--- result_is_stack_write_MUX[uxn_opcodes_h_l2089_c7_86ab]
-signal result_is_stack_write_MUX_uxn_opcodes_h_l2089_c7_86ab_cond : unsigned(0 downto 0);
-signal result_is_stack_write_MUX_uxn_opcodes_h_l2089_c7_86ab_iftrue : unsigned(0 downto 0);
-signal result_is_stack_write_MUX_uxn_opcodes_h_l2089_c7_86ab_iffalse : unsigned(0 downto 0);
-signal result_is_stack_write_MUX_uxn_opcodes_h_l2089_c7_86ab_return_output : unsigned(0 downto 0);
+-- result_is_stack_write_MUX[uxn_opcodes_h_l2088_c7_987b]
+signal result_is_stack_write_MUX_uxn_opcodes_h_l2088_c7_987b_cond : unsigned(0 downto 0);
+signal result_is_stack_write_MUX_uxn_opcodes_h_l2088_c7_987b_iftrue : unsigned(0 downto 0);
+signal result_is_stack_write_MUX_uxn_opcodes_h_l2088_c7_987b_iffalse : unsigned(0 downto 0);
+signal result_is_stack_write_MUX_uxn_opcodes_h_l2088_c7_987b_return_output : unsigned(0 downto 0);
 
--- result_sp_relative_shift_MUX[uxn_opcodes_h_l2089_c7_86ab]
-signal result_sp_relative_shift_MUX_uxn_opcodes_h_l2089_c7_86ab_cond : unsigned(0 downto 0);
-signal result_sp_relative_shift_MUX_uxn_opcodes_h_l2089_c7_86ab_iftrue : signed(3 downto 0);
-signal result_sp_relative_shift_MUX_uxn_opcodes_h_l2089_c7_86ab_iffalse : signed(3 downto 0);
-signal result_sp_relative_shift_MUX_uxn_opcodes_h_l2089_c7_86ab_return_output : signed(3 downto 0);
+-- result_u8_value_MUX[uxn_opcodes_h_l2088_c7_987b]
+signal result_u8_value_MUX_uxn_opcodes_h_l2088_c7_987b_cond : unsigned(0 downto 0);
+signal result_u8_value_MUX_uxn_opcodes_h_l2088_c7_987b_iftrue : unsigned(7 downto 0);
+signal result_u8_value_MUX_uxn_opcodes_h_l2088_c7_987b_iffalse : unsigned(7 downto 0);
+signal result_u8_value_MUX_uxn_opcodes_h_l2088_c7_987b_return_output : unsigned(7 downto 0);
 
--- n8_MUX[uxn_opcodes_h_l2089_c7_86ab]
-signal n8_MUX_uxn_opcodes_h_l2089_c7_86ab_cond : unsigned(0 downto 0);
-signal n8_MUX_uxn_opcodes_h_l2089_c7_86ab_iftrue : unsigned(7 downto 0);
-signal n8_MUX_uxn_opcodes_h_l2089_c7_86ab_iffalse : unsigned(7 downto 0);
-signal n8_MUX_uxn_opcodes_h_l2089_c7_86ab_return_output : unsigned(7 downto 0);
+-- result_is_opc_done_MUX[uxn_opcodes_h_l2088_c7_987b]
+signal result_is_opc_done_MUX_uxn_opcodes_h_l2088_c7_987b_cond : unsigned(0 downto 0);
+signal result_is_opc_done_MUX_uxn_opcodes_h_l2088_c7_987b_iftrue : unsigned(0 downto 0);
+signal result_is_opc_done_MUX_uxn_opcodes_h_l2088_c7_987b_iffalse : unsigned(0 downto 0);
+signal result_is_opc_done_MUX_uxn_opcodes_h_l2088_c7_987b_return_output : unsigned(0 downto 0);
 
--- BIN_OP_EQ[uxn_opcodes_h_l2092_c11_a96b]
-signal BIN_OP_EQ_uxn_opcodes_h_l2092_c11_a96b_left : unsigned(7 downto 0);
-signal BIN_OP_EQ_uxn_opcodes_h_l2092_c11_a96b_right : unsigned(1 downto 0);
-signal BIN_OP_EQ_uxn_opcodes_h_l2092_c11_a96b_return_output : unsigned(0 downto 0);
+-- BIN_OP_EQ[uxn_opcodes_h_l2091_c11_bd6d]
+signal BIN_OP_EQ_uxn_opcodes_h_l2091_c11_bd6d_left : unsigned(7 downto 0);
+signal BIN_OP_EQ_uxn_opcodes_h_l2091_c11_bd6d_right : unsigned(1 downto 0);
+signal BIN_OP_EQ_uxn_opcodes_h_l2091_c11_bd6d_return_output : unsigned(0 downto 0);
 
--- result_is_opc_done_MUX[uxn_opcodes_h_l2092_c7_d72d]
-signal result_is_opc_done_MUX_uxn_opcodes_h_l2092_c7_d72d_cond : unsigned(0 downto 0);
-signal result_is_opc_done_MUX_uxn_opcodes_h_l2092_c7_d72d_iftrue : unsigned(0 downto 0);
-signal result_is_opc_done_MUX_uxn_opcodes_h_l2092_c7_d72d_iffalse : unsigned(0 downto 0);
-signal result_is_opc_done_MUX_uxn_opcodes_h_l2092_c7_d72d_return_output : unsigned(0 downto 0);
+-- n8_MUX[uxn_opcodes_h_l2091_c7_694e]
+signal n8_MUX_uxn_opcodes_h_l2091_c7_694e_cond : unsigned(0 downto 0);
+signal n8_MUX_uxn_opcodes_h_l2091_c7_694e_iftrue : unsigned(7 downto 0);
+signal n8_MUX_uxn_opcodes_h_l2091_c7_694e_iffalse : unsigned(7 downto 0);
+signal n8_MUX_uxn_opcodes_h_l2091_c7_694e_return_output : unsigned(7 downto 0);
 
--- result_stack_address_sp_offset_MUX[uxn_opcodes_h_l2092_c7_d72d]
-signal result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2092_c7_d72d_cond : unsigned(0 downto 0);
-signal result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2092_c7_d72d_iftrue : unsigned(3 downto 0);
-signal result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2092_c7_d72d_iffalse : unsigned(3 downto 0);
-signal result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2092_c7_d72d_return_output : unsigned(3 downto 0);
+-- result_stack_address_sp_offset_MUX[uxn_opcodes_h_l2091_c7_694e]
+signal result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2091_c7_694e_cond : unsigned(0 downto 0);
+signal result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2091_c7_694e_iftrue : unsigned(3 downto 0);
+signal result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2091_c7_694e_iffalse : unsigned(3 downto 0);
+signal result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2091_c7_694e_return_output : unsigned(3 downto 0);
 
--- result_u8_value_MUX[uxn_opcodes_h_l2092_c7_d72d]
-signal result_u8_value_MUX_uxn_opcodes_h_l2092_c7_d72d_cond : unsigned(0 downto 0);
-signal result_u8_value_MUX_uxn_opcodes_h_l2092_c7_d72d_iftrue : unsigned(7 downto 0);
-signal result_u8_value_MUX_uxn_opcodes_h_l2092_c7_d72d_iffalse : unsigned(7 downto 0);
-signal result_u8_value_MUX_uxn_opcodes_h_l2092_c7_d72d_return_output : unsigned(7 downto 0);
+-- result_sp_relative_shift_MUX[uxn_opcodes_h_l2091_c7_694e]
+signal result_sp_relative_shift_MUX_uxn_opcodes_h_l2091_c7_694e_cond : unsigned(0 downto 0);
+signal result_sp_relative_shift_MUX_uxn_opcodes_h_l2091_c7_694e_iftrue : signed(3 downto 0);
+signal result_sp_relative_shift_MUX_uxn_opcodes_h_l2091_c7_694e_iffalse : signed(3 downto 0);
+signal result_sp_relative_shift_MUX_uxn_opcodes_h_l2091_c7_694e_return_output : signed(3 downto 0);
 
--- result_is_stack_write_MUX[uxn_opcodes_h_l2092_c7_d72d]
-signal result_is_stack_write_MUX_uxn_opcodes_h_l2092_c7_d72d_cond : unsigned(0 downto 0);
-signal result_is_stack_write_MUX_uxn_opcodes_h_l2092_c7_d72d_iftrue : unsigned(0 downto 0);
-signal result_is_stack_write_MUX_uxn_opcodes_h_l2092_c7_d72d_iffalse : unsigned(0 downto 0);
-signal result_is_stack_write_MUX_uxn_opcodes_h_l2092_c7_d72d_return_output : unsigned(0 downto 0);
+-- result_is_stack_write_MUX[uxn_opcodes_h_l2091_c7_694e]
+signal result_is_stack_write_MUX_uxn_opcodes_h_l2091_c7_694e_cond : unsigned(0 downto 0);
+signal result_is_stack_write_MUX_uxn_opcodes_h_l2091_c7_694e_iftrue : unsigned(0 downto 0);
+signal result_is_stack_write_MUX_uxn_opcodes_h_l2091_c7_694e_iffalse : unsigned(0 downto 0);
+signal result_is_stack_write_MUX_uxn_opcodes_h_l2091_c7_694e_return_output : unsigned(0 downto 0);
 
--- result_sp_relative_shift_MUX[uxn_opcodes_h_l2092_c7_d72d]
-signal result_sp_relative_shift_MUX_uxn_opcodes_h_l2092_c7_d72d_cond : unsigned(0 downto 0);
-signal result_sp_relative_shift_MUX_uxn_opcodes_h_l2092_c7_d72d_iftrue : signed(3 downto 0);
-signal result_sp_relative_shift_MUX_uxn_opcodes_h_l2092_c7_d72d_iffalse : signed(3 downto 0);
-signal result_sp_relative_shift_MUX_uxn_opcodes_h_l2092_c7_d72d_return_output : signed(3 downto 0);
+-- result_u8_value_MUX[uxn_opcodes_h_l2091_c7_694e]
+signal result_u8_value_MUX_uxn_opcodes_h_l2091_c7_694e_cond : unsigned(0 downto 0);
+signal result_u8_value_MUX_uxn_opcodes_h_l2091_c7_694e_iftrue : unsigned(7 downto 0);
+signal result_u8_value_MUX_uxn_opcodes_h_l2091_c7_694e_iffalse : unsigned(7 downto 0);
+signal result_u8_value_MUX_uxn_opcodes_h_l2091_c7_694e_return_output : unsigned(7 downto 0);
 
--- n8_MUX[uxn_opcodes_h_l2092_c7_d72d]
-signal n8_MUX_uxn_opcodes_h_l2092_c7_d72d_cond : unsigned(0 downto 0);
-signal n8_MUX_uxn_opcodes_h_l2092_c7_d72d_iftrue : unsigned(7 downto 0);
-signal n8_MUX_uxn_opcodes_h_l2092_c7_d72d_iffalse : unsigned(7 downto 0);
-signal n8_MUX_uxn_opcodes_h_l2092_c7_d72d_return_output : unsigned(7 downto 0);
+-- result_is_opc_done_MUX[uxn_opcodes_h_l2091_c7_694e]
+signal result_is_opc_done_MUX_uxn_opcodes_h_l2091_c7_694e_cond : unsigned(0 downto 0);
+signal result_is_opc_done_MUX_uxn_opcodes_h_l2091_c7_694e_iftrue : unsigned(0 downto 0);
+signal result_is_opc_done_MUX_uxn_opcodes_h_l2091_c7_694e_iffalse : unsigned(0 downto 0);
+signal result_is_opc_done_MUX_uxn_opcodes_h_l2091_c7_694e_return_output : unsigned(0 downto 0);
 
--- sp_relative_shift[uxn_opcodes_h_l2094_c30_af37]
-signal sp_relative_shift_uxn_opcodes_h_l2094_c30_af37_ins : unsigned(7 downto 0);
-signal sp_relative_shift_uxn_opcodes_h_l2094_c30_af37_x : signed(3 downto 0);
-signal sp_relative_shift_uxn_opcodes_h_l2094_c30_af37_y : signed(3 downto 0);
-signal sp_relative_shift_uxn_opcodes_h_l2094_c30_af37_return_output : signed(3 downto 0);
+-- sp_relative_shift[uxn_opcodes_h_l2093_c30_b87f]
+signal sp_relative_shift_uxn_opcodes_h_l2093_c30_b87f_ins : unsigned(7 downto 0);
+signal sp_relative_shift_uxn_opcodes_h_l2093_c30_b87f_x : signed(3 downto 0);
+signal sp_relative_shift_uxn_opcodes_h_l2093_c30_b87f_y : signed(3 downto 0);
+signal sp_relative_shift_uxn_opcodes_h_l2093_c30_b87f_return_output : signed(3 downto 0);
 
--- BIN_OP_EQ[uxn_opcodes_h_l2097_c21_d476]
-signal BIN_OP_EQ_uxn_opcodes_h_l2097_c21_d476_left : unsigned(7 downto 0);
-signal BIN_OP_EQ_uxn_opcodes_h_l2097_c21_d476_right : unsigned(0 downto 0);
-signal BIN_OP_EQ_uxn_opcodes_h_l2097_c21_d476_return_output : unsigned(0 downto 0);
+-- BIN_OP_EQ[uxn_opcodes_h_l2096_c21_d2be]
+signal BIN_OP_EQ_uxn_opcodes_h_l2096_c21_d2be_left : unsigned(7 downto 0);
+signal BIN_OP_EQ_uxn_opcodes_h_l2096_c21_d2be_right : unsigned(0 downto 0);
+signal BIN_OP_EQ_uxn_opcodes_h_l2096_c21_d2be_return_output : unsigned(0 downto 0);
 
--- BIN_OP_DIV[uxn_opcodes_h_l2097_c35_015a]
-signal BIN_OP_DIV_uxn_opcodes_h_l2097_c35_015a_left : unsigned(7 downto 0);
-signal BIN_OP_DIV_uxn_opcodes_h_l2097_c35_015a_right : unsigned(7 downto 0);
-signal BIN_OP_DIV_uxn_opcodes_h_l2097_c35_015a_return_output : unsigned(7 downto 0);
+-- BIN_OP_DIV[uxn_opcodes_h_l2096_c35_30ea]
+signal BIN_OP_DIV_uxn_opcodes_h_l2096_c35_30ea_left : unsigned(7 downto 0);
+signal BIN_OP_DIV_uxn_opcodes_h_l2096_c35_30ea_right : unsigned(7 downto 0);
+signal BIN_OP_DIV_uxn_opcodes_h_l2096_c35_30ea_return_output : unsigned(7 downto 0);
 
--- MUX[uxn_opcodes_h_l2097_c21_6fcb]
-signal MUX_uxn_opcodes_h_l2097_c21_6fcb_cond : unsigned(0 downto 0);
-signal MUX_uxn_opcodes_h_l2097_c21_6fcb_iftrue : unsigned(7 downto 0);
-signal MUX_uxn_opcodes_h_l2097_c21_6fcb_iffalse : unsigned(7 downto 0);
-signal MUX_uxn_opcodes_h_l2097_c21_6fcb_return_output : unsigned(7 downto 0);
+-- MUX[uxn_opcodes_h_l2096_c21_82f9]
+signal MUX_uxn_opcodes_h_l2096_c21_82f9_cond : unsigned(0 downto 0);
+signal MUX_uxn_opcodes_h_l2096_c21_82f9_iftrue : unsigned(7 downto 0);
+signal MUX_uxn_opcodes_h_l2096_c21_82f9_iffalse : unsigned(7 downto 0);
+signal MUX_uxn_opcodes_h_l2096_c21_82f9_return_output : unsigned(7 downto 0);
 
-function CONST_REF_RD_opcode_result_t_opcode_result_t_c580( ref_toks_0 : opcode_result_t;
+function CONST_REF_RD_opcode_result_t_opcode_result_t_188e( ref_toks_0 : opcode_result_t;
  ref_toks_1 : unsigned;
  ref_toks_2 : unsigned;
  ref_toks_3 : unsigned;
  ref_toks_4 : unsigned;
  ref_toks_5 : unsigned;
- ref_toks_6 : unsigned;
- ref_toks_7 : signed;
+ ref_toks_6 : signed;
+ ref_toks_7 : unsigned;
  ref_toks_8 : unsigned;
  ref_toks_9 : unsigned) return opcode_result_t is
  
@@ -279,15 +279,15 @@ function CONST_REF_RD_opcode_result_t_opcode_result_t_c580( ref_toks_0 : opcode_
   variable return_output : opcode_result_t;
 begin
       base := ref_toks_0;
-      base.is_opc_done := ref_toks_1;
+      base.is_stack_write := ref_toks_1;
       base.is_vram_write := ref_toks_2;
-      base.is_ram_write := ref_toks_3;
-      base.is_stack_write := ref_toks_4;
-      base.stack_address_sp_offset := ref_toks_5;
-      base.u8_value := ref_toks_6;
-      base.sp_relative_shift := ref_toks_7;
-      base.is_stack_index_flipped := ref_toks_8;
-      base.is_pc_updated := ref_toks_9;
+      base.is_stack_index_flipped := ref_toks_3;
+      base.u8_value := ref_toks_4;
+      base.is_opc_done := ref_toks_5;
+      base.sp_relative_shift := ref_toks_6;
+      base.is_pc_updated := ref_toks_7;
+      base.stack_address_sp_offset := ref_toks_8;
+      base.is_ram_write := ref_toks_9;
 
       return_output := base;
       return return_output; 
@@ -297,272 +297,272 @@ end function;
 begin
 
 -- SUBMODULE INSTANCES 
--- BIN_OP_EQ_uxn_opcodes_h_l2073_c6_1d4c
-BIN_OP_EQ_uxn_opcodes_h_l2073_c6_1d4c : entity work.BIN_OP_EQ_uint8_t_uint1_t_0CLK_de264c78 port map (
-BIN_OP_EQ_uxn_opcodes_h_l2073_c6_1d4c_left,
-BIN_OP_EQ_uxn_opcodes_h_l2073_c6_1d4c_right,
-BIN_OP_EQ_uxn_opcodes_h_l2073_c6_1d4c_return_output);
+-- BIN_OP_EQ_uxn_opcodes_h_l2072_c6_16c9
+BIN_OP_EQ_uxn_opcodes_h_l2072_c6_16c9 : entity work.BIN_OP_EQ_uint8_t_uint1_t_0CLK_de264c78 port map (
+BIN_OP_EQ_uxn_opcodes_h_l2072_c6_16c9_left,
+BIN_OP_EQ_uxn_opcodes_h_l2072_c6_16c9_right,
+BIN_OP_EQ_uxn_opcodes_h_l2072_c6_16c9_return_output);
 
--- t8_MUX_uxn_opcodes_h_l2073_c2_e839
-t8_MUX_uxn_opcodes_h_l2073_c2_e839 : entity work.MUX_uint1_t_uint8_t_uint8_t_0CLK_de264c78 port map (
-t8_MUX_uxn_opcodes_h_l2073_c2_e839_cond,
-t8_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue,
-t8_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse,
-t8_MUX_uxn_opcodes_h_l2073_c2_e839_return_output);
+-- t8_MUX_uxn_opcodes_h_l2072_c2_19a1
+t8_MUX_uxn_opcodes_h_l2072_c2_19a1 : entity work.MUX_uint1_t_uint8_t_uint8_t_0CLK_de264c78 port map (
+t8_MUX_uxn_opcodes_h_l2072_c2_19a1_cond,
+t8_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue,
+t8_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse,
+t8_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output);
 
--- result_is_opc_done_MUX_uxn_opcodes_h_l2073_c2_e839
-result_is_opc_done_MUX_uxn_opcodes_h_l2073_c2_e839 : entity work.MUX_uint1_t_uint1_t_uint1_t_0CLK_de264c78 port map (
-result_is_opc_done_MUX_uxn_opcodes_h_l2073_c2_e839_cond,
-result_is_opc_done_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue,
-result_is_opc_done_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse,
-result_is_opc_done_MUX_uxn_opcodes_h_l2073_c2_e839_return_output);
+-- n8_MUX_uxn_opcodes_h_l2072_c2_19a1
+n8_MUX_uxn_opcodes_h_l2072_c2_19a1 : entity work.MUX_uint1_t_uint8_t_uint8_t_0CLK_de264c78 port map (
+n8_MUX_uxn_opcodes_h_l2072_c2_19a1_cond,
+n8_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue,
+n8_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse,
+n8_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output);
 
--- result_is_vram_write_MUX_uxn_opcodes_h_l2073_c2_e839
-result_is_vram_write_MUX_uxn_opcodes_h_l2073_c2_e839 : entity work.MUX_uint1_t_uint1_t_uint1_t_0CLK_de264c78 port map (
-result_is_vram_write_MUX_uxn_opcodes_h_l2073_c2_e839_cond,
-result_is_vram_write_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue,
-result_is_vram_write_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse,
-result_is_vram_write_MUX_uxn_opcodes_h_l2073_c2_e839_return_output);
+-- result_is_stack_write_MUX_uxn_opcodes_h_l2072_c2_19a1
+result_is_stack_write_MUX_uxn_opcodes_h_l2072_c2_19a1 : entity work.MUX_uint1_t_uint1_t_uint1_t_0CLK_de264c78 port map (
+result_is_stack_write_MUX_uxn_opcodes_h_l2072_c2_19a1_cond,
+result_is_stack_write_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue,
+result_is_stack_write_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse,
+result_is_stack_write_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output);
 
--- result_is_ram_write_MUX_uxn_opcodes_h_l2073_c2_e839
-result_is_ram_write_MUX_uxn_opcodes_h_l2073_c2_e839 : entity work.MUX_uint1_t_uint1_t_uint1_t_0CLK_de264c78 port map (
-result_is_ram_write_MUX_uxn_opcodes_h_l2073_c2_e839_cond,
-result_is_ram_write_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue,
-result_is_ram_write_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse,
-result_is_ram_write_MUX_uxn_opcodes_h_l2073_c2_e839_return_output);
+-- result_is_vram_write_MUX_uxn_opcodes_h_l2072_c2_19a1
+result_is_vram_write_MUX_uxn_opcodes_h_l2072_c2_19a1 : entity work.MUX_uint1_t_uint1_t_uint1_t_0CLK_de264c78 port map (
+result_is_vram_write_MUX_uxn_opcodes_h_l2072_c2_19a1_cond,
+result_is_vram_write_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue,
+result_is_vram_write_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse,
+result_is_vram_write_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output);
 
--- result_is_stack_write_MUX_uxn_opcodes_h_l2073_c2_e839
-result_is_stack_write_MUX_uxn_opcodes_h_l2073_c2_e839 : entity work.MUX_uint1_t_uint1_t_uint1_t_0CLK_de264c78 port map (
-result_is_stack_write_MUX_uxn_opcodes_h_l2073_c2_e839_cond,
-result_is_stack_write_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue,
-result_is_stack_write_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse,
-result_is_stack_write_MUX_uxn_opcodes_h_l2073_c2_e839_return_output);
+-- result_is_stack_index_flipped_MUX_uxn_opcodes_h_l2072_c2_19a1
+result_is_stack_index_flipped_MUX_uxn_opcodes_h_l2072_c2_19a1 : entity work.MUX_uint1_t_uint1_t_uint1_t_0CLK_de264c78 port map (
+result_is_stack_index_flipped_MUX_uxn_opcodes_h_l2072_c2_19a1_cond,
+result_is_stack_index_flipped_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue,
+result_is_stack_index_flipped_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse,
+result_is_stack_index_flipped_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output);
 
--- result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2073_c2_e839
-result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2073_c2_e839 : entity work.MUX_uint1_t_uint4_t_uint4_t_0CLK_de264c78 port map (
-result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2073_c2_e839_cond,
-result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue,
-result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse,
-result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2073_c2_e839_return_output);
+-- result_u8_value_MUX_uxn_opcodes_h_l2072_c2_19a1
+result_u8_value_MUX_uxn_opcodes_h_l2072_c2_19a1 : entity work.MUX_uint1_t_uint8_t_uint8_t_0CLK_de264c78 port map (
+result_u8_value_MUX_uxn_opcodes_h_l2072_c2_19a1_cond,
+result_u8_value_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue,
+result_u8_value_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse,
+result_u8_value_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output);
 
--- result_u8_value_MUX_uxn_opcodes_h_l2073_c2_e839
-result_u8_value_MUX_uxn_opcodes_h_l2073_c2_e839 : entity work.MUX_uint1_t_uint8_t_uint8_t_0CLK_de264c78 port map (
-result_u8_value_MUX_uxn_opcodes_h_l2073_c2_e839_cond,
-result_u8_value_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue,
-result_u8_value_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse,
-result_u8_value_MUX_uxn_opcodes_h_l2073_c2_e839_return_output);
+-- result_is_opc_done_MUX_uxn_opcodes_h_l2072_c2_19a1
+result_is_opc_done_MUX_uxn_opcodes_h_l2072_c2_19a1 : entity work.MUX_uint1_t_uint1_t_uint1_t_0CLK_de264c78 port map (
+result_is_opc_done_MUX_uxn_opcodes_h_l2072_c2_19a1_cond,
+result_is_opc_done_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue,
+result_is_opc_done_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse,
+result_is_opc_done_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output);
 
--- result_sp_relative_shift_MUX_uxn_opcodes_h_l2073_c2_e839
-result_sp_relative_shift_MUX_uxn_opcodes_h_l2073_c2_e839 : entity work.MUX_uint1_t_int4_t_int4_t_0CLK_de264c78 port map (
-result_sp_relative_shift_MUX_uxn_opcodes_h_l2073_c2_e839_cond,
-result_sp_relative_shift_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue,
-result_sp_relative_shift_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse,
-result_sp_relative_shift_MUX_uxn_opcodes_h_l2073_c2_e839_return_output);
+-- result_sp_relative_shift_MUX_uxn_opcodes_h_l2072_c2_19a1
+result_sp_relative_shift_MUX_uxn_opcodes_h_l2072_c2_19a1 : entity work.MUX_uint1_t_int4_t_int4_t_0CLK_de264c78 port map (
+result_sp_relative_shift_MUX_uxn_opcodes_h_l2072_c2_19a1_cond,
+result_sp_relative_shift_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue,
+result_sp_relative_shift_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse,
+result_sp_relative_shift_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output);
 
--- result_is_stack_index_flipped_MUX_uxn_opcodes_h_l2073_c2_e839
-result_is_stack_index_flipped_MUX_uxn_opcodes_h_l2073_c2_e839 : entity work.MUX_uint1_t_uint1_t_uint1_t_0CLK_de264c78 port map (
-result_is_stack_index_flipped_MUX_uxn_opcodes_h_l2073_c2_e839_cond,
-result_is_stack_index_flipped_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue,
-result_is_stack_index_flipped_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse,
-result_is_stack_index_flipped_MUX_uxn_opcodes_h_l2073_c2_e839_return_output);
+-- result_is_pc_updated_MUX_uxn_opcodes_h_l2072_c2_19a1
+result_is_pc_updated_MUX_uxn_opcodes_h_l2072_c2_19a1 : entity work.MUX_uint1_t_uint1_t_uint1_t_0CLK_de264c78 port map (
+result_is_pc_updated_MUX_uxn_opcodes_h_l2072_c2_19a1_cond,
+result_is_pc_updated_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue,
+result_is_pc_updated_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse,
+result_is_pc_updated_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output);
 
--- result_is_pc_updated_MUX_uxn_opcodes_h_l2073_c2_e839
-result_is_pc_updated_MUX_uxn_opcodes_h_l2073_c2_e839 : entity work.MUX_uint1_t_uint1_t_uint1_t_0CLK_de264c78 port map (
-result_is_pc_updated_MUX_uxn_opcodes_h_l2073_c2_e839_cond,
-result_is_pc_updated_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue,
-result_is_pc_updated_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse,
-result_is_pc_updated_MUX_uxn_opcodes_h_l2073_c2_e839_return_output);
+-- result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2072_c2_19a1
+result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2072_c2_19a1 : entity work.MUX_uint1_t_uint4_t_uint4_t_0CLK_de264c78 port map (
+result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2072_c2_19a1_cond,
+result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue,
+result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse,
+result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output);
 
--- n8_MUX_uxn_opcodes_h_l2073_c2_e839
-n8_MUX_uxn_opcodes_h_l2073_c2_e839 : entity work.MUX_uint1_t_uint8_t_uint8_t_0CLK_de264c78 port map (
-n8_MUX_uxn_opcodes_h_l2073_c2_e839_cond,
-n8_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue,
-n8_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse,
-n8_MUX_uxn_opcodes_h_l2073_c2_e839_return_output);
+-- result_is_ram_write_MUX_uxn_opcodes_h_l2072_c2_19a1
+result_is_ram_write_MUX_uxn_opcodes_h_l2072_c2_19a1 : entity work.MUX_uint1_t_uint1_t_uint1_t_0CLK_de264c78 port map (
+result_is_ram_write_MUX_uxn_opcodes_h_l2072_c2_19a1_cond,
+result_is_ram_write_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue,
+result_is_ram_write_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse,
+result_is_ram_write_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output);
 
--- BIN_OP_EQ_uxn_opcodes_h_l2086_c11_ed0c
-BIN_OP_EQ_uxn_opcodes_h_l2086_c11_ed0c : entity work.BIN_OP_EQ_uint8_t_uint1_t_0CLK_de264c78 port map (
-BIN_OP_EQ_uxn_opcodes_h_l2086_c11_ed0c_left,
-BIN_OP_EQ_uxn_opcodes_h_l2086_c11_ed0c_right,
-BIN_OP_EQ_uxn_opcodes_h_l2086_c11_ed0c_return_output);
+-- BIN_OP_EQ_uxn_opcodes_h_l2085_c11_78b1
+BIN_OP_EQ_uxn_opcodes_h_l2085_c11_78b1 : entity work.BIN_OP_EQ_uint8_t_uint1_t_0CLK_de264c78 port map (
+BIN_OP_EQ_uxn_opcodes_h_l2085_c11_78b1_left,
+BIN_OP_EQ_uxn_opcodes_h_l2085_c11_78b1_right,
+BIN_OP_EQ_uxn_opcodes_h_l2085_c11_78b1_return_output);
 
--- t8_MUX_uxn_opcodes_h_l2086_c7_aaf1
-t8_MUX_uxn_opcodes_h_l2086_c7_aaf1 : entity work.MUX_uint1_t_uint8_t_uint8_t_0CLK_de264c78 port map (
-t8_MUX_uxn_opcodes_h_l2086_c7_aaf1_cond,
-t8_MUX_uxn_opcodes_h_l2086_c7_aaf1_iftrue,
-t8_MUX_uxn_opcodes_h_l2086_c7_aaf1_iffalse,
-t8_MUX_uxn_opcodes_h_l2086_c7_aaf1_return_output);
+-- t8_MUX_uxn_opcodes_h_l2085_c7_46f5
+t8_MUX_uxn_opcodes_h_l2085_c7_46f5 : entity work.MUX_uint1_t_uint8_t_uint8_t_0CLK_de264c78 port map (
+t8_MUX_uxn_opcodes_h_l2085_c7_46f5_cond,
+t8_MUX_uxn_opcodes_h_l2085_c7_46f5_iftrue,
+t8_MUX_uxn_opcodes_h_l2085_c7_46f5_iffalse,
+t8_MUX_uxn_opcodes_h_l2085_c7_46f5_return_output);
 
--- result_is_opc_done_MUX_uxn_opcodes_h_l2086_c7_aaf1
-result_is_opc_done_MUX_uxn_opcodes_h_l2086_c7_aaf1 : entity work.MUX_uint1_t_uint1_t_uint1_t_0CLK_de264c78 port map (
-result_is_opc_done_MUX_uxn_opcodes_h_l2086_c7_aaf1_cond,
-result_is_opc_done_MUX_uxn_opcodes_h_l2086_c7_aaf1_iftrue,
-result_is_opc_done_MUX_uxn_opcodes_h_l2086_c7_aaf1_iffalse,
-result_is_opc_done_MUX_uxn_opcodes_h_l2086_c7_aaf1_return_output);
+-- n8_MUX_uxn_opcodes_h_l2085_c7_46f5
+n8_MUX_uxn_opcodes_h_l2085_c7_46f5 : entity work.MUX_uint1_t_uint8_t_uint8_t_0CLK_de264c78 port map (
+n8_MUX_uxn_opcodes_h_l2085_c7_46f5_cond,
+n8_MUX_uxn_opcodes_h_l2085_c7_46f5_iftrue,
+n8_MUX_uxn_opcodes_h_l2085_c7_46f5_iffalse,
+n8_MUX_uxn_opcodes_h_l2085_c7_46f5_return_output);
 
--- result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2086_c7_aaf1
-result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2086_c7_aaf1 : entity work.MUX_uint1_t_uint4_t_uint4_t_0CLK_de264c78 port map (
-result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2086_c7_aaf1_cond,
-result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2086_c7_aaf1_iftrue,
-result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2086_c7_aaf1_iffalse,
-result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2086_c7_aaf1_return_output);
+-- result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2085_c7_46f5
+result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2085_c7_46f5 : entity work.MUX_uint1_t_uint4_t_uint4_t_0CLK_de264c78 port map (
+result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2085_c7_46f5_cond,
+result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2085_c7_46f5_iftrue,
+result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2085_c7_46f5_iffalse,
+result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2085_c7_46f5_return_output);
 
--- result_u8_value_MUX_uxn_opcodes_h_l2086_c7_aaf1
-result_u8_value_MUX_uxn_opcodes_h_l2086_c7_aaf1 : entity work.MUX_uint1_t_uint8_t_uint8_t_0CLK_de264c78 port map (
-result_u8_value_MUX_uxn_opcodes_h_l2086_c7_aaf1_cond,
-result_u8_value_MUX_uxn_opcodes_h_l2086_c7_aaf1_iftrue,
-result_u8_value_MUX_uxn_opcodes_h_l2086_c7_aaf1_iffalse,
-result_u8_value_MUX_uxn_opcodes_h_l2086_c7_aaf1_return_output);
+-- result_sp_relative_shift_MUX_uxn_opcodes_h_l2085_c7_46f5
+result_sp_relative_shift_MUX_uxn_opcodes_h_l2085_c7_46f5 : entity work.MUX_uint1_t_int4_t_int4_t_0CLK_de264c78 port map (
+result_sp_relative_shift_MUX_uxn_opcodes_h_l2085_c7_46f5_cond,
+result_sp_relative_shift_MUX_uxn_opcodes_h_l2085_c7_46f5_iftrue,
+result_sp_relative_shift_MUX_uxn_opcodes_h_l2085_c7_46f5_iffalse,
+result_sp_relative_shift_MUX_uxn_opcodes_h_l2085_c7_46f5_return_output);
 
--- result_is_stack_write_MUX_uxn_opcodes_h_l2086_c7_aaf1
-result_is_stack_write_MUX_uxn_opcodes_h_l2086_c7_aaf1 : entity work.MUX_uint1_t_uint1_t_uint1_t_0CLK_de264c78 port map (
-result_is_stack_write_MUX_uxn_opcodes_h_l2086_c7_aaf1_cond,
-result_is_stack_write_MUX_uxn_opcodes_h_l2086_c7_aaf1_iftrue,
-result_is_stack_write_MUX_uxn_opcodes_h_l2086_c7_aaf1_iffalse,
-result_is_stack_write_MUX_uxn_opcodes_h_l2086_c7_aaf1_return_output);
+-- result_is_stack_write_MUX_uxn_opcodes_h_l2085_c7_46f5
+result_is_stack_write_MUX_uxn_opcodes_h_l2085_c7_46f5 : entity work.MUX_uint1_t_uint1_t_uint1_t_0CLK_de264c78 port map (
+result_is_stack_write_MUX_uxn_opcodes_h_l2085_c7_46f5_cond,
+result_is_stack_write_MUX_uxn_opcodes_h_l2085_c7_46f5_iftrue,
+result_is_stack_write_MUX_uxn_opcodes_h_l2085_c7_46f5_iffalse,
+result_is_stack_write_MUX_uxn_opcodes_h_l2085_c7_46f5_return_output);
 
--- result_sp_relative_shift_MUX_uxn_opcodes_h_l2086_c7_aaf1
-result_sp_relative_shift_MUX_uxn_opcodes_h_l2086_c7_aaf1 : entity work.MUX_uint1_t_int4_t_int4_t_0CLK_de264c78 port map (
-result_sp_relative_shift_MUX_uxn_opcodes_h_l2086_c7_aaf1_cond,
-result_sp_relative_shift_MUX_uxn_opcodes_h_l2086_c7_aaf1_iftrue,
-result_sp_relative_shift_MUX_uxn_opcodes_h_l2086_c7_aaf1_iffalse,
-result_sp_relative_shift_MUX_uxn_opcodes_h_l2086_c7_aaf1_return_output);
+-- result_u8_value_MUX_uxn_opcodes_h_l2085_c7_46f5
+result_u8_value_MUX_uxn_opcodes_h_l2085_c7_46f5 : entity work.MUX_uint1_t_uint8_t_uint8_t_0CLK_de264c78 port map (
+result_u8_value_MUX_uxn_opcodes_h_l2085_c7_46f5_cond,
+result_u8_value_MUX_uxn_opcodes_h_l2085_c7_46f5_iftrue,
+result_u8_value_MUX_uxn_opcodes_h_l2085_c7_46f5_iffalse,
+result_u8_value_MUX_uxn_opcodes_h_l2085_c7_46f5_return_output);
 
--- n8_MUX_uxn_opcodes_h_l2086_c7_aaf1
-n8_MUX_uxn_opcodes_h_l2086_c7_aaf1 : entity work.MUX_uint1_t_uint8_t_uint8_t_0CLK_de264c78 port map (
-n8_MUX_uxn_opcodes_h_l2086_c7_aaf1_cond,
-n8_MUX_uxn_opcodes_h_l2086_c7_aaf1_iftrue,
-n8_MUX_uxn_opcodes_h_l2086_c7_aaf1_iffalse,
-n8_MUX_uxn_opcodes_h_l2086_c7_aaf1_return_output);
+-- result_is_opc_done_MUX_uxn_opcodes_h_l2085_c7_46f5
+result_is_opc_done_MUX_uxn_opcodes_h_l2085_c7_46f5 : entity work.MUX_uint1_t_uint1_t_uint1_t_0CLK_de264c78 port map (
+result_is_opc_done_MUX_uxn_opcodes_h_l2085_c7_46f5_cond,
+result_is_opc_done_MUX_uxn_opcodes_h_l2085_c7_46f5_iftrue,
+result_is_opc_done_MUX_uxn_opcodes_h_l2085_c7_46f5_iffalse,
+result_is_opc_done_MUX_uxn_opcodes_h_l2085_c7_46f5_return_output);
 
--- BIN_OP_EQ_uxn_opcodes_h_l2089_c11_3e7c
-BIN_OP_EQ_uxn_opcodes_h_l2089_c11_3e7c : entity work.BIN_OP_EQ_uint8_t_uint2_t_0CLK_de264c78 port map (
-BIN_OP_EQ_uxn_opcodes_h_l2089_c11_3e7c_left,
-BIN_OP_EQ_uxn_opcodes_h_l2089_c11_3e7c_right,
-BIN_OP_EQ_uxn_opcodes_h_l2089_c11_3e7c_return_output);
+-- BIN_OP_EQ_uxn_opcodes_h_l2088_c11_d215
+BIN_OP_EQ_uxn_opcodes_h_l2088_c11_d215 : entity work.BIN_OP_EQ_uint8_t_uint2_t_0CLK_de264c78 port map (
+BIN_OP_EQ_uxn_opcodes_h_l2088_c11_d215_left,
+BIN_OP_EQ_uxn_opcodes_h_l2088_c11_d215_right,
+BIN_OP_EQ_uxn_opcodes_h_l2088_c11_d215_return_output);
 
--- t8_MUX_uxn_opcodes_h_l2089_c7_86ab
-t8_MUX_uxn_opcodes_h_l2089_c7_86ab : entity work.MUX_uint1_t_uint8_t_uint8_t_0CLK_de264c78 port map (
-t8_MUX_uxn_opcodes_h_l2089_c7_86ab_cond,
-t8_MUX_uxn_opcodes_h_l2089_c7_86ab_iftrue,
-t8_MUX_uxn_opcodes_h_l2089_c7_86ab_iffalse,
-t8_MUX_uxn_opcodes_h_l2089_c7_86ab_return_output);
+-- t8_MUX_uxn_opcodes_h_l2088_c7_987b
+t8_MUX_uxn_opcodes_h_l2088_c7_987b : entity work.MUX_uint1_t_uint8_t_uint8_t_0CLK_de264c78 port map (
+t8_MUX_uxn_opcodes_h_l2088_c7_987b_cond,
+t8_MUX_uxn_opcodes_h_l2088_c7_987b_iftrue,
+t8_MUX_uxn_opcodes_h_l2088_c7_987b_iffalse,
+t8_MUX_uxn_opcodes_h_l2088_c7_987b_return_output);
 
--- result_is_opc_done_MUX_uxn_opcodes_h_l2089_c7_86ab
-result_is_opc_done_MUX_uxn_opcodes_h_l2089_c7_86ab : entity work.MUX_uint1_t_uint1_t_uint1_t_0CLK_de264c78 port map (
-result_is_opc_done_MUX_uxn_opcodes_h_l2089_c7_86ab_cond,
-result_is_opc_done_MUX_uxn_opcodes_h_l2089_c7_86ab_iftrue,
-result_is_opc_done_MUX_uxn_opcodes_h_l2089_c7_86ab_iffalse,
-result_is_opc_done_MUX_uxn_opcodes_h_l2089_c7_86ab_return_output);
+-- n8_MUX_uxn_opcodes_h_l2088_c7_987b
+n8_MUX_uxn_opcodes_h_l2088_c7_987b : entity work.MUX_uint1_t_uint8_t_uint8_t_0CLK_de264c78 port map (
+n8_MUX_uxn_opcodes_h_l2088_c7_987b_cond,
+n8_MUX_uxn_opcodes_h_l2088_c7_987b_iftrue,
+n8_MUX_uxn_opcodes_h_l2088_c7_987b_iffalse,
+n8_MUX_uxn_opcodes_h_l2088_c7_987b_return_output);
 
--- result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2089_c7_86ab
-result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2089_c7_86ab : entity work.MUX_uint1_t_uint4_t_uint4_t_0CLK_de264c78 port map (
-result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2089_c7_86ab_cond,
-result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2089_c7_86ab_iftrue,
-result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2089_c7_86ab_iffalse,
-result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2089_c7_86ab_return_output);
+-- result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2088_c7_987b
+result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2088_c7_987b : entity work.MUX_uint1_t_uint4_t_uint4_t_0CLK_de264c78 port map (
+result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2088_c7_987b_cond,
+result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2088_c7_987b_iftrue,
+result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2088_c7_987b_iffalse,
+result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2088_c7_987b_return_output);
 
--- result_u8_value_MUX_uxn_opcodes_h_l2089_c7_86ab
-result_u8_value_MUX_uxn_opcodes_h_l2089_c7_86ab : entity work.MUX_uint1_t_uint8_t_uint8_t_0CLK_de264c78 port map (
-result_u8_value_MUX_uxn_opcodes_h_l2089_c7_86ab_cond,
-result_u8_value_MUX_uxn_opcodes_h_l2089_c7_86ab_iftrue,
-result_u8_value_MUX_uxn_opcodes_h_l2089_c7_86ab_iffalse,
-result_u8_value_MUX_uxn_opcodes_h_l2089_c7_86ab_return_output);
+-- result_sp_relative_shift_MUX_uxn_opcodes_h_l2088_c7_987b
+result_sp_relative_shift_MUX_uxn_opcodes_h_l2088_c7_987b : entity work.MUX_uint1_t_int4_t_int4_t_0CLK_de264c78 port map (
+result_sp_relative_shift_MUX_uxn_opcodes_h_l2088_c7_987b_cond,
+result_sp_relative_shift_MUX_uxn_opcodes_h_l2088_c7_987b_iftrue,
+result_sp_relative_shift_MUX_uxn_opcodes_h_l2088_c7_987b_iffalse,
+result_sp_relative_shift_MUX_uxn_opcodes_h_l2088_c7_987b_return_output);
 
--- result_is_stack_write_MUX_uxn_opcodes_h_l2089_c7_86ab
-result_is_stack_write_MUX_uxn_opcodes_h_l2089_c7_86ab : entity work.MUX_uint1_t_uint1_t_uint1_t_0CLK_de264c78 port map (
-result_is_stack_write_MUX_uxn_opcodes_h_l2089_c7_86ab_cond,
-result_is_stack_write_MUX_uxn_opcodes_h_l2089_c7_86ab_iftrue,
-result_is_stack_write_MUX_uxn_opcodes_h_l2089_c7_86ab_iffalse,
-result_is_stack_write_MUX_uxn_opcodes_h_l2089_c7_86ab_return_output);
+-- result_is_stack_write_MUX_uxn_opcodes_h_l2088_c7_987b
+result_is_stack_write_MUX_uxn_opcodes_h_l2088_c7_987b : entity work.MUX_uint1_t_uint1_t_uint1_t_0CLK_de264c78 port map (
+result_is_stack_write_MUX_uxn_opcodes_h_l2088_c7_987b_cond,
+result_is_stack_write_MUX_uxn_opcodes_h_l2088_c7_987b_iftrue,
+result_is_stack_write_MUX_uxn_opcodes_h_l2088_c7_987b_iffalse,
+result_is_stack_write_MUX_uxn_opcodes_h_l2088_c7_987b_return_output);
 
--- result_sp_relative_shift_MUX_uxn_opcodes_h_l2089_c7_86ab
-result_sp_relative_shift_MUX_uxn_opcodes_h_l2089_c7_86ab : entity work.MUX_uint1_t_int4_t_int4_t_0CLK_de264c78 port map (
-result_sp_relative_shift_MUX_uxn_opcodes_h_l2089_c7_86ab_cond,
-result_sp_relative_shift_MUX_uxn_opcodes_h_l2089_c7_86ab_iftrue,
-result_sp_relative_shift_MUX_uxn_opcodes_h_l2089_c7_86ab_iffalse,
-result_sp_relative_shift_MUX_uxn_opcodes_h_l2089_c7_86ab_return_output);
+-- result_u8_value_MUX_uxn_opcodes_h_l2088_c7_987b
+result_u8_value_MUX_uxn_opcodes_h_l2088_c7_987b : entity work.MUX_uint1_t_uint8_t_uint8_t_0CLK_de264c78 port map (
+result_u8_value_MUX_uxn_opcodes_h_l2088_c7_987b_cond,
+result_u8_value_MUX_uxn_opcodes_h_l2088_c7_987b_iftrue,
+result_u8_value_MUX_uxn_opcodes_h_l2088_c7_987b_iffalse,
+result_u8_value_MUX_uxn_opcodes_h_l2088_c7_987b_return_output);
 
--- n8_MUX_uxn_opcodes_h_l2089_c7_86ab
-n8_MUX_uxn_opcodes_h_l2089_c7_86ab : entity work.MUX_uint1_t_uint8_t_uint8_t_0CLK_de264c78 port map (
-n8_MUX_uxn_opcodes_h_l2089_c7_86ab_cond,
-n8_MUX_uxn_opcodes_h_l2089_c7_86ab_iftrue,
-n8_MUX_uxn_opcodes_h_l2089_c7_86ab_iffalse,
-n8_MUX_uxn_opcodes_h_l2089_c7_86ab_return_output);
+-- result_is_opc_done_MUX_uxn_opcodes_h_l2088_c7_987b
+result_is_opc_done_MUX_uxn_opcodes_h_l2088_c7_987b : entity work.MUX_uint1_t_uint1_t_uint1_t_0CLK_de264c78 port map (
+result_is_opc_done_MUX_uxn_opcodes_h_l2088_c7_987b_cond,
+result_is_opc_done_MUX_uxn_opcodes_h_l2088_c7_987b_iftrue,
+result_is_opc_done_MUX_uxn_opcodes_h_l2088_c7_987b_iffalse,
+result_is_opc_done_MUX_uxn_opcodes_h_l2088_c7_987b_return_output);
 
--- BIN_OP_EQ_uxn_opcodes_h_l2092_c11_a96b
-BIN_OP_EQ_uxn_opcodes_h_l2092_c11_a96b : entity work.BIN_OP_EQ_uint8_t_uint2_t_0CLK_de264c78 port map (
-BIN_OP_EQ_uxn_opcodes_h_l2092_c11_a96b_left,
-BIN_OP_EQ_uxn_opcodes_h_l2092_c11_a96b_right,
-BIN_OP_EQ_uxn_opcodes_h_l2092_c11_a96b_return_output);
+-- BIN_OP_EQ_uxn_opcodes_h_l2091_c11_bd6d
+BIN_OP_EQ_uxn_opcodes_h_l2091_c11_bd6d : entity work.BIN_OP_EQ_uint8_t_uint2_t_0CLK_de264c78 port map (
+BIN_OP_EQ_uxn_opcodes_h_l2091_c11_bd6d_left,
+BIN_OP_EQ_uxn_opcodes_h_l2091_c11_bd6d_right,
+BIN_OP_EQ_uxn_opcodes_h_l2091_c11_bd6d_return_output);
 
--- result_is_opc_done_MUX_uxn_opcodes_h_l2092_c7_d72d
-result_is_opc_done_MUX_uxn_opcodes_h_l2092_c7_d72d : entity work.MUX_uint1_t_uint1_t_uint1_t_0CLK_de264c78 port map (
-result_is_opc_done_MUX_uxn_opcodes_h_l2092_c7_d72d_cond,
-result_is_opc_done_MUX_uxn_opcodes_h_l2092_c7_d72d_iftrue,
-result_is_opc_done_MUX_uxn_opcodes_h_l2092_c7_d72d_iffalse,
-result_is_opc_done_MUX_uxn_opcodes_h_l2092_c7_d72d_return_output);
+-- n8_MUX_uxn_opcodes_h_l2091_c7_694e
+n8_MUX_uxn_opcodes_h_l2091_c7_694e : entity work.MUX_uint1_t_uint8_t_uint8_t_0CLK_de264c78 port map (
+n8_MUX_uxn_opcodes_h_l2091_c7_694e_cond,
+n8_MUX_uxn_opcodes_h_l2091_c7_694e_iftrue,
+n8_MUX_uxn_opcodes_h_l2091_c7_694e_iffalse,
+n8_MUX_uxn_opcodes_h_l2091_c7_694e_return_output);
 
--- result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2092_c7_d72d
-result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2092_c7_d72d : entity work.MUX_uint1_t_uint4_t_uint4_t_0CLK_de264c78 port map (
-result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2092_c7_d72d_cond,
-result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2092_c7_d72d_iftrue,
-result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2092_c7_d72d_iffalse,
-result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2092_c7_d72d_return_output);
+-- result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2091_c7_694e
+result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2091_c7_694e : entity work.MUX_uint1_t_uint4_t_uint4_t_0CLK_de264c78 port map (
+result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2091_c7_694e_cond,
+result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2091_c7_694e_iftrue,
+result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2091_c7_694e_iffalse,
+result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2091_c7_694e_return_output);
 
--- result_u8_value_MUX_uxn_opcodes_h_l2092_c7_d72d
-result_u8_value_MUX_uxn_opcodes_h_l2092_c7_d72d : entity work.MUX_uint1_t_uint8_t_uint8_t_0CLK_de264c78 port map (
-result_u8_value_MUX_uxn_opcodes_h_l2092_c7_d72d_cond,
-result_u8_value_MUX_uxn_opcodes_h_l2092_c7_d72d_iftrue,
-result_u8_value_MUX_uxn_opcodes_h_l2092_c7_d72d_iffalse,
-result_u8_value_MUX_uxn_opcodes_h_l2092_c7_d72d_return_output);
+-- result_sp_relative_shift_MUX_uxn_opcodes_h_l2091_c7_694e
+result_sp_relative_shift_MUX_uxn_opcodes_h_l2091_c7_694e : entity work.MUX_uint1_t_int4_t_int4_t_0CLK_de264c78 port map (
+result_sp_relative_shift_MUX_uxn_opcodes_h_l2091_c7_694e_cond,
+result_sp_relative_shift_MUX_uxn_opcodes_h_l2091_c7_694e_iftrue,
+result_sp_relative_shift_MUX_uxn_opcodes_h_l2091_c7_694e_iffalse,
+result_sp_relative_shift_MUX_uxn_opcodes_h_l2091_c7_694e_return_output);
 
--- result_is_stack_write_MUX_uxn_opcodes_h_l2092_c7_d72d
-result_is_stack_write_MUX_uxn_opcodes_h_l2092_c7_d72d : entity work.MUX_uint1_t_uint1_t_uint1_t_0CLK_de264c78 port map (
-result_is_stack_write_MUX_uxn_opcodes_h_l2092_c7_d72d_cond,
-result_is_stack_write_MUX_uxn_opcodes_h_l2092_c7_d72d_iftrue,
-result_is_stack_write_MUX_uxn_opcodes_h_l2092_c7_d72d_iffalse,
-result_is_stack_write_MUX_uxn_opcodes_h_l2092_c7_d72d_return_output);
+-- result_is_stack_write_MUX_uxn_opcodes_h_l2091_c7_694e
+result_is_stack_write_MUX_uxn_opcodes_h_l2091_c7_694e : entity work.MUX_uint1_t_uint1_t_uint1_t_0CLK_de264c78 port map (
+result_is_stack_write_MUX_uxn_opcodes_h_l2091_c7_694e_cond,
+result_is_stack_write_MUX_uxn_opcodes_h_l2091_c7_694e_iftrue,
+result_is_stack_write_MUX_uxn_opcodes_h_l2091_c7_694e_iffalse,
+result_is_stack_write_MUX_uxn_opcodes_h_l2091_c7_694e_return_output);
 
--- result_sp_relative_shift_MUX_uxn_opcodes_h_l2092_c7_d72d
-result_sp_relative_shift_MUX_uxn_opcodes_h_l2092_c7_d72d : entity work.MUX_uint1_t_int4_t_int4_t_0CLK_de264c78 port map (
-result_sp_relative_shift_MUX_uxn_opcodes_h_l2092_c7_d72d_cond,
-result_sp_relative_shift_MUX_uxn_opcodes_h_l2092_c7_d72d_iftrue,
-result_sp_relative_shift_MUX_uxn_opcodes_h_l2092_c7_d72d_iffalse,
-result_sp_relative_shift_MUX_uxn_opcodes_h_l2092_c7_d72d_return_output);
+-- result_u8_value_MUX_uxn_opcodes_h_l2091_c7_694e
+result_u8_value_MUX_uxn_opcodes_h_l2091_c7_694e : entity work.MUX_uint1_t_uint8_t_uint8_t_0CLK_de264c78 port map (
+result_u8_value_MUX_uxn_opcodes_h_l2091_c7_694e_cond,
+result_u8_value_MUX_uxn_opcodes_h_l2091_c7_694e_iftrue,
+result_u8_value_MUX_uxn_opcodes_h_l2091_c7_694e_iffalse,
+result_u8_value_MUX_uxn_opcodes_h_l2091_c7_694e_return_output);
 
--- n8_MUX_uxn_opcodes_h_l2092_c7_d72d
-n8_MUX_uxn_opcodes_h_l2092_c7_d72d : entity work.MUX_uint1_t_uint8_t_uint8_t_0CLK_de264c78 port map (
-n8_MUX_uxn_opcodes_h_l2092_c7_d72d_cond,
-n8_MUX_uxn_opcodes_h_l2092_c7_d72d_iftrue,
-n8_MUX_uxn_opcodes_h_l2092_c7_d72d_iffalse,
-n8_MUX_uxn_opcodes_h_l2092_c7_d72d_return_output);
+-- result_is_opc_done_MUX_uxn_opcodes_h_l2091_c7_694e
+result_is_opc_done_MUX_uxn_opcodes_h_l2091_c7_694e : entity work.MUX_uint1_t_uint1_t_uint1_t_0CLK_de264c78 port map (
+result_is_opc_done_MUX_uxn_opcodes_h_l2091_c7_694e_cond,
+result_is_opc_done_MUX_uxn_opcodes_h_l2091_c7_694e_iftrue,
+result_is_opc_done_MUX_uxn_opcodes_h_l2091_c7_694e_iffalse,
+result_is_opc_done_MUX_uxn_opcodes_h_l2091_c7_694e_return_output);
 
--- sp_relative_shift_uxn_opcodes_h_l2094_c30_af37
-sp_relative_shift_uxn_opcodes_h_l2094_c30_af37 : entity work.sp_relative_shift_0CLK_6f2c5aad port map (
-sp_relative_shift_uxn_opcodes_h_l2094_c30_af37_ins,
-sp_relative_shift_uxn_opcodes_h_l2094_c30_af37_x,
-sp_relative_shift_uxn_opcodes_h_l2094_c30_af37_y,
-sp_relative_shift_uxn_opcodes_h_l2094_c30_af37_return_output);
+-- sp_relative_shift_uxn_opcodes_h_l2093_c30_b87f
+sp_relative_shift_uxn_opcodes_h_l2093_c30_b87f : entity work.sp_relative_shift_0CLK_6f2c5aad port map (
+sp_relative_shift_uxn_opcodes_h_l2093_c30_b87f_ins,
+sp_relative_shift_uxn_opcodes_h_l2093_c30_b87f_x,
+sp_relative_shift_uxn_opcodes_h_l2093_c30_b87f_y,
+sp_relative_shift_uxn_opcodes_h_l2093_c30_b87f_return_output);
 
--- BIN_OP_EQ_uxn_opcodes_h_l2097_c21_d476
-BIN_OP_EQ_uxn_opcodes_h_l2097_c21_d476 : entity work.BIN_OP_EQ_uint8_t_uint1_t_0CLK_de264c78 port map (
-BIN_OP_EQ_uxn_opcodes_h_l2097_c21_d476_left,
-BIN_OP_EQ_uxn_opcodes_h_l2097_c21_d476_right,
-BIN_OP_EQ_uxn_opcodes_h_l2097_c21_d476_return_output);
+-- BIN_OP_EQ_uxn_opcodes_h_l2096_c21_d2be
+BIN_OP_EQ_uxn_opcodes_h_l2096_c21_d2be : entity work.BIN_OP_EQ_uint8_t_uint1_t_0CLK_de264c78 port map (
+BIN_OP_EQ_uxn_opcodes_h_l2096_c21_d2be_left,
+BIN_OP_EQ_uxn_opcodes_h_l2096_c21_d2be_right,
+BIN_OP_EQ_uxn_opcodes_h_l2096_c21_d2be_return_output);
 
--- BIN_OP_DIV_uxn_opcodes_h_l2097_c35_015a
-BIN_OP_DIV_uxn_opcodes_h_l2097_c35_015a : entity work.BIN_OP_DIV_uint8_t_uint8_t_0CLK_a148083c port map (
-BIN_OP_DIV_uxn_opcodes_h_l2097_c35_015a_left,
-BIN_OP_DIV_uxn_opcodes_h_l2097_c35_015a_right,
-BIN_OP_DIV_uxn_opcodes_h_l2097_c35_015a_return_output);
+-- BIN_OP_DIV_uxn_opcodes_h_l2096_c35_30ea
+BIN_OP_DIV_uxn_opcodes_h_l2096_c35_30ea : entity work.BIN_OP_DIV_uint8_t_uint8_t_0CLK_a148083c port map (
+BIN_OP_DIV_uxn_opcodes_h_l2096_c35_30ea_left,
+BIN_OP_DIV_uxn_opcodes_h_l2096_c35_30ea_right,
+BIN_OP_DIV_uxn_opcodes_h_l2096_c35_30ea_return_output);
 
--- MUX_uxn_opcodes_h_l2097_c21_6fcb
-MUX_uxn_opcodes_h_l2097_c21_6fcb : entity work.MUX_uint1_t_uint8_t_uint8_t_0CLK_de264c78 port map (
-MUX_uxn_opcodes_h_l2097_c21_6fcb_cond,
-MUX_uxn_opcodes_h_l2097_c21_6fcb_iftrue,
-MUX_uxn_opcodes_h_l2097_c21_6fcb_iffalse,
-MUX_uxn_opcodes_h_l2097_c21_6fcb_return_output);
+-- MUX_uxn_opcodes_h_l2096_c21_82f9
+MUX_uxn_opcodes_h_l2096_c21_82f9 : entity work.MUX_uint1_t_uint8_t_uint8_t_0CLK_de264c78 port map (
+MUX_uxn_opcodes_h_l2096_c21_82f9_cond,
+MUX_uxn_opcodes_h_l2096_c21_82f9_iftrue,
+MUX_uxn_opcodes_h_l2096_c21_82f9_iffalse,
+MUX_uxn_opcodes_h_l2096_c21_82f9_return_output);
 
 
 
@@ -578,45 +578,45 @@ process (
  n8,
  result,
  -- All submodule outputs
- BIN_OP_EQ_uxn_opcodes_h_l2073_c6_1d4c_return_output,
- t8_MUX_uxn_opcodes_h_l2073_c2_e839_return_output,
- result_is_opc_done_MUX_uxn_opcodes_h_l2073_c2_e839_return_output,
- result_is_vram_write_MUX_uxn_opcodes_h_l2073_c2_e839_return_output,
- result_is_ram_write_MUX_uxn_opcodes_h_l2073_c2_e839_return_output,
- result_is_stack_write_MUX_uxn_opcodes_h_l2073_c2_e839_return_output,
- result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2073_c2_e839_return_output,
- result_u8_value_MUX_uxn_opcodes_h_l2073_c2_e839_return_output,
- result_sp_relative_shift_MUX_uxn_opcodes_h_l2073_c2_e839_return_output,
- result_is_stack_index_flipped_MUX_uxn_opcodes_h_l2073_c2_e839_return_output,
- result_is_pc_updated_MUX_uxn_opcodes_h_l2073_c2_e839_return_output,
- n8_MUX_uxn_opcodes_h_l2073_c2_e839_return_output,
- BIN_OP_EQ_uxn_opcodes_h_l2086_c11_ed0c_return_output,
- t8_MUX_uxn_opcodes_h_l2086_c7_aaf1_return_output,
- result_is_opc_done_MUX_uxn_opcodes_h_l2086_c7_aaf1_return_output,
- result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2086_c7_aaf1_return_output,
- result_u8_value_MUX_uxn_opcodes_h_l2086_c7_aaf1_return_output,
- result_is_stack_write_MUX_uxn_opcodes_h_l2086_c7_aaf1_return_output,
- result_sp_relative_shift_MUX_uxn_opcodes_h_l2086_c7_aaf1_return_output,
- n8_MUX_uxn_opcodes_h_l2086_c7_aaf1_return_output,
- BIN_OP_EQ_uxn_opcodes_h_l2089_c11_3e7c_return_output,
- t8_MUX_uxn_opcodes_h_l2089_c7_86ab_return_output,
- result_is_opc_done_MUX_uxn_opcodes_h_l2089_c7_86ab_return_output,
- result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2089_c7_86ab_return_output,
- result_u8_value_MUX_uxn_opcodes_h_l2089_c7_86ab_return_output,
- result_is_stack_write_MUX_uxn_opcodes_h_l2089_c7_86ab_return_output,
- result_sp_relative_shift_MUX_uxn_opcodes_h_l2089_c7_86ab_return_output,
- n8_MUX_uxn_opcodes_h_l2089_c7_86ab_return_output,
- BIN_OP_EQ_uxn_opcodes_h_l2092_c11_a96b_return_output,
- result_is_opc_done_MUX_uxn_opcodes_h_l2092_c7_d72d_return_output,
- result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2092_c7_d72d_return_output,
- result_u8_value_MUX_uxn_opcodes_h_l2092_c7_d72d_return_output,
- result_is_stack_write_MUX_uxn_opcodes_h_l2092_c7_d72d_return_output,
- result_sp_relative_shift_MUX_uxn_opcodes_h_l2092_c7_d72d_return_output,
- n8_MUX_uxn_opcodes_h_l2092_c7_d72d_return_output,
- sp_relative_shift_uxn_opcodes_h_l2094_c30_af37_return_output,
- BIN_OP_EQ_uxn_opcodes_h_l2097_c21_d476_return_output,
- BIN_OP_DIV_uxn_opcodes_h_l2097_c35_015a_return_output,
- MUX_uxn_opcodes_h_l2097_c21_6fcb_return_output)
+ BIN_OP_EQ_uxn_opcodes_h_l2072_c6_16c9_return_output,
+ t8_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output,
+ n8_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output,
+ result_is_stack_write_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output,
+ result_is_vram_write_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output,
+ result_is_stack_index_flipped_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output,
+ result_u8_value_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output,
+ result_is_opc_done_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output,
+ result_sp_relative_shift_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output,
+ result_is_pc_updated_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output,
+ result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output,
+ result_is_ram_write_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output,
+ BIN_OP_EQ_uxn_opcodes_h_l2085_c11_78b1_return_output,
+ t8_MUX_uxn_opcodes_h_l2085_c7_46f5_return_output,
+ n8_MUX_uxn_opcodes_h_l2085_c7_46f5_return_output,
+ result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2085_c7_46f5_return_output,
+ result_sp_relative_shift_MUX_uxn_opcodes_h_l2085_c7_46f5_return_output,
+ result_is_stack_write_MUX_uxn_opcodes_h_l2085_c7_46f5_return_output,
+ result_u8_value_MUX_uxn_opcodes_h_l2085_c7_46f5_return_output,
+ result_is_opc_done_MUX_uxn_opcodes_h_l2085_c7_46f5_return_output,
+ BIN_OP_EQ_uxn_opcodes_h_l2088_c11_d215_return_output,
+ t8_MUX_uxn_opcodes_h_l2088_c7_987b_return_output,
+ n8_MUX_uxn_opcodes_h_l2088_c7_987b_return_output,
+ result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2088_c7_987b_return_output,
+ result_sp_relative_shift_MUX_uxn_opcodes_h_l2088_c7_987b_return_output,
+ result_is_stack_write_MUX_uxn_opcodes_h_l2088_c7_987b_return_output,
+ result_u8_value_MUX_uxn_opcodes_h_l2088_c7_987b_return_output,
+ result_is_opc_done_MUX_uxn_opcodes_h_l2088_c7_987b_return_output,
+ BIN_OP_EQ_uxn_opcodes_h_l2091_c11_bd6d_return_output,
+ n8_MUX_uxn_opcodes_h_l2091_c7_694e_return_output,
+ result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2091_c7_694e_return_output,
+ result_sp_relative_shift_MUX_uxn_opcodes_h_l2091_c7_694e_return_output,
+ result_is_stack_write_MUX_uxn_opcodes_h_l2091_c7_694e_return_output,
+ result_u8_value_MUX_uxn_opcodes_h_l2091_c7_694e_return_output,
+ result_is_opc_done_MUX_uxn_opcodes_h_l2091_c7_694e_return_output,
+ sp_relative_shift_uxn_opcodes_h_l2093_c30_b87f_return_output,
+ BIN_OP_EQ_uxn_opcodes_h_l2096_c21_d2be_return_output,
+ BIN_OP_DIV_uxn_opcodes_h_l2096_c35_30ea_return_output,
+ MUX_uxn_opcodes_h_l2096_c21_82f9_return_output)
 is 
  -- All of the wires in function
  variable VAR_CLOCK_ENABLE : unsigned(0 downto 0);
@@ -624,170 +624,170 @@ is
  variable VAR_phase : unsigned(7 downto 0);
  variable VAR_ins : unsigned(7 downto 0);
  variable VAR_previous_stack_read : unsigned(7 downto 0);
- variable VAR_BIN_OP_EQ_uxn_opcodes_h_l2073_c6_1d4c_left : unsigned(7 downto 0);
- variable VAR_BIN_OP_EQ_uxn_opcodes_h_l2073_c6_1d4c_right : unsigned(0 downto 0);
- variable VAR_BIN_OP_EQ_uxn_opcodes_h_l2073_c6_1d4c_return_output : unsigned(0 downto 0);
- variable VAR_t8_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue : unsigned(7 downto 0);
- variable VAR_t8_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse : unsigned(7 downto 0);
- variable VAR_t8_MUX_uxn_opcodes_h_l2086_c7_aaf1_return_output : unsigned(7 downto 0);
- variable VAR_t8_MUX_uxn_opcodes_h_l2073_c2_e839_return_output : unsigned(7 downto 0);
- variable VAR_t8_MUX_uxn_opcodes_h_l2073_c2_e839_cond : unsigned(0 downto 0);
- variable VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue : unsigned(0 downto 0);
- variable VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse : unsigned(0 downto 0);
- variable VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2086_c7_aaf1_return_output : unsigned(0 downto 0);
- variable VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2073_c2_e839_return_output : unsigned(0 downto 0);
- variable VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2073_c2_e839_cond : unsigned(0 downto 0);
- variable VAR_result_is_vram_write_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue : unsigned(0 downto 0);
- variable VAR_result_is_vram_write_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse : unsigned(0 downto 0);
- variable VAR_result_is_vram_write_FALSE_INPUT_MUX_CONST_REF_RD_uint1_t_opcode_result_t_is_vram_write_d41d_uxn_opcodes_h_l2073_c2_e839_return_output : unsigned(0 downto 0);
- variable VAR_result_is_vram_write_MUX_uxn_opcodes_h_l2073_c2_e839_return_output : unsigned(0 downto 0);
- variable VAR_result_is_vram_write_MUX_uxn_opcodes_h_l2073_c2_e839_cond : unsigned(0 downto 0);
- variable VAR_result_is_ram_write_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue : unsigned(0 downto 0);
- variable VAR_result_is_ram_write_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse : unsigned(0 downto 0);
- variable VAR_result_is_ram_write_FALSE_INPUT_MUX_CONST_REF_RD_uint1_t_opcode_result_t_is_ram_write_d41d_uxn_opcodes_h_l2073_c2_e839_return_output : unsigned(0 downto 0);
- variable VAR_result_is_ram_write_MUX_uxn_opcodes_h_l2073_c2_e839_return_output : unsigned(0 downto 0);
- variable VAR_result_is_ram_write_MUX_uxn_opcodes_h_l2073_c2_e839_cond : unsigned(0 downto 0);
- variable VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue : unsigned(0 downto 0);
- variable VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse : unsigned(0 downto 0);
- variable VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2086_c7_aaf1_return_output : unsigned(0 downto 0);
- variable VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2073_c2_e839_return_output : unsigned(0 downto 0);
- variable VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2073_c2_e839_cond : unsigned(0 downto 0);
- variable VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue : unsigned(3 downto 0);
- variable VAR_result_stack_address_sp_offset_uxn_opcodes_h_l2083_c3_0f59 : unsigned(3 downto 0);
- variable VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse : unsigned(3 downto 0);
- variable VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2086_c7_aaf1_return_output : unsigned(3 downto 0);
- variable VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2073_c2_e839_return_output : unsigned(3 downto 0);
- variable VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2073_c2_e839_cond : unsigned(0 downto 0);
- variable VAR_result_u8_value_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue : unsigned(7 downto 0);
- variable VAR_result_u8_value_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse : unsigned(7 downto 0);
- variable VAR_result_u8_value_MUX_uxn_opcodes_h_l2086_c7_aaf1_return_output : unsigned(7 downto 0);
- variable VAR_result_u8_value_MUX_uxn_opcodes_h_l2073_c2_e839_return_output : unsigned(7 downto 0);
- variable VAR_result_u8_value_MUX_uxn_opcodes_h_l2073_c2_e839_cond : unsigned(0 downto 0);
- variable VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue : signed(3 downto 0);
- variable VAR_result_sp_relative_shift_uxn_opcodes_h_l2078_c3_a10f : signed(3 downto 0);
- variable VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse : signed(3 downto 0);
- variable VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2086_c7_aaf1_return_output : signed(3 downto 0);
- variable VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2073_c2_e839_return_output : signed(3 downto 0);
- variable VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2073_c2_e839_cond : unsigned(0 downto 0);
- variable VAR_result_is_stack_index_flipped_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue : unsigned(0 downto 0);
- variable VAR_result_is_stack_index_flipped_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse : unsigned(0 downto 0);
- variable VAR_result_is_stack_index_flipped_FALSE_INPUT_MUX_CONST_REF_RD_uint1_t_opcode_result_t_is_stack_index_flipped_d41d_uxn_opcodes_h_l2073_c2_e839_return_output : unsigned(0 downto 0);
- variable VAR_result_is_stack_index_flipped_MUX_uxn_opcodes_h_l2073_c2_e839_return_output : unsigned(0 downto 0);
- variable VAR_result_is_stack_index_flipped_MUX_uxn_opcodes_h_l2073_c2_e839_cond : unsigned(0 downto 0);
- variable VAR_result_is_pc_updated_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue : unsigned(0 downto 0);
- variable VAR_result_is_pc_updated_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse : unsigned(0 downto 0);
- variable VAR_result_is_pc_updated_FALSE_INPUT_MUX_CONST_REF_RD_uint1_t_opcode_result_t_is_pc_updated_d41d_uxn_opcodes_h_l2073_c2_e839_return_output : unsigned(0 downto 0);
- variable VAR_result_is_pc_updated_MUX_uxn_opcodes_h_l2073_c2_e839_return_output : unsigned(0 downto 0);
- variable VAR_result_is_pc_updated_MUX_uxn_opcodes_h_l2073_c2_e839_cond : unsigned(0 downto 0);
- variable VAR_n8_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue : unsigned(7 downto 0);
- variable VAR_n8_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse : unsigned(7 downto 0);
- variable VAR_n8_MUX_uxn_opcodes_h_l2086_c7_aaf1_return_output : unsigned(7 downto 0);
- variable VAR_n8_MUX_uxn_opcodes_h_l2073_c2_e839_return_output : unsigned(7 downto 0);
- variable VAR_n8_MUX_uxn_opcodes_h_l2073_c2_e839_cond : unsigned(0 downto 0);
- variable VAR_BIN_OP_EQ_uxn_opcodes_h_l2086_c11_ed0c_left : unsigned(7 downto 0);
- variable VAR_BIN_OP_EQ_uxn_opcodes_h_l2086_c11_ed0c_right : unsigned(0 downto 0);
- variable VAR_BIN_OP_EQ_uxn_opcodes_h_l2086_c11_ed0c_return_output : unsigned(0 downto 0);
- variable VAR_t8_MUX_uxn_opcodes_h_l2086_c7_aaf1_iftrue : unsigned(7 downto 0);
- variable VAR_t8_MUX_uxn_opcodes_h_l2086_c7_aaf1_iffalse : unsigned(7 downto 0);
- variable VAR_t8_MUX_uxn_opcodes_h_l2089_c7_86ab_return_output : unsigned(7 downto 0);
- variable VAR_t8_MUX_uxn_opcodes_h_l2086_c7_aaf1_cond : unsigned(0 downto 0);
- variable VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2086_c7_aaf1_iftrue : unsigned(0 downto 0);
- variable VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2086_c7_aaf1_iffalse : unsigned(0 downto 0);
- variable VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2089_c7_86ab_return_output : unsigned(0 downto 0);
- variable VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2086_c7_aaf1_cond : unsigned(0 downto 0);
- variable VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2086_c7_aaf1_iftrue : unsigned(3 downto 0);
- variable VAR_result_stack_address_sp_offset_uxn_opcodes_h_l2087_c3_b43b : unsigned(3 downto 0);
- variable VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2086_c7_aaf1_iffalse : unsigned(3 downto 0);
- variable VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2089_c7_86ab_return_output : unsigned(3 downto 0);
- variable VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2086_c7_aaf1_cond : unsigned(0 downto 0);
- variable VAR_result_u8_value_MUX_uxn_opcodes_h_l2086_c7_aaf1_iftrue : unsigned(7 downto 0);
- variable VAR_result_u8_value_MUX_uxn_opcodes_h_l2086_c7_aaf1_iffalse : unsigned(7 downto 0);
- variable VAR_result_u8_value_MUX_uxn_opcodes_h_l2089_c7_86ab_return_output : unsigned(7 downto 0);
- variable VAR_result_u8_value_MUX_uxn_opcodes_h_l2086_c7_aaf1_cond : unsigned(0 downto 0);
- variable VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2086_c7_aaf1_iftrue : unsigned(0 downto 0);
- variable VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2086_c7_aaf1_iffalse : unsigned(0 downto 0);
- variable VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2089_c7_86ab_return_output : unsigned(0 downto 0);
- variable VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2086_c7_aaf1_cond : unsigned(0 downto 0);
- variable VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2086_c7_aaf1_iftrue : signed(3 downto 0);
- variable VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2086_c7_aaf1_iffalse : signed(3 downto 0);
- variable VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2089_c7_86ab_return_output : signed(3 downto 0);
- variable VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2086_c7_aaf1_cond : unsigned(0 downto 0);
- variable VAR_n8_MUX_uxn_opcodes_h_l2086_c7_aaf1_iftrue : unsigned(7 downto 0);
- variable VAR_n8_MUX_uxn_opcodes_h_l2086_c7_aaf1_iffalse : unsigned(7 downto 0);
- variable VAR_n8_MUX_uxn_opcodes_h_l2089_c7_86ab_return_output : unsigned(7 downto 0);
- variable VAR_n8_MUX_uxn_opcodes_h_l2086_c7_aaf1_cond : unsigned(0 downto 0);
- variable VAR_BIN_OP_EQ_uxn_opcodes_h_l2089_c11_3e7c_left : unsigned(7 downto 0);
- variable VAR_BIN_OP_EQ_uxn_opcodes_h_l2089_c11_3e7c_right : unsigned(1 downto 0);
- variable VAR_BIN_OP_EQ_uxn_opcodes_h_l2089_c11_3e7c_return_output : unsigned(0 downto 0);
- variable VAR_t8_MUX_uxn_opcodes_h_l2089_c7_86ab_iftrue : unsigned(7 downto 0);
- variable VAR_t8_MUX_uxn_opcodes_h_l2089_c7_86ab_iffalse : unsigned(7 downto 0);
- variable VAR_t8_MUX_uxn_opcodes_h_l2089_c7_86ab_cond : unsigned(0 downto 0);
- variable VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2089_c7_86ab_iftrue : unsigned(0 downto 0);
- variable VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2089_c7_86ab_iffalse : unsigned(0 downto 0);
- variable VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2092_c7_d72d_return_output : unsigned(0 downto 0);
- variable VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2089_c7_86ab_cond : unsigned(0 downto 0);
- variable VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2089_c7_86ab_iftrue : unsigned(3 downto 0);
- variable VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2089_c7_86ab_iffalse : unsigned(3 downto 0);
- variable VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2092_c7_d72d_return_output : unsigned(3 downto 0);
- variable VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2089_c7_86ab_cond : unsigned(0 downto 0);
- variable VAR_result_u8_value_MUX_uxn_opcodes_h_l2089_c7_86ab_iftrue : unsigned(7 downto 0);
- variable VAR_result_u8_value_MUX_uxn_opcodes_h_l2089_c7_86ab_iffalse : unsigned(7 downto 0);
- variable VAR_result_u8_value_MUX_uxn_opcodes_h_l2092_c7_d72d_return_output : unsigned(7 downto 0);
- variable VAR_result_u8_value_MUX_uxn_opcodes_h_l2089_c7_86ab_cond : unsigned(0 downto 0);
- variable VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2089_c7_86ab_iftrue : unsigned(0 downto 0);
- variable VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2089_c7_86ab_iffalse : unsigned(0 downto 0);
- variable VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2092_c7_d72d_return_output : unsigned(0 downto 0);
- variable VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2089_c7_86ab_cond : unsigned(0 downto 0);
- variable VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2089_c7_86ab_iftrue : signed(3 downto 0);
- variable VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2089_c7_86ab_iffalse : signed(3 downto 0);
- variable VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2092_c7_d72d_return_output : signed(3 downto 0);
- variable VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2089_c7_86ab_cond : unsigned(0 downto 0);
- variable VAR_n8_MUX_uxn_opcodes_h_l2089_c7_86ab_iftrue : unsigned(7 downto 0);
- variable VAR_n8_MUX_uxn_opcodes_h_l2089_c7_86ab_iffalse : unsigned(7 downto 0);
- variable VAR_n8_MUX_uxn_opcodes_h_l2092_c7_d72d_return_output : unsigned(7 downto 0);
- variable VAR_n8_MUX_uxn_opcodes_h_l2089_c7_86ab_cond : unsigned(0 downto 0);
- variable VAR_BIN_OP_EQ_uxn_opcodes_h_l2092_c11_a96b_left : unsigned(7 downto 0);
- variable VAR_BIN_OP_EQ_uxn_opcodes_h_l2092_c11_a96b_right : unsigned(1 downto 0);
- variable VAR_BIN_OP_EQ_uxn_opcodes_h_l2092_c11_a96b_return_output : unsigned(0 downto 0);
- variable VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2092_c7_d72d_iftrue : unsigned(0 downto 0);
- variable VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2092_c7_d72d_iffalse : unsigned(0 downto 0);
- variable VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2092_c7_d72d_cond : unsigned(0 downto 0);
- variable VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2092_c7_d72d_iftrue : unsigned(3 downto 0);
- variable VAR_result_stack_address_sp_offset_uxn_opcodes_h_l2096_c3_6f04 : unsigned(3 downto 0);
- variable VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2092_c7_d72d_iffalse : unsigned(3 downto 0);
- variable VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2092_c7_d72d_cond : unsigned(0 downto 0);
- variable VAR_result_u8_value_MUX_uxn_opcodes_h_l2092_c7_d72d_iftrue : unsigned(7 downto 0);
- variable VAR_result_u8_value_MUX_uxn_opcodes_h_l2092_c7_d72d_iffalse : unsigned(7 downto 0);
- variable VAR_result_u8_value_MUX_uxn_opcodes_h_l2092_c7_d72d_cond : unsigned(0 downto 0);
- variable VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2092_c7_d72d_iftrue : unsigned(0 downto 0);
- variable VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2092_c7_d72d_iffalse : unsigned(0 downto 0);
- variable VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2092_c7_d72d_cond : unsigned(0 downto 0);
- variable VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2092_c7_d72d_iftrue : signed(3 downto 0);
- variable VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2092_c7_d72d_iffalse : signed(3 downto 0);
- variable VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2092_c7_d72d_cond : unsigned(0 downto 0);
- variable VAR_n8_MUX_uxn_opcodes_h_l2092_c7_d72d_iftrue : unsigned(7 downto 0);
- variable VAR_n8_MUX_uxn_opcodes_h_l2092_c7_d72d_iffalse : unsigned(7 downto 0);
- variable VAR_n8_MUX_uxn_opcodes_h_l2092_c7_d72d_cond : unsigned(0 downto 0);
- variable VAR_sp_relative_shift_uxn_opcodes_h_l2094_c30_af37_ins : unsigned(7 downto 0);
- variable VAR_sp_relative_shift_uxn_opcodes_h_l2094_c30_af37_x : signed(3 downto 0);
- variable VAR_sp_relative_shift_uxn_opcodes_h_l2094_c30_af37_y : signed(3 downto 0);
- variable VAR_sp_relative_shift_uxn_opcodes_h_l2094_c30_af37_return_output : signed(3 downto 0);
- variable VAR_MUX_uxn_opcodes_h_l2097_c21_6fcb_cond : unsigned(0 downto 0);
- variable VAR_BIN_OP_EQ_uxn_opcodes_h_l2097_c21_d476_left : unsigned(7 downto 0);
- variable VAR_BIN_OP_EQ_uxn_opcodes_h_l2097_c21_d476_right : unsigned(0 downto 0);
- variable VAR_BIN_OP_EQ_uxn_opcodes_h_l2097_c21_d476_return_output : unsigned(0 downto 0);
- variable VAR_MUX_uxn_opcodes_h_l2097_c21_6fcb_iftrue : unsigned(7 downto 0);
- variable VAR_MUX_uxn_opcodes_h_l2097_c21_6fcb_iffalse : unsigned(7 downto 0);
- variable VAR_BIN_OP_DIV_uxn_opcodes_h_l2097_c35_015a_left : unsigned(7 downto 0);
- variable VAR_BIN_OP_DIV_uxn_opcodes_h_l2097_c35_015a_right : unsigned(7 downto 0);
- variable VAR_BIN_OP_DIV_uxn_opcodes_h_l2097_c35_015a_return_output : unsigned(7 downto 0);
- variable VAR_MUX_uxn_opcodes_h_l2097_c21_6fcb_return_output : unsigned(7 downto 0);
- variable VAR_CONST_REF_RD_uint8_t_opcode_result_t_u8_value_d41d_uxn_opcodes_h_l2092_l2086_l2089_l2073_DUPLICATE_e4ab_return_output : unsigned(7 downto 0);
- variable VAR_CONST_REF_RD_uint1_t_opcode_result_t_is_opc_done_d41d_uxn_opcodes_h_l2092_l2086_l2089_DUPLICATE_0d94_return_output : unsigned(0 downto 0);
- variable VAR_CONST_REF_RD_uint1_t_opcode_result_t_is_stack_write_d41d_uxn_opcodes_h_l2092_l2086_l2089_DUPLICATE_c9b7_return_output : unsigned(0 downto 0);
- variable VAR_CONST_REF_RD_int4_t_opcode_result_t_sp_relative_shift_d41d_uxn_opcodes_h_l2092_l2086_l2089_DUPLICATE_bf7a_return_output : signed(3 downto 0);
- variable VAR_CONST_REF_RD_uint4_t_opcode_result_t_stack_address_sp_offset_d41d_uxn_opcodes_h_l2092_l2089_DUPLICATE_6961_return_output : unsigned(3 downto 0);
- variable VAR_CONST_REF_RD_opcode_result_t_opcode_result_t_c580_uxn_opcodes_h_l2101_l2069_DUPLICATE_af32_return_output : opcode_result_t;
+ variable VAR_BIN_OP_EQ_uxn_opcodes_h_l2072_c6_16c9_left : unsigned(7 downto 0);
+ variable VAR_BIN_OP_EQ_uxn_opcodes_h_l2072_c6_16c9_right : unsigned(0 downto 0);
+ variable VAR_BIN_OP_EQ_uxn_opcodes_h_l2072_c6_16c9_return_output : unsigned(0 downto 0);
+ variable VAR_t8_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue : unsigned(7 downto 0);
+ variable VAR_t8_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse : unsigned(7 downto 0);
+ variable VAR_t8_MUX_uxn_opcodes_h_l2085_c7_46f5_return_output : unsigned(7 downto 0);
+ variable VAR_t8_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output : unsigned(7 downto 0);
+ variable VAR_t8_MUX_uxn_opcodes_h_l2072_c2_19a1_cond : unsigned(0 downto 0);
+ variable VAR_n8_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue : unsigned(7 downto 0);
+ variable VAR_n8_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse : unsigned(7 downto 0);
+ variable VAR_n8_MUX_uxn_opcodes_h_l2085_c7_46f5_return_output : unsigned(7 downto 0);
+ variable VAR_n8_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output : unsigned(7 downto 0);
+ variable VAR_n8_MUX_uxn_opcodes_h_l2072_c2_19a1_cond : unsigned(0 downto 0);
+ variable VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue : unsigned(0 downto 0);
+ variable VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse : unsigned(0 downto 0);
+ variable VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2085_c7_46f5_return_output : unsigned(0 downto 0);
+ variable VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output : unsigned(0 downto 0);
+ variable VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2072_c2_19a1_cond : unsigned(0 downto 0);
+ variable VAR_result_is_vram_write_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue : unsigned(0 downto 0);
+ variable VAR_result_is_vram_write_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse : unsigned(0 downto 0);
+ variable VAR_result_is_vram_write_FALSE_INPUT_MUX_CONST_REF_RD_uint1_t_opcode_result_t_is_vram_write_d41d_uxn_opcodes_h_l2072_c2_19a1_return_output : unsigned(0 downto 0);
+ variable VAR_result_is_vram_write_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output : unsigned(0 downto 0);
+ variable VAR_result_is_vram_write_MUX_uxn_opcodes_h_l2072_c2_19a1_cond : unsigned(0 downto 0);
+ variable VAR_result_is_stack_index_flipped_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue : unsigned(0 downto 0);
+ variable VAR_result_is_stack_index_flipped_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse : unsigned(0 downto 0);
+ variable VAR_result_is_stack_index_flipped_FALSE_INPUT_MUX_CONST_REF_RD_uint1_t_opcode_result_t_is_stack_index_flipped_d41d_uxn_opcodes_h_l2072_c2_19a1_return_output : unsigned(0 downto 0);
+ variable VAR_result_is_stack_index_flipped_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output : unsigned(0 downto 0);
+ variable VAR_result_is_stack_index_flipped_MUX_uxn_opcodes_h_l2072_c2_19a1_cond : unsigned(0 downto 0);
+ variable VAR_result_u8_value_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue : unsigned(7 downto 0);
+ variable VAR_result_u8_value_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse : unsigned(7 downto 0);
+ variable VAR_result_u8_value_MUX_uxn_opcodes_h_l2085_c7_46f5_return_output : unsigned(7 downto 0);
+ variable VAR_result_u8_value_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output : unsigned(7 downto 0);
+ variable VAR_result_u8_value_MUX_uxn_opcodes_h_l2072_c2_19a1_cond : unsigned(0 downto 0);
+ variable VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue : unsigned(0 downto 0);
+ variable VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse : unsigned(0 downto 0);
+ variable VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2085_c7_46f5_return_output : unsigned(0 downto 0);
+ variable VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output : unsigned(0 downto 0);
+ variable VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2072_c2_19a1_cond : unsigned(0 downto 0);
+ variable VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue : signed(3 downto 0);
+ variable VAR_result_sp_relative_shift_uxn_opcodes_h_l2077_c3_5a18 : signed(3 downto 0);
+ variable VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse : signed(3 downto 0);
+ variable VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2085_c7_46f5_return_output : signed(3 downto 0);
+ variable VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output : signed(3 downto 0);
+ variable VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2072_c2_19a1_cond : unsigned(0 downto 0);
+ variable VAR_result_is_pc_updated_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue : unsigned(0 downto 0);
+ variable VAR_result_is_pc_updated_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse : unsigned(0 downto 0);
+ variable VAR_result_is_pc_updated_FALSE_INPUT_MUX_CONST_REF_RD_uint1_t_opcode_result_t_is_pc_updated_d41d_uxn_opcodes_h_l2072_c2_19a1_return_output : unsigned(0 downto 0);
+ variable VAR_result_is_pc_updated_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output : unsigned(0 downto 0);
+ variable VAR_result_is_pc_updated_MUX_uxn_opcodes_h_l2072_c2_19a1_cond : unsigned(0 downto 0);
+ variable VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue : unsigned(3 downto 0);
+ variable VAR_result_stack_address_sp_offset_uxn_opcodes_h_l2082_c3_9346 : unsigned(3 downto 0);
+ variable VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse : unsigned(3 downto 0);
+ variable VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2085_c7_46f5_return_output : unsigned(3 downto 0);
+ variable VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output : unsigned(3 downto 0);
+ variable VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2072_c2_19a1_cond : unsigned(0 downto 0);
+ variable VAR_result_is_ram_write_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue : unsigned(0 downto 0);
+ variable VAR_result_is_ram_write_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse : unsigned(0 downto 0);
+ variable VAR_result_is_ram_write_FALSE_INPUT_MUX_CONST_REF_RD_uint1_t_opcode_result_t_is_ram_write_d41d_uxn_opcodes_h_l2072_c2_19a1_return_output : unsigned(0 downto 0);
+ variable VAR_result_is_ram_write_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output : unsigned(0 downto 0);
+ variable VAR_result_is_ram_write_MUX_uxn_opcodes_h_l2072_c2_19a1_cond : unsigned(0 downto 0);
+ variable VAR_BIN_OP_EQ_uxn_opcodes_h_l2085_c11_78b1_left : unsigned(7 downto 0);
+ variable VAR_BIN_OP_EQ_uxn_opcodes_h_l2085_c11_78b1_right : unsigned(0 downto 0);
+ variable VAR_BIN_OP_EQ_uxn_opcodes_h_l2085_c11_78b1_return_output : unsigned(0 downto 0);
+ variable VAR_t8_MUX_uxn_opcodes_h_l2085_c7_46f5_iftrue : unsigned(7 downto 0);
+ variable VAR_t8_MUX_uxn_opcodes_h_l2085_c7_46f5_iffalse : unsigned(7 downto 0);
+ variable VAR_t8_MUX_uxn_opcodes_h_l2088_c7_987b_return_output : unsigned(7 downto 0);
+ variable VAR_t8_MUX_uxn_opcodes_h_l2085_c7_46f5_cond : unsigned(0 downto 0);
+ variable VAR_n8_MUX_uxn_opcodes_h_l2085_c7_46f5_iftrue : unsigned(7 downto 0);
+ variable VAR_n8_MUX_uxn_opcodes_h_l2085_c7_46f5_iffalse : unsigned(7 downto 0);
+ variable VAR_n8_MUX_uxn_opcodes_h_l2088_c7_987b_return_output : unsigned(7 downto 0);
+ variable VAR_n8_MUX_uxn_opcodes_h_l2085_c7_46f5_cond : unsigned(0 downto 0);
+ variable VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2085_c7_46f5_iftrue : unsigned(3 downto 0);
+ variable VAR_result_stack_address_sp_offset_uxn_opcodes_h_l2086_c3_e753 : unsigned(3 downto 0);
+ variable VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2085_c7_46f5_iffalse : unsigned(3 downto 0);
+ variable VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2088_c7_987b_return_output : unsigned(3 downto 0);
+ variable VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2085_c7_46f5_cond : unsigned(0 downto 0);
+ variable VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2085_c7_46f5_iftrue : signed(3 downto 0);
+ variable VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2085_c7_46f5_iffalse : signed(3 downto 0);
+ variable VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2088_c7_987b_return_output : signed(3 downto 0);
+ variable VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2085_c7_46f5_cond : unsigned(0 downto 0);
+ variable VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2085_c7_46f5_iftrue : unsigned(0 downto 0);
+ variable VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2085_c7_46f5_iffalse : unsigned(0 downto 0);
+ variable VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2088_c7_987b_return_output : unsigned(0 downto 0);
+ variable VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2085_c7_46f5_cond : unsigned(0 downto 0);
+ variable VAR_result_u8_value_MUX_uxn_opcodes_h_l2085_c7_46f5_iftrue : unsigned(7 downto 0);
+ variable VAR_result_u8_value_MUX_uxn_opcodes_h_l2085_c7_46f5_iffalse : unsigned(7 downto 0);
+ variable VAR_result_u8_value_MUX_uxn_opcodes_h_l2088_c7_987b_return_output : unsigned(7 downto 0);
+ variable VAR_result_u8_value_MUX_uxn_opcodes_h_l2085_c7_46f5_cond : unsigned(0 downto 0);
+ variable VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2085_c7_46f5_iftrue : unsigned(0 downto 0);
+ variable VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2085_c7_46f5_iffalse : unsigned(0 downto 0);
+ variable VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2088_c7_987b_return_output : unsigned(0 downto 0);
+ variable VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2085_c7_46f5_cond : unsigned(0 downto 0);
+ variable VAR_BIN_OP_EQ_uxn_opcodes_h_l2088_c11_d215_left : unsigned(7 downto 0);
+ variable VAR_BIN_OP_EQ_uxn_opcodes_h_l2088_c11_d215_right : unsigned(1 downto 0);
+ variable VAR_BIN_OP_EQ_uxn_opcodes_h_l2088_c11_d215_return_output : unsigned(0 downto 0);
+ variable VAR_t8_MUX_uxn_opcodes_h_l2088_c7_987b_iftrue : unsigned(7 downto 0);
+ variable VAR_t8_MUX_uxn_opcodes_h_l2088_c7_987b_iffalse : unsigned(7 downto 0);
+ variable VAR_t8_MUX_uxn_opcodes_h_l2088_c7_987b_cond : unsigned(0 downto 0);
+ variable VAR_n8_MUX_uxn_opcodes_h_l2088_c7_987b_iftrue : unsigned(7 downto 0);
+ variable VAR_n8_MUX_uxn_opcodes_h_l2088_c7_987b_iffalse : unsigned(7 downto 0);
+ variable VAR_n8_MUX_uxn_opcodes_h_l2091_c7_694e_return_output : unsigned(7 downto 0);
+ variable VAR_n8_MUX_uxn_opcodes_h_l2088_c7_987b_cond : unsigned(0 downto 0);
+ variable VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2088_c7_987b_iftrue : unsigned(3 downto 0);
+ variable VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2088_c7_987b_iffalse : unsigned(3 downto 0);
+ variable VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2091_c7_694e_return_output : unsigned(3 downto 0);
+ variable VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2088_c7_987b_cond : unsigned(0 downto 0);
+ variable VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2088_c7_987b_iftrue : signed(3 downto 0);
+ variable VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2088_c7_987b_iffalse : signed(3 downto 0);
+ variable VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2091_c7_694e_return_output : signed(3 downto 0);
+ variable VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2088_c7_987b_cond : unsigned(0 downto 0);
+ variable VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2088_c7_987b_iftrue : unsigned(0 downto 0);
+ variable VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2088_c7_987b_iffalse : unsigned(0 downto 0);
+ variable VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2091_c7_694e_return_output : unsigned(0 downto 0);
+ variable VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2088_c7_987b_cond : unsigned(0 downto 0);
+ variable VAR_result_u8_value_MUX_uxn_opcodes_h_l2088_c7_987b_iftrue : unsigned(7 downto 0);
+ variable VAR_result_u8_value_MUX_uxn_opcodes_h_l2088_c7_987b_iffalse : unsigned(7 downto 0);
+ variable VAR_result_u8_value_MUX_uxn_opcodes_h_l2091_c7_694e_return_output : unsigned(7 downto 0);
+ variable VAR_result_u8_value_MUX_uxn_opcodes_h_l2088_c7_987b_cond : unsigned(0 downto 0);
+ variable VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2088_c7_987b_iftrue : unsigned(0 downto 0);
+ variable VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2088_c7_987b_iffalse : unsigned(0 downto 0);
+ variable VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2091_c7_694e_return_output : unsigned(0 downto 0);
+ variable VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2088_c7_987b_cond : unsigned(0 downto 0);
+ variable VAR_BIN_OP_EQ_uxn_opcodes_h_l2091_c11_bd6d_left : unsigned(7 downto 0);
+ variable VAR_BIN_OP_EQ_uxn_opcodes_h_l2091_c11_bd6d_right : unsigned(1 downto 0);
+ variable VAR_BIN_OP_EQ_uxn_opcodes_h_l2091_c11_bd6d_return_output : unsigned(0 downto 0);
+ variable VAR_n8_MUX_uxn_opcodes_h_l2091_c7_694e_iftrue : unsigned(7 downto 0);
+ variable VAR_n8_MUX_uxn_opcodes_h_l2091_c7_694e_iffalse : unsigned(7 downto 0);
+ variable VAR_n8_MUX_uxn_opcodes_h_l2091_c7_694e_cond : unsigned(0 downto 0);
+ variable VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2091_c7_694e_iftrue : unsigned(3 downto 0);
+ variable VAR_result_stack_address_sp_offset_uxn_opcodes_h_l2095_c3_2cfe : unsigned(3 downto 0);
+ variable VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2091_c7_694e_iffalse : unsigned(3 downto 0);
+ variable VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2091_c7_694e_cond : unsigned(0 downto 0);
+ variable VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2091_c7_694e_iftrue : signed(3 downto 0);
+ variable VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2091_c7_694e_iffalse : signed(3 downto 0);
+ variable VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2091_c7_694e_cond : unsigned(0 downto 0);
+ variable VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2091_c7_694e_iftrue : unsigned(0 downto 0);
+ variable VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2091_c7_694e_iffalse : unsigned(0 downto 0);
+ variable VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2091_c7_694e_cond : unsigned(0 downto 0);
+ variable VAR_result_u8_value_MUX_uxn_opcodes_h_l2091_c7_694e_iftrue : unsigned(7 downto 0);
+ variable VAR_result_u8_value_MUX_uxn_opcodes_h_l2091_c7_694e_iffalse : unsigned(7 downto 0);
+ variable VAR_result_u8_value_MUX_uxn_opcodes_h_l2091_c7_694e_cond : unsigned(0 downto 0);
+ variable VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2091_c7_694e_iftrue : unsigned(0 downto 0);
+ variable VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2091_c7_694e_iffalse : unsigned(0 downto 0);
+ variable VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2091_c7_694e_cond : unsigned(0 downto 0);
+ variable VAR_sp_relative_shift_uxn_opcodes_h_l2093_c30_b87f_ins : unsigned(7 downto 0);
+ variable VAR_sp_relative_shift_uxn_opcodes_h_l2093_c30_b87f_x : signed(3 downto 0);
+ variable VAR_sp_relative_shift_uxn_opcodes_h_l2093_c30_b87f_y : signed(3 downto 0);
+ variable VAR_sp_relative_shift_uxn_opcodes_h_l2093_c30_b87f_return_output : signed(3 downto 0);
+ variable VAR_MUX_uxn_opcodes_h_l2096_c21_82f9_cond : unsigned(0 downto 0);
+ variable VAR_BIN_OP_EQ_uxn_opcodes_h_l2096_c21_d2be_left : unsigned(7 downto 0);
+ variable VAR_BIN_OP_EQ_uxn_opcodes_h_l2096_c21_d2be_right : unsigned(0 downto 0);
+ variable VAR_BIN_OP_EQ_uxn_opcodes_h_l2096_c21_d2be_return_output : unsigned(0 downto 0);
+ variable VAR_MUX_uxn_opcodes_h_l2096_c21_82f9_iftrue : unsigned(7 downto 0);
+ variable VAR_MUX_uxn_opcodes_h_l2096_c21_82f9_iffalse : unsigned(7 downto 0);
+ variable VAR_BIN_OP_DIV_uxn_opcodes_h_l2096_c35_30ea_left : unsigned(7 downto 0);
+ variable VAR_BIN_OP_DIV_uxn_opcodes_h_l2096_c35_30ea_right : unsigned(7 downto 0);
+ variable VAR_BIN_OP_DIV_uxn_opcodes_h_l2096_c35_30ea_return_output : unsigned(7 downto 0);
+ variable VAR_MUX_uxn_opcodes_h_l2096_c21_82f9_return_output : unsigned(7 downto 0);
+ variable VAR_CONST_REF_RD_uint8_t_opcode_result_t_u8_value_d41d_uxn_opcodes_h_l2091_l2085_l2088_l2072_DUPLICATE_8c3d_return_output : unsigned(7 downto 0);
+ variable VAR_CONST_REF_RD_int4_t_opcode_result_t_sp_relative_shift_d41d_uxn_opcodes_h_l2091_l2085_l2088_DUPLICATE_145e_return_output : signed(3 downto 0);
+ variable VAR_CONST_REF_RD_uint1_t_opcode_result_t_is_stack_write_d41d_uxn_opcodes_h_l2091_l2085_l2088_DUPLICATE_aa7b_return_output : unsigned(0 downto 0);
+ variable VAR_CONST_REF_RD_uint1_t_opcode_result_t_is_opc_done_d41d_uxn_opcodes_h_l2091_l2085_l2088_DUPLICATE_2cc4_return_output : unsigned(0 downto 0);
+ variable VAR_CONST_REF_RD_uint4_t_opcode_result_t_stack_address_sp_offset_d41d_uxn_opcodes_h_l2091_l2088_DUPLICATE_89bb_return_output : unsigned(3 downto 0);
+ variable VAR_CONST_REF_RD_opcode_result_t_opcode_result_t_188e_uxn_opcodes_h_l2100_l2068_DUPLICATE_ea76_return_output : opcode_result_t;
  -- State registers comb logic variables
 variable REG_VAR_t8 : unsigned(7 downto 0);
 variable REG_VAR_n8 : unsigned(7 downto 0);
@@ -801,30 +801,30 @@ begin
   REG_VAR_result := result;
  -- Constants and things derived from constants alone
      -- Submodule level 0
-     VAR_BIN_OP_EQ_uxn_opcodes_h_l2073_c6_1d4c_right := to_unsigned(0, 1);
-     VAR_sp_relative_shift_uxn_opcodes_h_l2094_c30_af37_y := resize(to_signed(-1, 2), 4);
-     VAR_BIN_OP_EQ_uxn_opcodes_h_l2089_c11_3e7c_right := to_unsigned(2, 2);
-     VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2092_c7_d72d_iftrue := to_unsigned(1, 1);
-     VAR_result_is_ram_write_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue := to_unsigned(0, 1);
-     VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue := to_unsigned(0, 1);
-     VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2092_c7_d72d_iftrue := to_unsigned(1, 1);
-     VAR_BIN_OP_EQ_uxn_opcodes_h_l2086_c11_ed0c_right := to_unsigned(1, 1);
-     VAR_result_is_pc_updated_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue := to_unsigned(0, 1);
-     VAR_result_is_vram_write_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue := to_unsigned(0, 1);
-     VAR_result_stack_address_sp_offset_uxn_opcodes_h_l2087_c3_b43b := resize(to_unsigned(2, 2), 4);
-     VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2086_c7_aaf1_iftrue := VAR_result_stack_address_sp_offset_uxn_opcodes_h_l2087_c3_b43b;
-     VAR_result_stack_address_sp_offset_uxn_opcodes_h_l2096_c3_6f04 := resize(to_unsigned(1, 1), 4);
-     VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2092_c7_d72d_iftrue := VAR_result_stack_address_sp_offset_uxn_opcodes_h_l2096_c3_6f04;
-     VAR_result_stack_address_sp_offset_uxn_opcodes_h_l2083_c3_0f59 := resize(to_unsigned(1, 1), 4);
-     VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue := VAR_result_stack_address_sp_offset_uxn_opcodes_h_l2083_c3_0f59;
-     VAR_BIN_OP_EQ_uxn_opcodes_h_l2092_c11_a96b_right := to_unsigned(3, 2);
-     VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue := to_unsigned(0, 1);
-     VAR_result_sp_relative_shift_uxn_opcodes_h_l2078_c3_a10f := signed(std_logic_vector(resize(to_unsigned(0, 1), 4)));
-     VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue := VAR_result_sp_relative_shift_uxn_opcodes_h_l2078_c3_a10f;
-     VAR_MUX_uxn_opcodes_h_l2097_c21_6fcb_iftrue := resize(to_unsigned(0, 1), 8);
-     VAR_BIN_OP_EQ_uxn_opcodes_h_l2097_c21_d476_right := to_unsigned(0, 1);
-     VAR_result_is_stack_index_flipped_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue := to_unsigned(0, 1);
-     VAR_sp_relative_shift_uxn_opcodes_h_l2094_c30_af37_x := signed(std_logic_vector(resize(to_unsigned(2, 2), 4)));
+     VAR_BIN_OP_EQ_uxn_opcodes_h_l2088_c11_d215_right := to_unsigned(2, 2);
+     VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2091_c7_694e_iftrue := to_unsigned(1, 1);
+     VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue := to_unsigned(0, 1);
+     VAR_BIN_OP_EQ_uxn_opcodes_h_l2096_c21_d2be_right := to_unsigned(0, 1);
+     VAR_BIN_OP_EQ_uxn_opcodes_h_l2091_c11_bd6d_right := to_unsigned(3, 2);
+     VAR_BIN_OP_EQ_uxn_opcodes_h_l2085_c11_78b1_right := to_unsigned(1, 1);
+     VAR_result_is_vram_write_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue := to_unsigned(0, 1);
+     VAR_sp_relative_shift_uxn_opcodes_h_l2093_c30_b87f_y := resize(to_signed(-1, 2), 4);
+     VAR_result_stack_address_sp_offset_uxn_opcodes_h_l2095_c3_2cfe := resize(to_unsigned(1, 1), 4);
+     VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2091_c7_694e_iftrue := VAR_result_stack_address_sp_offset_uxn_opcodes_h_l2095_c3_2cfe;
+     VAR_sp_relative_shift_uxn_opcodes_h_l2093_c30_b87f_x := signed(std_logic_vector(resize(to_unsigned(2, 2), 4)));
+     VAR_result_stack_address_sp_offset_uxn_opcodes_h_l2086_c3_e753 := resize(to_unsigned(2, 2), 4);
+     VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2085_c7_46f5_iftrue := VAR_result_stack_address_sp_offset_uxn_opcodes_h_l2086_c3_e753;
+     VAR_result_stack_address_sp_offset_uxn_opcodes_h_l2082_c3_9346 := resize(to_unsigned(1, 1), 4);
+     VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue := VAR_result_stack_address_sp_offset_uxn_opcodes_h_l2082_c3_9346;
+     VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2091_c7_694e_iftrue := to_unsigned(1, 1);
+     VAR_MUX_uxn_opcodes_h_l2096_c21_82f9_iftrue := resize(to_unsigned(0, 1), 8);
+     VAR_result_sp_relative_shift_uxn_opcodes_h_l2077_c3_5a18 := signed(std_logic_vector(resize(to_unsigned(0, 1), 4)));
+     VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue := VAR_result_sp_relative_shift_uxn_opcodes_h_l2077_c3_5a18;
+     VAR_result_is_ram_write_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue := to_unsigned(0, 1);
+     VAR_result_is_pc_updated_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue := to_unsigned(0, 1);
+     VAR_result_is_stack_index_flipped_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue := to_unsigned(0, 1);
+     VAR_BIN_OP_EQ_uxn_opcodes_h_l2072_c6_16c9_right := to_unsigned(0, 1);
+     VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue := to_unsigned(0, 1);
 
  -- Loop to construct simultaneous register transfers for each of the pipeline stages
  -- LATENCY=0 is combinational Logic
@@ -838,454 +838,454 @@ begin
      VAR_previous_stack_read := previous_stack_read;
 
      -- Submodule level 0
-     VAR_sp_relative_shift_uxn_opcodes_h_l2094_c30_af37_ins := VAR_ins;
-     VAR_n8_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue := n8;
-     VAR_n8_MUX_uxn_opcodes_h_l2086_c7_aaf1_iftrue := n8;
-     VAR_n8_MUX_uxn_opcodes_h_l2089_c7_86ab_iftrue := n8;
-     VAR_n8_MUX_uxn_opcodes_h_l2092_c7_d72d_iffalse := n8;
-     VAR_BIN_OP_EQ_uxn_opcodes_h_l2073_c6_1d4c_left := VAR_phase;
-     VAR_BIN_OP_EQ_uxn_opcodes_h_l2086_c11_ed0c_left := VAR_phase;
-     VAR_BIN_OP_EQ_uxn_opcodes_h_l2089_c11_3e7c_left := VAR_phase;
-     VAR_BIN_OP_EQ_uxn_opcodes_h_l2092_c11_a96b_left := VAR_phase;
-     VAR_BIN_OP_DIV_uxn_opcodes_h_l2097_c35_015a_left := VAR_previous_stack_read;
-     VAR_n8_MUX_uxn_opcodes_h_l2092_c7_d72d_iftrue := VAR_previous_stack_read;
-     VAR_t8_MUX_uxn_opcodes_h_l2089_c7_86ab_iftrue := VAR_previous_stack_read;
-     VAR_BIN_OP_DIV_uxn_opcodes_h_l2097_c35_015a_right := t8;
-     VAR_BIN_OP_EQ_uxn_opcodes_h_l2097_c21_d476_left := t8;
-     VAR_t8_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue := t8;
-     VAR_t8_MUX_uxn_opcodes_h_l2086_c7_aaf1_iftrue := t8;
-     VAR_t8_MUX_uxn_opcodes_h_l2089_c7_86ab_iffalse := t8;
-     -- CONST_REF_RD_uint4_t_opcode_result_t_stack_address_sp_offset_d41d_uxn_opcodes_h_l2092_l2089_DUPLICATE_6961 LATENCY=0
-     VAR_CONST_REF_RD_uint4_t_opcode_result_t_stack_address_sp_offset_d41d_uxn_opcodes_h_l2092_l2089_DUPLICATE_6961_return_output := result.stack_address_sp_offset;
-
-     -- sp_relative_shift[uxn_opcodes_h_l2094_c30_af37] LATENCY=0
+     VAR_sp_relative_shift_uxn_opcodes_h_l2093_c30_b87f_ins := VAR_ins;
+     VAR_n8_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue := n8;
+     VAR_n8_MUX_uxn_opcodes_h_l2085_c7_46f5_iftrue := n8;
+     VAR_n8_MUX_uxn_opcodes_h_l2088_c7_987b_iftrue := n8;
+     VAR_n8_MUX_uxn_opcodes_h_l2091_c7_694e_iffalse := n8;
+     VAR_BIN_OP_EQ_uxn_opcodes_h_l2072_c6_16c9_left := VAR_phase;
+     VAR_BIN_OP_EQ_uxn_opcodes_h_l2085_c11_78b1_left := VAR_phase;
+     VAR_BIN_OP_EQ_uxn_opcodes_h_l2088_c11_d215_left := VAR_phase;
+     VAR_BIN_OP_EQ_uxn_opcodes_h_l2091_c11_bd6d_left := VAR_phase;
+     VAR_BIN_OP_DIV_uxn_opcodes_h_l2096_c35_30ea_left := VAR_previous_stack_read;
+     VAR_n8_MUX_uxn_opcodes_h_l2091_c7_694e_iftrue := VAR_previous_stack_read;
+     VAR_t8_MUX_uxn_opcodes_h_l2088_c7_987b_iftrue := VAR_previous_stack_read;
+     VAR_BIN_OP_DIV_uxn_opcodes_h_l2096_c35_30ea_right := t8;
+     VAR_BIN_OP_EQ_uxn_opcodes_h_l2096_c21_d2be_left := t8;
+     VAR_t8_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue := t8;
+     VAR_t8_MUX_uxn_opcodes_h_l2085_c7_46f5_iftrue := t8;
+     VAR_t8_MUX_uxn_opcodes_h_l2088_c7_987b_iffalse := t8;
+     -- BIN_OP_EQ[uxn_opcodes_h_l2088_c11_d215] LATENCY=0
      -- Inputs
-     sp_relative_shift_uxn_opcodes_h_l2094_c30_af37_ins <= VAR_sp_relative_shift_uxn_opcodes_h_l2094_c30_af37_ins;
-     sp_relative_shift_uxn_opcodes_h_l2094_c30_af37_x <= VAR_sp_relative_shift_uxn_opcodes_h_l2094_c30_af37_x;
-     sp_relative_shift_uxn_opcodes_h_l2094_c30_af37_y <= VAR_sp_relative_shift_uxn_opcodes_h_l2094_c30_af37_y;
+     BIN_OP_EQ_uxn_opcodes_h_l2088_c11_d215_left <= VAR_BIN_OP_EQ_uxn_opcodes_h_l2088_c11_d215_left;
+     BIN_OP_EQ_uxn_opcodes_h_l2088_c11_d215_right <= VAR_BIN_OP_EQ_uxn_opcodes_h_l2088_c11_d215_right;
      -- Outputs
-     VAR_sp_relative_shift_uxn_opcodes_h_l2094_c30_af37_return_output := sp_relative_shift_uxn_opcodes_h_l2094_c30_af37_return_output;
+     VAR_BIN_OP_EQ_uxn_opcodes_h_l2088_c11_d215_return_output := BIN_OP_EQ_uxn_opcodes_h_l2088_c11_d215_return_output;
 
-     -- BIN_OP_EQ[uxn_opcodes_h_l2089_c11_3e7c] LATENCY=0
+     -- CONST_REF_RD_uint1_t_opcode_result_t_is_opc_done_d41d_uxn_opcodes_h_l2091_l2085_l2088_DUPLICATE_2cc4 LATENCY=0
+     VAR_CONST_REF_RD_uint1_t_opcode_result_t_is_opc_done_d41d_uxn_opcodes_h_l2091_l2085_l2088_DUPLICATE_2cc4_return_output := result.is_opc_done;
+
+     -- result_is_pc_updated_FALSE_INPUT_MUX_CONST_REF_RD_uint1_t_opcode_result_t_is_pc_updated_d41d[uxn_opcodes_h_l2072_c2_19a1] LATENCY=0
+     VAR_result_is_pc_updated_FALSE_INPUT_MUX_CONST_REF_RD_uint1_t_opcode_result_t_is_pc_updated_d41d_uxn_opcodes_h_l2072_c2_19a1_return_output := result.is_pc_updated;
+
+     -- result_is_ram_write_FALSE_INPUT_MUX_CONST_REF_RD_uint1_t_opcode_result_t_is_ram_write_d41d[uxn_opcodes_h_l2072_c2_19a1] LATENCY=0
+     VAR_result_is_ram_write_FALSE_INPUT_MUX_CONST_REF_RD_uint1_t_opcode_result_t_is_ram_write_d41d_uxn_opcodes_h_l2072_c2_19a1_return_output := result.is_ram_write;
+
+     -- CONST_REF_RD_uint8_t_opcode_result_t_u8_value_d41d_uxn_opcodes_h_l2091_l2085_l2088_l2072_DUPLICATE_8c3d LATENCY=0
+     VAR_CONST_REF_RD_uint8_t_opcode_result_t_u8_value_d41d_uxn_opcodes_h_l2091_l2085_l2088_l2072_DUPLICATE_8c3d_return_output := result.u8_value;
+
+     -- BIN_OP_EQ[uxn_opcodes_h_l2072_c6_16c9] LATENCY=0
      -- Inputs
-     BIN_OP_EQ_uxn_opcodes_h_l2089_c11_3e7c_left <= VAR_BIN_OP_EQ_uxn_opcodes_h_l2089_c11_3e7c_left;
-     BIN_OP_EQ_uxn_opcodes_h_l2089_c11_3e7c_right <= VAR_BIN_OP_EQ_uxn_opcodes_h_l2089_c11_3e7c_right;
+     BIN_OP_EQ_uxn_opcodes_h_l2072_c6_16c9_left <= VAR_BIN_OP_EQ_uxn_opcodes_h_l2072_c6_16c9_left;
+     BIN_OP_EQ_uxn_opcodes_h_l2072_c6_16c9_right <= VAR_BIN_OP_EQ_uxn_opcodes_h_l2072_c6_16c9_right;
      -- Outputs
-     VAR_BIN_OP_EQ_uxn_opcodes_h_l2089_c11_3e7c_return_output := BIN_OP_EQ_uxn_opcodes_h_l2089_c11_3e7c_return_output;
+     VAR_BIN_OP_EQ_uxn_opcodes_h_l2072_c6_16c9_return_output := BIN_OP_EQ_uxn_opcodes_h_l2072_c6_16c9_return_output;
 
-     -- CONST_REF_RD_uint1_t_opcode_result_t_is_stack_write_d41d_uxn_opcodes_h_l2092_l2086_l2089_DUPLICATE_c9b7 LATENCY=0
-     VAR_CONST_REF_RD_uint1_t_opcode_result_t_is_stack_write_d41d_uxn_opcodes_h_l2092_l2086_l2089_DUPLICATE_c9b7_return_output := result.is_stack_write;
-
-     -- BIN_OP_EQ[uxn_opcodes_h_l2073_c6_1d4c] LATENCY=0
+     -- BIN_OP_DIV[uxn_opcodes_h_l2096_c35_30ea] LATENCY=0
      -- Inputs
-     BIN_OP_EQ_uxn_opcodes_h_l2073_c6_1d4c_left <= VAR_BIN_OP_EQ_uxn_opcodes_h_l2073_c6_1d4c_left;
-     BIN_OP_EQ_uxn_opcodes_h_l2073_c6_1d4c_right <= VAR_BIN_OP_EQ_uxn_opcodes_h_l2073_c6_1d4c_right;
+     BIN_OP_DIV_uxn_opcodes_h_l2096_c35_30ea_left <= VAR_BIN_OP_DIV_uxn_opcodes_h_l2096_c35_30ea_left;
+     BIN_OP_DIV_uxn_opcodes_h_l2096_c35_30ea_right <= VAR_BIN_OP_DIV_uxn_opcodes_h_l2096_c35_30ea_right;
      -- Outputs
-     VAR_BIN_OP_EQ_uxn_opcodes_h_l2073_c6_1d4c_return_output := BIN_OP_EQ_uxn_opcodes_h_l2073_c6_1d4c_return_output;
+     VAR_BIN_OP_DIV_uxn_opcodes_h_l2096_c35_30ea_return_output := BIN_OP_DIV_uxn_opcodes_h_l2096_c35_30ea_return_output;
 
-     -- result_is_vram_write_FALSE_INPUT_MUX_CONST_REF_RD_uint1_t_opcode_result_t_is_vram_write_d41d[uxn_opcodes_h_l2073_c2_e839] LATENCY=0
-     VAR_result_is_vram_write_FALSE_INPUT_MUX_CONST_REF_RD_uint1_t_opcode_result_t_is_vram_write_d41d_uxn_opcodes_h_l2073_c2_e839_return_output := result.is_vram_write;
-
-     -- BIN_OP_EQ[uxn_opcodes_h_l2092_c11_a96b] LATENCY=0
+     -- BIN_OP_EQ[uxn_opcodes_h_l2096_c21_d2be] LATENCY=0
      -- Inputs
-     BIN_OP_EQ_uxn_opcodes_h_l2092_c11_a96b_left <= VAR_BIN_OP_EQ_uxn_opcodes_h_l2092_c11_a96b_left;
-     BIN_OP_EQ_uxn_opcodes_h_l2092_c11_a96b_right <= VAR_BIN_OP_EQ_uxn_opcodes_h_l2092_c11_a96b_right;
+     BIN_OP_EQ_uxn_opcodes_h_l2096_c21_d2be_left <= VAR_BIN_OP_EQ_uxn_opcodes_h_l2096_c21_d2be_left;
+     BIN_OP_EQ_uxn_opcodes_h_l2096_c21_d2be_right <= VAR_BIN_OP_EQ_uxn_opcodes_h_l2096_c21_d2be_right;
      -- Outputs
-     VAR_BIN_OP_EQ_uxn_opcodes_h_l2092_c11_a96b_return_output := BIN_OP_EQ_uxn_opcodes_h_l2092_c11_a96b_return_output;
+     VAR_BIN_OP_EQ_uxn_opcodes_h_l2096_c21_d2be_return_output := BIN_OP_EQ_uxn_opcodes_h_l2096_c21_d2be_return_output;
 
-     -- BIN_OP_EQ[uxn_opcodes_h_l2097_c21_d476] LATENCY=0
+     -- BIN_OP_EQ[uxn_opcodes_h_l2085_c11_78b1] LATENCY=0
      -- Inputs
-     BIN_OP_EQ_uxn_opcodes_h_l2097_c21_d476_left <= VAR_BIN_OP_EQ_uxn_opcodes_h_l2097_c21_d476_left;
-     BIN_OP_EQ_uxn_opcodes_h_l2097_c21_d476_right <= VAR_BIN_OP_EQ_uxn_opcodes_h_l2097_c21_d476_right;
+     BIN_OP_EQ_uxn_opcodes_h_l2085_c11_78b1_left <= VAR_BIN_OP_EQ_uxn_opcodes_h_l2085_c11_78b1_left;
+     BIN_OP_EQ_uxn_opcodes_h_l2085_c11_78b1_right <= VAR_BIN_OP_EQ_uxn_opcodes_h_l2085_c11_78b1_right;
      -- Outputs
-     VAR_BIN_OP_EQ_uxn_opcodes_h_l2097_c21_d476_return_output := BIN_OP_EQ_uxn_opcodes_h_l2097_c21_d476_return_output;
+     VAR_BIN_OP_EQ_uxn_opcodes_h_l2085_c11_78b1_return_output := BIN_OP_EQ_uxn_opcodes_h_l2085_c11_78b1_return_output;
 
-     -- CONST_REF_RD_uint8_t_opcode_result_t_u8_value_d41d_uxn_opcodes_h_l2092_l2086_l2089_l2073_DUPLICATE_e4ab LATENCY=0
-     VAR_CONST_REF_RD_uint8_t_opcode_result_t_u8_value_d41d_uxn_opcodes_h_l2092_l2086_l2089_l2073_DUPLICATE_e4ab_return_output := result.u8_value;
+     -- CONST_REF_RD_uint4_t_opcode_result_t_stack_address_sp_offset_d41d_uxn_opcodes_h_l2091_l2088_DUPLICATE_89bb LATENCY=0
+     VAR_CONST_REF_RD_uint4_t_opcode_result_t_stack_address_sp_offset_d41d_uxn_opcodes_h_l2091_l2088_DUPLICATE_89bb_return_output := result.stack_address_sp_offset;
 
-     -- result_is_ram_write_FALSE_INPUT_MUX_CONST_REF_RD_uint1_t_opcode_result_t_is_ram_write_d41d[uxn_opcodes_h_l2073_c2_e839] LATENCY=0
-     VAR_result_is_ram_write_FALSE_INPUT_MUX_CONST_REF_RD_uint1_t_opcode_result_t_is_ram_write_d41d_uxn_opcodes_h_l2073_c2_e839_return_output := result.is_ram_write;
-
-     -- BIN_OP_EQ[uxn_opcodes_h_l2086_c11_ed0c] LATENCY=0
+     -- sp_relative_shift[uxn_opcodes_h_l2093_c30_b87f] LATENCY=0
      -- Inputs
-     BIN_OP_EQ_uxn_opcodes_h_l2086_c11_ed0c_left <= VAR_BIN_OP_EQ_uxn_opcodes_h_l2086_c11_ed0c_left;
-     BIN_OP_EQ_uxn_opcodes_h_l2086_c11_ed0c_right <= VAR_BIN_OP_EQ_uxn_opcodes_h_l2086_c11_ed0c_right;
+     sp_relative_shift_uxn_opcodes_h_l2093_c30_b87f_ins <= VAR_sp_relative_shift_uxn_opcodes_h_l2093_c30_b87f_ins;
+     sp_relative_shift_uxn_opcodes_h_l2093_c30_b87f_x <= VAR_sp_relative_shift_uxn_opcodes_h_l2093_c30_b87f_x;
+     sp_relative_shift_uxn_opcodes_h_l2093_c30_b87f_y <= VAR_sp_relative_shift_uxn_opcodes_h_l2093_c30_b87f_y;
      -- Outputs
-     VAR_BIN_OP_EQ_uxn_opcodes_h_l2086_c11_ed0c_return_output := BIN_OP_EQ_uxn_opcodes_h_l2086_c11_ed0c_return_output;
+     VAR_sp_relative_shift_uxn_opcodes_h_l2093_c30_b87f_return_output := sp_relative_shift_uxn_opcodes_h_l2093_c30_b87f_return_output;
 
-     -- BIN_OP_DIV[uxn_opcodes_h_l2097_c35_015a] LATENCY=0
+     -- CONST_REF_RD_uint1_t_opcode_result_t_is_stack_write_d41d_uxn_opcodes_h_l2091_l2085_l2088_DUPLICATE_aa7b LATENCY=0
+     VAR_CONST_REF_RD_uint1_t_opcode_result_t_is_stack_write_d41d_uxn_opcodes_h_l2091_l2085_l2088_DUPLICATE_aa7b_return_output := result.is_stack_write;
+
+     -- CONST_REF_RD_int4_t_opcode_result_t_sp_relative_shift_d41d_uxn_opcodes_h_l2091_l2085_l2088_DUPLICATE_145e LATENCY=0
+     VAR_CONST_REF_RD_int4_t_opcode_result_t_sp_relative_shift_d41d_uxn_opcodes_h_l2091_l2085_l2088_DUPLICATE_145e_return_output := result.sp_relative_shift;
+
+     -- BIN_OP_EQ[uxn_opcodes_h_l2091_c11_bd6d] LATENCY=0
      -- Inputs
-     BIN_OP_DIV_uxn_opcodes_h_l2097_c35_015a_left <= VAR_BIN_OP_DIV_uxn_opcodes_h_l2097_c35_015a_left;
-     BIN_OP_DIV_uxn_opcodes_h_l2097_c35_015a_right <= VAR_BIN_OP_DIV_uxn_opcodes_h_l2097_c35_015a_right;
+     BIN_OP_EQ_uxn_opcodes_h_l2091_c11_bd6d_left <= VAR_BIN_OP_EQ_uxn_opcodes_h_l2091_c11_bd6d_left;
+     BIN_OP_EQ_uxn_opcodes_h_l2091_c11_bd6d_right <= VAR_BIN_OP_EQ_uxn_opcodes_h_l2091_c11_bd6d_right;
      -- Outputs
-     VAR_BIN_OP_DIV_uxn_opcodes_h_l2097_c35_015a_return_output := BIN_OP_DIV_uxn_opcodes_h_l2097_c35_015a_return_output;
+     VAR_BIN_OP_EQ_uxn_opcodes_h_l2091_c11_bd6d_return_output := BIN_OP_EQ_uxn_opcodes_h_l2091_c11_bd6d_return_output;
 
-     -- result_is_pc_updated_FALSE_INPUT_MUX_CONST_REF_RD_uint1_t_opcode_result_t_is_pc_updated_d41d[uxn_opcodes_h_l2073_c2_e839] LATENCY=0
-     VAR_result_is_pc_updated_FALSE_INPUT_MUX_CONST_REF_RD_uint1_t_opcode_result_t_is_pc_updated_d41d_uxn_opcodes_h_l2073_c2_e839_return_output := result.is_pc_updated;
+     -- result_is_stack_index_flipped_FALSE_INPUT_MUX_CONST_REF_RD_uint1_t_opcode_result_t_is_stack_index_flipped_d41d[uxn_opcodes_h_l2072_c2_19a1] LATENCY=0
+     VAR_result_is_stack_index_flipped_FALSE_INPUT_MUX_CONST_REF_RD_uint1_t_opcode_result_t_is_stack_index_flipped_d41d_uxn_opcodes_h_l2072_c2_19a1_return_output := result.is_stack_index_flipped;
 
-     -- result_is_stack_index_flipped_FALSE_INPUT_MUX_CONST_REF_RD_uint1_t_opcode_result_t_is_stack_index_flipped_d41d[uxn_opcodes_h_l2073_c2_e839] LATENCY=0
-     VAR_result_is_stack_index_flipped_FALSE_INPUT_MUX_CONST_REF_RD_uint1_t_opcode_result_t_is_stack_index_flipped_d41d_uxn_opcodes_h_l2073_c2_e839_return_output := result.is_stack_index_flipped;
-
-     -- CONST_REF_RD_int4_t_opcode_result_t_sp_relative_shift_d41d_uxn_opcodes_h_l2092_l2086_l2089_DUPLICATE_bf7a LATENCY=0
-     VAR_CONST_REF_RD_int4_t_opcode_result_t_sp_relative_shift_d41d_uxn_opcodes_h_l2092_l2086_l2089_DUPLICATE_bf7a_return_output := result.sp_relative_shift;
-
-     -- CONST_REF_RD_uint1_t_opcode_result_t_is_opc_done_d41d_uxn_opcodes_h_l2092_l2086_l2089_DUPLICATE_0d94 LATENCY=0
-     VAR_CONST_REF_RD_uint1_t_opcode_result_t_is_opc_done_d41d_uxn_opcodes_h_l2092_l2086_l2089_DUPLICATE_0d94_return_output := result.is_opc_done;
+     -- result_is_vram_write_FALSE_INPUT_MUX_CONST_REF_RD_uint1_t_opcode_result_t_is_vram_write_d41d[uxn_opcodes_h_l2072_c2_19a1] LATENCY=0
+     VAR_result_is_vram_write_FALSE_INPUT_MUX_CONST_REF_RD_uint1_t_opcode_result_t_is_vram_write_d41d_uxn_opcodes_h_l2072_c2_19a1_return_output := result.is_vram_write;
 
      -- Submodule level 1
-     VAR_MUX_uxn_opcodes_h_l2097_c21_6fcb_iffalse := VAR_BIN_OP_DIV_uxn_opcodes_h_l2097_c35_015a_return_output;
-     VAR_n8_MUX_uxn_opcodes_h_l2073_c2_e839_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2073_c6_1d4c_return_output;
-     VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2073_c2_e839_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2073_c6_1d4c_return_output;
-     VAR_result_is_pc_updated_MUX_uxn_opcodes_h_l2073_c2_e839_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2073_c6_1d4c_return_output;
-     VAR_result_is_ram_write_MUX_uxn_opcodes_h_l2073_c2_e839_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2073_c6_1d4c_return_output;
-     VAR_result_is_stack_index_flipped_MUX_uxn_opcodes_h_l2073_c2_e839_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2073_c6_1d4c_return_output;
-     VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2073_c2_e839_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2073_c6_1d4c_return_output;
-     VAR_result_is_vram_write_MUX_uxn_opcodes_h_l2073_c2_e839_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2073_c6_1d4c_return_output;
-     VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2073_c2_e839_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2073_c6_1d4c_return_output;
-     VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2073_c2_e839_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2073_c6_1d4c_return_output;
-     VAR_result_u8_value_MUX_uxn_opcodes_h_l2073_c2_e839_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2073_c6_1d4c_return_output;
-     VAR_t8_MUX_uxn_opcodes_h_l2073_c2_e839_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2073_c6_1d4c_return_output;
-     VAR_n8_MUX_uxn_opcodes_h_l2086_c7_aaf1_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2086_c11_ed0c_return_output;
-     VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2086_c7_aaf1_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2086_c11_ed0c_return_output;
-     VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2086_c7_aaf1_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2086_c11_ed0c_return_output;
-     VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2086_c7_aaf1_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2086_c11_ed0c_return_output;
-     VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2086_c7_aaf1_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2086_c11_ed0c_return_output;
-     VAR_result_u8_value_MUX_uxn_opcodes_h_l2086_c7_aaf1_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2086_c11_ed0c_return_output;
-     VAR_t8_MUX_uxn_opcodes_h_l2086_c7_aaf1_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2086_c11_ed0c_return_output;
-     VAR_n8_MUX_uxn_opcodes_h_l2089_c7_86ab_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2089_c11_3e7c_return_output;
-     VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2089_c7_86ab_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2089_c11_3e7c_return_output;
-     VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2089_c7_86ab_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2089_c11_3e7c_return_output;
-     VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2089_c7_86ab_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2089_c11_3e7c_return_output;
-     VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2089_c7_86ab_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2089_c11_3e7c_return_output;
-     VAR_result_u8_value_MUX_uxn_opcodes_h_l2089_c7_86ab_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2089_c11_3e7c_return_output;
-     VAR_t8_MUX_uxn_opcodes_h_l2089_c7_86ab_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2089_c11_3e7c_return_output;
-     VAR_n8_MUX_uxn_opcodes_h_l2092_c7_d72d_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2092_c11_a96b_return_output;
-     VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2092_c7_d72d_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2092_c11_a96b_return_output;
-     VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2092_c7_d72d_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2092_c11_a96b_return_output;
-     VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2092_c7_d72d_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2092_c11_a96b_return_output;
-     VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2092_c7_d72d_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2092_c11_a96b_return_output;
-     VAR_result_u8_value_MUX_uxn_opcodes_h_l2092_c7_d72d_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2092_c11_a96b_return_output;
-     VAR_MUX_uxn_opcodes_h_l2097_c21_6fcb_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2097_c21_d476_return_output;
-     VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2086_c7_aaf1_iftrue := VAR_CONST_REF_RD_int4_t_opcode_result_t_sp_relative_shift_d41d_uxn_opcodes_h_l2092_l2086_l2089_DUPLICATE_bf7a_return_output;
-     VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2089_c7_86ab_iftrue := VAR_CONST_REF_RD_int4_t_opcode_result_t_sp_relative_shift_d41d_uxn_opcodes_h_l2092_l2086_l2089_DUPLICATE_bf7a_return_output;
-     VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2092_c7_d72d_iffalse := VAR_CONST_REF_RD_int4_t_opcode_result_t_sp_relative_shift_d41d_uxn_opcodes_h_l2092_l2086_l2089_DUPLICATE_bf7a_return_output;
-     VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2086_c7_aaf1_iftrue := VAR_CONST_REF_RD_uint1_t_opcode_result_t_is_opc_done_d41d_uxn_opcodes_h_l2092_l2086_l2089_DUPLICATE_0d94_return_output;
-     VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2089_c7_86ab_iftrue := VAR_CONST_REF_RD_uint1_t_opcode_result_t_is_opc_done_d41d_uxn_opcodes_h_l2092_l2086_l2089_DUPLICATE_0d94_return_output;
-     VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2092_c7_d72d_iffalse := VAR_CONST_REF_RD_uint1_t_opcode_result_t_is_opc_done_d41d_uxn_opcodes_h_l2092_l2086_l2089_DUPLICATE_0d94_return_output;
-     VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2086_c7_aaf1_iftrue := VAR_CONST_REF_RD_uint1_t_opcode_result_t_is_stack_write_d41d_uxn_opcodes_h_l2092_l2086_l2089_DUPLICATE_c9b7_return_output;
-     VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2089_c7_86ab_iftrue := VAR_CONST_REF_RD_uint1_t_opcode_result_t_is_stack_write_d41d_uxn_opcodes_h_l2092_l2086_l2089_DUPLICATE_c9b7_return_output;
-     VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2092_c7_d72d_iffalse := VAR_CONST_REF_RD_uint1_t_opcode_result_t_is_stack_write_d41d_uxn_opcodes_h_l2092_l2086_l2089_DUPLICATE_c9b7_return_output;
-     VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2089_c7_86ab_iftrue := VAR_CONST_REF_RD_uint4_t_opcode_result_t_stack_address_sp_offset_d41d_uxn_opcodes_h_l2092_l2089_DUPLICATE_6961_return_output;
-     VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2092_c7_d72d_iffalse := VAR_CONST_REF_RD_uint4_t_opcode_result_t_stack_address_sp_offset_d41d_uxn_opcodes_h_l2092_l2089_DUPLICATE_6961_return_output;
-     VAR_result_u8_value_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue := VAR_CONST_REF_RD_uint8_t_opcode_result_t_u8_value_d41d_uxn_opcodes_h_l2092_l2086_l2089_l2073_DUPLICATE_e4ab_return_output;
-     VAR_result_u8_value_MUX_uxn_opcodes_h_l2086_c7_aaf1_iftrue := VAR_CONST_REF_RD_uint8_t_opcode_result_t_u8_value_d41d_uxn_opcodes_h_l2092_l2086_l2089_l2073_DUPLICATE_e4ab_return_output;
-     VAR_result_u8_value_MUX_uxn_opcodes_h_l2089_c7_86ab_iftrue := VAR_CONST_REF_RD_uint8_t_opcode_result_t_u8_value_d41d_uxn_opcodes_h_l2092_l2086_l2089_l2073_DUPLICATE_e4ab_return_output;
-     VAR_result_u8_value_MUX_uxn_opcodes_h_l2092_c7_d72d_iffalse := VAR_CONST_REF_RD_uint8_t_opcode_result_t_u8_value_d41d_uxn_opcodes_h_l2092_l2086_l2089_l2073_DUPLICATE_e4ab_return_output;
-     VAR_result_is_pc_updated_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse := VAR_result_is_pc_updated_FALSE_INPUT_MUX_CONST_REF_RD_uint1_t_opcode_result_t_is_pc_updated_d41d_uxn_opcodes_h_l2073_c2_e839_return_output;
-     VAR_result_is_ram_write_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse := VAR_result_is_ram_write_FALSE_INPUT_MUX_CONST_REF_RD_uint1_t_opcode_result_t_is_ram_write_d41d_uxn_opcodes_h_l2073_c2_e839_return_output;
-     VAR_result_is_stack_index_flipped_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse := VAR_result_is_stack_index_flipped_FALSE_INPUT_MUX_CONST_REF_RD_uint1_t_opcode_result_t_is_stack_index_flipped_d41d_uxn_opcodes_h_l2073_c2_e839_return_output;
-     VAR_result_is_vram_write_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse := VAR_result_is_vram_write_FALSE_INPUT_MUX_CONST_REF_RD_uint1_t_opcode_result_t_is_vram_write_d41d_uxn_opcodes_h_l2073_c2_e839_return_output;
-     VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2092_c7_d72d_iftrue := VAR_sp_relative_shift_uxn_opcodes_h_l2094_c30_af37_return_output;
-     -- MUX[uxn_opcodes_h_l2097_c21_6fcb] LATENCY=0
+     VAR_MUX_uxn_opcodes_h_l2096_c21_82f9_iffalse := VAR_BIN_OP_DIV_uxn_opcodes_h_l2096_c35_30ea_return_output;
+     VAR_n8_MUX_uxn_opcodes_h_l2072_c2_19a1_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2072_c6_16c9_return_output;
+     VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2072_c2_19a1_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2072_c6_16c9_return_output;
+     VAR_result_is_pc_updated_MUX_uxn_opcodes_h_l2072_c2_19a1_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2072_c6_16c9_return_output;
+     VAR_result_is_ram_write_MUX_uxn_opcodes_h_l2072_c2_19a1_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2072_c6_16c9_return_output;
+     VAR_result_is_stack_index_flipped_MUX_uxn_opcodes_h_l2072_c2_19a1_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2072_c6_16c9_return_output;
+     VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2072_c2_19a1_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2072_c6_16c9_return_output;
+     VAR_result_is_vram_write_MUX_uxn_opcodes_h_l2072_c2_19a1_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2072_c6_16c9_return_output;
+     VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2072_c2_19a1_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2072_c6_16c9_return_output;
+     VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2072_c2_19a1_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2072_c6_16c9_return_output;
+     VAR_result_u8_value_MUX_uxn_opcodes_h_l2072_c2_19a1_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2072_c6_16c9_return_output;
+     VAR_t8_MUX_uxn_opcodes_h_l2072_c2_19a1_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2072_c6_16c9_return_output;
+     VAR_n8_MUX_uxn_opcodes_h_l2085_c7_46f5_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2085_c11_78b1_return_output;
+     VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2085_c7_46f5_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2085_c11_78b1_return_output;
+     VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2085_c7_46f5_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2085_c11_78b1_return_output;
+     VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2085_c7_46f5_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2085_c11_78b1_return_output;
+     VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2085_c7_46f5_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2085_c11_78b1_return_output;
+     VAR_result_u8_value_MUX_uxn_opcodes_h_l2085_c7_46f5_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2085_c11_78b1_return_output;
+     VAR_t8_MUX_uxn_opcodes_h_l2085_c7_46f5_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2085_c11_78b1_return_output;
+     VAR_n8_MUX_uxn_opcodes_h_l2088_c7_987b_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2088_c11_d215_return_output;
+     VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2088_c7_987b_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2088_c11_d215_return_output;
+     VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2088_c7_987b_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2088_c11_d215_return_output;
+     VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2088_c7_987b_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2088_c11_d215_return_output;
+     VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2088_c7_987b_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2088_c11_d215_return_output;
+     VAR_result_u8_value_MUX_uxn_opcodes_h_l2088_c7_987b_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2088_c11_d215_return_output;
+     VAR_t8_MUX_uxn_opcodes_h_l2088_c7_987b_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2088_c11_d215_return_output;
+     VAR_n8_MUX_uxn_opcodes_h_l2091_c7_694e_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2091_c11_bd6d_return_output;
+     VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2091_c7_694e_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2091_c11_bd6d_return_output;
+     VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2091_c7_694e_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2091_c11_bd6d_return_output;
+     VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2091_c7_694e_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2091_c11_bd6d_return_output;
+     VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2091_c7_694e_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2091_c11_bd6d_return_output;
+     VAR_result_u8_value_MUX_uxn_opcodes_h_l2091_c7_694e_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2091_c11_bd6d_return_output;
+     VAR_MUX_uxn_opcodes_h_l2096_c21_82f9_cond := VAR_BIN_OP_EQ_uxn_opcodes_h_l2096_c21_d2be_return_output;
+     VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2085_c7_46f5_iftrue := VAR_CONST_REF_RD_int4_t_opcode_result_t_sp_relative_shift_d41d_uxn_opcodes_h_l2091_l2085_l2088_DUPLICATE_145e_return_output;
+     VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2088_c7_987b_iftrue := VAR_CONST_REF_RD_int4_t_opcode_result_t_sp_relative_shift_d41d_uxn_opcodes_h_l2091_l2085_l2088_DUPLICATE_145e_return_output;
+     VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2091_c7_694e_iffalse := VAR_CONST_REF_RD_int4_t_opcode_result_t_sp_relative_shift_d41d_uxn_opcodes_h_l2091_l2085_l2088_DUPLICATE_145e_return_output;
+     VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2085_c7_46f5_iftrue := VAR_CONST_REF_RD_uint1_t_opcode_result_t_is_opc_done_d41d_uxn_opcodes_h_l2091_l2085_l2088_DUPLICATE_2cc4_return_output;
+     VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2088_c7_987b_iftrue := VAR_CONST_REF_RD_uint1_t_opcode_result_t_is_opc_done_d41d_uxn_opcodes_h_l2091_l2085_l2088_DUPLICATE_2cc4_return_output;
+     VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2091_c7_694e_iffalse := VAR_CONST_REF_RD_uint1_t_opcode_result_t_is_opc_done_d41d_uxn_opcodes_h_l2091_l2085_l2088_DUPLICATE_2cc4_return_output;
+     VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2085_c7_46f5_iftrue := VAR_CONST_REF_RD_uint1_t_opcode_result_t_is_stack_write_d41d_uxn_opcodes_h_l2091_l2085_l2088_DUPLICATE_aa7b_return_output;
+     VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2088_c7_987b_iftrue := VAR_CONST_REF_RD_uint1_t_opcode_result_t_is_stack_write_d41d_uxn_opcodes_h_l2091_l2085_l2088_DUPLICATE_aa7b_return_output;
+     VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2091_c7_694e_iffalse := VAR_CONST_REF_RD_uint1_t_opcode_result_t_is_stack_write_d41d_uxn_opcodes_h_l2091_l2085_l2088_DUPLICATE_aa7b_return_output;
+     VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2088_c7_987b_iftrue := VAR_CONST_REF_RD_uint4_t_opcode_result_t_stack_address_sp_offset_d41d_uxn_opcodes_h_l2091_l2088_DUPLICATE_89bb_return_output;
+     VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2091_c7_694e_iffalse := VAR_CONST_REF_RD_uint4_t_opcode_result_t_stack_address_sp_offset_d41d_uxn_opcodes_h_l2091_l2088_DUPLICATE_89bb_return_output;
+     VAR_result_u8_value_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue := VAR_CONST_REF_RD_uint8_t_opcode_result_t_u8_value_d41d_uxn_opcodes_h_l2091_l2085_l2088_l2072_DUPLICATE_8c3d_return_output;
+     VAR_result_u8_value_MUX_uxn_opcodes_h_l2085_c7_46f5_iftrue := VAR_CONST_REF_RD_uint8_t_opcode_result_t_u8_value_d41d_uxn_opcodes_h_l2091_l2085_l2088_l2072_DUPLICATE_8c3d_return_output;
+     VAR_result_u8_value_MUX_uxn_opcodes_h_l2088_c7_987b_iftrue := VAR_CONST_REF_RD_uint8_t_opcode_result_t_u8_value_d41d_uxn_opcodes_h_l2091_l2085_l2088_l2072_DUPLICATE_8c3d_return_output;
+     VAR_result_u8_value_MUX_uxn_opcodes_h_l2091_c7_694e_iffalse := VAR_CONST_REF_RD_uint8_t_opcode_result_t_u8_value_d41d_uxn_opcodes_h_l2091_l2085_l2088_l2072_DUPLICATE_8c3d_return_output;
+     VAR_result_is_pc_updated_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse := VAR_result_is_pc_updated_FALSE_INPUT_MUX_CONST_REF_RD_uint1_t_opcode_result_t_is_pc_updated_d41d_uxn_opcodes_h_l2072_c2_19a1_return_output;
+     VAR_result_is_ram_write_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse := VAR_result_is_ram_write_FALSE_INPUT_MUX_CONST_REF_RD_uint1_t_opcode_result_t_is_ram_write_d41d_uxn_opcodes_h_l2072_c2_19a1_return_output;
+     VAR_result_is_stack_index_flipped_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse := VAR_result_is_stack_index_flipped_FALSE_INPUT_MUX_CONST_REF_RD_uint1_t_opcode_result_t_is_stack_index_flipped_d41d_uxn_opcodes_h_l2072_c2_19a1_return_output;
+     VAR_result_is_vram_write_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse := VAR_result_is_vram_write_FALSE_INPUT_MUX_CONST_REF_RD_uint1_t_opcode_result_t_is_vram_write_d41d_uxn_opcodes_h_l2072_c2_19a1_return_output;
+     VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2091_c7_694e_iftrue := VAR_sp_relative_shift_uxn_opcodes_h_l2093_c30_b87f_return_output;
+     -- t8_MUX[uxn_opcodes_h_l2088_c7_987b] LATENCY=0
      -- Inputs
-     MUX_uxn_opcodes_h_l2097_c21_6fcb_cond <= VAR_MUX_uxn_opcodes_h_l2097_c21_6fcb_cond;
-     MUX_uxn_opcodes_h_l2097_c21_6fcb_iftrue <= VAR_MUX_uxn_opcodes_h_l2097_c21_6fcb_iftrue;
-     MUX_uxn_opcodes_h_l2097_c21_6fcb_iffalse <= VAR_MUX_uxn_opcodes_h_l2097_c21_6fcb_iffalse;
+     t8_MUX_uxn_opcodes_h_l2088_c7_987b_cond <= VAR_t8_MUX_uxn_opcodes_h_l2088_c7_987b_cond;
+     t8_MUX_uxn_opcodes_h_l2088_c7_987b_iftrue <= VAR_t8_MUX_uxn_opcodes_h_l2088_c7_987b_iftrue;
+     t8_MUX_uxn_opcodes_h_l2088_c7_987b_iffalse <= VAR_t8_MUX_uxn_opcodes_h_l2088_c7_987b_iffalse;
      -- Outputs
-     VAR_MUX_uxn_opcodes_h_l2097_c21_6fcb_return_output := MUX_uxn_opcodes_h_l2097_c21_6fcb_return_output;
+     VAR_t8_MUX_uxn_opcodes_h_l2088_c7_987b_return_output := t8_MUX_uxn_opcodes_h_l2088_c7_987b_return_output;
 
-     -- result_is_pc_updated_MUX[uxn_opcodes_h_l2073_c2_e839] LATENCY=0
+     -- result_is_opc_done_MUX[uxn_opcodes_h_l2091_c7_694e] LATENCY=0
      -- Inputs
-     result_is_pc_updated_MUX_uxn_opcodes_h_l2073_c2_e839_cond <= VAR_result_is_pc_updated_MUX_uxn_opcodes_h_l2073_c2_e839_cond;
-     result_is_pc_updated_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue <= VAR_result_is_pc_updated_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue;
-     result_is_pc_updated_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse <= VAR_result_is_pc_updated_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse;
+     result_is_opc_done_MUX_uxn_opcodes_h_l2091_c7_694e_cond <= VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2091_c7_694e_cond;
+     result_is_opc_done_MUX_uxn_opcodes_h_l2091_c7_694e_iftrue <= VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2091_c7_694e_iftrue;
+     result_is_opc_done_MUX_uxn_opcodes_h_l2091_c7_694e_iffalse <= VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2091_c7_694e_iffalse;
      -- Outputs
-     VAR_result_is_pc_updated_MUX_uxn_opcodes_h_l2073_c2_e839_return_output := result_is_pc_updated_MUX_uxn_opcodes_h_l2073_c2_e839_return_output;
+     VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2091_c7_694e_return_output := result_is_opc_done_MUX_uxn_opcodes_h_l2091_c7_694e_return_output;
 
-     -- result_is_stack_write_MUX[uxn_opcodes_h_l2092_c7_d72d] LATENCY=0
+     -- result_is_stack_write_MUX[uxn_opcodes_h_l2091_c7_694e] LATENCY=0
      -- Inputs
-     result_is_stack_write_MUX_uxn_opcodes_h_l2092_c7_d72d_cond <= VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2092_c7_d72d_cond;
-     result_is_stack_write_MUX_uxn_opcodes_h_l2092_c7_d72d_iftrue <= VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2092_c7_d72d_iftrue;
-     result_is_stack_write_MUX_uxn_opcodes_h_l2092_c7_d72d_iffalse <= VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2092_c7_d72d_iffalse;
+     result_is_stack_write_MUX_uxn_opcodes_h_l2091_c7_694e_cond <= VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2091_c7_694e_cond;
+     result_is_stack_write_MUX_uxn_opcodes_h_l2091_c7_694e_iftrue <= VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2091_c7_694e_iftrue;
+     result_is_stack_write_MUX_uxn_opcodes_h_l2091_c7_694e_iffalse <= VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2091_c7_694e_iffalse;
      -- Outputs
-     VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2092_c7_d72d_return_output := result_is_stack_write_MUX_uxn_opcodes_h_l2092_c7_d72d_return_output;
+     VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2091_c7_694e_return_output := result_is_stack_write_MUX_uxn_opcodes_h_l2091_c7_694e_return_output;
 
-     -- result_stack_address_sp_offset_MUX[uxn_opcodes_h_l2092_c7_d72d] LATENCY=0
+     -- result_is_vram_write_MUX[uxn_opcodes_h_l2072_c2_19a1] LATENCY=0
      -- Inputs
-     result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2092_c7_d72d_cond <= VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2092_c7_d72d_cond;
-     result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2092_c7_d72d_iftrue <= VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2092_c7_d72d_iftrue;
-     result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2092_c7_d72d_iffalse <= VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2092_c7_d72d_iffalse;
+     result_is_vram_write_MUX_uxn_opcodes_h_l2072_c2_19a1_cond <= VAR_result_is_vram_write_MUX_uxn_opcodes_h_l2072_c2_19a1_cond;
+     result_is_vram_write_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue <= VAR_result_is_vram_write_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue;
+     result_is_vram_write_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse <= VAR_result_is_vram_write_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse;
      -- Outputs
-     VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2092_c7_d72d_return_output := result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2092_c7_d72d_return_output;
+     VAR_result_is_vram_write_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output := result_is_vram_write_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output;
 
-     -- n8_MUX[uxn_opcodes_h_l2092_c7_d72d] LATENCY=0
+     -- result_is_pc_updated_MUX[uxn_opcodes_h_l2072_c2_19a1] LATENCY=0
      -- Inputs
-     n8_MUX_uxn_opcodes_h_l2092_c7_d72d_cond <= VAR_n8_MUX_uxn_opcodes_h_l2092_c7_d72d_cond;
-     n8_MUX_uxn_opcodes_h_l2092_c7_d72d_iftrue <= VAR_n8_MUX_uxn_opcodes_h_l2092_c7_d72d_iftrue;
-     n8_MUX_uxn_opcodes_h_l2092_c7_d72d_iffalse <= VAR_n8_MUX_uxn_opcodes_h_l2092_c7_d72d_iffalse;
+     result_is_pc_updated_MUX_uxn_opcodes_h_l2072_c2_19a1_cond <= VAR_result_is_pc_updated_MUX_uxn_opcodes_h_l2072_c2_19a1_cond;
+     result_is_pc_updated_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue <= VAR_result_is_pc_updated_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue;
+     result_is_pc_updated_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse <= VAR_result_is_pc_updated_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse;
      -- Outputs
-     VAR_n8_MUX_uxn_opcodes_h_l2092_c7_d72d_return_output := n8_MUX_uxn_opcodes_h_l2092_c7_d72d_return_output;
+     VAR_result_is_pc_updated_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output := result_is_pc_updated_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output;
 
-     -- result_is_ram_write_MUX[uxn_opcodes_h_l2073_c2_e839] LATENCY=0
+     -- result_stack_address_sp_offset_MUX[uxn_opcodes_h_l2091_c7_694e] LATENCY=0
      -- Inputs
-     result_is_ram_write_MUX_uxn_opcodes_h_l2073_c2_e839_cond <= VAR_result_is_ram_write_MUX_uxn_opcodes_h_l2073_c2_e839_cond;
-     result_is_ram_write_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue <= VAR_result_is_ram_write_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue;
-     result_is_ram_write_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse <= VAR_result_is_ram_write_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse;
+     result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2091_c7_694e_cond <= VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2091_c7_694e_cond;
+     result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2091_c7_694e_iftrue <= VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2091_c7_694e_iftrue;
+     result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2091_c7_694e_iffalse <= VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2091_c7_694e_iffalse;
      -- Outputs
-     VAR_result_is_ram_write_MUX_uxn_opcodes_h_l2073_c2_e839_return_output := result_is_ram_write_MUX_uxn_opcodes_h_l2073_c2_e839_return_output;
+     VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2091_c7_694e_return_output := result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2091_c7_694e_return_output;
 
-     -- result_sp_relative_shift_MUX[uxn_opcodes_h_l2092_c7_d72d] LATENCY=0
+     -- MUX[uxn_opcodes_h_l2096_c21_82f9] LATENCY=0
      -- Inputs
-     result_sp_relative_shift_MUX_uxn_opcodes_h_l2092_c7_d72d_cond <= VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2092_c7_d72d_cond;
-     result_sp_relative_shift_MUX_uxn_opcodes_h_l2092_c7_d72d_iftrue <= VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2092_c7_d72d_iftrue;
-     result_sp_relative_shift_MUX_uxn_opcodes_h_l2092_c7_d72d_iffalse <= VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2092_c7_d72d_iffalse;
+     MUX_uxn_opcodes_h_l2096_c21_82f9_cond <= VAR_MUX_uxn_opcodes_h_l2096_c21_82f9_cond;
+     MUX_uxn_opcodes_h_l2096_c21_82f9_iftrue <= VAR_MUX_uxn_opcodes_h_l2096_c21_82f9_iftrue;
+     MUX_uxn_opcodes_h_l2096_c21_82f9_iffalse <= VAR_MUX_uxn_opcodes_h_l2096_c21_82f9_iffalse;
      -- Outputs
-     VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2092_c7_d72d_return_output := result_sp_relative_shift_MUX_uxn_opcodes_h_l2092_c7_d72d_return_output;
+     VAR_MUX_uxn_opcodes_h_l2096_c21_82f9_return_output := MUX_uxn_opcodes_h_l2096_c21_82f9_return_output;
 
-     -- t8_MUX[uxn_opcodes_h_l2089_c7_86ab] LATENCY=0
+     -- result_is_ram_write_MUX[uxn_opcodes_h_l2072_c2_19a1] LATENCY=0
      -- Inputs
-     t8_MUX_uxn_opcodes_h_l2089_c7_86ab_cond <= VAR_t8_MUX_uxn_opcodes_h_l2089_c7_86ab_cond;
-     t8_MUX_uxn_opcodes_h_l2089_c7_86ab_iftrue <= VAR_t8_MUX_uxn_opcodes_h_l2089_c7_86ab_iftrue;
-     t8_MUX_uxn_opcodes_h_l2089_c7_86ab_iffalse <= VAR_t8_MUX_uxn_opcodes_h_l2089_c7_86ab_iffalse;
+     result_is_ram_write_MUX_uxn_opcodes_h_l2072_c2_19a1_cond <= VAR_result_is_ram_write_MUX_uxn_opcodes_h_l2072_c2_19a1_cond;
+     result_is_ram_write_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue <= VAR_result_is_ram_write_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue;
+     result_is_ram_write_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse <= VAR_result_is_ram_write_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse;
      -- Outputs
-     VAR_t8_MUX_uxn_opcodes_h_l2089_c7_86ab_return_output := t8_MUX_uxn_opcodes_h_l2089_c7_86ab_return_output;
+     VAR_result_is_ram_write_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output := result_is_ram_write_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output;
 
-     -- result_is_stack_index_flipped_MUX[uxn_opcodes_h_l2073_c2_e839] LATENCY=0
+     -- n8_MUX[uxn_opcodes_h_l2091_c7_694e] LATENCY=0
      -- Inputs
-     result_is_stack_index_flipped_MUX_uxn_opcodes_h_l2073_c2_e839_cond <= VAR_result_is_stack_index_flipped_MUX_uxn_opcodes_h_l2073_c2_e839_cond;
-     result_is_stack_index_flipped_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue <= VAR_result_is_stack_index_flipped_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue;
-     result_is_stack_index_flipped_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse <= VAR_result_is_stack_index_flipped_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse;
+     n8_MUX_uxn_opcodes_h_l2091_c7_694e_cond <= VAR_n8_MUX_uxn_opcodes_h_l2091_c7_694e_cond;
+     n8_MUX_uxn_opcodes_h_l2091_c7_694e_iftrue <= VAR_n8_MUX_uxn_opcodes_h_l2091_c7_694e_iftrue;
+     n8_MUX_uxn_opcodes_h_l2091_c7_694e_iffalse <= VAR_n8_MUX_uxn_opcodes_h_l2091_c7_694e_iffalse;
      -- Outputs
-     VAR_result_is_stack_index_flipped_MUX_uxn_opcodes_h_l2073_c2_e839_return_output := result_is_stack_index_flipped_MUX_uxn_opcodes_h_l2073_c2_e839_return_output;
+     VAR_n8_MUX_uxn_opcodes_h_l2091_c7_694e_return_output := n8_MUX_uxn_opcodes_h_l2091_c7_694e_return_output;
 
-     -- result_is_vram_write_MUX[uxn_opcodes_h_l2073_c2_e839] LATENCY=0
+     -- result_sp_relative_shift_MUX[uxn_opcodes_h_l2091_c7_694e] LATENCY=0
      -- Inputs
-     result_is_vram_write_MUX_uxn_opcodes_h_l2073_c2_e839_cond <= VAR_result_is_vram_write_MUX_uxn_opcodes_h_l2073_c2_e839_cond;
-     result_is_vram_write_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue <= VAR_result_is_vram_write_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue;
-     result_is_vram_write_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse <= VAR_result_is_vram_write_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse;
+     result_sp_relative_shift_MUX_uxn_opcodes_h_l2091_c7_694e_cond <= VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2091_c7_694e_cond;
+     result_sp_relative_shift_MUX_uxn_opcodes_h_l2091_c7_694e_iftrue <= VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2091_c7_694e_iftrue;
+     result_sp_relative_shift_MUX_uxn_opcodes_h_l2091_c7_694e_iffalse <= VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2091_c7_694e_iffalse;
      -- Outputs
-     VAR_result_is_vram_write_MUX_uxn_opcodes_h_l2073_c2_e839_return_output := result_is_vram_write_MUX_uxn_opcodes_h_l2073_c2_e839_return_output;
+     VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2091_c7_694e_return_output := result_sp_relative_shift_MUX_uxn_opcodes_h_l2091_c7_694e_return_output;
 
-     -- result_is_opc_done_MUX[uxn_opcodes_h_l2092_c7_d72d] LATENCY=0
+     -- result_is_stack_index_flipped_MUX[uxn_opcodes_h_l2072_c2_19a1] LATENCY=0
      -- Inputs
-     result_is_opc_done_MUX_uxn_opcodes_h_l2092_c7_d72d_cond <= VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2092_c7_d72d_cond;
-     result_is_opc_done_MUX_uxn_opcodes_h_l2092_c7_d72d_iftrue <= VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2092_c7_d72d_iftrue;
-     result_is_opc_done_MUX_uxn_opcodes_h_l2092_c7_d72d_iffalse <= VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2092_c7_d72d_iffalse;
+     result_is_stack_index_flipped_MUX_uxn_opcodes_h_l2072_c2_19a1_cond <= VAR_result_is_stack_index_flipped_MUX_uxn_opcodes_h_l2072_c2_19a1_cond;
+     result_is_stack_index_flipped_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue <= VAR_result_is_stack_index_flipped_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue;
+     result_is_stack_index_flipped_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse <= VAR_result_is_stack_index_flipped_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse;
      -- Outputs
-     VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2092_c7_d72d_return_output := result_is_opc_done_MUX_uxn_opcodes_h_l2092_c7_d72d_return_output;
+     VAR_result_is_stack_index_flipped_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output := result_is_stack_index_flipped_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output;
 
      -- Submodule level 2
-     VAR_result_u8_value_MUX_uxn_opcodes_h_l2092_c7_d72d_iftrue := VAR_MUX_uxn_opcodes_h_l2097_c21_6fcb_return_output;
-     VAR_n8_MUX_uxn_opcodes_h_l2089_c7_86ab_iffalse := VAR_n8_MUX_uxn_opcodes_h_l2092_c7_d72d_return_output;
-     VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2089_c7_86ab_iffalse := VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2092_c7_d72d_return_output;
-     VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2089_c7_86ab_iffalse := VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2092_c7_d72d_return_output;
-     VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2089_c7_86ab_iffalse := VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2092_c7_d72d_return_output;
-     VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2089_c7_86ab_iffalse := VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2092_c7_d72d_return_output;
-     VAR_t8_MUX_uxn_opcodes_h_l2086_c7_aaf1_iffalse := VAR_t8_MUX_uxn_opcodes_h_l2089_c7_86ab_return_output;
-     -- result_is_opc_done_MUX[uxn_opcodes_h_l2089_c7_86ab] LATENCY=0
+     VAR_result_u8_value_MUX_uxn_opcodes_h_l2091_c7_694e_iftrue := VAR_MUX_uxn_opcodes_h_l2096_c21_82f9_return_output;
+     VAR_n8_MUX_uxn_opcodes_h_l2088_c7_987b_iffalse := VAR_n8_MUX_uxn_opcodes_h_l2091_c7_694e_return_output;
+     VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2088_c7_987b_iffalse := VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2091_c7_694e_return_output;
+     VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2088_c7_987b_iffalse := VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2091_c7_694e_return_output;
+     VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2088_c7_987b_iffalse := VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2091_c7_694e_return_output;
+     VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2088_c7_987b_iffalse := VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2091_c7_694e_return_output;
+     VAR_t8_MUX_uxn_opcodes_h_l2085_c7_46f5_iffalse := VAR_t8_MUX_uxn_opcodes_h_l2088_c7_987b_return_output;
+     -- t8_MUX[uxn_opcodes_h_l2085_c7_46f5] LATENCY=0
      -- Inputs
-     result_is_opc_done_MUX_uxn_opcodes_h_l2089_c7_86ab_cond <= VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2089_c7_86ab_cond;
-     result_is_opc_done_MUX_uxn_opcodes_h_l2089_c7_86ab_iftrue <= VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2089_c7_86ab_iftrue;
-     result_is_opc_done_MUX_uxn_opcodes_h_l2089_c7_86ab_iffalse <= VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2089_c7_86ab_iffalse;
+     t8_MUX_uxn_opcodes_h_l2085_c7_46f5_cond <= VAR_t8_MUX_uxn_opcodes_h_l2085_c7_46f5_cond;
+     t8_MUX_uxn_opcodes_h_l2085_c7_46f5_iftrue <= VAR_t8_MUX_uxn_opcodes_h_l2085_c7_46f5_iftrue;
+     t8_MUX_uxn_opcodes_h_l2085_c7_46f5_iffalse <= VAR_t8_MUX_uxn_opcodes_h_l2085_c7_46f5_iffalse;
      -- Outputs
-     VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2089_c7_86ab_return_output := result_is_opc_done_MUX_uxn_opcodes_h_l2089_c7_86ab_return_output;
+     VAR_t8_MUX_uxn_opcodes_h_l2085_c7_46f5_return_output := t8_MUX_uxn_opcodes_h_l2085_c7_46f5_return_output;
 
-     -- t8_MUX[uxn_opcodes_h_l2086_c7_aaf1] LATENCY=0
+     -- result_u8_value_MUX[uxn_opcodes_h_l2091_c7_694e] LATENCY=0
      -- Inputs
-     t8_MUX_uxn_opcodes_h_l2086_c7_aaf1_cond <= VAR_t8_MUX_uxn_opcodes_h_l2086_c7_aaf1_cond;
-     t8_MUX_uxn_opcodes_h_l2086_c7_aaf1_iftrue <= VAR_t8_MUX_uxn_opcodes_h_l2086_c7_aaf1_iftrue;
-     t8_MUX_uxn_opcodes_h_l2086_c7_aaf1_iffalse <= VAR_t8_MUX_uxn_opcodes_h_l2086_c7_aaf1_iffalse;
+     result_u8_value_MUX_uxn_opcodes_h_l2091_c7_694e_cond <= VAR_result_u8_value_MUX_uxn_opcodes_h_l2091_c7_694e_cond;
+     result_u8_value_MUX_uxn_opcodes_h_l2091_c7_694e_iftrue <= VAR_result_u8_value_MUX_uxn_opcodes_h_l2091_c7_694e_iftrue;
+     result_u8_value_MUX_uxn_opcodes_h_l2091_c7_694e_iffalse <= VAR_result_u8_value_MUX_uxn_opcodes_h_l2091_c7_694e_iffalse;
      -- Outputs
-     VAR_t8_MUX_uxn_opcodes_h_l2086_c7_aaf1_return_output := t8_MUX_uxn_opcodes_h_l2086_c7_aaf1_return_output;
+     VAR_result_u8_value_MUX_uxn_opcodes_h_l2091_c7_694e_return_output := result_u8_value_MUX_uxn_opcodes_h_l2091_c7_694e_return_output;
 
-     -- result_is_stack_write_MUX[uxn_opcodes_h_l2089_c7_86ab] LATENCY=0
+     -- result_sp_relative_shift_MUX[uxn_opcodes_h_l2088_c7_987b] LATENCY=0
      -- Inputs
-     result_is_stack_write_MUX_uxn_opcodes_h_l2089_c7_86ab_cond <= VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2089_c7_86ab_cond;
-     result_is_stack_write_MUX_uxn_opcodes_h_l2089_c7_86ab_iftrue <= VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2089_c7_86ab_iftrue;
-     result_is_stack_write_MUX_uxn_opcodes_h_l2089_c7_86ab_iffalse <= VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2089_c7_86ab_iffalse;
+     result_sp_relative_shift_MUX_uxn_opcodes_h_l2088_c7_987b_cond <= VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2088_c7_987b_cond;
+     result_sp_relative_shift_MUX_uxn_opcodes_h_l2088_c7_987b_iftrue <= VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2088_c7_987b_iftrue;
+     result_sp_relative_shift_MUX_uxn_opcodes_h_l2088_c7_987b_iffalse <= VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2088_c7_987b_iffalse;
      -- Outputs
-     VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2089_c7_86ab_return_output := result_is_stack_write_MUX_uxn_opcodes_h_l2089_c7_86ab_return_output;
+     VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2088_c7_987b_return_output := result_sp_relative_shift_MUX_uxn_opcodes_h_l2088_c7_987b_return_output;
 
-     -- result_sp_relative_shift_MUX[uxn_opcodes_h_l2089_c7_86ab] LATENCY=0
+     -- result_is_stack_write_MUX[uxn_opcodes_h_l2088_c7_987b] LATENCY=0
      -- Inputs
-     result_sp_relative_shift_MUX_uxn_opcodes_h_l2089_c7_86ab_cond <= VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2089_c7_86ab_cond;
-     result_sp_relative_shift_MUX_uxn_opcodes_h_l2089_c7_86ab_iftrue <= VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2089_c7_86ab_iftrue;
-     result_sp_relative_shift_MUX_uxn_opcodes_h_l2089_c7_86ab_iffalse <= VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2089_c7_86ab_iffalse;
+     result_is_stack_write_MUX_uxn_opcodes_h_l2088_c7_987b_cond <= VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2088_c7_987b_cond;
+     result_is_stack_write_MUX_uxn_opcodes_h_l2088_c7_987b_iftrue <= VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2088_c7_987b_iftrue;
+     result_is_stack_write_MUX_uxn_opcodes_h_l2088_c7_987b_iffalse <= VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2088_c7_987b_iffalse;
      -- Outputs
-     VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2089_c7_86ab_return_output := result_sp_relative_shift_MUX_uxn_opcodes_h_l2089_c7_86ab_return_output;
+     VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2088_c7_987b_return_output := result_is_stack_write_MUX_uxn_opcodes_h_l2088_c7_987b_return_output;
 
-     -- result_stack_address_sp_offset_MUX[uxn_opcodes_h_l2089_c7_86ab] LATENCY=0
+     -- result_stack_address_sp_offset_MUX[uxn_opcodes_h_l2088_c7_987b] LATENCY=0
      -- Inputs
-     result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2089_c7_86ab_cond <= VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2089_c7_86ab_cond;
-     result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2089_c7_86ab_iftrue <= VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2089_c7_86ab_iftrue;
-     result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2089_c7_86ab_iffalse <= VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2089_c7_86ab_iffalse;
+     result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2088_c7_987b_cond <= VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2088_c7_987b_cond;
+     result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2088_c7_987b_iftrue <= VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2088_c7_987b_iftrue;
+     result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2088_c7_987b_iffalse <= VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2088_c7_987b_iffalse;
      -- Outputs
-     VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2089_c7_86ab_return_output := result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2089_c7_86ab_return_output;
+     VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2088_c7_987b_return_output := result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2088_c7_987b_return_output;
 
-     -- result_u8_value_MUX[uxn_opcodes_h_l2092_c7_d72d] LATENCY=0
+     -- result_is_opc_done_MUX[uxn_opcodes_h_l2088_c7_987b] LATENCY=0
      -- Inputs
-     result_u8_value_MUX_uxn_opcodes_h_l2092_c7_d72d_cond <= VAR_result_u8_value_MUX_uxn_opcodes_h_l2092_c7_d72d_cond;
-     result_u8_value_MUX_uxn_opcodes_h_l2092_c7_d72d_iftrue <= VAR_result_u8_value_MUX_uxn_opcodes_h_l2092_c7_d72d_iftrue;
-     result_u8_value_MUX_uxn_opcodes_h_l2092_c7_d72d_iffalse <= VAR_result_u8_value_MUX_uxn_opcodes_h_l2092_c7_d72d_iffalse;
+     result_is_opc_done_MUX_uxn_opcodes_h_l2088_c7_987b_cond <= VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2088_c7_987b_cond;
+     result_is_opc_done_MUX_uxn_opcodes_h_l2088_c7_987b_iftrue <= VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2088_c7_987b_iftrue;
+     result_is_opc_done_MUX_uxn_opcodes_h_l2088_c7_987b_iffalse <= VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2088_c7_987b_iffalse;
      -- Outputs
-     VAR_result_u8_value_MUX_uxn_opcodes_h_l2092_c7_d72d_return_output := result_u8_value_MUX_uxn_opcodes_h_l2092_c7_d72d_return_output;
+     VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2088_c7_987b_return_output := result_is_opc_done_MUX_uxn_opcodes_h_l2088_c7_987b_return_output;
 
-     -- n8_MUX[uxn_opcodes_h_l2089_c7_86ab] LATENCY=0
+     -- n8_MUX[uxn_opcodes_h_l2088_c7_987b] LATENCY=0
      -- Inputs
-     n8_MUX_uxn_opcodes_h_l2089_c7_86ab_cond <= VAR_n8_MUX_uxn_opcodes_h_l2089_c7_86ab_cond;
-     n8_MUX_uxn_opcodes_h_l2089_c7_86ab_iftrue <= VAR_n8_MUX_uxn_opcodes_h_l2089_c7_86ab_iftrue;
-     n8_MUX_uxn_opcodes_h_l2089_c7_86ab_iffalse <= VAR_n8_MUX_uxn_opcodes_h_l2089_c7_86ab_iffalse;
+     n8_MUX_uxn_opcodes_h_l2088_c7_987b_cond <= VAR_n8_MUX_uxn_opcodes_h_l2088_c7_987b_cond;
+     n8_MUX_uxn_opcodes_h_l2088_c7_987b_iftrue <= VAR_n8_MUX_uxn_opcodes_h_l2088_c7_987b_iftrue;
+     n8_MUX_uxn_opcodes_h_l2088_c7_987b_iffalse <= VAR_n8_MUX_uxn_opcodes_h_l2088_c7_987b_iffalse;
      -- Outputs
-     VAR_n8_MUX_uxn_opcodes_h_l2089_c7_86ab_return_output := n8_MUX_uxn_opcodes_h_l2089_c7_86ab_return_output;
+     VAR_n8_MUX_uxn_opcodes_h_l2088_c7_987b_return_output := n8_MUX_uxn_opcodes_h_l2088_c7_987b_return_output;
 
      -- Submodule level 3
-     VAR_n8_MUX_uxn_opcodes_h_l2086_c7_aaf1_iffalse := VAR_n8_MUX_uxn_opcodes_h_l2089_c7_86ab_return_output;
-     VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2086_c7_aaf1_iffalse := VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2089_c7_86ab_return_output;
-     VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2086_c7_aaf1_iffalse := VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2089_c7_86ab_return_output;
-     VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2086_c7_aaf1_iffalse := VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2089_c7_86ab_return_output;
-     VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2086_c7_aaf1_iffalse := VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2089_c7_86ab_return_output;
-     VAR_result_u8_value_MUX_uxn_opcodes_h_l2089_c7_86ab_iffalse := VAR_result_u8_value_MUX_uxn_opcodes_h_l2092_c7_d72d_return_output;
-     VAR_t8_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse := VAR_t8_MUX_uxn_opcodes_h_l2086_c7_aaf1_return_output;
-     -- result_is_opc_done_MUX[uxn_opcodes_h_l2086_c7_aaf1] LATENCY=0
+     VAR_n8_MUX_uxn_opcodes_h_l2085_c7_46f5_iffalse := VAR_n8_MUX_uxn_opcodes_h_l2088_c7_987b_return_output;
+     VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2085_c7_46f5_iffalse := VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2088_c7_987b_return_output;
+     VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2085_c7_46f5_iffalse := VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2088_c7_987b_return_output;
+     VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2085_c7_46f5_iffalse := VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2088_c7_987b_return_output;
+     VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2085_c7_46f5_iffalse := VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2088_c7_987b_return_output;
+     VAR_result_u8_value_MUX_uxn_opcodes_h_l2088_c7_987b_iffalse := VAR_result_u8_value_MUX_uxn_opcodes_h_l2091_c7_694e_return_output;
+     VAR_t8_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse := VAR_t8_MUX_uxn_opcodes_h_l2085_c7_46f5_return_output;
+     -- result_is_stack_write_MUX[uxn_opcodes_h_l2085_c7_46f5] LATENCY=0
      -- Inputs
-     result_is_opc_done_MUX_uxn_opcodes_h_l2086_c7_aaf1_cond <= VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2086_c7_aaf1_cond;
-     result_is_opc_done_MUX_uxn_opcodes_h_l2086_c7_aaf1_iftrue <= VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2086_c7_aaf1_iftrue;
-     result_is_opc_done_MUX_uxn_opcodes_h_l2086_c7_aaf1_iffalse <= VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2086_c7_aaf1_iffalse;
+     result_is_stack_write_MUX_uxn_opcodes_h_l2085_c7_46f5_cond <= VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2085_c7_46f5_cond;
+     result_is_stack_write_MUX_uxn_opcodes_h_l2085_c7_46f5_iftrue <= VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2085_c7_46f5_iftrue;
+     result_is_stack_write_MUX_uxn_opcodes_h_l2085_c7_46f5_iffalse <= VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2085_c7_46f5_iffalse;
      -- Outputs
-     VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2086_c7_aaf1_return_output := result_is_opc_done_MUX_uxn_opcodes_h_l2086_c7_aaf1_return_output;
+     VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2085_c7_46f5_return_output := result_is_stack_write_MUX_uxn_opcodes_h_l2085_c7_46f5_return_output;
 
-     -- result_stack_address_sp_offset_MUX[uxn_opcodes_h_l2086_c7_aaf1] LATENCY=0
+     -- result_stack_address_sp_offset_MUX[uxn_opcodes_h_l2085_c7_46f5] LATENCY=0
      -- Inputs
-     result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2086_c7_aaf1_cond <= VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2086_c7_aaf1_cond;
-     result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2086_c7_aaf1_iftrue <= VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2086_c7_aaf1_iftrue;
-     result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2086_c7_aaf1_iffalse <= VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2086_c7_aaf1_iffalse;
+     result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2085_c7_46f5_cond <= VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2085_c7_46f5_cond;
+     result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2085_c7_46f5_iftrue <= VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2085_c7_46f5_iftrue;
+     result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2085_c7_46f5_iffalse <= VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2085_c7_46f5_iffalse;
      -- Outputs
-     VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2086_c7_aaf1_return_output := result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2086_c7_aaf1_return_output;
+     VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2085_c7_46f5_return_output := result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2085_c7_46f5_return_output;
 
-     -- result_is_stack_write_MUX[uxn_opcodes_h_l2086_c7_aaf1] LATENCY=0
+     -- result_is_opc_done_MUX[uxn_opcodes_h_l2085_c7_46f5] LATENCY=0
      -- Inputs
-     result_is_stack_write_MUX_uxn_opcodes_h_l2086_c7_aaf1_cond <= VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2086_c7_aaf1_cond;
-     result_is_stack_write_MUX_uxn_opcodes_h_l2086_c7_aaf1_iftrue <= VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2086_c7_aaf1_iftrue;
-     result_is_stack_write_MUX_uxn_opcodes_h_l2086_c7_aaf1_iffalse <= VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2086_c7_aaf1_iffalse;
+     result_is_opc_done_MUX_uxn_opcodes_h_l2085_c7_46f5_cond <= VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2085_c7_46f5_cond;
+     result_is_opc_done_MUX_uxn_opcodes_h_l2085_c7_46f5_iftrue <= VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2085_c7_46f5_iftrue;
+     result_is_opc_done_MUX_uxn_opcodes_h_l2085_c7_46f5_iffalse <= VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2085_c7_46f5_iffalse;
      -- Outputs
-     VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2086_c7_aaf1_return_output := result_is_stack_write_MUX_uxn_opcodes_h_l2086_c7_aaf1_return_output;
+     VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2085_c7_46f5_return_output := result_is_opc_done_MUX_uxn_opcodes_h_l2085_c7_46f5_return_output;
 
-     -- t8_MUX[uxn_opcodes_h_l2073_c2_e839] LATENCY=0
+     -- t8_MUX[uxn_opcodes_h_l2072_c2_19a1] LATENCY=0
      -- Inputs
-     t8_MUX_uxn_opcodes_h_l2073_c2_e839_cond <= VAR_t8_MUX_uxn_opcodes_h_l2073_c2_e839_cond;
-     t8_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue <= VAR_t8_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue;
-     t8_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse <= VAR_t8_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse;
+     t8_MUX_uxn_opcodes_h_l2072_c2_19a1_cond <= VAR_t8_MUX_uxn_opcodes_h_l2072_c2_19a1_cond;
+     t8_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue <= VAR_t8_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue;
+     t8_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse <= VAR_t8_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse;
      -- Outputs
-     VAR_t8_MUX_uxn_opcodes_h_l2073_c2_e839_return_output := t8_MUX_uxn_opcodes_h_l2073_c2_e839_return_output;
+     VAR_t8_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output := t8_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output;
 
-     -- result_u8_value_MUX[uxn_opcodes_h_l2089_c7_86ab] LATENCY=0
+     -- result_sp_relative_shift_MUX[uxn_opcodes_h_l2085_c7_46f5] LATENCY=0
      -- Inputs
-     result_u8_value_MUX_uxn_opcodes_h_l2089_c7_86ab_cond <= VAR_result_u8_value_MUX_uxn_opcodes_h_l2089_c7_86ab_cond;
-     result_u8_value_MUX_uxn_opcodes_h_l2089_c7_86ab_iftrue <= VAR_result_u8_value_MUX_uxn_opcodes_h_l2089_c7_86ab_iftrue;
-     result_u8_value_MUX_uxn_opcodes_h_l2089_c7_86ab_iffalse <= VAR_result_u8_value_MUX_uxn_opcodes_h_l2089_c7_86ab_iffalse;
+     result_sp_relative_shift_MUX_uxn_opcodes_h_l2085_c7_46f5_cond <= VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2085_c7_46f5_cond;
+     result_sp_relative_shift_MUX_uxn_opcodes_h_l2085_c7_46f5_iftrue <= VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2085_c7_46f5_iftrue;
+     result_sp_relative_shift_MUX_uxn_opcodes_h_l2085_c7_46f5_iffalse <= VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2085_c7_46f5_iffalse;
      -- Outputs
-     VAR_result_u8_value_MUX_uxn_opcodes_h_l2089_c7_86ab_return_output := result_u8_value_MUX_uxn_opcodes_h_l2089_c7_86ab_return_output;
+     VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2085_c7_46f5_return_output := result_sp_relative_shift_MUX_uxn_opcodes_h_l2085_c7_46f5_return_output;
 
-     -- result_sp_relative_shift_MUX[uxn_opcodes_h_l2086_c7_aaf1] LATENCY=0
+     -- result_u8_value_MUX[uxn_opcodes_h_l2088_c7_987b] LATENCY=0
      -- Inputs
-     result_sp_relative_shift_MUX_uxn_opcodes_h_l2086_c7_aaf1_cond <= VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2086_c7_aaf1_cond;
-     result_sp_relative_shift_MUX_uxn_opcodes_h_l2086_c7_aaf1_iftrue <= VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2086_c7_aaf1_iftrue;
-     result_sp_relative_shift_MUX_uxn_opcodes_h_l2086_c7_aaf1_iffalse <= VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2086_c7_aaf1_iffalse;
+     result_u8_value_MUX_uxn_opcodes_h_l2088_c7_987b_cond <= VAR_result_u8_value_MUX_uxn_opcodes_h_l2088_c7_987b_cond;
+     result_u8_value_MUX_uxn_opcodes_h_l2088_c7_987b_iftrue <= VAR_result_u8_value_MUX_uxn_opcodes_h_l2088_c7_987b_iftrue;
+     result_u8_value_MUX_uxn_opcodes_h_l2088_c7_987b_iffalse <= VAR_result_u8_value_MUX_uxn_opcodes_h_l2088_c7_987b_iffalse;
      -- Outputs
-     VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2086_c7_aaf1_return_output := result_sp_relative_shift_MUX_uxn_opcodes_h_l2086_c7_aaf1_return_output;
+     VAR_result_u8_value_MUX_uxn_opcodes_h_l2088_c7_987b_return_output := result_u8_value_MUX_uxn_opcodes_h_l2088_c7_987b_return_output;
 
-     -- n8_MUX[uxn_opcodes_h_l2086_c7_aaf1] LATENCY=0
+     -- n8_MUX[uxn_opcodes_h_l2085_c7_46f5] LATENCY=0
      -- Inputs
-     n8_MUX_uxn_opcodes_h_l2086_c7_aaf1_cond <= VAR_n8_MUX_uxn_opcodes_h_l2086_c7_aaf1_cond;
-     n8_MUX_uxn_opcodes_h_l2086_c7_aaf1_iftrue <= VAR_n8_MUX_uxn_opcodes_h_l2086_c7_aaf1_iftrue;
-     n8_MUX_uxn_opcodes_h_l2086_c7_aaf1_iffalse <= VAR_n8_MUX_uxn_opcodes_h_l2086_c7_aaf1_iffalse;
+     n8_MUX_uxn_opcodes_h_l2085_c7_46f5_cond <= VAR_n8_MUX_uxn_opcodes_h_l2085_c7_46f5_cond;
+     n8_MUX_uxn_opcodes_h_l2085_c7_46f5_iftrue <= VAR_n8_MUX_uxn_opcodes_h_l2085_c7_46f5_iftrue;
+     n8_MUX_uxn_opcodes_h_l2085_c7_46f5_iffalse <= VAR_n8_MUX_uxn_opcodes_h_l2085_c7_46f5_iffalse;
      -- Outputs
-     VAR_n8_MUX_uxn_opcodes_h_l2086_c7_aaf1_return_output := n8_MUX_uxn_opcodes_h_l2086_c7_aaf1_return_output;
+     VAR_n8_MUX_uxn_opcodes_h_l2085_c7_46f5_return_output := n8_MUX_uxn_opcodes_h_l2085_c7_46f5_return_output;
 
      -- Submodule level 4
-     VAR_n8_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse := VAR_n8_MUX_uxn_opcodes_h_l2086_c7_aaf1_return_output;
-     VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse := VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2086_c7_aaf1_return_output;
-     VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse := VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2086_c7_aaf1_return_output;
-     VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse := VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2086_c7_aaf1_return_output;
-     VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse := VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2086_c7_aaf1_return_output;
-     VAR_result_u8_value_MUX_uxn_opcodes_h_l2086_c7_aaf1_iffalse := VAR_result_u8_value_MUX_uxn_opcodes_h_l2089_c7_86ab_return_output;
-     REG_VAR_t8 := VAR_t8_MUX_uxn_opcodes_h_l2073_c2_e839_return_output;
-     -- result_sp_relative_shift_MUX[uxn_opcodes_h_l2073_c2_e839] LATENCY=0
+     VAR_n8_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse := VAR_n8_MUX_uxn_opcodes_h_l2085_c7_46f5_return_output;
+     VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse := VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2085_c7_46f5_return_output;
+     VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse := VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2085_c7_46f5_return_output;
+     VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse := VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2085_c7_46f5_return_output;
+     VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse := VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2085_c7_46f5_return_output;
+     VAR_result_u8_value_MUX_uxn_opcodes_h_l2085_c7_46f5_iffalse := VAR_result_u8_value_MUX_uxn_opcodes_h_l2088_c7_987b_return_output;
+     REG_VAR_t8 := VAR_t8_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output;
+     -- result_is_opc_done_MUX[uxn_opcodes_h_l2072_c2_19a1] LATENCY=0
      -- Inputs
-     result_sp_relative_shift_MUX_uxn_opcodes_h_l2073_c2_e839_cond <= VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2073_c2_e839_cond;
-     result_sp_relative_shift_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue <= VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue;
-     result_sp_relative_shift_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse <= VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse;
+     result_is_opc_done_MUX_uxn_opcodes_h_l2072_c2_19a1_cond <= VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2072_c2_19a1_cond;
+     result_is_opc_done_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue <= VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue;
+     result_is_opc_done_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse <= VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse;
      -- Outputs
-     VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2073_c2_e839_return_output := result_sp_relative_shift_MUX_uxn_opcodes_h_l2073_c2_e839_return_output;
+     VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output := result_is_opc_done_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output;
 
-     -- result_u8_value_MUX[uxn_opcodes_h_l2086_c7_aaf1] LATENCY=0
+     -- n8_MUX[uxn_opcodes_h_l2072_c2_19a1] LATENCY=0
      -- Inputs
-     result_u8_value_MUX_uxn_opcodes_h_l2086_c7_aaf1_cond <= VAR_result_u8_value_MUX_uxn_opcodes_h_l2086_c7_aaf1_cond;
-     result_u8_value_MUX_uxn_opcodes_h_l2086_c7_aaf1_iftrue <= VAR_result_u8_value_MUX_uxn_opcodes_h_l2086_c7_aaf1_iftrue;
-     result_u8_value_MUX_uxn_opcodes_h_l2086_c7_aaf1_iffalse <= VAR_result_u8_value_MUX_uxn_opcodes_h_l2086_c7_aaf1_iffalse;
+     n8_MUX_uxn_opcodes_h_l2072_c2_19a1_cond <= VAR_n8_MUX_uxn_opcodes_h_l2072_c2_19a1_cond;
+     n8_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue <= VAR_n8_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue;
+     n8_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse <= VAR_n8_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse;
      -- Outputs
-     VAR_result_u8_value_MUX_uxn_opcodes_h_l2086_c7_aaf1_return_output := result_u8_value_MUX_uxn_opcodes_h_l2086_c7_aaf1_return_output;
+     VAR_n8_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output := n8_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output;
 
-     -- n8_MUX[uxn_opcodes_h_l2073_c2_e839] LATENCY=0
+     -- result_u8_value_MUX[uxn_opcodes_h_l2085_c7_46f5] LATENCY=0
      -- Inputs
-     n8_MUX_uxn_opcodes_h_l2073_c2_e839_cond <= VAR_n8_MUX_uxn_opcodes_h_l2073_c2_e839_cond;
-     n8_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue <= VAR_n8_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue;
-     n8_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse <= VAR_n8_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse;
+     result_u8_value_MUX_uxn_opcodes_h_l2085_c7_46f5_cond <= VAR_result_u8_value_MUX_uxn_opcodes_h_l2085_c7_46f5_cond;
+     result_u8_value_MUX_uxn_opcodes_h_l2085_c7_46f5_iftrue <= VAR_result_u8_value_MUX_uxn_opcodes_h_l2085_c7_46f5_iftrue;
+     result_u8_value_MUX_uxn_opcodes_h_l2085_c7_46f5_iffalse <= VAR_result_u8_value_MUX_uxn_opcodes_h_l2085_c7_46f5_iffalse;
      -- Outputs
-     VAR_n8_MUX_uxn_opcodes_h_l2073_c2_e839_return_output := n8_MUX_uxn_opcodes_h_l2073_c2_e839_return_output;
+     VAR_result_u8_value_MUX_uxn_opcodes_h_l2085_c7_46f5_return_output := result_u8_value_MUX_uxn_opcodes_h_l2085_c7_46f5_return_output;
 
-     -- result_stack_address_sp_offset_MUX[uxn_opcodes_h_l2073_c2_e839] LATENCY=0
+     -- result_is_stack_write_MUX[uxn_opcodes_h_l2072_c2_19a1] LATENCY=0
      -- Inputs
-     result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2073_c2_e839_cond <= VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2073_c2_e839_cond;
-     result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue <= VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue;
-     result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse <= VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse;
+     result_is_stack_write_MUX_uxn_opcodes_h_l2072_c2_19a1_cond <= VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2072_c2_19a1_cond;
+     result_is_stack_write_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue <= VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue;
+     result_is_stack_write_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse <= VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse;
      -- Outputs
-     VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2073_c2_e839_return_output := result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2073_c2_e839_return_output;
+     VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output := result_is_stack_write_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output;
 
-     -- result_is_stack_write_MUX[uxn_opcodes_h_l2073_c2_e839] LATENCY=0
+     -- result_sp_relative_shift_MUX[uxn_opcodes_h_l2072_c2_19a1] LATENCY=0
      -- Inputs
-     result_is_stack_write_MUX_uxn_opcodes_h_l2073_c2_e839_cond <= VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2073_c2_e839_cond;
-     result_is_stack_write_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue <= VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue;
-     result_is_stack_write_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse <= VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse;
+     result_sp_relative_shift_MUX_uxn_opcodes_h_l2072_c2_19a1_cond <= VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2072_c2_19a1_cond;
+     result_sp_relative_shift_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue <= VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue;
+     result_sp_relative_shift_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse <= VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse;
      -- Outputs
-     VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2073_c2_e839_return_output := result_is_stack_write_MUX_uxn_opcodes_h_l2073_c2_e839_return_output;
+     VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output := result_sp_relative_shift_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output;
 
-     -- result_is_opc_done_MUX[uxn_opcodes_h_l2073_c2_e839] LATENCY=0
+     -- result_stack_address_sp_offset_MUX[uxn_opcodes_h_l2072_c2_19a1] LATENCY=0
      -- Inputs
-     result_is_opc_done_MUX_uxn_opcodes_h_l2073_c2_e839_cond <= VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2073_c2_e839_cond;
-     result_is_opc_done_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue <= VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue;
-     result_is_opc_done_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse <= VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse;
+     result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2072_c2_19a1_cond <= VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2072_c2_19a1_cond;
+     result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue <= VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue;
+     result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse <= VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse;
      -- Outputs
-     VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2073_c2_e839_return_output := result_is_opc_done_MUX_uxn_opcodes_h_l2073_c2_e839_return_output;
+     VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output := result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output;
 
      -- Submodule level 5
-     REG_VAR_n8 := VAR_n8_MUX_uxn_opcodes_h_l2073_c2_e839_return_output;
-     VAR_result_u8_value_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse := VAR_result_u8_value_MUX_uxn_opcodes_h_l2086_c7_aaf1_return_output;
-     -- result_u8_value_MUX[uxn_opcodes_h_l2073_c2_e839] LATENCY=0
+     REG_VAR_n8 := VAR_n8_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output;
+     VAR_result_u8_value_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse := VAR_result_u8_value_MUX_uxn_opcodes_h_l2085_c7_46f5_return_output;
+     -- result_u8_value_MUX[uxn_opcodes_h_l2072_c2_19a1] LATENCY=0
      -- Inputs
-     result_u8_value_MUX_uxn_opcodes_h_l2073_c2_e839_cond <= VAR_result_u8_value_MUX_uxn_opcodes_h_l2073_c2_e839_cond;
-     result_u8_value_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue <= VAR_result_u8_value_MUX_uxn_opcodes_h_l2073_c2_e839_iftrue;
-     result_u8_value_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse <= VAR_result_u8_value_MUX_uxn_opcodes_h_l2073_c2_e839_iffalse;
+     result_u8_value_MUX_uxn_opcodes_h_l2072_c2_19a1_cond <= VAR_result_u8_value_MUX_uxn_opcodes_h_l2072_c2_19a1_cond;
+     result_u8_value_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue <= VAR_result_u8_value_MUX_uxn_opcodes_h_l2072_c2_19a1_iftrue;
+     result_u8_value_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse <= VAR_result_u8_value_MUX_uxn_opcodes_h_l2072_c2_19a1_iffalse;
      -- Outputs
-     VAR_result_u8_value_MUX_uxn_opcodes_h_l2073_c2_e839_return_output := result_u8_value_MUX_uxn_opcodes_h_l2073_c2_e839_return_output;
+     VAR_result_u8_value_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output := result_u8_value_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output;
 
      -- Submodule level 6
-     -- CONST_REF_RD_opcode_result_t_opcode_result_t_c580_uxn_opcodes_h_l2101_l2069_DUPLICATE_af32 LATENCY=0
-     VAR_CONST_REF_RD_opcode_result_t_opcode_result_t_c580_uxn_opcodes_h_l2101_l2069_DUPLICATE_af32_return_output := CONST_REF_RD_opcode_result_t_opcode_result_t_c580(
+     -- CONST_REF_RD_opcode_result_t_opcode_result_t_188e_uxn_opcodes_h_l2100_l2068_DUPLICATE_ea76 LATENCY=0
+     VAR_CONST_REF_RD_opcode_result_t_opcode_result_t_188e_uxn_opcodes_h_l2100_l2068_DUPLICATE_ea76_return_output := CONST_REF_RD_opcode_result_t_opcode_result_t_188e(
      result,
-     VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2073_c2_e839_return_output,
-     VAR_result_is_vram_write_MUX_uxn_opcodes_h_l2073_c2_e839_return_output,
-     VAR_result_is_ram_write_MUX_uxn_opcodes_h_l2073_c2_e839_return_output,
-     VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2073_c2_e839_return_output,
-     VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2073_c2_e839_return_output,
-     VAR_result_u8_value_MUX_uxn_opcodes_h_l2073_c2_e839_return_output,
-     VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2073_c2_e839_return_output,
-     VAR_result_is_stack_index_flipped_MUX_uxn_opcodes_h_l2073_c2_e839_return_output,
-     VAR_result_is_pc_updated_MUX_uxn_opcodes_h_l2073_c2_e839_return_output);
+     VAR_result_is_stack_write_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output,
+     VAR_result_is_vram_write_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output,
+     VAR_result_is_stack_index_flipped_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output,
+     VAR_result_u8_value_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output,
+     VAR_result_is_opc_done_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output,
+     VAR_result_sp_relative_shift_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output,
+     VAR_result_is_pc_updated_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output,
+     VAR_result_stack_address_sp_offset_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output,
+     VAR_result_is_ram_write_MUX_uxn_opcodes_h_l2072_c2_19a1_return_output);
 
      -- Submodule level 7
-     REG_VAR_result := VAR_CONST_REF_RD_opcode_result_t_opcode_result_t_c580_uxn_opcodes_h_l2101_l2069_DUPLICATE_af32_return_output;
-     VAR_return_output := VAR_CONST_REF_RD_opcode_result_t_opcode_result_t_c580_uxn_opcodes_h_l2101_l2069_DUPLICATE_af32_return_output;
+     REG_VAR_result := VAR_CONST_REF_RD_opcode_result_t_opcode_result_t_188e_uxn_opcodes_h_l2100_l2068_DUPLICATE_ea76_return_output;
+     VAR_return_output := VAR_CONST_REF_RD_opcode_result_t_opcode_result_t_188e_uxn_opcodes_h_l2100_l2068_DUPLICATE_ea76_return_output;
      -- Last stage of pipeline return wire to return port/reg
      return_output <= VAR_return_output;
    end if;
