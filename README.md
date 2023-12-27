@@ -12,9 +12,13 @@ Copy the contents of `dist/assets/`, `dist/cores/`, `dist/platforms/` into the e
 - 15.2532 MHz CPU
 - 64KB Main RAM, 2x 256B Stack RAM, 256B Device RAM (per Uxn spec)
 
+## Known issue on Analogue OS 2.0
+
+If you see a black screen after loading a ROM, the ROM is likely actually still running. Sometimes you need to open _Core Settings_ -> _Display Mode_, and re-select a display mode, to see video output. I'm still trying to find out if this is purely on Analogue's end, or something that I can address. Perhaps it will be fixed in a future Analogue OS update.
+
 ## Limitations
 
-Most Uxn ROMs won't work as-is, or even at all. ROMs less than 512 bytes might need to be padded with 0x00 bytes to be 512 bytes minimum. Most device features aren't implemented, and only single-pixel drawing and fills are implemented (*no sprites yet*!)
+Most Uxn ROMs won't work yet. ROMs less than 512 bytes might need to be padded with 0x00 bytes to be 512 bytes minimum. Most device features aren't implemented, and only single-pixel drawing and fills are implemented (*no sprites yet*!)
 
 No audio
 
@@ -30,7 +34,7 @@ I added some test ROMs into the `dist/assets` folder that are working / partiall
 - `fill_test_256_240.rom` - draws a pattern of fills from bottom-right and then top-left
 - `mandelbrot_256_240.rom` - draws a Mandelbrot, vertical line-by-line
 - `star_256_240.rom` - draws a rotating star (demo by hikari_no_yume)
-- `cube3d.rom` - draws a 3D cube
+- `cube3d.rom` - draws a spinning 3D wireframe cube
 
 ## Building the core yourself
 
