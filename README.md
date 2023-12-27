@@ -9,7 +9,7 @@ Copy the contents of `dist/assets/`, `dist/cores/`, `dist/platforms/` into the e
 ## Current Specs
 
 - 256x240 resolution, 60Hz
-- 14.5728 MHz CPU
+- 15.2532 MHz CPU
 - 64KB Main RAM, 2x 256B Stack RAM, 256B Device RAM (per Uxn spec)
 
 ## Limitations

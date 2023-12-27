@@ -1,0 +1,3 @@
+OpenFPGA - PipelineC - Core Template
+
+Based off of openFPGA core-template for Analogue, Pocket, this project adds a blinking module from PipelineC.
