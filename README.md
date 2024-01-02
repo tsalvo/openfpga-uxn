@@ -9,7 +9,7 @@ Copy the contents of `dist/assets/`, `dist/cores/`, `dist/platforms/` into the e
 ## Current Specs
 
 - 256x240 resolution, 60Hz
-- 15.2532 MHz CPU
+- 14.99904 MHz CPU
 - 64KB Main RAM, 2x 256B Stack RAM, 256B Device RAM (per Uxn spec)
 
 ## Known issue on Analogue OS 2.0

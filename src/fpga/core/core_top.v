@@ -521,7 +521,7 @@ assign video_hs = vidout_hs;
 
     localparam  VID_V_BPORCH = 'd10;
     localparam  VID_V_ACTIVE = 'd240;
-    localparam  VID_V_TOTAL = 'd892;
+    localparam  VID_V_TOTAL = 'd868;
     localparam  VID_H_BPORCH = 'd10;
     localparam  VID_H_ACTIVE = 'd256;
     localparam  VID_H_TOTAL = 'd288;
