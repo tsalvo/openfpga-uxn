@@ -11,12 +11,13 @@ use ieee.numeric_std.all;
 -- use ieee.float_pkg.all;
 use work.c_structs_pkg.all;
 -- Submodules: 0
-entity CONST_SR_3_uint8_t_0CLK_de264c78 is
+entity BIN_OP_EQ_uint2_t_uint2_t_0CLK_de264c78 is
 port(
- x : in unsigned(7 downto 0);
- return_output : out unsigned(7 downto 0));
-end CONST_SR_3_uint8_t_0CLK_de264c78;
-architecture arch of CONST_SR_3_uint8_t_0CLK_de264c78 is
+ left : in unsigned(1 downto 0);
+ right : in unsigned(1 downto 0);
+ return_output : out unsigned(0 downto 0));
+end BIN_OP_EQ_uint2_t_uint2_t_0CLK_de264c78;
+architecture arch of BIN_OP_EQ_uint2_t_uint2_t_0CLK_de264c78 is
 -- Types and such
 -- Declarations
 attribute mark_debug : string;
@@ -26,8 +27,12 @@ constant PIPELINE_LATENCY : integer := 0;
 type raw_hdl_variables_t is record
  -- All of the wires in function
 
-  x : unsigned(7 downto 0);
-  return_output : unsigned(7 downto 0);
+  left_resized : std_logic_vector(1 downto 0);
+  right_resized : std_logic_vector(1 downto 0);
+  return_output_bool : boolean;
+  return_output : unsigned(0 downto 0);
+  right : unsigned(1 downto 0);
+  left :  unsigned(1 downto 0);
 end record;
 
 -- Type for this modules register pipeline
@@ -40,7 +45,8 @@ begin
 -- Combinatorial process for pipeline stages
 process (
  -- Inputs
- x)
+ left,
+ right)
 is 
  -- Read and write variables to do register transfers per clock
  -- from the previous to next stage
@@ -58,7 +64,8 @@ is
   -- Input to first stage are inputs to function
   if STAGE=0 then
    -- Mux in inputs
-   read_pipe.x := x;
+   read_pipe.left := left;
+   read_pipe.right := right;
   else
    -- Default read from previous stage
    read_pipe := read_raw_hdl_pipeline_regs(STAGE-1);
@@ -67,7 +74,28 @@ is
   write_pipe := read_pipe;
 
 
-    write_pipe.return_output := shift_right(write_pipe.x, 3);  -- Write to stage reg
+    -- COMPARE N bits per clock, 
+    -- num_stages = 1
+
+
+    if STAGE = 0 then     
+      write_pipe.return_output_bool := true;
+      write_pipe.left_resized := std_logic_vector(resize(write_pipe.left,2));
+      write_pipe.right_resized := std_logic_vector(resize(write_pipe.right,2));
+     
+      -- bits_per_stage_dict[0] = 2
+      
+        -- Assign output based on range for this stage
+        write_pipe.return_output_bool := write_pipe.return_output_bool and (write_pipe.left_resized(1 downto 0) = write_pipe.right_resized(1 downto 0) );
+        
+      if  write_pipe.return_output_bool then
+        write_pipe.return_output := (others => '1');
+      else
+        write_pipe.return_output := (others => '0');
+      end if;
+      
+    end if;
+      -- Write to stage reg
   write_raw_hdl_pipeline_regs(STAGE) := write_pipe;
  end loop;
 

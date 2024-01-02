@@ -15,18 +15,18 @@ entity fg_vram_update_fg_vram_RAM_DP_RF_1_0CLK_de264c78 is
 port(
  clk : in std_logic;
  CLOCK_ENABLE : in unsigned(0 downto 0);
- addr_r0 : in unsigned(15 downto 0);
- addr_w0 : in unsigned(15 downto 0);
+ addr_r0 : in unsigned(16 downto 0);
+ addr_w0 : in unsigned(16 downto 0);
  wd : in unsigned(1 downto 0);
  we : in unsigned(0 downto 0);
  return_output : out unsigned(1 downto 0));
 end fg_vram_update_fg_vram_RAM_DP_RF_1_0CLK_de264c78;
 architecture arch of fg_vram_update_fg_vram_RAM_DP_RF_1_0CLK_de264c78 is
 
-  signal addr_w : unsigned(15 downto 0) := to_unsigned(0, 16);
-  signal addr_r : unsigned(15 downto 0) := to_unsigned(0, 16);
+  signal addr_w : unsigned(16 downto 0) := to_unsigned(0, 17);
+  signal addr_r : unsigned(16 downto 0) := to_unsigned(0, 17);
 
-  signal fg_vram : uint2_t_65536 := (others => to_unsigned(0, 2));
+  signal fg_vram : uint2_t_131072 := (others => to_unsigned(0, 2));
 
     signal return_output_r : unsigned(1 downto 0) := to_unsigned(0, 2);
 begin

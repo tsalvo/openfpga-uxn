@@ -34,12 +34,12 @@ signal REG_COMB_rwaddr : unsigned(31 downto 0);
 signal REG_COMB_wdata : unsigned(7 downto 0);
 
 -- Each function instance gets signals
--- main_ram_update_main_ram_RAM_SP_RF_1[uxn_ram_main_h_l12_c18_6662]
-signal main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_6662_CLOCK_ENABLE : unsigned(0 downto 0);
-signal main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_6662_addr0 : unsigned(15 downto 0);
-signal main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_6662_wd : unsigned(7 downto 0);
-signal main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_6662_we : unsigned(0 downto 0);
-signal main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_6662_return_output : unsigned(7 downto 0);
+-- main_ram_update_main_ram_RAM_SP_RF_1[uxn_ram_main_h_l12_c18_51b8]
+signal main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_51b8_CLOCK_ENABLE : unsigned(0 downto 0);
+signal main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_51b8_addr0 : unsigned(15 downto 0);
+signal main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_51b8_wd : unsigned(7 downto 0);
+signal main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_51b8_we : unsigned(0 downto 0);
+signal main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_51b8_return_output : unsigned(7 downto 0);
 
 function CAST_TO_uint32_t_uint16_t( rhs : unsigned) return unsigned is
 
@@ -56,14 +56,14 @@ end function;
 begin
 
 -- SUBMODULE INSTANCES 
--- main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_6662
-main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_6662 : entity work.main_ram_update_main_ram_RAM_SP_RF_1_0CLK_de264c78 port map (
+-- main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_51b8
+main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_51b8 : entity work.main_ram_update_main_ram_RAM_SP_RF_1_0CLK_de264c78 port map (
 clk,
-main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_6662_CLOCK_ENABLE,
-main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_6662_addr0,
-main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_6662_wd,
-main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_6662_we,
-main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_6662_return_output);
+main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_51b8_CLOCK_ENABLE,
+main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_51b8_addr0,
+main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_51b8_wd,
+main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_51b8_we,
+main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_51b8_return_output);
 
 
 
@@ -78,7 +78,7 @@ process (
  rwaddr,
  wdata,
  -- All submodule outputs
- main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_6662_return_output)
+ main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_51b8_return_output)
 is 
  -- All of the wires in function
  variable VAR_CLOCK_ENABLE : unsigned(0 downto 0);
@@ -87,14 +87,14 @@ is
  variable VAR_value : unsigned(7 downto 0);
  variable VAR_write_enable : unsigned(0 downto 0);
  variable VAR_main_ram : uint8_t_65536;
- variable VAR_rwaddr_uxn_ram_main_h_l9_c2_fdf3 : unsigned(31 downto 0);
- variable VAR_CAST_TO_uint32_t_uxn_ram_main_h_l9_c11_9a90_return_output : unsigned(31 downto 0);
+ variable VAR_rwaddr_uxn_ram_main_h_l9_c2_ac6e : unsigned(31 downto 0);
+ variable VAR_CAST_TO_uint32_t_uxn_ram_main_h_l9_c11_429c_return_output : unsigned(31 downto 0);
  variable VAR_rdata : unsigned(7 downto 0);
- variable VAR_main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_6662_addr0 : unsigned(15 downto 0);
- variable VAR_main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_6662_wd : unsigned(7 downto 0);
- variable VAR_main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_6662_we : unsigned(0 downto 0);
- variable VAR_main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_6662_CLOCK_ENABLE : unsigned(0 downto 0);
- variable VAR_main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_6662_return_output : unsigned(7 downto 0);
+ variable VAR_main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_51b8_addr0 : unsigned(15 downto 0);
+ variable VAR_main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_51b8_wd : unsigned(7 downto 0);
+ variable VAR_main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_51b8_we : unsigned(0 downto 0);
+ variable VAR_main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_51b8_CLOCK_ENABLE : unsigned(0 downto 0);
+ variable VAR_main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_51b8_return_output : unsigned(7 downto 0);
  -- State registers comb logic variables
 variable REG_VAR_rwaddr : unsigned(31 downto 0);
 variable REG_VAR_wdata : unsigned(7 downto 0);
@@ -117,30 +117,30 @@ begin
      VAR_write_enable := write_enable;
 
      -- Submodule level 0
-     VAR_main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_6662_CLOCK_ENABLE := VAR_CLOCK_ENABLE;
-     VAR_main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_6662_wd := VAR_value;
+     VAR_main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_51b8_CLOCK_ENABLE := VAR_CLOCK_ENABLE;
+     VAR_main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_51b8_wd := VAR_value;
      REG_VAR_wdata := VAR_value;
-     VAR_main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_6662_we := VAR_write_enable;
-     -- CAST_TO_uint32_t[uxn_ram_main_h_l9_c11_9a90] LATENCY=0
-     VAR_CAST_TO_uint32_t_uxn_ram_main_h_l9_c11_9a90_return_output := CAST_TO_uint32_t_uint16_t(
+     VAR_main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_51b8_we := VAR_write_enable;
+     -- CAST_TO_uint32_t[uxn_ram_main_h_l9_c11_429c] LATENCY=0
+     VAR_CAST_TO_uint32_t_uxn_ram_main_h_l9_c11_429c_return_output := CAST_TO_uint32_t_uint16_t(
      VAR_ram_address);
 
      -- Submodule level 1
-     VAR_rwaddr_uxn_ram_main_h_l9_c2_fdf3 := VAR_CAST_TO_uint32_t_uxn_ram_main_h_l9_c11_9a90_return_output;
-     VAR_main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_6662_addr0 := resize(VAR_rwaddr_uxn_ram_main_h_l9_c2_fdf3, 16);
-     REG_VAR_rwaddr := VAR_rwaddr_uxn_ram_main_h_l9_c2_fdf3;
-     -- main_ram_update_main_ram_RAM_SP_RF_1[uxn_ram_main_h_l12_c18_6662] LATENCY=0
+     VAR_rwaddr_uxn_ram_main_h_l9_c2_ac6e := VAR_CAST_TO_uint32_t_uxn_ram_main_h_l9_c11_429c_return_output;
+     VAR_main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_51b8_addr0 := resize(VAR_rwaddr_uxn_ram_main_h_l9_c2_ac6e, 16);
+     REG_VAR_rwaddr := VAR_rwaddr_uxn_ram_main_h_l9_c2_ac6e;
+     -- main_ram_update_main_ram_RAM_SP_RF_1[uxn_ram_main_h_l12_c18_51b8] LATENCY=0
      -- Clock enable
-     main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_6662_CLOCK_ENABLE <= VAR_main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_6662_CLOCK_ENABLE;
+     main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_51b8_CLOCK_ENABLE <= VAR_main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_51b8_CLOCK_ENABLE;
      -- Inputs
-     main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_6662_addr0 <= VAR_main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_6662_addr0;
-     main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_6662_wd <= VAR_main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_6662_wd;
-     main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_6662_we <= VAR_main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_6662_we;
+     main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_51b8_addr0 <= VAR_main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_51b8_addr0;
+     main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_51b8_wd <= VAR_main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_51b8_wd;
+     main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_51b8_we <= VAR_main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_51b8_we;
      -- Outputs
-     VAR_main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_6662_return_output := main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_6662_return_output;
+     VAR_main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_51b8_return_output := main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_51b8_return_output;
 
      -- Submodule level 2
-     VAR_return_output := VAR_main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_6662_return_output;
+     VAR_return_output := VAR_main_ram_update_main_ram_RAM_SP_RF_1_uxn_ram_main_h_l12_c18_51b8_return_output;
      -- Last stage of pipeline return wire to return port/reg
      return_output <= VAR_return_output;
    end if;
