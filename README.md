@@ -9,7 +9,7 @@ Copy the contents of `dist/assets/`, `dist/cores/`, `dist/platforms/` into the e
 ## Current Specs
 
 - 256x240 resolution, 60Hz
-- 14.99904 MHz CPU
+- 15.2424 MHz CPU
 - 64KB Main RAM, 2x 256B Stack RAM, 256B Device RAM (per Uxn spec)
 
 ## Known issue on Analogue OS 2.0
@@ -18,7 +18,7 @@ If you see a black screen after loading a ROM, the ROM is likely actually still 
 
 ## Limitations
 
-Most Uxn ROMs won't work yet. ROMs less than 512 bytes might need to be padded with 0x00 bytes to be 512 bytes minimum. Most device features aren't implemented, and only single-pixel drawing and fills are implemented (*no sprites yet*!)
+Most Uxn ROMs won't work yet. ROMs may need to be padded with additional empty bytes (0x00) to be an even multiple of 4 bytes. Most device features aren't implemented, and only single-pixel drawing and fills are implemented (*no sprites yet*!)
 
 No audio
 
@@ -48,12 +48,12 @@ Integration steps after compiling [uxn-fpga](https://github.com/tsalvo/uxn-fpga)
 
 Clean (example command using a Docker Quartus Image):
 ```
-docker run --platform linux/amd64 -t --rm -v $(pwd):/build 53500e0665a3 quartus_sh --clean ap_core.qpf  
+docker run --platform linux/amd64 -t --rm -v $(pwd):/build didiermalenfant/quartus:22.1-apple-silicon quartus_sh --clean ap_core.qpf  
 ```
 
 Build (example command using a Docker Quartus Image):
 ```
-docker run --platform linux/amd64 -t --rm -v $(pwd):/build 53500e0665a3 quartus_sh --flow compile ap_core.qpf
+docker run --platform linux/amd64 -t --rm -v $(pwd):/build didiermalenfant/quartus:22.1-apple-silicon quartus_sh --flow compile ap_core.qpf
 ```
 
 # Core Template
