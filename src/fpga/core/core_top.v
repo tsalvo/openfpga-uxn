@@ -699,10 +699,21 @@ mf_pllbase mp1 (
     .locked         ( pll_core_locked )
 );
 
+wire [31:0] cont1_key_s;
+
+synch_3 #(
+    .WIDTH(32)
+) cont1_s (
+    cont1_key,
+    cont1_key_s,
+    clk_core_15_2424
+);
+
 
 top top
 (
     .clk_None(clk_core_15_2424),
+    .uxn_top_controller0_buttons(cont1_key_s[7:0]),
     .uxn_top_is_visible_pixel(vidout_uxn[2:2]),
     .uxn_top_rom_load_valid_byte(ioctl_wr),
     .uxn_top_rom_load_address(ioctl_addr),

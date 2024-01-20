@@ -8,6 +8,7 @@ port(
 clk_None : in std_logic;
 
 -- IO for each main func
+uxn_top_controller0_buttons : in unsigned(7 downto 0);
 uxn_top_is_visible_pixel : in unsigned(0 downto 0);
 uxn_top_rom_load_valid_byte : in unsigned(0 downto 0);
 uxn_top_rom_load_address : in unsigned(15 downto 0);
@@ -26,9 +27,10 @@ begin
 
 -- Instantiate each main
 -- main functions are always clock enabled, always running
-uxn_top_0CLK_4a00d965 : entity work.uxn_top_0CLK_4a00d965 port map (
+uxn_top_0CLK_26d68108 : entity work.uxn_top_0CLK_26d68108 port map (
 clk_None,
 to_unsigned(1,1),
+uxn_top_controller0_buttons,
 uxn_top_is_visible_pixel,
 uxn_top_rom_load_valid_byte,
 uxn_top_rom_load_address,
