@@ -24,10 +24,10 @@ attribute mark_debug : string;
 constant PIPELINE_LATENCY : integer := 0;
 -- All of the wires/regs in function
 -- Each function instance gets signals
--- BIN_OP_MINUS[BIN_OP_GT_uint8_t_uint8_t_c_l14_c18_98f8]
-signal BIN_OP_MINUS_BIN_OP_GT_uint8_t_uint8_t_c_l14_c18_98f8_left : signed(8 downto 0);
-signal BIN_OP_MINUS_BIN_OP_GT_uint8_t_uint8_t_c_l14_c18_98f8_right : signed(8 downto 0);
-signal BIN_OP_MINUS_BIN_OP_GT_uint8_t_uint8_t_c_l14_c18_98f8_return_output : signed(9 downto 0);
+-- BIN_OP_MINUS[BIN_OP_GT_uint8_t_uint8_t_c_l14_c18_705e]
+signal BIN_OP_MINUS_BIN_OP_GT_uint8_t_uint8_t_c_l14_c18_705e_left : signed(8 downto 0);
+signal BIN_OP_MINUS_BIN_OP_GT_uint8_t_uint8_t_c_l14_c18_705e_right : signed(8 downto 0);
+signal BIN_OP_MINUS_BIN_OP_GT_uint8_t_uint8_t_c_l14_c18_705e_return_output : signed(9 downto 0);
 
 function CAST_TO_int9_t_uint8_t( rhs : unsigned) return signed is
 
@@ -54,11 +54,11 @@ end function;
 begin
 
 -- SUBMODULE INSTANCES 
--- BIN_OP_MINUS_BIN_OP_GT_uint8_t_uint8_t_c_l14_c18_98f8
-BIN_OP_MINUS_BIN_OP_GT_uint8_t_uint8_t_c_l14_c18_98f8 : entity work.BIN_OP_MINUS_int9_t_int9_t_0CLK_de264c78 port map (
-BIN_OP_MINUS_BIN_OP_GT_uint8_t_uint8_t_c_l14_c18_98f8_left,
-BIN_OP_MINUS_BIN_OP_GT_uint8_t_uint8_t_c_l14_c18_98f8_right,
-BIN_OP_MINUS_BIN_OP_GT_uint8_t_uint8_t_c_l14_c18_98f8_return_output);
+-- BIN_OP_MINUS_BIN_OP_GT_uint8_t_uint8_t_c_l14_c18_705e
+BIN_OP_MINUS_BIN_OP_GT_uint8_t_uint8_t_c_l14_c18_705e : entity work.BIN_OP_MINUS_int9_t_int9_t_0CLK_de264c78 port map (
+BIN_OP_MINUS_BIN_OP_GT_uint8_t_uint8_t_c_l14_c18_705e_left,
+BIN_OP_MINUS_BIN_OP_GT_uint8_t_uint8_t_c_l14_c18_705e_right,
+BIN_OP_MINUS_BIN_OP_GT_uint8_t_uint8_t_c_l14_c18_705e_return_output);
 
 
 
@@ -68,7 +68,7 @@ process (
  left,
  right,
  -- All submodule outputs
- BIN_OP_MINUS_BIN_OP_GT_uint8_t_uint8_t_c_l14_c18_98f8_return_output)
+ BIN_OP_MINUS_BIN_OP_GT_uint8_t_uint8_t_c_l14_c18_705e_return_output)
 is 
  -- All of the wires in function
  variable VAR_CLOCK_ENABLE : unsigned(0 downto 0);
@@ -76,17 +76,17 @@ is
  variable VAR_right : unsigned(7 downto 0);
  variable VAR_return_output : unsigned(0 downto 0);
  variable VAR_left_bot : unsigned(7 downto 0);
- variable VAR_left_bot_BIN_OP_GT_uint8_t_uint8_t_c_l9_c13_6e01_0 : unsigned(7 downto 0);
+ variable VAR_left_bot_BIN_OP_GT_uint8_t_uint8_t_c_l9_c13_5e92_0 : unsigned(7 downto 0);
  variable VAR_right_bot : unsigned(7 downto 0);
  variable VAR_rv : unsigned(0 downto 0);
  variable VAR_sub : signed(8 downto 0);
- variable VAR_sub_BIN_OP_GT_uint8_t_uint8_t_c_l14_c12_1fd7_0 : signed(8 downto 0);
- variable VAR_CAST_TO_int9_t_BIN_OP_GT_uint8_t_uint8_t_c_l14_c18_b885_return_output : signed(8 downto 0);
- variable VAR_BIN_OP_MINUS_BIN_OP_GT_uint8_t_uint8_t_c_l14_c18_98f8_left : signed(8 downto 0);
- variable VAR_BIN_OP_MINUS_BIN_OP_GT_uint8_t_uint8_t_c_l14_c18_98f8_right : signed(8 downto 0);
- variable VAR_BIN_OP_MINUS_BIN_OP_GT_uint8_t_uint8_t_c_l14_c18_98f8_return_output : signed(9 downto 0);
+ variable VAR_sub_BIN_OP_GT_uint8_t_uint8_t_c_l14_c12_f6e3_0 : signed(8 downto 0);
+ variable VAR_CAST_TO_int9_t_BIN_OP_GT_uint8_t_uint8_t_c_l14_c18_58c8_return_output : signed(8 downto 0);
+ variable VAR_BIN_OP_MINUS_BIN_OP_GT_uint8_t_uint8_t_c_l14_c18_705e_left : signed(8 downto 0);
+ variable VAR_BIN_OP_MINUS_BIN_OP_GT_uint8_t_uint8_t_c_l14_c18_705e_right : signed(8 downto 0);
+ variable VAR_BIN_OP_MINUS_BIN_OP_GT_uint8_t_uint8_t_c_l14_c18_705e_return_output : signed(9 downto 0);
  variable VAR_lt_zero : unsigned(0 downto 0);
- variable VAR_int9_8_8_BIN_OP_GT_uint8_t_uint8_t_c_l15_c23_d6f0_return_output : unsigned(0 downto 0);
+ variable VAR_int9_8_8_BIN_OP_GT_uint8_t_uint8_t_c_l15_c23_cead_return_output : unsigned(0 downto 0);
 begin
 
  -- Loop to construct simultaneous register transfers for each of the pipeline stages
@@ -98,29 +98,29 @@ begin
      VAR_right := right;
 
      -- Submodule level 0
-     VAR_left_bot_BIN_OP_GT_uint8_t_uint8_t_c_l9_c13_6e01_0 := VAR_left;
-     VAR_BIN_OP_MINUS_BIN_OP_GT_uint8_t_uint8_t_c_l14_c18_98f8_right := signed(std_logic_vector(resize(VAR_left_bot_BIN_OP_GT_uint8_t_uint8_t_c_l9_c13_6e01_0, 9)));
-     -- CAST_TO_int9_t[BIN_OP_GT_uint8_t_uint8_t_c_l14_c18_b885] LATENCY=0
-     VAR_CAST_TO_int9_t_BIN_OP_GT_uint8_t_uint8_t_c_l14_c18_b885_return_output := CAST_TO_int9_t_uint8_t(
+     VAR_left_bot_BIN_OP_GT_uint8_t_uint8_t_c_l9_c13_5e92_0 := VAR_left;
+     VAR_BIN_OP_MINUS_BIN_OP_GT_uint8_t_uint8_t_c_l14_c18_705e_right := signed(std_logic_vector(resize(VAR_left_bot_BIN_OP_GT_uint8_t_uint8_t_c_l9_c13_5e92_0, 9)));
+     -- CAST_TO_int9_t[BIN_OP_GT_uint8_t_uint8_t_c_l14_c18_58c8] LATENCY=0
+     VAR_CAST_TO_int9_t_BIN_OP_GT_uint8_t_uint8_t_c_l14_c18_58c8_return_output := CAST_TO_int9_t_uint8_t(
      VAR_right);
 
      -- Submodule level 1
-     VAR_BIN_OP_MINUS_BIN_OP_GT_uint8_t_uint8_t_c_l14_c18_98f8_left := VAR_CAST_TO_int9_t_BIN_OP_GT_uint8_t_uint8_t_c_l14_c18_b885_return_output;
-     -- BIN_OP_MINUS[BIN_OP_GT_uint8_t_uint8_t_c_l14_c18_98f8] LATENCY=0
+     VAR_BIN_OP_MINUS_BIN_OP_GT_uint8_t_uint8_t_c_l14_c18_705e_left := VAR_CAST_TO_int9_t_BIN_OP_GT_uint8_t_uint8_t_c_l14_c18_58c8_return_output;
+     -- BIN_OP_MINUS[BIN_OP_GT_uint8_t_uint8_t_c_l14_c18_705e] LATENCY=0
      -- Inputs
-     BIN_OP_MINUS_BIN_OP_GT_uint8_t_uint8_t_c_l14_c18_98f8_left <= VAR_BIN_OP_MINUS_BIN_OP_GT_uint8_t_uint8_t_c_l14_c18_98f8_left;
-     BIN_OP_MINUS_BIN_OP_GT_uint8_t_uint8_t_c_l14_c18_98f8_right <= VAR_BIN_OP_MINUS_BIN_OP_GT_uint8_t_uint8_t_c_l14_c18_98f8_right;
+     BIN_OP_MINUS_BIN_OP_GT_uint8_t_uint8_t_c_l14_c18_705e_left <= VAR_BIN_OP_MINUS_BIN_OP_GT_uint8_t_uint8_t_c_l14_c18_705e_left;
+     BIN_OP_MINUS_BIN_OP_GT_uint8_t_uint8_t_c_l14_c18_705e_right <= VAR_BIN_OP_MINUS_BIN_OP_GT_uint8_t_uint8_t_c_l14_c18_705e_right;
      -- Outputs
-     VAR_BIN_OP_MINUS_BIN_OP_GT_uint8_t_uint8_t_c_l14_c18_98f8_return_output := BIN_OP_MINUS_BIN_OP_GT_uint8_t_uint8_t_c_l14_c18_98f8_return_output;
+     VAR_BIN_OP_MINUS_BIN_OP_GT_uint8_t_uint8_t_c_l14_c18_705e_return_output := BIN_OP_MINUS_BIN_OP_GT_uint8_t_uint8_t_c_l14_c18_705e_return_output;
 
      -- Submodule level 2
-     VAR_sub_BIN_OP_GT_uint8_t_uint8_t_c_l14_c12_1fd7_0 := resize(VAR_BIN_OP_MINUS_BIN_OP_GT_uint8_t_uint8_t_c_l14_c18_98f8_return_output, 9);
-     -- int9_8_8[BIN_OP_GT_uint8_t_uint8_t_c_l15_c23_d6f0] LATENCY=0
-     VAR_int9_8_8_BIN_OP_GT_uint8_t_uint8_t_c_l15_c23_d6f0_return_output := int9_8_8(
-     VAR_sub_BIN_OP_GT_uint8_t_uint8_t_c_l14_c12_1fd7_0);
+     VAR_sub_BIN_OP_GT_uint8_t_uint8_t_c_l14_c12_f6e3_0 := resize(VAR_BIN_OP_MINUS_BIN_OP_GT_uint8_t_uint8_t_c_l14_c18_705e_return_output, 9);
+     -- int9_8_8[BIN_OP_GT_uint8_t_uint8_t_c_l15_c23_cead] LATENCY=0
+     VAR_int9_8_8_BIN_OP_GT_uint8_t_uint8_t_c_l15_c23_cead_return_output := int9_8_8(
+     VAR_sub_BIN_OP_GT_uint8_t_uint8_t_c_l14_c12_f6e3_0);
 
      -- Submodule level 3
-     VAR_return_output := VAR_int9_8_8_BIN_OP_GT_uint8_t_uint8_t_c_l15_c23_d6f0_return_output;
+     VAR_return_output := VAR_int9_8_8_BIN_OP_GT_uint8_t_uint8_t_c_l15_c23_cead_return_output;
      -- Last stage of pipeline return wire to return port/reg
      return_output <= VAR_return_output;
    end if;

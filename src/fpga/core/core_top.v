@@ -521,10 +521,10 @@ assign video_hs = vidout_hs;
 
     localparam  VID_V_BPORCH = 'd10;
     localparam  VID_V_ACTIVE = 'd240;
-    localparam  VID_V_TOTAL = 'd870;
+    localparam  VID_V_TOTAL = 'd960;
     localparam  VID_H_BPORCH = 'd10;
     localparam  VID_H_ACTIVE = 'd256;
-    localparam  VID_H_TOTAL = 'd292;
+    localparam  VID_H_TOTAL = 'd320;
 
     reg [3:0] uxn_c_current_pixel_r;
     reg [3:0] uxn_c_current_pixel_g;

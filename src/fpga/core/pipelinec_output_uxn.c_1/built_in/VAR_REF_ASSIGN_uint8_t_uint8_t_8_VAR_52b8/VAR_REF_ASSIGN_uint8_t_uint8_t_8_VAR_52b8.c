@@ -17,9 +17,9 @@ uint8_t_array_8_t VAR_REF_ASSIGN_uint8_t_uint8_t_8_VAR_52b8(uint8_t elem_val, ui
  rv.data[1] = base[1];
  rv.data[4] = base[4];
  rv.data[7] = base[7];
+ rv.data[3] = base[3];
  rv.data[0] = base[0];
  rv.data[6] = base[6];
- rv.data[3] = base[3];
  // Do mux for each element
  if(
    (var_dim_0 == 2) 
@@ -52,6 +52,12 @@ uint8_t_array_8_t VAR_REF_ASSIGN_uint8_t_uint8_t_8_VAR_52b8(uint8_t elem_val, ui
    rv.data[7] = elem_val;
  }
  if(
+   (var_dim_0 == 3) 
+ )
+ {
+   rv.data[3] = elem_val;
+ }
+ if(
    (var_dim_0 == 0) 
  )
  {
@@ -62,12 +68,6 @@ uint8_t_array_8_t VAR_REF_ASSIGN_uint8_t_uint8_t_8_VAR_52b8(uint8_t elem_val, ui
  )
  {
    rv.data[6] = elem_val;
- }
- if(
-   (var_dim_0 == 3) 
- )
- {
-   rv.data[3] = elem_val;
  }
 
   return rv;
