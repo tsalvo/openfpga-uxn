@@ -12,23 +12,23 @@ Copy the contents of `dist/assets/`, `dist/cores/`, `dist/platforms/` into the e
 - 15.2424 MHz CPU
 - 64KB Main RAM, 2x 256B Stack RAM, 256B Device RAM (per Uxn spec)
 
-## Known issue on Analogue OS 2.0
+## Known issue on Analogue OS 2.0 (Fixed in 2.1)
 
-If you see a black screen after loading a ROM, the ROM is likely actually still running. Sometimes you need to open _Core Settings_ -> _Display Mode_, and re-select a display mode, to see video output. I'm still trying to find out if this is purely on Analogue's end, or something that I can address. Perhaps it will be fixed in a future Analogue OS update.
+If you see a black screen after loading a ROM, the ROM is likely actually still running. Sometimes you need to open _Core Settings_ -> _Display Mode_, and re-select a display mode, to see video output. This was a bug on Analogue's end.
 
 ## Limitations
 
-Most Uxn ROMs won't work yet. ROMs may need to be padded with additional empty bytes (0x00) to be an even multiple of 4 bytes. Most device features aren't implemented, and only single-pixel drawing and fills are implemented (*no sprites yet*!)
+Most Uxn ROMs won't work yet. ROMs may need to be padded with additional empty bytes (0x00) to be an even multiple of 4 bytes. Most Uxn device features aren't implemented.
 
 No audio
 
-No input controls
+The display may look flickery for some ROMs unless Frame Blending is enabled for in the Display Mode settings.
 
 The speed is also very slow. I'm still working on that :-)
 
 ## Test ROMs
 
-I added some test ROMs into the `dist/assets` folder that are working / partially working. Some of these are slightly modified examples from the [Uxn Chibicc fork](https://github.com/lynn/chibicc) example code:
+I added some test ROMs into the `dist/assets` folder. Some of these are slightly modified examples from the [Uxn Chibicc fork](https://github.com/lynn/chibicc) example code:
 
 - `bounce_256_240.rom` - bouncing square demo
 - `fill_test_256_240.rom` - draws a pattern of fills from bottom-right and then top-left
