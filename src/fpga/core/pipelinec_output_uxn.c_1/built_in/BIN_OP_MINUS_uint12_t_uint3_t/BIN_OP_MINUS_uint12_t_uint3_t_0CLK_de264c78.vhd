@@ -11,13 +11,13 @@ use ieee.numeric_std.all;
 -- use ieee.float_pkg.all;
 use work.c_structs_pkg.all;
 -- Submodules: 0
-entity BIN_OP_PLUS_uint12_t_uint2_t_0CLK_de264c78 is
+entity BIN_OP_MINUS_uint12_t_uint3_t_0CLK_de264c78 is
 port(
  left : in unsigned(11 downto 0);
- right : in unsigned(1 downto 0);
- return_output : out unsigned(12 downto 0));
-end BIN_OP_PLUS_uint12_t_uint2_t_0CLK_de264c78;
-architecture arch of BIN_OP_PLUS_uint12_t_uint2_t_0CLK_de264c78 is
+ right : in unsigned(2 downto 0);
+ return_output : out unsigned(11 downto 0));
+end BIN_OP_MINUS_uint12_t_uint3_t_0CLK_de264c78;
+architecture arch of BIN_OP_MINUS_uint12_t_uint3_t_0CLK_de264c78 is
 -- Types and such
 -- Declarations
 attribute mark_debug : string;
@@ -33,9 +33,9 @@ type raw_hdl_variables_t is record
   right_resized : unsigned(11 downto 0);
   left_range_slv : std_logic_vector(11 downto 0);
   right_range_slv : std_logic_vector(11 downto 0);
-  full_width_return_output : unsigned(12 downto 0);
-  return_output : unsigned(12 downto 0);
-  right : unsigned(1 downto 0);
+  full_width_return_output : unsigned(11 downto 0);
+  return_output : unsigned(11 downto 0);
+  right : unsigned(2 downto 0);
   left : unsigned(11 downto 0);
 end record;
 
@@ -81,13 +81,12 @@ is
   --
   -- One bit adder with carry
 
-  -- width = 12
   -- num_stages = 1
-  -- bits per stage = {0: 12}
   
     if STAGE = 0 then
       -- This stuff must be in stage 0
-      write_pipe.carry := (others => '0'); -- One bit unsigned
+      write_pipe.carry := (others => '0'); -- One bit unsigned  
+      write_pipe.intermediate := (others => '0'); -- N bit unused depending on bits per stage
       write_pipe.left_resized := resize(write_pipe.left, 12);
       write_pipe.right_resized := resize(write_pipe.right, 12);
       write_pipe.return_output := (others => '0');
@@ -99,16 +98,17 @@ is
         write_pipe.left_range_slv(11 downto 0) := std_logic_vector(write_pipe.left_resized(11 downto 0));
         write_pipe.right_range_slv(11 downto 0) := std_logic_vector(write_pipe.right_resized(11 downto 0));  
 
-        -- Adding unsigned values
+        -- DOIGN SUB OP,  carry indicates -1
+        -- Sub signed values
         write_pipe.intermediate := (others => '0'); -- Zero out for this stage
-        write_pipe.intermediate(12 downto 0) := std_logic_vector( unsigned('0' & write_pipe.left_range_slv(11 downto 0)) + unsigned('0' & write_pipe.right_range_slv(11 downto 0)) );
-        -- New carry is msb of intermediate
+        write_pipe.intermediate(12 downto 0) := std_logic_vector( signed('0' & write_pipe.left_range_slv(11 downto 0)) - signed('0' & write_pipe.right_range_slv(11 downto 0)) - signed('0' & write_pipe.carry) ); 
+  
+        -- New carry is sign (negative carry)
         write_pipe.carry(0) := write_pipe.intermediate(12);
         -- Assign output bits
-        -- Carry full_width_return_output(up_bound+1) will be overidden in next iteration and included as carry
-        write_pipe.full_width_return_output(12 downto 0) := unsigned(write_pipe.intermediate(12 downto 0));
+        write_pipe.full_width_return_output(11 downto 0) := unsigned(write_pipe.intermediate(11 downto 0));
       
-      write_pipe.return_output := resize(write_pipe.full_width_return_output(12 downto 0), 13);      
+      write_pipe.return_output := resize(write_pipe.full_width_return_output(11 downto 0), 12);      
 
     end if;
       -- Write to stage reg

@@ -11,13 +11,13 @@ use ieee.numeric_std.all;
 -- use ieee.float_pkg.all;
 use work.c_structs_pkg.all;
 -- Submodules: 0
-entity BIN_OP_PLUS_uint10_t_uint1_t_0CLK_de264c78 is
+entity BIN_OP_PLUS_uint17_t_uint1_t_0CLK_de264c78 is
 port(
- left : in unsigned(9 downto 0);
+ left : in unsigned(16 downto 0);
  right : in unsigned(0 downto 0);
- return_output : out unsigned(10 downto 0));
-end BIN_OP_PLUS_uint10_t_uint1_t_0CLK_de264c78;
-architecture arch of BIN_OP_PLUS_uint10_t_uint1_t_0CLK_de264c78 is
+ return_output : out unsigned(17 downto 0));
+end BIN_OP_PLUS_uint17_t_uint1_t_0CLK_de264c78;
+architecture arch of BIN_OP_PLUS_uint17_t_uint1_t_0CLK_de264c78 is
 -- Types and such
 -- Declarations
 attribute mark_debug : string;
@@ -28,15 +28,15 @@ type raw_hdl_variables_t is record
  -- All of the wires in function
 
   carry : std_logic_vector(0 downto 0);
-  intermediate : std_logic_vector(10 downto 0);
-  left_resized : unsigned(9 downto 0);
-  right_resized : unsigned(9 downto 0);
-  left_range_slv : std_logic_vector(9 downto 0);
-  right_range_slv : std_logic_vector(9 downto 0);
-  full_width_return_output : unsigned(10 downto 0);
-  return_output : unsigned(10 downto 0);
+  intermediate : std_logic_vector(17 downto 0);
+  left_resized : unsigned(16 downto 0);
+  right_resized : unsigned(16 downto 0);
+  left_range_slv : std_logic_vector(16 downto 0);
+  right_range_slv : std_logic_vector(16 downto 0);
+  full_width_return_output : unsigned(17 downto 0);
+  return_output : unsigned(17 downto 0);
   right : unsigned(0 downto 0);
-  left : unsigned(9 downto 0);
+  left : unsigned(16 downto 0);
 end record;
 
 -- Type for this modules register pipeline
@@ -81,34 +81,34 @@ is
   --
   -- One bit adder with carry
 
-  -- width = 10
+  -- width = 17
   -- num_stages = 1
-  -- bits per stage = {0: 10}
+  -- bits per stage = {0: 17}
   
     if STAGE = 0 then
       -- This stuff must be in stage 0
       write_pipe.carry := (others => '0'); -- One bit unsigned
-      write_pipe.left_resized := resize(write_pipe.left, 10);
-      write_pipe.right_resized := resize(write_pipe.right, 10);
+      write_pipe.left_resized := resize(write_pipe.left, 17);
+      write_pipe.right_resized := resize(write_pipe.right, 17);
       write_pipe.return_output := (others => '0');
       write_pipe.full_width_return_output := (others => '0');
       
-        --  bits_per_stage_dict[0] = 10
+        --  bits_per_stage_dict[0] = 17
         write_pipe.left_range_slv := (others => '0');
         write_pipe.right_range_slv := (others => '0');
-        write_pipe.left_range_slv(9 downto 0) := std_logic_vector(write_pipe.left_resized(9 downto 0));
-        write_pipe.right_range_slv(9 downto 0) := std_logic_vector(write_pipe.right_resized(9 downto 0));  
+        write_pipe.left_range_slv(16 downto 0) := std_logic_vector(write_pipe.left_resized(16 downto 0));
+        write_pipe.right_range_slv(16 downto 0) := std_logic_vector(write_pipe.right_resized(16 downto 0));  
 
         -- Adding unsigned values
         write_pipe.intermediate := (others => '0'); -- Zero out for this stage
-        write_pipe.intermediate(10 downto 0) := std_logic_vector( unsigned('0' & write_pipe.left_range_slv(9 downto 0)) + unsigned('0' & write_pipe.right_range_slv(9 downto 0)) );
+        write_pipe.intermediate(17 downto 0) := std_logic_vector( unsigned('0' & write_pipe.left_range_slv(16 downto 0)) + unsigned('0' & write_pipe.right_range_slv(16 downto 0)) );
         -- New carry is msb of intermediate
-        write_pipe.carry(0) := write_pipe.intermediate(10);
+        write_pipe.carry(0) := write_pipe.intermediate(17);
         -- Assign output bits
         -- Carry full_width_return_output(up_bound+1) will be overidden in next iteration and included as carry
-        write_pipe.full_width_return_output(10 downto 0) := unsigned(write_pipe.intermediate(10 downto 0));
+        write_pipe.full_width_return_output(17 downto 0) := unsigned(write_pipe.intermediate(17 downto 0));
       
-      write_pipe.return_output := resize(write_pipe.full_width_return_output(10 downto 0), 11);      
+      write_pipe.return_output := resize(write_pipe.full_width_return_output(17 downto 0), 18);      
 
     end if;
       -- Write to stage reg

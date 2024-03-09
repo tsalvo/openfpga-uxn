@@ -14,17 +14,19 @@ Copy the contents of `dist/assets/`, `dist/cores/`, `dist/platforms/` into the e
 
 ## Known issue on Analogue OS 2.0 (Fixed in 2.1)
 
-If you see a black screen after loading a ROM, the ROM is likely actually still running. Sometimes you need to open _Core Settings_ -> _Display Mode_, and re-select a display mode, to see video output. This was a bug on Analogue's end.
+If you see a black screen after loading a ROM, the ROM is likely actually still running. Sometimes you need to open _Core Settings_ -> _Display Mode_, and re-select a display mode, to see video output. This was a bug on Analogue's end. Upgrading to AnalogueOS 2.1 or above fixes this issue.
+
+## Known issue on Analogue OS <= 2.1 (Fixed in 2.2)
+
+ROMs may need to be padded with additional empty bytes (0x00) to be an even multiple of 4 bytes. Updating to Analogue OS 2.2 fixes this issue.
 
 ## Limitations
 
-Most Uxn ROMs won't work yet. ROMs may need to be padded with additional empty bytes (0x00) to be an even multiple of 4 bytes. Most Uxn device features aren't implemented.
+Many Uxn ROMs won't work yet. Most Uxn device features aren't implemented.
 
 No audio
 
 The display may look flickery for some ROMs unless Frame Blending is enabled for in the Display Mode settings.
-
-The speed is also very slow. I'm still working on that :-)
 
 ## Test ROMs
 
