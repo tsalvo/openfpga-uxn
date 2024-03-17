@@ -495,7 +495,7 @@ core_bridge_cmd icb (
 ////////////////////////////////////////////////////////////////////////////////////////
 
 // UXN PipelineC Module Input / Output
-// synchronous to clk_core_15_2424
+// synchronous to clk_core_19_1232
 wire [15:0] uxn_c_out;
 
 ////////////////////////////////////////////////////////////////////////////////////////
@@ -510,9 +510,8 @@ wire [15:0] uxn_c_out;
 // this pixel clock is fairly high for the relatively low resolution, but that's fine.
 // PLL output has a minimum output frequency anyway.
 
-
-assign video_rgb_clock = clk_core_15_2424;
-assign video_rgb_clock_90 = clk_core_15_2424_90deg;
+assign video_rgb_clock = clk_core_19_1232;
+assign video_rgb_clock_90 = clk_core_19_1232_90deg;
 assign video_rgb = vidout_rgb;
 assign video_de = vidout_de;
 assign video_skip = vidout_skip;
@@ -521,7 +520,7 @@ assign video_hs = vidout_hs;
 
     localparam  VID_V_BPORCH = 'd10;
     localparam  VID_V_ACTIVE = 'd240;
-    localparam  VID_V_TOTAL = 'd960;
+    localparam  VID_V_TOTAL = 'd996;
     localparam  VID_H_BPORCH = 'd10;
     localparam  VID_H_ACTIVE = 'd256;
     localparam  VID_H_TOTAL = 'd320;
@@ -543,9 +542,8 @@ assign video_hs = vidout_hs;
     reg         vidout_skip;
     reg         vidout_vs;
     reg         vidout_hs, vidout_hs_1;
-    reg [15:0]  vidout_uxn;
 
-always @(posedge clk_core_15_2424 or negedge reset_n) begin
+always @(posedge clk_core_19_1232 or negedge reset_n) begin
 
     if(~reset_n) begin
     
@@ -557,10 +555,6 @@ always @(posedge clk_core_15_2424 or negedge reset_n) begin
         uxn_c_current_pixel_r <= uxn_c_out[11:8];
         uxn_c_current_pixel_g <= uxn_c_out[7:4];
         uxn_c_current_pixel_b <= uxn_c_out[3:0];
-        
-        vidout_uxn[15:12] <= 4'b0010;
-        vidout_uxn[2:2] <= 1'b0;
-    
         vidout_de_1 <= vidout_de;
     
         vidout_de <= 0;
@@ -604,7 +598,6 @@ always @(posedge clk_core_15_2424 or negedge reset_n) begin
             if(y_count >= VID_V_BPORCH && y_count < VID_V_ACTIVE+VID_V_BPORCH) begin
                 // data enable. this is the active region of the line
                 vidout_de <= 1;
-                vidout_uxn[2:2] <= 1'b1;     
                 vidout_rgb[23:20] <= uxn_c_current_pixel_r;
                 vidout_rgb[15:12] <= uxn_c_current_pixel_g;
                 vidout_rgb[7:4] <= uxn_c_current_pixel_b;
@@ -631,6 +624,14 @@ always @(posedge clk_74a) begin
     if(audgen_accum >= 21'd742500) begin
         audgen_mclk <= ~audgen_mclk;
         audgen_accum <= audgen_accum - 21'd742500 + CYCLE_48KHZ;
+    end
+    
+    if (bridge_wr) begin
+      casex (bridge_addr)
+        32'h10000200: begin
+          is_double_buffer_enabled <= bridge_wr_data[0];
+        end
+      endcase
     end
 end
 
@@ -668,7 +669,7 @@ data_loader #(
     .WRITE_MEM_CLOCK_DELAY(4)
 ) rom_loader (
     .clk_74a(clk_74a),
-    .clk_memory(clk_core_15_2424),
+    .clk_memory(clk_core_19_1232),
 
     .bridge_wr(bridge_wr),
     .bridge_endian_little(bridge_endian_little),
@@ -682,8 +683,8 @@ data_loader #(
 
 ///////////////////////////////////////////////
 
-    wire    clk_core_15_2424;
-    wire    clk_core_15_2424_90deg;
+    wire    clk_core_19_1232;
+    wire    clk_core_19_1232_90deg;
     
     wire    pll_core_locked;
     wire    pll_core_locked_s;
@@ -693,12 +694,30 @@ mf_pllbase mp1 (
     .refclk         ( clk_74a ),
     .rst            ( 0 ),
     
-    .outclk_0       ( clk_core_15_2424 ),
-    .outclk_1       ( clk_core_15_2424_90deg ),
+    .outclk_0       ( clk_core_19_1232 ),
+    .outclk_1       ( clk_core_19_1232_90deg ),
     
     .locked         ( pll_core_locked )
 );
 
+
+////////////////////////////////////////////////////////////////////////////////////////
+// Settings
+reg is_double_buffer_enabled = 0;
+
+// Synced settings
+wire is_double_buffer_enabled_s;
+
+synch_3 #(
+    .WIDTH(1)
+) internal_s (
+    is_double_buffer_enabled,
+    is_double_buffer_enabled_s,
+    clk_core_19_1232
+);
+
+////////////////////////////////////////////////////////////////////////////////////////
+// Controls
 wire [31:0] cont1_key_s;
 
 synch_3 #(
@@ -706,15 +725,28 @@ synch_3 #(
 ) cont1_s (
     cont1_key,
     cont1_key_s,
-    clk_core_15_2424
+    clk_core_19_1232
 );
 
-
+////////////////////////////////////////////////////////////////////////////////////////
+// Uxn Top-level Module (from PipelineC)
 top top
 (
-    .clk_None(clk_core_15_2424),
-    .uxn_top_controller0_buttons(cont1_key_s[7:0]),
-    .uxn_top_is_visible_pixel(vidout_uxn[2:2]),
+    .clk_None(clk_core_19_1232),
+    .uxn_top_controller0_up(cont1_key_s[0]),
+    .uxn_top_controller0_down(cont1_key_s[1]),
+    .uxn_top_controller0_left(cont1_key_s[2]),
+    .uxn_top_controller0_right(cont1_key_s[3]),
+    .uxn_top_controller0_a(cont1_key_s[4]),
+    .uxn_top_controller0_b(cont1_key_s[5]),
+    .uxn_top_controller0_x(cont1_key_s[6]),
+    .uxn_top_controller0_y(cont1_key_s[7]),
+    .uxn_top_controller0_l(cont1_key_s[8]),
+    .uxn_top_controller0_r(cont1_key_s[9]),
+    .uxn_top_controller0_select(cont1_key_s[14]),
+    .uxn_top_controller0_start(cont1_key_s[15]),
+    .uxn_top_is_visible_pixel(vidout_de),
+    .uxn_top_is_double_buffer_enabled(is_double_buffer_enabled_s),
     .uxn_top_rom_load_valid_byte(ioctl_wr),
     .uxn_top_rom_load_address(ioctl_addr),
     .uxn_top_rom_load_value(ioctl_dout),

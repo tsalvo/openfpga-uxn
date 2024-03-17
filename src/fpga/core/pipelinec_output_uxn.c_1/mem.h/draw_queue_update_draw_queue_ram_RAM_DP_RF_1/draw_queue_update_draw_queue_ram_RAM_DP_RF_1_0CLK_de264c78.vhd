@@ -15,18 +15,18 @@ entity draw_queue_update_draw_queue_ram_RAM_DP_RF_1_0CLK_de264c78 is
 port(
  clk : in std_logic;
  CLOCK_ENABLE : in unsigned(0 downto 0);
- addr_r0 : in unsigned(11 downto 0);
- addr_w0 : in unsigned(11 downto 0);
+ addr_r0 : in unsigned(12 downto 0);
+ addr_w0 : in unsigned(12 downto 0);
  wd : in unsigned(23 downto 0);
  we : in unsigned(0 downto 0);
  return_output : out unsigned(23 downto 0));
 end draw_queue_update_draw_queue_ram_RAM_DP_RF_1_0CLK_de264c78;
 architecture arch of draw_queue_update_draw_queue_ram_RAM_DP_RF_1_0CLK_de264c78 is
 
-  signal addr_w : unsigned(11 downto 0) := to_unsigned(0, 12);
-  signal addr_r : unsigned(11 downto 0) := to_unsigned(0, 12);
+  signal addr_w : unsigned(12 downto 0) := to_unsigned(0, 13);
+  signal addr_r : unsigned(12 downto 0) := to_unsigned(0, 13);
 
-  signal draw_queue_ram : uint24_t_4096 := (others => to_unsigned(0, 24));
+  signal draw_queue_ram : uint24_t_8192 := (others => to_unsigned(0, 24));
 
     signal return_output_r : unsigned(23 downto 0) := to_unsigned(0, 24);
 begin
