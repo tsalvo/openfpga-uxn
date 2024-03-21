@@ -6,11 +6,13 @@ A core for Analogue Pocket that integrates the VHDL output of [uxn-fpga](https:/
 
 Copy the contents of `dist/assets/`, `dist/cores/`, `dist/platforms/` into the equivalent `Assets/uxn/`, `Cores/`, `Platforms/` folders on your Analogue Pocket
 
-## Current Specs
+## Specs
 
-- 256x240 resolution, 60Hz
-- 19.1232 MHz CPU
-- 64KB Main RAM, 2x 256B Stack RAM, 256B Device RAM (per Uxn spec)
+- Display: 256x240 at 60Hz
+- CPU: 19.4616 MHz
+- Main RAM: 64KB Main RAM
+- Stack RAM: 2x 256 bytes
+- Device RAM: 256 bytes
 
 ## Known issue on Analogue OS 2.0 (Fixed in 2.1)
 
@@ -22,11 +24,11 @@ ROMs may need to be padded with additional empty bytes (0x00) to be an even mult
 
 ## Limitations
 
-Many Uxn ROMs won't work yet. Most Uxn device features aren't implemented.
+Most Uxn device features aren't implemented (no audio, mouse, keyboard, file system, console, etc).
 
-No audio
+The display may look flickery for some ROMs unless _Frame Blending_ is enabled in the _Display Mode_ settings.
 
-The display may look flickery for some ROMs unless Frame Blending is enabled for in the Display Mode settings.
+In the _Core Settings_ menu on Analogue Pocket, there is a toggle for _Double Buffering_. Some ROMs may look better with double buffering, while others may look better without it.
 
 ## Test ROMs
 
