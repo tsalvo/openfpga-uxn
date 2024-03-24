@@ -7,8 +7,8 @@
             "description": "UXN Computer",
             "author": "tsalvo",
             "url": "https://github.com/tsalvo/openfpga-uxn",
-            "version": "1.3.0",
-            "date_release": "2023-07-30"
+            "version": "0.0.1",
+            "date_release": "2024-03-24"
         },
         "framework": {
             "target_product": "Analogue Pocket",
