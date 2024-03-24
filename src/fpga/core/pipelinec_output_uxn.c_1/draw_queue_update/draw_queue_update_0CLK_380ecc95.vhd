@@ -15,8 +15,8 @@ entity draw_queue_update_0CLK_380ecc95 is
 port(
  clk : in std_logic;
  CLOCK_ENABLE : in unsigned(0 downto 0);
- read_address : in unsigned(12 downto 0);
- write_address : in unsigned(12 downto 0);
+ read_address : in unsigned(13 downto 0);
+ write_address : in unsigned(13 downto 0);
  write_value : in unsigned(23 downto 0);
  write_enable : in unsigned(0 downto 0);
  return_output : out unsigned(23 downto 0));
@@ -37,17 +37,17 @@ signal REG_COMB_wdata : unsigned(31 downto 0);
 signal REG_COMB_raddr : unsigned(31 downto 0);
 
 -- Each function instance gets signals
--- draw_queue_update_draw_queue_ram_RAM_DP_RF_1[uxn_ram_screen_h_l22_c19_20c6]
-signal draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_20c6_CLOCK_ENABLE : unsigned(0 downto 0);
-signal draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_20c6_addr_r0 : unsigned(12 downto 0);
-signal draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_20c6_addr_w0 : unsigned(12 downto 0);
-signal draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_20c6_wd : unsigned(23 downto 0);
-signal draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_20c6_we : unsigned(0 downto 0);
-signal draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_20c6_return_output : unsigned(23 downto 0);
+-- draw_queue_update_draw_queue_ram_RAM_DP_RF_1[uxn_ram_screen_h_l22_c19_5cfa]
+signal draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_5cfa_CLOCK_ENABLE : unsigned(0 downto 0);
+signal draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_5cfa_addr_r0 : unsigned(13 downto 0);
+signal draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_5cfa_addr_w0 : unsigned(13 downto 0);
+signal draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_5cfa_wd : unsigned(23 downto 0);
+signal draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_5cfa_we : unsigned(0 downto 0);
+signal draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_5cfa_return_output : unsigned(23 downto 0);
 
-function CAST_TO_uint32_t_uint13_t( rhs : unsigned) return unsigned is
+function CAST_TO_uint32_t_uint14_t( rhs : unsigned) return unsigned is
 
-  --variable rhs : unsigned(12 downto 0);
+  --variable rhs : unsigned(13 downto 0);
   variable return_output : unsigned(31 downto 0);
 
 begin
@@ -60,15 +60,15 @@ end function;
 begin
 
 -- SUBMODULE INSTANCES 
--- draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_20c6
-draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_20c6 : entity work.draw_queue_update_draw_queue_ram_RAM_DP_RF_1_0CLK_de264c78 port map (
+-- draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_5cfa
+draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_5cfa : entity work.draw_queue_update_draw_queue_ram_RAM_DP_RF_1_0CLK_de264c78 port map (
 clk,
-draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_20c6_CLOCK_ENABLE,
-draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_20c6_addr_r0,
-draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_20c6_addr_w0,
-draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_20c6_wd,
-draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_20c6_we,
-draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_20c6_return_output);
+draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_5cfa_CLOCK_ENABLE,
+draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_5cfa_addr_r0,
+draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_5cfa_addr_w0,
+draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_5cfa_wd,
+draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_5cfa_we,
+draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_5cfa_return_output);
 
 
 
@@ -85,28 +85,28 @@ process (
  wdata,
  raddr,
  -- All submodule outputs
- draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_20c6_return_output)
+ draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_5cfa_return_output)
 is 
  -- All of the wires in function
  variable VAR_CLOCK_ENABLE : unsigned(0 downto 0);
  variable VAR_return_output : unsigned(23 downto 0);
- variable VAR_read_address : unsigned(12 downto 0);
- variable VAR_write_address : unsigned(12 downto 0);
+ variable VAR_read_address : unsigned(13 downto 0);
+ variable VAR_write_address : unsigned(13 downto 0);
  variable VAR_write_value : unsigned(23 downto 0);
  variable VAR_write_enable : unsigned(0 downto 0);
- variable VAR_draw_queue_ram : uint24_t_8192;
- variable VAR_raddr_uxn_ram_screen_h_l18_c2_a31d : unsigned(31 downto 0);
- variable VAR_CAST_TO_uint32_t_uxn_ram_screen_h_l18_c10_aa27_return_output : unsigned(31 downto 0);
- variable VAR_waddr_uxn_ram_screen_h_l19_c2_3960 : unsigned(31 downto 0);
- variable VAR_CAST_TO_uint32_t_uxn_ram_screen_h_l19_c10_0b61_return_output : unsigned(31 downto 0);
- variable VAR_wdata_uxn_ram_screen_h_l20_c2_7ef1 : unsigned(31 downto 0);
+ variable VAR_draw_queue_ram : uint24_t_16384;
+ variable VAR_raddr_uxn_ram_screen_h_l18_c2_3ae8 : unsigned(31 downto 0);
+ variable VAR_CAST_TO_uint32_t_uxn_ram_screen_h_l18_c10_9be1_return_output : unsigned(31 downto 0);
+ variable VAR_waddr_uxn_ram_screen_h_l19_c2_3021 : unsigned(31 downto 0);
+ variable VAR_CAST_TO_uint32_t_uxn_ram_screen_h_l19_c10_7952_return_output : unsigned(31 downto 0);
+ variable VAR_wdata_uxn_ram_screen_h_l20_c2_dd7f : unsigned(31 downto 0);
  variable VAR_rdata : unsigned(23 downto 0);
- variable VAR_draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_20c6_addr_r0 : unsigned(12 downto 0);
- variable VAR_draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_20c6_addr_w0 : unsigned(12 downto 0);
- variable VAR_draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_20c6_wd : unsigned(23 downto 0);
- variable VAR_draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_20c6_we : unsigned(0 downto 0);
- variable VAR_draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_20c6_CLOCK_ENABLE : unsigned(0 downto 0);
- variable VAR_draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_20c6_return_output : unsigned(23 downto 0);
+ variable VAR_draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_5cfa_addr_r0 : unsigned(13 downto 0);
+ variable VAR_draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_5cfa_addr_w0 : unsigned(13 downto 0);
+ variable VAR_draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_5cfa_wd : unsigned(23 downto 0);
+ variable VAR_draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_5cfa_we : unsigned(0 downto 0);
+ variable VAR_draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_5cfa_CLOCK_ENABLE : unsigned(0 downto 0);
+ variable VAR_draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_5cfa_return_output : unsigned(23 downto 0);
  -- State registers comb logic variables
 variable REG_VAR_waddr : unsigned(31 downto 0);
 variable REG_VAR_wdata : unsigned(31 downto 0);
@@ -132,39 +132,39 @@ begin
      VAR_write_enable := write_enable;
 
      -- Submodule level 0
-     VAR_draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_20c6_CLOCK_ENABLE := VAR_CLOCK_ENABLE;
-     VAR_draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_20c6_we := VAR_write_enable;
-     VAR_wdata_uxn_ram_screen_h_l20_c2_7ef1 := resize(VAR_write_value, 32);
-     VAR_draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_20c6_wd := resize(VAR_wdata_uxn_ram_screen_h_l20_c2_7ef1, 24);
-     REG_VAR_wdata := VAR_wdata_uxn_ram_screen_h_l20_c2_7ef1;
-     -- CAST_TO_uint32_t[uxn_ram_screen_h_l18_c10_aa27] LATENCY=0
-     VAR_CAST_TO_uint32_t_uxn_ram_screen_h_l18_c10_aa27_return_output := CAST_TO_uint32_t_uint13_t(
-     VAR_read_address);
-
-     -- CAST_TO_uint32_t[uxn_ram_screen_h_l19_c10_0b61] LATENCY=0
-     VAR_CAST_TO_uint32_t_uxn_ram_screen_h_l19_c10_0b61_return_output := CAST_TO_uint32_t_uint13_t(
+     VAR_draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_5cfa_CLOCK_ENABLE := VAR_CLOCK_ENABLE;
+     VAR_draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_5cfa_we := VAR_write_enable;
+     VAR_wdata_uxn_ram_screen_h_l20_c2_dd7f := resize(VAR_write_value, 32);
+     VAR_draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_5cfa_wd := resize(VAR_wdata_uxn_ram_screen_h_l20_c2_dd7f, 24);
+     REG_VAR_wdata := VAR_wdata_uxn_ram_screen_h_l20_c2_dd7f;
+     -- CAST_TO_uint32_t[uxn_ram_screen_h_l19_c10_7952] LATENCY=0
+     VAR_CAST_TO_uint32_t_uxn_ram_screen_h_l19_c10_7952_return_output := CAST_TO_uint32_t_uint14_t(
      VAR_write_address);
 
+     -- CAST_TO_uint32_t[uxn_ram_screen_h_l18_c10_9be1] LATENCY=0
+     VAR_CAST_TO_uint32_t_uxn_ram_screen_h_l18_c10_9be1_return_output := CAST_TO_uint32_t_uint14_t(
+     VAR_read_address);
+
      -- Submodule level 1
-     VAR_raddr_uxn_ram_screen_h_l18_c2_a31d := VAR_CAST_TO_uint32_t_uxn_ram_screen_h_l18_c10_aa27_return_output;
-     VAR_waddr_uxn_ram_screen_h_l19_c2_3960 := VAR_CAST_TO_uint32_t_uxn_ram_screen_h_l19_c10_0b61_return_output;
-     VAR_draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_20c6_addr_r0 := resize(VAR_raddr_uxn_ram_screen_h_l18_c2_a31d, 13);
-     REG_VAR_raddr := VAR_raddr_uxn_ram_screen_h_l18_c2_a31d;
-     VAR_draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_20c6_addr_w0 := resize(VAR_waddr_uxn_ram_screen_h_l19_c2_3960, 13);
-     REG_VAR_waddr := VAR_waddr_uxn_ram_screen_h_l19_c2_3960;
-     -- draw_queue_update_draw_queue_ram_RAM_DP_RF_1[uxn_ram_screen_h_l22_c19_20c6] LATENCY=0
+     VAR_raddr_uxn_ram_screen_h_l18_c2_3ae8 := VAR_CAST_TO_uint32_t_uxn_ram_screen_h_l18_c10_9be1_return_output;
+     VAR_waddr_uxn_ram_screen_h_l19_c2_3021 := VAR_CAST_TO_uint32_t_uxn_ram_screen_h_l19_c10_7952_return_output;
+     VAR_draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_5cfa_addr_r0 := resize(VAR_raddr_uxn_ram_screen_h_l18_c2_3ae8, 14);
+     REG_VAR_raddr := VAR_raddr_uxn_ram_screen_h_l18_c2_3ae8;
+     VAR_draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_5cfa_addr_w0 := resize(VAR_waddr_uxn_ram_screen_h_l19_c2_3021, 14);
+     REG_VAR_waddr := VAR_waddr_uxn_ram_screen_h_l19_c2_3021;
+     -- draw_queue_update_draw_queue_ram_RAM_DP_RF_1[uxn_ram_screen_h_l22_c19_5cfa] LATENCY=0
      -- Clock enable
-     draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_20c6_CLOCK_ENABLE <= VAR_draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_20c6_CLOCK_ENABLE;
+     draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_5cfa_CLOCK_ENABLE <= VAR_draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_5cfa_CLOCK_ENABLE;
      -- Inputs
-     draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_20c6_addr_r0 <= VAR_draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_20c6_addr_r0;
-     draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_20c6_addr_w0 <= VAR_draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_20c6_addr_w0;
-     draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_20c6_wd <= VAR_draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_20c6_wd;
-     draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_20c6_we <= VAR_draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_20c6_we;
+     draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_5cfa_addr_r0 <= VAR_draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_5cfa_addr_r0;
+     draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_5cfa_addr_w0 <= VAR_draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_5cfa_addr_w0;
+     draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_5cfa_wd <= VAR_draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_5cfa_wd;
+     draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_5cfa_we <= VAR_draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_5cfa_we;
      -- Outputs
-     VAR_draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_20c6_return_output := draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_20c6_return_output;
+     VAR_draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_5cfa_return_output := draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_5cfa_return_output;
 
      -- Submodule level 2
-     VAR_return_output := VAR_draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_20c6_return_output;
+     VAR_return_output := VAR_draw_queue_update_draw_queue_ram_RAM_DP_RF_1_uxn_ram_screen_h_l22_c19_5cfa_return_output;
      -- Last stage of pipeline return wire to return port/reg
      return_output <= VAR_return_output;
    end if;

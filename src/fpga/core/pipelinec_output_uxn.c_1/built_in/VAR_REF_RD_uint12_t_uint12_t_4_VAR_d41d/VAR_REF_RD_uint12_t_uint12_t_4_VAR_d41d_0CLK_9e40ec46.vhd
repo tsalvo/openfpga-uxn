@@ -24,13 +24,13 @@ attribute mark_debug : string;
 constant PIPELINE_LATENCY : integer := 0;
 -- All of the wires/regs in function
 -- Each function instance gets signals
--- uint12_mux4[VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_4a93]
-signal uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_4a93_sel : unsigned(1 downto 0);
-signal uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_4a93_in0 : unsigned(11 downto 0);
-signal uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_4a93_in1 : unsigned(11 downto 0);
-signal uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_4a93_in2 : unsigned(11 downto 0);
-signal uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_4a93_in3 : unsigned(11 downto 0);
-signal uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_4a93_return_output : unsigned(11 downto 0);
+-- uint12_mux4[VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_179d]
+signal uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_179d_sel : unsigned(1 downto 0);
+signal uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_179d_in0 : unsigned(11 downto 0);
+signal uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_179d_in1 : unsigned(11 downto 0);
+signal uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_179d_in2 : unsigned(11 downto 0);
+signal uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_179d_in3 : unsigned(11 downto 0);
+signal uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_179d_return_output : unsigned(11 downto 0);
 
 function uint2_uint2_0( inp : unsigned;
  x : unsigned) return unsigned is
@@ -56,14 +56,14 @@ end function;
 begin
 
 -- SUBMODULE INSTANCES 
--- uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_4a93
-uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_4a93 : entity work.uint12_mux4_0CLK_a5a1cd4e port map (
-uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_4a93_sel,
-uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_4a93_in0,
-uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_4a93_in1,
-uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_4a93_in2,
-uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_4a93_in3,
-uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_4a93_return_output);
+-- uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_179d
+uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_179d : entity work.uint12_mux4_0CLK_a5a1cd4e port map (
+uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_179d_sel,
+uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_179d_in0,
+uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_179d_in1,
+uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_179d_in2,
+uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_179d_in3,
+uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_179d_return_output);
 
 
 
@@ -73,7 +73,7 @@ process (
  ref_toks_0,
  var_dim_0,
  -- All submodule outputs
- uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_4a93_return_output)
+ uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_179d_return_output)
 is 
  -- All of the wires in function
  variable VAR_CLOCK_ENABLE : unsigned(0 downto 0);
@@ -82,27 +82,27 @@ is
  variable VAR_return_output : unsigned(11 downto 0);
  variable VAR_base : uint12_t_4;
  variable VAR_ref_0 : unsigned(11 downto 0);
- variable VAR_CONST_REF_RD_uint12_t_uint12_t_4_0_d41d_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l14_c10_7e05_return_output : unsigned(11 downto 0);
+ variable VAR_CONST_REF_RD_uint12_t_uint12_t_4_0_d41d_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l14_c10_04d5_return_output : unsigned(11 downto 0);
  variable VAR_ref_1 : unsigned(11 downto 0);
- variable VAR_CONST_REF_RD_uint12_t_uint12_t_4_1_d41d_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l16_c10_ab0c_return_output : unsigned(11 downto 0);
+ variable VAR_CONST_REF_RD_uint12_t_uint12_t_4_1_d41d_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l16_c10_89ce_return_output : unsigned(11 downto 0);
  variable VAR_ref_2 : unsigned(11 downto 0);
- variable VAR_CONST_REF_RD_uint12_t_uint12_t_4_2_d41d_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l18_c10_bcc6_return_output : unsigned(11 downto 0);
+ variable VAR_CONST_REF_RD_uint12_t_uint12_t_4_2_d41d_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l18_c10_561c_return_output : unsigned(11 downto 0);
  variable VAR_ref_3 : unsigned(11 downto 0);
- variable VAR_CONST_REF_RD_uint12_t_uint12_t_4_3_d41d_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l20_c10_4521_return_output : unsigned(11 downto 0);
+ variable VAR_CONST_REF_RD_uint12_t_uint12_t_4_3_d41d_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l20_c10_d833_return_output : unsigned(11 downto 0);
  variable VAR_sel : unsigned(1 downto 0);
- variable VAR_sel_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l23_c2_185d : unsigned(1 downto 0);
- variable VAR_uint2_uint2_0_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l24_c8_b8d5_return_output : unsigned(1 downto 0);
+ variable VAR_sel_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l23_c2_912b : unsigned(1 downto 0);
+ variable VAR_uint2_uint2_0_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l24_c8_a635_return_output : unsigned(1 downto 0);
  variable VAR_rv : unsigned(11 downto 0);
- variable VAR_uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_4a93_sel : unsigned(1 downto 0);
- variable VAR_uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_4a93_in0 : unsigned(11 downto 0);
- variable VAR_uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_4a93_in1 : unsigned(11 downto 0);
- variable VAR_uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_4a93_in2 : unsigned(11 downto 0);
- variable VAR_uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_4a93_in3 : unsigned(11 downto 0);
- variable VAR_uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_4a93_return_output : unsigned(11 downto 0);
+ variable VAR_uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_179d_sel : unsigned(1 downto 0);
+ variable VAR_uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_179d_in0 : unsigned(11 downto 0);
+ variable VAR_uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_179d_in1 : unsigned(11 downto 0);
+ variable VAR_uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_179d_in2 : unsigned(11 downto 0);
+ variable VAR_uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_179d_in3 : unsigned(11 downto 0);
+ variable VAR_uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_179d_return_output : unsigned(11 downto 0);
 begin
  -- Constants and things derived from constants alone
      -- Submodule level 0
-     VAR_sel_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l23_c2_185d := resize(to_unsigned(0, 1), 2);
+     VAR_sel_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l23_c2_912b := resize(to_unsigned(0, 1), 2);
 
  -- Loop to construct simultaneous register transfers for each of the pipeline stages
  -- LATENCY=0 is combinational Logic
@@ -113,41 +113,41 @@ begin
      VAR_var_dim_0 := var_dim_0;
 
      -- Submodule level 0
-     -- CONST_REF_RD_uint12_t_uint12_t_4_0_d41d[VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l14_c10_7e05] LATENCY=0
-     VAR_CONST_REF_RD_uint12_t_uint12_t_4_0_d41d_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l14_c10_7e05_return_output := VAR_ref_toks_0(0);
+     -- CONST_REF_RD_uint12_t_uint12_t_4_3_d41d[VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l20_c10_d833] LATENCY=0
+     VAR_CONST_REF_RD_uint12_t_uint12_t_4_3_d41d_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l20_c10_d833_return_output := VAR_ref_toks_0(3);
 
-     -- CONST_REF_RD_uint12_t_uint12_t_4_1_d41d[VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l16_c10_ab0c] LATENCY=0
-     VAR_CONST_REF_RD_uint12_t_uint12_t_4_1_d41d_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l16_c10_ab0c_return_output := VAR_ref_toks_0(1);
+     -- CONST_REF_RD_uint12_t_uint12_t_4_1_d41d[VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l16_c10_89ce] LATENCY=0
+     VAR_CONST_REF_RD_uint12_t_uint12_t_4_1_d41d_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l16_c10_89ce_return_output := VAR_ref_toks_0(1);
 
-     -- uint2_uint2_0[VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l24_c8_b8d5] LATENCY=0
-     VAR_uint2_uint2_0_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l24_c8_b8d5_return_output := uint2_uint2_0(
-     VAR_sel_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l23_c2_185d,
+     -- CONST_REF_RD_uint12_t_uint12_t_4_2_d41d[VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l18_c10_561c] LATENCY=0
+     VAR_CONST_REF_RD_uint12_t_uint12_t_4_2_d41d_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l18_c10_561c_return_output := VAR_ref_toks_0(2);
+
+     -- uint2_uint2_0[VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l24_c8_a635] LATENCY=0
+     VAR_uint2_uint2_0_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l24_c8_a635_return_output := uint2_uint2_0(
+     VAR_sel_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l23_c2_912b,
      VAR_var_dim_0);
 
-     -- CONST_REF_RD_uint12_t_uint12_t_4_2_d41d[VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l18_c10_bcc6] LATENCY=0
-     VAR_CONST_REF_RD_uint12_t_uint12_t_4_2_d41d_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l18_c10_bcc6_return_output := VAR_ref_toks_0(2);
-
-     -- CONST_REF_RD_uint12_t_uint12_t_4_3_d41d[VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l20_c10_4521] LATENCY=0
-     VAR_CONST_REF_RD_uint12_t_uint12_t_4_3_d41d_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l20_c10_4521_return_output := VAR_ref_toks_0(3);
+     -- CONST_REF_RD_uint12_t_uint12_t_4_0_d41d[VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l14_c10_04d5] LATENCY=0
+     VAR_CONST_REF_RD_uint12_t_uint12_t_4_0_d41d_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l14_c10_04d5_return_output := VAR_ref_toks_0(0);
 
      -- Submodule level 1
-     VAR_uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_4a93_in0 := VAR_CONST_REF_RD_uint12_t_uint12_t_4_0_d41d_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l14_c10_7e05_return_output;
-     VAR_uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_4a93_in1 := VAR_CONST_REF_RD_uint12_t_uint12_t_4_1_d41d_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l16_c10_ab0c_return_output;
-     VAR_uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_4a93_in2 := VAR_CONST_REF_RD_uint12_t_uint12_t_4_2_d41d_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l18_c10_bcc6_return_output;
-     VAR_uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_4a93_in3 := VAR_CONST_REF_RD_uint12_t_uint12_t_4_3_d41d_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l20_c10_4521_return_output;
-     VAR_uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_4a93_sel := VAR_uint2_uint2_0_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l24_c8_b8d5_return_output;
-     -- uint12_mux4[VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_4a93] LATENCY=0
+     VAR_uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_179d_in0 := VAR_CONST_REF_RD_uint12_t_uint12_t_4_0_d41d_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l14_c10_04d5_return_output;
+     VAR_uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_179d_in1 := VAR_CONST_REF_RD_uint12_t_uint12_t_4_1_d41d_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l16_c10_89ce_return_output;
+     VAR_uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_179d_in2 := VAR_CONST_REF_RD_uint12_t_uint12_t_4_2_d41d_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l18_c10_561c_return_output;
+     VAR_uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_179d_in3 := VAR_CONST_REF_RD_uint12_t_uint12_t_4_3_d41d_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l20_c10_d833_return_output;
+     VAR_uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_179d_sel := VAR_uint2_uint2_0_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l24_c8_a635_return_output;
+     -- uint12_mux4[VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_179d] LATENCY=0
      -- Inputs
-     uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_4a93_sel <= VAR_uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_4a93_sel;
-     uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_4a93_in0 <= VAR_uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_4a93_in0;
-     uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_4a93_in1 <= VAR_uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_4a93_in1;
-     uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_4a93_in2 <= VAR_uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_4a93_in2;
-     uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_4a93_in3 <= VAR_uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_4a93_in3;
+     uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_179d_sel <= VAR_uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_179d_sel;
+     uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_179d_in0 <= VAR_uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_179d_in0;
+     uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_179d_in1 <= VAR_uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_179d_in1;
+     uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_179d_in2 <= VAR_uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_179d_in2;
+     uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_179d_in3 <= VAR_uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_179d_in3;
      -- Outputs
-     VAR_uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_4a93_return_output := uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_4a93_return_output;
+     VAR_uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_179d_return_output := uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_179d_return_output;
 
      -- Submodule level 2
-     VAR_return_output := VAR_uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_4a93_return_output;
+     VAR_return_output := VAR_uint12_mux4_VAR_REF_RD_uint12_t_uint12_t_4_VAR_d41d_c_l27_c7_179d_return_output;
      -- Last stage of pipeline return wire to return port/reg
      return_output <= VAR_return_output;
    end if;

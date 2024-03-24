@@ -39,29 +39,29 @@ signal REG_COMB_result : device_in_result_t;
 signal REG_COMB_device_port : unsigned(3 downto 0);
 
 -- Each function instance gets signals
--- BIN_OP_EQ[uxn_device_h_l522_c6_6729]
-signal BIN_OP_EQ_uxn_device_h_l522_c6_6729_left : unsigned(3 downto 0);
-signal BIN_OP_EQ_uxn_device_h_l522_c6_6729_right : unsigned(3 downto 0);
-signal BIN_OP_EQ_uxn_device_h_l522_c6_6729_return_output : unsigned(0 downto 0);
+-- BIN_OP_EQ[uxn_device_h_l525_c6_7458]
+signal BIN_OP_EQ_uxn_device_h_l525_c6_7458_left : unsigned(3 downto 0);
+signal BIN_OP_EQ_uxn_device_h_l525_c6_7458_right : unsigned(3 downto 0);
+signal BIN_OP_EQ_uxn_device_h_l525_c6_7458_return_output : unsigned(0 downto 0);
 
--- FALSE_CLOCK_ENABLE_MUX[uxn_device_h_l527_c1_23de]
-signal FALSE_CLOCK_ENABLE_MUX_uxn_device_h_l527_c1_23de_cond : unsigned(0 downto 0);
-signal FALSE_CLOCK_ENABLE_MUX_uxn_device_h_l527_c1_23de_iftrue : unsigned(0 downto 0);
-signal FALSE_CLOCK_ENABLE_MUX_uxn_device_h_l527_c1_23de_iffalse : unsigned(0 downto 0);
-signal FALSE_CLOCK_ENABLE_MUX_uxn_device_h_l527_c1_23de_return_output : unsigned(0 downto 0);
+-- FALSE_CLOCK_ENABLE_MUX[uxn_device_h_l530_c1_ff96]
+signal FALSE_CLOCK_ENABLE_MUX_uxn_device_h_l530_c1_ff96_cond : unsigned(0 downto 0);
+signal FALSE_CLOCK_ENABLE_MUX_uxn_device_h_l530_c1_ff96_iftrue : unsigned(0 downto 0);
+signal FALSE_CLOCK_ENABLE_MUX_uxn_device_h_l530_c1_ff96_iffalse : unsigned(0 downto 0);
+signal FALSE_CLOCK_ENABLE_MUX_uxn_device_h_l530_c1_ff96_return_output : unsigned(0 downto 0);
 
--- result_MUX[uxn_device_h_l522_c2_8887]
-signal result_MUX_uxn_device_h_l522_c2_8887_cond : unsigned(0 downto 0);
-signal result_MUX_uxn_device_h_l522_c2_8887_iftrue : device_in_result_t;
-signal result_MUX_uxn_device_h_l522_c2_8887_iffalse : device_in_result_t;
-signal result_MUX_uxn_device_h_l522_c2_8887_return_output : device_in_result_t;
+-- result_MUX[uxn_device_h_l525_c2_c450]
+signal result_MUX_uxn_device_h_l525_c2_c450_cond : unsigned(0 downto 0);
+signal result_MUX_uxn_device_h_l525_c2_c450_iftrue : device_in_result_t;
+signal result_MUX_uxn_device_h_l525_c2_c450_iffalse : device_in_result_t;
+signal result_MUX_uxn_device_h_l525_c2_c450_return_output : device_in_result_t;
 
--- generic_dei[uxn_device_h_l528_c12_27e8]
-signal generic_dei_uxn_device_h_l528_c12_27e8_CLOCK_ENABLE : unsigned(0 downto 0);
-signal generic_dei_uxn_device_h_l528_c12_27e8_device_address : unsigned(7 downto 0);
-signal generic_dei_uxn_device_h_l528_c12_27e8_phase : unsigned(7 downto 0);
-signal generic_dei_uxn_device_h_l528_c12_27e8_previous_device_ram_read : unsigned(7 downto 0);
-signal generic_dei_uxn_device_h_l528_c12_27e8_return_output : device_in_result_t;
+-- generic_dei[uxn_device_h_l531_c12_1a32]
+signal generic_dei_uxn_device_h_l531_c12_1a32_CLOCK_ENABLE : unsigned(0 downto 0);
+signal generic_dei_uxn_device_h_l531_c12_1a32_device_address : unsigned(7 downto 0);
+signal generic_dei_uxn_device_h_l531_c12_1a32_phase : unsigned(7 downto 0);
+signal generic_dei_uxn_device_h_l531_c12_1a32_previous_device_ram_read : unsigned(7 downto 0);
+signal generic_dei_uxn_device_h_l531_c12_1a32_return_output : device_in_result_t;
 
 function CAST_TO_uint4_t_uint8_t( rhs : unsigned) return unsigned is
 
@@ -93,34 +93,34 @@ end function;
 begin
 
 -- SUBMODULE INSTANCES 
--- BIN_OP_EQ_uxn_device_h_l522_c6_6729
-BIN_OP_EQ_uxn_device_h_l522_c6_6729 : entity work.BIN_OP_EQ_uint4_t_uint4_t_0CLK_de264c78 port map (
-BIN_OP_EQ_uxn_device_h_l522_c6_6729_left,
-BIN_OP_EQ_uxn_device_h_l522_c6_6729_right,
-BIN_OP_EQ_uxn_device_h_l522_c6_6729_return_output);
+-- BIN_OP_EQ_uxn_device_h_l525_c6_7458
+BIN_OP_EQ_uxn_device_h_l525_c6_7458 : entity work.BIN_OP_EQ_uint4_t_uint4_t_0CLK_de264c78 port map (
+BIN_OP_EQ_uxn_device_h_l525_c6_7458_left,
+BIN_OP_EQ_uxn_device_h_l525_c6_7458_right,
+BIN_OP_EQ_uxn_device_h_l525_c6_7458_return_output);
 
--- FALSE_CLOCK_ENABLE_MUX_uxn_device_h_l527_c1_23de
-FALSE_CLOCK_ENABLE_MUX_uxn_device_h_l527_c1_23de : entity work.MUX_uint1_t_uint1_t_uint1_t_0CLK_de264c78 port map (
-FALSE_CLOCK_ENABLE_MUX_uxn_device_h_l527_c1_23de_cond,
-FALSE_CLOCK_ENABLE_MUX_uxn_device_h_l527_c1_23de_iftrue,
-FALSE_CLOCK_ENABLE_MUX_uxn_device_h_l527_c1_23de_iffalse,
-FALSE_CLOCK_ENABLE_MUX_uxn_device_h_l527_c1_23de_return_output);
+-- FALSE_CLOCK_ENABLE_MUX_uxn_device_h_l530_c1_ff96
+FALSE_CLOCK_ENABLE_MUX_uxn_device_h_l530_c1_ff96 : entity work.MUX_uint1_t_uint1_t_uint1_t_0CLK_de264c78 port map (
+FALSE_CLOCK_ENABLE_MUX_uxn_device_h_l530_c1_ff96_cond,
+FALSE_CLOCK_ENABLE_MUX_uxn_device_h_l530_c1_ff96_iftrue,
+FALSE_CLOCK_ENABLE_MUX_uxn_device_h_l530_c1_ff96_iffalse,
+FALSE_CLOCK_ENABLE_MUX_uxn_device_h_l530_c1_ff96_return_output);
 
--- result_MUX_uxn_device_h_l522_c2_8887
-result_MUX_uxn_device_h_l522_c2_8887 : entity work.MUX_uint1_t_device_in_result_t_device_in_result_t_0CLK_de264c78 port map (
-result_MUX_uxn_device_h_l522_c2_8887_cond,
-result_MUX_uxn_device_h_l522_c2_8887_iftrue,
-result_MUX_uxn_device_h_l522_c2_8887_iffalse,
-result_MUX_uxn_device_h_l522_c2_8887_return_output);
+-- result_MUX_uxn_device_h_l525_c2_c450
+result_MUX_uxn_device_h_l525_c2_c450 : entity work.MUX_uint1_t_device_in_result_t_device_in_result_t_0CLK_de264c78 port map (
+result_MUX_uxn_device_h_l525_c2_c450_cond,
+result_MUX_uxn_device_h_l525_c2_c450_iftrue,
+result_MUX_uxn_device_h_l525_c2_c450_iffalse,
+result_MUX_uxn_device_h_l525_c2_c450_return_output);
 
--- generic_dei_uxn_device_h_l528_c12_27e8
-generic_dei_uxn_device_h_l528_c12_27e8 : entity work.generic_dei_0CLK_25f4cd11 port map (
+-- generic_dei_uxn_device_h_l531_c12_1a32
+generic_dei_uxn_device_h_l531_c12_1a32 : entity work.generic_dei_0CLK_25f4cd11 port map (
 clk,
-generic_dei_uxn_device_h_l528_c12_27e8_CLOCK_ENABLE,
-generic_dei_uxn_device_h_l528_c12_27e8_device_address,
-generic_dei_uxn_device_h_l528_c12_27e8_phase,
-generic_dei_uxn_device_h_l528_c12_27e8_previous_device_ram_read,
-generic_dei_uxn_device_h_l528_c12_27e8_return_output);
+generic_dei_uxn_device_h_l531_c12_1a32_CLOCK_ENABLE,
+generic_dei_uxn_device_h_l531_c12_1a32_device_address,
+generic_dei_uxn_device_h_l531_c12_1a32_phase,
+generic_dei_uxn_device_h_l531_c12_1a32_previous_device_ram_read,
+generic_dei_uxn_device_h_l531_c12_1a32_return_output);
 
 
 
@@ -136,10 +136,10 @@ process (
  result,
  device_port,
  -- All submodule outputs
- BIN_OP_EQ_uxn_device_h_l522_c6_6729_return_output,
- FALSE_CLOCK_ENABLE_MUX_uxn_device_h_l527_c1_23de_return_output,
- result_MUX_uxn_device_h_l522_c2_8887_return_output,
- generic_dei_uxn_device_h_l528_c12_27e8_return_output)
+ BIN_OP_EQ_uxn_device_h_l525_c6_7458_return_output,
+ FALSE_CLOCK_ENABLE_MUX_uxn_device_h_l530_c1_ff96_return_output,
+ result_MUX_uxn_device_h_l525_c2_c450_return_output,
+ generic_dei_uxn_device_h_l531_c12_1a32_return_output)
 is 
  -- All of the wires in function
  variable VAR_CLOCK_ENABLE : unsigned(0 downto 0);
@@ -148,25 +148,25 @@ is
  variable VAR_phase : unsigned(7 downto 0);
  variable VAR_controller0_buttons : unsigned(7 downto 0);
  variable VAR_previous_device_ram_read : unsigned(7 downto 0);
- variable VAR_CAST_TO_uint4_t_uxn_device_h_l520_c16_e471_return_output : unsigned(3 downto 0);
- variable VAR_BIN_OP_EQ_uxn_device_h_l522_c6_6729_left : unsigned(3 downto 0);
- variable VAR_BIN_OP_EQ_uxn_device_h_l522_c6_6729_right : unsigned(3 downto 0);
- variable VAR_BIN_OP_EQ_uxn_device_h_l522_c6_6729_return_output : unsigned(0 downto 0);
- variable VAR_FALSE_CLOCK_ENABLE_MUX_uxn_device_h_l527_c1_23de_return_output : unsigned(0 downto 0);
- variable VAR_FALSE_CLOCK_ENABLE_MUX_uxn_device_h_l527_c1_23de_cond : unsigned(0 downto 0);
- variable VAR_FALSE_CLOCK_ENABLE_MUX_uxn_device_h_l527_c1_23de_iftrue : unsigned(0 downto 0);
- variable VAR_FALSE_CLOCK_ENABLE_MUX_uxn_device_h_l527_c1_23de_iffalse : unsigned(0 downto 0);
- variable VAR_result_MUX_uxn_device_h_l522_c2_8887_iftrue : device_in_result_t;
- variable VAR_result_TRUE_INPUT_MUX_CONST_REF_RD_device_in_result_t_device_in_result_t_5662_uxn_device_h_l522_c2_8887_return_output : device_in_result_t;
- variable VAR_result_MUX_uxn_device_h_l522_c2_8887_iffalse : device_in_result_t;
- variable VAR_result_MUX_uxn_device_h_l522_c2_8887_return_output : device_in_result_t;
- variable VAR_result_MUX_uxn_device_h_l522_c2_8887_cond : unsigned(0 downto 0);
- variable VAR_result_device_ram_address_uxn_device_h_l523_c3_4b9c : unsigned(7 downto 0);
- variable VAR_generic_dei_uxn_device_h_l528_c12_27e8_device_address : unsigned(7 downto 0);
- variable VAR_generic_dei_uxn_device_h_l528_c12_27e8_phase : unsigned(7 downto 0);
- variable VAR_generic_dei_uxn_device_h_l528_c12_27e8_previous_device_ram_read : unsigned(7 downto 0);
- variable VAR_generic_dei_uxn_device_h_l528_c12_27e8_CLOCK_ENABLE : unsigned(0 downto 0);
- variable VAR_generic_dei_uxn_device_h_l528_c12_27e8_return_output : device_in_result_t;
+ variable VAR_CAST_TO_uint4_t_uxn_device_h_l523_c16_bc8a_return_output : unsigned(3 downto 0);
+ variable VAR_BIN_OP_EQ_uxn_device_h_l525_c6_7458_left : unsigned(3 downto 0);
+ variable VAR_BIN_OP_EQ_uxn_device_h_l525_c6_7458_right : unsigned(3 downto 0);
+ variable VAR_BIN_OP_EQ_uxn_device_h_l525_c6_7458_return_output : unsigned(0 downto 0);
+ variable VAR_FALSE_CLOCK_ENABLE_MUX_uxn_device_h_l530_c1_ff96_return_output : unsigned(0 downto 0);
+ variable VAR_FALSE_CLOCK_ENABLE_MUX_uxn_device_h_l530_c1_ff96_cond : unsigned(0 downto 0);
+ variable VAR_FALSE_CLOCK_ENABLE_MUX_uxn_device_h_l530_c1_ff96_iftrue : unsigned(0 downto 0);
+ variable VAR_FALSE_CLOCK_ENABLE_MUX_uxn_device_h_l530_c1_ff96_iffalse : unsigned(0 downto 0);
+ variable VAR_result_MUX_uxn_device_h_l525_c2_c450_iftrue : device_in_result_t;
+ variable VAR_result_TRUE_INPUT_MUX_CONST_REF_RD_device_in_result_t_device_in_result_t_5662_uxn_device_h_l525_c2_c450_return_output : device_in_result_t;
+ variable VAR_result_MUX_uxn_device_h_l525_c2_c450_iffalse : device_in_result_t;
+ variable VAR_result_MUX_uxn_device_h_l525_c2_c450_return_output : device_in_result_t;
+ variable VAR_result_MUX_uxn_device_h_l525_c2_c450_cond : unsigned(0 downto 0);
+ variable VAR_result_device_ram_address_uxn_device_h_l526_c3_d570 : unsigned(7 downto 0);
+ variable VAR_generic_dei_uxn_device_h_l531_c12_1a32_device_address : unsigned(7 downto 0);
+ variable VAR_generic_dei_uxn_device_h_l531_c12_1a32_phase : unsigned(7 downto 0);
+ variable VAR_generic_dei_uxn_device_h_l531_c12_1a32_previous_device_ram_read : unsigned(7 downto 0);
+ variable VAR_generic_dei_uxn_device_h_l531_c12_1a32_CLOCK_ENABLE : unsigned(0 downto 0);
+ variable VAR_generic_dei_uxn_device_h_l531_c12_1a32_return_output : device_in_result_t;
  -- State registers comb logic variables
 variable REG_VAR_result : device_in_result_t;
 variable REG_VAR_device_port : unsigned(3 downto 0);
@@ -178,9 +178,9 @@ begin
   REG_VAR_device_port := device_port;
  -- Constants and things derived from constants alone
      -- Submodule level 0
-     VAR_FALSE_CLOCK_ENABLE_MUX_uxn_device_h_l527_c1_23de_iftrue := to_unsigned(0, 1);
-     VAR_result_device_ram_address_uxn_device_h_l523_c3_4b9c := resize(to_unsigned(0, 1), 8);
-     VAR_BIN_OP_EQ_uxn_device_h_l522_c6_6729_right := to_unsigned(2, 4);
+     VAR_result_device_ram_address_uxn_device_h_l526_c3_d570 := resize(to_unsigned(0, 1), 8);
+     VAR_BIN_OP_EQ_uxn_device_h_l525_c6_7458_right := to_unsigned(2, 4);
+     VAR_FALSE_CLOCK_ENABLE_MUX_uxn_device_h_l530_c1_ff96_iftrue := to_unsigned(0, 1);
 
  -- Loop to construct simultaneous register transfers for each of the pipeline stages
  -- LATENCY=0 is combinational Logic
@@ -195,67 +195,67 @@ begin
      VAR_previous_device_ram_read := previous_device_ram_read;
 
      -- Submodule level 0
-     VAR_FALSE_CLOCK_ENABLE_MUX_uxn_device_h_l527_c1_23de_iffalse := VAR_CLOCK_ENABLE;
-     VAR_generic_dei_uxn_device_h_l528_c12_27e8_device_address := VAR_device_address;
-     VAR_generic_dei_uxn_device_h_l528_c12_27e8_phase := VAR_phase;
-     VAR_generic_dei_uxn_device_h_l528_c12_27e8_previous_device_ram_read := VAR_previous_device_ram_read;
-     -- result_TRUE_INPUT_MUX_CONST_REF_RD_device_in_result_t_device_in_result_t_5662[uxn_device_h_l522_c2_8887] LATENCY=0
-     VAR_result_TRUE_INPUT_MUX_CONST_REF_RD_device_in_result_t_device_in_result_t_5662_uxn_device_h_l522_c2_8887_return_output := CONST_REF_RD_device_in_result_t_device_in_result_t_5662(
-     VAR_result_device_ram_address_uxn_device_h_l523_c3_4b9c,
+     VAR_FALSE_CLOCK_ENABLE_MUX_uxn_device_h_l530_c1_ff96_iffalse := VAR_CLOCK_ENABLE;
+     VAR_generic_dei_uxn_device_h_l531_c12_1a32_device_address := VAR_device_address;
+     VAR_generic_dei_uxn_device_h_l531_c12_1a32_phase := VAR_phase;
+     VAR_generic_dei_uxn_device_h_l531_c12_1a32_previous_device_ram_read := VAR_previous_device_ram_read;
+     -- result_TRUE_INPUT_MUX_CONST_REF_RD_device_in_result_t_device_in_result_t_5662[uxn_device_h_l525_c2_c450] LATENCY=0
+     VAR_result_TRUE_INPUT_MUX_CONST_REF_RD_device_in_result_t_device_in_result_t_5662_uxn_device_h_l525_c2_c450_return_output := CONST_REF_RD_device_in_result_t_device_in_result_t_5662(
+     VAR_result_device_ram_address_uxn_device_h_l526_c3_d570,
      VAR_controller0_buttons,
      to_unsigned(1, 1));
 
-     -- CAST_TO_uint4_t[uxn_device_h_l520_c16_e471] LATENCY=0
-     VAR_CAST_TO_uint4_t_uxn_device_h_l520_c16_e471_return_output := CAST_TO_uint4_t_uint8_t(
+     -- CAST_TO_uint4_t[uxn_device_h_l523_c16_bc8a] LATENCY=0
+     VAR_CAST_TO_uint4_t_uxn_device_h_l523_c16_bc8a_return_output := CAST_TO_uint4_t_uint8_t(
      VAR_device_address);
 
      -- Submodule level 1
-     VAR_BIN_OP_EQ_uxn_device_h_l522_c6_6729_left := VAR_CAST_TO_uint4_t_uxn_device_h_l520_c16_e471_return_output;
-     REG_VAR_device_port := VAR_CAST_TO_uint4_t_uxn_device_h_l520_c16_e471_return_output;
-     VAR_result_MUX_uxn_device_h_l522_c2_8887_iftrue := VAR_result_TRUE_INPUT_MUX_CONST_REF_RD_device_in_result_t_device_in_result_t_5662_uxn_device_h_l522_c2_8887_return_output;
-     -- BIN_OP_EQ[uxn_device_h_l522_c6_6729] LATENCY=0
+     VAR_BIN_OP_EQ_uxn_device_h_l525_c6_7458_left := VAR_CAST_TO_uint4_t_uxn_device_h_l523_c16_bc8a_return_output;
+     REG_VAR_device_port := VAR_CAST_TO_uint4_t_uxn_device_h_l523_c16_bc8a_return_output;
+     VAR_result_MUX_uxn_device_h_l525_c2_c450_iftrue := VAR_result_TRUE_INPUT_MUX_CONST_REF_RD_device_in_result_t_device_in_result_t_5662_uxn_device_h_l525_c2_c450_return_output;
+     -- BIN_OP_EQ[uxn_device_h_l525_c6_7458] LATENCY=0
      -- Inputs
-     BIN_OP_EQ_uxn_device_h_l522_c6_6729_left <= VAR_BIN_OP_EQ_uxn_device_h_l522_c6_6729_left;
-     BIN_OP_EQ_uxn_device_h_l522_c6_6729_right <= VAR_BIN_OP_EQ_uxn_device_h_l522_c6_6729_right;
+     BIN_OP_EQ_uxn_device_h_l525_c6_7458_left <= VAR_BIN_OP_EQ_uxn_device_h_l525_c6_7458_left;
+     BIN_OP_EQ_uxn_device_h_l525_c6_7458_right <= VAR_BIN_OP_EQ_uxn_device_h_l525_c6_7458_right;
      -- Outputs
-     VAR_BIN_OP_EQ_uxn_device_h_l522_c6_6729_return_output := BIN_OP_EQ_uxn_device_h_l522_c6_6729_return_output;
+     VAR_BIN_OP_EQ_uxn_device_h_l525_c6_7458_return_output := BIN_OP_EQ_uxn_device_h_l525_c6_7458_return_output;
 
      -- Submodule level 2
-     VAR_FALSE_CLOCK_ENABLE_MUX_uxn_device_h_l527_c1_23de_cond := VAR_BIN_OP_EQ_uxn_device_h_l522_c6_6729_return_output;
-     VAR_result_MUX_uxn_device_h_l522_c2_8887_cond := VAR_BIN_OP_EQ_uxn_device_h_l522_c6_6729_return_output;
-     -- FALSE_CLOCK_ENABLE_MUX[uxn_device_h_l527_c1_23de] LATENCY=0
+     VAR_FALSE_CLOCK_ENABLE_MUX_uxn_device_h_l530_c1_ff96_cond := VAR_BIN_OP_EQ_uxn_device_h_l525_c6_7458_return_output;
+     VAR_result_MUX_uxn_device_h_l525_c2_c450_cond := VAR_BIN_OP_EQ_uxn_device_h_l525_c6_7458_return_output;
+     -- FALSE_CLOCK_ENABLE_MUX[uxn_device_h_l530_c1_ff96] LATENCY=0
      -- Inputs
-     FALSE_CLOCK_ENABLE_MUX_uxn_device_h_l527_c1_23de_cond <= VAR_FALSE_CLOCK_ENABLE_MUX_uxn_device_h_l527_c1_23de_cond;
-     FALSE_CLOCK_ENABLE_MUX_uxn_device_h_l527_c1_23de_iftrue <= VAR_FALSE_CLOCK_ENABLE_MUX_uxn_device_h_l527_c1_23de_iftrue;
-     FALSE_CLOCK_ENABLE_MUX_uxn_device_h_l527_c1_23de_iffalse <= VAR_FALSE_CLOCK_ENABLE_MUX_uxn_device_h_l527_c1_23de_iffalse;
+     FALSE_CLOCK_ENABLE_MUX_uxn_device_h_l530_c1_ff96_cond <= VAR_FALSE_CLOCK_ENABLE_MUX_uxn_device_h_l530_c1_ff96_cond;
+     FALSE_CLOCK_ENABLE_MUX_uxn_device_h_l530_c1_ff96_iftrue <= VAR_FALSE_CLOCK_ENABLE_MUX_uxn_device_h_l530_c1_ff96_iftrue;
+     FALSE_CLOCK_ENABLE_MUX_uxn_device_h_l530_c1_ff96_iffalse <= VAR_FALSE_CLOCK_ENABLE_MUX_uxn_device_h_l530_c1_ff96_iffalse;
      -- Outputs
-     VAR_FALSE_CLOCK_ENABLE_MUX_uxn_device_h_l527_c1_23de_return_output := FALSE_CLOCK_ENABLE_MUX_uxn_device_h_l527_c1_23de_return_output;
+     VAR_FALSE_CLOCK_ENABLE_MUX_uxn_device_h_l530_c1_ff96_return_output := FALSE_CLOCK_ENABLE_MUX_uxn_device_h_l530_c1_ff96_return_output;
 
      -- Submodule level 3
-     VAR_generic_dei_uxn_device_h_l528_c12_27e8_CLOCK_ENABLE := VAR_FALSE_CLOCK_ENABLE_MUX_uxn_device_h_l527_c1_23de_return_output;
-     -- generic_dei[uxn_device_h_l528_c12_27e8] LATENCY=0
+     VAR_generic_dei_uxn_device_h_l531_c12_1a32_CLOCK_ENABLE := VAR_FALSE_CLOCK_ENABLE_MUX_uxn_device_h_l530_c1_ff96_return_output;
+     -- generic_dei[uxn_device_h_l531_c12_1a32] LATENCY=0
      -- Clock enable
-     generic_dei_uxn_device_h_l528_c12_27e8_CLOCK_ENABLE <= VAR_generic_dei_uxn_device_h_l528_c12_27e8_CLOCK_ENABLE;
+     generic_dei_uxn_device_h_l531_c12_1a32_CLOCK_ENABLE <= VAR_generic_dei_uxn_device_h_l531_c12_1a32_CLOCK_ENABLE;
      -- Inputs
-     generic_dei_uxn_device_h_l528_c12_27e8_device_address <= VAR_generic_dei_uxn_device_h_l528_c12_27e8_device_address;
-     generic_dei_uxn_device_h_l528_c12_27e8_phase <= VAR_generic_dei_uxn_device_h_l528_c12_27e8_phase;
-     generic_dei_uxn_device_h_l528_c12_27e8_previous_device_ram_read <= VAR_generic_dei_uxn_device_h_l528_c12_27e8_previous_device_ram_read;
+     generic_dei_uxn_device_h_l531_c12_1a32_device_address <= VAR_generic_dei_uxn_device_h_l531_c12_1a32_device_address;
+     generic_dei_uxn_device_h_l531_c12_1a32_phase <= VAR_generic_dei_uxn_device_h_l531_c12_1a32_phase;
+     generic_dei_uxn_device_h_l531_c12_1a32_previous_device_ram_read <= VAR_generic_dei_uxn_device_h_l531_c12_1a32_previous_device_ram_read;
      -- Outputs
-     VAR_generic_dei_uxn_device_h_l528_c12_27e8_return_output := generic_dei_uxn_device_h_l528_c12_27e8_return_output;
+     VAR_generic_dei_uxn_device_h_l531_c12_1a32_return_output := generic_dei_uxn_device_h_l531_c12_1a32_return_output;
 
      -- Submodule level 4
-     VAR_result_MUX_uxn_device_h_l522_c2_8887_iffalse := VAR_generic_dei_uxn_device_h_l528_c12_27e8_return_output;
-     -- result_MUX[uxn_device_h_l522_c2_8887] LATENCY=0
+     VAR_result_MUX_uxn_device_h_l525_c2_c450_iffalse := VAR_generic_dei_uxn_device_h_l531_c12_1a32_return_output;
+     -- result_MUX[uxn_device_h_l525_c2_c450] LATENCY=0
      -- Inputs
-     result_MUX_uxn_device_h_l522_c2_8887_cond <= VAR_result_MUX_uxn_device_h_l522_c2_8887_cond;
-     result_MUX_uxn_device_h_l522_c2_8887_iftrue <= VAR_result_MUX_uxn_device_h_l522_c2_8887_iftrue;
-     result_MUX_uxn_device_h_l522_c2_8887_iffalse <= VAR_result_MUX_uxn_device_h_l522_c2_8887_iffalse;
+     result_MUX_uxn_device_h_l525_c2_c450_cond <= VAR_result_MUX_uxn_device_h_l525_c2_c450_cond;
+     result_MUX_uxn_device_h_l525_c2_c450_iftrue <= VAR_result_MUX_uxn_device_h_l525_c2_c450_iftrue;
+     result_MUX_uxn_device_h_l525_c2_c450_iffalse <= VAR_result_MUX_uxn_device_h_l525_c2_c450_iffalse;
      -- Outputs
-     VAR_result_MUX_uxn_device_h_l522_c2_8887_return_output := result_MUX_uxn_device_h_l522_c2_8887_return_output;
+     VAR_result_MUX_uxn_device_h_l525_c2_c450_return_output := result_MUX_uxn_device_h_l525_c2_c450_return_output;
 
      -- Submodule level 5
-     REG_VAR_result := VAR_result_MUX_uxn_device_h_l522_c2_8887_return_output;
-     VAR_return_output := VAR_result_MUX_uxn_device_h_l522_c2_8887_return_output;
+     REG_VAR_result := VAR_result_MUX_uxn_device_h_l525_c2_c450_return_output;
+     VAR_return_output := VAR_result_MUX_uxn_device_h_l525_c2_c450_return_output;
      -- Last stage of pipeline return wire to return port/reg
      return_output <= VAR_return_output;
    end if;

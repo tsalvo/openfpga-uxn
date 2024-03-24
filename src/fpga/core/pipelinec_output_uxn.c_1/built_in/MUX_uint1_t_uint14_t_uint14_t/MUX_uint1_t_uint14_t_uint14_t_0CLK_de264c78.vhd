@@ -11,13 +11,14 @@ use ieee.numeric_std.all;
 -- use ieee.float_pkg.all;
 use work.c_structs_pkg.all;
 -- Submodules: 0
-entity BIN_OP_EQ_uint13_t_uint13_t_0CLK_de264c78 is
+entity MUX_uint1_t_uint14_t_uint14_t_0CLK_de264c78 is
 port(
- left : in unsigned(12 downto 0);
- right : in unsigned(12 downto 0);
- return_output : out unsigned(0 downto 0));
-end BIN_OP_EQ_uint13_t_uint13_t_0CLK_de264c78;
-architecture arch of BIN_OP_EQ_uint13_t_uint13_t_0CLK_de264c78 is
+ cond : in unsigned(0 downto 0);
+ iftrue : in unsigned(13 downto 0);
+ iffalse : in unsigned(13 downto 0);
+ return_output : out unsigned(13 downto 0));
+end MUX_uint1_t_uint14_t_uint14_t_0CLK_de264c78;
+architecture arch of MUX_uint1_t_uint14_t_uint14_t_0CLK_de264c78 is
 -- Types and such
 -- Declarations
 attribute mark_debug : string;
@@ -26,13 +27,11 @@ constant PIPELINE_LATENCY : integer := 0;
 -- One struct to represent this modules variables
 type raw_hdl_variables_t is record
  -- All of the wires in function
-
-  left_resized : std_logic_vector(12 downto 0);
-  right_resized : std_logic_vector(12 downto 0);
-  return_output_bool : boolean;
-  return_output : unsigned(0 downto 0);
-  right : unsigned(12 downto 0);
-  left :  unsigned(12 downto 0);
+  
+  return_output : unsigned(13 downto 0);
+  cond : unsigned(0 downto 0);
+  iftrue : unsigned(13 downto 0);
+  iffalse : unsigned(13 downto 0);
 end record;
 
 -- Type for this modules register pipeline
@@ -45,8 +44,9 @@ begin
 -- Combinatorial process for pipeline stages
 process (
  -- Inputs
- left,
- right)
+ cond,
+ iftrue,
+ iffalse)
 is 
  -- Read and write variables to do register transfers per clock
  -- from the previous to next stage
@@ -64,8 +64,9 @@ is
   -- Input to first stage are inputs to function
   if STAGE=0 then
    -- Mux in inputs
-   read_pipe.left := left;
-   read_pipe.right := right;
+   read_pipe.cond := cond;
+   read_pipe.iftrue := iftrue;
+   read_pipe.iffalse := iffalse;
   else
    -- Default read from previous stage
    read_pipe := read_raw_hdl_pipeline_regs(STAGE-1);
@@ -74,28 +75,15 @@ is
   write_pipe := read_pipe;
 
 
-    -- COMPARE N bits per clock, 
-    -- num_stages = 1
-
-
-    if STAGE = 0 then     
-      write_pipe.return_output_bool := true;
-      write_pipe.left_resized := std_logic_vector(resize(write_pipe.left,13));
-      write_pipe.right_resized := std_logic_vector(resize(write_pipe.right,13));
-     
-      -- bits_per_stage_dict[0] = 13
-      
-        -- Assign output based on range for this stage
-        write_pipe.return_output_bool := write_pipe.return_output_bool and (write_pipe.left_resized(12 downto 0) = write_pipe.right_resized(12 downto 0) );
-        
-      if  write_pipe.return_output_bool then
-        write_pipe.return_output := (others => '1');
+    if STAGE = 0 then
+      -- Assign output based on range for this stage
+      if write_pipe.cond=1 then
+        write_pipe.return_output := write_pipe.iftrue;
       else
-        write_pipe.return_output := (others => '0');
+        write_pipe.return_output := write_pipe.iffalse;
       end if;
-      
-    end if;
-      -- Write to stage reg
+    end if;     
+    -- Write to stage reg
   write_raw_hdl_pipeline_regs(STAGE) := write_pipe;
  end loop;
 

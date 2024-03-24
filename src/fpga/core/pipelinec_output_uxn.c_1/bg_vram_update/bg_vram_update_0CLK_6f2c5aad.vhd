@@ -37,13 +37,13 @@ signal REG_COMB_wdata : unsigned(31 downto 0);
 signal REG_COMB_raddr : unsigned(31 downto 0);
 
 -- Each function instance gets signals
--- bg_vram_update_bg_vram_RAM_DP_RF_1[uxn_ram_screen_h_l46_c18_0db7]
-signal bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_0db7_CLOCK_ENABLE : unsigned(0 downto 0);
-signal bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_0db7_addr_r0 : unsigned(16 downto 0);
-signal bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_0db7_addr_w0 : unsigned(16 downto 0);
-signal bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_0db7_wd : unsigned(1 downto 0);
-signal bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_0db7_we : unsigned(0 downto 0);
-signal bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_0db7_return_output : unsigned(1 downto 0);
+-- bg_vram_update_bg_vram_RAM_DP_RF_1[uxn_ram_screen_h_l46_c18_27da]
+signal bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_27da_CLOCK_ENABLE : unsigned(0 downto 0);
+signal bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_27da_addr_r0 : unsigned(16 downto 0);
+signal bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_27da_addr_w0 : unsigned(16 downto 0);
+signal bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_27da_wd : unsigned(1 downto 0);
+signal bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_27da_we : unsigned(0 downto 0);
+signal bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_27da_return_output : unsigned(1 downto 0);
 
 function CAST_TO_uint32_t_uint17_t( rhs : unsigned) return unsigned is
 
@@ -71,15 +71,15 @@ end function;
 begin
 
 -- SUBMODULE INSTANCES 
--- bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_0db7
-bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_0db7 : entity work.bg_vram_update_bg_vram_RAM_DP_RF_1_0CLK_de264c78 port map (
+-- bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_27da
+bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_27da : entity work.bg_vram_update_bg_vram_RAM_DP_RF_1_0CLK_de264c78 port map (
 clk,
-bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_0db7_CLOCK_ENABLE,
-bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_0db7_addr_r0,
-bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_0db7_addr_w0,
-bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_0db7_wd,
-bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_0db7_we,
-bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_0db7_return_output);
+bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_27da_CLOCK_ENABLE,
+bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_27da_addr_r0,
+bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_27da_addr_w0,
+bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_27da_wd,
+bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_27da_we,
+bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_27da_return_output);
 
 
 
@@ -96,7 +96,7 @@ process (
  wdata,
  raddr,
  -- All submodule outputs
- bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_0db7_return_output)
+ bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_27da_return_output)
 is 
  -- All of the wires in function
  variable VAR_CLOCK_ENABLE : unsigned(0 downto 0);
@@ -106,19 +106,19 @@ is
  variable VAR_write_value : unsigned(1 downto 0);
  variable VAR_write_enable : unsigned(0 downto 0);
  variable VAR_bg_vram : uint2_t_131072;
- variable VAR_raddr_uxn_ram_screen_h_l42_c2_005a : unsigned(31 downto 0);
- variable VAR_CAST_TO_uint32_t_uxn_ram_screen_h_l42_c10_1933_return_output : unsigned(31 downto 0);
- variable VAR_waddr_uxn_ram_screen_h_l43_c2_b4e3 : unsigned(31 downto 0);
- variable VAR_CAST_TO_uint32_t_uxn_ram_screen_h_l43_c10_41fd_return_output : unsigned(31 downto 0);
- variable VAR_wdata_uxn_ram_screen_h_l44_c2_4977 : unsigned(31 downto 0);
- variable VAR_CAST_TO_uint32_t_uxn_ram_screen_h_l44_c10_de25_return_output : unsigned(31 downto 0);
+ variable VAR_raddr_uxn_ram_screen_h_l42_c2_df54 : unsigned(31 downto 0);
+ variable VAR_CAST_TO_uint32_t_uxn_ram_screen_h_l42_c10_3a49_return_output : unsigned(31 downto 0);
+ variable VAR_waddr_uxn_ram_screen_h_l43_c2_56a1 : unsigned(31 downto 0);
+ variable VAR_CAST_TO_uint32_t_uxn_ram_screen_h_l43_c10_b703_return_output : unsigned(31 downto 0);
+ variable VAR_wdata_uxn_ram_screen_h_l44_c2_03a1 : unsigned(31 downto 0);
+ variable VAR_CAST_TO_uint32_t_uxn_ram_screen_h_l44_c10_1802_return_output : unsigned(31 downto 0);
  variable VAR_rdata : unsigned(1 downto 0);
- variable VAR_bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_0db7_addr_r0 : unsigned(16 downto 0);
- variable VAR_bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_0db7_addr_w0 : unsigned(16 downto 0);
- variable VAR_bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_0db7_wd : unsigned(1 downto 0);
- variable VAR_bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_0db7_we : unsigned(0 downto 0);
- variable VAR_bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_0db7_CLOCK_ENABLE : unsigned(0 downto 0);
- variable VAR_bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_0db7_return_output : unsigned(1 downto 0);
+ variable VAR_bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_27da_addr_r0 : unsigned(16 downto 0);
+ variable VAR_bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_27da_addr_w0 : unsigned(16 downto 0);
+ variable VAR_bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_27da_wd : unsigned(1 downto 0);
+ variable VAR_bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_27da_we : unsigned(0 downto 0);
+ variable VAR_bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_27da_CLOCK_ENABLE : unsigned(0 downto 0);
+ variable VAR_bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_27da_return_output : unsigned(1 downto 0);
  -- State registers comb logic variables
 variable REG_VAR_waddr : unsigned(31 downto 0);
 variable REG_VAR_wdata : unsigned(31 downto 0);
@@ -144,43 +144,43 @@ begin
      VAR_write_enable := write_enable;
 
      -- Submodule level 0
-     VAR_bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_0db7_CLOCK_ENABLE := VAR_CLOCK_ENABLE;
-     VAR_bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_0db7_we := VAR_write_enable;
-     -- CAST_TO_uint32_t[uxn_ram_screen_h_l42_c10_1933] LATENCY=0
-     VAR_CAST_TO_uint32_t_uxn_ram_screen_h_l42_c10_1933_return_output := CAST_TO_uint32_t_uint17_t(
+     VAR_bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_27da_CLOCK_ENABLE := VAR_CLOCK_ENABLE;
+     VAR_bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_27da_we := VAR_write_enable;
+     -- CAST_TO_uint32_t[uxn_ram_screen_h_l42_c10_3a49] LATENCY=0
+     VAR_CAST_TO_uint32_t_uxn_ram_screen_h_l42_c10_3a49_return_output := CAST_TO_uint32_t_uint17_t(
      VAR_read_address);
 
-     -- CAST_TO_uint32_t[uxn_ram_screen_h_l44_c10_de25] LATENCY=0
-     VAR_CAST_TO_uint32_t_uxn_ram_screen_h_l44_c10_de25_return_output := CAST_TO_uint32_t_uint2_t(
-     VAR_write_value);
-
-     -- CAST_TO_uint32_t[uxn_ram_screen_h_l43_c10_41fd] LATENCY=0
-     VAR_CAST_TO_uint32_t_uxn_ram_screen_h_l43_c10_41fd_return_output := CAST_TO_uint32_t_uint17_t(
+     -- CAST_TO_uint32_t[uxn_ram_screen_h_l43_c10_b703] LATENCY=0
+     VAR_CAST_TO_uint32_t_uxn_ram_screen_h_l43_c10_b703_return_output := CAST_TO_uint32_t_uint17_t(
      VAR_write_address);
 
+     -- CAST_TO_uint32_t[uxn_ram_screen_h_l44_c10_1802] LATENCY=0
+     VAR_CAST_TO_uint32_t_uxn_ram_screen_h_l44_c10_1802_return_output := CAST_TO_uint32_t_uint2_t(
+     VAR_write_value);
+
      -- Submodule level 1
-     VAR_raddr_uxn_ram_screen_h_l42_c2_005a := VAR_CAST_TO_uint32_t_uxn_ram_screen_h_l42_c10_1933_return_output;
-     VAR_waddr_uxn_ram_screen_h_l43_c2_b4e3 := VAR_CAST_TO_uint32_t_uxn_ram_screen_h_l43_c10_41fd_return_output;
-     VAR_wdata_uxn_ram_screen_h_l44_c2_4977 := VAR_CAST_TO_uint32_t_uxn_ram_screen_h_l44_c10_de25_return_output;
-     VAR_bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_0db7_addr_r0 := resize(VAR_raddr_uxn_ram_screen_h_l42_c2_005a, 17);
-     REG_VAR_raddr := VAR_raddr_uxn_ram_screen_h_l42_c2_005a;
-     VAR_bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_0db7_addr_w0 := resize(VAR_waddr_uxn_ram_screen_h_l43_c2_b4e3, 17);
-     REG_VAR_waddr := VAR_waddr_uxn_ram_screen_h_l43_c2_b4e3;
-     VAR_bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_0db7_wd := resize(VAR_wdata_uxn_ram_screen_h_l44_c2_4977, 2);
-     REG_VAR_wdata := VAR_wdata_uxn_ram_screen_h_l44_c2_4977;
-     -- bg_vram_update_bg_vram_RAM_DP_RF_1[uxn_ram_screen_h_l46_c18_0db7] LATENCY=0
+     VAR_raddr_uxn_ram_screen_h_l42_c2_df54 := VAR_CAST_TO_uint32_t_uxn_ram_screen_h_l42_c10_3a49_return_output;
+     VAR_waddr_uxn_ram_screen_h_l43_c2_56a1 := VAR_CAST_TO_uint32_t_uxn_ram_screen_h_l43_c10_b703_return_output;
+     VAR_wdata_uxn_ram_screen_h_l44_c2_03a1 := VAR_CAST_TO_uint32_t_uxn_ram_screen_h_l44_c10_1802_return_output;
+     VAR_bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_27da_addr_r0 := resize(VAR_raddr_uxn_ram_screen_h_l42_c2_df54, 17);
+     REG_VAR_raddr := VAR_raddr_uxn_ram_screen_h_l42_c2_df54;
+     VAR_bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_27da_addr_w0 := resize(VAR_waddr_uxn_ram_screen_h_l43_c2_56a1, 17);
+     REG_VAR_waddr := VAR_waddr_uxn_ram_screen_h_l43_c2_56a1;
+     VAR_bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_27da_wd := resize(VAR_wdata_uxn_ram_screen_h_l44_c2_03a1, 2);
+     REG_VAR_wdata := VAR_wdata_uxn_ram_screen_h_l44_c2_03a1;
+     -- bg_vram_update_bg_vram_RAM_DP_RF_1[uxn_ram_screen_h_l46_c18_27da] LATENCY=0
      -- Clock enable
-     bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_0db7_CLOCK_ENABLE <= VAR_bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_0db7_CLOCK_ENABLE;
+     bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_27da_CLOCK_ENABLE <= VAR_bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_27da_CLOCK_ENABLE;
      -- Inputs
-     bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_0db7_addr_r0 <= VAR_bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_0db7_addr_r0;
-     bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_0db7_addr_w0 <= VAR_bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_0db7_addr_w0;
-     bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_0db7_wd <= VAR_bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_0db7_wd;
-     bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_0db7_we <= VAR_bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_0db7_we;
+     bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_27da_addr_r0 <= VAR_bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_27da_addr_r0;
+     bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_27da_addr_w0 <= VAR_bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_27da_addr_w0;
+     bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_27da_wd <= VAR_bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_27da_wd;
+     bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_27da_we <= VAR_bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_27da_we;
      -- Outputs
-     VAR_bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_0db7_return_output := bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_0db7_return_output;
+     VAR_bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_27da_return_output := bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_27da_return_output;
 
      -- Submodule level 2
-     VAR_return_output := VAR_bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_0db7_return_output;
+     VAR_return_output := VAR_bg_vram_update_bg_vram_RAM_DP_RF_1_uxn_ram_screen_h_l46_c18_27da_return_output;
      -- Last stage of pipeline return wire to return port/reg
      return_output <= VAR_return_output;
    end if;
