@@ -4,7 +4,9 @@ A core for Analogue Pocket that integrates the VHDL output of [uxn-fpga](https:/
 
 ## Running the core on an Analogue Pocket
 
-Copy the contents of `dist/assets/`, `dist/cores/`, `dist/platforms/` into the equivalent `Assets/uxn/`, `Cores/`, `Platforms/` folders on your Analogue Pocket
+Copy the contents of `dist/assets/`, `dist/cores/`, `dist/platforms/` into the equivalent `Assets/uxn/`, `Cores/`, `Platforms/` folders on your Analogue Pocket.
+
+Or, unzip the latest core from the _Releases_ section, and merge+copy the `Assets`, `Cores`, and `Platforms` folders to your Analogue Pocket SD Card.
 
 ## Specs
 
